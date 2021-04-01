@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 @import url("fontawesome-all.min.css");
 
-/*
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -70,6 +64,11 @@ input, select, textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+}
+
+.responsive {
+	width: 100%;
+	height: auto;
 }
 
 /* Row */
@@ -160,27 +159,6 @@ input, select, textarea {
 		.row > .col-6 {
 			width: 50%;
 		}
-
-		/*
-		.col-6#caption {
-			position: relative;
-		}
-
-		.col-6#caption .imgtext {
-			position: absolute;   
-    		top: 50%;
-    		left: 50%;
-    		transform: translate(-50%, -50%);
-    		z-index: 10;
-    		opacity: 0;
-    		transition: all 0.8s ease; 
-			color:white
-		}
-
-		.col6#caption:hover .imgtext {
-			opacity: 1;
-		}
-		*/
 
 		.row > .off-6 {
 			margin-left: 50%;
@@ -1353,6 +1331,20 @@ input, select, textarea {
 		line-height: 1.75em;
 	}
 
+	.videoWrapper {
+		position: relative;
+		padding-bottom: 56.25%;
+		height: 0;
+	}
+
+		.videoWrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		  }
+
 		@media screen and (max-width: 1680px) {
 
 			body, input, textarea, select {
@@ -1574,6 +1566,7 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			height: auto;
 		}
 
 		.image.fit {
@@ -1581,6 +1574,7 @@ input, select, textarea {
 			width: 100%;
 			-webkit-transition: .3s ease-in-out;
 			transition: .3s ease-in-out;
+			object-fit: cover;
 		}
 			.image.fit:hover {
 				-webkit-transition: all 300ms ease-in-out;
@@ -1588,27 +1582,6 @@ input, select, textarea {
 				transition: all 300ms ease-in-out;
 				transform: scale(0.90);
 			}
-
-
-		.imgtext {
-			color: white;
-			background: rgba(0,0,0,0.89);
-			width: 355px;
-			height: 135px;
-			padding: 50px 15px 0 15px;
-			opacity: 0;
-			position: absolute;
-			margin:auto;
-			bottom: 0px;
-			-webkit-transition: all 300ms ease-in-out;
-			-o-transition: all 300ms ease-in-out;
-			transition: all 300ms ease-in-out;
-		}
-			.imgtext:hover {
-				-webkit-opacity: 100;
-				opacity: 100;
-			}
-
 
 		.image.featured {
 			display: block;
