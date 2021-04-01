@@ -1,0 +1,13 @@
+<map id="SpriteFont::XMLtoCollection" name="SpriteFont::XMLtoCollection">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,188,159"/>
+<area shape="rect" id="node2" href="$class_sprite_font.html#a6238ba063832527e3eb644610cd667e0" title=" " alt="" coords="236,5,427,32"/>
+<area shape="rect" id="node3" href="$class_image_manager.html#a9521b5248002fd6f48355c7f8edf27c8" title="Gets an image* using the given key." alt="" coords="263,56,399,83"/>
+<area shape="rect" id="node7" href="$class_sly_sprite.html#a4b813e0dab3a057af7ddd9e724f33352" title="Gets the sprite height." alt="" coords="261,107,402,133"/>
+<area shape="rect" id="node8" href="$class_sly_sprite.html#a3c9f659541632e02a6bda85e6f6be188" title="Gets the sprite&#39;s width." alt="" coords="262,157,401,184"/>
+<area shape="rect" id="node9" href="$class_image_manager.html#a43a542026fe550159d7aaea3fe19a22f" title=" " alt="" coords="260,208,403,235"/>
+<area shape="rect" id="node11" href="$class_sly_sprite.html#a6357f099ee754434e4bbb41c92c805d7" title="Sets the center of the sprite." alt="" coords="261,259,402,285"/>
+<area shape="rect" id="node4" href="$class_image_manager.html#ae1fff2154dfa21faf1baab26521cb99f" title="Gets the ImageManager instance." alt="" coords="475,132,639,159"/>
+<area shape="rect" id="node6" href="$class_image_manager.html#a15ccbf48104c58d6acabca0f7a47d77c" title="Private get." alt="" coords="479,56,634,83"/>
+<area shape="rect" id="node5" href="$class_image_manager.html#a8c856af0e3f0d23da7c765b0e33e585e" title="Default constructor." alt="" coords="687,132,887,159"/>
+<area shape="rect" id="node10" href="$class_image_manager.html#aa82ce274d48cae6aa901161bd9e13245" title="Priv load." alt="" coords="475,208,638,235"/>
+</map>

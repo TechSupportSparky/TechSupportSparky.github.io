@@ -1,0 +1,31 @@
+<map id="Visualizer::Terminate" name="Visualizer::Terminate">
+<area shape="rect" id="node1" title="Terminates this instance." alt="" coords="5,292,149,319"/>
+<area shape="rect" id="node2" href="$class_visualizer.html#abfb60fda248002a438ce627986f44abb" title="Gets the Visualizer instance." alt="" coords="211,217,347,244"/>
+<area shape="rect" id="node13" href="$class_visualizer.html#a5dd16607ead98f5cdd003529c6e7ab73" title="Private terminate, to be called internally." alt="" coords="197,367,360,393"/>
+<area shape="rect" id="node3" href="$class_visualizer.html#a104487003c9fea602e26c072aae27efc" title="Default constructor." alt="" coords="434,119,578,145"/>
+<area shape="rect" id="node4" href="$class_shader_manager.html#a102591e663e0897ac54aee3bb097ab5f" title="Gets a shader object* using the given key." alt="" coords="679,56,821,83"/>
+<area shape="rect" id="node8" href="$class_model_manager.html#ac48466a9c8c05c81a6d6acd19b13233a" title="Gets a model* using the given key." alt="" coords="682,119,818,145"/>
+<area shape="rect" id="node5" href="$class_shader_manager.html#a027cb5c486b20e641bcbf94e8186a965" title="Gets the instance." alt="" coords="913,5,1083,32"/>
+<area shape="rect" id="node7" href="$class_shader_manager.html#aa99cbaffdf83f033e1541b210a3da0c4" title="Private get." alt="" coords="917,56,1079,83"/>
+<area shape="rect" id="node6" href="$class_shader_manager.html#aca25f81fd10a02b3e97e9c459b864186" title="Default constructor." alt="" coords="1148,5,1360,32"/>
+<area shape="rect" id="node9" href="$class_model_manager.html#a34bb227e07db616a207d7e28bab70a31" title="Gets the instance." alt="" coords="916,107,1080,133"/>
+<area shape="rect" id="node12" href="$class_model_manager.html#a0148b218c2cf5e0baa00049b6e604f9a" title="Priv get." alt="" coords="921,157,1075,184"/>
+<area shape="rect" id="node10" href="$class_model_manager.html#a9b0d22b1baf59c5b566e82fcd8ca424a" title="Default constructor." alt="" coords="1154,107,1354,133"/>
+<area shape="rect" id="node11" href="$class_model_manager.html#aa736d7e7712bb2c0f7b8406a502cf152" title="Private load sprite model." alt="" coords="1408,99,1604,141"/>
+<area shape="rect" id="node14" href="$class_visualize_generic_box_factory.html#a71cc2b9d024c526c186079934873b0ee" title=" " alt="" coords="413,261,599,302"/>
+<area shape="rect" id="node18" href="$class_visualize_b_sphere_cmd_factory.html#a68ecd829677c9f3b34fc6b9c5c12d195" title=" " alt="" coords="408,359,604,401"/>
+<area shape="rect" id="node22" href="$class_visualize_a_a_b_b_cmd_factory.html#a9e599f38a57eef7ced638ed52cc7f7a1" title=" " alt="" coords="415,457,597,498"/>
+<area shape="rect" id="node26" href="$class_visualize_o_b_b_cmd_factory.html#a6117f12a8fcbc1737e0c7cd7770308dc" title=" " alt="" coords="419,587,593,629"/>
+<area shape="rect" id="node15" href="$class_visualize_generic_box_factory.html#a7496ec91f5df6a1513cd1c8313271989" title=" " alt="" coords="657,195,843,237"/>
+<area shape="rect" id="node17" href="$class_visualize_generic_box_factory.html#a2ea9c575d9c2af0894af55106cce729b" title=" " alt="" coords="657,261,843,302"/>
+<area shape="rect" id="node16" href="$class_visualize_generic_box_factory.html#abb555d0db43c2fcc1c9cd02de307d7cf" title=" " alt="" coords="901,209,1095,250"/>
+<area shape="rect" id="node19" href="$class_visualize_b_sphere_cmd_factory.html#a4b5647c2852aa51134bf8a815c8f042b" title=" " alt="" coords="652,326,848,367"/>
+<area shape="rect" id="node21" href="$class_visualize_b_sphere_cmd_factory.html#aa47059831833723687a4d879643978d2" title=" " alt="" coords="652,391,848,433"/>
+<area shape="rect" id="node20" href="$class_visualize_b_sphere_cmd_factory.html#a58a50e0279f8d88111ed5dda6a3323b0" title=" " alt="" coords="896,326,1100,367"/>
+<area shape="rect" id="node23" href="$class_visualize_a_a_b_b_cmd_factory.html#a9a3594a5a35cd2cc5213a6d8b0e02069" title=" " alt="" coords="659,457,841,498"/>
+<area shape="rect" id="node25" href="$class_visualize_a_a_b_b_cmd_factory.html#a934065f0f0932e053f9764d093567cf2" title=" " alt="" coords="659,522,841,563"/>
+<area shape="rect" id="node24" href="$class_visualize_a_a_b_b_cmd_factory.html#af434253900a11e32b2f2c95c2c6d13ec" title=" " alt="" coords="903,457,1093,498"/>
+<area shape="rect" id="node27" href="$class_visualize_o_b_b_cmd_factory.html#ab7ed535e9cad1379f2fbe1fc3f445a41" title=" " alt="" coords="663,587,837,629"/>
+<area shape="rect" id="node29" href="$class_visualize_o_b_b_cmd_factory.html#a4d5a2b235409e1037e8f3d8d2b9ac084" title=" " alt="" coords="663,653,837,694"/>
+<area shape="rect" id="node28" href="$class_visualize_o_b_b_cmd_factory.html#aacc35f4278df7bc37c4e021dc24f6689" title=" " alt="" coords="907,587,1089,629"/>
+</map>

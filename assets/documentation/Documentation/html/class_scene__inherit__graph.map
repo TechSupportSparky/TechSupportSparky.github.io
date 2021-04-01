@@ -1,0 +1,6 @@
+<map id="Scene" name="Scene">
+<area shape="rect" id="node1" title=" " alt="" coords="182,263,347,707"/>
+<area shape="rect" id="node2" href="$class_updatable_manager.html" title=" " alt="" coords="5,13,164,207"/>
+<area shape="rect" id="node3" href="$class_drawable_manager.html" title=" " alt="" coords="188,13,341,207"/>
+<area shape="rect" id="node4" href="$class_alarmable_manager.html" title=" " alt="" coords="365,5,524,215"/>
+</map>

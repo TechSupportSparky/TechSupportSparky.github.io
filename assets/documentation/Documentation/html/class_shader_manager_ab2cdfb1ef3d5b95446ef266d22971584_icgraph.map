@@ -1,0 +1,4 @@
+<map id="ShaderManager::privLoadSpriteShader" name="ShaderManager::privLoadSpriteShader">
+<area shape="rect" id="node1" title="Private load sprite shader." alt="" coords="236,5,439,47"/>
+<area shape="rect" id="node2" href="$class_shader_manager.html#a5c7d69af0b3735236a9fdcce94487973" title="Loads sprite shader with the unique specified key." alt="" coords="5,5,188,47"/>
+</map>

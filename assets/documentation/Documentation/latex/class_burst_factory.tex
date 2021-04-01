@@ -1,0 +1,296 @@
+\hypertarget{class_burst_factory}{}\doxysection{Burst\+Factory Class Reference}
+\label{class_burst_factory}\index{BurstFactory@{BurstFactory}}
+
+
+{\ttfamily \#include $<$Burst\+Factory.\+h$>$}
+
+
+
+Collaboration diagram for Burst\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_burst_factory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Item\+List\+::iterator \mbox{\hyperlink{class_burst_factory_ae26107b30ec05a2ddc5b9ac23f10ca18}{Storage\+Ref}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_burst}{Burst}} $\ast$ \mbox{\hyperlink{class_burst_factory_a188e946f392ce69610c6aedaa4f97f0a}{Create\+Burst}} (\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$pe, int num\+Particles, float life\+Time, float speed, Vect pos, Matrix rot)
+\item 
+static void \mbox{\hyperlink{class_burst_factory_a6832280f1d56489c599e07e8d12f6505}{Recycle\+Burst}} (\mbox{\hyperlink{class_burst}{Burst}} $\ast$b)
+\item 
+static void \mbox{\hyperlink{class_burst_factory_ad17d39f3ba09ddce10ec8b742addb832}{Terminate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \mbox{\hyperlink{class_burst}{Burst}} $\ast$ $>$ \mbox{\hyperlink{class_burst_factory_a8679e563fac5024800025e9879450be5}{Item\+List}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_burst_factory_a33f39fd66df054c850449f8a0c821814}{Burst\+Factory}} ()
+\item 
+\mbox{\hyperlink{class_burst_factory_a5f6376101ce51d0960bd2f2f1d77bdcf}{Burst\+Factory}} (const \mbox{\hyperlink{class_burst_factory}{Burst\+Factory}} \&)=delete
+\item 
+\mbox{\hyperlink{class_burst_factory_acd69873bd4f87ec88b10263624fd4515}{Burst\+Factory}} (\mbox{\hyperlink{class_burst_factory}{Burst\+Factory}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_burst_factory}{Burst\+Factory}} \& \mbox{\hyperlink{class_burst_factory_ae0330855cc37a1fa94f26782839c11a3}{operator=}} (const \mbox{\hyperlink{class_burst_factory}{Burst\+Factory}} \&)=delete
+\item 
+\mbox{\hyperlink{class_burst_factory}{Burst\+Factory}} \& \mbox{\hyperlink{class_burst_factory_a9983f5cf1a396084a75504ae0acbd714}{operator=}} (\mbox{\hyperlink{class_burst_factory}{Burst\+Factory}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_burst_factory_a373ef069008aafc55d459a08887fe633}{$\sim$\+Burst\+Factory}} ()=default
+\item 
+\mbox{\hyperlink{class_burst}{Burst}} $\ast$ \mbox{\hyperlink{class_burst_factory_abfdc71c95a5a53fee6ae803d92cec9e5}{priv\+Create\+Burst}} (\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$pe, int num\+Particles, float life\+Time, float speed, Vect pos, Matrix rot)
+\item 
+void \mbox{\hyperlink{class_burst_factory_aeafa62951c2bdcce71f02d73b1aed7c2}{priv\+Recycle\+Burst}} (\mbox{\hyperlink{class_burst}{Burst}} $\ast$b)
+\item 
+void \mbox{\hyperlink{class_burst_factory_a56b3b60486e8e814ccfeb1d9c2310120}{priv\+Terminate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_burst_factory}{Burst\+Factory}} \& \mbox{\hyperlink{class_burst_factory_a4185bc096d7939bb40e9b3e649b80dcd}{Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_burst_memory_pool}{Burst\+Memory\+Pool}} \mbox{\hyperlink{class_burst_factory_af1cbd8137a6639546bacbf95dadfc9bc}{my\+Burst\+Pool}}
+\item 
+\mbox{\hyperlink{class_burst_factory_a8679e563fac5024800025e9879450be5}{Item\+List}} $\ast$ \mbox{\hyperlink{class_burst_factory_a16fb155edbaaa35c905e4eb69915cda5}{active\+Items}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_burst_factory}{Burst\+Factory}} $\ast$ \mbox{\hyperlink{class_burst_factory_a34371890effadfede6021d1b8eed652e}{ptr\+Instance}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_burst_factory_a8679e563fac5024800025e9879450be5}\label{class_burst_factory_a8679e563fac5024800025e9879450be5}} 
+\index{BurstFactory@{BurstFactory}!ItemList@{ItemList}}
+\index{ItemList@{ItemList}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{ItemList}{ItemList}}
+{\footnotesize\ttfamily typedef std\+::list$<$\mbox{\hyperlink{class_burst}{Burst}}$\ast$$>$ \mbox{\hyperlink{class_burst_factory_a8679e563fac5024800025e9879450be5}{Burst\+Factory\+::\+Item\+List}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_burst_factory_ae26107b30ec05a2ddc5b9ac23f10ca18}\label{class_burst_factory_ae26107b30ec05a2ddc5b9ac23f10ca18}} 
+\index{BurstFactory@{BurstFactory}!StorageRef@{StorageRef}}
+\index{StorageRef@{StorageRef}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{StorageRef}{StorageRef}}
+{\footnotesize\ttfamily typedef Item\+List\+::iterator \mbox{\hyperlink{class_burst_factory_ae26107b30ec05a2ddc5b9ac23f10ca18}{Burst\+Factory\+::\+Storage\+Ref}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_burst_factory_a33f39fd66df054c850449f8a0c821814}\label{class_burst_factory_a33f39fd66df054c850449f8a0c821814}} 
+\index{BurstFactory@{BurstFactory}!BurstFactory@{BurstFactory}}
+\index{BurstFactory@{BurstFactory}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{BurstFactory()}{BurstFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Burst\+Factory\+::\+Burst\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_factory_a33f39fd66df054c850449f8a0c821814_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_burst_factory_a5f6376101ce51d0960bd2f2f1d77bdcf}\label{class_burst_factory_a5f6376101ce51d0960bd2f2f1d77bdcf}} 
+\index{BurstFactory@{BurstFactory}!BurstFactory@{BurstFactory}}
+\index{BurstFactory@{BurstFactory}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{BurstFactory()}{BurstFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Burst\+Factory\+::\+Burst\+Factory (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_burst_factory}{Burst\+Factory}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_burst_factory_acd69873bd4f87ec88b10263624fd4515}\label{class_burst_factory_acd69873bd4f87ec88b10263624fd4515}} 
+\index{BurstFactory@{BurstFactory}!BurstFactory@{BurstFactory}}
+\index{BurstFactory@{BurstFactory}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{BurstFactory()}{BurstFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Burst\+Factory\+::\+Burst\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_burst_factory}{Burst\+Factory}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_burst_factory_a373ef069008aafc55d459a08887fe633}\label{class_burst_factory_a373ef069008aafc55d459a08887fe633}} 
+\index{BurstFactory@{BurstFactory}!````~BurstFactory@{$\sim$BurstFactory}}
+\index{````~BurstFactory@{$\sim$BurstFactory}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$BurstFactory()}{~BurstFactory()}}
+{\footnotesize\ttfamily Burst\+Factory\+::$\sim$\+Burst\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_burst_factory_a188e946f392ce69610c6aedaa4f97f0a}\label{class_burst_factory_a188e946f392ce69610c6aedaa4f97f0a}} 
+\index{BurstFactory@{BurstFactory}!CreateBurst@{CreateBurst}}
+\index{CreateBurst@{CreateBurst}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{CreateBurst()}{CreateBurst()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_burst}{Burst}}$\ast$ Burst\+Factory\+::\+Create\+Burst (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$}]{pe,  }\item[{int}]{num\+Particles,  }\item[{float}]{life\+Time,  }\item[{float}]{speed,  }\item[{Vect}]{pos,  }\item[{Matrix}]{rot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_factory_a188e946f392ce69610c6aedaa4f97f0a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_factory_a188e946f392ce69610c6aedaa4f97f0a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_burst_factory_a4185bc096d7939bb40e9b3e649b80dcd}\label{class_burst_factory_a4185bc096d7939bb40e9b3e649b80dcd}} 
+\index{BurstFactory@{BurstFactory}!Instance@{Instance}}
+\index{Instance@{Instance}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_burst_factory}{Burst\+Factory}}\& Burst\+Factory\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_factory_a4185bc096d7939bb40e9b3e649b80dcd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_factory_a4185bc096d7939bb40e9b3e649b80dcd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_burst_factory_a9983f5cf1a396084a75504ae0acbd714}\label{class_burst_factory_a9983f5cf1a396084a75504ae0acbd714}} 
+\index{BurstFactory@{BurstFactory}!operator=@{operator=}}
+\index{operator=@{operator=}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_burst_factory}{Burst\+Factory}}\& Burst\+Factory\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_burst_factory}{Burst\+Factory}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_burst_factory_ae0330855cc37a1fa94f26782839c11a3}\label{class_burst_factory_ae0330855cc37a1fa94f26782839c11a3}} 
+\index{BurstFactory@{BurstFactory}!operator=@{operator=}}
+\index{operator=@{operator=}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_burst_factory}{Burst\+Factory}}\& Burst\+Factory\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_burst_factory}{Burst\+Factory}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_burst_factory_abfdc71c95a5a53fee6ae803d92cec9e5}\label{class_burst_factory_abfdc71c95a5a53fee6ae803d92cec9e5}} 
+\index{BurstFactory@{BurstFactory}!privCreateBurst@{privCreateBurst}}
+\index{privCreateBurst@{privCreateBurst}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{privCreateBurst()}{privCreateBurst()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_burst}{Burst}} $\ast$ Burst\+Factory\+::priv\+Create\+Burst (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$}]{pe,  }\item[{int}]{num\+Particles,  }\item[{float}]{life\+Time,  }\item[{float}]{speed,  }\item[{Vect}]{pos,  }\item[{Matrix}]{rot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_factory_abfdc71c95a5a53fee6ae803d92cec9e5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_factory_abfdc71c95a5a53fee6ae803d92cec9e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_burst_factory_aeafa62951c2bdcce71f02d73b1aed7c2}\label{class_burst_factory_aeafa62951c2bdcce71f02d73b1aed7c2}} 
+\index{BurstFactory@{BurstFactory}!privRecycleBurst@{privRecycleBurst}}
+\index{privRecycleBurst@{privRecycleBurst}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{privRecycleBurst()}{privRecycleBurst()}}
+{\footnotesize\ttfamily void Burst\+Factory\+::priv\+Recycle\+Burst (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_burst}{Burst}} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_factory_aeafa62951c2bdcce71f02d73b1aed7c2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_factory_aeafa62951c2bdcce71f02d73b1aed7c2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_burst_factory_a56b3b60486e8e814ccfeb1d9c2310120}\label{class_burst_factory_a56b3b60486e8e814ccfeb1d9c2310120}} 
+\index{BurstFactory@{BurstFactory}!privTerminate@{privTerminate}}
+\index{privTerminate@{privTerminate}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{privTerminate()}{privTerminate()}}
+{\footnotesize\ttfamily void Burst\+Factory\+::priv\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_factory_a56b3b60486e8e814ccfeb1d9c2310120_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_burst_factory_a6832280f1d56489c599e07e8d12f6505}\label{class_burst_factory_a6832280f1d56489c599e07e8d12f6505}} 
+\index{BurstFactory@{BurstFactory}!RecycleBurst@{RecycleBurst}}
+\index{RecycleBurst@{RecycleBurst}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{RecycleBurst()}{RecycleBurst()}}
+{\footnotesize\ttfamily static void Burst\+Factory\+::\+Recycle\+Burst (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_burst}{Burst}} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_factory_a6832280f1d56489c599e07e8d12f6505_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_factory_a6832280f1d56489c599e07e8d12f6505_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_burst_factory_ad17d39f3ba09ddce10ec8b742addb832}\label{class_burst_factory_ad17d39f3ba09ddce10ec8b742addb832}} 
+\index{BurstFactory@{BurstFactory}!Terminate@{Terminate}}
+\index{Terminate@{Terminate}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{Terminate()}{Terminate()}}
+{\footnotesize\ttfamily static void Burst\+Factory\+::\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_factory_ad17d39f3ba09ddce10ec8b742addb832_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_burst_factory_ad17d39f3ba09ddce10ec8b742addb832_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_burst_factory_a16fb155edbaaa35c905e4eb69915cda5}\label{class_burst_factory_a16fb155edbaaa35c905e4eb69915cda5}} 
+\index{BurstFactory@{BurstFactory}!activeItems@{activeItems}}
+\index{activeItems@{activeItems}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{activeItems}{activeItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_burst_factory_a8679e563fac5024800025e9879450be5}{Item\+List}}$\ast$ Burst\+Factory\+::active\+Items\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_burst_factory_af1cbd8137a6639546bacbf95dadfc9bc}\label{class_burst_factory_af1cbd8137a6639546bacbf95dadfc9bc}} 
+\index{BurstFactory@{BurstFactory}!myBurstPool@{myBurstPool}}
+\index{myBurstPool@{myBurstPool}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{myBurstPool}{myBurstPool}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_burst_memory_pool}{Burst\+Memory\+Pool}} Burst\+Factory\+::my\+Burst\+Pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_burst_factory_a34371890effadfede6021d1b8eed652e}\label{class_burst_factory_a34371890effadfede6021d1b8eed652e}} 
+\index{BurstFactory@{BurstFactory}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!BurstFactory@{BurstFactory}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_burst_factory}{Burst\+Factory}} $\ast$ Burst\+Factory\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_burst_factory_8h}{Burst\+Factory.\+h}}\item 
+\mbox{\hyperlink{_burst_factory_8cpp}{Burst\+Factory.\+cpp}}\end{DoxyCompactItemize}

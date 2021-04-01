@@ -1,0 +1,27 @@
+\hypertarget{group___m_o_d_e_l___m_a_n_a_g_e_r}{}\doxysection{Model\+Manager}
+\label{group___m_o_d_e_l___m_a_n_a_g_e_r}\index{ModelManager@{ModelManager}}
+Collaboration diagram for Model\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{group___m_o_d_e_l___m_a_n_a_g_e_r}
+\end{center}
+\end{figure}
+The model manager provides a way for you to load models into your games. There are a few prefabricated models that can get you started, or you can begin by loading in your own model. ~\newline
+
+
+Here is an example of loading both a prefabricated model and a custom one.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{_model_manager_8h}{ModelManager.h}}"}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_sly_a2f502a5aa9cd07dcc29858a104827213}{Sly::LoadAllResources}}() \{}
+\DoxyCodeLine{    \mbox{\hyperlink{class_model_manager_a4301eefe8a038b679b484d3440a5cb5b}{ModelManager::Load}}(\textcolor{stringliteral}{"Sphere"}, Model::PreMadeModels::UnitSphere);}
+\DoxyCodeLine{    \mbox{\hyperlink{class_model_manager_a4301eefe8a038b679b484d3440a5cb5b}{ModelManager::Load}}(\textcolor{stringliteral}{"Space\_Frigate"}, \textcolor{stringliteral}{"space\_frigate.azul"});}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ ~\newline
+
+
+See the full class for Model\+Manager \mbox{\hyperlink{class_model_manager}{here}}. 

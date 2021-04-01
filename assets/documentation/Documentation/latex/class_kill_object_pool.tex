@@ -1,0 +1,122 @@
+\hypertarget{class_kill_object_pool}{}\doxysection{Kill\+Object\+Pool Class Reference}
+\label{class_kill_object_pool}\index{KillObjectPool@{KillObjectPool}}
+
+
+{\ttfamily \#include $<$Kill\+Object\+Pool.\+h$>$}
+
+
+
+Collaboration diagram for Kill\+Object\+Pool\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_object_pool__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kill_object_pool_a5b80ee10ea5f8e86782d2cb47a3c5b0e}{Kill\+Object\+Pool}} ()=default
+\item 
+\mbox{\hyperlink{class_kill_object_pool_ab7c92e125a98d2463bc66d0f618c2d88}{Kill\+Object\+Pool}} (const \mbox{\hyperlink{class_kill_object_pool}{Kill\+Object\+Pool}} \&)=delete
+\item 
+\mbox{\hyperlink{class_kill_object_pool_af1b3838d7d4c75e84a03793625fb1854}{Kill\+Object\+Pool}} (\mbox{\hyperlink{class_kill_object_pool}{Kill\+Object\+Pool}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_kill_object_pool}{Kill\+Object\+Pool}} \& \mbox{\hyperlink{class_kill_object_pool_aae2f0dcc830a8b81f0071275b8635320}{operator=}} (const \mbox{\hyperlink{class_kill_object_pool}{Kill\+Object\+Pool}} \&)=delete
+\item 
+\mbox{\hyperlink{class_kill_object_pool}{Kill\+Object\+Pool}} \& \mbox{\hyperlink{class_kill_object_pool_a2158ede06792b45fd8770545be47cd5d}{operator=}} (\mbox{\hyperlink{class_kill_object_pool}{Kill\+Object\+Pool}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_kill_object_pool_a58a3215aa3513dd257f56ab790e382c7}{$\sim$\+Kill\+Object\+Pool}} ()
+\item 
+\mbox{\hyperlink{class_kill_command}{Kill\+Command}} $\ast$ \mbox{\hyperlink{class_kill_object_pool_a3819c81ec312c5670e57845dc23ca25f}{get\+Command}} ()
+\item 
+void \mbox{\hyperlink{class_kill_object_pool_a892ade65e1231b5a1baafba0a50a0ed0}{return\+Command}} (\mbox{\hyperlink{class_kill_command}{Kill\+Command}} $\ast$the\+Command)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::stack$<$ \mbox{\hyperlink{class_kill_command}{Kill\+Command}} $\ast$ $>$ \mbox{\hyperlink{class_kill_object_pool_a8fa49de8e522277f1f2bbdf36353463c}{recycled\+Items}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_kill_object_pool_a5b80ee10ea5f8e86782d2cb47a3c5b0e}\label{class_kill_object_pool_a5b80ee10ea5f8e86782d2cb47a3c5b0e}} 
+\index{KillObjectPool@{KillObjectPool}!KillObjectPool@{KillObjectPool}}
+\index{KillObjectPool@{KillObjectPool}!KillObjectPool@{KillObjectPool}}
+\doxysubsubsection{\texorpdfstring{KillObjectPool()}{KillObjectPool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Kill\+Object\+Pool\+::\+Kill\+Object\+Pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_kill_object_pool_ab7c92e125a98d2463bc66d0f618c2d88}\label{class_kill_object_pool_ab7c92e125a98d2463bc66d0f618c2d88}} 
+\index{KillObjectPool@{KillObjectPool}!KillObjectPool@{KillObjectPool}}
+\index{KillObjectPool@{KillObjectPool}!KillObjectPool@{KillObjectPool}}
+\doxysubsubsection{\texorpdfstring{KillObjectPool()}{KillObjectPool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Kill\+Object\+Pool\+::\+Kill\+Object\+Pool (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_kill_object_pool}{Kill\+Object\+Pool}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_kill_object_pool_af1b3838d7d4c75e84a03793625fb1854}\label{class_kill_object_pool_af1b3838d7d4c75e84a03793625fb1854}} 
+\index{KillObjectPool@{KillObjectPool}!KillObjectPool@{KillObjectPool}}
+\index{KillObjectPool@{KillObjectPool}!KillObjectPool@{KillObjectPool}}
+\doxysubsubsection{\texorpdfstring{KillObjectPool()}{KillObjectPool()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Kill\+Object\+Pool\+::\+Kill\+Object\+Pool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_kill_object_pool}{Kill\+Object\+Pool}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_kill_object_pool_a58a3215aa3513dd257f56ab790e382c7}\label{class_kill_object_pool_a58a3215aa3513dd257f56ab790e382c7}} 
+\index{KillObjectPool@{KillObjectPool}!````~KillObjectPool@{$\sim$KillObjectPool}}
+\index{````~KillObjectPool@{$\sim$KillObjectPool}!KillObjectPool@{KillObjectPool}}
+\doxysubsubsection{\texorpdfstring{$\sim$KillObjectPool()}{~KillObjectPool()}}
+{\footnotesize\ttfamily Kill\+Object\+Pool\+::$\sim$\+Kill\+Object\+Pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_kill_object_pool_a3819c81ec312c5670e57845dc23ca25f}\label{class_kill_object_pool_a3819c81ec312c5670e57845dc23ca25f}} 
+\index{KillObjectPool@{KillObjectPool}!getCommand@{getCommand}}
+\index{getCommand@{getCommand}!KillObjectPool@{KillObjectPool}}
+\doxysubsubsection{\texorpdfstring{getCommand()}{getCommand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kill_command}{Kill\+Command}} $\ast$ Kill\+Object\+Pool\+::get\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_object_pool_a3819c81ec312c5670e57845dc23ca25f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_kill_object_pool_aae2f0dcc830a8b81f0071275b8635320}\label{class_kill_object_pool_aae2f0dcc830a8b81f0071275b8635320}} 
+\index{KillObjectPool@{KillObjectPool}!operator=@{operator=}}
+\index{operator=@{operator=}!KillObjectPool@{KillObjectPool}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kill_object_pool}{Kill\+Object\+Pool}}\& Kill\+Object\+Pool\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_kill_object_pool}{Kill\+Object\+Pool}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_kill_object_pool_a2158ede06792b45fd8770545be47cd5d}\label{class_kill_object_pool_a2158ede06792b45fd8770545be47cd5d}} 
+\index{KillObjectPool@{KillObjectPool}!operator=@{operator=}}
+\index{operator=@{operator=}!KillObjectPool@{KillObjectPool}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kill_object_pool}{Kill\+Object\+Pool}}\& Kill\+Object\+Pool\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_kill_object_pool}{Kill\+Object\+Pool}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_kill_object_pool_a892ade65e1231b5a1baafba0a50a0ed0}\label{class_kill_object_pool_a892ade65e1231b5a1baafba0a50a0ed0}} 
+\index{KillObjectPool@{KillObjectPool}!returnCommand@{returnCommand}}
+\index{returnCommand@{returnCommand}!KillObjectPool@{KillObjectPool}}
+\doxysubsubsection{\texorpdfstring{returnCommand()}{returnCommand()}}
+{\footnotesize\ttfamily void Kill\+Object\+Pool\+::return\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_kill_command}{Kill\+Command}} $\ast$}]{the\+Command }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_object_pool_a892ade65e1231b5a1baafba0a50a0ed0_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_kill_object_pool_a8fa49de8e522277f1f2bbdf36353463c}\label{class_kill_object_pool_a8fa49de8e522277f1f2bbdf36353463c}} 
+\index{KillObjectPool@{KillObjectPool}!recycledItems@{recycledItems}}
+\index{recycledItems@{recycledItems}!KillObjectPool@{KillObjectPool}}
+\doxysubsubsection{\texorpdfstring{recycledItems}{recycledItems}}
+{\footnotesize\ttfamily std\+::stack$<$\mbox{\hyperlink{class_kill_command}{Kill\+Command}}$\ast$$>$ Kill\+Object\+Pool\+::recycled\+Items\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_kill_object_pool_8h}{Kill\+Object\+Pool.\+h}}\item 
+\mbox{\hyperlink{_kill_object_pool_8cpp}{Kill\+Object\+Pool.\+cpp}}\end{DoxyCompactItemize}

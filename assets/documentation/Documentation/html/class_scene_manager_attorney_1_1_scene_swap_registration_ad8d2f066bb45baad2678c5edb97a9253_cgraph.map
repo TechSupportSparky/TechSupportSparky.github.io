@@ -1,0 +1,10 @@
+<map id="SceneManagerAttorney::SceneSwapRegistration::ChangeScene" name="SceneManagerAttorney::SceneSwapRegistration::ChangeScene">
+<area shape="rect" id="node1" title=" " alt="" coords="5,41,173,97"/>
+<area shape="rect" id="node2" href="$class_scene_manager.html#a5b6d93729bec795ce2576d37d2a56236" title="Private change scene." alt="" coords="221,49,401,90"/>
+<area shape="rect" id="node3" href="$class_scene.html#aafd7510b1309c6ba864791c429870959" title="Initializes the scene. Put scene related startup here." alt="" coords="487,5,601,32"/>
+<area shape="rect" id="node4" href="$class_console_manager.html#a74cbc71d0290ede82810815e0550408c" title="Creates a new console" alt="" coords="449,56,639,83"/>
+<area shape="rect" id="node8" href="$class_scene.html#aedaeb93be94ac521c34a5ffd5168d178" title="Shuts down the scene. Put scene related end tasks here." alt="" coords="481,107,607,133"/>
+<area shape="rect" id="node5" href="$class_console_manager.html#a906c569f9ea442602dbe61e65b779ccc" title=" " alt="" coords="703,31,879,57"/>
+<area shape="rect" id="node7" href="$class_console_manager.html#aeb037ae6338922f42c838b29162a7620" title=" " alt="" coords="687,81,895,108"/>
+<area shape="rect" id="node6" href="$class_console_manager.html#aa9f719ce8b6bb8c2efda952e49f534d6" title="Default constructor." alt="" coords="943,31,1167,57"/>
+</map>

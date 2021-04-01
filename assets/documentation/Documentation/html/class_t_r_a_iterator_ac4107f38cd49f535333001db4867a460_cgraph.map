@@ -1,0 +1,5 @@
+<map id="TRAIterator::operator=" name="TRAIterator::operator=">
+<area shape="rect" id="node1" title="Assignment operator." alt="" coords="5,42,156,69"/>
+<area shape="rect" id="node2" href="$class_terrain_rectangle_area.html#a6c782efcbd32b969a205fa0f7f29c68a" title=" " alt="" coords="206,5,353,47"/>
+<area shape="rect" id="node3" href="$class_terrain_cell.html#a411077e6ed84e0cbadc9492e8cceb952" title="Sets the terrain to be held within the object." alt="" coords="204,71,355,98"/>
+</map>

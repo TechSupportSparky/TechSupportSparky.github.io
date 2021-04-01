@@ -1,0 +1,404 @@
+\hypertarget{class_terrain_object_manager}{}\doxysection{Terrain\+Object\+Manager Class Reference}
+\label{class_terrain_object_manager}\index{TerrainObjectManager@{TerrainObjectManager}}
+
+
+{\ttfamily \#include $<$Terrain\+Object\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Terrain\+Object\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_terrain_object_manager_ac557665da6faf6a79bbf8332e6c539dd}{Load}} (std\+::string key, const char $\ast$O\+Spath, std\+::string Texture\+Key, float side\+Length, float max\+Height, int repeatU, int repeatV)
+\begin{DoxyCompactList}\small\item\em Call to load the heightmap and create a terrain\+Object that will be stored internally. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$ \mbox{\hyperlink{class_terrain_object_manager_ab712917ef91c1fe238454b82adfe8ab3}{Get}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Gets a terrain object$\ast$ using the given key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::string \mbox{\hyperlink{class_terrain_object_manager_a3cf848b4c4b11eb06135d83bc91b7af7}{Map\+Key}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the map key associated with the object. \end{DoxyCompactList}\item 
+typedef std\+::map$<$ \mbox{\hyperlink{class_terrain_object_manager_a3cf848b4c4b11eb06135d83bc91b7af7}{Map\+Key}}, \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$ $>$ \mbox{\hyperlink{class_terrain_object_manager_ab349676b02a8fe4176c46ef06e87ce6c}{Storage\+Map}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the storage map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_terrain_object_manager_aac7be644f7265c410905769500c680f9}{Terrain\+Object\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_object_manager_aaefd77ab4d51fbd8038abe13a8ea023a}{Terrain\+Object\+Manager}} (const \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_object_manager_a86d5d6ff2db3b028b87154f4fd64e87b}{Terrain\+Object\+Manager}} (\mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} \& \mbox{\hyperlink{class_terrain_object_manager_a5dc7301b3f777ec5ff41f4a4907d93e8}{operator=}} (const \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} \& \mbox{\hyperlink{class_terrain_object_manager_a57370c35ca5af4c32e1a32bbcaba5210}{operator=}} (\mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_object_manager_a45861ee3f3cfc36fcbe70452bed6eeb1}{$\sim$\+Terrain\+Object\+Manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_terrain_object_manager_a79a157a5b7b7b3849e47da00205f8aee}{priv\+Delete}} ()
+\begin{DoxyCompactList}\small\item\em Internal call to delete pointer instance. Only to be called by the engine. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$ \mbox{\hyperlink{class_terrain_object_manager_a4d0359e3da3722914be5cff2dd25782b}{priv\+Get}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Internal call to get the requested terrain object from the terrain\+Object\+Map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_terrain_object_manager_ade6bd0330ca95f8eab122452e448f025}{priv\+Load}} (std\+::string key, const char $\ast$O\+Spath, std\+::string Texture\+Key, float side\+Length, float max\+Height, int repeatU, int repeatV)
+\begin{DoxyCompactList}\small\item\em Internal call to load the heightmap and create a terrain\+Object that will be stored internally. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} \& \mbox{\hyperlink{class_terrain_object_manager_a3e1de183b4aaca5f75c4f756099fc393}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the instance of \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} (Singleton) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_terrain_object_manager_a1123203fe6b4a86085b6bb9daa36fbc4}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sly}{Sly}}\textquotesingle{}s hook into the delete section of the \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}}. Only called within \mbox{\hyperlink{class_sly}{Sly}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_terrain_object_manager_a1094d7140147a3bc910f400002c025eb}{default\+Path}}
+\begin{DoxyCompactList}\small\item\em The default path for the Heightmap. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_object_manager_ab349676b02a8fe4176c46ef06e87ce6c}{Storage\+Map}} \mbox{\hyperlink{class_terrain_object_manager_aef5031738864f689c21d43b5d3c58b83}{terrain\+Object\+Map}}
+\begin{DoxyCompactList}\small\item\em The map containing all terrain objects by Map\+Key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} $\ast$ \mbox{\hyperlink{class_terrain_object_manager_a3f8f9cf5a3abc56a29d0af72a4cb492b}{ptr\+Instance}} = nullptr
+\begin{DoxyCompactList}\small\item\em Pointer to a single \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} Instane. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_terrain_object_manager_abf36ff3c5f71effa85ee4c5c5c17f988}{Terrain\+Object\+Manager\+Attorney}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_terrain_object_manager_a3cf848b4c4b11eb06135d83bc91b7af7}\label{class_terrain_object_manager_a3cf848b4c4b11eb06135d83bc91b7af7}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!MapKey@{MapKey}}
+\index{MapKey@{MapKey}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{MapKey}{MapKey}}
+{\footnotesize\ttfamily std\+::string \mbox{\hyperlink{class_terrain_object_manager_a3cf848b4c4b11eb06135d83bc91b7af7}{Terrain\+Object\+Manager\+::\+Map\+Key}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing the map key associated with the object. 
+
+\mbox{\Hypertarget{class_terrain_object_manager_ab349676b02a8fe4176c46ef06e87ce6c}\label{class_terrain_object_manager_ab349676b02a8fe4176c46ef06e87ce6c}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!StorageMap@{StorageMap}}
+\index{StorageMap@{StorageMap}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{StorageMap}{StorageMap}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{class_terrain_object_manager_a3cf848b4c4b11eb06135d83bc91b7af7}{Map\+Key}}, \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$ $>$ \mbox{\hyperlink{class_terrain_object_manager_ab349676b02a8fe4176c46ef06e87ce6c}{Terrain\+Object\+Manager\+::\+Storage\+Map}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing the storage map. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_terrain_object_manager_aac7be644f7265c410905769500c680f9}\label{class_terrain_object_manager_aac7be644f7265c410905769500c680f9}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!TerrainObjectManager@{TerrainObjectManager}}
+\index{TerrainObjectManager@{TerrainObjectManager}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{TerrainObjectManager()}{TerrainObjectManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Terrain\+Object\+Manager\+::\+Terrain\+Object\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Default constructor. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_manager_aac7be644f7265c410905769500c680f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_manager_aaefd77ab4d51fbd8038abe13a8ea023a}\label{class_terrain_object_manager_aaefd77ab4d51fbd8038abe13a8ea023a}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!TerrainObjectManager@{TerrainObjectManager}}
+\index{TerrainObjectManager@{TerrainObjectManager}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{TerrainObjectManager()}{TerrainObjectManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Terrain\+Object\+Manager\+::\+Terrain\+Object\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_terrain_object_manager_a86d5d6ff2db3b028b87154f4fd64e87b}\label{class_terrain_object_manager_a86d5d6ff2db3b028b87154f4fd64e87b}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!TerrainObjectManager@{TerrainObjectManager}}
+\index{TerrainObjectManager@{TerrainObjectManager}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{TerrainObjectManager()}{TerrainObjectManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Terrain\+Object\+Manager\+::\+Terrain\+Object\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_terrain_object_manager_a45861ee3f3cfc36fcbe70452bed6eeb1}\label{class_terrain_object_manager_a45861ee3f3cfc36fcbe70452bed6eeb1}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!````~TerrainObjectManager@{$\sim$TerrainObjectManager}}
+\index{````~TerrainObjectManager@{$\sim$TerrainObjectManager}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$TerrainObjectManager()}{~TerrainObjectManager()}}
+{\footnotesize\ttfamily Terrain\+Object\+Manager\+::$\sim$\+Terrain\+Object\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_terrain_object_manager_a1123203fe6b4a86085b6bb9daa36fbc4}\label{class_terrain_object_manager_a1123203fe6b4a86085b6bb9daa36fbc4}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!Delete@{Delete}}
+\index{Delete@{Delete}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily static void Terrain\+Object\+Manager\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_sly}{Sly}}\textquotesingle{}s hook into the delete section of the \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}}. Only called within \mbox{\hyperlink{class_sly}{Sly}}. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_manager_a1123203fe6b4a86085b6bb9daa36fbc4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_manager_a1123203fe6b4a86085b6bb9daa36fbc4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_manager_ab712917ef91c1fe238454b82adfe8ab3}\label{class_terrain_object_manager_ab712917ef91c1fe238454b82adfe8ab3}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!Get@{Get}}
+\index{Get@{Get}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$ Terrain\+Object\+Manager\+::\+Get (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets a terrain object$\ast$ using the given key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to find the associated terrain object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Null if it fails, else a pointer to a \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_manager_ab712917ef91c1fe238454b82adfe8ab3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_manager_a3e1de183b4aaca5f75c4f756099fc393}\label{class_terrain_object_manager_a3e1de183b4aaca5f75c4f756099fc393}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!Instance@{Instance}}
+\index{Instance@{Instance}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} \& Terrain\+Object\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the instance of \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} (Singleton) 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_terrain_object_manager_a3e1de183b4aaca5f75c4f756099fc393_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_manager_a3e1de183b4aaca5f75c4f756099fc393_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_manager_ac557665da6faf6a79bbf8332e6c539dd}\label{class_terrain_object_manager_ac557665da6faf6a79bbf8332e6c539dd}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!Load@{Load}}
+\index{Load@{Load}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily static void Terrain\+Object\+Manager\+::\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{const char $\ast$}]{O\+Spath,  }\item[{std\+::string}]{Texture\+Key,  }\item[{float}]{side\+Length,  }\item[{float}]{max\+Height,  }\item[{int}]{repeatU,  }\item[{int}]{repeatV }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Call to load the heightmap and create a terrain\+Object that will be stored internally. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to associate the newly stored terrain object. \\
+\hline
+{\em O\+Spath} & Full pathname to the specified heightmap (note, Default\+Path is appended to the beginning). \\
+\hline
+{\em Texture\+Key} & The key to a texture stored within the \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} to place on the heightmap \\
+\hline
+{\em side\+Length} & Length of the side. \\
+\hline
+{\em max\+Height} & The maximum height. \\
+\hline
+{\em repeatU} & The repeat u. \\
+\hline
+{\em repeatV} & The repeat v. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_manager_ac557665da6faf6a79bbf8332e6c539dd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_manager_a5dc7301b3f777ec5ff41f4a4907d93e8}\label{class_terrain_object_manager_a5dc7301b3f777ec5ff41f4a4907d93e8}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!operator=@{operator=}}
+\index{operator=@{operator=}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}}\& Terrain\+Object\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_terrain_object_manager_a57370c35ca5af4c32e1a32bbcaba5210}\label{class_terrain_object_manager_a57370c35ca5af4c32e1a32bbcaba5210}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!operator=@{operator=}}
+\index{operator=@{operator=}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}}\& Terrain\+Object\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_terrain_object_manager_a79a157a5b7b7b3849e47da00205f8aee}\label{class_terrain_object_manager_a79a157a5b7b7b3849e47da00205f8aee}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!privDelete@{privDelete}}
+\index{privDelete@{privDelete}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{privDelete()}{privDelete()}}
+{\footnotesize\ttfamily void Terrain\+Object\+Manager\+::priv\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal call to delete pointer instance. Only to be called by the engine. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_manager_a79a157a5b7b7b3849e47da00205f8aee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_manager_a4d0359e3da3722914be5cff2dd25782b}\label{class_terrain_object_manager_a4d0359e3da3722914be5cff2dd25782b}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!privGet@{privGet}}
+\index{privGet@{privGet}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{privGet()}{privGet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$ Terrain\+Object\+Manager\+::priv\+Get (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal call to get the requested terrain object from the terrain\+Object\+Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key associated with the stored map\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Null if it fails, else a pointer to a \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}}. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_manager_a4d0359e3da3722914be5cff2dd25782b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_manager_ade6bd0330ca95f8eab122452e448f025}\label{class_terrain_object_manager_ade6bd0330ca95f8eab122452e448f025}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!privLoad@{privLoad}}
+\index{privLoad@{privLoad}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{privLoad()}{privLoad()}}
+{\footnotesize\ttfamily void Terrain\+Object\+Manager\+::priv\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{const char $\ast$}]{O\+Spath,  }\item[{std\+::string}]{Texture\+Key,  }\item[{float}]{side\+Length,  }\item[{float}]{max\+Height,  }\item[{int}]{repeatU,  }\item[{int}]{repeatV }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal call to load the heightmap and create a terrain\+Object that will be stored internally. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to associate the newly stored terrain object. \\
+\hline
+{\em O\+Spath} & Full pathname to the specified heightmap (note, Default\+Path is appended to the beginning). \\
+\hline
+{\em Texture\+Key} & A key to a texture that has already been stored within the \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}}. \\
+\hline
+{\em side\+Length} & Length of the side. \\
+\hline
+{\em max\+Height} & The maximum height. \\
+\hline
+{\em repeatU} & The repeat u. \\
+\hline
+{\em repeatV} & The repeat v. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_terrain_object_manager_ade6bd0330ca95f8eab122452e448f025_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_terrain_object_manager_abf36ff3c5f71effa85ee4c5c5c17f988}\label{class_terrain_object_manager_abf36ff3c5f71effa85ee4c5c5c17f988}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!TerrainObjectManagerAttorney@{TerrainObjectManagerAttorney}}
+\index{TerrainObjectManagerAttorney@{TerrainObjectManagerAttorney}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{TerrainObjectManagerAttorney}{TerrainObjectManagerAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_terrain_object_manager_attorney}{Terrain\+Object\+Manager\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_terrain_object_manager_a1094d7140147a3bc910f400002c025eb}\label{class_terrain_object_manager_a1094d7140147a3bc910f400002c025eb}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!defaultPath@{defaultPath}}
+\index{defaultPath@{defaultPath}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{defaultPath}{defaultPath}}
+{\footnotesize\ttfamily std\+::string Terrain\+Object\+Manager\+::default\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The default path for the Heightmap. 
+
+\mbox{\Hypertarget{class_terrain_object_manager_a3f8f9cf5a3abc56a29d0af72a4cb492b}\label{class_terrain_object_manager_a3f8f9cf5a3abc56a29d0af72a4cb492b}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} $\ast$ Terrain\+Object\+Manager\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Pointer to a single \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} Instane. 
+
+\mbox{\Hypertarget{class_terrain_object_manager_aef5031738864f689c21d43b5d3c58b83}\label{class_terrain_object_manager_aef5031738864f689c21d43b5d3c58b83}} 
+\index{TerrainObjectManager@{TerrainObjectManager}!terrainObjectMap@{terrainObjectMap}}
+\index{terrainObjectMap@{terrainObjectMap}!TerrainObjectManager@{TerrainObjectManager}}
+\doxysubsubsection{\texorpdfstring{terrainObjectMap}{terrainObjectMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_object_manager_ab349676b02a8fe4176c46ef06e87ce6c}{Storage\+Map}} Terrain\+Object\+Manager\+::terrain\+Object\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The map containing all terrain objects by Map\+Key. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_terrain_object_manager_8h}{Terrain\+Object\+Manager.\+h}}\item 
+\mbox{\hyperlink{_terrain_object_manager_8cpp}{Terrain\+Object\+Manager.\+cpp}}\end{DoxyCompactItemize}

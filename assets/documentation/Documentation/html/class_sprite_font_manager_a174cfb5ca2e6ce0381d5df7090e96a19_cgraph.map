@@ -1,0 +1,4 @@
+<map id="SpriteFontManager::Instance" name="SpriteFontManager::Instance">
+<area shape="rect" id="node1" title="Gets the instance of SpriteFontManager." alt="" coords="5,5,145,47"/>
+<area shape="rect" id="node2" href="$class_sprite_font_manager.html#ab5b2044dd6c59141389d5d9d7127f3f2" title="Default constructor." alt="" coords="193,5,333,47"/>
+</map>

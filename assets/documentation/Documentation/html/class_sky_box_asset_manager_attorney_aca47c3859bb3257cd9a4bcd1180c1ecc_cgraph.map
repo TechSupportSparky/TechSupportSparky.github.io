@@ -1,0 +1,7 @@
+<map id="SkyBoxAssetManagerAttorney::Delete" name="SkyBoxAssetManagerAttorney::Delete">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,207,80"/>
+<area shape="rect" id="node2" href="$class_sky_box_asset_manager.html#ab1387a06d42cbc4e099c931eb05f417e" title="Internal static call to delete internal assets." alt="" coords="255,39,407,80"/>
+<area shape="rect" id="node3" href="$class_sky_box_asset_manager.html#ada957918e4ed91420cb80d1493495cca" title="Gets the instance of SkyBoxAssetManager." alt="" coords="455,5,607,47"/>
+<area shape="rect" id="node5" href="$class_sky_box_asset_manager.html#a8682c5996263809b82c78a46af07c756" title="Internal call to delete the ptrInstance and cleanup assets." alt="" coords="455,71,607,112"/>
+<area shape="rect" id="node4" href="$class_sky_box_asset_manager.html#a2a647eab7f61ed83c89a778266cb7881" title="Default constructor." alt="" coords="655,5,815,47"/>
+</map>

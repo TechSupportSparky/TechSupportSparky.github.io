@@ -1,0 +1,393 @@
+\hypertarget{class_particle_effect}{}\doxysection{Particle\+Effect Class Reference}
+\label{class_particle_effect}\index{ParticleEffect@{ParticleEffect}}
+
+
+{\ttfamily \#include $<$Particle\+Effect.\+h$>$}
+
+
+
+Inheritance diagram for Particle\+Effect\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_particle_effect__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Particle\+Effect\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_particle_effect_adcfcd6ebe940cf54cb91af3543ed815d}{Particle\+Effect}} ()
+\item 
+\mbox{\hyperlink{class_particle_effect_a927030b34e67117555384f3b1edb5eb9}{Particle\+Effect}} (const \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} \&)=delete
+\item 
+\mbox{\hyperlink{class_particle_effect_a7fb0efae427dadc4e106cf4391a98732}{Particle\+Effect}} (\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} \& \mbox{\hyperlink{class_particle_effect_a80ced81cde21b65f68ed9973a7613c68}{operator=}} (const \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} \&)=delete
+\item 
+\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} \& \mbox{\hyperlink{class_particle_effect_ad7b128d1d918ab0f55a359ab5e7da9f4}{operator=}} (\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} \&\&)=delete
+\item 
+virtual \mbox{\hyperlink{class_particle_effect_ab65f29a87c70cd92e8108867349714d3}{$\sim$\+Particle\+Effect}} ()
+\item 
+void \mbox{\hyperlink{class_particle_effect_aa2776d54b77502e514de682c24d61534}{Spawn\+Particle\+Emitter}} (Vect \&pos, Matrix \&rot)
+\item 
+void \mbox{\hyperlink{class_particle_effect_a60c2490b245392b6fcf9924beec45d71}{Set\+Graphics\+Object}} (std\+::string model, std\+::string texture)
+\item 
+Graphics\+Object\+\_\+\+Texture\+Flat $\ast$ \mbox{\hyperlink{class_particle_effect_ae0bebea77e687896f4732008d2a6db25}{get\+Graphics\+Object}} ()
+\item 
+\mbox{\hyperlink{class_burst_type}{Burst\+Type}} $\ast$ \mbox{\hyperlink{class_particle_effect_ac0f1e6d23dc38be0ff49fe6abaffb38a}{Get\+Burst\+Type}} ()
+\item 
+float \mbox{\hyperlink{class_particle_effect_a406c9cfc43cb14166bfdbab722bffb2f}{Get\+Burst\+Frequency}} ()
+\item 
+float \mbox{\hyperlink{class_particle_effect_a142e880b4ecbb3b8e53a6e7adb942a0b}{Get\+Burst\+Life}} ()
+\item 
+int \mbox{\hyperlink{class_particle_effect_aba22e7f23bfcb563658c8a40f2536464}{Get\+Burst\+Count}} ()
+\item 
+float \mbox{\hyperlink{class_particle_effect_a2ceadbc932f897fdedea587baa54efe9}{Get\+Burst\+Speed}} ()
+\item 
+float \mbox{\hyperlink{class_particle_effect_a74068f7bfa5a6c29b2ccceea43505454}{Get\+Burst\+Scale}} ()
+\item 
+float \mbox{\hyperlink{class_particle_effect_ad251adfa6614db29ceba8d0895f4241b}{Get\+Min\+Angle}} ()
+\item 
+float \mbox{\hyperlink{class_particle_effect_abe72e93a22bfbe49888ab6b2e750771f}{Get\+Max\+Angle}} ()
+\item 
+float \mbox{\hyperlink{class_particle_effect_a447a54526ce16456f51b10cbd778d7f8}{Get\+Emitter\+Life}} ()
+\item 
+void \mbox{\hyperlink{class_particle_effect_a64543a3d33fbf0f50249bec8399c4c1b}{Set\+Current\+Emitter}} (\mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} $\ast$\mbox{\hyperlink{class_particle_effect_adf6b1d87e6b3810287001618b9d03e85}{curr\+Emitter}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_burst_type}{Burst\+Type}} $\ast$ \mbox{\hyperlink{class_particle_effect_a532e4685216b1de3f181fab7ab056bf7}{burst\+Type}}
+\item 
+Graphics\+Object\+\_\+\+Texture\+Flat $\ast$ \mbox{\hyperlink{class_particle_effect_ada5f258ac071cf88a7e480b288085966}{p\+Go}}
+\item 
+\mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} $\ast$ \mbox{\hyperlink{class_particle_effect_adf6b1d87e6b3810287001618b9d03e85}{curr\+Emitter}}
+\item 
+Model $\ast$ \mbox{\hyperlink{class_particle_effect_ae4444f2776382fa110d2e82bb31c732e}{p\+Model}}
+\item 
+Shader\+Object $\ast$ \mbox{\hyperlink{class_particle_effect_aff2f0d47f2ac560875f4f470899e2d57}{p\+Shader}}
+\item 
+Texture $\ast$ \mbox{\hyperlink{class_particle_effect_a45f24f9c12b681e951e47669513f2778}{p\+Tex}}
+\item 
+float \mbox{\hyperlink{class_particle_effect_aecc1937d463367c13d219292bbc135a3}{Emitter\+Life}}
+\item 
+float \mbox{\hyperlink{class_particle_effect_a7eab1a9b49a266daba93b941208e59e7}{burst\+Frequency}}
+\item 
+float \mbox{\hyperlink{class_particle_effect_ad4e255c0c7b8407706e8d966dd2a18ee}{burst\+Life}}
+\item 
+int \mbox{\hyperlink{class_particle_effect_a444fb9f2a7e3c28856fa7cf8902c1456}{burst\+Count}}
+\item 
+float \mbox{\hyperlink{class_particle_effect_a17cb543253a1bbffd16e5f4a1f9838ed}{burst\+Speed}}
+\item 
+float \mbox{\hyperlink{class_particle_effect_a0716901e9018911e0cf3d09949a438c7}{burst\+Scale}}
+\item 
+float \mbox{\hyperlink{class_particle_effect_ab18384256d910d64ddc33b48aa22bdac}{min\+Angle}}
+\item 
+float \mbox{\hyperlink{class_particle_effect_a54785dfaa5269ebad79dfe3afddd7a94}{max\+Angle}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_particle_effect_adcfcd6ebe940cf54cb91af3543ed815d}\label{class_particle_effect_adcfcd6ebe940cf54cb91af3543ed815d}} 
+\index{ParticleEffect@{ParticleEffect}!ParticleEffect@{ParticleEffect}}
+\index{ParticleEffect@{ParticleEffect}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{ParticleEffect()}{ParticleEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Particle\+Effect\+::\+Particle\+Effect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_particle_effect_a927030b34e67117555384f3b1edb5eb9}\label{class_particle_effect_a927030b34e67117555384f3b1edb5eb9}} 
+\index{ParticleEffect@{ParticleEffect}!ParticleEffect@{ParticleEffect}}
+\index{ParticleEffect@{ParticleEffect}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{ParticleEffect()}{ParticleEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Particle\+Effect\+::\+Particle\+Effect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_effect_a7fb0efae427dadc4e106cf4391a98732}\label{class_particle_effect_a7fb0efae427dadc4e106cf4391a98732}} 
+\index{ParticleEffect@{ParticleEffect}!ParticleEffect@{ParticleEffect}}
+\index{ParticleEffect@{ParticleEffect}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{ParticleEffect()}{ParticleEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Particle\+Effect\+::\+Particle\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_effect_ab65f29a87c70cd92e8108867349714d3}\label{class_particle_effect_ab65f29a87c70cd92e8108867349714d3}} 
+\index{ParticleEffect@{ParticleEffect}!````~ParticleEffect@{$\sim$ParticleEffect}}
+\index{````~ParticleEffect@{$\sim$ParticleEffect}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParticleEffect()}{~ParticleEffect()}}
+{\footnotesize\ttfamily Particle\+Effect\+::$\sim$\+Particle\+Effect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_particle_effect_aba22e7f23bfcb563658c8a40f2536464}\label{class_particle_effect_aba22e7f23bfcb563658c8a40f2536464}} 
+\index{ParticleEffect@{ParticleEffect}!GetBurstCount@{GetBurstCount}}
+\index{GetBurstCount@{GetBurstCount}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{GetBurstCount()}{GetBurstCount()}}
+{\footnotesize\ttfamily int Particle\+Effect\+::\+Get\+Burst\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_aba22e7f23bfcb563658c8a40f2536464_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_a406c9cfc43cb14166bfdbab722bffb2f}\label{class_particle_effect_a406c9cfc43cb14166bfdbab722bffb2f}} 
+\index{ParticleEffect@{ParticleEffect}!GetBurstFrequency@{GetBurstFrequency}}
+\index{GetBurstFrequency@{GetBurstFrequency}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{GetBurstFrequency()}{GetBurstFrequency()}}
+{\footnotesize\ttfamily float Particle\+Effect\+::\+Get\+Burst\+Frequency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_a406c9cfc43cb14166bfdbab722bffb2f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_a142e880b4ecbb3b8e53a6e7adb942a0b}\label{class_particle_effect_a142e880b4ecbb3b8e53a6e7adb942a0b}} 
+\index{ParticleEffect@{ParticleEffect}!GetBurstLife@{GetBurstLife}}
+\index{GetBurstLife@{GetBurstLife}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{GetBurstLife()}{GetBurstLife()}}
+{\footnotesize\ttfamily float Particle\+Effect\+::\+Get\+Burst\+Life (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_a142e880b4ecbb3b8e53a6e7adb942a0b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_a74068f7bfa5a6c29b2ccceea43505454}\label{class_particle_effect_a74068f7bfa5a6c29b2ccceea43505454}} 
+\index{ParticleEffect@{ParticleEffect}!GetBurstScale@{GetBurstScale}}
+\index{GetBurstScale@{GetBurstScale}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{GetBurstScale()}{GetBurstScale()}}
+{\footnotesize\ttfamily float Particle\+Effect\+::\+Get\+Burst\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_particle_effect_a74068f7bfa5a6c29b2ccceea43505454_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_a2ceadbc932f897fdedea587baa54efe9}\label{class_particle_effect_a2ceadbc932f897fdedea587baa54efe9}} 
+\index{ParticleEffect@{ParticleEffect}!GetBurstSpeed@{GetBurstSpeed}}
+\index{GetBurstSpeed@{GetBurstSpeed}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{GetBurstSpeed()}{GetBurstSpeed()}}
+{\footnotesize\ttfamily float Particle\+Effect\+::\+Get\+Burst\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_a2ceadbc932f897fdedea587baa54efe9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_ac0f1e6d23dc38be0ff49fe6abaffb38a}\label{class_particle_effect_ac0f1e6d23dc38be0ff49fe6abaffb38a}} 
+\index{ParticleEffect@{ParticleEffect}!GetBurstType@{GetBurstType}}
+\index{GetBurstType@{GetBurstType}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{GetBurstType()}{GetBurstType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_burst_type}{Burst\+Type}} $\ast$ Particle\+Effect\+::\+Get\+Burst\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_ac0f1e6d23dc38be0ff49fe6abaffb38a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_a447a54526ce16456f51b10cbd778d7f8}\label{class_particle_effect_a447a54526ce16456f51b10cbd778d7f8}} 
+\index{ParticleEffect@{ParticleEffect}!GetEmitterLife@{GetEmitterLife}}
+\index{GetEmitterLife@{GetEmitterLife}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{GetEmitterLife()}{GetEmitterLife()}}
+{\footnotesize\ttfamily float Particle\+Effect\+::\+Get\+Emitter\+Life (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_a447a54526ce16456f51b10cbd778d7f8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_ae0bebea77e687896f4732008d2a6db25}\label{class_particle_effect_ae0bebea77e687896f4732008d2a6db25}} 
+\index{ParticleEffect@{ParticleEffect}!getGraphicsObject@{getGraphicsObject}}
+\index{getGraphicsObject@{getGraphicsObject}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{getGraphicsObject()}{getGraphicsObject()}}
+{\footnotesize\ttfamily Graphics\+Object\+\_\+\+Texture\+Flat $\ast$ Particle\+Effect\+::get\+Graphics\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_ae0bebea77e687896f4732008d2a6db25_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_abe72e93a22bfbe49888ab6b2e750771f}\label{class_particle_effect_abe72e93a22bfbe49888ab6b2e750771f}} 
+\index{ParticleEffect@{ParticleEffect}!GetMaxAngle@{GetMaxAngle}}
+\index{GetMaxAngle@{GetMaxAngle}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{GetMaxAngle()}{GetMaxAngle()}}
+{\footnotesize\ttfamily float Particle\+Effect\+::\+Get\+Max\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_abe72e93a22bfbe49888ab6b2e750771f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_ad251adfa6614db29ceba8d0895f4241b}\label{class_particle_effect_ad251adfa6614db29ceba8d0895f4241b}} 
+\index{ParticleEffect@{ParticleEffect}!GetMinAngle@{GetMinAngle}}
+\index{GetMinAngle@{GetMinAngle}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{GetMinAngle()}{GetMinAngle()}}
+{\footnotesize\ttfamily float Particle\+Effect\+::\+Get\+Min\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_ad251adfa6614db29ceba8d0895f4241b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_a80ced81cde21b65f68ed9973a7613c68}\label{class_particle_effect_a80ced81cde21b65f68ed9973a7613c68}} 
+\index{ParticleEffect@{ParticleEffect}!operator=@{operator=}}
+\index{operator=@{operator=}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}}\& Particle\+Effect\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_effect_ad7b128d1d918ab0f55a359ab5e7da9f4}\label{class_particle_effect_ad7b128d1d918ab0f55a359ab5e7da9f4}} 
+\index{ParticleEffect@{ParticleEffect}!operator=@{operator=}}
+\index{operator=@{operator=}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}}\& Particle\+Effect\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_effect_a64543a3d33fbf0f50249bec8399c4c1b}\label{class_particle_effect_a64543a3d33fbf0f50249bec8399c4c1b}} 
+\index{ParticleEffect@{ParticleEffect}!SetCurrentEmitter@{SetCurrentEmitter}}
+\index{SetCurrentEmitter@{SetCurrentEmitter}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{SetCurrentEmitter()}{SetCurrentEmitter()}}
+{\footnotesize\ttfamily void Particle\+Effect\+::\+Set\+Current\+Emitter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} $\ast$}]{curr\+Emitter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_particle_effect_a60c2490b245392b6fcf9924beec45d71}\label{class_particle_effect_a60c2490b245392b6fcf9924beec45d71}} 
+\index{ParticleEffect@{ParticleEffect}!SetGraphicsObject@{SetGraphicsObject}}
+\index{SetGraphicsObject@{SetGraphicsObject}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{SetGraphicsObject()}{SetGraphicsObject()}}
+{\footnotesize\ttfamily void Particle\+Effect\+::\+Set\+Graphics\+Object (\begin{DoxyParamCaption}\item[{std\+::string}]{model,  }\item[{std\+::string}]{texture }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_a60c2490b245392b6fcf9924beec45d71_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_aa2776d54b77502e514de682c24d61534}\label{class_particle_effect_aa2776d54b77502e514de682c24d61534}} 
+\index{ParticleEffect@{ParticleEffect}!SpawnParticleEmitter@{SpawnParticleEmitter}}
+\index{SpawnParticleEmitter@{SpawnParticleEmitter}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{SpawnParticleEmitter()}{SpawnParticleEmitter()}}
+{\footnotesize\ttfamily void Particle\+Effect\+::\+Spawn\+Particle\+Emitter (\begin{DoxyParamCaption}\item[{Vect \&}]{pos,  }\item[{Matrix \&}]{rot }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_aa2776d54b77502e514de682c24d61534_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_particle_effect_a444fb9f2a7e3c28856fa7cf8902c1456}\label{class_particle_effect_a444fb9f2a7e3c28856fa7cf8902c1456}} 
+\index{ParticleEffect@{ParticleEffect}!burstCount@{burstCount}}
+\index{burstCount@{burstCount}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{burstCount}{burstCount}}
+{\footnotesize\ttfamily int Particle\+Effect\+::burst\+Count\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_particle_effect_a7eab1a9b49a266daba93b941208e59e7}\label{class_particle_effect_a7eab1a9b49a266daba93b941208e59e7}} 
+\index{ParticleEffect@{ParticleEffect}!burstFrequency@{burstFrequency}}
+\index{burstFrequency@{burstFrequency}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{burstFrequency}{burstFrequency}}
+{\footnotesize\ttfamily float Particle\+Effect\+::burst\+Frequency\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_particle_effect_ad4e255c0c7b8407706e8d966dd2a18ee}\label{class_particle_effect_ad4e255c0c7b8407706e8d966dd2a18ee}} 
+\index{ParticleEffect@{ParticleEffect}!burstLife@{burstLife}}
+\index{burstLife@{burstLife}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{burstLife}{burstLife}}
+{\footnotesize\ttfamily float Particle\+Effect\+::burst\+Life\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_particle_effect_a0716901e9018911e0cf3d09949a438c7}\label{class_particle_effect_a0716901e9018911e0cf3d09949a438c7}} 
+\index{ParticleEffect@{ParticleEffect}!burstScale@{burstScale}}
+\index{burstScale@{burstScale}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{burstScale}{burstScale}}
+{\footnotesize\ttfamily float Particle\+Effect\+::burst\+Scale\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_particle_effect_a17cb543253a1bbffd16e5f4a1f9838ed}\label{class_particle_effect_a17cb543253a1bbffd16e5f4a1f9838ed}} 
+\index{ParticleEffect@{ParticleEffect}!burstSpeed@{burstSpeed}}
+\index{burstSpeed@{burstSpeed}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{burstSpeed}{burstSpeed}}
+{\footnotesize\ttfamily float Particle\+Effect\+::burst\+Speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_particle_effect_a532e4685216b1de3f181fab7ab056bf7}\label{class_particle_effect_a532e4685216b1de3f181fab7ab056bf7}} 
+\index{ParticleEffect@{ParticleEffect}!burstType@{burstType}}
+\index{burstType@{burstType}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{burstType}{burstType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_burst_type}{Burst\+Type}}$\ast$ Particle\+Effect\+::burst\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_particle_effect_adf6b1d87e6b3810287001618b9d03e85}\label{class_particle_effect_adf6b1d87e6b3810287001618b9d03e85}} 
+\index{ParticleEffect@{ParticleEffect}!currEmitter@{currEmitter}}
+\index{currEmitter@{currEmitter}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{currEmitter}{currEmitter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}}$\ast$ Particle\+Effect\+::curr\+Emitter\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_particle_effect_aecc1937d463367c13d219292bbc135a3}\label{class_particle_effect_aecc1937d463367c13d219292bbc135a3}} 
+\index{ParticleEffect@{ParticleEffect}!EmitterLife@{EmitterLife}}
+\index{EmitterLife@{EmitterLife}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{EmitterLife}{EmitterLife}}
+{\footnotesize\ttfamily float Particle\+Effect\+::\+Emitter\+Life\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_particle_effect_a54785dfaa5269ebad79dfe3afddd7a94}\label{class_particle_effect_a54785dfaa5269ebad79dfe3afddd7a94}} 
+\index{ParticleEffect@{ParticleEffect}!maxAngle@{maxAngle}}
+\index{maxAngle@{maxAngle}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{maxAngle}{maxAngle}}
+{\footnotesize\ttfamily float Particle\+Effect\+::max\+Angle\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_particle_effect_ab18384256d910d64ddc33b48aa22bdac}\label{class_particle_effect_ab18384256d910d64ddc33b48aa22bdac}} 
+\index{ParticleEffect@{ParticleEffect}!minAngle@{minAngle}}
+\index{minAngle@{minAngle}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{minAngle}{minAngle}}
+{\footnotesize\ttfamily float Particle\+Effect\+::min\+Angle\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_particle_effect_ada5f258ac071cf88a7e480b288085966}\label{class_particle_effect_ada5f258ac071cf88a7e480b288085966}} 
+\index{ParticleEffect@{ParticleEffect}!pGo@{pGo}}
+\index{pGo@{pGo}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{pGo}{pGo}}
+{\footnotesize\ttfamily Graphics\+Object\+\_\+\+Texture\+Flat$\ast$ Particle\+Effect\+::p\+Go\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_particle_effect_ae4444f2776382fa110d2e82bb31c732e}\label{class_particle_effect_ae4444f2776382fa110d2e82bb31c732e}} 
+\index{ParticleEffect@{ParticleEffect}!pModel@{pModel}}
+\index{pModel@{pModel}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{pModel}{pModel}}
+{\footnotesize\ttfamily Model$\ast$ Particle\+Effect\+::p\+Model\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_particle_effect_aff2f0d47f2ac560875f4f470899e2d57}\label{class_particle_effect_aff2f0d47f2ac560875f4f470899e2d57}} 
+\index{ParticleEffect@{ParticleEffect}!pShader@{pShader}}
+\index{pShader@{pShader}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{pShader}{pShader}}
+{\footnotesize\ttfamily Shader\+Object$\ast$ Particle\+Effect\+::p\+Shader\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_particle_effect_a45f24f9c12b681e951e47669513f2778}\label{class_particle_effect_a45f24f9c12b681e951e47669513f2778}} 
+\index{ParticleEffect@{ParticleEffect}!pTex@{pTex}}
+\index{pTex@{pTex}!ParticleEffect@{ParticleEffect}}
+\doxysubsubsection{\texorpdfstring{pTex}{pTex}}
+{\footnotesize\ttfamily Texture$\ast$ Particle\+Effect\+::p\+Tex\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_particle_effect_8h}{Particle\+Effect.\+h}}\item 
+\mbox{\hyperlink{_particle_effect_8cpp}{Particle\+Effect.\+cpp}}\end{DoxyCompactItemize}

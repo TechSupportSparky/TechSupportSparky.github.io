@@ -1,0 +1,7 @@
+<map id="Getting Started" name="Getting Started">
+<area shape="rect" id="node1" href="$group___l_o_a_d___a_l_l___r_e_s_o_u_r_c_e_s.html" title="Every game starts with loading assets." alt="" coords="164,5,297,31"/>
+<area shape="rect" id="node2" title="Engine provided functions to setup the game." alt="" coords="5,80,116,105"/>
+<area shape="rect" id="node3" href="$group___g_a_m_e_o_b_j_e_c_t.html" title="The entities of your game" alt="" coords="183,55,278,80"/>
+<area shape="rect" id="node4" href="$group___s_c_e_n_e.html" title="The place where everything lives." alt="" coords="201,104,260,129"/>
+<area shape="rect" id="node5" href="$group___c_o_n_s_o_l_e___t_u_t_o_r_i_a_l.html" title="How to setup and initialize the developer console." alt="" coords="185,153,277,179"/>
+</map>

@@ -1,0 +1,26 @@
+\hypertarget{group___s_h_a_d_e_r___m_a_n_a_g_e_r}{}\doxysection{Shader\+Manager}
+\label{group___s_h_a_d_e_r___m_a_n_a_g_e_r}\index{ShaderManager@{ShaderManager}}
+Collaboration diagram for Shader\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{group___s_h_a_d_e_r___m_a_n_a_g_e_r}
+\end{center}
+\end{figure}
+The shader manager provides a way for you to load in shaders into your games. Each shader is associated with a \char`\"{}key\char`\"{} that can be used to refer back to the loaded shader.
+
+Below is an example of loading in a few custom shaders. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{_shader_manager_8h}{ShaderManager.h}}"}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_sly_a2f502a5aa9cd07dcc29858a104827213}{Sly::LoadAllResources}}() \{}
+\DoxyCodeLine{    \mbox{\hyperlink{class_shader_manager_a7b8e7d53f2af123307c0c6bd4c137501}{ShaderManager::Load}}(\textcolor{stringliteral}{"TextureLightRender"}, \textcolor{stringliteral}{"textureLightRender"});}
+\DoxyCodeLine{    \mbox{\hyperlink{class_shader_manager_a7b8e7d53f2af123307c0c6bd4c137501}{ShaderManager::Load}}(\textcolor{stringliteral}{"ColorConstantRender"}, \textcolor{stringliteral}{"colorConstantRender"});}
+\DoxyCodeLine{    \mbox{\hyperlink{class_shader_manager_a7b8e7d53f2af123307c0c6bd4c137501}{ShaderManager::Load}}(\textcolor{stringliteral}{"Sprite"}, \textcolor{stringliteral}{"spriteRender"});}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+Later on, referring back to the shader is achieved by the associated key. For example, she shader is loaded into the following
+
+See the full class for Shader\+Manager \mbox{\hyperlink{class_shader_manager}{here}}. 

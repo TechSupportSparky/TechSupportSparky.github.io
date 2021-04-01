@@ -1,0 +1,377 @@
+\hypertarget{class_sky_box_asset_manager}{}\doxysection{Sky\+Box\+Asset\+Manager Class Reference}
+\label{class_sky_box_asset_manager}\index{SkyBoxAssetManager@{SkyBoxAssetManager}}
+
+
+{\ttfamily \#include $<$Sky\+Box\+Asset\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Sky\+Box\+Asset\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sky_box_asset_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_sky_box_asset_manager_ae218b02df9566e72788dac1f2b32d851}{Load}} (std\+::string key, std\+::string texture\+Key, float len, float y\+Trans)
+\begin{DoxyCompactList}\small\item\em Loads a new skybox and stores the associated key for later retrieval. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_sky_box}{Sky\+Box}} $\ast$ \mbox{\hyperlink{class_sky_box_asset_manager_a82fde9259aa58fbe56be38c3ea97b5e3}{Get}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Gets a sky box$\ast$ using the given key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::string \mbox{\hyperlink{class_sky_box_asset_manager_a40ddc1510cfda59ad108a7a374c699c8}{Map\+Key}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the key for the skybox. \end{DoxyCompactList}\item 
+typedef std\+::map$<$ \mbox{\hyperlink{class_sky_box_asset_manager_a40ddc1510cfda59ad108a7a374c699c8}{Map\+Key}}, \mbox{\hyperlink{class_sky_box}{Sky\+Box}} $\ast$ $>$ \mbox{\hyperlink{class_sky_box_asset_manager_a1497b49523d3d4e679efa6edef0ac9ec}{Storage\+Map}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the key and skybox association. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sky_box_asset_manager_a2a647eab7f61ed83c89a778266cb7881}{Sky\+Box\+Asset\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sky_box_asset_manager_a188b6a9a21d0070b3630e7c1116c7f19}{Sky\+Box\+Asset\+Manager}} (const \mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sky_box_asset_manager_a089c82e09d6a67519391eba52060fb0f}{Sky\+Box\+Asset\+Manager}} (\mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}} \& \mbox{\hyperlink{class_sky_box_asset_manager_aabd76153e99e5587cf5cbdf1572e3e0e}{operator=}} (const \mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}} \& \mbox{\hyperlink{class_sky_box_asset_manager_ab6e1145ff5916569057c8a465ec301db}{operator=}} (\mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sky_box_asset_manager_a550864dcc570d8402036eb3e5385015a}{$\sim$\+Sky\+Box\+Asset\+Manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sky_box_asset_manager_a8682c5996263809b82c78a46af07c756}{priv\+Delete}} ()
+\begin{DoxyCompactList}\small\item\em Internal call to delete the ptr\+Instance and cleanup assets. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sky_box}{Sky\+Box}} $\ast$ \mbox{\hyperlink{class_sky_box_asset_manager_ae7b2347198cb70376ae851e34db77192}{priv\+Get}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Internal call to get the associated skybox. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sky_box_asset_manager_a74205ebdbdfc8bf232f2212c7c38bb3c}{priv\+Load}} (std\+::string key, std\+::string texture\+Key, float len, float y\+Trans)
+\begin{DoxyCompactList}\small\item\em Private call to construct and store a skybox asset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}} \& \mbox{\hyperlink{class_sky_box_asset_manager_ada957918e4ed91420cb80d1493495cca}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the instance of \mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sky_box_asset_manager_ab1387a06d42cbc4e099c931eb05f417e}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em Internal static call to delete internal assets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sky_box_asset_manager_a1497b49523d3d4e679efa6edef0ac9ec}{Storage\+Map}} \mbox{\hyperlink{class_sky_box_asset_manager_af2115e93ab9f5528736aeab80c8e3b46}{skybox\+Object\+Map}}
+\begin{DoxyCompactList}\small\item\em The actual map of skybox objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}} $\ast$ \mbox{\hyperlink{class_sky_box_asset_manager_a6624dc7beaf155de4b6df7abdc07804c}{ptr\+Instance}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_sky_box_asset_manager_ad8c7aa483ebdb35945c0f7a4986ec767}{Sky\+Box\+Asset\+Manager\+Attorney}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_sky_box_asset_manager_a40ddc1510cfda59ad108a7a374c699c8}\label{class_sky_box_asset_manager_a40ddc1510cfda59ad108a7a374c699c8}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!MapKey@{MapKey}}
+\index{MapKey@{MapKey}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{MapKey}{MapKey}}
+{\footnotesize\ttfamily std\+::string \mbox{\hyperlink{class_sky_box_asset_manager_a40ddc1510cfda59ad108a7a374c699c8}{Sky\+Box\+Asset\+Manager\+::\+Map\+Key}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing the key for the skybox. 
+
+\mbox{\Hypertarget{class_sky_box_asset_manager_a1497b49523d3d4e679efa6edef0ac9ec}\label{class_sky_box_asset_manager_a1497b49523d3d4e679efa6edef0ac9ec}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!StorageMap@{StorageMap}}
+\index{StorageMap@{StorageMap}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{StorageMap}{StorageMap}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{class_sky_box_asset_manager_a40ddc1510cfda59ad108a7a374c699c8}{Map\+Key}}, \mbox{\hyperlink{class_sky_box}{Sky\+Box}} $\ast$ $>$ \mbox{\hyperlink{class_sky_box_asset_manager_a1497b49523d3d4e679efa6edef0ac9ec}{Sky\+Box\+Asset\+Manager\+::\+Storage\+Map}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing the key and skybox association. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sky_box_asset_manager_a2a647eab7f61ed83c89a778266cb7881}\label{class_sky_box_asset_manager_a2a647eab7f61ed83c89a778266cb7881}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{SkyBoxAssetManager()}{SkyBoxAssetManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Sky\+Box\+Asset\+Manager\+::\+Sky\+Box\+Asset\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Default constructor. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sky_box_asset_manager_a2a647eab7f61ed83c89a778266cb7881_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sky_box_asset_manager_a188b6a9a21d0070b3630e7c1116c7f19}\label{class_sky_box_asset_manager_a188b6a9a21d0070b3630e7c1116c7f19}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{SkyBoxAssetManager()}{SkyBoxAssetManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Sky\+Box\+Asset\+Manager\+::\+Sky\+Box\+Asset\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_sky_box_asset_manager_a089c82e09d6a67519391eba52060fb0f}\label{class_sky_box_asset_manager_a089c82e09d6a67519391eba52060fb0f}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{SkyBoxAssetManager()}{SkyBoxAssetManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Sky\+Box\+Asset\+Manager\+::\+Sky\+Box\+Asset\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_sky_box_asset_manager_a550864dcc570d8402036eb3e5385015a}\label{class_sky_box_asset_manager_a550864dcc570d8402036eb3e5385015a}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!````~SkyBoxAssetManager@{$\sim$SkyBoxAssetManager}}
+\index{````~SkyBoxAssetManager@{$\sim$SkyBoxAssetManager}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$SkyBoxAssetManager()}{~SkyBoxAssetManager()}}
+{\footnotesize\ttfamily Sky\+Box\+Asset\+Manager\+::$\sim$\+Sky\+Box\+Asset\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sky_box_asset_manager_ab1387a06d42cbc4e099c931eb05f417e}\label{class_sky_box_asset_manager_ab1387a06d42cbc4e099c931eb05f417e}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!Delete@{Delete}}
+\index{Delete@{Delete}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily static void Sky\+Box\+Asset\+Manager\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Internal static call to delete internal assets. 
+
+This is only to be called by the engine, not the user. ~\newline
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sky_box_asset_manager_ab1387a06d42cbc4e099c931eb05f417e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sky_box_asset_manager_ab1387a06d42cbc4e099c931eb05f417e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sky_box_asset_manager_a82fde9259aa58fbe56be38c3ea97b5e3}\label{class_sky_box_asset_manager_a82fde9259aa58fbe56be38c3ea97b5e3}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!Get@{Get}}
+\index{Get@{Get}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_sky_box}{Sky\+Box}} $\ast$ Sky\+Box\+Asset\+Manager\+::\+Get (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets a sky box$\ast$ using the given key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to get.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Null if it fails, else a pointer to a \mbox{\hyperlink{class_sky_box}{Sky\+Box}}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sky_box_asset_manager_a82fde9259aa58fbe56be38c3ea97b5e3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sky_box_asset_manager_ada957918e4ed91420cb80d1493495cca}\label{class_sky_box_asset_manager_ada957918e4ed91420cb80d1493495cca}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!Instance@{Instance}}
+\index{Instance@{Instance}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}} \& Sky\+Box\+Asset\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the instance of \mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}}. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sky_box_asset_manager_ada957918e4ed91420cb80d1493495cca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sky_box_asset_manager_ada957918e4ed91420cb80d1493495cca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sky_box_asset_manager_ae218b02df9566e72788dac1f2b32d851}\label{class_sky_box_asset_manager_ae218b02df9566e72788dac1f2b32d851}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!Load@{Load}}
+\index{Load@{Load}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily static void Sky\+Box\+Asset\+Manager\+::\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{std\+::string}]{texture\+Key,  }\item[{float}]{len,  }\item[{float}]{y\+Trans }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Loads a new skybox and stores the associated key for later retrieval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key. \\
+\hline
+{\em texture\+Key} & The texture key. \\
+\hline
+{\em len} & The length. \\
+\hline
+{\em y\+Trans} & The transaction. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sky_box_asset_manager_ae218b02df9566e72788dac1f2b32d851_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sky_box_asset_manager_aabd76153e99e5587cf5cbdf1572e3e0e}\label{class_sky_box_asset_manager_aabd76153e99e5587cf5cbdf1572e3e0e}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!operator=@{operator=}}
+\index{operator=@{operator=}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}}\& Sky\+Box\+Asset\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_sky_box_asset_manager_ab6e1145ff5916569057c8a465ec301db}\label{class_sky_box_asset_manager_ab6e1145ff5916569057c8a465ec301db}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!operator=@{operator=}}
+\index{operator=@{operator=}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}}\& Sky\+Box\+Asset\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_sky_box_asset_manager_a8682c5996263809b82c78a46af07c756}\label{class_sky_box_asset_manager_a8682c5996263809b82c78a46af07c756}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!privDelete@{privDelete}}
+\index{privDelete@{privDelete}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{privDelete()}{privDelete()}}
+{\footnotesize\ttfamily void Sky\+Box\+Asset\+Manager\+::priv\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal call to delete the ptr\+Instance and cleanup assets. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sky_box_asset_manager_a8682c5996263809b82c78a46af07c756_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sky_box_asset_manager_ae7b2347198cb70376ae851e34db77192}\label{class_sky_box_asset_manager_ae7b2347198cb70376ae851e34db77192}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!privGet@{privGet}}
+\index{privGet@{privGet}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{privGet()}{privGet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sky_box}{Sky\+Box}} $\ast$ Sky\+Box\+Asset\+Manager\+::priv\+Get (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal call to get the associated skybox. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key stored to associate the skybox.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Null if it fails, else a pointer to a \mbox{\hyperlink{class_sky_box}{Sky\+Box}}. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sky_box_asset_manager_ae7b2347198cb70376ae851e34db77192_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sky_box_asset_manager_a74205ebdbdfc8bf232f2212c7c38bb3c}\label{class_sky_box_asset_manager_a74205ebdbdfc8bf232f2212c7c38bb3c}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!privLoad@{privLoad}}
+\index{privLoad@{privLoad}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{privLoad()}{privLoad()}}
+{\footnotesize\ttfamily void Sky\+Box\+Asset\+Manager\+::priv\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{std\+::string}]{texture\+Key,  }\item[{float}]{len,  }\item[{float}]{y\+Trans }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private call to construct and store a skybox asset. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key. \\
+\hline
+{\em texture\+Key} & The texture key. \\
+\hline
+{\em len} & The length. \\
+\hline
+{\em y\+Trans} & The transaction. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_sky_box_asset_manager_a74205ebdbdfc8bf232f2212c7c38bb3c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_sky_box_asset_manager_ad8c7aa483ebdb35945c0f7a4986ec767}\label{class_sky_box_asset_manager_ad8c7aa483ebdb35945c0f7a4986ec767}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!SkyBoxAssetManagerAttorney@{SkyBoxAssetManagerAttorney}}
+\index{SkyBoxAssetManagerAttorney@{SkyBoxAssetManagerAttorney}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{SkyBoxAssetManagerAttorney}{SkyBoxAssetManagerAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_sky_box_asset_manager_attorney}{Sky\+Box\+Asset\+Manager\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sky_box_asset_manager_a6624dc7beaf155de4b6df7abdc07804c}\label{class_sky_box_asset_manager_a6624dc7beaf155de4b6df7abdc07804c}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sky_box_asset_manager}{Sky\+Box\+Asset\+Manager}} $\ast$ Sky\+Box\+Asset\+Manager\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sky_box_asset_manager_af2115e93ab9f5528736aeab80c8e3b46}\label{class_sky_box_asset_manager_af2115e93ab9f5528736aeab80c8e3b46}} 
+\index{SkyBoxAssetManager@{SkyBoxAssetManager}!skyboxObjectMap@{skyboxObjectMap}}
+\index{skyboxObjectMap@{skyboxObjectMap}!SkyBoxAssetManager@{SkyBoxAssetManager}}
+\doxysubsubsection{\texorpdfstring{skyboxObjectMap}{skyboxObjectMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sky_box_asset_manager_a1497b49523d3d4e679efa6edef0ac9ec}{Storage\+Map}} Sky\+Box\+Asset\+Manager\+::skybox\+Object\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The actual map of skybox objects. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sky_box_asset_manager_8h}{Sky\+Box\+Asset\+Manager.\+h}}\item 
+\mbox{\hyperlink{_sky_box_asset_manager_8cpp}{Sky\+Box\+Asset\+Manager.\+cpp}}\end{DoxyCompactItemize}

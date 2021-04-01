@@ -1,0 +1,25 @@
+\hypertarget{group___t_e_x_t_u_r_e___m_a_n_a_g_e_r}{}\doxysection{Texture\+Manager}
+\label{group___t_e_x_t_u_r_e___m_a_n_a_g_e_r}\index{TextureManager@{TextureManager}}
+Collaboration diagram for Texture\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{group___t_e_x_t_u_r_e___m_a_n_a_g_e_r}
+\end{center}
+\end{figure}
+The texture manager provide a way for you to load textures into your games. You can either load in simple color data defined by R\+G\+BA values, or a custom texture formatted in the T\+A\+R\+GA R\+AW (Truevision T\+GA) format A\+KA .tga. These textures are loaded in first with a \char`\"{}key\char`\"{} value to be referred to later and their associated texture.
+
+Below is an example of loading both a custom texture and a simple texel texture\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{_texture_manager_8h}{TextureManager.h}}"}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_sly_a2f502a5aa9cd07dcc29858a104827213}{Sly::LoadAllResources}}() \{}
+\DoxyCodeLine{    \mbox{\hyperlink{class_texture_manager_a3005389b043a4022a7f36458d84696ac}{TextureManager::Load}}(\textcolor{stringliteral}{"red"}, \textcolor{charliteral}{'F'}, \textcolor{charliteral}{'0'}, \textcolor{charliteral}{'0'}, \textcolor{charliteral}{'F'});}
+\DoxyCodeLine{    \mbox{\hyperlink{class_texture_manager_a3005389b043a4022a7f36458d84696ac}{TextureManager::Load}}(\textcolor{stringliteral}{"Space\_Frigate"}, \textcolor{stringliteral}{"space\_frigate.tga"});}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+See the full class for Texture\+Manager \mbox{\hyperlink{class_texture_manager}{here}}. 

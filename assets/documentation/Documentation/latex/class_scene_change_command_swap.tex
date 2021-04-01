@@ -1,0 +1,219 @@
+\hypertarget{class_scene_change_command_swap}{}\doxysection{Scene\+Change\+Command\+Swap Class Reference}
+\label{class_scene_change_command_swap}\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+
+
+{\ttfamily \#include $<$Scene\+Change\+Command\+Swap.\+h$>$}
+
+
+
+Inheritance diagram for Scene\+Change\+Command\+Swap\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{class_scene_change_command_swap__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Scene\+Change\+Command\+Swap\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_scene_change_command_swap__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_change_command_swap_a6e25cb4c0a659d0c19671754350946ac}{Scene\+Change\+Command\+Swap}} ()
+\item 
+\mbox{\hyperlink{class_scene_change_command_swap_a21454085c9507b438608a0d5215e903e}{Scene\+Change\+Command\+Swap}} (const \mbox{\hyperlink{class_scene_change_command_swap}{Scene\+Change\+Command\+Swap}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_change_command_swap_ad8fa622f0bf4c3f0ab8f2086a3e02250}{Scene\+Change\+Command\+Swap}} (\mbox{\hyperlink{class_scene_change_command_swap}{Scene\+Change\+Command\+Swap}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_change_command_swap}{Scene\+Change\+Command\+Swap}} \& \mbox{\hyperlink{class_scene_change_command_swap_ad8b76f529c88faa7d26a193ef204707e}{operator=}} (const \mbox{\hyperlink{class_scene_change_command_swap}{Scene\+Change\+Command\+Swap}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_change_command_swap}{Scene\+Change\+Command\+Swap}} \& \mbox{\hyperlink{class_scene_change_command_swap_a771701f2a28d0d1f3313cced3f026180}{operator=}} (\mbox{\hyperlink{class_scene_change_command_swap}{Scene\+Change\+Command\+Swap}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_scene_change_command_swap_a543e0eee92697848ac104174f632220a}{$\sim$\+Scene\+Change\+Command\+Swap}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_change_command_swap_aa417174a0049a91907ba22b1ebf7cecd}{Scene\+Change\+Command\+Swap}} (\mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} $\ast$input\+Mgr, \mbox{\hyperlink{class_scene}{Scene}} $\ast$the\+Scene)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_change_command_swap_a9a47ff1daa88a1d782007eb3094b0753}{Initialize}} (\mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} $\ast$input\+Mgr, \mbox{\hyperlink{class_scene}{Scene}} $\ast$the\+Scene)
+\begin{DoxyCompactList}\small\item\em Initializes this. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_change_command_swap_a3ee022de55997954b84e2e2e43e421c4}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes this command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} $\ast$ \mbox{\hyperlink{class_scene_change_command_swap_a30871f4177bf4ed8c01447a4e580babf}{scene\+Mgr}}
+\begin{DoxyCompactList}\small\item\em Manager for scene. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene}{Scene}} $\ast$ \mbox{\hyperlink{class_scene_change_command_swap_a38f189ba67c46667174f766f3a273ffd}{stored\+Scene}}
+\begin{DoxyCompactList}\small\item\em The stored scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_scene_change_command_swap_a30165f059417f4ed57a7ab134669d7e4}{Scene\+Manager\+Attorney}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scene_change_command_swap_a6e25cb4c0a659d0c19671754350946ac}\label{class_scene_change_command_swap_a6e25cb4c0a659d0c19671754350946ac}} 
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\doxysubsubsection{\texorpdfstring{SceneChangeCommandSwap()}{SceneChangeCommandSwap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Scene\+Change\+Command\+Swap\+::\+Scene\+Change\+Command\+Swap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_change_command_swap_a21454085c9507b438608a0d5215e903e}\label{class_scene_change_command_swap_a21454085c9507b438608a0d5215e903e}} 
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\doxysubsubsection{\texorpdfstring{SceneChangeCommandSwap()}{SceneChangeCommandSwap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Scene\+Change\+Command\+Swap\+::\+Scene\+Change\+Command\+Swap (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_scene_change_command_swap}{Scene\+Change\+Command\+Swap}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Default constructor. 
+
+Copy constructor \mbox{\Hypertarget{class_scene_change_command_swap_ad8fa622f0bf4c3f0ab8f2086a3e02250}\label{class_scene_change_command_swap_ad8fa622f0bf4c3f0ab8f2086a3e02250}} 
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\doxysubsubsection{\texorpdfstring{SceneChangeCommandSwap()}{SceneChangeCommandSwap()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Scene\+Change\+Command\+Swap\+::\+Scene\+Change\+Command\+Swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_change_command_swap}{Scene\+Change\+Command\+Swap}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_scene_change_command_swap_a543e0eee92697848ac104174f632220a}\label{class_scene_change_command_swap_a543e0eee92697848ac104174f632220a}} 
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!````~SceneChangeCommandSwap@{$\sim$SceneChangeCommandSwap}}
+\index{````~SceneChangeCommandSwap@{$\sim$SceneChangeCommandSwap}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\doxysubsubsection{\texorpdfstring{$\sim$SceneChangeCommandSwap()}{~SceneChangeCommandSwap()}}
+{\footnotesize\ttfamily virtual Scene\+Change\+Command\+Swap\+::$\sim$\+Scene\+Change\+Command\+Swap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+\mbox{\Hypertarget{class_scene_change_command_swap_aa417174a0049a91907ba22b1ebf7cecd}\label{class_scene_change_command_swap_aa417174a0049a91907ba22b1ebf7cecd}} 
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\doxysubsubsection{\texorpdfstring{SceneChangeCommandSwap()}{SceneChangeCommandSwap()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Scene\+Change\+Command\+Swap\+::\+Scene\+Change\+Command\+Swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} $\ast$}]{input\+Mgr,  }\item[{\mbox{\hyperlink{class_scene}{Scene}} $\ast$}]{the\+Scene }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em input\+Mgr} & If non-\/null, manager for input. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em the\+Scene} & If non-\/null, the scene. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_change_command_swap_a3ee022de55997954b84e2e2e43e421c4}\label{class_scene_change_command_swap_a3ee022de55997954b84e2e2e43e421c4}} 
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!execute@{execute}}
+\index{execute@{execute}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Scene\+Change\+Command\+Swap\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes this command. 
+
+
+
+Implements \mbox{\hyperlink{class_command_base_a8977bf07d93b93c7d3c96cce558e9d45}{Command\+Base}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_change_command_swap_a3ee022de55997954b84e2e2e43e421c4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_change_command_swap_a9a47ff1daa88a1d782007eb3094b0753}\label{class_scene_change_command_swap_a9a47ff1daa88a1d782007eb3094b0753}} 
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Scene\+Change\+Command\+Swap\+::\+Initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} $\ast$}]{input\+Mgr,  }\item[{\mbox{\hyperlink{class_scene}{Scene}} $\ast$}]{the\+Scene }\end{DoxyParamCaption})}
+
+
+
+Initializes this. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em input\+Mgr} & If non-\/null, manager for input. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em the\+Scene} & If non-\/null, the scene. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_change_command_swap_a9a47ff1daa88a1d782007eb3094b0753_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_change_command_swap_ad8b76f529c88faa7d26a193ef204707e}\label{class_scene_change_command_swap_ad8b76f529c88faa7d26a193ef204707e}} 
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!operator=@{operator=}}
+\index{operator=@{operator=}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_change_command_swap}{Scene\+Change\+Command\+Swap}}\& Scene\+Change\+Command\+Swap\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_scene_change_command_swap}{Scene\+Change\+Command\+Swap}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_scene_change_command_swap_a771701f2a28d0d1f3313cced3f026180}\label{class_scene_change_command_swap_a771701f2a28d0d1f3313cced3f026180}} 
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!operator=@{operator=}}
+\index{operator=@{operator=}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_change_command_swap}{Scene\+Change\+Command\+Swap}}\& Scene\+Change\+Command\+Swap\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_change_command_swap}{Scene\+Change\+Command\+Swap}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_scene_change_command_swap_a30165f059417f4ed57a7ab134669d7e4}\label{class_scene_change_command_swap_a30165f059417f4ed57a7ab134669d7e4}} 
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!SceneManagerAttorney@{SceneManagerAttorney}}
+\index{SceneManagerAttorney@{SceneManagerAttorney}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\doxysubsubsection{\texorpdfstring{SceneManagerAttorney}{SceneManagerAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_scene_manager_attorney}{Scene\+Manager\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_scene_change_command_swap_a30871f4177bf4ed8c01447a4e580babf}\label{class_scene_change_command_swap_a30871f4177bf4ed8c01447a4e580babf}} 
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!sceneMgr@{sceneMgr}}
+\index{sceneMgr@{sceneMgr}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\doxysubsubsection{\texorpdfstring{sceneMgr}{sceneMgr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}}$\ast$ Scene\+Change\+Command\+Swap\+::scene\+Mgr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Manager for scene. 
+
+\mbox{\Hypertarget{class_scene_change_command_swap_a38f189ba67c46667174f766f3a273ffd}\label{class_scene_change_command_swap_a38f189ba67c46667174f766f3a273ffd}} 
+\index{SceneChangeCommandSwap@{SceneChangeCommandSwap}!storedScene@{storedScene}}
+\index{storedScene@{storedScene}!SceneChangeCommandSwap@{SceneChangeCommandSwap}}
+\doxysubsubsection{\texorpdfstring{storedScene}{storedScene}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene}{Scene}}$\ast$ Scene\+Change\+Command\+Swap\+::stored\+Scene\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The stored scene. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_scene_change_command_swap_8h}{Scene\+Change\+Command\+Swap.\+h}}\item 
+\mbox{\hyperlink{_scene_change_command_swap_8cpp}{Scene\+Change\+Command\+Swap.\+cpp}}\end{DoxyCompactItemize}

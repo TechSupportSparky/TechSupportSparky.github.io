@@ -1,0 +1,12 @@
+<map id="UpdatableAttorney::Registration::SceneDeregistration" name="UpdatableAttorney::Registration::SceneDeregistration">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,221,80"/>
+<area shape="rect" id="node2" href="$class_updatable.html#a37eb54a213b8e1f0aac995234662276a" title="Scene deregistration." alt="" coords="269,46,475,73"/>
+<area shape="rect" id="node3" href="$class_updatable_manager.html#a419ef4f4ff3ee179f3f77e1a8752d696" title="Deregisters this." alt="" coords="523,15,720,42"/>
+<area shape="rect" id="node6" href="$class_scene_attorney_1_1_updatable_registration.html#adc0ad1efa898756cfb4b80390c1bc6fa" title=" " alt="" coords="530,68,713,109"/>
+<area shape="rect" id="node4" href="$class_updatable_attorney_1_1_game_loop.html#ab0a64c27350bb6aada98136a524f967e" title=" " alt="" coords="769,5,947,47"/>
+<area shape="rect" id="node5" href="$class_updatable.html#aa7753a453c785e0cbcc9e90aba892fec" title="Gets storage reference." alt="" coords="1009,13,1182,39"/>
+<area shape="rect" id="node7" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="768,71,948,112"/>
+<area shape="rect" id="node8" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="1012,70,1179,97"/>
+<area shape="rect" id="node10" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="996,121,1195,163"/>
+<area shape="rect" id="node9" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="1243,70,1447,97"/>
+</map>

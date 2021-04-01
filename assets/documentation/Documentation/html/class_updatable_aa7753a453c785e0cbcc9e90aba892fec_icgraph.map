@@ -1,0 +1,8 @@
+<map id="Updatable::GetStorageRef" name="Updatable::GetStorageRef">
+<area shape="rect" id="node1" title="Gets storage reference." alt="" coords="1245,13,1419,39"/>
+<area shape="rect" id="node2" href="$class_updatable_attorney_1_1_game_loop.html#ab0a64c27350bb6aada98136a524f967e" title=" " alt="" coords="1019,5,1197,47"/>
+<area shape="rect" id="node3" href="$class_updatable_manager.html#a419ef4f4ff3ee179f3f77e1a8752d696" title="Deregisters this." alt="" coords="773,13,971,39"/>
+<area shape="rect" id="node4" href="$class_updatable.html#a37eb54a213b8e1f0aac995234662276a" title="Scene deregistration." alt="" coords="520,13,725,39"/>
+<area shape="rect" id="node5" href="$class_updatable_attorney_1_1_registration.html#a6cca32b870a48b62281daa9b4b00dae5" title=" " alt="" coords="256,5,472,47"/>
+<area shape="rect" id="node6" href="$class_update_deregistration_command.html#aaa0a7465af5e126e151e3be5aa463d0d" title="Executes this" alt="" coords="5,5,208,47"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="SpriteString::SpriteString" name="SpriteString::SpriteString">
+<area shape="rect" id="node1" title="Specialized Constructor." alt="" coords="5,56,172,83"/>
+<area shape="rect" id="node2" href="$class_sprite_font.html#a0ef72714c70fdd755a1b0d1a5a097d0d" title=" " alt="" coords="220,5,365,32"/>
+<area shape="rect" id="node3" href="$class_sly_sprite.html#a4b813e0dab3a057af7ddd9e724f33352" title="Gets the sprite height." alt="" coords="222,56,363,83"/>
+<area shape="rect" id="node4" href="$class_sly_sprite.html#a3c9f659541632e02a6bda85e6f6be188" title="Gets the sprite&#39;s width." alt="" coords="223,107,362,133"/>
+</map>

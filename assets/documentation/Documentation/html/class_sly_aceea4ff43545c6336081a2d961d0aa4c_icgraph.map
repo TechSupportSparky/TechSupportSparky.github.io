@@ -1,0 +1,4 @@
+<map id="Sly::privSetWidthHeight" name="Sly::privSetWidthHeight">
+<area shape="rect" id="node1" title="Internal set Width and Height, passes values to Azul framework." alt="" coords="193,5,352,32"/>
+<area shape="rect" id="node2" href="$class_sly.html#ada6f9f785a466b07836faec0edbc7e86" title="Sets width and height of the main window." alt="" coords="5,5,145,32"/>
+</map>

@@ -1,0 +1,218 @@
+\hypertarget{class_sky_box}{}\doxysection{Sky\+Box Class Reference}
+\label{class_sky_box}\index{SkyBox@{SkyBox}}
+
+
+{\ttfamily \#include $<$Sky\+Box.\+h$>$}
+
+
+
+Inheritance diagram for Sky\+Box\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sky_box__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sky\+Box\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sky_box__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sky_box_a984fbaa7cd6c7cfcadf942d91bc2fb41}{Sky\+Box}} ()=delete
+\item 
+\mbox{\hyperlink{class_sky_box_a80b71ce28609faab0d752fd6672d82c5}{Sky\+Box}} (const \mbox{\hyperlink{class_sky_box}{Sky\+Box}} \&)=delete
+\item 
+\mbox{\hyperlink{class_sky_box_a1509d1db027ed0ef3c2248e90a51e082}{Sky\+Box}} (\mbox{\hyperlink{class_sky_box}{Sky\+Box}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_sky_box}{Sky\+Box}} \& \mbox{\hyperlink{class_sky_box_a762b7372a52518a29b27aca29d6e2f87}{operator=}} (const \mbox{\hyperlink{class_sky_box}{Sky\+Box}} \&)=delete
+\item 
+\mbox{\hyperlink{class_sky_box}{Sky\+Box}} \& \mbox{\hyperlink{class_sky_box_a8b79633d009c58e44dbd83e8ae288c94}{operator=}} (\mbox{\hyperlink{class_sky_box}{Sky\+Box}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_sky_box_aef6a9b7d384358fd2095d1e171d8a997}{$\sim$\+Sky\+Box}} ()
+\item 
+\mbox{\hyperlink{class_sky_box_a5dc2ead789a121a00a8f4b0b6c3740e1}{Sky\+Box}} (float len, float ytrans, std\+::string texture\+Key)
+\item 
+Matrix \mbox{\hyperlink{class_sky_box_a0d82888739b8442c05bffe4a9e933a0f}{get\+World\+Mat}} ()
+\item 
+void \mbox{\hyperlink{class_sky_box_a078a7619976627c8fabb61407fadae2f}{Set\+World}} (Matrix world)
+\item 
+void \mbox{\hyperlink{class_sky_box_a24c47bf0093c8d7beb665be3ad1d87fb}{Setup\+Draw}} ()
+\item 
+void \mbox{\hyperlink{class_sky_box_ae1073ea8db390142aaadc5fc18217bdd}{Terminate\+Draw}} ()
+\item 
+virtual void \mbox{\hyperlink{class_sky_box_ab9db46f2e34683cae517ba97a44aee9e}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em Pure virtual function draw. Derived objects must override. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Graphics\+Object\+\_\+\+Texture\+Flat $\ast$ \mbox{\hyperlink{class_sky_box_afb33135a45c0afcb6b9e2bed2dad1d9d}{p\+G\+Obj\+FT}}
+\item 
+Model $\ast$ \mbox{\hyperlink{class_sky_box_a4ff92bcfa5547fe0e8d763e456cb75ab}{p\+Sky\+Box}}
+\item 
+Matrix \mbox{\hyperlink{class_sky_box_ae7c3cef5aa8d393c4537cdc672ad6811}{world\+Matrix}}
+\item 
+Vertex\+Stride\+\_\+\+V\+UN $\ast$ \mbox{\hyperlink{class_sky_box_a395ab6ddb4dc73a555be90fc8d03d101}{p\+Verts}}
+\item 
+Triangle\+Index $\ast$ \mbox{\hyperlink{class_sky_box_a20c80211b59cc7c61e6fd5ec5881f0ef}{p\+Tri\+List}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sky_box_a984fbaa7cd6c7cfcadf942d91bc2fb41}\label{class_sky_box_a984fbaa7cd6c7cfcadf942d91bc2fb41}} 
+\index{SkyBox@{SkyBox}!SkyBox@{SkyBox}}
+\index{SkyBox@{SkyBox}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{SkyBox()}{SkyBox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Sky\+Box\+::\+Sky\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_sky_box_a80b71ce28609faab0d752fd6672d82c5}\label{class_sky_box_a80b71ce28609faab0d752fd6672d82c5}} 
+\index{SkyBox@{SkyBox}!SkyBox@{SkyBox}}
+\index{SkyBox@{SkyBox}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{SkyBox()}{SkyBox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Sky\+Box\+::\+Sky\+Box (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sky_box}{Sky\+Box}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_sky_box_a1509d1db027ed0ef3c2248e90a51e082}\label{class_sky_box_a1509d1db027ed0ef3c2248e90a51e082}} 
+\index{SkyBox@{SkyBox}!SkyBox@{SkyBox}}
+\index{SkyBox@{SkyBox}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{SkyBox()}{SkyBox()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Sky\+Box\+::\+Sky\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sky_box}{Sky\+Box}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_sky_box_aef6a9b7d384358fd2095d1e171d8a997}\label{class_sky_box_aef6a9b7d384358fd2095d1e171d8a997}} 
+\index{SkyBox@{SkyBox}!````~SkyBox@{$\sim$SkyBox}}
+\index{````~SkyBox@{$\sim$SkyBox}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{$\sim$SkyBox()}{~SkyBox()}}
+{\footnotesize\ttfamily Sky\+Box\+::$\sim$\+Sky\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sky_box_a5dc2ead789a121a00a8f4b0b6c3740e1}\label{class_sky_box_a5dc2ead789a121a00a8f4b0b6c3740e1}} 
+\index{SkyBox@{SkyBox}!SkyBox@{SkyBox}}
+\index{SkyBox@{SkyBox}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{SkyBox()}{SkyBox()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Sky\+Box\+::\+Sky\+Box (\begin{DoxyParamCaption}\item[{float}]{len,  }\item[{float}]{ytrans,  }\item[{std\+::string}]{texture\+Key }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sky_box_a5dc2ead789a121a00a8f4b0b6c3740e1_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sky_box_ab9db46f2e34683cae517ba97a44aee9e}\label{class_sky_box_ab9db46f2e34683cae517ba97a44aee9e}} 
+\index{SkyBox@{SkyBox}!Draw@{Draw}}
+\index{Draw@{Draw}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Sky\+Box\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Pure virtual function draw. Derived objects must override. 
+
+
+
+Implements \mbox{\hyperlink{class_drawable_a8d5d4d2f2bca40d931c1b8b762be8d42}{Drawable}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sky_box_ab9db46f2e34683cae517ba97a44aee9e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sky_box_a0d82888739b8442c05bffe4a9e933a0f}\label{class_sky_box_a0d82888739b8442c05bffe4a9e933a0f}} 
+\index{SkyBox@{SkyBox}!getWorldMat@{getWorldMat}}
+\index{getWorldMat@{getWorldMat}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{getWorldMat()}{getWorldMat()}}
+{\footnotesize\ttfamily Matrix Sky\+Box\+::get\+World\+Mat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sky_box_a762b7372a52518a29b27aca29d6e2f87}\label{class_sky_box_a762b7372a52518a29b27aca29d6e2f87}} 
+\index{SkyBox@{SkyBox}!operator=@{operator=}}
+\index{operator=@{operator=}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sky_box}{Sky\+Box}}\& Sky\+Box\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sky_box}{Sky\+Box}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_sky_box_a8b79633d009c58e44dbd83e8ae288c94}\label{class_sky_box_a8b79633d009c58e44dbd83e8ae288c94}} 
+\index{SkyBox@{SkyBox}!operator=@{operator=}}
+\index{operator=@{operator=}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sky_box}{Sky\+Box}}\& Sky\+Box\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sky_box}{Sky\+Box}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_sky_box_a24c47bf0093c8d7beb665be3ad1d87fb}\label{class_sky_box_a24c47bf0093c8d7beb665be3ad1d87fb}} 
+\index{SkyBox@{SkyBox}!SetupDraw@{SetupDraw}}
+\index{SetupDraw@{SetupDraw}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{SetupDraw()}{SetupDraw()}}
+{\footnotesize\ttfamily void Sky\+Box\+::\+Setup\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sky_box_a24c47bf0093c8d7beb665be3ad1d87fb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sky_box_a078a7619976627c8fabb61407fadae2f}\label{class_sky_box_a078a7619976627c8fabb61407fadae2f}} 
+\index{SkyBox@{SkyBox}!SetWorld@{SetWorld}}
+\index{SetWorld@{SetWorld}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{SetWorld()}{SetWorld()}}
+{\footnotesize\ttfamily void Sky\+Box\+::\+Set\+World (\begin{DoxyParamCaption}\item[{Matrix}]{world }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sky_box_ae1073ea8db390142aaadc5fc18217bdd}\label{class_sky_box_ae1073ea8db390142aaadc5fc18217bdd}} 
+\index{SkyBox@{SkyBox}!TerminateDraw@{TerminateDraw}}
+\index{TerminateDraw@{TerminateDraw}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{TerminateDraw()}{TerminateDraw()}}
+{\footnotesize\ttfamily void Sky\+Box\+::\+Terminate\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sky_box_ae1073ea8db390142aaadc5fc18217bdd_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sky_box_afb33135a45c0afcb6b9e2bed2dad1d9d}\label{class_sky_box_afb33135a45c0afcb6b9e2bed2dad1d9d}} 
+\index{SkyBox@{SkyBox}!pGObjFT@{pGObjFT}}
+\index{pGObjFT@{pGObjFT}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{pGObjFT}{pGObjFT}}
+{\footnotesize\ttfamily Graphics\+Object\+\_\+\+Texture\+Flat$\ast$ Sky\+Box\+::p\+G\+Obj\+FT\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sky_box_a4ff92bcfa5547fe0e8d763e456cb75ab}\label{class_sky_box_a4ff92bcfa5547fe0e8d763e456cb75ab}} 
+\index{SkyBox@{SkyBox}!pSkyBox@{pSkyBox}}
+\index{pSkyBox@{pSkyBox}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{pSkyBox}{pSkyBox}}
+{\footnotesize\ttfamily Model$\ast$ Sky\+Box\+::p\+Sky\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sky_box_a20c80211b59cc7c61e6fd5ec5881f0ef}\label{class_sky_box_a20c80211b59cc7c61e6fd5ec5881f0ef}} 
+\index{SkyBox@{SkyBox}!pTriList@{pTriList}}
+\index{pTriList@{pTriList}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{pTriList}{pTriList}}
+{\footnotesize\ttfamily Triangle\+Index$\ast$ Sky\+Box\+::p\+Tri\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sky_box_a395ab6ddb4dc73a555be90fc8d03d101}\label{class_sky_box_a395ab6ddb4dc73a555be90fc8d03d101}} 
+\index{SkyBox@{SkyBox}!pVerts@{pVerts}}
+\index{pVerts@{pVerts}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{pVerts}{pVerts}}
+{\footnotesize\ttfamily Vertex\+Stride\+\_\+\+V\+UN$\ast$ Sky\+Box\+::p\+Verts\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sky_box_ae7c3cef5aa8d393c4537cdc672ad6811}\label{class_sky_box_ae7c3cef5aa8d393c4537cdc672ad6811}} 
+\index{SkyBox@{SkyBox}!worldMatrix@{worldMatrix}}
+\index{worldMatrix@{worldMatrix}!SkyBox@{SkyBox}}
+\doxysubsubsection{\texorpdfstring{worldMatrix}{worldMatrix}}
+{\footnotesize\ttfamily Matrix Sky\+Box\+::world\+Matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sky_box_8h}{Sky\+Box.\+h}}\item 
+\mbox{\hyperlink{_sky_box_8cpp}{Sky\+Box.\+cpp}}\end{DoxyCompactItemize}

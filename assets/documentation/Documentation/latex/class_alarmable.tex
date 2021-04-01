@@ -1,0 +1,452 @@
+\hypertarget{class_alarmable}{}\doxysection{Alarmable Class Reference}
+\label{class_alarmable}\index{Alarmable@{Alarmable}}
+
+
+{\ttfamily \#include $<$Alarmable.\+h$>$}
+
+
+
+Inheritance diagram for Alarmable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_alarmable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alarmable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_alarmable_1_1_registration_data}{Registration\+Data}}
+\begin{DoxyCompactList}\small\item\em The registration data for alarms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_alarmable_a6290ab21a53be8e8918cd2e3a00be1d9}{Alarmable}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_alarmable_a483f4d82bb05a8d2dcb4c55e33e6a15d}{Alarmable}} (const \mbox{\hyperlink{class_alarmable}{Alarmable}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_alarmable_a3b5cb1a65824901d07523c42f22c2671}{Alarmable}} (\mbox{\hyperlink{class_alarmable}{Alarmable}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_alarmable}{Alarmable}} \& \mbox{\hyperlink{class_alarmable_a84eb3765f6b9333f92e184113ec6e08d}{operator=}} (const \mbox{\hyperlink{class_alarmable}{Alarmable}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_alarmable}{Alarmable}} \& \mbox{\hyperlink{class_alarmable_aa1ddfcd7e90574757d31bf4ae83c07ab}{operator=}} (\mbox{\hyperlink{class_alarmable}{Alarmable}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_alarmable_ade26467bf487e12d0f9c23aa03ea8136}{$\sim$\+Alarmable}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_alarmable_aa3ad5019037da19edac3857d3e3436ba}{Submit\+Alarm\+Registration}} (int id, float t)
+\begin{DoxyCompactList}\small\item\em Submit alarm registration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alarmable_aeadd2948f45d754a6b97910044270f26}{Submit\+Alarm\+Registration}} (\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}} id, float t)
+\begin{DoxyCompactList}\small\item\em Submit alarm registration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alarmable_a2359d1b4e7fca6e6a019c7b1ce36e292}{Submit\+Alarm\+Deregistration}} (int id)
+\begin{DoxyCompactList}\small\item\em Submit alarm deregistration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alarmable_a53debebf4464c3e7c421e82a0fa21fe0}{Submit\+Alarm\+Deregistration}} (\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}} id)
+\begin{DoxyCompactList}\small\item\em Submit alarm deregistration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_alarmable_accbf4b8e8f2fa14fd7803706e268f904}{Alarm0}} ()
+\item 
+virtual void \mbox{\hyperlink{class_alarmable_a345658b4526baaf3207278d9237f7dca}{Alarm1}} ()
+\item 
+virtual void \mbox{\hyperlink{class_alarmable_acbedfd8613edd1830974dec08f19f3eb}{Alarm2}} ()
+\item 
+virtual void \mbox{\hyperlink{class_alarmable_ac0749e14bef102bc2e7c20f7ff10d852}{Alarm3}} ()
+\item 
+virtual void \mbox{\hyperlink{class_alarmable_a781b447832cbbb5782b0a50d52bb0a68}{Alarm4}} ()
+\item 
+\mbox{\hyperlink{class_alarmable_manager_a01dfa733b70a9ca2734d1f0cb1d4b238}{Alarmable\+Manager\+::\+Storage\+Entry\+Ref}} \mbox{\hyperlink{class_alarmable_ac60d0f613cb380bbe8d1d3eb05cee94e}{Get\+Storage\+Ref}} (\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}} input\+Id)
+\begin{DoxyCompactList}\small\item\em Gets storage reference. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alarmable_ad8f6202e8c5591ed93bf1f570bbfec62}{Alarm\+Registration}} (\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}} id, float t)
+\begin{DoxyCompactList}\small\item\em Alarm registration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alarmable_ad2da9852c51da5d0696d73fd69f647d2}{Alarm\+Deregistration}} (\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}} id)
+\begin{DoxyCompactList}\small\item\em Alarm deregistration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alarmable_a043d268abd8f4ec1a6825c9f6b2ade77}{Trigger\+Alarm}} (\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}} id)
+\begin{DoxyCompactList}\small\item\em Trigger alarm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_alarmable_1_1_registration_data}{Registration\+Data}} \mbox{\hyperlink{class_alarmable_a5d0b493940967c804a3310017d4ff8ca}{Reg\+Data}} \mbox{[}\mbox{\hyperlink{class_alarmable_manager_a150cd5139908865b6c02232612a17d34}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+N\+U\+M\+B\+ER}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Registration data array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_alarmable_a5798513125bb062b41d0573592b61ae1}{Alarmable\+Attorney}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_alarmable_a6290ab21a53be8e8918cd2e3a00be1d9}\label{class_alarmable_a6290ab21a53be8e8918cd2e3a00be1d9}} 
+\index{Alarmable@{Alarmable}!Alarmable@{Alarmable}}
+\index{Alarmable@{Alarmable}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{Alarmable()}{Alarmable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Alarmable\+::\+Alarmable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_alarmable_a483f4d82bb05a8d2dcb4c55e33e6a15d}\label{class_alarmable_a483f4d82bb05a8d2dcb4c55e33e6a15d}} 
+\index{Alarmable@{Alarmable}!Alarmable@{Alarmable}}
+\index{Alarmable@{Alarmable}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{Alarmable()}{Alarmable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Alarmable\+::\+Alarmable (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_alarmable}{Alarmable}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_alarmable_a3b5cb1a65824901d07523c42f22c2671}\label{class_alarmable_a3b5cb1a65824901d07523c42f22c2671}} 
+\index{Alarmable@{Alarmable}!Alarmable@{Alarmable}}
+\index{Alarmable@{Alarmable}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{Alarmable()}{Alarmable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Alarmable\+::\+Alarmable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alarmable}{Alarmable}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_alarmable_ade26467bf487e12d0f9c23aa03ea8136}\label{class_alarmable_ade26467bf487e12d0f9c23aa03ea8136}} 
+\index{Alarmable@{Alarmable}!````~Alarmable@{$\sim$Alarmable}}
+\index{````~Alarmable@{$\sim$Alarmable}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{$\sim$Alarmable()}{~Alarmable()}}
+{\footnotesize\ttfamily Alarmable\+::$\sim$\+Alarmable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_alarmable_accbf4b8e8f2fa14fd7803706e268f904}\label{class_alarmable_accbf4b8e8f2fa14fd7803706e268f904}} 
+\index{Alarmable@{Alarmable}!Alarm0@{Alarm0}}
+\index{Alarm0@{Alarm0}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{Alarm0()}{Alarm0()}}
+{\footnotesize\ttfamily void Alarmable\+::\+Alarm0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_particle_emitter_a700fc45f5c9db613808f54dc330c50e4}{Particle\+Emitter}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_accbf4b8e8f2fa14fd7803706e268f904_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarmable_a345658b4526baaf3207278d9237f7dca}\label{class_alarmable_a345658b4526baaf3207278d9237f7dca}} 
+\index{Alarmable@{Alarmable}!Alarm1@{Alarm1}}
+\index{Alarm1@{Alarm1}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{Alarm1()}{Alarm1()}}
+{\footnotesize\ttfamily void Alarmable\+::\+Alarm1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_particle_emitter_a8f5a95c78acd538a86c3788e8feeaa4a}{Particle\+Emitter}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_a345658b4526baaf3207278d9237f7dca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarmable_acbedfd8613edd1830974dec08f19f3eb}\label{class_alarmable_acbedfd8613edd1830974dec08f19f3eb}} 
+\index{Alarmable@{Alarmable}!Alarm2@{Alarm2}}
+\index{Alarm2@{Alarm2}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{Alarm2()}{Alarm2()}}
+{\footnotesize\ttfamily void Alarmable\+::\+Alarm2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_acbedfd8613edd1830974dec08f19f3eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarmable_ac0749e14bef102bc2e7c20f7ff10d852}\label{class_alarmable_ac0749e14bef102bc2e7c20f7ff10d852}} 
+\index{Alarmable@{Alarmable}!Alarm3@{Alarm3}}
+\index{Alarm3@{Alarm3}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{Alarm3()}{Alarm3()}}
+{\footnotesize\ttfamily void Alarmable\+::\+Alarm3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_ac0749e14bef102bc2e7c20f7ff10d852_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarmable_a781b447832cbbb5782b0a50d52bb0a68}\label{class_alarmable_a781b447832cbbb5782b0a50d52bb0a68}} 
+\index{Alarmable@{Alarmable}!Alarm4@{Alarm4}}
+\index{Alarm4@{Alarm4}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{Alarm4()}{Alarm4()}}
+{\footnotesize\ttfamily void Alarmable\+::\+Alarm4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_a781b447832cbbb5782b0a50d52bb0a68_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarmable_ad2da9852c51da5d0696d73fd69f647d2}\label{class_alarmable_ad2da9852c51da5d0696d73fd69f647d2}} 
+\index{Alarmable@{Alarmable}!AlarmDeregistration@{AlarmDeregistration}}
+\index{AlarmDeregistration@{AlarmDeregistration}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{AlarmDeregistration()}{AlarmDeregistration()}}
+{\footnotesize\ttfamily void Alarmable\+::\+Alarm\+Deregistration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Alarm deregistration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The alarm identifier. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_ad2da9852c51da5d0696d73fd69f647d2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_ad2da9852c51da5d0696d73fd69f647d2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarmable_ad8f6202e8c5591ed93bf1f570bbfec62}\label{class_alarmable_ad8f6202e8c5591ed93bf1f570bbfec62}} 
+\index{Alarmable@{Alarmable}!AlarmRegistration@{AlarmRegistration}}
+\index{AlarmRegistration@{AlarmRegistration}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{AlarmRegistration()}{AlarmRegistration()}}
+{\footnotesize\ttfamily void Alarmable\+::\+Alarm\+Registration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}}}]{id,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Alarm registration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier. \\
+\hline
+{\em t} & A float, delta t until trigger time. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_ad8f6202e8c5591ed93bf1f570bbfec62_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_ad8f6202e8c5591ed93bf1f570bbfec62_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarmable_ac60d0f613cb380bbe8d1d3eb05cee94e}\label{class_alarmable_ac60d0f613cb380bbe8d1d3eb05cee94e}} 
+\index{Alarmable@{Alarmable}!GetStorageRef@{GetStorageRef}}
+\index{GetStorageRef@{GetStorageRef}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{GetStorageRef()}{GetStorageRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_alarmable_manager_a01dfa733b70a9ca2734d1f0cb1d4b238}{Alarmable\+Manager\+::\+Storage\+Entry\+Ref}} Alarmable\+::\+Get\+Storage\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}}}]{input\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gets storage reference. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Id} & Identifier for the alarm.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The storage reference for the specified alarm. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_ac60d0f613cb380bbe8d1d3eb05cee94e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarmable_aa1ddfcd7e90574757d31bf4ae83c07ab}\label{class_alarmable_aa1ddfcd7e90574757d31bf4ae83c07ab}} 
+\index{Alarmable@{Alarmable}!operator=@{operator=}}
+\index{operator=@{operator=}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_alarmable}{Alarmable}}\& Alarmable\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alarmable}{Alarmable}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_alarmable_a84eb3765f6b9333f92e184113ec6e08d}\label{class_alarmable_a84eb3765f6b9333f92e184113ec6e08d}} 
+\index{Alarmable@{Alarmable}!operator=@{operator=}}
+\index{operator=@{operator=}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_alarmable}{Alarmable}}\& Alarmable\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_alarmable}{Alarmable}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_alarmable_a53debebf4464c3e7c421e82a0fa21fe0}\label{class_alarmable_a53debebf4464c3e7c421e82a0fa21fe0}} 
+\index{Alarmable@{Alarmable}!SubmitAlarmDeregistration@{SubmitAlarmDeregistration}}
+\index{SubmitAlarmDeregistration@{SubmitAlarmDeregistration}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{SubmitAlarmDeregistration()}{SubmitAlarmDeregistration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Alarmable\+::\+Submit\+Alarm\+Deregistration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Submit alarm deregistration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The alarm identifier. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_a53debebf4464c3e7c421e82a0fa21fe0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarmable_a2359d1b4e7fca6e6a019c7b1ce36e292}\label{class_alarmable_a2359d1b4e7fca6e6a019c7b1ce36e292}} 
+\index{Alarmable@{Alarmable}!SubmitAlarmDeregistration@{SubmitAlarmDeregistration}}
+\index{SubmitAlarmDeregistration@{SubmitAlarmDeregistration}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{SubmitAlarmDeregistration()}{SubmitAlarmDeregistration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Alarmable\+::\+Submit\+Alarm\+Deregistration (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Submit alarm deregistration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The alarm identifier. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_alarmable_aeadd2948f45d754a6b97910044270f26}\label{class_alarmable_aeadd2948f45d754a6b97910044270f26}} 
+\index{Alarmable@{Alarmable}!SubmitAlarmRegistration@{SubmitAlarmRegistration}}
+\index{SubmitAlarmRegistration@{SubmitAlarmRegistration}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{SubmitAlarmRegistration()}{SubmitAlarmRegistration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Alarmable\+::\+Submit\+Alarm\+Registration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}}}]{id,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Submit alarm registration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The alarm identifier. \\
+\hline
+{\em t} & A float, delta t for alarm trigger time. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_aeadd2948f45d754a6b97910044270f26_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarmable_aa3ad5019037da19edac3857d3e3436ba}\label{class_alarmable_aa3ad5019037da19edac3857d3e3436ba}} 
+\index{Alarmable@{Alarmable}!SubmitAlarmRegistration@{SubmitAlarmRegistration}}
+\index{SubmitAlarmRegistration@{SubmitAlarmRegistration}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{SubmitAlarmRegistration()}{SubmitAlarmRegistration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Alarmable\+::\+Submit\+Alarm\+Registration (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Submit alarm registration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The alarm number. \\
+\hline
+{\em t} & A float, delta t for alarm trigger time. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_aa3ad5019037da19edac3857d3e3436ba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarmable_a043d268abd8f4ec1a6825c9f6b2ade77}\label{class_alarmable_a043d268abd8f4ec1a6825c9f6b2ade77}} 
+\index{Alarmable@{Alarmable}!TriggerAlarm@{TriggerAlarm}}
+\index{TriggerAlarm@{TriggerAlarm}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{TriggerAlarm()}{TriggerAlarm()}}
+{\footnotesize\ttfamily void Alarmable\+::\+Trigger\+Alarm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Trigger alarm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The alarm identifier. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_alarmable_a043d268abd8f4ec1a6825c9f6b2ade77_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_a043d268abd8f4ec1a6825c9f6b2ade77_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_alarmable_a5798513125bb062b41d0573592b61ae1}\label{class_alarmable_a5798513125bb062b41d0573592b61ae1}} 
+\index{Alarmable@{Alarmable}!AlarmableAttorney@{AlarmableAttorney}}
+\index{AlarmableAttorney@{AlarmableAttorney}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{AlarmableAttorney}{AlarmableAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_alarmable_attorney}{Alarmable\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_alarmable_a5d0b493940967c804a3310017d4ff8ca}\label{class_alarmable_a5d0b493940967c804a3310017d4ff8ca}} 
+\index{Alarmable@{Alarmable}!RegData@{RegData}}
+\index{RegData@{RegData}!Alarmable@{Alarmable}}
+\doxysubsubsection{\texorpdfstring{RegData}{RegData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_alarmable_1_1_registration_data}{Registration\+Data}} Alarmable\+::\+Reg\+Data\mbox{[}\mbox{\hyperlink{class_alarmable_manager_a150cd5139908865b6c02232612a17d34}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+N\+U\+M\+B\+ER}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Registration data array. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_alarmable_8h}{Alarmable.\+h}}\item 
+\mbox{\hyperlink{_alarmable_8cpp}{Alarmable.\+cpp}}\end{DoxyCompactItemize}

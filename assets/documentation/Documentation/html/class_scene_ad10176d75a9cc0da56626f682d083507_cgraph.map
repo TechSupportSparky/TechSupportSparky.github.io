@@ -1,0 +1,7 @@
+<map id="Scene::Scene" name="Scene::Scene">
+<area shape="rect" id="node1" title="Default constructor." alt="" coords="5,107,109,134"/>
+<area shape="rect" id="node2" href="$class_alarmable_manager.html#af701f8a4f711d5600c2bf8acc1e01e42" title="Default constructor." alt="" coords="167,5,363,47"/>
+<area shape="rect" id="node3" href="$class_drawable_manager.html#a440721dc85deaebac213e123b023234d" title="Default constructor." alt="" coords="171,71,358,112"/>
+<area shape="rect" id="node4" href="$class_camera_manager.html#a0ef653631c71f4bc37375127e043fabc" title="Sets god camera." alt="" coords="157,137,372,163"/>
+<area shape="rect" id="node5" href="$class_updatable_manager.html#a732a6efad3362d2be4a772dfaaec0043" title="Default constructor." alt="" coords="167,188,363,229"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="TextureManager::Load" name="TextureManager::Load">
+<area shape="rect" id="node1" title="Loads the texture." alt="" coords="5,31,156,57"/>
+<area shape="rect" id="node2" href="$class_texture_manager.html#af8c4f47e97491dc5001ce1ee5b0fce3f" title="Gets the instance." alt="" coords="204,5,376,32"/>
+<area shape="rect" id="node4" href="$class_texture_manager.html#a386ba63dff283047d92614e16a55fa80" title="Priv load." alt="" coords="205,56,375,83"/>
+<area shape="rect" id="node3" href="$class_texture_manager.html#ad76abb178b37cedf4514eb0154349935" title="Default constructor." alt="" coords="424,5,640,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="TerrainObject::GetAltitude" name="TerrainObject::GetAltitude">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,177,57"/>
+<area shape="rect" id="node2" href="$class_sly_math.html#a636f99d4864a960c9dd868d8e84ba136" title=" " alt="" coords="225,5,452,32"/>
+<area shape="rect" id="node3" href="$class_terrain_object.html#a11b5cde5c63c5894f1a2d7f6a8884e9a" title=" " alt="" coords="251,56,427,83"/>
+</map>

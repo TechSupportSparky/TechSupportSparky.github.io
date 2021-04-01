@@ -1,0 +1,219 @@
+\hypertarget{class_alarmable_registration_command}{}\doxysection{Alarmable\+Registration\+Command Class Reference}
+\label{class_alarmable_registration_command}\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+
+
+{\ttfamily \#include $<$Alarmable\+Registration\+Command.\+h$>$}
+
+
+
+Inheritance diagram for Alarmable\+Registration\+Command\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_alarmable_registration_command__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alarmable\+Registration\+Command\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_alarmable_registration_command__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_alarmable_registration_command_a5925c7d82c10681dcdd000becdf54ffa}{Alarmable\+Registration\+Command}} ()=delete
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_alarmable_registration_command_a49aaa237129e03885fee7b6b97540d44}{Alarmable\+Registration\+Command}} (const \mbox{\hyperlink{class_alarmable_registration_command}{Alarmable\+Registration\+Command}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_alarmable_registration_command_a415cdda7c2722aa4a80378c6239fd6d9}{Alarmable\+Registration\+Command}} (\mbox{\hyperlink{class_alarmable_registration_command}{Alarmable\+Registration\+Command}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_alarmable_registration_command}{Alarmable\+Registration\+Command}} \& \mbox{\hyperlink{class_alarmable_registration_command_a776e6f80d784e9f6e727e6aec80a9141}{operator=}} (const \mbox{\hyperlink{class_alarmable_registration_command}{Alarmable\+Registration\+Command}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_alarmable_registration_command}{Alarmable\+Registration\+Command}} \& \mbox{\hyperlink{class_alarmable_registration_command_a6fb0a1e85d9680c60f1db91b2d08367e}{operator=}} (\mbox{\hyperlink{class_alarmable_registration_command}{Alarmable\+Registration\+Command}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_alarmable_registration_command_ac43373ac022f407a7088fd51dd899ee5}{$\sim$\+Alarmable\+Registration\+Command}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_alarmable_registration_command_a550429939b329eb0509bcb019c3853fb}{Alarmable\+Registration\+Command}} (\mbox{\hyperlink{class_alarmable}{Alarmable}} $\ast$\mbox{\hyperlink{class_alarmable_registration_command_a31d4af1a76eb34cc383b389f25fcce1d}{ptr\+Al}}, \mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}} id)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alarmable_registration_command_ac53830526031a10434890d8a61666516}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes this command. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alarmable_registration_command_af3541cea1d714aa17e5916ca15c131fb}{set\+Time}} (float t)
+\begin{DoxyCompactList}\small\item\em Sets a time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_alarmable}{Alarmable}} $\ast$ \mbox{\hyperlink{class_alarmable_registration_command_a31d4af1a76eb34cc383b389f25fcce1d}{ptr\+Al}}
+\begin{DoxyCompactList}\small\item\em The pointer to alarmable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}} \mbox{\hyperlink{class_alarmable_registration_command_a9163d5a7277e741eee5edbf1173e65cf}{al\+Id}}
+\begin{DoxyCompactList}\small\item\em Identifier for the alarm. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_alarmable_registration_command_abe93b77a09faeef2ec141b9a97534dec}{deltaT}}
+\begin{DoxyCompactList}\small\item\em The delta t for time to trigger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_alarmable_registration_command_a5925c7d82c10681dcdd000becdf54ffa}\label{class_alarmable_registration_command_a5925c7d82c10681dcdd000becdf54ffa}} 
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\doxysubsubsection{\texorpdfstring{AlarmableRegistrationCommand()}{AlarmableRegistrationCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Alarmable\+Registration\+Command\+::\+Alarmable\+Registration\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_alarmable_registration_command_a49aaa237129e03885fee7b6b97540d44}\label{class_alarmable_registration_command_a49aaa237129e03885fee7b6b97540d44}} 
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\doxysubsubsection{\texorpdfstring{AlarmableRegistrationCommand()}{AlarmableRegistrationCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Alarmable\+Registration\+Command\+::\+Alarmable\+Registration\+Command (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_alarmable_registration_command}{Alarmable\+Registration\+Command}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_alarmable_registration_command_a415cdda7c2722aa4a80378c6239fd6d9}\label{class_alarmable_registration_command_a415cdda7c2722aa4a80378c6239fd6d9}} 
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\doxysubsubsection{\texorpdfstring{AlarmableRegistrationCommand()}{AlarmableRegistrationCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Alarmable\+Registration\+Command\+::\+Alarmable\+Registration\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alarmable_registration_command}{Alarmable\+Registration\+Command}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_alarmable_registration_command_ac43373ac022f407a7088fd51dd899ee5}\label{class_alarmable_registration_command_ac43373ac022f407a7088fd51dd899ee5}} 
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!````~AlarmableRegistrationCommand@{$\sim$AlarmableRegistrationCommand}}
+\index{````~AlarmableRegistrationCommand@{$\sim$AlarmableRegistrationCommand}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\doxysubsubsection{\texorpdfstring{$\sim$AlarmableRegistrationCommand()}{~AlarmableRegistrationCommand()}}
+{\footnotesize\ttfamily virtual Alarmable\+Registration\+Command\+::$\sim$\+Alarmable\+Registration\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+\mbox{\Hypertarget{class_alarmable_registration_command_a550429939b329eb0509bcb019c3853fb}\label{class_alarmable_registration_command_a550429939b329eb0509bcb019c3853fb}} 
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\doxysubsubsection{\texorpdfstring{AlarmableRegistrationCommand()}{AlarmableRegistrationCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Alarmable\+Registration\+Command\+::\+Alarmable\+Registration\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alarmable}{Alarmable}} $\ast$}]{ptr\+Al,  }\item[{\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em ptr\+Al} & If non-\/null, the pointer to the alarmable. \\
+\hline
+ & {\em id} & The alarm identifier. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_alarmable_registration_command_ac53830526031a10434890d8a61666516}\label{class_alarmable_registration_command_ac53830526031a10434890d8a61666516}} 
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!execute@{execute}}
+\index{execute@{execute}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Alarmable\+Registration\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes this command. 
+
+
+
+Implements \mbox{\hyperlink{class_command_base_a8977bf07d93b93c7d3c96cce558e9d45}{Command\+Base}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_registration_command_ac53830526031a10434890d8a61666516_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarmable_registration_command_a6fb0a1e85d9680c60f1db91b2d08367e}\label{class_alarmable_registration_command_a6fb0a1e85d9680c60f1db91b2d08367e}} 
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!operator=@{operator=}}
+\index{operator=@{operator=}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_alarmable_registration_command}{Alarmable\+Registration\+Command}}\& Alarmable\+Registration\+Command\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alarmable_registration_command}{Alarmable\+Registration\+Command}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_alarmable_registration_command_a776e6f80d784e9f6e727e6aec80a9141}\label{class_alarmable_registration_command_a776e6f80d784e9f6e727e6aec80a9141}} 
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!operator=@{operator=}}
+\index{operator=@{operator=}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_alarmable_registration_command}{Alarmable\+Registration\+Command}}\& Alarmable\+Registration\+Command\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_alarmable_registration_command}{Alarmable\+Registration\+Command}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_alarmable_registration_command_af3541cea1d714aa17e5916ca15c131fb}\label{class_alarmable_registration_command_af3541cea1d714aa17e5916ca15c131fb}} 
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!setTime@{setTime}}
+\index{setTime@{setTime}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\doxysubsubsection{\texorpdfstring{setTime()}{setTime()}}
+{\footnotesize\ttfamily void Alarmable\+Registration\+Command\+::set\+Time (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})}
+
+
+
+Sets a time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & A float as delta t from the current\+Time with which to trigger the alarm. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_registration_command_af3541cea1d714aa17e5916ca15c131fb_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_alarmable_registration_command_a9163d5a7277e741eee5edbf1173e65cf}\label{class_alarmable_registration_command_a9163d5a7277e741eee5edbf1173e65cf}} 
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!alId@{alId}}
+\index{alId@{alId}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\doxysubsubsection{\texorpdfstring{alId}{alId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}} Alarmable\+Registration\+Command\+::al\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifier for the alarm. 
+
+\mbox{\Hypertarget{class_alarmable_registration_command_abe93b77a09faeef2ec141b9a97534dec}\label{class_alarmable_registration_command_abe93b77a09faeef2ec141b9a97534dec}} 
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!deltaT@{deltaT}}
+\index{deltaT@{deltaT}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\doxysubsubsection{\texorpdfstring{deltaT}{deltaT}}
+{\footnotesize\ttfamily float Alarmable\+Registration\+Command\+::deltaT\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The delta t for time to trigger. 
+
+\mbox{\Hypertarget{class_alarmable_registration_command_a31d4af1a76eb34cc383b389f25fcce1d}\label{class_alarmable_registration_command_a31d4af1a76eb34cc383b389f25fcce1d}} 
+\index{AlarmableRegistrationCommand@{AlarmableRegistrationCommand}!ptrAl@{ptrAl}}
+\index{ptrAl@{ptrAl}!AlarmableRegistrationCommand@{AlarmableRegistrationCommand}}
+\doxysubsubsection{\texorpdfstring{ptrAl}{ptrAl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_alarmable}{Alarmable}}$\ast$ Alarmable\+Registration\+Command\+::ptr\+Al\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The pointer to alarmable. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_alarmable_registration_command_8h}{Alarmable\+Registration\+Command.\+h}}\item 
+\mbox{\hyperlink{_alarmable_registration_commands_8cpp}{Alarmable\+Registration\+Commands.\+cpp}}\end{DoxyCompactItemize}

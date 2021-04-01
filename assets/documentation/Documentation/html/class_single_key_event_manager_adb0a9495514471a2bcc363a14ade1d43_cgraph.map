@@ -1,0 +1,7 @@
+<map id="SingleKeyEventManager::ProcessKeyEvent" name="SingleKeyEventManager::ProcessKeyEvent">
+<area shape="rect" id="node1" title="Process the key event." alt="" coords="5,39,168,80"/>
+<area shape="rect" id="node2" href="$class_inputable_attorney_1_1_game_loop.html#a8075a497f53be37126f2bf566a1f72cf" title=" " alt="" coords="219,5,383,47"/>
+<area shape="rect" id="node4" href="$class_inputable_attorney_1_1_game_loop.html#a0e545006d8f25c48a54b5dbdc4943d3b" title=" " alt="" coords="216,71,387,112"/>
+<area shape="rect" id="node3" href="$class_inputable.html#a078023808b567064fd0e0adb4b610547" title="Key pressed callback." alt="" coords="437,13,591,39"/>
+<area shape="rect" id="node5" href="$class_inputable.html#ac4268a25091e245e467fc3b124fcbfb2" title="Key released callback." alt="" coords="435,78,593,105"/>
+</map>

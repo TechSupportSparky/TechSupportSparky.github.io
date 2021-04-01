@@ -1,0 +1,8 @@
+<map id="PingCommand::execute" name="PingCommand::execute">
+<area shape="rect" id="node1" title="Executes the ping command by requesting the screen logger to print &quot;Pong!&quot;." alt="" coords="5,31,167,57"/>
+<area shape="rect" id="node2" href="$class_console_manager.html#ad49b0626cc2835ca742a50ad86a732cc" title="Print the message to the console." alt="" coords="215,31,369,57"/>
+<area shape="rect" id="node3" href="$class_console_manager.html#a906c569f9ea442602dbe61e65b779ccc" title=" " alt="" coords="417,5,593,32"/>
+<area shape="rect" id="node5" href="$class_console_manager.html#a415bb72309d66c7537ebd0a1933d5185" title=" " alt="" coords="419,56,592,83"/>
+<area shape="rect" id="node4" href="$class_console_manager.html#aa9f719ce8b6bb8c2efda952e49f534d6" title="Default constructor." alt="" coords="641,5,865,32"/>
+<area shape="rect" id="node6" href="$class_console.html#ab89aba48f1fe17a74e2dc0bebb6909b0" title="Console print to the screen logger." alt="" coords="679,56,828,83"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="SkyBoxAssetManager::privLoad" name="SkyBoxAssetManager::privLoad">
+<area shape="rect" id="node1" title="Private call to construct and store a skybox asset." alt="" coords="205,5,357,47"/>
+<area shape="rect" id="node2" href="$class_sky_box_asset_manager.html#ae218b02df9566e72788dac1f2b32d851" title="Loads a new skybox and stores the associated key for later retrieval." alt="" coords="5,5,157,47"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="TimeManager::Terminate" name="TimeManager::Terminate">
+<area shape="rect" id="node1" title="Terminates the singleton." alt="" coords="5,31,171,57"/>
+<area shape="rect" id="node2" href="$class_time_manager.html#ac06b0a182b394ddc0ac554ad090ee019" title="Gets the instance." alt="" coords="232,5,389,32"/>
+<area shape="rect" id="node4" href="$class_time_manager.html#ad0168ebd321c1800dcefa0a431388973" title="Private terminate. Deletes Pointer instance." alt="" coords="219,56,403,83"/>
+<area shape="rect" id="node3" href="$class_time_manager.html#a46d2773caea1858a19594d58d57404c2" title="Default constructor." alt="" coords="451,5,637,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="TimeManager::GetTime" name="TimeManager::GetTime">
+<area shape="rect" id="node1" title="Gets the time." alt="" coords="5,31,163,57"/>
+<area shape="rect" id="node2" href="$class_time_manager.html#ac06b0a182b394ddc0ac554ad090ee019" title="Gets the instance." alt="" coords="220,5,377,32"/>
+<area shape="rect" id="node4" href="$class_time_manager.html#a7e338d6167ec2bf8a00e967f27b5b59f" title="Private get time." alt="" coords="211,56,387,83"/>
+<area shape="rect" id="node3" href="$class_time_manager.html#a46d2773caea1858a19594d58d57404c2" title="Default constructor." alt="" coords="435,5,621,32"/>
+</map>

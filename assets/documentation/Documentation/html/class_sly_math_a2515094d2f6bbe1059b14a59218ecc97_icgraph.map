@@ -1,0 +1,6 @@
+<map id="SlyMath::clampFloat" name="SlyMath::clampFloat">
+<area shape="rect" id="node1" title=" " alt="" coords="372,31,515,57"/>
+<area shape="rect" id="node2" href="$class_sly_math.html#ac38165799766775dda0c195a302bc61a" title="Clamp point V to the min max vectors provided." alt="" coords="181,5,324,32"/>
+<area shape="rect" id="node4" href="$class_sly_math.html#a212730959eb3a85f2a3887ea6498148d" title="Intersection test for Sphere &#45; AABB." alt="" coords="189,56,317,83"/>
+<area shape="rect" id="node3" href="$class_sly_math.html#a17bd6826f4395d588a6fe9d0d6239113" title="Intersection test for an OBB and a BSphere." alt="" coords="5,5,133,32"/>
+</map>

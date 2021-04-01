@@ -1,0 +1,7 @@
+<map id="SlyMath::OBBProjectionLength" name="SlyMath::OBBProjectionLength">
+<area shape="rect" id="node1" title="Obb projection length for the OBB projected on V." alt="" coords="5,111,208,138"/>
+<area shape="rect" id="node2" href="$class_collision_volume_o_b_b.html#afd76dca327efe7448f967acbe0f44d46" title="Gets the center of the OBB." alt="" coords="256,5,399,47"/>
+<area shape="rect" id="node3" href="$class_collision_volume_o_b_b.html#aaec889d702eeb44a979a2309500fa816" title="Gets the maximum corner of the OBB." alt="" coords="256,71,399,112"/>
+<area shape="rect" id="node4" href="$class_collision_volume_o_b_b.html#a91724b4bd8678eb41c2eb5b6dbccd91e" title="Gets the stored scale." alt="" coords="256,136,399,177"/>
+<area shape="rect" id="node5" href="$class_collision_volume_o_b_b.html#a97e12225214258e014dbc2d6ef844488" title="Gets the world matrix stored in the OBB." alt="" coords="256,201,399,243"/>
+</map>

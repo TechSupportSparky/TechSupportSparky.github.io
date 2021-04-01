@@ -1,0 +1,5 @@
+<map id="SpriteFont::GetGlyph" name="SpriteFont::GetGlyph">
+<area shape="rect" id="node1" title=" " alt="" coords="220,31,365,57"/>
+<area shape="rect" id="node2" href="$class_sprite_string.html#a1135e9384dd59a068d5e643d06bc39ba" title="Sets the font and location." alt="" coords="29,5,148,32"/>
+<area shape="rect" id="node3" href="$class_sprite_string.html#a2e111c5525b167af3817403696123b30" title="Specialized Constructor." alt="" coords="5,56,172,83"/>
+</map>

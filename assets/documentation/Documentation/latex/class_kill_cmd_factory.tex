@@ -1,0 +1,289 @@
+\hypertarget{class_kill_cmd_factory}{}\doxysection{Kill\+Cmd\+Factory Class Reference}
+\label{class_kill_cmd_factory}\index{KillCmdFactory@{KillCmdFactory}}
+
+
+{\ttfamily \#include $<$Kill\+Cmd\+Factory.\+h$>$}
+
+
+
+Collaboration diagram for Kill\+Cmd\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_cmd_factory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Item\+List\+::iterator \mbox{\hyperlink{class_kill_cmd_factory_a77085c4213c41a507a299fc6e5639291}{Storage\+Ref}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_kill_command}{Kill\+Command}} $\ast$ \mbox{\hyperlink{class_kill_cmd_factory_ace0b3ff33a5567a4e89a955db1e8d3d1}{Create\+Command}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$target)
+\item 
+static void \mbox{\hyperlink{class_kill_cmd_factory_a8665fd62bcbadcfe2e64afe69903b0c4}{Recycle\+Command}} (\mbox{\hyperlink{class_kill_command}{Kill\+Command}} $\ast$k)
+\item 
+static void \mbox{\hyperlink{class_kill_cmd_factory_ab80e1216377f1d425f5a1312c0427a80}{Terminate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \mbox{\hyperlink{class_kill_command}{Kill\+Command}} $\ast$ $>$ \mbox{\hyperlink{class_kill_cmd_factory_a3ffdfacc79434471360709de7b866882}{Item\+List}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kill_cmd_factory_a96ead439e46a8cd578a7617f6b2d9a58}{Kill\+Cmd\+Factory}} ()
+\item 
+\mbox{\hyperlink{class_kill_cmd_factory_ab5f5e661d5cced6c8411bf0c122ee1c3}{Kill\+Cmd\+Factory}} (const \mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}} \&)=delete
+\item 
+\mbox{\hyperlink{class_kill_cmd_factory_a2dde7e366aa41f2688c34735bb8c72c7}{Kill\+Cmd\+Factory}} (\mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}} \& \mbox{\hyperlink{class_kill_cmd_factory_a93ac2bb20e68678cfcf58a2d5c72d816}{operator=}} (const \mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}} \&)=delete
+\item 
+\mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}} \& \mbox{\hyperlink{class_kill_cmd_factory_a53a0b5566c889ea61a68944f7ae0b2f1}{operator=}} (\mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_kill_cmd_factory_ad66aacf278ba965a6500b416880f9816}{$\sim$\+Kill\+Cmd\+Factory}} ()=default
+\item 
+\mbox{\hyperlink{class_kill_command}{Kill\+Command}} $\ast$ \mbox{\hyperlink{class_kill_cmd_factory_a778008af6be9e3b52e112fdcbf519b9e}{priv\+Create\+Command}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$target)
+\item 
+void \mbox{\hyperlink{class_kill_cmd_factory_a2e7fb72dc3207a27c1b321695e7c09e4}{priv\+Recycle\+Command}} (\mbox{\hyperlink{class_kill_command}{Kill\+Command}} $\ast$k)
+\item 
+void \mbox{\hyperlink{class_kill_cmd_factory_a41034bcab8ddece2f8dd7cb034a0128e}{priv\+Terminate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}} \& \mbox{\hyperlink{class_kill_cmd_factory_a92c41b857556cc255c193b1d312583bf}{Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kill_object_pool}{Kill\+Object\+Pool}} \mbox{\hyperlink{class_kill_cmd_factory_a018a24160c689f837abc175376e362e7}{my\+Command\+Pool}}
+\item 
+\mbox{\hyperlink{class_kill_cmd_factory_a3ffdfacc79434471360709de7b866882}{Item\+List}} $\ast$ \mbox{\hyperlink{class_kill_cmd_factory_a7f132ed3c9320e04de9ce206347baed9}{active\+Commands}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}} $\ast$ \mbox{\hyperlink{class_kill_cmd_factory_a2b585701486b2794fcb44c6f98f64645}{ptr\+Instance}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_kill_cmd_factory_a3ffdfacc79434471360709de7b866882}\label{class_kill_cmd_factory_a3ffdfacc79434471360709de7b866882}} 
+\index{KillCmdFactory@{KillCmdFactory}!ItemList@{ItemList}}
+\index{ItemList@{ItemList}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{ItemList}{ItemList}}
+{\footnotesize\ttfamily typedef std\+::list$<$\mbox{\hyperlink{class_kill_command}{Kill\+Command}}$\ast$$>$ \mbox{\hyperlink{class_kill_cmd_factory_a3ffdfacc79434471360709de7b866882}{Kill\+Cmd\+Factory\+::\+Item\+List}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_kill_cmd_factory_a77085c4213c41a507a299fc6e5639291}\label{class_kill_cmd_factory_a77085c4213c41a507a299fc6e5639291}} 
+\index{KillCmdFactory@{KillCmdFactory}!StorageRef@{StorageRef}}
+\index{StorageRef@{StorageRef}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{StorageRef}{StorageRef}}
+{\footnotesize\ttfamily typedef Item\+List\+::iterator \mbox{\hyperlink{class_kill_cmd_factory_a77085c4213c41a507a299fc6e5639291}{Kill\+Cmd\+Factory\+::\+Storage\+Ref}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_kill_cmd_factory_a96ead439e46a8cd578a7617f6b2d9a58}\label{class_kill_cmd_factory_a96ead439e46a8cd578a7617f6b2d9a58}} 
+\index{KillCmdFactory@{KillCmdFactory}!KillCmdFactory@{KillCmdFactory}}
+\index{KillCmdFactory@{KillCmdFactory}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{KillCmdFactory()}{KillCmdFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Kill\+Cmd\+Factory\+::\+Kill\+Cmd\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_cmd_factory_a96ead439e46a8cd578a7617f6b2d9a58_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_kill_cmd_factory_ab5f5e661d5cced6c8411bf0c122ee1c3}\label{class_kill_cmd_factory_ab5f5e661d5cced6c8411bf0c122ee1c3}} 
+\index{KillCmdFactory@{KillCmdFactory}!KillCmdFactory@{KillCmdFactory}}
+\index{KillCmdFactory@{KillCmdFactory}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{KillCmdFactory()}{KillCmdFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Kill\+Cmd\+Factory\+::\+Kill\+Cmd\+Factory (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_kill_cmd_factory_a2dde7e366aa41f2688c34735bb8c72c7}\label{class_kill_cmd_factory_a2dde7e366aa41f2688c34735bb8c72c7}} 
+\index{KillCmdFactory@{KillCmdFactory}!KillCmdFactory@{KillCmdFactory}}
+\index{KillCmdFactory@{KillCmdFactory}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{KillCmdFactory()}{KillCmdFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Kill\+Cmd\+Factory\+::\+Kill\+Cmd\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_kill_cmd_factory_ad66aacf278ba965a6500b416880f9816}\label{class_kill_cmd_factory_ad66aacf278ba965a6500b416880f9816}} 
+\index{KillCmdFactory@{KillCmdFactory}!````~KillCmdFactory@{$\sim$KillCmdFactory}}
+\index{````~KillCmdFactory@{$\sim$KillCmdFactory}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$KillCmdFactory()}{~KillCmdFactory()}}
+{\footnotesize\ttfamily Kill\+Cmd\+Factory\+::$\sim$\+Kill\+Cmd\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_kill_cmd_factory_ace0b3ff33a5567a4e89a955db1e8d3d1}\label{class_kill_cmd_factory_ace0b3ff33a5567a4e89a955db1e8d3d1}} 
+\index{KillCmdFactory@{KillCmdFactory}!CreateCommand@{CreateCommand}}
+\index{CreateCommand@{CreateCommand}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{CreateCommand()}{CreateCommand()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_kill_command}{Kill\+Command}}$\ast$ Kill\+Cmd\+Factory\+::\+Create\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_cmd_factory_ace0b3ff33a5567a4e89a955db1e8d3d1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_cmd_factory_ace0b3ff33a5567a4e89a955db1e8d3d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_kill_cmd_factory_a92c41b857556cc255c193b1d312583bf}\label{class_kill_cmd_factory_a92c41b857556cc255c193b1d312583bf}} 
+\index{KillCmdFactory@{KillCmdFactory}!Instance@{Instance}}
+\index{Instance@{Instance}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}}\& Kill\+Cmd\+Factory\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_cmd_factory_a92c41b857556cc255c193b1d312583bf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_cmd_factory_a92c41b857556cc255c193b1d312583bf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_kill_cmd_factory_a93ac2bb20e68678cfcf58a2d5c72d816}\label{class_kill_cmd_factory_a93ac2bb20e68678cfcf58a2d5c72d816}} 
+\index{KillCmdFactory@{KillCmdFactory}!operator=@{operator=}}
+\index{operator=@{operator=}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}}\& Kill\+Cmd\+Factory\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_kill_cmd_factory_a53a0b5566c889ea61a68944f7ae0b2f1}\label{class_kill_cmd_factory_a53a0b5566c889ea61a68944f7ae0b2f1}} 
+\index{KillCmdFactory@{KillCmdFactory}!operator=@{operator=}}
+\index{operator=@{operator=}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}}\& Kill\+Cmd\+Factory\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_kill_cmd_factory_a778008af6be9e3b52e112fdcbf519b9e}\label{class_kill_cmd_factory_a778008af6be9e3b52e112fdcbf519b9e}} 
+\index{KillCmdFactory@{KillCmdFactory}!privCreateCommand@{privCreateCommand}}
+\index{privCreateCommand@{privCreateCommand}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{privCreateCommand()}{privCreateCommand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kill_command}{Kill\+Command}} $\ast$ Kill\+Cmd\+Factory\+::priv\+Create\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_cmd_factory_a778008af6be9e3b52e112fdcbf519b9e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_cmd_factory_a778008af6be9e3b52e112fdcbf519b9e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_kill_cmd_factory_a2e7fb72dc3207a27c1b321695e7c09e4}\label{class_kill_cmd_factory_a2e7fb72dc3207a27c1b321695e7c09e4}} 
+\index{KillCmdFactory@{KillCmdFactory}!privRecycleCommand@{privRecycleCommand}}
+\index{privRecycleCommand@{privRecycleCommand}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{privRecycleCommand()}{privRecycleCommand()}}
+{\footnotesize\ttfamily void Kill\+Cmd\+Factory\+::priv\+Recycle\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_kill_command}{Kill\+Command}} $\ast$}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_cmd_factory_a2e7fb72dc3207a27c1b321695e7c09e4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_cmd_factory_a2e7fb72dc3207a27c1b321695e7c09e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_kill_cmd_factory_a41034bcab8ddece2f8dd7cb034a0128e}\label{class_kill_cmd_factory_a41034bcab8ddece2f8dd7cb034a0128e}} 
+\index{KillCmdFactory@{KillCmdFactory}!privTerminate@{privTerminate}}
+\index{privTerminate@{privTerminate}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{privTerminate()}{privTerminate()}}
+{\footnotesize\ttfamily void Kill\+Cmd\+Factory\+::priv\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_cmd_factory_a41034bcab8ddece2f8dd7cb034a0128e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_kill_cmd_factory_a8665fd62bcbadcfe2e64afe69903b0c4}\label{class_kill_cmd_factory_a8665fd62bcbadcfe2e64afe69903b0c4}} 
+\index{KillCmdFactory@{KillCmdFactory}!RecycleCommand@{RecycleCommand}}
+\index{RecycleCommand@{RecycleCommand}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{RecycleCommand()}{RecycleCommand()}}
+{\footnotesize\ttfamily static void Kill\+Cmd\+Factory\+::\+Recycle\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_kill_command}{Kill\+Command}} $\ast$}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_cmd_factory_a8665fd62bcbadcfe2e64afe69903b0c4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_kill_cmd_factory_ab80e1216377f1d425f5a1312c0427a80}\label{class_kill_cmd_factory_ab80e1216377f1d425f5a1312c0427a80}} 
+\index{KillCmdFactory@{KillCmdFactory}!Terminate@{Terminate}}
+\index{Terminate@{Terminate}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{Terminate()}{Terminate()}}
+{\footnotesize\ttfamily static void Kill\+Cmd\+Factory\+::\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_cmd_factory_ab80e1216377f1d425f5a1312c0427a80_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_kill_cmd_factory_ab80e1216377f1d425f5a1312c0427a80_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_kill_cmd_factory_a7f132ed3c9320e04de9ce206347baed9}\label{class_kill_cmd_factory_a7f132ed3c9320e04de9ce206347baed9}} 
+\index{KillCmdFactory@{KillCmdFactory}!activeCommands@{activeCommands}}
+\index{activeCommands@{activeCommands}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{activeCommands}{activeCommands}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kill_cmd_factory_a3ffdfacc79434471360709de7b866882}{Item\+List}}$\ast$ Kill\+Cmd\+Factory\+::active\+Commands\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_kill_cmd_factory_a018a24160c689f837abc175376e362e7}\label{class_kill_cmd_factory_a018a24160c689f837abc175376e362e7}} 
+\index{KillCmdFactory@{KillCmdFactory}!myCommandPool@{myCommandPool}}
+\index{myCommandPool@{myCommandPool}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{myCommandPool}{myCommandPool}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kill_object_pool}{Kill\+Object\+Pool}} Kill\+Cmd\+Factory\+::my\+Command\+Pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_kill_cmd_factory_a2b585701486b2794fcb44c6f98f64645}\label{class_kill_cmd_factory_a2b585701486b2794fcb44c6f98f64645}} 
+\index{KillCmdFactory@{KillCmdFactory}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!KillCmdFactory@{KillCmdFactory}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kill_cmd_factory}{Kill\+Cmd\+Factory}} $\ast$ Kill\+Cmd\+Factory\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_kill_cmd_factory_8h}{Kill\+Cmd\+Factory.\+h}}\item 
+\mbox{\hyperlink{_kill_cmd_factory_8cpp}{Kill\+Cmd\+Factory.\+cpp}}\end{DoxyCompactItemize}

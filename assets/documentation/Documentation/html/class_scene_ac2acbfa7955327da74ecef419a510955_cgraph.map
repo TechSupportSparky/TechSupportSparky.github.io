@@ -1,0 +1,4 @@
+<map id="Scene::GetCamera" name="Scene::GetCamera">
+<area shape="rect" id="node1" title="Gets the camera." alt="" coords="5,13,139,39"/>
+<area shape="rect" id="node2" href="$class_camera_manager.html#a73be4132ae9a5523cd4e778a53013a16" title="Gets current camera." alt="" coords="187,5,375,47"/>
+</map>

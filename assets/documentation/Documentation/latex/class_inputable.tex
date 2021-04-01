@@ -1,0 +1,389 @@
+\hypertarget{class_inputable}{}\doxysection{Inputable Class Reference}
+\label{class_inputable}\index{Inputable@{Inputable}}
+
+
+{\ttfamily \#include $<$Inputable.\+h$>$}
+
+
+
+Inheritance diagram for Inputable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{class_inputable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Inputable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_inputable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_inputable_1_1_inputable_data}{Inputable\+Data}}
+\begin{DoxyCompactList}\small\item\em An inputable data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fca38d3b3bd402296ba635522676d383b50}{K\+E\+Y\+\_\+\+P\+R\+E\+SS}}, 
+\mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fca2494d2581496ed9938488a5d6d77de4a}{K\+E\+Y\+\_\+\+R\+E\+L\+E\+A\+SE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Values that represent event types. \end{DoxyCompactList}\item 
+typedef std\+::pair$<$ A\+Z\+U\+L\+\_\+\+K\+EY, \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} $>$ \mbox{\hyperlink{class_inputable_a23aaa264a247cb4abf7ab1d45f84079c}{Key\+Event}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the key event. \end{DoxyCompactList}\item 
+typedef std\+::map$<$ \mbox{\hyperlink{class_inputable_a23aaa264a247cb4abf7ab1d45f84079c}{Key\+Event}}, \mbox{\hyperlink{struct_inputable_1_1_inputable_data}{Inputable\+Data}} $>$ \mbox{\hyperlink{class_inputable_a2d71e08e4460a0e9250e8351d638d69e}{Input\+Data\+Map}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the input data map. \end{DoxyCompactList}\item 
+typedef Input\+Data\+Map\+::iterator \mbox{\hyperlink{class_inputable_abe64103d4c5176f300df84c8e5e84a20}{Input\+Data\+Ref}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the input data reference. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_inputable_a191fd4624272222ea8344eabf9d26ead}{Inputable}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inputable_a436e6b4f89c63f0ed7165a032f8a9cda}{Inputable}} (const \mbox{\hyperlink{class_inputable}{Inputable}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inputable_a734969f88c114dc828ed0508603ef685}{Inputable}} (\mbox{\hyperlink{class_inputable}{Inputable}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inputable}{Inputable}} \& \mbox{\hyperlink{class_inputable_a6860fec1293b721d38a32ce9cd9f234c}{operator=}} (const \mbox{\hyperlink{class_inputable}{Inputable}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inputable}{Inputable}} \& \mbox{\hyperlink{class_inputable_a82a8b8dcac59576a0eb830df49646443}{operator=}} (\mbox{\hyperlink{class_inputable}{Inputable}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_inputable_a47837480eb9ca33e9455ad876c890a52}{$\sim$\+Inputable}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_inputable_a2d71e08e4460a0e9250e8351d638d69e}{Input\+Data\+Map}} \mbox{\hyperlink{class_inputable_aa6cf396037fd8ab212198727f1fdd2f9}{in\+Map}}
+\begin{DoxyCompactList}\small\item\em The inputable map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Submit\+Key\+Registration}} (A\+Z\+U\+L\+\_\+\+K\+EY input\+Key, \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} e)
+\begin{DoxyCompactList}\small\item\em Submit key registration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inputable_a54848d4c6e1f26ae64596fcb0b14e7b5}{Submit\+Key\+Deregistration}} (A\+Z\+U\+L\+\_\+\+K\+EY input\+Key, \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} e)
+\begin{DoxyCompactList}\small\item\em Submit key deregistration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_inputable_a078023808b567064fd0e0adb4b610547}{Key\+Pressed}} (A\+Z\+U\+L\+\_\+\+K\+EY input\+Key)
+\begin{DoxyCompactList}\small\item\em Key pressed callback. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inputable_ac4268a25091e245e467fc3b124fcbfb2}{Key\+Released}} (A\+Z\+U\+L\+\_\+\+K\+EY input\+Key)
+\begin{DoxyCompactList}\small\item\em Key released callback. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inputable_acd03941e71d20c5ebce2fcf9c5bd263a}{Scene\+Registration}} (A\+Z\+U\+L\+\_\+\+K\+EY input\+Key, \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} e)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_scene}{Scene}} registration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inputable_a9c330f0dc24b3f66067b3761454fe8cd}{Scene\+Deregistration}} (A\+Z\+U\+L\+\_\+\+K\+EY input\+Key, \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} e)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_scene}{Scene}} deregistration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_inputable_a72f34925212cc8fb6e6a7b0e739aa429}{Inputable\+Attorney}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_inputable_a2d71e08e4460a0e9250e8351d638d69e}\label{class_inputable_a2d71e08e4460a0e9250e8351d638d69e}} 
+\index{Inputable@{Inputable}!InputDataMap@{InputDataMap}}
+\index{InputDataMap@{InputDataMap}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{InputDataMap}{InputDataMap}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{class_inputable_a23aaa264a247cb4abf7ab1d45f84079c}{Key\+Event}}, \mbox{\hyperlink{struct_inputable_1_1_inputable_data}{Inputable\+Data}} $>$ \mbox{\hyperlink{class_inputable_a2d71e08e4460a0e9250e8351d638d69e}{Inputable\+::\+Input\+Data\+Map}}}
+
+
+
+Defines an alias representing the input data map. 
+
+\mbox{\Hypertarget{class_inputable_abe64103d4c5176f300df84c8e5e84a20}\label{class_inputable_abe64103d4c5176f300df84c8e5e84a20}} 
+\index{Inputable@{Inputable}!InputDataRef@{InputDataRef}}
+\index{InputDataRef@{InputDataRef}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{InputDataRef}{InputDataRef}}
+{\footnotesize\ttfamily Input\+Data\+Map\+::iterator \mbox{\hyperlink{class_inputable_abe64103d4c5176f300df84c8e5e84a20}{Inputable\+::\+Input\+Data\+Ref}}}
+
+
+
+Defines an alias representing the input data reference. 
+
+\mbox{\Hypertarget{class_inputable_a23aaa264a247cb4abf7ab1d45f84079c}\label{class_inputable_a23aaa264a247cb4abf7ab1d45f84079c}} 
+\index{Inputable@{Inputable}!KeyEvent@{KeyEvent}}
+\index{KeyEvent@{KeyEvent}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{KeyEvent}{KeyEvent}}
+{\footnotesize\ttfamily std\+::pair$<$ A\+Z\+U\+L\+\_\+\+K\+EY, \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} $>$ \mbox{\hyperlink{class_inputable_a23aaa264a247cb4abf7ab1d45f84079c}{Inputable\+::\+Key\+Event}}}
+
+
+
+Defines an alias representing the key event. 
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}\label{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}} 
+\index{Inputable@{Inputable}!EVENT\_TYPE@{EVENT\_TYPE}}
+\index{EVENT\_TYPE@{EVENT\_TYPE}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{EVENT\_TYPE}{EVENT\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{Inputable\+::\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}}}
+
+
+
+Values that represent event types. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_PRESS@{KEY\_PRESS}!Inputable@{Inputable}}\index{Inputable@{Inputable}!KEY\_PRESS@{KEY\_PRESS}}}\mbox{\Hypertarget{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fca38d3b3bd402296ba635522676d383b50}\label{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fca38d3b3bd402296ba635522676d383b50}} 
+K\+E\+Y\+\_\+\+P\+R\+E\+SS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KEY\_RELEASE@{KEY\_RELEASE}!Inputable@{Inputable}}\index{Inputable@{Inputable}!KEY\_RELEASE@{KEY\_RELEASE}}}\mbox{\Hypertarget{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fca2494d2581496ed9938488a5d6d77de4a}\label{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fca2494d2581496ed9938488a5d6d77de4a}} 
+K\+E\+Y\+\_\+\+R\+E\+L\+E\+A\+SE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_inputable_a191fd4624272222ea8344eabf9d26ead}\label{class_inputable_a191fd4624272222ea8344eabf9d26ead}} 
+\index{Inputable@{Inputable}!Inputable@{Inputable}}
+\index{Inputable@{Inputable}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{Inputable()}{Inputable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Inputable\+::\+Inputable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_inputable_a436e6b4f89c63f0ed7165a032f8a9cda}\label{class_inputable_a436e6b4f89c63f0ed7165a032f8a9cda}} 
+\index{Inputable@{Inputable}!Inputable@{Inputable}}
+\index{Inputable@{Inputable}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{Inputable()}{Inputable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Inputable\+::\+Inputable (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inputable}{Inputable}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_inputable_a734969f88c114dc828ed0508603ef685}\label{class_inputable_a734969f88c114dc828ed0508603ef685}} 
+\index{Inputable@{Inputable}!Inputable@{Inputable}}
+\index{Inputable@{Inputable}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{Inputable()}{Inputable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Inputable\+::\+Inputable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inputable}{Inputable}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_inputable_a47837480eb9ca33e9455ad876c890a52}\label{class_inputable_a47837480eb9ca33e9455ad876c890a52}} 
+\index{Inputable@{Inputable}!````~Inputable@{$\sim$Inputable}}
+\index{````~Inputable@{$\sim$Inputable}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{$\sim$Inputable()}{~Inputable()}}
+{\footnotesize\ttfamily Inputable\+::$\sim$\+Inputable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_inputable_a078023808b567064fd0e0adb4b610547}\label{class_inputable_a078023808b567064fd0e0adb4b610547}} 
+\index{Inputable@{Inputable}!KeyPressed@{KeyPressed}}
+\index{KeyPressed@{KeyPressed}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{KeyPressed()}{KeyPressed()}}
+{\footnotesize\ttfamily void Inputable\+::\+Key\+Pressed (\begin{DoxyParamCaption}\item[{A\+Z\+U\+L\+\_\+\+K\+EY}]{input\+Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Key pressed callback. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Key} & The input key. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inputable_a078023808b567064fd0e0adb4b610547_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inputable_ac4268a25091e245e467fc3b124fcbfb2}\label{class_inputable_ac4268a25091e245e467fc3b124fcbfb2}} 
+\index{Inputable@{Inputable}!KeyReleased@{KeyReleased}}
+\index{KeyReleased@{KeyReleased}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{KeyReleased()}{KeyReleased()}}
+{\footnotesize\ttfamily void Inputable\+::\+Key\+Released (\begin{DoxyParamCaption}\item[{A\+Z\+U\+L\+\_\+\+K\+EY}]{input\+Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Key released callback. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Key} & The input key. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inputable_ac4268a25091e245e467fc3b124fcbfb2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inputable_a6860fec1293b721d38a32ce9cd9f234c}\label{class_inputable_a6860fec1293b721d38a32ce9cd9f234c}} 
+\index{Inputable@{Inputable}!operator=@{operator=}}
+\index{operator=@{operator=}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_inputable}{Inputable}}\& Inputable\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inputable}{Inputable}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_inputable_a82a8b8dcac59576a0eb830df49646443}\label{class_inputable_a82a8b8dcac59576a0eb830df49646443}} 
+\index{Inputable@{Inputable}!operator=@{operator=}}
+\index{operator=@{operator=}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_inputable}{Inputable}}\& Inputable\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inputable}{Inputable}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_inputable_a9c330f0dc24b3f66067b3761454fe8cd}\label{class_inputable_a9c330f0dc24b3f66067b3761454fe8cd}} 
+\index{Inputable@{Inputable}!SceneDeregistration@{SceneDeregistration}}
+\index{SceneDeregistration@{SceneDeregistration}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{SceneDeregistration()}{SceneDeregistration()}}
+{\footnotesize\ttfamily void Inputable\+::\+Scene\+Deregistration (\begin{DoxyParamCaption}\item[{A\+Z\+U\+L\+\_\+\+K\+EY}]{input\+Key,  }\item[{\mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_scene}{Scene}} deregistration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Key} & The input key. \\
+\hline
+{\em e} & An E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE to process. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inputable_a9c330f0dc24b3f66067b3761454fe8cd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inputable_a9c330f0dc24b3f66067b3761454fe8cd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inputable_acd03941e71d20c5ebce2fcf9c5bd263a}\label{class_inputable_acd03941e71d20c5ebce2fcf9c5bd263a}} 
+\index{Inputable@{Inputable}!SceneRegistration@{SceneRegistration}}
+\index{SceneRegistration@{SceneRegistration}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{SceneRegistration()}{SceneRegistration()}}
+{\footnotesize\ttfamily void Inputable\+::\+Scene\+Registration (\begin{DoxyParamCaption}\item[{A\+Z\+U\+L\+\_\+\+K\+EY}]{input\+Key,  }\item[{\mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_scene}{Scene}} registration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Key} & The input key. \\
+\hline
+{\em e} & An E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE to process. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inputable_acd03941e71d20c5ebce2fcf9c5bd263a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inputable_acd03941e71d20c5ebce2fcf9c5bd263a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inputable_a54848d4c6e1f26ae64596fcb0b14e7b5}\label{class_inputable_a54848d4c6e1f26ae64596fcb0b14e7b5}} 
+\index{Inputable@{Inputable}!SubmitKeyDeregistration@{SubmitKeyDeregistration}}
+\index{SubmitKeyDeregistration@{SubmitKeyDeregistration}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{SubmitKeyDeregistration()}{SubmitKeyDeregistration()}}
+{\footnotesize\ttfamily void Inputable\+::\+Submit\+Key\+Deregistration (\begin{DoxyParamCaption}\item[{A\+Z\+U\+L\+\_\+\+K\+EY}]{input\+Key,  }\item[{\mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Submit key deregistration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Key} & The input key. \\
+\hline
+{\em e} & An E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE to process. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inputable_a54848d4c6e1f26ae64596fcb0b14e7b5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}\label{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}} 
+\index{Inputable@{Inputable}!SubmitKeyRegistration@{SubmitKeyRegistration}}
+\index{SubmitKeyRegistration@{SubmitKeyRegistration}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{SubmitKeyRegistration()}{SubmitKeyRegistration()}}
+{\footnotesize\ttfamily void Inputable\+::\+Submit\+Key\+Registration (\begin{DoxyParamCaption}\item[{A\+Z\+U\+L\+\_\+\+K\+EY}]{input\+Key,  }\item[{\mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Submit key registration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Key} & The input key. \\
+\hline
+{\em e} & An E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE to process. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_inputable_a72f34925212cc8fb6e6a7b0e739aa429}\label{class_inputable_a72f34925212cc8fb6e6a7b0e739aa429}} 
+\index{Inputable@{Inputable}!InputableAttorney@{InputableAttorney}}
+\index{InputableAttorney@{InputableAttorney}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{InputableAttorney}{InputableAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_inputable_attorney}{Inputable\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_inputable_aa6cf396037fd8ab212198727f1fdd2f9}\label{class_inputable_aa6cf396037fd8ab212198727f1fdd2f9}} 
+\index{Inputable@{Inputable}!inMap@{inMap}}
+\index{inMap@{inMap}!Inputable@{Inputable}}
+\doxysubsubsection{\texorpdfstring{inMap}{inMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_inputable_a2d71e08e4460a0e9250e8351d638d69e}{Input\+Data\+Map}} Inputable\+::in\+Map}
+
+
+
+The inputable map. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_inputable_8h}{Inputable.\+h}}\item 
+\mbox{\hyperlink{_inputable_8cpp}{Inputable.\+cpp}}\end{DoxyCompactItemize}

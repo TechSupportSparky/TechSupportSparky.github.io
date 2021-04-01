@@ -1,0 +1,10 @@
+<map id="SceneAttorney::CollidableRegistration::GetCollisionMgr" name="SceneAttorney::CollidableRegistration::GetCollisionMgr">
+<area shape="rect" id="node1" title=" " alt="" coords="787,64,977,105"/>
+<area shape="rect" id="node2" href="$class_collidable.html#ab2935eb5445aa8413cf15b233569c515" title="Scene deregistration." alt="" coords="536,17,739,43"/>
+<area shape="rect" id="node5" href="$class_collidable.html#a78487a5481b7e229b12fba9f5ba11c4a" title="Scene registration." alt="" coords="541,71,733,98"/>
+<area shape="rect" id="node8" href="$class_collidable.html#aa05e6c186450b315db86379b2399e1b7" title="Sets collidable group." alt="" coords="556,123,719,164"/>
+<area shape="rect" id="node3" href="$class_collidable_attorney_1_1_registration.html#a8da0069a33230186f1fc1435a9ecdbb1" title=" " alt="" coords="264,5,488,47"/>
+<area shape="rect" id="node4" href="$class_collision_deregistration_command.html#a793d37b86ced6e1957a209aa28729f8b" title="Executes this command. Pure virtual function must be defined by all derived commands." alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node6" href="$class_collidable_attorney_1_1_registration.html#ae8df747db23970c581d7140d6816545c" title=" " alt="" coords="269,71,483,112"/>
+<area shape="rect" id="node7" href="$class_collision_registration_command.html#a76c79284af71a10da9465082cc1666b4" title="Executes this command. Pure virtual function must be defined by all derived commands." alt="" coords="11,71,210,112"/>
+</map>

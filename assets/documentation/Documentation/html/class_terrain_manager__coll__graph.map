@@ -1,0 +1,12 @@
+<map id="TerrainManager" name="TerrainManager">
+<area shape="rect" id="node1" title=" " alt="" coords="435,1300,621,1597"/>
+<area shape="rect" id="node2" href="$class_terrain_object.html" title=" " alt="" coords="465,808,591,1237"/>
+<area shape="rect" id="node3" href="$class_drawable_game_object.html" title=" " alt="" coords="723,580,899,731"/>
+<area shape="rect" id="node4" href="$class_drawable.html" title=" " alt="" coords="485,220,680,503"/>
+<area shape="rect" id="node5" href="$class_drawable_registration_command.html" title=" " alt="" coords="467,565,698,745"/>
+<area shape="rect" id="node8" href="$class_drawable_deregistration_command.html" title=" " alt="" coords="200,565,443,745"/>
+<area shape="rect" id="node6" href="$class_scene_registry.html" title="A scene registry." alt="" coords="230,286,365,437"/>
+<area shape="rect" id="node7" href="$class_command_base.html" title=" " alt="" coords="228,5,367,171"/>
+<area shape="rect" id="node9" title=" " alt="" coords="5,609,176,701"/>
+<area shape="rect" id="node10" href="$struct_terrain_object_1_1_cell.html" title="A cell as it is stored within the terrain." alt="" coords="26,315,155,407"/>
+</map>

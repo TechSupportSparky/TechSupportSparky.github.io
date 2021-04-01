@@ -1,0 +1,4 @@
+<map id="Sly::GameInitialize" name="Sly::GameInitialize">
+<area shape="rect" id="node1" title="Game initialize, window and engine modifications to be defined by the user." alt="" coords="149,5,280,32"/>
+<area shape="rect" id="node2" href="$class_sly.html#a4a1ba96ab96474fdf6b2f89f60dd46c8" title="Engine initialization. Setups up various managers." alt="" coords="5,5,101,32"/>
+</map>

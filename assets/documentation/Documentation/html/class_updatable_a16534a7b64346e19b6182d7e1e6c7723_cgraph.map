@@ -1,0 +1,9 @@
+<map id="Updatable::SceneRegistration" name="Updatable::SceneRegistration">
+<area shape="rect" id="node1" title="Scene registration." alt="" coords="5,64,200,91"/>
+<area shape="rect" id="node2" href="$class_scene_attorney_1_1_updatable_registration.html#adc0ad1efa898756cfb4b80390c1bc6fa" title=" " alt="" coords="250,27,433,69"/>
+<area shape="rect" id="node7" href="$class_updatable_manager.html#ae135907d44e82d80bcaf3552c9c00e76" title="Registers this." alt="" coords="248,93,435,120"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="483,27,663,69"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="727,5,893,32"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="711,57,909,98"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="957,5,1161,32"/>
+</map>

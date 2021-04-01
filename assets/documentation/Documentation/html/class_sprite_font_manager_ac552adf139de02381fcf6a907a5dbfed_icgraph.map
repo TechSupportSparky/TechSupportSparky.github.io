@@ -1,0 +1,6 @@
+<map id="SpriteFontManager::privDelete" name="SpriteFontManager::privDelete">
+<area shape="rect" id="node1" title="Delete&#39;s the pointer instance. Only to be called internally." alt="" coords="609,5,749,47"/>
+<area shape="rect" id="node2" href="$class_sprite_font_manager.html#a44a1b071254e805966140523d628d4b4" title="Deletes SpriteFontManager&#39;s pointer instance. Only to be called by engine code." alt="" coords="421,5,561,47"/>
+<area shape="rect" id="node3" href="$class_sprite_font_manager_attorney.html#a1de8e11ee13ebb5cd2a7188d07b5cd5b" title=" " alt="" coords="192,5,373,47"/>
+<area shape="rect" id="node4" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="5,13,144,39"/>
+</map>

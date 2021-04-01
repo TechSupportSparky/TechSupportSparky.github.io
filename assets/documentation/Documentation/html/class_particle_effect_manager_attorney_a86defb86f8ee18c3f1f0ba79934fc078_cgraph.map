@@ -1,0 +1,7 @@
+<map id="ParticleEffectManagerAttorney::Delete" name="ParticleEffectManagerAttorney::Delete">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,204,80"/>
+<area shape="rect" id="node2" href="$class_particle_effect_manager.html#a088a5d92f4259446a2a9d8b6d0875e1a" title="Call to delete the instance of Particle Effect." alt="" coords="252,39,401,80"/>
+<area shape="rect" id="node3" href="$class_particle_effect_manager.html#a0ec038d10c4d82cba26ae84b9001a2e1" title="Gets the instance of particle effect manager." alt="" coords="449,5,599,47"/>
+<area shape="rect" id="node5" href="$class_particle_effect_manager.html#a25ef2bfd94329ae545caba60ffae473d" title="Internal delete call to remove the instance of ParticleEffect." alt="" coords="449,71,599,112"/>
+<area shape="rect" id="node4" href="$class_particle_effect_manager.html#a5423d1a88f78ec6f779ac6685b043773" title="Default constructor." alt="" coords="647,5,804,47"/>
+</map>

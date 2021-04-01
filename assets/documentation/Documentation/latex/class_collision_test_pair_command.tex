@@ -1,0 +1,148 @@
+\hypertarget{class_collision_test_pair_command}{}\doxysection{Collision\+Test\+Pair\+Command Class Reference}
+\label{class_collision_test_pair_command}\index{CollisionTestPairCommand@{CollisionTestPairCommand}}
+
+
+{\ttfamily \#include $<$Collision\+Test\+Pair\+Command.\+h$>$}
+
+
+
+Inheritance diagram for Collision\+Test\+Pair\+Command\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{class_collision_test_pair_command__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Collision\+Test\+Pair\+Command\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_collision_test_pair_command__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_test_pair_command_a7d1e62849e0630a8d3a6eaa29798e61c}{Collision\+Test\+Pair\+Command}} ()=delete
+\item 
+\mbox{\hyperlink{class_collision_test_pair_command_ae1e1e7365043e6a95f4b0ed498ed25ad}{Collision\+Test\+Pair\+Command}} (\mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} $\ast$g1, \mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} $\ast$g2, \mbox{\hyperlink{class_collision_dispatch_base}{Collision\+Dispatch\+Base}} $\ast$pd)
+\item 
+\mbox{\hyperlink{class_collision_test_pair_command_a78f6656dbf513cf137c39cbb6e96a2ca}{Collision\+Test\+Pair\+Command}} (const \mbox{\hyperlink{class_collision_test_pair_command}{Collision\+Test\+Pair\+Command}} \&)=delete
+\item 
+\mbox{\hyperlink{class_collision_test_pair_command_a9d1bf85f5422db68de24f3da861673ac}{Collision\+Test\+Pair\+Command}} (\mbox{\hyperlink{class_collision_test_pair_command}{Collision\+Test\+Pair\+Command}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_collision_test_pair_command}{Collision\+Test\+Pair\+Command}} \& \mbox{\hyperlink{class_collision_test_pair_command_aad396bc2606ded4db68f39056aaeee37}{operator=}} (const \mbox{\hyperlink{class_collision_test_pair_command}{Collision\+Test\+Pair\+Command}} \&)=delete
+\item 
+\mbox{\hyperlink{class_collision_test_pair_command}{Collision\+Test\+Pair\+Command}} \& \mbox{\hyperlink{class_collision_test_pair_command_ab623bb0a2a3df94a8cf7d67e62561cf2}{operator=}} (\mbox{\hyperlink{class_collision_test_pair_command}{Collision\+Test\+Pair\+Command}} \&\&)=delete
+\item 
+virtual \mbox{\hyperlink{class_collision_test_pair_command_acdb91b378e77c5f8b90368a485b8b8f9}{$\sim$\+Collision\+Test\+Pair\+Command}} ()
+\item 
+void \mbox{\hyperlink{class_collision_test_pair_command_a489de7fe1a3b7c767d6d66ae5f7c9a4f}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes this command. Pure virtual function must be defined by all derived commands. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_dispatch_base}{Collision\+Dispatch\+Base}} $\ast$ \mbox{\hyperlink{class_collision_test_pair_command_a758190aa08aaf64b1cfdf80f626e7337}{p\+Dispatch}}
+\item 
+\mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} $\ast$ \mbox{\hyperlink{class_collision_test_pair_command_a1d56f6d8fc20e1d6439d03ff8ca4afb2}{p\+G1}}
+\item 
+\mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} $\ast$ \mbox{\hyperlink{class_collision_test_pair_command_a6ed6dc76ea9d16345f9debf4fa94e4d4}{p\+G2}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_collision_test_pair_command_a7d1e62849e0630a8d3a6eaa29798e61c}\label{class_collision_test_pair_command_a7d1e62849e0630a8d3a6eaa29798e61c}} 
+\index{CollisionTestPairCommand@{CollisionTestPairCommand}!CollisionTestPairCommand@{CollisionTestPairCommand}}
+\index{CollisionTestPairCommand@{CollisionTestPairCommand}!CollisionTestPairCommand@{CollisionTestPairCommand}}
+\doxysubsubsection{\texorpdfstring{CollisionTestPairCommand()}{CollisionTestPairCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Collision\+Test\+Pair\+Command\+::\+Collision\+Test\+Pair\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_collision_test_pair_command_ae1e1e7365043e6a95f4b0ed498ed25ad}\label{class_collision_test_pair_command_ae1e1e7365043e6a95f4b0ed498ed25ad}} 
+\index{CollisionTestPairCommand@{CollisionTestPairCommand}!CollisionTestPairCommand@{CollisionTestPairCommand}}
+\index{CollisionTestPairCommand@{CollisionTestPairCommand}!CollisionTestPairCommand@{CollisionTestPairCommand}}
+\doxysubsubsection{\texorpdfstring{CollisionTestPairCommand()}{CollisionTestPairCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Collision\+Test\+Pair\+Command\+::\+Collision\+Test\+Pair\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} $\ast$}]{g1,  }\item[{\mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} $\ast$}]{g2,  }\item[{\mbox{\hyperlink{class_collision_dispatch_base}{Collision\+Dispatch\+Base}} $\ast$}]{pd }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_collision_test_pair_command_a78f6656dbf513cf137c39cbb6e96a2ca}\label{class_collision_test_pair_command_a78f6656dbf513cf137c39cbb6e96a2ca}} 
+\index{CollisionTestPairCommand@{CollisionTestPairCommand}!CollisionTestPairCommand@{CollisionTestPairCommand}}
+\index{CollisionTestPairCommand@{CollisionTestPairCommand}!CollisionTestPairCommand@{CollisionTestPairCommand}}
+\doxysubsubsection{\texorpdfstring{CollisionTestPairCommand()}{CollisionTestPairCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Collision\+Test\+Pair\+Command\+::\+Collision\+Test\+Pair\+Command (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_test_pair_command}{Collision\+Test\+Pair\+Command}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_collision_test_pair_command_a9d1bf85f5422db68de24f3da861673ac}\label{class_collision_test_pair_command_a9d1bf85f5422db68de24f3da861673ac}} 
+\index{CollisionTestPairCommand@{CollisionTestPairCommand}!CollisionTestPairCommand@{CollisionTestPairCommand}}
+\index{CollisionTestPairCommand@{CollisionTestPairCommand}!CollisionTestPairCommand@{CollisionTestPairCommand}}
+\doxysubsubsection{\texorpdfstring{CollisionTestPairCommand()}{CollisionTestPairCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Collision\+Test\+Pair\+Command\+::\+Collision\+Test\+Pair\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_test_pair_command}{Collision\+Test\+Pair\+Command}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_collision_test_pair_command_acdb91b378e77c5f8b90368a485b8b8f9}\label{class_collision_test_pair_command_acdb91b378e77c5f8b90368a485b8b8f9}} 
+\index{CollisionTestPairCommand@{CollisionTestPairCommand}!````~CollisionTestPairCommand@{$\sim$CollisionTestPairCommand}}
+\index{````~CollisionTestPairCommand@{$\sim$CollisionTestPairCommand}!CollisionTestPairCommand@{CollisionTestPairCommand}}
+\doxysubsubsection{\texorpdfstring{$\sim$CollisionTestPairCommand()}{~CollisionTestPairCommand()}}
+{\footnotesize\ttfamily Collision\+Test\+Pair\+Command\+::$\sim$\+Collision\+Test\+Pair\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collision_test_pair_command_a489de7fe1a3b7c767d6d66ae5f7c9a4f}\label{class_collision_test_pair_command_a489de7fe1a3b7c767d6d66ae5f7c9a4f}} 
+\index{CollisionTestPairCommand@{CollisionTestPairCommand}!execute@{execute}}
+\index{execute@{execute}!CollisionTestPairCommand@{CollisionTestPairCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Collision\+Test\+Pair\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes this command. Pure virtual function must be defined by all derived commands. 
+
+
+
+Implements \mbox{\hyperlink{class_command_base_a8977bf07d93b93c7d3c96cce558e9d45}{Command\+Base}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_test_pair_command_a489de7fe1a3b7c767d6d66ae5f7c9a4f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_test_pair_command_ab623bb0a2a3df94a8cf7d67e62561cf2}\label{class_collision_test_pair_command_ab623bb0a2a3df94a8cf7d67e62561cf2}} 
+\index{CollisionTestPairCommand@{CollisionTestPairCommand}!operator=@{operator=}}
+\index{operator=@{operator=}!CollisionTestPairCommand@{CollisionTestPairCommand}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_test_pair_command}{Collision\+Test\+Pair\+Command}}\& Collision\+Test\+Pair\+Command\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_test_pair_command}{Collision\+Test\+Pair\+Command}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_collision_test_pair_command_aad396bc2606ded4db68f39056aaeee37}\label{class_collision_test_pair_command_aad396bc2606ded4db68f39056aaeee37}} 
+\index{CollisionTestPairCommand@{CollisionTestPairCommand}!operator=@{operator=}}
+\index{operator=@{operator=}!CollisionTestPairCommand@{CollisionTestPairCommand}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_test_pair_command}{Collision\+Test\+Pair\+Command}}\& Collision\+Test\+Pair\+Command\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_test_pair_command}{Collision\+Test\+Pair\+Command}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_collision_test_pair_command_a758190aa08aaf64b1cfdf80f626e7337}\label{class_collision_test_pair_command_a758190aa08aaf64b1cfdf80f626e7337}} 
+\index{CollisionTestPairCommand@{CollisionTestPairCommand}!pDispatch@{pDispatch}}
+\index{pDispatch@{pDispatch}!CollisionTestPairCommand@{CollisionTestPairCommand}}
+\doxysubsubsection{\texorpdfstring{pDispatch}{pDispatch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_dispatch_base}{Collision\+Dispatch\+Base}}$\ast$ Collision\+Test\+Pair\+Command\+::p\+Dispatch\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_collision_test_pair_command_a1d56f6d8fc20e1d6439d03ff8ca4afb2}\label{class_collision_test_pair_command_a1d56f6d8fc20e1d6439d03ff8ca4afb2}} 
+\index{CollisionTestPairCommand@{CollisionTestPairCommand}!pG1@{pG1}}
+\index{pG1@{pG1}!CollisionTestPairCommand@{CollisionTestPairCommand}}
+\doxysubsubsection{\texorpdfstring{pG1}{pG1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collidable_group}{Collidable\+Group}}$\ast$ Collision\+Test\+Pair\+Command\+::p\+G1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_collision_test_pair_command_a6ed6dc76ea9d16345f9debf4fa94e4d4}\label{class_collision_test_pair_command_a6ed6dc76ea9d16345f9debf4fa94e4d4}} 
+\index{CollisionTestPairCommand@{CollisionTestPairCommand}!pG2@{pG2}}
+\index{pG2@{pG2}!CollisionTestPairCommand@{CollisionTestPairCommand}}
+\doxysubsubsection{\texorpdfstring{pG2}{pG2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collidable_group}{Collidable\+Group}}$\ast$ Collision\+Test\+Pair\+Command\+::p\+G2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_collision_test_pair_command_8h}{Collision\+Test\+Pair\+Command.\+h}}\item 
+\mbox{\hyperlink{_collision_test_pair_command_8cpp}{Collision\+Test\+Pair\+Command.\+cpp}}\end{DoxyCompactItemize}

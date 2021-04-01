@@ -1,0 +1,6 @@
+<map id="SkyBox" name="SkyBox">
+<area shape="rect" id="node1" title=" " alt="" coords="46,564,174,861"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,402,71,479"/>
+<area shape="rect" id="node3" href="$class_drawable_game_object.html" title=" " alt="" coords="95,365,271,516"/>
+<area shape="rect" id="node4" href="$class_drawable.html" title=" " alt="" coords="86,5,281,317"/>
+</map>

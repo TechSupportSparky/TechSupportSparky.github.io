@@ -1,0 +1,52 @@
+<map id="Sly::UnLoadContent" name="Sly::UnLoadContent">
+<area shape="rect" id="node1" title="Cleans up engine content." alt="" coords="5,677,144,704"/>
+<area shape="rect" id="node2" href="$class_terrain_manager_attorney.html#ac1437992b735295d10c938b6e5066731" title=" " alt="" coords="213,74,373,115"/>
+<area shape="rect" id="node6" href="$class_texture_manager_attorney.html#a4b85bea5e9bdd5724c9d3c6d7ff9890c" title=" " alt="" coords="211,165,375,206"/>
+<area shape="rect" id="node10" href="$class_shader_manager_attorney.html#a9fa0fdaca64fc5a44bb63bdd967a38e3" title=" " alt="" coords="211,245,374,286"/>
+<area shape="rect" id="node14" href="$class_terrain_object_manager_attorney.html#a245d2a507cde9b62803e486163dc0b5d" title=" " alt="" coords="193,310,392,351"/>
+<area shape="rect" id="node18" href="$class_sky_box_asset_manager_attorney.html#aca47c3859bb3257cd9a4bcd1180c1ecc" title=" " alt="" coords="192,375,393,417"/>
+<area shape="rect" id="node21" href="$class_particle_effect_manager_attorney.html#a86defb86f8ee18c3f1f0ba79934fc078" title=" " alt="" coords="193,441,392,482"/>
+<area shape="rect" id="node23" href="$class_model_manager_attorney.html#a381d07049b36c8a9bb828a02fa68f7fa" title=" " alt="" coords="215,506,371,547"/>
+<area shape="rect" id="node25" href="$class_screen_log_attorney.html#a231b6bb26ad315a68526fe0b2206c1b7" title=" " alt="" coords="222,571,363,613"/>
+<area shape="rect" id="node27" href="$class_sprite_font_manager_attorney.html#a1de8e11ee13ebb5cd2a7188d07b5cd5b" title=" " alt="" coords="202,637,383,678"/>
+<area shape="rect" id="node29" href="$class_image_manager_attorney.html#a5902cfaa0a7b68738d98abe7bb420d7f" title=" " alt="" coords="215,702,371,743"/>
+<area shape="rect" id="node31" href="$class_console_log_attorney.html#a181c2522a3be32dcf1354e68f3a8ced7" title=" " alt="" coords="223,767,362,809"/>
+<area shape="rect" id="node33" href="$class_scene_manager.html#aefba8a3a94173f0dc139220284d214e2" title="Deletes the scene swap commands and pointer instance." alt="" coords="215,833,370,860"/>
+<area shape="rect" id="node36" href="$class_sly.html#add7937a5ff10830f496b6e00c43e3d91" title="Game end, to be defined by the user. Typically used for cleaning up memory." alt="" coords="239,884,346,911"/>
+<area shape="rect" id="node37" href="$class_screen_panel_factory_attorney.html#a55fb69046672314ef6e5f655f56a01f3" title=" " alt="" coords="198,935,387,977"/>
+<area shape="rect" id="node39" href="$class_particle_factory.html#a23f1fd1d1841c25f634b80ea75f9e83c" title=" " alt="" coords="205,1001,380,1028"/>
+<area shape="rect" id="node42" href="$class_burst_factory.html#ad17d39f3ba09ddce10ec8b742addb832" title=" " alt="" coords="211,1076,374,1103"/>
+<area shape="rect" id="node45" href="$class_time_manager.html#af9f601ffa516a272f224dc72b9dea24f" title="Terminates the singleton." alt="" coords="210,1177,375,1204"/>
+<area shape="rect" id="node48" href="$class_console_manager.html#a776feb8fb79801025d0492c3815f756f" title="Terminates this instance." alt="" coords="201,1279,385,1305"/>
+<area shape="rect" id="node3" href="$class_terrain_manager.html#af9c0900b9272813ab331b278bd7e5e94" title="Delete the TerrainManager." alt="" coords="465,56,621,83"/>
+<area shape="rect" id="node4" href="$class_terrain_manager.html#a9ed6f4cc405eefa3f8d7bee61ac12be9" title="Gets the instance of TerrainManager." alt="" coords="697,5,865,32"/>
+<area shape="rect" id="node5" href="$class_terrain_manager.html#a9396b8be4f7c265e104c03a696c2ab41" title="Internal call to delete the pointer of TerrainManager instance." alt="" coords="694,56,869,83"/>
+<area shape="rect" id="node7" href="$class_texture_manager.html#a33f1955011fe8ca64f0b50c6a5b972b4" title="Deletes the pointer instance. Only to be called internally by Sly." alt="" coords="463,157,623,184"/>
+<area shape="rect" id="node8" href="$class_texture_manager.html#af8c4f47e97491dc5001ce1ee5b0fce3f" title="Gets the instance." alt="" coords="695,107,867,133"/>
+<area shape="rect" id="node9" href="$class_texture_manager.html#a8a9131247f92b179147da3651f8e8f3d" title="Private delete, delete ptrInstance." alt="" coords="692,157,871,184"/>
+<area shape="rect" id="node11" href="$class_shader_manager.html#ae5e338a92e3c784c333c1775d8dd2ea3" title="Deletes pointer instance. To be called within Engine code only." alt="" coords="463,252,622,279"/>
+<area shape="rect" id="node12" href="$class_shader_manager.html#a027cb5c486b20e641bcbf94e8186a965" title="Gets the instance." alt="" coords="696,208,867,235"/>
+<area shape="rect" id="node13" href="$class_shader_manager.html#a3450b4c48e0e27497483b2d4b121cabe" title="Deletes pointer instance. To be called internally only." alt="" coords="693,259,870,285"/>
+<area shape="rect" id="node15" href="$class_terrain_object_manager.html#a1123203fe6b4a86085b6bb9daa36fbc4" title="Sly&#39;s hook into the delete section of the TerrainObjectManager. Only called within Sly." alt="" coords="468,310,617,351"/>
+<area shape="rect" id="node16" href="$class_terrain_object_manager.html#a3e1de183b4aaca5f75c4f756099fc393" title="Gets the instance of TerrainObjectManager (Singleton)" alt="" coords="707,310,856,351"/>
+<area shape="rect" id="node17" href="$class_terrain_object_manager.html#a79a157a5b7b7b3849e47da00205f8aee" title="Internal call to delete pointer instance. Only to be called by the engine." alt="" coords="707,375,856,417"/>
+<area shape="rect" id="node19" href="$class_sky_box_asset_manager.html#ab1387a06d42cbc4e099c931eb05f417e" title="Internal static call to delete internal assets." alt="" coords="467,375,619,417"/>
+<area shape="rect" id="node20" href="$class_sky_box_asset_manager.html#ada957918e4ed91420cb80d1493495cca" title="Gets the instance of SkyBoxAssetManager." alt="" coords="705,441,857,482"/>
+<area shape="rect" id="node22" href="$class_particle_effect_manager.html#a088a5d92f4259446a2a9d8b6d0875e1a" title="Call to delete the instance of Particle Effect." alt="" coords="468,441,617,482"/>
+<area shape="rect" id="node24" href="$class_model_manager.html#afff1e949fe07e021aa5a2fb12fd6f932" title="Deletes ModelManager&#39;s pointer instance. Only to be called by engine code." alt="" coords="467,513,619,540"/>
+<area shape="rect" id="node26" href="$class_screen_log.html#ad017d1cd044509ee5dd47311c7816aca" title=" " alt="" coords="478,579,607,605"/>
+<area shape="rect" id="node28" href="$class_sprite_font_manager.html#a44a1b071254e805966140523d628d4b4" title="Deletes SpriteFontManager&#39;s pointer instance. Only to be called by engine code." alt="" coords="473,637,613,678"/>
+<area shape="rect" id="node30" href="$class_image_manager.html#ae01895974e6e3e9ae95dbb11c6070e23" title="Deletes this pointer instance. To only be called by the engine." alt="" coords="467,705,619,732"/>
+<area shape="rect" id="node32" href="$class_console_log.html#ae37be348e2300f9f41c13c06bcdcccda" title=" " alt="" coords="475,756,610,783"/>
+<area shape="rect" id="node34" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="459,807,626,833"/>
+<area shape="rect" id="node35" href="$class_scene_manager.html#ae637b8ddc620e5903c1b44293f56bf08" title="Private delete." alt="" coords="456,857,629,884"/>
+<area shape="rect" id="node38" href="$class_screen_panel_factory.html#a66104988689af83b7a05543dcdb69ae9" title=" " alt="" coords="473,909,613,950"/>
+<area shape="rect" id="node40" href="$class_particle_factory.html#a6e2961780b44f31cd008007dd5955b57" title=" " alt="" coords="459,975,626,1001"/>
+<area shape="rect" id="node41" href="$class_particle_factory.html#a4f1c1d614de2180877bd3a6b6df0d80a" title=" " alt="" coords="445,1025,640,1052"/>
+<area shape="rect" id="node43" href="$class_burst_factory.html#a4185bc096d7939bb40e9b3e649b80dcd" title=" " alt="" coords="465,1076,620,1103"/>
+<area shape="rect" id="node44" href="$class_burst_factory.html#a56b3b60486e8e814ccfeb1d9c2310120" title=" " alt="" coords="452,1127,633,1153"/>
+<area shape="rect" id="node46" href="$class_time_manager.html#ac06b0a182b394ddc0ac554ad090ee019" title="Gets the instance." alt="" coords="464,1177,621,1204"/>
+<area shape="rect" id="node47" href="$class_time_manager.html#ad0168ebd321c1800dcefa0a431388973" title="Private terminate. Deletes Pointer instance." alt="" coords="451,1228,635,1255"/>
+<area shape="rect" id="node49" href="$class_console_manager.html#a906c569f9ea442602dbe61e65b779ccc" title=" " alt="" coords="455,1279,631,1305"/>
+<area shape="rect" id="node50" href="$class_console_manager.html#a90b72ca1f154571438c793744326c906" title=" " alt="" coords="441,1329,644,1356"/>
+</map>

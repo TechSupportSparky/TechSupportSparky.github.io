@@ -1,0 +1,5 @@
+<map id="Visualizer::ShowCollisionVolume" name="Visualizer::ShowCollisionVolume">
+<area shape="rect" id="node1" title="Maps the correct call for CollisionVolume c to visualize itself." alt="" coords="248,39,416,80"/>
+<area shape="rect" id="node2" href="$class_collision_test_terrain_command.html#adae6dfa0f875cdfa7e6a8cea76aa02cc" title="Executes this command. Pure virtual function must be defined by all derived commands." alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node3" href="$class_terrain_object.html#ae4a408bb9e5db209cb1672e5b7033dd4" title=" " alt="" coords="19,71,187,112"/>
+</map>

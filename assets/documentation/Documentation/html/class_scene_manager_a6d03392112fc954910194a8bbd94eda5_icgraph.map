@@ -1,0 +1,4 @@
+<map id="SceneManager::privSetDefault" name="SceneManager::privSetDefault">
+<area shape="rect" id="node1" title="Priv set default." alt="" coords="231,5,427,32"/>
+<area shape="rect" id="node2" href="$class_scene_manager.html#ac8258eb6b8bec75bd018fa7d28b516d3" title="Sets up what scene should be loaded as the default startup." alt="" coords="5,5,183,32"/>
+</map>

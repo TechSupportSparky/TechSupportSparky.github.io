@@ -1,0 +1,10 @@
+<map id="Inputable::InputableData" name="Inputable::InputableData">
+<area shape="rect" id="node1" title="An inputable data." alt="" coords="400,5,561,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="137,182,281,274"/>
+<area shape="rect" id="node7" title=" " alt="" coords="525,182,703,274"/>
+<area shape="rect" id="node2" href="$class_inputable_deregistration_command.html" title=" " alt="" coords="5,675,239,913"/>
+<area shape="rect" id="node3" href="$class_scene_registry.html" title="A scene registry." alt="" coords="308,417,443,568"/>
+<area shape="rect" id="node8" href="$class_inputable_registration_command.html" title=" " alt="" coords="263,682,493,906"/>
+<area shape="rect" id="node4" href="$class_command_base.html" title=" " alt="" coords="305,145,443,311"/>
+<area shape="rect" id="node5" href="$class_inputable.html" title=" " alt="" coords="99,373,284,612"/>
+</map>

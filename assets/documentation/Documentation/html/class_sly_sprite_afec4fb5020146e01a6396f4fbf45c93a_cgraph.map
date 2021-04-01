@@ -1,0 +1,20 @@
+<map id="SlySprite::SlySprite" name="SlySprite::SlySprite">
+<area shape="rect" id="node1" title="Specialized Constructor." alt="" coords="5,183,141,209"/>
+<area shape="rect" id="node2" href="$class_shader_manager.html#a102591e663e0897ac54aee3bb097ab5f" title="Gets a shader object* using the given key." alt="" coords="190,56,333,83"/>
+<area shape="rect" id="node6" href="$class_texture_manager.html#a2c8c249eeca164c77c18b36243da6a9a" title="Gets a texture* using the given key." alt="" coords="189,157,333,184"/>
+<area shape="rect" id="node10" href="$class_image_manager.html#a9521b5248002fd6f48355c7f8edf27c8" title="Gets an image* using the given key." alt="" coords="193,208,329,235"/>
+<area shape="rect" id="node14" href="$class_model_manager.html#ac48466a9c8c05c81a6d6acd19b13233a" title="Gets a model* using the given key." alt="" coords="193,309,329,336"/>
+<area shape="rect" id="node3" href="$class_shader_manager.html#a027cb5c486b20e641bcbf94e8186a965" title="Gets the instance." alt="" coords="382,5,553,32"/>
+<area shape="rect" id="node5" href="$class_shader_manager.html#aa99cbaffdf83f033e1541b210a3da0c4" title="Private get." alt="" coords="387,56,548,83"/>
+<area shape="rect" id="node4" href="$class_shader_manager.html#aca25f81fd10a02b3e97e9c459b864186" title="Default constructor." alt="" coords="603,5,815,32"/>
+<area shape="rect" id="node7" href="$class_texture_manager.html#af8c4f47e97491dc5001ce1ee5b0fce3f" title="Gets the instance." alt="" coords="381,107,553,133"/>
+<area shape="rect" id="node9" href="$class_texture_manager.html#ab2dc090498f7d63d4cda50b6a782706e" title="Priv get." alt="" coords="386,157,549,184"/>
+<area shape="rect" id="node8" href="$class_texture_manager.html#ad76abb178b37cedf4514eb0154349935" title="Default constructor." alt="" coords="601,107,817,133"/>
+<area shape="rect" id="node11" href="$class_image_manager.html#ae1fff2154dfa21faf1baab26521cb99f" title="Gets the ImageManager instance." alt="" coords="385,208,549,235"/>
+<area shape="rect" id="node13" href="$class_image_manager.html#a15ccbf48104c58d6acabca0f7a47d77c" title="Private get." alt="" coords="390,259,545,285"/>
+<area shape="rect" id="node12" href="$class_image_manager.html#a8c856af0e3f0d23da7c765b0e33e585e" title="Default constructor." alt="" coords="609,208,809,235"/>
+<area shape="rect" id="node15" href="$class_model_manager.html#a34bb227e07db616a207d7e28bab70a31" title="Gets the instance." alt="" coords="385,309,549,336"/>
+<area shape="rect" id="node18" href="$class_model_manager.html#a0148b218c2cf5e0baa00049b6e604f9a" title="Priv get." alt="" coords="390,360,545,387"/>
+<area shape="rect" id="node16" href="$class_model_manager.html#a9b0d22b1baf59c5b566e82fcd8ca424a" title="Default constructor." alt="" coords="609,309,809,336"/>
+<area shape="rect" id="node17" href="$class_model_manager.html#aa736d7e7712bb2c0f7b8406a502cf152" title="Private load sprite model." alt="" coords="865,302,1061,343"/>
+</map>

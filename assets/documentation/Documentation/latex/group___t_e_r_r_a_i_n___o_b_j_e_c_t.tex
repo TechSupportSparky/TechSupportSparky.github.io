@@ -1,0 +1,25 @@
+\hypertarget{group___t_e_r_r_a_i_n___o_b_j_e_c_t}{}\doxysection{Terrain\+Object}
+\label{group___t_e_r_r_a_i_n___o_b_j_e_c_t}\index{TerrainObject@{TerrainObject}}
+Collaboration diagram for Terrain\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{group___t_e_r_r_a_i_n___o_b_j_e_c_t}
+\end{center}
+\end{figure}
+The Terrain Object is a terrain that takes a heightmap and texture as input to generate an engine maintained terrain. An example of loading a terrain object is as follows\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{_terrain_object_manager_8h}{TerrainObjectManager.h}}"}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_sly_a2f502a5aa9cd07dcc29858a104827213}{Sly::LoadAllResources}}() \{}
+\DoxyCodeLine{    \mbox{\hyperlink{class_texture_manager_a3005389b043a4022a7f36458d84696ac}{TextureManager::Load}}(\textcolor{stringliteral}{"GrassTexture"}, \textcolor{stringliteral}{"grass.tga"});}
+\DoxyCodeLine{    \mbox{\hyperlink{class_terrain_object_manager_ac557665da6faf6a79bbf8332e6c539dd}{TerrainObjectManager::Load}}(\textcolor{stringliteral}{"TerrainName"}, \textcolor{stringliteral}{"HeightMapFile.tga"}, \textcolor{stringliteral}{"GrassTexture"}, 1000, 80, 1, 1);}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+The above line of code will generate a terrain of size 1000 and height of 80 (determined by the heightmap data gathered from Height\+Map\+File.\+tga). The Terrain\+Name may be anything that the coder would like to use. The Texture\+Name\+Key is a string that matches an existing texture key within the \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}}. Note, this does mean that the \mbox{\hyperlink{class_terrain_object_manager}{Terrain\+Object\+Manager}} Load command must come after a texture load. If you attempt to load it before the texture, you will get an error stating the texture does not exist.
+
+The last parameter refers to the UV coordinates. If you are unfamiliar with UV coordinates, think about them as \char`\"{}amount of repeats\char`\"{} in the x and z directions. 

@@ -1,0 +1,4 @@
+<map id="SceneManager::Delete" name="SceneManager::Delete">
+<area shape="rect" id="node1" title="Deletes the scene swap commands and pointer instance." alt="" coords="192,5,347,32"/>
+<area shape="rect" id="node2" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="5,5,144,32"/>
+</map>

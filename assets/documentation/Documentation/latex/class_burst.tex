@@ -1,0 +1,266 @@
+\hypertarget{class_burst}{}\doxysection{Burst Class Reference}
+\label{class_burst}\index{Burst@{Burst}}
+
+
+{\ttfamily \#include $<$Burst.\+h$>$}
+
+
+
+Inheritance diagram for Burst\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{class_burst__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Burst\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_burst__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_burst_a4c19985e192add05e4f50f6824bd5700}{Burst}} ()
+\item 
+\mbox{\hyperlink{class_burst_ad16a6dfd70ae06197e3b694b12afcd8e}{Burst}} (const \mbox{\hyperlink{class_burst}{Burst}} \&)=delete
+\item 
+\mbox{\hyperlink{class_burst_a65c590390e80aa5510c1ac06907d15e3}{Burst}} (\mbox{\hyperlink{class_burst}{Burst}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_burst}{Burst}} \& \mbox{\hyperlink{class_burst_a76edaf2def76d8b14963581034880451}{operator=}} (const \mbox{\hyperlink{class_burst}{Burst}} \&)=delete
+\item 
+\mbox{\hyperlink{class_burst}{Burst}} \& \mbox{\hyperlink{class_burst_a6796de4795c44983a98b9de7cfd05125}{operator=}} (\mbox{\hyperlink{class_burst}{Burst}} \&\&)=delete
+\item 
+virtual \mbox{\hyperlink{class_burst_a71e8471a4071593a1cf5e99f804f0812}{$\sim$\+Burst}} ()
+\item 
+void \mbox{\hyperlink{class_burst_ac1935ecdda2ccbbc98fa3a8fa9c3a99d}{Initialize}} (\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$\+\_\+pe, int \mbox{\hyperlink{class_burst_aa115e77093fafb6dbad35e8b5c000370}{num\+Particles}}, float \mbox{\hyperlink{class_burst_a10d648bc5a4c67eb883028af1e16436c}{expire\+Time}}, float speed, Vect pos, Matrix rot)
+\item 
+\mbox{\hyperlink{class_burst_a78aedd35ee62d990ba2ead0e97d2931b}{Burst}} (\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$\mbox{\hyperlink{class_burst_a0e4e96ce05ffe93908b79b30a02a6931}{pe}}, int \mbox{\hyperlink{class_burst_aa115e77093fafb6dbad35e8b5c000370}{num\+Particles}}, float \mbox{\hyperlink{class_burst_a10d648bc5a4c67eb883028af1e16436c}{expire\+Time}})
+\item 
+float \mbox{\hyperlink{class_burst_a3d04545e5298a1db9ff3ca59cb273904}{Get\+Expiration}} ()
+\item 
+void \mbox{\hyperlink{class_burst_a726e61d964723c98e044102920bb30e3}{Draw\+Particles}} ()
+\item 
+void \mbox{\hyperlink{class_burst_a641ca2d699f1701bb56d53e2f45fd5c6}{Set\+Emitter\+Storage\+Ref}} (\mbox{\hyperlink{class_particle_emitter_a7646bec086ece9fd9e8ebecf640f1fa0}{Particle\+Emitter\+::\+Particle\+Emitter\+Storage\+Ref}} new\+Ref)
+\item 
+\mbox{\hyperlink{class_particle_emitter_a7646bec086ece9fd9e8ebecf640f1fa0}{Particle\+Emitter\+::\+Particle\+Emitter\+Storage\+Ref}} \mbox{\hyperlink{class_burst_ad1ee8b34b370cc706fa3bdf16c74614f}{Get\+Emitter\+Storage\+Ref}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_burst_factory_ae26107b30ec05a2ddc5b9ac23f10ca18}{Burst\+Factory\+::\+Storage\+Ref}} \mbox{\hyperlink{class_burst_a88be6663e8d5af6658f02917fdcc0f16}{my\+Delete\+Ref}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$ \mbox{\hyperlink{class_burst_a0e4e96ce05ffe93908b79b30a02a6931}{pe}}
+\item 
+\mbox{\hyperlink{class_particle}{Particle}} $\ast$ \mbox{\hyperlink{class_burst_a47df9df0f0861b984167d0cb956a4b66}{particles}}
+\begin{DoxyCompactList}\small\item\em Array of particles. \end{DoxyCompactList}\item 
+Vect \mbox{\hyperlink{class_burst_a2cbf85a14b432b24a356d29d57027810}{curr\+Color}}
+\begin{DoxyCompactList}\small\item\em Computed by emitter. \end{DoxyCompactList}\item 
+Vect \mbox{\hyperlink{class_burst_abfd00b75f768e786980ae04fa68149a3}{curr\+Scale}}
+\begin{DoxyCompactList}\small\item\em Computed by emitter. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_burst_a10d648bc5a4c67eb883028af1e16436c}{expire\+Time}}
+\begin{DoxyCompactList}\small\item\em Time left will need to be updated for every frame by the emitter. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_burst_aa115e77093fafb6dbad35e8b5c000370}{num\+Particles}}
+\item 
+\mbox{\hyperlink{class_particle_emitter_a7646bec086ece9fd9e8ebecf640f1fa0}{Particle\+Emitter\+::\+Particle\+Emitter\+Storage\+Ref}} \mbox{\hyperlink{class_burst_a07209faa90ac33ccb26143a31e153749}{emitter\+Storage\+Ref}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_burst_a4c19985e192add05e4f50f6824bd5700}\label{class_burst_a4c19985e192add05e4f50f6824bd5700}} 
+\index{Burst@{Burst}!Burst@{Burst}}
+\index{Burst@{Burst}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{Burst()}{Burst()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Burst\+::\+Burst (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_burst_ad16a6dfd70ae06197e3b694b12afcd8e}\label{class_burst_ad16a6dfd70ae06197e3b694b12afcd8e}} 
+\index{Burst@{Burst}!Burst@{Burst}}
+\index{Burst@{Burst}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{Burst()}{Burst()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Burst\+::\+Burst (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_burst}{Burst}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_burst_a65c590390e80aa5510c1ac06907d15e3}\label{class_burst_a65c590390e80aa5510c1ac06907d15e3}} 
+\index{Burst@{Burst}!Burst@{Burst}}
+\index{Burst@{Burst}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{Burst()}{Burst()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Burst\+::\+Burst (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_burst}{Burst}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_burst_a71e8471a4071593a1cf5e99f804f0812}\label{class_burst_a71e8471a4071593a1cf5e99f804f0812}} 
+\index{Burst@{Burst}!````~Burst@{$\sim$Burst}}
+\index{````~Burst@{$\sim$Burst}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{$\sim$Burst()}{~Burst()}}
+{\footnotesize\ttfamily Burst\+::$\sim$\+Burst (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_burst_a78aedd35ee62d990ba2ead0e97d2931b}\label{class_burst_a78aedd35ee62d990ba2ead0e97d2931b}} 
+\index{Burst@{Burst}!Burst@{Burst}}
+\index{Burst@{Burst}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{Burst()}{Burst()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Burst\+::\+Burst (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$}]{pe,  }\item[{int}]{num\+Particles,  }\item[{float}]{expire\+Time }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_burst_a726e61d964723c98e044102920bb30e3}\label{class_burst_a726e61d964723c98e044102920bb30e3}} 
+\index{Burst@{Burst}!DrawParticles@{DrawParticles}}
+\index{DrawParticles@{DrawParticles}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{DrawParticles()}{DrawParticles()}}
+{\footnotesize\ttfamily void Burst\+::\+Draw\+Particles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_a726e61d964723c98e044102920bb30e3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_burst_ad1ee8b34b370cc706fa3bdf16c74614f}\label{class_burst_ad1ee8b34b370cc706fa3bdf16c74614f}} 
+\index{Burst@{Burst}!GetEmitterStorageRef@{GetEmitterStorageRef}}
+\index{GetEmitterStorageRef@{GetEmitterStorageRef}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{GetEmitterStorageRef()}{GetEmitterStorageRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_emitter_a7646bec086ece9fd9e8ebecf640f1fa0}{Particle\+Emitter\+::\+Particle\+Emitter\+Storage\+Ref}} Burst\+::\+Get\+Emitter\+Storage\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_ad1ee8b34b370cc706fa3bdf16c74614f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_burst_a3d04545e5298a1db9ff3ca59cb273904}\label{class_burst_a3d04545e5298a1db9ff3ca59cb273904}} 
+\index{Burst@{Burst}!GetExpiration@{GetExpiration}}
+\index{GetExpiration@{GetExpiration}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{GetExpiration()}{GetExpiration()}}
+{\footnotesize\ttfamily float Burst\+::\+Get\+Expiration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_a3d04545e5298a1db9ff3ca59cb273904_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_burst_ac1935ecdda2ccbbc98fa3a8fa9c3a99d}\label{class_burst_ac1935ecdda2ccbbc98fa3a8fa9c3a99d}} 
+\index{Burst@{Burst}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Burst\+::\+Initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$}]{\+\_\+pe,  }\item[{int}]{num\+Particles,  }\item[{float}]{expire\+Time,  }\item[{float}]{speed,  }\item[{Vect}]{pos,  }\item[{Matrix}]{rot }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{class_burst_ac1935ecdda2ccbbc98fa3a8fa9c3a99d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_ac1935ecdda2ccbbc98fa3a8fa9c3a99d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_burst_a6796de4795c44983a98b9de7cfd05125}\label{class_burst_a6796de4795c44983a98b9de7cfd05125}} 
+\index{Burst@{Burst}!operator=@{operator=}}
+\index{operator=@{operator=}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_burst}{Burst}}\& Burst\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_burst}{Burst}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_burst_a76edaf2def76d8b14963581034880451}\label{class_burst_a76edaf2def76d8b14963581034880451}} 
+\index{Burst@{Burst}!operator=@{operator=}}
+\index{operator=@{operator=}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_burst}{Burst}}\& Burst\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_burst}{Burst}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_burst_a641ca2d699f1701bb56d53e2f45fd5c6}\label{class_burst_a641ca2d699f1701bb56d53e2f45fd5c6}} 
+\index{Burst@{Burst}!SetEmitterStorageRef@{SetEmitterStorageRef}}
+\index{SetEmitterStorageRef@{SetEmitterStorageRef}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{SetEmitterStorageRef()}{SetEmitterStorageRef()}}
+{\footnotesize\ttfamily void Burst\+::\+Set\+Emitter\+Storage\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_emitter_a7646bec086ece9fd9e8ebecf640f1fa0}{Particle\+Emitter\+::\+Particle\+Emitter\+Storage\+Ref}}}]{new\+Ref }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_a641ca2d699f1701bb56d53e2f45fd5c6_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_burst_a2cbf85a14b432b24a356d29d57027810}\label{class_burst_a2cbf85a14b432b24a356d29d57027810}} 
+\index{Burst@{Burst}!currColor@{currColor}}
+\index{currColor@{currColor}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{currColor}{currColor}}
+{\footnotesize\ttfamily Vect Burst\+::curr\+Color\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Computed by emitter. 
+
+\mbox{\Hypertarget{class_burst_abfd00b75f768e786980ae04fa68149a3}\label{class_burst_abfd00b75f768e786980ae04fa68149a3}} 
+\index{Burst@{Burst}!currScale@{currScale}}
+\index{currScale@{currScale}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{currScale}{currScale}}
+{\footnotesize\ttfamily Vect Burst\+::curr\+Scale\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Computed by emitter. 
+
+\mbox{\Hypertarget{class_burst_a07209faa90ac33ccb26143a31e153749}\label{class_burst_a07209faa90ac33ccb26143a31e153749}} 
+\index{Burst@{Burst}!emitterStorageRef@{emitterStorageRef}}
+\index{emitterStorageRef@{emitterStorageRef}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{emitterStorageRef}{emitterStorageRef}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_emitter_a7646bec086ece9fd9e8ebecf640f1fa0}{Particle\+Emitter\+::\+Particle\+Emitter\+Storage\+Ref}} Burst\+::emitter\+Storage\+Ref\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_burst_a10d648bc5a4c67eb883028af1e16436c}\label{class_burst_a10d648bc5a4c67eb883028af1e16436c}} 
+\index{Burst@{Burst}!expireTime@{expireTime}}
+\index{expireTime@{expireTime}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{expireTime}{expireTime}}
+{\footnotesize\ttfamily float Burst\+::expire\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Time left will need to be updated for every frame by the emitter. 
+
+\mbox{\Hypertarget{class_burst_a88be6663e8d5af6658f02917fdcc0f16}\label{class_burst_a88be6663e8d5af6658f02917fdcc0f16}} 
+\index{Burst@{Burst}!myDeleteRef@{myDeleteRef}}
+\index{myDeleteRef@{myDeleteRef}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{myDeleteRef}{myDeleteRef}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_burst_factory_ae26107b30ec05a2ddc5b9ac23f10ca18}{Burst\+Factory\+::\+Storage\+Ref}} Burst\+::my\+Delete\+Ref}
+
+\mbox{\Hypertarget{class_burst_aa115e77093fafb6dbad35e8b5c000370}\label{class_burst_aa115e77093fafb6dbad35e8b5c000370}} 
+\index{Burst@{Burst}!numParticles@{numParticles}}
+\index{numParticles@{numParticles}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{numParticles}{numParticles}}
+{\footnotesize\ttfamily int Burst\+::num\+Particles\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_burst_a47df9df0f0861b984167d0cb956a4b66}\label{class_burst_a47df9df0f0861b984167d0cb956a4b66}} 
+\index{Burst@{Burst}!particles@{particles}}
+\index{particles@{particles}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{particles}{particles}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle}{Particle}}$\ast$ Burst\+::particles\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Array of particles. 
+
+\mbox{\Hypertarget{class_burst_a0e4e96ce05ffe93908b79b30a02a6931}\label{class_burst_a0e4e96ce05ffe93908b79b30a02a6931}} 
+\index{Burst@{Burst}!pe@{pe}}
+\index{pe@{pe}!Burst@{Burst}}
+\doxysubsubsection{\texorpdfstring{pe}{pe}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}}$\ast$ Burst\+::pe\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_burst_8h}{Burst.\+h}}\item 
+\mbox{\hyperlink{_burst_8cpp}{Burst.\+cpp}}\end{DoxyCompactItemize}

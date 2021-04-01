@@ -1,0 +1,4 @@
+<map id="Advanced Demo" name="Advanced Demo">
+<area shape="rect" id="node1" href="$group__demo.html" title="A demo of the Sly Engine working." alt="" coords="5,5,61,31"/>
+<area shape="rect" id="node2" title="This is an advanced demo." alt="" coords="109,5,225,31"/>
+</map>

@@ -1,0 +1,736 @@
+\hypertarget{class_sly_math}{}\doxysection{Sly\+Math Class Reference}
+\label{class_sly_math}\index{SlyMath@{SlyMath}}
+
+
+{\ttfamily \#include $<$Sly\+Math.\+h$>$}
+
+
+
+Collaboration diagram for Sly\+Math\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{class_sly_math__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_sly_math_ad9992315252b94ab27ffeb15076005de}{Intersect}} (const \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&A, const \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&B)
+\item 
+static bool \mbox{\hyperlink{class_sly_math_a755f622dd6c7480da5a3210c7f49f551}{Intersect}} (const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&A, const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&B)
+\item 
+static bool \mbox{\hyperlink{class_sly_math_af9a9c97394e5f82c149e54ff4884562d}{Intersect}} (const \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \&A, const \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \&B)
+\begin{DoxyCompactList}\small\item\em Intersection test for A\+A\+BB -\/ A\+A\+BB. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_sly_math_a08cb1e19c20de7a7db6b0e3776078cf5}{Intersect}} (const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&A, const Vect \&P)
+\begin{DoxyCompactList}\small\item\em Intersection test of a B\+Sphere to a point. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_sly_math_a212730959eb3a85f2a3887ea6498148d}{Intersect}} (const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&A, const \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \&B)
+\begin{DoxyCompactList}\small\item\em Intersection test for Sphere -\/ A\+A\+BB. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_sly_math_a5098920b5810cbe934f8737cbbeeb15a}{Intersect}} (const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&A, const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&B)
+\begin{DoxyCompactList}\small\item\em Intersection test for two O\+B\+Bs. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_sly_math_a722d525bd8b1de35b1d3d367c52ce62d}{Intersect}} (const \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \&A, const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&B)
+\item 
+static bool \mbox{\hyperlink{class_sly_math_a17bd6826f4395d588a6fe9d0d6239113}{Intersect}} (const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&A, const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&B)
+\begin{DoxyCompactList}\small\item\em Intersection test for an O\+BB and a B\+Sphere. \end{DoxyCompactList}\item 
+static Vect \mbox{\hyperlink{class_sly_math_a4ce19dcbd537f62828fa012343455583}{find\+Min\+Point}} (Model $\ast$p\+Model, const Matrix \&world\+Matrix)
+\item 
+static Vect \mbox{\hyperlink{class_sly_math_abd011d8412f44acaf472dbdd67c2e88a}{find\+Max\+Point}} (Model $\ast$p\+Model, const Matrix \&world\+Matrix)
+\item 
+static Vect \mbox{\hyperlink{class_sly_math_acff7ede1babf8b72b1eba29cad8d1ecb}{find\+Center}} (Vect \&min, Vect \&max)
+\item 
+static bool \mbox{\hyperlink{class_sly_math_ac7c039409e2dbc0fac6546bbc8d1fd9e}{Interval\+Overlap}} (float a\+Min, float a\+Max, float b\+Min, float b\+Max)
+\item 
+static float \mbox{\hyperlink{class_sly_math_a2515094d2f6bbe1059b14a59218ecc97}{clamp\+Float}} (float \&v, float min, float max)
+\item 
+static int \mbox{\hyperlink{class_sly_math_a04dd48377e5db0b2dcf050f5b1689fa2}{clamp\+Int}} (int \&v, int min, int max)
+\begin{DoxyCompactList}\small\item\em Clamp the int within the specified min-\/max range. \end{DoxyCompactList}\item 
+static Vect \mbox{\hyperlink{class_sly_math_ac38165799766775dda0c195a302bc61a}{clamp\+Point}} (Vect \&point, const Vect \&min\+Corner, const Vect max\+Corner)
+\begin{DoxyCompactList}\small\item\em Clamp point V to the min max vectors provided. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_sly_math_a98ed49077e1a30093baead836ee5ebd1}{O\+B\+B\+Overlap}} (const Vect \&v, const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&A, const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&B)
+\begin{DoxyCompactList}\small\item\em Obb overlap test for O\+BB and O\+BB. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_sly_math_a4d1645b8ffe4846b1a0ee710731eb09b}{O\+B\+B\+Overlap}} (const Vect \&v, const \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \&A, const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&B)
+\begin{DoxyCompactList}\small\item\em Obb overlap test for A\+A\+BB and O\+BB. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_sly_math_a78935b826fbe03836f019d4c203c347f}{O\+B\+B\+Projection\+Length}} (const Vect \&V, const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&obb)
+\begin{DoxyCompactList}\small\item\em Obb projection length for the O\+BB projected on V. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_sly_math_aebf31df8aa704c17b0c5650fa51577cd}{O\+B\+B\+Projection\+Length}} (const Vect \&V, const \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \&aabb)
+\begin{DoxyCompactList}\small\item\em Obb projection length for A\+A\+BB projected on V. \end{DoxyCompactList}\item 
+static Vect \mbox{\hyperlink{class_sly_math_aab65962ec4129ba72e994626eefdc238}{Find\+Absolute\+Min}} (Vect \&champ, Vect \&tester)
+\begin{DoxyCompactList}\small\item\em Finds the absolute min of X, Y, and Z between the champ and tester. Returns new vect. \end{DoxyCompactList}\item 
+static Vect \mbox{\hyperlink{class_sly_math_a54757af5758b29cc50874e5bc4601af2}{Find\+Absolute\+Max}} (Vect \&champ, Vect \&tester)
+\begin{DoxyCompactList}\small\item\em Finds the absolute min of X, Y, and Z between the champ and tester. Returns new vect. \end{DoxyCompactList}\item 
+static Vect \mbox{\hyperlink{class_sly_math_af7ed9c76b202b353b8e6193c521b7c30}{Find\+Min\+A\+A\+BB}} (\mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} $\ast$input\+Sphere)
+\begin{DoxyCompactList}\small\item\em Searches for the minimum value of the B\+Sphere in reference to an A\+A\+BB. \end{DoxyCompactList}\item 
+static Vect \mbox{\hyperlink{class_sly_math_a25e4f0da149645aaaf5c7f13c7e9888f}{Find\+Max\+A\+A\+BB}} (\mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} $\ast$input\+Sphere)
+\begin{DoxyCompactList}\small\item\em Searches for the maximum value of the B\+Sphere in reference to an A\+A\+BB. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_sly_math_a3e6f005b427c868945c69c5eeaff41fd}{Get\+Random\+Float}} (float lower\+Bound, float upper\+Bound)
+\begin{DoxyCompactList}\small\item\em Returns a random float between the lower bound and uppeprbound. \end{DoxyCompactList}\item 
+static Vect \mbox{\hyperlink{class_sly_math_a636f99d4864a960c9dd868d8e84ba136}{Get\+Barycentric\+Coordinate}} (const Vect \&P, const Vect \&A, const Vect \&B, const Vect \&C, float \&beta, float \&gamma)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sly_math_a64d69dc325bbda72384b1c722cff908a}{Sly\+Math}} ()=delete
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly_math_a4f0d92083982ca4ba31ac98696df76e9}{Sly\+Math}} (const \mbox{\hyperlink{class_sly_math}{Sly\+Math}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly_math_a8be79cae9460ed9c6e4ba747b9299e42}{Sly\+Math}} (\mbox{\hyperlink{class_sly_math}{Sly\+Math}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly_math}{Sly\+Math}} \& \mbox{\hyperlink{class_sly_math_a18cbb7f1c37ff6008c80f62aad26aea1}{operator=}} (const \mbox{\hyperlink{class_sly_math}{Sly\+Math}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly_math}{Sly\+Math}} \& \mbox{\hyperlink{class_sly_math_a73fcd1a7a0e88e8eb34a474cfa1b7672}{operator=}} (\mbox{\hyperlink{class_sly_math}{Sly\+Math}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly_math_a8ecd6266927692b3240564ab6b8394c6}{$\sim$\+Sly\+Math}} ()=delete
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sly_math_a64d69dc325bbda72384b1c722cff908a}\label{class_sly_math_a64d69dc325bbda72384b1c722cff908a}} 
+\index{SlyMath@{SlyMath}!SlyMath@{SlyMath}}
+\index{SlyMath@{SlyMath}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{SlyMath()}{SlyMath()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Sly\+Math\+::\+Sly\+Math (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_sly_math_a4f0d92083982ca4ba31ac98696df76e9}\label{class_sly_math_a4f0d92083982ca4ba31ac98696df76e9}} 
+\index{SlyMath@{SlyMath}!SlyMath@{SlyMath}}
+\index{SlyMath@{SlyMath}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{SlyMath()}{SlyMath()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Sly\+Math\+::\+Sly\+Math (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sly_math}{Sly\+Math}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_sly_math_a8be79cae9460ed9c6e4ba747b9299e42}\label{class_sly_math_a8be79cae9460ed9c6e4ba747b9299e42}} 
+\index{SlyMath@{SlyMath}!SlyMath@{SlyMath}}
+\index{SlyMath@{SlyMath}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{SlyMath()}{SlyMath()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Sly\+Math\+::\+Sly\+Math (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sly_math}{Sly\+Math}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_sly_math_a8ecd6266927692b3240564ab6b8394c6}\label{class_sly_math_a8ecd6266927692b3240564ab6b8394c6}} 
+\index{SlyMath@{SlyMath}!````~SlyMath@{$\sim$SlyMath}}
+\index{````~SlyMath@{$\sim$SlyMath}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{$\sim$SlyMath()}{~SlyMath()}}
+{\footnotesize\ttfamily Sly\+Math\+::$\sim$\+Sly\+Math (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sly_math_a2515094d2f6bbe1059b14a59218ecc97}\label{class_sly_math_a2515094d2f6bbe1059b14a59218ecc97}} 
+\index{SlyMath@{SlyMath}!clampFloat@{clampFloat}}
+\index{clampFloat@{clampFloat}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{clampFloat()}{clampFloat()}}
+{\footnotesize\ttfamily float Sly\+Math\+::clamp\+Float (\begin{DoxyParamCaption}\item[{float \&}]{v,  }\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_a2515094d2f6bbe1059b14a59218ecc97_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a04dd48377e5db0b2dcf050f5b1689fa2}\label{class_sly_math_a04dd48377e5db0b2dcf050f5b1689fa2}} 
+\index{SlyMath@{SlyMath}!clampInt@{clampInt}}
+\index{clampInt@{clampInt}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{clampInt()}{clampInt()}}
+{\footnotesize\ttfamily static int Sly\+Math\+::clamp\+Int (\begin{DoxyParamCaption}\item[{int \&}]{v,  }\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clamp the int within the specified min-\/max range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & An int to process. \\
+\hline
+{\em min} & The minimum. \\
+\hline
+{\em max} & The maximum.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{class_sly_math_a04dd48377e5db0b2dcf050f5b1689fa2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_ac38165799766775dda0c195a302bc61a}\label{class_sly_math_ac38165799766775dda0c195a302bc61a}} 
+\index{SlyMath@{SlyMath}!clampPoint@{clampPoint}}
+\index{clampPoint@{clampPoint}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{clampPoint()}{clampPoint()}}
+{\footnotesize\ttfamily static float Sly\+Math\+::clamp\+Point (\begin{DoxyParamCaption}\item[{Vect \&}]{point,  }\item[{const Vect \&}]{min\+Corner,  }\item[{const Vect}]{max\+Corner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clamp point V to the min max vectors provided. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em point} & The point. \\
+\hline
+ & {\em min\+Corner} & The minimum corner. \\
+\hline
+ & {\em max\+Corner} & The maximum corner.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_sly_math_ac38165799766775dda0c195a302bc61a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{class_sly_math_ac38165799766775dda0c195a302bc61a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a54757af5758b29cc50874e5bc4601af2}\label{class_sly_math_a54757af5758b29cc50874e5bc4601af2}} 
+\index{SlyMath@{SlyMath}!FindAbsoluteMax@{FindAbsoluteMax}}
+\index{FindAbsoluteMax@{FindAbsoluteMax}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{FindAbsoluteMax()}{FindAbsoluteMax()}}
+{\footnotesize\ttfamily static Vect Sly\+Math\+::\+Find\+Absolute\+Max (\begin{DoxyParamCaption}\item[{Vect \&}]{champ,  }\item[{Vect \&}]{tester }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Finds the absolute min of X, Y, and Z between the champ and tester. Returns new vect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em champ} & The champ. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em tester} & The tester.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The found absolute maximum. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_a54757af5758b29cc50874e5bc4601af2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_aab65962ec4129ba72e994626eefdc238}\label{class_sly_math_aab65962ec4129ba72e994626eefdc238}} 
+\index{SlyMath@{SlyMath}!FindAbsoluteMin@{FindAbsoluteMin}}
+\index{FindAbsoluteMin@{FindAbsoluteMin}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{FindAbsoluteMin()}{FindAbsoluteMin()}}
+{\footnotesize\ttfamily static Vect Sly\+Math\+::\+Find\+Absolute\+Min (\begin{DoxyParamCaption}\item[{Vect \&}]{champ,  }\item[{Vect \&}]{tester }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Finds the absolute min of X, Y, and Z between the champ and tester. Returns new vect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em champ} & The champ. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em tester} & The tester.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The found absolute minimum. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_aab65962ec4129ba72e994626eefdc238_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_acff7ede1babf8b72b1eba29cad8d1ecb}\label{class_sly_math_acff7ede1babf8b72b1eba29cad8d1ecb}} 
+\index{SlyMath@{SlyMath}!findCenter@{findCenter}}
+\index{findCenter@{findCenter}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{findCenter()}{findCenter()}}
+{\footnotesize\ttfamily Vect Sly\+Math\+::find\+Center (\begin{DoxyParamCaption}\item[{Vect \&}]{min,  }\item[{Vect \&}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_acff7ede1babf8b72b1eba29cad8d1ecb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a25e4f0da149645aaaf5c7f13c7e9888f}\label{class_sly_math_a25e4f0da149645aaaf5c7f13c7e9888f}} 
+\index{SlyMath@{SlyMath}!FindMaxAABB@{FindMaxAABB}}
+\index{FindMaxAABB@{FindMaxAABB}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{FindMaxAABB()}{FindMaxAABB()}}
+{\footnotesize\ttfamily static Vect Sly\+Math\+::\+Find\+Max\+A\+A\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} $\ast$}]{input\+Sphere }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Searches for the maximum value of the B\+Sphere in reference to an A\+A\+BB. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em input\+Sphere} & If non-\/null, the input sphere.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The found maximum a bb. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_a25e4f0da149645aaaf5c7f13c7e9888f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_abd011d8412f44acaf472dbdd67c2e88a}\label{class_sly_math_abd011d8412f44acaf472dbdd67c2e88a}} 
+\index{SlyMath@{SlyMath}!findMaxPoint@{findMaxPoint}}
+\index{findMaxPoint@{findMaxPoint}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{findMaxPoint()}{findMaxPoint()}}
+{\footnotesize\ttfamily Vect Sly\+Math\+::find\+Max\+Point (\begin{DoxyParamCaption}\item[{Model $\ast$}]{p\+Model,  }\item[{const Matrix \&}]{world\+Matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_abd011d8412f44acaf472dbdd67c2e88a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_af7ed9c76b202b353b8e6193c521b7c30}\label{class_sly_math_af7ed9c76b202b353b8e6193c521b7c30}} 
+\index{SlyMath@{SlyMath}!FindMinAABB@{FindMinAABB}}
+\index{FindMinAABB@{FindMinAABB}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{FindMinAABB()}{FindMinAABB()}}
+{\footnotesize\ttfamily static Vect Sly\+Math\+::\+Find\+Min\+A\+A\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} $\ast$}]{input\+Sphere }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Searches for the minimum value of the B\+Sphere in reference to an A\+A\+BB. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em input\+Sphere} & If non-\/null, the input sphere.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The found minimum aabb. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_af7ed9c76b202b353b8e6193c521b7c30_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a4ce19dcbd537f62828fa012343455583}\label{class_sly_math_a4ce19dcbd537f62828fa012343455583}} 
+\index{SlyMath@{SlyMath}!findMinPoint@{findMinPoint}}
+\index{findMinPoint@{findMinPoint}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{findMinPoint()}{findMinPoint()}}
+{\footnotesize\ttfamily Vect Sly\+Math\+::find\+Min\+Point (\begin{DoxyParamCaption}\item[{Model $\ast$}]{p\+Model,  }\item[{const Matrix \&}]{world\+Matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_a4ce19dcbd537f62828fa012343455583_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a636f99d4864a960c9dd868d8e84ba136}\label{class_sly_math_a636f99d4864a960c9dd868d8e84ba136}} 
+\index{SlyMath@{SlyMath}!GetBarycentricCoordinate@{GetBarycentricCoordinate}}
+\index{GetBarycentricCoordinate@{GetBarycentricCoordinate}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{GetBarycentricCoordinate()}{GetBarycentricCoordinate()}}
+{\footnotesize\ttfamily Vect Sly\+Math\+::\+Get\+Barycentric\+Coordinate (\begin{DoxyParamCaption}\item[{const Vect \&}]{P,  }\item[{const Vect \&}]{A,  }\item[{const Vect \&}]{B,  }\item[{const Vect \&}]{C,  }\item[{float \&}]{beta,  }\item[{float \&}]{gamma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_a636f99d4864a960c9dd868d8e84ba136_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a3e6f005b427c868945c69c5eeaff41fd}\label{class_sly_math_a3e6f005b427c868945c69c5eeaff41fd}} 
+\index{SlyMath@{SlyMath}!GetRandomFloat@{GetRandomFloat}}
+\index{GetRandomFloat@{GetRandomFloat}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{GetRandomFloat()}{GetRandomFloat()}}
+{\footnotesize\ttfamily static float Sly\+Math\+::\+Get\+Random\+Float (\begin{DoxyParamCaption}\item[{float}]{lower\+Bound,  }\item[{float}]{upper\+Bound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a random float between the lower bound and uppeprbound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lower\+Bound} & The lower bound. \\
+\hline
+{\em upper\+Bound} & The upper bound.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The random float. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_a3e6f005b427c868945c69c5eeaff41fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_ad9992315252b94ab27ffeb15076005de}\label{class_sly_math_ad9992315252b94ab27ffeb15076005de}} 
+\index{SlyMath@{SlyMath}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{Intersect()}{Intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily bool Sly\+Math\+::\+Intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&}]{A,  }\item[{const \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&}]{B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_sly_math_ad9992315252b94ab27ffeb15076005de_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_ad9992315252b94ab27ffeb15076005de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_af9a9c97394e5f82c149e54ff4884562d}\label{class_sly_math_af9a9c97394e5f82c149e54ff4884562d}} 
+\index{SlyMath@{SlyMath}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{Intersect()}{Intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily static bool Sly\+Math\+::\+Intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \&}]{A,  }\item[{const \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \&}]{B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Intersection test for A\+A\+BB -\/ A\+A\+BB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} to process. \\
+\hline
+{\em B} & A \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_sly_math_af9a9c97394e5f82c149e54ff4884562d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a722d525bd8b1de35b1d3d367c52ce62d}\label{class_sly_math_a722d525bd8b1de35b1d3d367c52ce62d}} 
+\index{SlyMath@{SlyMath}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{Intersect()}{Intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily bool Sly\+Math\+::\+Intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \&}]{A,  }\item[{const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&}]{B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_a722d525bd8b1de35b1d3d367c52ce62d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a212730959eb3a85f2a3887ea6498148d}\label{class_sly_math_a212730959eb3a85f2a3887ea6498148d}} 
+\index{SlyMath@{SlyMath}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{Intersect()}{Intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily static bool Sly\+Math\+::\+Intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&}]{A,  }\item[{const \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \&}]{B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Intersection test for Sphere -\/ A\+A\+BB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} to process. \\
+\hline
+{\em B} & A \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_a212730959eb3a85f2a3887ea6498148d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a755f622dd6c7480da5a3210c7f49f551}\label{class_sly_math_a755f622dd6c7480da5a3210c7f49f551}} 
+\index{SlyMath@{SlyMath}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{Intersect()}{Intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily bool Sly\+Math\+::\+Intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&}]{A,  }\item[{const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&}]{B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_sly_math_a755f622dd6c7480da5a3210c7f49f551_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a08cb1e19c20de7a7db6b0e3776078cf5}\label{class_sly_math_a08cb1e19c20de7a7db6b0e3776078cf5}} 
+\index{SlyMath@{SlyMath}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{Intersect()}{Intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily static bool Sly\+Math\+::\+Intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&}]{A,  }\item[{const Vect \&}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Intersection test of a B\+Sphere to a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} to process. \\
+\hline
+{\em P} & A Vect to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_sly_math_a08cb1e19c20de7a7db6b0e3776078cf5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a17bd6826f4395d588a6fe9d0d6239113}\label{class_sly_math_a17bd6826f4395d588a6fe9d0d6239113}} 
+\index{SlyMath@{SlyMath}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{Intersect()}{Intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily static bool Sly\+Math\+::\+Intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&}]{A,  }\item[{const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&}]{B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Intersection test for an O\+BB and a B\+Sphere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} to process. \\
+\hline
+{\em B} & A \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_a17bd6826f4395d588a6fe9d0d6239113_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a5098920b5810cbe934f8737cbbeeb15a}\label{class_sly_math_a5098920b5810cbe934f8737cbbeeb15a}} 
+\index{SlyMath@{SlyMath}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{Intersect()}{Intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily static bool Sly\+Math\+::\+Intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&}]{A,  }\item[{const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&}]{B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Intersection test for two O\+B\+Bs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} to process. \\
+\hline
+{\em B} & A \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_a5098920b5810cbe934f8737cbbeeb15a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_ac7c039409e2dbc0fac6546bbc8d1fd9e}\label{class_sly_math_ac7c039409e2dbc0fac6546bbc8d1fd9e}} 
+\index{SlyMath@{SlyMath}!IntervalOverlap@{IntervalOverlap}}
+\index{IntervalOverlap@{IntervalOverlap}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{IntervalOverlap()}{IntervalOverlap()}}
+{\footnotesize\ttfamily bool Sly\+Math\+::\+Interval\+Overlap (\begin{DoxyParamCaption}\item[{float}]{a\+Min,  }\item[{float}]{a\+Max,  }\item[{float}]{b\+Min,  }\item[{float}]{b\+Max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_sly_math_ac7c039409e2dbc0fac6546bbc8d1fd9e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a4d1645b8ffe4846b1a0ee710731eb09b}\label{class_sly_math_a4d1645b8ffe4846b1a0ee710731eb09b}} 
+\index{SlyMath@{SlyMath}!OBBOverlap@{OBBOverlap}}
+\index{OBBOverlap@{OBBOverlap}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{OBBOverlap()}{OBBOverlap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static bool Sly\+Math\+::\+O\+B\+B\+Overlap (\begin{DoxyParamCaption}\item[{const Vect \&}]{v,  }\item[{const \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \&}]{A,  }\item[{const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&}]{B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obb overlap test for A\+A\+BB and O\+BB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & A Vect to process. \\
+\hline
+{\em A} & A \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} to process. \\
+\hline
+{\em B} & A \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_a4d1645b8ffe4846b1a0ee710731eb09b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a98ed49077e1a30093baead836ee5ebd1}\label{class_sly_math_a98ed49077e1a30093baead836ee5ebd1}} 
+\index{SlyMath@{SlyMath}!OBBOverlap@{OBBOverlap}}
+\index{OBBOverlap@{OBBOverlap}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{OBBOverlap()}{OBBOverlap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static bool Sly\+Math\+::\+O\+B\+B\+Overlap (\begin{DoxyParamCaption}\item[{const Vect \&}]{v,  }\item[{const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&}]{A,  }\item[{const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&}]{B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obb overlap test for O\+BB and O\+BB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & A Vect to process. \\
+\hline
+{\em A} & A \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} to process. \\
+\hline
+{\em B} & A \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_a98ed49077e1a30093baead836ee5ebd1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_sly_math_a98ed49077e1a30093baead836ee5ebd1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_aebf31df8aa704c17b0c5650fa51577cd}\label{class_sly_math_aebf31df8aa704c17b0c5650fa51577cd}} 
+\index{SlyMath@{SlyMath}!OBBProjectionLength@{OBBProjectionLength}}
+\index{OBBProjectionLength@{OBBProjectionLength}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{OBBProjectionLength()}{OBBProjectionLength()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static float Sly\+Math\+::\+O\+B\+B\+Projection\+Length (\begin{DoxyParamCaption}\item[{const Vect \&}]{V,  }\item[{const \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \&}]{aabb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obb projection length for A\+A\+BB projected on V. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & A Vect to process. \\
+\hline
+{\em aabb} & The aabb.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_aebf31df8aa704c17b0c5650fa51577cd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a78935b826fbe03836f019d4c203c347f}\label{class_sly_math_a78935b826fbe03836f019d4c203c347f}} 
+\index{SlyMath@{SlyMath}!OBBProjectionLength@{OBBProjectionLength}}
+\index{OBBProjectionLength@{OBBProjectionLength}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{OBBProjectionLength()}{OBBProjectionLength()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static float Sly\+Math\+::\+O\+B\+B\+Projection\+Length (\begin{DoxyParamCaption}\item[{const Vect \&}]{V,  }\item[{const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&}]{obb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obb projection length for the O\+BB projected on V. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & A Vect to process. \\
+\hline
+{\em obb} & The obb.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_a78935b826fbe03836f019d4c203c347f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_math_a78935b826fbe03836f019d4c203c347f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_math_a18cbb7f1c37ff6008c80f62aad26aea1}\label{class_sly_math_a18cbb7f1c37ff6008c80f62aad26aea1}} 
+\index{SlyMath@{SlyMath}!operator=@{operator=}}
+\index{operator=@{operator=}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sly_math}{Sly\+Math}}\& Sly\+Math\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sly_math}{Sly\+Math}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_sly_math_a73fcd1a7a0e88e8eb34a474cfa1b7672}\label{class_sly_math_a73fcd1a7a0e88e8eb34a474cfa1b7672}} 
+\index{SlyMath@{SlyMath}!operator=@{operator=}}
+\index{operator=@{operator=}!SlyMath@{SlyMath}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sly_math}{Sly\+Math}}\& Sly\+Math\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sly_math}{Sly\+Math}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sly_math_8h}{Sly\+Math.\+h}}\item 
+\mbox{\hyperlink{_sly_math_8cpp}{Sly\+Math.\+cpp}}\end{DoxyCompactItemize}

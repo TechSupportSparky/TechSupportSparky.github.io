@@ -1,0 +1,364 @@
+\hypertarget{class_sprite_string}{}\doxysection{Sprite\+String Class Reference}
+\label{class_sprite_string}\index{SpriteString@{SpriteString}}
+
+
+{\ttfamily \#include $<$Sprite\+String.\+h$>$}
+
+
+
+Collaboration diagram for Sprite\+String\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sprite_string__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}} $\ast$ $>$ \mbox{\hyperlink{class_sprite_string_a60da4241f5d9261b51125174f49896aa}{Glyph\+Collection}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing collection of glyphs. \end{DoxyCompactList}\item 
+typedef std\+::string \mbox{\hyperlink{class_sprite_string_ae41e6ed00f7d372822bb9d1ba7c6e647}{string}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sprite_string_af1400cfd92997aebfc4c126da3fa0efa}{Sprite\+String}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_string_ac86196204633f94dda5b7d1dc7d7d887}{Sprite\+String}} (const \mbox{\hyperlink{class_sprite_string}{Sprite\+String}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_string_a8c6c39621f5929193f0428d8a1b7a1e7}{Sprite\+String}} (\mbox{\hyperlink{class_sprite_string}{Sprite\+String}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_string}{Sprite\+String}} \& \mbox{\hyperlink{class_sprite_string_ab9786d6076d68f958ad2fe4215784c4d}{operator=}} (const \mbox{\hyperlink{class_sprite_string}{Sprite\+String}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_string}{Sprite\+String}} \& \mbox{\hyperlink{class_sprite_string_ad7e4c4dee7705c0642920c37403e401b}{operator=}} (\mbox{\hyperlink{class_sprite_string}{Sprite\+String}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_string_a4490935e5c3ea6b58e15779fdc1b8b09}{$\sim$\+Sprite\+String}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_string_aae4e0863ac90ea1ca701769d2724333a}{Sprite\+String}} (const \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} \&input\+Font)
+\begin{DoxyCompactList}\small\item\em Specialized Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_string_a2e111c5525b167af3817403696123b30}{Sprite\+String}} (\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$sf, \mbox{\hyperlink{class_sprite_string_ae41e6ed00f7d372822bb9d1ba7c6e647}{string}} s, int x, int y)
+\begin{DoxyCompactList}\small\item\em Specialized Constructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sprite_string_a18230ee5b9e835561923b9a7cdf71d66}{Get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Gets the height of the string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sprite_string_a4abe7840c808ef0758e52dd9163f1454}{Get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Gets the width of the string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_string_a2bcc30e71415fde602900dd21beab032}{Render}} ()
+\begin{DoxyCompactList}\small\item\em Renders the Sprite String. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_string_afa83d4b04690ae88988cf273638eba80}{Set}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Sets the location for drawing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_string_a1135e9384dd59a068d5e643d06bc39ba}{Set}} (\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$sf, \mbox{\hyperlink{class_sprite_string_ae41e6ed00f7d372822bb9d1ba7c6e647}{string}} s, int x, int y)
+\begin{DoxyCompactList}\small\item\em Sets the font and location. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$ \mbox{\hyperlink{class_sprite_string_a46e51305d668425f2c504f2fdb0d431e}{sfont}}
+\begin{DoxyCompactList}\small\item\em The Sprite Font. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_string_a60da4241f5d9261b51125174f49896aa}{Glyph\+Collection}} \mbox{\hyperlink{class_sprite_string_a249eadcd35cf4daea64a17c3f4c367d4}{glyphs}}
+\begin{DoxyCompactList}\small\item\em A collection of glyphs. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sprite_string_aae28acf253f81cf9e3d6ab7b18b4a082}{height}}
+\begin{DoxyCompactList}\small\item\em The sprite string height. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sprite_string_a0e45458a75e0941d392b79d451bef7a9}{width}}
+\begin{DoxyCompactList}\small\item\em The sprite string width. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sprite_string_a0c3cd549bca148d228858d7ee4e4b7a1}{posx}}
+\begin{DoxyCompactList}\small\item\em The position for drawing in X. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sprite_string_acb9e5f6dabc1cdacf5084e6aca052729}{posy}}
+\begin{DoxyCompactList}\small\item\em The position for drawing in Y. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_sprite_string_a60da4241f5d9261b51125174f49896aa}\label{class_sprite_string_a60da4241f5d9261b51125174f49896aa}} 
+\index{SpriteString@{SpriteString}!GlyphCollection@{GlyphCollection}}
+\index{GlyphCollection@{GlyphCollection}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{GlyphCollection}{GlyphCollection}}
+{\footnotesize\ttfamily std\+::vector$<$ Glyph $\ast$ $>$ \mbox{\hyperlink{class_sprite_string_a60da4241f5d9261b51125174f49896aa}{Sprite\+String\+::\+Glyph\+Collection}}}
+
+
+
+Defines an alias representing collection of glyphs. 
+
+\mbox{\Hypertarget{class_sprite_string_ae41e6ed00f7d372822bb9d1ba7c6e647}\label{class_sprite_string_ae41e6ed00f7d372822bb9d1ba7c6e647}} 
+\index{SpriteString@{SpriteString}!string@{string}}
+\index{string@{string}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{string}{string}}
+{\footnotesize\ttfamily std\+::string \mbox{\hyperlink{class_sprite_string_ae41e6ed00f7d372822bb9d1ba7c6e647}{Sprite\+String\+::string}}}
+
+
+
+Defines an alias representing the string. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sprite_string_af1400cfd92997aebfc4c126da3fa0efa}\label{class_sprite_string_af1400cfd92997aebfc4c126da3fa0efa}} 
+\index{SpriteString@{SpriteString}!SpriteString@{SpriteString}}
+\index{SpriteString@{SpriteString}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{SpriteString()}{SpriteString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Sprite\+String\+::\+Sprite\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_sprite_string_ac86196204633f94dda5b7d1dc7d7d887}\label{class_sprite_string_ac86196204633f94dda5b7d1dc7d7d887}} 
+\index{SpriteString@{SpriteString}!SpriteString@{SpriteString}}
+\index{SpriteString@{SpriteString}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{SpriteString()}{SpriteString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Sprite\+String\+::\+Sprite\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sprite_string}{Sprite\+String}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_sprite_string_a8c6c39621f5929193f0428d8a1b7a1e7}\label{class_sprite_string_a8c6c39621f5929193f0428d8a1b7a1e7}} 
+\index{SpriteString@{SpriteString}!SpriteString@{SpriteString}}
+\index{SpriteString@{SpriteString}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{SpriteString()}{SpriteString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Sprite\+String\+::\+Sprite\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sprite_string}{Sprite\+String}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_sprite_string_a4490935e5c3ea6b58e15779fdc1b8b09}\label{class_sprite_string_a4490935e5c3ea6b58e15779fdc1b8b09}} 
+\index{SpriteString@{SpriteString}!````~SpriteString@{$\sim$SpriteString}}
+\index{````~SpriteString@{$\sim$SpriteString}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{$\sim$SpriteString()}{~SpriteString()}}
+{\footnotesize\ttfamily Sprite\+String\+::$\sim$\+Sprite\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+\mbox{\Hypertarget{class_sprite_string_aae4e0863ac90ea1ca701769d2724333a}\label{class_sprite_string_aae4e0863ac90ea1ca701769d2724333a}} 
+\index{SpriteString@{SpriteString}!SpriteString@{SpriteString}}
+\index{SpriteString@{SpriteString}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{SpriteString()}{SpriteString()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Sprite\+String\+::\+Sprite\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} \&}]{input\+Font }\end{DoxyParamCaption})}
+
+
+
+Specialized Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Font} & The input font.\\
+\hline
+\end{DoxyParams}
+Creates a sprite string with the font inputted. Uses set x and y location (either default or from last Sprite\+String\+::set call). ~\newline
+ \mbox{\Hypertarget{class_sprite_string_a2e111c5525b167af3817403696123b30}\label{class_sprite_string_a2e111c5525b167af3817403696123b30}} 
+\index{SpriteString@{SpriteString}!SpriteString@{SpriteString}}
+\index{SpriteString@{SpriteString}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{SpriteString()}{SpriteString()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Sprite\+String\+::\+Sprite\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$}]{sf,  }\item[{\mbox{\hyperlink{class_sprite_string_ae41e6ed00f7d372822bb9d1ba7c6e647}{string}}}]{s,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Specialized Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em sf} & If non-\/null, the sprite font. \\
+\hline
+ & {\em s} & The string to write. \\
+\hline
+ & {\em x} & The x coordinate on screen. \\
+\hline
+ & {\em y} & The y coordinate on screen.\\
+\hline
+\end{DoxyParams}
+Easiest way to setup a sprite string is to provide the font, string, and location on screen to draw the string. ~\newline
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_string_a2e111c5525b167af3817403696123b30_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sprite_string_a18230ee5b9e835561923b9a7cdf71d66}\label{class_sprite_string_a18230ee5b9e835561923b9a7cdf71d66}} 
+\index{SpriteString@{SpriteString}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily int Sprite\+String\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the height of the string. 
+
+\begin{DoxyReturn}{Returns}
+The height of the string. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_string_a18230ee5b9e835561923b9a7cdf71d66_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sprite_string_a4abe7840c808ef0758e52dd9163f1454}\label{class_sprite_string_a4abe7840c808ef0758e52dd9163f1454}} 
+\index{SpriteString@{SpriteString}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily int Sprite\+String\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the width of the string. 
+
+\begin{DoxyReturn}{Returns}
+The width of the string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sprite_string_ab9786d6076d68f958ad2fe4215784c4d}\label{class_sprite_string_ab9786d6076d68f958ad2fe4215784c4d}} 
+\index{SpriteString@{SpriteString}!operator=@{operator=}}
+\index{operator=@{operator=}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_string}{Sprite\+String}}\& Sprite\+String\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sprite_string}{Sprite\+String}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_sprite_string_ad7e4c4dee7705c0642920c37403e401b}\label{class_sprite_string_ad7e4c4dee7705c0642920c37403e401b}} 
+\index{SpriteString@{SpriteString}!operator=@{operator=}}
+\index{operator=@{operator=}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_string}{Sprite\+String}}\& Sprite\+String\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sprite_string}{Sprite\+String}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_sprite_string_a2bcc30e71415fde602900dd21beab032}\label{class_sprite_string_a2bcc30e71415fde602900dd21beab032}} 
+\index{SpriteString@{SpriteString}!Render@{Render}}
+\index{Render@{Render}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Sprite\+String\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renders the Sprite String. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_string_a2bcc30e71415fde602900dd21beab032_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sprite_string_afa83d4b04690ae88988cf273638eba80}\label{class_sprite_string_afa83d4b04690ae88988cf273638eba80}} 
+\index{SpriteString@{SpriteString}!Set@{Set}}
+\index{Set@{Set}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Sprite\+String\+::\+Set (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Sets the location for drawing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate on screen. \\
+\hline
+{\em y} & The y coordinate on screen. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_string_a1135e9384dd59a068d5e643d06bc39ba}\label{class_sprite_string_a1135e9384dd59a068d5e643d06bc39ba}} 
+\index{SpriteString@{SpriteString}!Set@{Set}}
+\index{Set@{Set}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Sprite\+String\+::\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$}]{sf,  }\item[{\mbox{\hyperlink{class_sprite_string_ae41e6ed00f7d372822bb9d1ba7c6e647}{string}}}]{s,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Sets the font and location. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em sf} & If non-\/null, the sf. \\
+\hline
+ & {\em s} & The string to write. \\
+\hline
+ & {\em x} & The x coordinate on screen. \\
+\hline
+ & {\em y} & The y coordinate on screen. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_sprite_string_a1135e9384dd59a068d5e643d06bc39ba_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sprite_string_a249eadcd35cf4daea64a17c3f4c367d4}\label{class_sprite_string_a249eadcd35cf4daea64a17c3f4c367d4}} 
+\index{SpriteString@{SpriteString}!glyphs@{glyphs}}
+\index{glyphs@{glyphs}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{glyphs}{glyphs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_string_a60da4241f5d9261b51125174f49896aa}{Glyph\+Collection}} Sprite\+String\+::glyphs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A collection of glyphs. 
+
+\mbox{\Hypertarget{class_sprite_string_aae28acf253f81cf9e3d6ab7b18b4a082}\label{class_sprite_string_aae28acf253f81cf9e3d6ab7b18b4a082}} 
+\index{SpriteString@{SpriteString}!height@{height}}
+\index{height@{height}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Sprite\+String\+::height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The sprite string height. 
+
+\mbox{\Hypertarget{class_sprite_string_a0c3cd549bca148d228858d7ee4e4b7a1}\label{class_sprite_string_a0c3cd549bca148d228858d7ee4e4b7a1}} 
+\index{SpriteString@{SpriteString}!posx@{posx}}
+\index{posx@{posx}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{posx}{posx}}
+{\footnotesize\ttfamily int Sprite\+String\+::posx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The position for drawing in X. 
+
+\mbox{\Hypertarget{class_sprite_string_acb9e5f6dabc1cdacf5084e6aca052729}\label{class_sprite_string_acb9e5f6dabc1cdacf5084e6aca052729}} 
+\index{SpriteString@{SpriteString}!posy@{posy}}
+\index{posy@{posy}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{posy}{posy}}
+{\footnotesize\ttfamily int Sprite\+String\+::posy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The position for drawing in Y. 
+
+\mbox{\Hypertarget{class_sprite_string_a46e51305d668425f2c504f2fdb0d431e}\label{class_sprite_string_a46e51305d668425f2c504f2fdb0d431e}} 
+\index{SpriteString@{SpriteString}!sfont@{sfont}}
+\index{sfont@{sfont}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{sfont}{sfont}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}}$\ast$ Sprite\+String\+::sfont\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The Sprite Font. 
+
+\mbox{\Hypertarget{class_sprite_string_a0e45458a75e0941d392b79d451bef7a9}\label{class_sprite_string_a0e45458a75e0941d392b79d451bef7a9}} 
+\index{SpriteString@{SpriteString}!width@{width}}
+\index{width@{width}!SpriteString@{SpriteString}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Sprite\+String\+::width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The sprite string width. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sprite_string_8h}{Sprite\+String.\+h}}\item 
+\mbox{\hyperlink{_sprite_string_8cpp}{Sprite\+String.\+cpp}}\end{DoxyCompactItemize}

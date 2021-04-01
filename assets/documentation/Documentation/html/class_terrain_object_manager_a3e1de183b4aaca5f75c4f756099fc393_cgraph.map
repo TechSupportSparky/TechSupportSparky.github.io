@@ -1,0 +1,4 @@
+<map id="TerrainObjectManager::Instance" name="TerrainObjectManager::Instance">
+<area shape="rect" id="node1" title="Gets the instance of TerrainObjectManager (Singleton)" alt="" coords="5,5,155,47"/>
+<area shape="rect" id="node2" href="$class_terrain_object_manager.html#aac7be644f7265c410905769500c680f9" title="Default constructor." alt="" coords="203,5,360,47"/>
+</map>

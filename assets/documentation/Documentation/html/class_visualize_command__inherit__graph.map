@@ -1,0 +1,8 @@
+<map id="VisualizeCommand" name="VisualizeCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="361,219,523,369"/>
+<area shape="rect" id="node3" href="$class_visualize_a_a_b_b_command.html" title=" " alt="" coords="5,417,204,627"/>
+<area shape="rect" id="node4" href="$class_visualize_b_sphere_command.html" title=" " alt="" coords="228,417,440,627"/>
+<area shape="rect" id="node5" href="$class_visualize_generic_box.html" title=" " alt="" coords="465,417,635,627"/>
+<area shape="rect" id="node6" href="$class_visualize_o_b_b_command.html" title=" " alt="" coords="660,417,851,627"/>
+<area shape="rect" id="node2" href="$class_command_base.html" title=" " alt="" coords="373,5,511,171"/>
+</map>

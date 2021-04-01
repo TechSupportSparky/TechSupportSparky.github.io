@@ -1,0 +1,5 @@
+<map id="SlyMath::clampInt" name="SlyMath::clampInt">
+<area shape="rect" id="node1" title="Clamp the int within the specified min&#45;max range." alt="" coords="221,46,348,73"/>
+<area shape="rect" id="node2" href="$class_terrain_object.html#ae4a408bb9e5db209cb1672e5b7033dd4" title=" " alt="" coords="5,5,173,47"/>
+<area shape="rect" id="node3" href="$class_terrain_rectangle_area.html#a6d5847ff589ea2e642d5c26e4f6c5d57" title=" " alt="" coords="12,71,167,112"/>
+</map>

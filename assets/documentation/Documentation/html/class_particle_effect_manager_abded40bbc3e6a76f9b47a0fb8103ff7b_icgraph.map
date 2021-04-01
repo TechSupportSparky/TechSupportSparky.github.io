@@ -1,0 +1,4 @@
+<map id="ParticleEffectManager::privGet" name="ParticleEffectManager::privGet">
+<area shape="rect" id="node1" title="Internal call to get." alt="" coords="232,5,381,47"/>
+<area shape="rect" id="node2" href="$class_particle_effect_manager.html#a5219f3da0e879c9845f349b4c987a7b7" title="Gets a particle effect* using the given key." alt="" coords="5,13,184,39"/>
+</map>

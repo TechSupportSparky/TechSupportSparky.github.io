@@ -1,0 +1,453 @@
+\hypertarget{class_texture_manager}{}\doxysection{Texture\+Manager Class Reference}
+\label{class_texture_manager}\index{TextureManager@{TextureManager}}
+
+
+{\ttfamily \#include $<$Texture\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Texture\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_texture_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Texture $\ast$ \mbox{\hyperlink{class_texture_manager_a2c8c249eeca164c77c18b36243da6a9a}{Get}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Gets a texture$\ast$ using the given key. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_texture_manager_a3005389b043a4022a7f36458d84696ac}{Load}} (std\+::string key, const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Loads the texture. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_texture_manager_a887fc49cc1ac66aef90754d9b75eaa9b}{Load}} (std\+::string key, unsigned char r, unsigned char g, unsigned char b, unsigned char a)
+\begin{DoxyCompactList}\small\item\em Loads the specified color texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::string \mbox{\hyperlink{class_texture_manager_a16003dcbe175ab25abc8fb5c8895b9e5}{Map\+Key}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the map key. \end{DoxyCompactList}\item 
+typedef std\+::map$<$ \mbox{\hyperlink{class_texture_manager_a16003dcbe175ab25abc8fb5c8895b9e5}{Map\+Key}}, Texture $\ast$ $>$ \mbox{\hyperlink{class_texture_manager_a5a9b1a42e4227111010b8700cef22f09}{Storage\+Map}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the storage map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_texture_manager_ad76abb178b37cedf4514eb0154349935}{Texture\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_texture_manager_ae0a812052ff90565e3a0e3bcfc766240}{Texture\+Manager}} (const \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_texture_manager_a7c523df31e2921e040e638769ac79691}{Texture\+Manager}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \& \mbox{\hyperlink{class_texture_manager_afd2a4b9f524f1e76faffb7e8dcfa0802}{operator=}} (const \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \& \mbox{\hyperlink{class_texture_manager_ab9c1ee729c54743e078f98e62e2f592d}{operator=}} (\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_texture_manager_aba80d6c7f5275b5de2b6460d21ae3671}{$\sim$\+Texture\+Manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+Texture $\ast$ \mbox{\hyperlink{class_texture_manager_ab2dc090498f7d63d4cda50b6a782706e}{priv\+Get}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Priv get. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_manager_a386ba63dff283047d92614e16a55fa80}{priv\+Load}} (std\+::string key, const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Priv load. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_manager_a8fa402d13d359dc595d43a65b3a009b4}{priv\+Load}} (std\+::string key, unsigned char r, unsigned char g, unsigned char b, unsigned char a)
+\begin{DoxyCompactList}\small\item\em Loads the specified color texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_manager_a8a9131247f92b179147da3651f8e8f3d}{priv\+Delete}} ()
+\begin{DoxyCompactList}\small\item\em Private delete, delete ptr\+Instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \& \mbox{\hyperlink{class_texture_manager_af8c4f47e97491dc5001ce1ee5b0fce3f}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the instance. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_texture_manager_a33f1955011fe8ca64f0b50c6a5b972b4}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em Deletes the pointer instance. Only to be called internally by \mbox{\hyperlink{class_sly}{Sly}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_texture_manager_a55fa554aed7b7ecc833554b0a5965731}{default\+Path}}
+\begin{DoxyCompactList}\small\item\em The default path that Textures are stored at. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, Texture $\ast$ $>$ \mbox{\hyperlink{class_texture_manager_ae98f9488ebf08e71b6a4f8b06aad4a1f}{texture\+Map}}
+\begin{DoxyCompactList}\small\item\em A map containing a list of textures specified by a key string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} $\ast$ \mbox{\hyperlink{class_texture_manager_a338eb4efe61a429bc2f512474e1632a1}{ptr\+Instance}} = nullptr
+\begin{DoxyCompactList}\small\item\em Pointer to \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_texture_manager_aa8b9bb729fef86d58e00f6670e40efd2}{Texture\+Manager\+Attorney}}
+\begin{DoxyCompactList}\small\item\em Dictates access to \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}}\textquotesingle{}s private functions for engine usuage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_texture_manager_a16003dcbe175ab25abc8fb5c8895b9e5}\label{class_texture_manager_a16003dcbe175ab25abc8fb5c8895b9e5}} 
+\index{TextureManager@{TextureManager}!MapKey@{MapKey}}
+\index{MapKey@{MapKey}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{MapKey}{MapKey}}
+{\footnotesize\ttfamily std\+::string \mbox{\hyperlink{class_texture_manager_a16003dcbe175ab25abc8fb5c8895b9e5}{Texture\+Manager\+::\+Map\+Key}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing the map key. 
+
+\mbox{\Hypertarget{class_texture_manager_a5a9b1a42e4227111010b8700cef22f09}\label{class_texture_manager_a5a9b1a42e4227111010b8700cef22f09}} 
+\index{TextureManager@{TextureManager}!StorageMap@{StorageMap}}
+\index{StorageMap@{StorageMap}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{StorageMap}{StorageMap}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{class_texture_manager_a16003dcbe175ab25abc8fb5c8895b9e5}{Map\+Key}}, Texture $\ast$ $>$ \mbox{\hyperlink{class_texture_manager_a5a9b1a42e4227111010b8700cef22f09}{Texture\+Manager\+::\+Storage\+Map}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing the storage map. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_texture_manager_ad76abb178b37cedf4514eb0154349935}\label{class_texture_manager_ad76abb178b37cedf4514eb0154349935}} 
+\index{TextureManager@{TextureManager}!TextureManager@{TextureManager}}
+\index{TextureManager@{TextureManager}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{TextureManager()}{TextureManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Texture\+Manager\+::\+Texture\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Default constructor. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_ad76abb178b37cedf4514eb0154349935_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_texture_manager_ae0a812052ff90565e3a0e3bcfc766240}\label{class_texture_manager_ae0a812052ff90565e3a0e3bcfc766240}} 
+\index{TextureManager@{TextureManager}!TextureManager@{TextureManager}}
+\index{TextureManager@{TextureManager}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{TextureManager()}{TextureManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Texture\+Manager\+::\+Texture\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_texture_manager_a7c523df31e2921e040e638769ac79691}\label{class_texture_manager_a7c523df31e2921e040e638769ac79691}} 
+\index{TextureManager@{TextureManager}!TextureManager@{TextureManager}}
+\index{TextureManager@{TextureManager}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{TextureManager()}{TextureManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Texture\+Manager\+::\+Texture\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_texture_manager_aba80d6c7f5275b5de2b6460d21ae3671}\label{class_texture_manager_aba80d6c7f5275b5de2b6460d21ae3671}} 
+\index{TextureManager@{TextureManager}!````~TextureManager@{$\sim$TextureManager}}
+\index{````~TextureManager@{$\sim$TextureManager}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$TextureManager()}{~TextureManager()}}
+{\footnotesize\ttfamily Texture\+Manager\+::$\sim$\+Texture\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_texture_manager_a33f1955011fe8ca64f0b50c6a5b972b4}\label{class_texture_manager_a33f1955011fe8ca64f0b50c6a5b972b4}} 
+\index{TextureManager@{TextureManager}!Delete@{Delete}}
+\index{Delete@{Delete}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily static void Texture\+Manager\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Deletes the pointer instance. Only to be called internally by \mbox{\hyperlink{class_sly}{Sly}}. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a33f1955011fe8ca64f0b50c6a5b972b4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a33f1955011fe8ca64f0b50c6a5b972b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_texture_manager_a2c8c249eeca164c77c18b36243da6a9a}\label{class_texture_manager_a2c8c249eeca164c77c18b36243da6a9a}} 
+\index{TextureManager@{TextureManager}!Get@{Get}}
+\index{Get@{Get}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily static Texture $\ast$ Texture\+Manager\+::\+Get (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets a texture$\ast$ using the given key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to get.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Assertion if it fails, else a pointer to the Texture. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a2c8c249eeca164c77c18b36243da6a9a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a2c8c249eeca164c77c18b36243da6a9a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_texture_manager_af8c4f47e97491dc5001ce1ee5b0fce3f}\label{class_texture_manager_af8c4f47e97491dc5001ce1ee5b0fce3f}} 
+\index{TextureManager@{TextureManager}!Instance@{Instance}}
+\index{Instance@{Instance}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \& Texture\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the instance. 
+
+\begin{DoxyReturn}{Returns}
+A reference to \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_af8c4f47e97491dc5001ce1ee5b0fce3f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_af8c4f47e97491dc5001ce1ee5b0fce3f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_texture_manager_a3005389b043a4022a7f36458d84696ac}\label{class_texture_manager_a3005389b043a4022a7f36458d84696ac}} 
+\index{TextureManager@{TextureManager}!Load@{Load}}
+\index{Load@{Load}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Texture\+Manager\+::\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Loads the texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key. \\
+\hline
+{\em path} & Partial pathname of the file. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a3005389b043a4022a7f36458d84696ac_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_texture_manager_a887fc49cc1ac66aef90754d9b75eaa9b}\label{class_texture_manager_a887fc49cc1ac66aef90754d9b75eaa9b}} 
+\index{TextureManager@{TextureManager}!Load@{Load}}
+\index{Load@{Load}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Texture\+Manager\+::\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{unsigned char}]{r,  }\item[{unsigned char}]{g,  }\item[{unsigned char}]{b,  }\item[{unsigned char}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Loads the specified color texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key. \\
+\hline
+{\em r} & Red \\
+\hline
+{\em g} & Green \\
+\hline
+{\em b} & Blue \\
+\hline
+{\em a} & Alpha \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a887fc49cc1ac66aef90754d9b75eaa9b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_texture_manager_afd2a4b9f524f1e76faffb7e8dcfa0802}\label{class_texture_manager_afd2a4b9f524f1e76faffb7e8dcfa0802}} 
+\index{TextureManager@{TextureManager}!operator=@{operator=}}
+\index{operator=@{operator=}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}}\& Texture\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_texture_manager_ab9c1ee729c54743e078f98e62e2f592d}\label{class_texture_manager_ab9c1ee729c54743e078f98e62e2f592d}} 
+\index{TextureManager@{TextureManager}!operator=@{operator=}}
+\index{operator=@{operator=}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}}\& Texture\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_texture_manager_a8a9131247f92b179147da3651f8e8f3d}\label{class_texture_manager_a8a9131247f92b179147da3651f8e8f3d}} 
+\index{TextureManager@{TextureManager}!privDelete@{privDelete}}
+\index{privDelete@{privDelete}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{privDelete()}{privDelete()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::priv\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private delete, delete ptr\+Instance. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a8a9131247f92b179147da3651f8e8f3d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_texture_manager_ab2dc090498f7d63d4cda50b6a782706e}\label{class_texture_manager_ab2dc090498f7d63d4cda50b6a782706e}} 
+\index{TextureManager@{TextureManager}!privGet@{privGet}}
+\index{privGet@{privGet}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{privGet()}{privGet()}}
+{\footnotesize\ttfamily Texture $\ast$ Texture\+Manager\+::priv\+Get (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Priv get. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Assertion if it fails, else a pointer to the specified Texture. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_ab2dc090498f7d63d4cda50b6a782706e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_texture_manager_a386ba63dff283047d92614e16a55fa80}\label{class_texture_manager_a386ba63dff283047d92614e16a55fa80}} 
+\index{TextureManager@{TextureManager}!privLoad@{privLoad}}
+\index{privLoad@{privLoad}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{privLoad()}{privLoad()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Texture\+Manager\+::priv\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Priv load. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key. \\
+\hline
+{\em path} & Partial pathname of the file. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a386ba63dff283047d92614e16a55fa80_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_texture_manager_a8fa402d13d359dc595d43a65b3a009b4}\label{class_texture_manager_a8fa402d13d359dc595d43a65b3a009b4}} 
+\index{TextureManager@{TextureManager}!privLoad@{privLoad}}
+\index{privLoad@{privLoad}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{privLoad()}{privLoad()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Texture\+Manager\+::priv\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{unsigned char}]{r,  }\item[{unsigned char}]{g,  }\item[{unsigned char}]{b,  }\item[{unsigned char}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Loads the specified color texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key. \\
+\hline
+{\em r} & Red \\
+\hline
+{\em g} & Green \\
+\hline
+{\em b} & Blue \\
+\hline
+{\em a} & Alpha\\
+\hline
+\end{DoxyParams}
+Loads a texture of the specified color ~\newline
+ 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_texture_manager_aa8b9bb729fef86d58e00f6670e40efd2}\label{class_texture_manager_aa8b9bb729fef86d58e00f6670e40efd2}} 
+\index{TextureManager@{TextureManager}!TextureManagerAttorney@{TextureManagerAttorney}}
+\index{TextureManagerAttorney@{TextureManagerAttorney}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{TextureManagerAttorney}{TextureManagerAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_texture_manager_attorney}{Texture\+Manager\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Dictates access to \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}}\textquotesingle{}s private functions for engine usuage. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_texture_manager_a55fa554aed7b7ecc833554b0a5965731}\label{class_texture_manager_a55fa554aed7b7ecc833554b0a5965731}} 
+\index{TextureManager@{TextureManager}!defaultPath@{defaultPath}}
+\index{defaultPath@{defaultPath}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{defaultPath}{defaultPath}}
+{\footnotesize\ttfamily std\+::string Texture\+Manager\+::default\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The default path that Textures are stored at. 
+
+\mbox{\Hypertarget{class_texture_manager_a338eb4efe61a429bc2f512474e1632a1}\label{class_texture_manager_a338eb4efe61a429bc2f512474e1632a1}} 
+\index{TextureManager@{TextureManager}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} $\ast$ Texture\+Manager\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Pointer to \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} instance. 
+
+\mbox{\Hypertarget{class_texture_manager_ae98f9488ebf08e71b6a4f8b06aad4a1f}\label{class_texture_manager_ae98f9488ebf08e71b6a4f8b06aad4a1f}} 
+\index{TextureManager@{TextureManager}!textureMap@{textureMap}}
+\index{textureMap@{textureMap}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{textureMap}{textureMap}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, Texture$\ast$$>$ Texture\+Manager\+::texture\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A map containing a list of textures specified by a key string. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_texture_manager_8h}{Texture\+Manager.\+h}}\item 
+\mbox{\hyperlink{_texture_manager_8cpp}{Texture\+Manager.\+cpp}}\end{DoxyCompactItemize}

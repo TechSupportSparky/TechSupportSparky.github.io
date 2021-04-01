@@ -1,0 +1,5 @@
+<map id="Visualizer::privRenderOBB" name="Visualizer::privRenderOBB">
+<area shape="rect" id="node1" title="Internal call to render the OBB box." alt="" coords="440,13,615,39"/>
+<area shape="rect" id="node2" href="$class_visualizer_attorney_1_1_o_b_b_registration.html#a0235c46b000a048ecbe63fd8dbe24a99" title=" " alt="" coords="216,5,392,47"/>
+<area shape="rect" id="node3" href="$class_visualize_o_b_b_command.html#ad01bd14c3e64c6cec80abb5262ce05a6" title="Executes this command." alt="" coords="5,5,168,47"/>
+</map>

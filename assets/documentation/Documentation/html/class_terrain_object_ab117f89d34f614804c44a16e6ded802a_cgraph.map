@@ -1,0 +1,11 @@
+<map id="TerrainObject::Deinitialize" name="TerrainObject::Deinitialize">
+<area shape="rect" id="node1" title="Deregisters the terrain." alt="" coords="5,93,176,120"/>
+<area shape="rect" id="node2" href="$class_drawable.html#a04fdefc737ea11759ed7334949420cf8" title="Submit draw deregistration." alt="" coords="224,93,457,120"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="523,57,703,98"/>
+<area shape="rect" id="node7" href="$class_scene_attorney.html#ad869342eb2583be16a0483ad2712416b" title="&quot;Global&quot; Submit command for the GameObject &#39;Able&#39;s&#39;" alt="" coords="505,123,721,149"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="785,5,952,32"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="769,57,968,98"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="1016,5,1220,32"/>
+<area shape="rect" id="node8" href="$class_scene.html#a713cce013f0244d71b16c2e33638ed6d" title="Submit command." alt="" coords="785,123,952,149"/>
+<area shape="rect" id="node9" href="$class_scene_registration_broker.html#a2de26f860998866920e681e330d3dac3" title="Adds a command." alt="" coords="1035,115,1201,157"/>
+</map>

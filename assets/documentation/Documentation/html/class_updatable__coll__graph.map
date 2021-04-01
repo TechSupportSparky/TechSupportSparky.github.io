@@ -1,0 +1,7 @@
+<map id="Updatable" name="Updatable">
+<area shape="rect" id="node1" title=" " alt="" coords="95,220,298,473"/>
+<area shape="rect" id="node2" href="$class_update_registration_command.html" title=" " alt="" coords="307,536,526,716"/>
+<area shape="rect" id="node5" href="$class_update_deregistration_command.html" title=" " alt="" coords="5,536,236,716"/>
+<area shape="rect" id="node3" href="$class_scene_registry.html" title="A scene registry." alt="" coords="429,271,564,422"/>
+<area shape="rect" id="node4" href="$class_command_base.html" title=" " alt="" coords="427,5,566,171"/>
+</map>

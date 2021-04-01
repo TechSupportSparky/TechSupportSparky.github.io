@@ -1,0 +1,6 @@
+<map id="Sly::SetWidthHeight" name="Sly::SetWidthHeight">
+<area shape="rect" id="node1" title="Sets width and height of the main window." alt="" coords="5,31,145,57"/>
+<area shape="rect" id="node2" href="$class_sly.html#a1d59581314e3040746c9a40b2d9a2577" title="Gets the instance." alt="" coords="223,5,322,32"/>
+<area shape="rect" id="node4" href="$class_sly.html#aceea4ff43545c6336081a2d961d0aa4c" title="Internal set Width and Height, passes values to Azul framework." alt="" coords="193,56,352,83"/>
+<area shape="rect" id="node3" href="$class_sly.html#a50e7c55c362cf0a3dec26ad4e77370e0" title="Default constructor." alt="" coords="400,5,468,32"/>
+</map>

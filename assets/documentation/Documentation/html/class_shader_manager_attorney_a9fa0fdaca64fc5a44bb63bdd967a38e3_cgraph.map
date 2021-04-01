@@ -1,0 +1,7 @@
+<map id="ShaderManagerAttorney::Delete" name="ShaderManagerAttorney::Delete">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,168,65"/>
+<area shape="rect" id="node2" href="$class_shader_manager.html#ae5e338a92e3c784c333c1775d8dd2ea3" title="Deletes pointer instance. To be called within Engine code only." alt="" coords="216,31,375,57"/>
+<area shape="rect" id="node3" href="$class_shader_manager.html#a027cb5c486b20e641bcbf94e8186a965" title="Gets the instance." alt="" coords="426,5,597,32"/>
+<area shape="rect" id="node5" href="$class_shader_manager.html#a3450b4c48e0e27497483b2d4b121cabe" title="Deletes pointer instance. To be called internally only." alt="" coords="423,56,600,83"/>
+<area shape="rect" id="node4" href="$class_shader_manager.html#aca25f81fd10a02b3e97e9c459b864186" title="Default constructor." alt="" coords="648,5,860,32"/>
+</map>

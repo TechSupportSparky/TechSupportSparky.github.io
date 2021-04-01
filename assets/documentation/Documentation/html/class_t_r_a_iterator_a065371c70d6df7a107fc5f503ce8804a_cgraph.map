@@ -1,0 +1,6 @@
+<map id="TRAIterator::operator++" name="TRAIterator::operator++">
+<area shape="rect" id="node1" title=" " alt="" coords="5,64,164,91"/>
+<area shape="rect" id="node2" href="$class_terrain_cell.html#a10b06840f5774241f35d6c9b6220dbac" title="Gets the stored indices of i and j, outputs to arguments." alt="" coords="215,5,355,32"/>
+<area shape="rect" id="node3" href="$class_terrain_rectangle_area.html#ae46e43312885a6700cc65f5f1b2baf9f" title="Gets minimum and maximum." alt="" coords="212,57,359,98"/>
+<area shape="rect" id="node4" href="$class_terrain_cell.html#a054f0cb8b8d5d7379c89c4b0264e602a" title="Sets the indices of i and j." alt="" coords="214,123,357,149"/>
+</map>

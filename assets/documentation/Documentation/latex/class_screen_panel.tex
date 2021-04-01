@@ -1,0 +1,251 @@
+\hypertarget{class_screen_panel}{}\doxysection{Screen\+Panel Class Reference}
+\label{class_screen_panel}\index{ScreenPanel@{ScreenPanel}}
+
+
+{\ttfamily \#include $<$Screen\+Panel.\+h$>$}
+
+
+
+Collaboration diagram for Screen\+Panel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_screen_panel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_screen_panel_a6b69597e1c2697e95565d9d9140e5124}{Message\+Collection}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing collection of messages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_screen_panel_a6cbe5c4a9596c34e7283884b0a4d4bc9}{Screen\+Panel}} ()=default
+\item 
+\mbox{\hyperlink{class_screen_panel_a65bdfe3221686fb28c26ab69d6801f9e}{Screen\+Panel}} (const \mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} \&)=delete
+\item 
+\mbox{\hyperlink{class_screen_panel_a916b59e6aabbe9cb931ba83335e71800}{Screen\+Panel}} (\mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} \& \mbox{\hyperlink{class_screen_panel_a3d48a74fccb31bb2fe89d6b38fd61a42}{operator=}} (const \mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} \&)=delete
+\item 
+\mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} \& \mbox{\hyperlink{class_screen_panel_a31827a794feea386434ba987324c799c}{operator=}} (\mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_screen_panel_a43ad3623a83f0e559edad14823cafda5}{$\sim$\+Screen\+Panel}} ()=default
+\item 
+\mbox{\hyperlink{class_screen_panel_aa178661cb7cd133b5dd3c769b8c9d591}{Screen\+Panel}} (int i\+AnchorX, int i\+AnchorY)
+\begin{DoxyCompactList}\small\item\em Specialized constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_screen_panel_aedde38da1474dfb0c349843b10f3299e}{Screen\+Panel}} (int i\+AnchorX, int i\+AnchorY, \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$font)
+\begin{DoxyCompactList}\small\item\em Specialized Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen_panel_a047df51a2f197f05e90550a372983dbf}{Initialize}} (int i\+AnchorX, int i\+AnchorY)
+\item 
+void \mbox{\hyperlink{class_screen_panel_a0544701485aa21d27fff1e573c9e34f0}{Initialize}} (int i\+AnchorX, int i\+AnchorY, \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$font)
+\item 
+void \mbox{\hyperlink{class_screen_panel_a011c9f50ee36054c7a6d501e720058e2}{Add}} (char $\ast$A,...)
+\item 
+void \mbox{\hyperlink{class_screen_panel_a3c977a84bfa17498e8aa44b7eeab923f}{Add}} (const char $\ast$A,...)
+\item 
+void \mbox{\hyperlink{class_screen_panel_aa21a8ef11b3ec2ff152c6003773d1658}{Render}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_screen_panel_a6b69597e1c2697e95565d9d9140e5124}{Message\+Collection}} \mbox{\hyperlink{class_screen_panel_af8f9dbb6c817fe584dca41739085b203}{messages}}
+\item 
+char \mbox{\hyperlink{class_screen_panel_a3fdef4f6dc4bef69e75975f5424f98f1}{Debug\+Buff}} \mbox{[}256\mbox{]}
+\item 
+\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$ \mbox{\hyperlink{class_screen_panel_ac596beeafb614977d672c8557a5bf477}{panel\+Font}}
+\item 
+int \mbox{\hyperlink{class_screen_panel_a88d3243c331082e581fb2fee7eab9139}{anchorX}}
+\item 
+int \mbox{\hyperlink{class_screen_panel_afd2f834c8bb090b913033f2f1f611eef}{anchorY}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_screen_panel_a6b69597e1c2697e95565d9d9140e5124}\label{class_screen_panel_a6b69597e1c2697e95565d9d9140e5124}} 
+\index{ScreenPanel@{ScreenPanel}!MessageCollection@{MessageCollection}}
+\index{MessageCollection@{MessageCollection}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{MessageCollection}{MessageCollection}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_screen_panel_a6b69597e1c2697e95565d9d9140e5124}{Screen\+Panel\+::\+Message\+Collection}}}
+
+
+
+Defines an alias representing collection of messages. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_screen_panel_a6cbe5c4a9596c34e7283884b0a4d4bc9}\label{class_screen_panel_a6cbe5c4a9596c34e7283884b0a4d4bc9}} 
+\index{ScreenPanel@{ScreenPanel}!ScreenPanel@{ScreenPanel}}
+\index{ScreenPanel@{ScreenPanel}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{ScreenPanel()}{ScreenPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Screen\+Panel\+::\+Screen\+Panel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_screen_panel_a65bdfe3221686fb28c26ab69d6801f9e}\label{class_screen_panel_a65bdfe3221686fb28c26ab69d6801f9e}} 
+\index{ScreenPanel@{ScreenPanel}!ScreenPanel@{ScreenPanel}}
+\index{ScreenPanel@{ScreenPanel}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{ScreenPanel()}{ScreenPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Screen\+Panel\+::\+Screen\+Panel (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_screen_panel_a916b59e6aabbe9cb931ba83335e71800}\label{class_screen_panel_a916b59e6aabbe9cb931ba83335e71800}} 
+\index{ScreenPanel@{ScreenPanel}!ScreenPanel@{ScreenPanel}}
+\index{ScreenPanel@{ScreenPanel}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{ScreenPanel()}{ScreenPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Screen\+Panel\+::\+Screen\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_screen_panel_a43ad3623a83f0e559edad14823cafda5}\label{class_screen_panel_a43ad3623a83f0e559edad14823cafda5}} 
+\index{ScreenPanel@{ScreenPanel}!````~ScreenPanel@{$\sim$ScreenPanel}}
+\index{````~ScreenPanel@{$\sim$ScreenPanel}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{$\sim$ScreenPanel()}{~ScreenPanel()}}
+{\footnotesize\ttfamily Screen\+Panel\+::$\sim$\+Screen\+Panel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_screen_panel_aa178661cb7cd133b5dd3c769b8c9d591}\label{class_screen_panel_aa178661cb7cd133b5dd3c769b8c9d591}} 
+\index{ScreenPanel@{ScreenPanel}!ScreenPanel@{ScreenPanel}}
+\index{ScreenPanel@{ScreenPanel}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{ScreenPanel()}{ScreenPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Screen\+Panel\+::\+Screen\+Panel (\begin{DoxyParamCaption}\item[{int}]{anchorX,  }\item[{int}]{anchorY }\end{DoxyParamCaption})}
+
+
+
+Specialized constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anchorX} & The anchor x coordinate. \\
+\hline
+{\em anchorY} & The anchor y coordinate.\\
+\hline
+\end{DoxyParams}
+Creates a panel at the given coordinates with a default font loaded in. ~\newline
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_panel_aa178661cb7cd133b5dd3c769b8c9d591_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen_panel_aedde38da1474dfb0c349843b10f3299e}\label{class_screen_panel_aedde38da1474dfb0c349843b10f3299e}} 
+\index{ScreenPanel@{ScreenPanel}!ScreenPanel@{ScreenPanel}}
+\index{ScreenPanel@{ScreenPanel}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{ScreenPanel()}{ScreenPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Screen\+Panel\+::\+Screen\+Panel (\begin{DoxyParamCaption}\item[{int}]{i\+AnchorX,  }\item[{int}]{i\+AnchorY,  }\item[{\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$}]{font }\end{DoxyParamCaption})}
+
+
+
+Specialized Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em i\+AnchorX} & The anchor x coordinate. \\
+\hline
+ & {\em i\+AnchorY} & The anchor y coordinate. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em font} & The font to write text in\\
+\hline
+\end{DoxyParams}
+Creates a panel using a specified font from the caller. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_screen_panel_a011c9f50ee36054c7a6d501e720058e2}\label{class_screen_panel_a011c9f50ee36054c7a6d501e720058e2}} 
+\index{ScreenPanel@{ScreenPanel}!Add@{Add}}
+\index{Add@{Add}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Screen\+Panel\+::\+Add (\begin{DoxyParamCaption}\item[{char $\ast$}]{A,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_screen_panel_a3c977a84bfa17498e8aa44b7eeab923f}\label{class_screen_panel_a3c977a84bfa17498e8aa44b7eeab923f}} 
+\index{ScreenPanel@{ScreenPanel}!Add@{Add}}
+\index{Add@{Add}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Screen\+Panel\+::\+Add (\begin{DoxyParamCaption}\item[{const char $\ast$}]{A,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_screen_panel_a047df51a2f197f05e90550a372983dbf}\label{class_screen_panel_a047df51a2f197f05e90550a372983dbf}} 
+\index{ScreenPanel@{ScreenPanel}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Screen\+Panel\+::\+Initialize (\begin{DoxyParamCaption}\item[{int}]{i\+AnchorX,  }\item[{int}]{i\+AnchorY }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_panel_a047df51a2f197f05e90550a372983dbf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_panel_a047df51a2f197f05e90550a372983dbf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen_panel_a0544701485aa21d27fff1e573c9e34f0}\label{class_screen_panel_a0544701485aa21d27fff1e573c9e34f0}} 
+\index{ScreenPanel@{ScreenPanel}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Screen\+Panel\+::\+Initialize (\begin{DoxyParamCaption}\item[{int}]{i\+AnchorX,  }\item[{int}]{i\+AnchorY,  }\item[{\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$}]{font }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_screen_panel_a3d48a74fccb31bb2fe89d6b38fd61a42}\label{class_screen_panel_a3d48a74fccb31bb2fe89d6b38fd61a42}} 
+\index{ScreenPanel@{ScreenPanel}!operator=@{operator=}}
+\index{operator=@{operator=}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_screen_panel}{Screen\+Panel}}\& Screen\+Panel\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_screen_panel_a31827a794feea386434ba987324c799c}\label{class_screen_panel_a31827a794feea386434ba987324c799c}} 
+\index{ScreenPanel@{ScreenPanel}!operator=@{operator=}}
+\index{operator=@{operator=}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_screen_panel}{Screen\+Panel}}\& Screen\+Panel\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_screen_panel_aa21a8ef11b3ec2ff152c6003773d1658}\label{class_screen_panel_aa21a8ef11b3ec2ff152c6003773d1658}} 
+\index{ScreenPanel@{ScreenPanel}!Render@{Render}}
+\index{Render@{Render}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Screen\+Panel\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_panel_aa21a8ef11b3ec2ff152c6003773d1658_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_screen_panel_a88d3243c331082e581fb2fee7eab9139}\label{class_screen_panel_a88d3243c331082e581fb2fee7eab9139}} 
+\index{ScreenPanel@{ScreenPanel}!anchorX@{anchorX}}
+\index{anchorX@{anchorX}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{anchorX}{anchorX}}
+{\footnotesize\ttfamily int Screen\+Panel\+::anchorX\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_screen_panel_afd2f834c8bb090b913033f2f1f611eef}\label{class_screen_panel_afd2f834c8bb090b913033f2f1f611eef}} 
+\index{ScreenPanel@{ScreenPanel}!anchorY@{anchorY}}
+\index{anchorY@{anchorY}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{anchorY}{anchorY}}
+{\footnotesize\ttfamily int Screen\+Panel\+::anchorY\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_screen_panel_a3fdef4f6dc4bef69e75975f5424f98f1}\label{class_screen_panel_a3fdef4f6dc4bef69e75975f5424f98f1}} 
+\index{ScreenPanel@{ScreenPanel}!DebugBuff@{DebugBuff}}
+\index{DebugBuff@{DebugBuff}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{DebugBuff}{DebugBuff}}
+{\footnotesize\ttfamily char Screen\+Panel\+::\+Debug\+Buff\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_screen_panel_af8f9dbb6c817fe584dca41739085b203}\label{class_screen_panel_af8f9dbb6c817fe584dca41739085b203}} 
+\index{ScreenPanel@{ScreenPanel}!messages@{messages}}
+\index{messages@{messages}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{messages}{messages}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_screen_panel_a6b69597e1c2697e95565d9d9140e5124}{Message\+Collection}} Screen\+Panel\+::messages\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_screen_panel_ac596beeafb614977d672c8557a5bf477}\label{class_screen_panel_ac596beeafb614977d672c8557a5bf477}} 
+\index{ScreenPanel@{ScreenPanel}!panelFont@{panelFont}}
+\index{panelFont@{panelFont}!ScreenPanel@{ScreenPanel}}
+\doxysubsubsection{\texorpdfstring{panelFont}{panelFont}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}}$\ast$ Screen\+Panel\+::panel\+Font\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_screen_panel_8h}{Screen\+Panel.\+h}}\item 
+\mbox{\hyperlink{_screen_panel_8cpp}{Screen\+Panel.\+cpp}}\end{DoxyCompactItemize}

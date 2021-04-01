@@ -1,0 +1,6 @@
+<map id="TerrainManager::SetCurrentTerrain" name="TerrainManager::SetCurrentTerrain">
+<area shape="rect" id="node1" title="Sets current terrain." alt="" coords="5,27,187,69"/>
+<area shape="rect" id="node2" href="$class_terrain_manager.html#a9ed6f4cc405eefa3f8d7bee61ac12be9" title="Gets the instance of TerrainManager." alt="" coords="251,5,419,32"/>
+<area shape="rect" id="node4" href="$class_terrain_manager.html#a19d7a2dfd5af9430ba5aff26a8c95e25" title="Internal call to change the current terrain." alt="" coords="235,57,435,98"/>
+<area shape="rect" id="node3" href="$class_terrain_manager.html#ac90a7e0cb7b7960b752e1e0df307a6b5" title="Default constructor." alt="" coords="483,5,691,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="TimeManager::privTerminate" name="TimeManager::privTerminate">
+<area shape="rect" id="node1" title="Private terminate. Deletes Pointer instance." alt="" coords="416,42,600,69"/>
+<area shape="rect" id="node2" href="$class_time_manager.html#af9f601ffa516a272f224dc72b9dea24f" title="Terminates the singleton." alt="" coords="203,42,368,69"/>
+<area shape="rect" id="node3" href="$class_time_manager_attorney_1_1_game_loop.html#a4ffdb284c8b399784d911d5cd982785b" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" id="node4" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="11,71,149,98"/>
+</map>

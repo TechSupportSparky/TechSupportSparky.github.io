@@ -1,0 +1,266 @@
+\hypertarget{class_updatable_manager}{}\doxysection{Updatable\+Manager Class Reference}
+\label{class_updatable_manager}\index{UpdatableManager@{UpdatableManager}}
+
+
+{\ttfamily \#include $<$Updatable\+Manager.\+h$>$}
+
+
+
+Inheritance diagram for Updatable\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_updatable_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Updatable\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_updatable_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Storage\+List\+::iterator \mbox{\hyperlink{class_updatable_manager_ab3522bf3002033a3b08eda5de6266d0e}{Storage\+List\+Ref}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the storage list reference. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_updatable_manager_a732a6efad3362d2be4a772dfaaec0043}{Updatable\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_updatable_manager_ad70538715bf7d2b463f64c3404db90d1}{Updatable\+Manager}} (const \mbox{\hyperlink{class_updatable_manager}{Updatable\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_updatable_manager_a78d691376d28109c5f2b0ae87c1da077}{Updatable\+Manager}} (\mbox{\hyperlink{class_updatable_manager}{Updatable\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_updatable_manager}{Updatable\+Manager}} \& \mbox{\hyperlink{class_updatable_manager_a6fd7a3349b77b6941527ce8cde83a328}{operator=}} (const \mbox{\hyperlink{class_updatable_manager}{Updatable\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_updatable_manager}{Updatable\+Manager}} \& \mbox{\hyperlink{class_updatable_manager_a23f8056855c45acd933574b361cea861}{operator=}} (\mbox{\hyperlink{class_updatable_manager}{Updatable\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_updatable_manager_a8a6e0ff47f234978c42580203e053307}{$\sim$\+Updatable\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_updatable_manager_a1b4632388d9f48ac5c773035bdb8027a}{Process\+Elements}} ()
+\begin{DoxyCompactList}\small\item\em Process the elements. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_updatable_manager_ae135907d44e82d80bcaf3552c9c00e76}{Register}} (\mbox{\hyperlink{class_updatable}{Updatable}} $\ast$up, \mbox{\hyperlink{class_updatable_manager_ab3522bf3002033a3b08eda5de6266d0e}{Updatable\+Manager\+::\+Storage\+List\+Ref}} \&p\+Storage\+Delete\+Ref)
+\begin{DoxyCompactList}\small\item\em Registers this. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_updatable_manager_a419ef4f4ff3ee179f3f77e1a8752d696}{Deregister}} (\mbox{\hyperlink{class_updatable}{Updatable}} $\ast$up)
+\begin{DoxyCompactList}\small\item\em Deregisters this. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \mbox{\hyperlink{class_updatable}{Updatable}} $\ast$ $>$ \mbox{\hyperlink{class_updatable_manager_a1e36edf69e1e48054fedc5d6b4ae0f07}{Storage\+List}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing list of storages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_updatable_manager_a1e36edf69e1e48054fedc5d6b4ae0f07}{Storage\+List}} $\ast$ \mbox{\hyperlink{class_updatable_manager_a787ab3fc423edc041213608eaa54bb75}{storage\+List}}
+\begin{DoxyCompactList}\small\item\em List of storages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_updatable_manager_ab90058e20b77ccfb38b438ae0901d71f}{Updatable\+Attorney}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_updatable_manager_a1e36edf69e1e48054fedc5d6b4ae0f07}\label{class_updatable_manager_a1e36edf69e1e48054fedc5d6b4ae0f07}} 
+\index{UpdatableManager@{UpdatableManager}!StorageList@{StorageList}}
+\index{StorageList@{StorageList}!UpdatableManager@{UpdatableManager}}
+\doxysubsubsection{\texorpdfstring{StorageList}{StorageList}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{class_updatable}{Updatable}} $\ast$ $>$ \mbox{\hyperlink{class_updatable_manager_a1e36edf69e1e48054fedc5d6b4ae0f07}{Updatable\+Manager\+::\+Storage\+List}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing list of storages. 
+
+\mbox{\Hypertarget{class_updatable_manager_ab3522bf3002033a3b08eda5de6266d0e}\label{class_updatable_manager_ab3522bf3002033a3b08eda5de6266d0e}} 
+\index{UpdatableManager@{UpdatableManager}!StorageListRef@{StorageListRef}}
+\index{StorageListRef@{StorageListRef}!UpdatableManager@{UpdatableManager}}
+\doxysubsubsection{\texorpdfstring{StorageListRef}{StorageListRef}}
+{\footnotesize\ttfamily Storage\+List\+::iterator \mbox{\hyperlink{class_updatable_manager_ab3522bf3002033a3b08eda5de6266d0e}{Updatable\+Manager\+::\+Storage\+List\+Ref}}}
+
+
+
+Defines an alias representing the storage list reference. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_updatable_manager_a732a6efad3362d2be4a772dfaaec0043}\label{class_updatable_manager_a732a6efad3362d2be4a772dfaaec0043}} 
+\index{UpdatableManager@{UpdatableManager}!UpdatableManager@{UpdatableManager}}
+\index{UpdatableManager@{UpdatableManager}!UpdatableManager@{UpdatableManager}}
+\doxysubsubsection{\texorpdfstring{UpdatableManager()}{UpdatableManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Updatable\+Manager\+::\+Updatable\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_updatable_manager_a732a6efad3362d2be4a772dfaaec0043_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_updatable_manager_ad70538715bf7d2b463f64c3404db90d1}\label{class_updatable_manager_ad70538715bf7d2b463f64c3404db90d1}} 
+\index{UpdatableManager@{UpdatableManager}!UpdatableManager@{UpdatableManager}}
+\index{UpdatableManager@{UpdatableManager}!UpdatableManager@{UpdatableManager}}
+\doxysubsubsection{\texorpdfstring{UpdatableManager()}{UpdatableManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Updatable\+Manager\+::\+Updatable\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_updatable_manager}{Updatable\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_updatable_manager_a78d691376d28109c5f2b0ae87c1da077}\label{class_updatable_manager_a78d691376d28109c5f2b0ae87c1da077}} 
+\index{UpdatableManager@{UpdatableManager}!UpdatableManager@{UpdatableManager}}
+\index{UpdatableManager@{UpdatableManager}!UpdatableManager@{UpdatableManager}}
+\doxysubsubsection{\texorpdfstring{UpdatableManager()}{UpdatableManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Updatable\+Manager\+::\+Updatable\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_updatable_manager}{Updatable\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_updatable_manager_a8a6e0ff47f234978c42580203e053307}\label{class_updatable_manager_a8a6e0ff47f234978c42580203e053307}} 
+\index{UpdatableManager@{UpdatableManager}!````~UpdatableManager@{$\sim$UpdatableManager}}
+\index{````~UpdatableManager@{$\sim$UpdatableManager}!UpdatableManager@{UpdatableManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$UpdatableManager()}{~UpdatableManager()}}
+{\footnotesize\ttfamily Updatable\+Manager\+::$\sim$\+Updatable\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_updatable_manager_a419ef4f4ff3ee179f3f77e1a8752d696}\label{class_updatable_manager_a419ef4f4ff3ee179f3f77e1a8752d696}} 
+\index{UpdatableManager@{UpdatableManager}!Deregister@{Deregister}}
+\index{Deregister@{Deregister}!UpdatableManager@{UpdatableManager}}
+\doxysubsubsection{\texorpdfstring{Deregister()}{Deregister()}}
+{\footnotesize\ttfamily void Updatable\+Manager\+::\+Deregister (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_updatable}{Updatable}} $\ast$}]{up }\end{DoxyParamCaption})}
+
+
+
+Deregisters this. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em up} & If non-\/null, the up. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_updatable_manager_a419ef4f4ff3ee179f3f77e1a8752d696_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_updatable_manager_a419ef4f4ff3ee179f3f77e1a8752d696_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_updatable_manager_a6fd7a3349b77b6941527ce8cde83a328}\label{class_updatable_manager_a6fd7a3349b77b6941527ce8cde83a328}} 
+\index{UpdatableManager@{UpdatableManager}!operator=@{operator=}}
+\index{operator=@{operator=}!UpdatableManager@{UpdatableManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_updatable_manager}{Updatable\+Manager}}\& Updatable\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_updatable_manager}{Updatable\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_updatable_manager_a23f8056855c45acd933574b361cea861}\label{class_updatable_manager_a23f8056855c45acd933574b361cea861}} 
+\index{UpdatableManager@{UpdatableManager}!operator=@{operator=}}
+\index{operator=@{operator=}!UpdatableManager@{UpdatableManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_updatable_manager}{Updatable\+Manager}}\& Updatable\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_updatable_manager}{Updatable\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_updatable_manager_a1b4632388d9f48ac5c773035bdb8027a}\label{class_updatable_manager_a1b4632388d9f48ac5c773035bdb8027a}} 
+\index{UpdatableManager@{UpdatableManager}!ProcessElements@{ProcessElements}}
+\index{ProcessElements@{ProcessElements}!UpdatableManager@{UpdatableManager}}
+\doxysubsubsection{\texorpdfstring{ProcessElements()}{ProcessElements()}}
+{\footnotesize\ttfamily void Updatable\+Manager\+::\+Process\+Elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Process the elements. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_updatable_manager_a1b4632388d9f48ac5c773035bdb8027a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_updatable_manager_a1b4632388d9f48ac5c773035bdb8027a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_updatable_manager_ae135907d44e82d80bcaf3552c9c00e76}\label{class_updatable_manager_ae135907d44e82d80bcaf3552c9c00e76}} 
+\index{UpdatableManager@{UpdatableManager}!Register@{Register}}
+\index{Register@{Register}!UpdatableManager@{UpdatableManager}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily void Updatable\+Manager\+::\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_updatable}{Updatable}} $\ast$}]{up,  }\item[{\mbox{\hyperlink{class_updatable_manager_ab3522bf3002033a3b08eda5de6266d0e}{Updatable\+Manager\+::\+Storage\+List\+Ref}} \&}]{p\+Storage\+Delete\+Ref }\end{DoxyParamCaption})}
+
+
+
+Registers this. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em up} & If non-\/null, the up. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em p\+Storage\+Delete\+Ref} & The storage delete reference. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_updatable_manager_ae135907d44e82d80bcaf3552c9c00e76_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_updatable_manager_ab90058e20b77ccfb38b438ae0901d71f}\label{class_updatable_manager_ab90058e20b77ccfb38b438ae0901d71f}} 
+\index{UpdatableManager@{UpdatableManager}!UpdatableAttorney@{UpdatableAttorney}}
+\index{UpdatableAttorney@{UpdatableAttorney}!UpdatableManager@{UpdatableManager}}
+\doxysubsubsection{\texorpdfstring{UpdatableAttorney}{UpdatableAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_updatable_attorney}{Updatable\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_updatable_manager_a787ab3fc423edc041213608eaa54bb75}\label{class_updatable_manager_a787ab3fc423edc041213608eaa54bb75}} 
+\index{UpdatableManager@{UpdatableManager}!storageList@{storageList}}
+\index{storageList@{storageList}!UpdatableManager@{UpdatableManager}}
+\doxysubsubsection{\texorpdfstring{storageList}{storageList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_updatable_manager_a1e36edf69e1e48054fedc5d6b4ae0f07}{Storage\+List}}$\ast$ Updatable\+Manager\+::storage\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+List of storages. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_updatable_manager_8h}{Updatable\+Manager.\+h}}\item 
+\mbox{\hyperlink{_updatable_manager_8cpp}{Updatable\+Manager.\+cpp}}\end{DoxyCompactItemize}

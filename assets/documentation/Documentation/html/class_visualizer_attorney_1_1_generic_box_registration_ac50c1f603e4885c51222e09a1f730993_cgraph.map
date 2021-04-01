@@ -1,0 +1,19 @@
+<map id="VisualizerAttorney::GenericBoxRegistration::Render" name="VisualizerAttorney::GenericBoxRegistration::Render">
+<area shape="rect" id="node1" title=" " alt="" coords="5,147,172,203"/>
+<area shape="rect" id="node2" href="$class_visualizer.html#abfb60fda248002a438ce627986f44abb" title="Gets the Visualizer instance." alt="" coords="245,133,381,160"/>
+<area shape="rect" id="node13" href="$class_visualizer.html#ab16b9b518eed999e53ee4663c1f35d21" title="Internal call to render a marker at the given position." alt="" coords="220,188,407,215"/>
+<area shape="rect" id="node3" href="$class_visualizer.html#a104487003c9fea602e26c072aae27efc" title="Default constructor." alt="" coords="473,128,617,155"/>
+<area shape="rect" id="node4" href="$class_shader_manager.html#a102591e663e0897ac54aee3bb097ab5f" title="Gets a shader object* using the given key." alt="" coords="711,56,853,83"/>
+<area shape="rect" id="node8" href="$class_model_manager.html#ac48466a9c8c05c81a6d6acd19b13233a" title="Gets a model* using the given key." alt="" coords="714,128,850,155"/>
+<area shape="rect" id="node5" href="$class_shader_manager.html#a027cb5c486b20e641bcbf94e8186a965" title="Gets the instance." alt="" coords="946,5,1117,32"/>
+<area shape="rect" id="node7" href="$class_shader_manager.html#aa99cbaffdf83f033e1541b210a3da0c4" title="Private get." alt="" coords="951,56,1112,83"/>
+<area shape="rect" id="node6" href="$class_shader_manager.html#aca25f81fd10a02b3e97e9c459b864186" title="Default constructor." alt="" coords="1181,5,1393,32"/>
+<area shape="rect" id="node9" href="$class_model_manager.html#a34bb227e07db616a207d7e28bab70a31" title="Gets the instance." alt="" coords="949,107,1113,133"/>
+<area shape="rect" id="node12" href="$class_model_manager.html#a0148b218c2cf5e0baa00049b6e604f9a" title="Priv get." alt="" coords="954,157,1109,184"/>
+<area shape="rect" id="node10" href="$class_model_manager.html#a9b0d22b1baf59c5b566e82fcd8ca424a" title="Default constructor." alt="" coords="1187,107,1387,133"/>
+<area shape="rect" id="node11" href="$class_model_manager.html#aa736d7e7712bb2c0f7b8406a502cf152" title="Private load sprite model." alt="" coords="1441,99,1637,141"/>
+<area shape="rect" id="node14" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="455,190,635,231"/>
+<area shape="rect" id="node15" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="699,197,865,224"/>
+<area shape="rect" id="node17" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="683,249,881,290"/>
+<area shape="rect" id="node16" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="929,208,1133,235"/>
+</map>

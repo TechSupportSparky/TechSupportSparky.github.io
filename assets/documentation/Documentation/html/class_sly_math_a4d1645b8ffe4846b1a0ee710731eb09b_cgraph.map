@@ -1,0 +1,9 @@
+<map id="SlyMath::OBBOverlap" name="SlyMath::OBBOverlap">
+<area shape="rect" id="node1" title="Obb overlap test for AABB and OBB." alt="" coords="5,71,155,98"/>
+<area shape="rect" id="node2" href="$class_collision_volume_a_a_b_b.html#a22bfde5004aae040ae4cf5fa6f260ade" title="Gets the center of the AABB and returns it." alt="" coords="229,5,379,47"/>
+<area shape="rect" id="node3" href="$class_collision_volume_o_b_b.html#afd76dca327efe7448f967acbe0f44d46" title="Gets the center of the OBB." alt="" coords="453,56,596,97"/>
+<area shape="rect" id="node4" href="$class_sly_math.html#a78935b826fbe03836f019d4c203c347f" title="Obb projection length for the OBB projected on V." alt="" coords="203,129,405,155"/>
+<area shape="rect" id="node5" href="$class_collision_volume_o_b_b.html#aaec889d702eeb44a979a2309500fa816" title="Gets the maximum corner of the OBB." alt="" coords="453,121,596,163"/>
+<area shape="rect" id="node6" href="$class_collision_volume_o_b_b.html#a91724b4bd8678eb41c2eb5b6dbccd91e" title="Gets the stored scale." alt="" coords="453,187,596,228"/>
+<area shape="rect" id="node7" href="$class_collision_volume_o_b_b.html#a97e12225214258e014dbc2d6ef844488" title="Gets the world matrix stored in the OBB." alt="" coords="453,252,596,293"/>
+</map>

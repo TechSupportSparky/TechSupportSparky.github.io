@@ -1,0 +1,264 @@
+\hypertarget{class_terrain_rectangle_area}{}\doxysection{Terrain\+Rectangle\+Area Class Reference}
+\label{class_terrain_rectangle_area}\index{TerrainRectangleArea@{TerrainRectangleArea}}
+
+
+{\ttfamily \#include $<$Terrain\+Rectangle\+Area.\+h$>$}
+
+
+
+Collaboration diagram for Terrain\+Rectangle\+Area\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_terrain_rectangle_area__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_terrain_rectangle_area_a9ef721f2851fddb4b4c1ebc163939c6f}{Terrain\+Rectangle\+Area}} ()
+\begin{DoxyCompactList}\small\item\em $<$ Default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_rectangle_area_a8f3a5531f789e704501e2636b36316f8}{Terrain\+Rectangle\+Area}} (const \mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_rectangle_area_a64ddfa8fd7fce8aca7c7365102f915f1}{Terrain\+Rectangle\+Area}} (\mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}} \& \mbox{\hyperlink{class_terrain_rectangle_area_a91bf60791be938a26bbf2031394d759d}{operator=}} (const \mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}} \& \mbox{\hyperlink{class_terrain_rectangle_area_a84f28aee34c2fd16dbbb053a9143ca86}{operator=}} (\mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_rectangle_area_a62b8206a2e77c0a3cdd287073320c422}{$\sim$\+Terrain\+Rectangle\+Area}} ()
+\item 
+\mbox{\hyperlink{class_terrain_rectangle_area_a6d5847ff589ea2e642d5c26e4f6c5d57}{Terrain\+Rectangle\+Area}} (\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$\mbox{\hyperlink{class_terrain_rectangle_area_a81da8cf8dbb008a56fdd11f7d21756ee}{terrain}}, const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&b\+Sphere)
+\item 
+void \mbox{\hyperlink{class_terrain_rectangle_area_ae46e43312885a6700cc65f5f1b2baf9f}{Get\+Min\+Max}} (int \&outputi\+Min, int \&outputi\+Max, int \&ouputj\+Min, int \&outputj\+Max)
+\begin{DoxyCompactList}\small\item\em Gets minimum and maximum. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \& \mbox{\hyperlink{class_terrain_rectangle_area_afed36473340ab14f2313679fe450d791}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Gets the beginning. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \& \mbox{\hyperlink{class_terrain_rectangle_area_a8d72da9e688e9af828d7bb10e5e994ac}{end}} ()
+\begin{DoxyCompactList}\small\item\em Gets the ned. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$ \mbox{\hyperlink{class_terrain_rectangle_area_a6c782efcbd32b969a205fa0f7f29c68a}{Get\+Terrain}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$ \mbox{\hyperlink{class_terrain_rectangle_area_a81da8cf8dbb008a56fdd11f7d21756ee}{terrain}}
+\item 
+int \mbox{\hyperlink{class_terrain_rectangle_area_ae3b27188b0c446baa155679a7a9a22e7}{i\+Min}}
+\item 
+int \mbox{\hyperlink{class_terrain_rectangle_area_a046564e00cdc3ce81fd47b70aa7a6c78}{i\+Max}}
+\item 
+int \mbox{\hyperlink{class_terrain_rectangle_area_a4af461ef752265ca63913ae77dbc0215}{j\+Min}}
+\item 
+int \mbox{\hyperlink{class_terrain_rectangle_area_af4194482e971eb4b10cbd19f931278fd}{j\+Max}}
+\item 
+\mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \mbox{\hyperlink{class_terrain_rectangle_area_a7e0f40e6afd39425654f77f3d46a325e}{stored\+Begin}}
+\item 
+\mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \mbox{\hyperlink{class_terrain_rectangle_area_a37571dc910cf39039b55af95cc9d946f}{stored\+End}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_terrain_rectangle_area_a9ef721f2851fddb4b4c1ebc163939c6f}\label{class_terrain_rectangle_area_a9ef721f2851fddb4b4c1ebc163939c6f}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!TerrainRectangleArea@{TerrainRectangleArea}}
+\index{TerrainRectangleArea@{TerrainRectangleArea}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{TerrainRectangleArea()}{TerrainRectangleArea()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Terrain\+Rectangle\+Area\+::\+Terrain\+Rectangle\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$<$ Default constructor 
+
+Copy constructor \mbox{\Hypertarget{class_terrain_rectangle_area_a8f3a5531f789e704501e2636b36316f8}\label{class_terrain_rectangle_area_a8f3a5531f789e704501e2636b36316f8}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!TerrainRectangleArea@{TerrainRectangleArea}}
+\index{TerrainRectangleArea@{TerrainRectangleArea}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{TerrainRectangleArea()}{TerrainRectangleArea()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Terrain\+Rectangle\+Area\+::\+Terrain\+Rectangle\+Area (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_terrain_rectangle_area_a64ddfa8fd7fce8aca7c7365102f915f1}\label{class_terrain_rectangle_area_a64ddfa8fd7fce8aca7c7365102f915f1}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!TerrainRectangleArea@{TerrainRectangleArea}}
+\index{TerrainRectangleArea@{TerrainRectangleArea}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{TerrainRectangleArea()}{TerrainRectangleArea()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Terrain\+Rectangle\+Area\+::\+Terrain\+Rectangle\+Area (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_terrain_rectangle_area_a62b8206a2e77c0a3cdd287073320c422}\label{class_terrain_rectangle_area_a62b8206a2e77c0a3cdd287073320c422}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!````~TerrainRectangleArea@{$\sim$TerrainRectangleArea}}
+\index{````~TerrainRectangleArea@{$\sim$TerrainRectangleArea}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{$\sim$TerrainRectangleArea()}{~TerrainRectangleArea()}}
+{\footnotesize\ttfamily Terrain\+Rectangle\+Area\+::$\sim$\+Terrain\+Rectangle\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_terrain_rectangle_area_a6d5847ff589ea2e642d5c26e4f6c5d57}\label{class_terrain_rectangle_area_a6d5847ff589ea2e642d5c26e4f6c5d57}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!TerrainRectangleArea@{TerrainRectangleArea}}
+\index{TerrainRectangleArea@{TerrainRectangleArea}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{TerrainRectangleArea()}{TerrainRectangleArea()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Terrain\+Rectangle\+Area\+::\+Terrain\+Rectangle\+Area (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$}]{terrain,  }\item[{const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&}]{b\+Sphere }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_rectangle_area_a6d5847ff589ea2e642d5c26e4f6c5d57_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_terrain_rectangle_area_afed36473340ab14f2313679fe450d791}\label{class_terrain_rectangle_area_afed36473340ab14f2313679fe450d791}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!begin@{begin}}
+\index{begin@{begin}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \& Terrain\+Rectangle\+Area\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the beginning. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}}. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_rectangle_area_afed36473340ab14f2313679fe450d791_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_rectangle_area_a8d72da9e688e9af828d7bb10e5e994ac}\label{class_terrain_rectangle_area_a8d72da9e688e9af828d7bb10e5e994ac}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!end@{end}}
+\index{end@{end}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \& Terrain\+Rectangle\+Area\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the ned. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}}. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_rectangle_area_a8d72da9e688e9af828d7bb10e5e994ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_rectangle_area_ae46e43312885a6700cc65f5f1b2baf9f}\label{class_terrain_rectangle_area_ae46e43312885a6700cc65f5f1b2baf9f}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!GetMinMax@{GetMinMax}}
+\index{GetMinMax@{GetMinMax}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{GetMinMax()}{GetMinMax()}}
+{\footnotesize\ttfamily void Terrain\+Rectangle\+Area\+::\+Get\+Min\+Max (\begin{DoxyParamCaption}\item[{int \&}]{i\+Min,  }\item[{int \&}]{i\+Max,  }\item[{int \&}]{j\+Min,  }\item[{int \&}]{j\+Max }\end{DoxyParamCaption})}
+
+
+
+Gets minimum and maximum. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em i\+Min} & Zero-\/based index of the minimum. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em i\+Max} & Zero-\/based index of the maximum. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em j\+Min} & The minimum. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em j\+Max} & The maximum. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_terrain_rectangle_area_ae46e43312885a6700cc65f5f1b2baf9f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_rectangle_area_a6c782efcbd32b969a205fa0f7f29c68a}\label{class_terrain_rectangle_area_a6c782efcbd32b969a205fa0f7f29c68a}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!GetTerrain@{GetTerrain}}
+\index{GetTerrain@{GetTerrain}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{GetTerrain()}{GetTerrain()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$ Terrain\+Rectangle\+Area\+::\+Get\+Terrain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_terrain_rectangle_area_a6c782efcbd32b969a205fa0f7f29c68a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_rectangle_area_a91bf60791be938a26bbf2031394d759d}\label{class_terrain_rectangle_area_a91bf60791be938a26bbf2031394d759d}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!operator=@{operator=}}
+\index{operator=@{operator=}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}}\& Terrain\+Rectangle\+Area\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_terrain_rectangle_area_a84f28aee34c2fd16dbbb053a9143ca86}\label{class_terrain_rectangle_area_a84f28aee34c2fd16dbbb053a9143ca86}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!operator=@{operator=}}
+\index{operator=@{operator=}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}}\& Terrain\+Rectangle\+Area\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_terrain_rectangle_area_a046564e00cdc3ce81fd47b70aa7a6c78}\label{class_terrain_rectangle_area_a046564e00cdc3ce81fd47b70aa7a6c78}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!iMax@{iMax}}
+\index{iMax@{iMax}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{iMax}{iMax}}
+{\footnotesize\ttfamily int Terrain\+Rectangle\+Area\+::i\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_rectangle_area_ae3b27188b0c446baa155679a7a9a22e7}\label{class_terrain_rectangle_area_ae3b27188b0c446baa155679a7a9a22e7}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!iMin@{iMin}}
+\index{iMin@{iMin}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{iMin}{iMin}}
+{\footnotesize\ttfamily int Terrain\+Rectangle\+Area\+::i\+Min\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_rectangle_area_af4194482e971eb4b10cbd19f931278fd}\label{class_terrain_rectangle_area_af4194482e971eb4b10cbd19f931278fd}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!jMax@{jMax}}
+\index{jMax@{jMax}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{jMax}{jMax}}
+{\footnotesize\ttfamily int Terrain\+Rectangle\+Area\+::j\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_rectangle_area_a4af461ef752265ca63913ae77dbc0215}\label{class_terrain_rectangle_area_a4af461ef752265ca63913ae77dbc0215}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!jMin@{jMin}}
+\index{jMin@{jMin}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{jMin}{jMin}}
+{\footnotesize\ttfamily int Terrain\+Rectangle\+Area\+::j\+Min\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_rectangle_area_a7e0f40e6afd39425654f77f3d46a325e}\label{class_terrain_rectangle_area_a7e0f40e6afd39425654f77f3d46a325e}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!storedBegin@{storedBegin}}
+\index{storedBegin@{storedBegin}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{storedBegin}{storedBegin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} Terrain\+Rectangle\+Area\+::stored\+Begin\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_rectangle_area_a37571dc910cf39039b55af95cc9d946f}\label{class_terrain_rectangle_area_a37571dc910cf39039b55af95cc9d946f}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!storedEnd@{storedEnd}}
+\index{storedEnd@{storedEnd}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{storedEnd}{storedEnd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} Terrain\+Rectangle\+Area\+::stored\+End\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_rectangle_area_a81da8cf8dbb008a56fdd11f7d21756ee}\label{class_terrain_rectangle_area_a81da8cf8dbb008a56fdd11f7d21756ee}} 
+\index{TerrainRectangleArea@{TerrainRectangleArea}!terrain@{terrain}}
+\index{terrain@{terrain}!TerrainRectangleArea@{TerrainRectangleArea}}
+\doxysubsubsection{\texorpdfstring{terrain}{terrain}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}}$\ast$ Terrain\+Rectangle\+Area\+::terrain\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_terrain_rectangle_area_8h}{Terrain\+Rectangle\+Area.\+h}}\item 
+\mbox{\hyperlink{_terrain_rectangle_area_8cpp}{Terrain\+Rectangle\+Area.\+cpp}}\end{DoxyCompactItemize}

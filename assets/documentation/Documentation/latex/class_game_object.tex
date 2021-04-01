@@ -1,0 +1,310 @@
+\hypertarget{class_game_object}{}\doxysection{Game\+Object Class Reference}
+\label{class_game_object}\index{GameObject@{GameObject}}
+
+
+A game object entity.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Game\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}{Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object_aae3335f16f4c318950ef8b9b5fd1d368}{Game\+Object}} (const \mbox{\hyperlink{class_game_object}{Game\+Object}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object_a68d99bc0069bb39bb439aaa8e1326664}{Game\+Object}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} \& \mbox{\hyperlink{class_game_object_a6417101a0e08f9cf216736ae95bbe772}{operator=}} (const \mbox{\hyperlink{class_game_object}{Game\+Object}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} \& \mbox{\hyperlink{class_game_object_aa09b3cc2870cb87ef1d5f73c65187d8d}{operator=}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_game_object_ab82dfdb656f9051c0587e6593b2dda97}{$\sim$\+Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_acd73dcfe7d0f587fd985981511975301}{Submit\+Entry}} ()
+\begin{DoxyCompactList}\small\item\em Submit object entry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_ab13c929c99c3074d4a0467ce02cd7998}{Submit\+Exit}} ()
+\begin{DoxyCompactList}\small\item\em Submit exit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_ac1b3409129559bfc11845d6437c3d587}{Connect\+To\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Connects to scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a6bef6fa50dae75443cc9c93ab93fbff9}{Disconnect\+From\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Disconnects from scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_game_object_a9b7eed09adea0eab644ba3c9a295d488}{Scene\+Entry}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_scene}{Scene}} entry. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_af784bed9fe00cd9605133fffaeda9ef3}{Scene\+Exit}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_scene}{Scene}} exit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_registration_state_8h_a7c6efa1e80dd77c20a8d82b1620ab85f}{Registration\+State}} \mbox{\hyperlink{class_game_object_a9be97a7b91c9f282d4ed261a359975e2}{Reg\+Curr\+State}}
+\begin{DoxyCompactList}\small\item\em State of the register curr. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object_entry_command}{Game\+Object\+Entry\+Command}} $\ast$ \mbox{\hyperlink{class_game_object_ad71c756084b7ccd964ca9939126b4e0f}{p\+Entry\+Command}}
+\begin{DoxyCompactList}\small\item\em The entry command. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object_exit_command}{Game\+Object\+Exit\+Command}} $\ast$ \mbox{\hyperlink{class_game_object_a1fc8a46edf57742d7e3140890591ed06}{p\+Exit\+Command}}
+\begin{DoxyCompactList}\small\item\em The exit command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_game_object_a29c6b1bd2c308a06311725924abd1c50}{Game\+Object\+Attorney}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A game object entity. 
+
+All entities will derive from \mbox{\hyperlink{class_game_object}{Game\+Object}}. ~\newline
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}\label{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}} 
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_game_object_aae3335f16f4c318950ef8b9b5fd1d368}\label{class_game_object_aae3335f16f4c318950ef8b9b5fd1d368}} 
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_object}{Game\+Object}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_game_object_a68d99bc0069bb39bb439aaa8e1326664}\label{class_game_object_a68d99bc0069bb39bb439aaa8e1326664}} 
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_game_object_ab82dfdb656f9051c0587e6593b2dda97}\label{class_game_object_ab82dfdb656f9051c0587e6593b2dda97}} 
+\index{GameObject@{GameObject}!````~GameObject@{$\sim$GameObject}}
+\index{````~GameObject@{$\sim$GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$GameObject()}{~GameObject()}}
+{\footnotesize\ttfamily Game\+Object\+::$\sim$\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_object_ac1b3409129559bfc11845d6437c3d587}\label{class_game_object_ac1b3409129559bfc11845d6437c3d587}} 
+\index{GameObject@{GameObject}!ConnectToScene@{ConnectToScene}}
+\index{ConnectToScene@{ConnectToScene}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{ConnectToScene()}{ConnectToScene()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Connect\+To\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Connects to scene. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_ac1b3409129559bfc11845d6437c3d587_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_ac1b3409129559bfc11845d6437c3d587_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_game_object_a6bef6fa50dae75443cc9c93ab93fbff9}\label{class_game_object_a6bef6fa50dae75443cc9c93ab93fbff9}} 
+\index{GameObject@{GameObject}!DisconnectFromScene@{DisconnectFromScene}}
+\index{DisconnectFromScene@{DisconnectFromScene}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{DisconnectFromScene()}{DisconnectFromScene()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Disconnect\+From\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disconnects from scene. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_a6bef6fa50dae75443cc9c93ab93fbff9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_a6bef6fa50dae75443cc9c93ab93fbff9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_game_object_a6417101a0e08f9cf216736ae95bbe772}\label{class_game_object_a6417101a0e08f9cf216736ae95bbe772}} 
+\index{GameObject@{GameObject}!operator=@{operator=}}
+\index{operator=@{operator=}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object}{Game\+Object}}\& Game\+Object\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_object}{Game\+Object}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_game_object_aa09b3cc2870cb87ef1d5f73c65187d8d}\label{class_game_object_aa09b3cc2870cb87ef1d5f73c65187d8d}} 
+\index{GameObject@{GameObject}!operator=@{operator=}}
+\index{operator=@{operator=}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object}{Game\+Object}}\& Game\+Object\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_game_object_a9b7eed09adea0eab644ba3c9a295d488}\label{class_game_object_a9b7eed09adea0eab644ba3c9a295d488}} 
+\index{GameObject@{GameObject}!SceneEntry@{SceneEntry}}
+\index{SceneEntry@{SceneEntry}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{SceneEntry()}{SceneEntry()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Scene\+Entry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_scene}{Scene}} entry. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_a9b7eed09adea0eab644ba3c9a295d488_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_game_object_af784bed9fe00cd9605133fffaeda9ef3}\label{class_game_object_af784bed9fe00cd9605133fffaeda9ef3}} 
+\index{GameObject@{GameObject}!SceneExit@{SceneExit}}
+\index{SceneExit@{SceneExit}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{SceneExit()}{SceneExit()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Scene\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_scene}{Scene}} exit. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_af784bed9fe00cd9605133fffaeda9ef3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_game_object_acd73dcfe7d0f587fd985981511975301}\label{class_game_object_acd73dcfe7d0f587fd985981511975301}} 
+\index{GameObject@{GameObject}!SubmitEntry@{SubmitEntry}}
+\index{SubmitEntry@{SubmitEntry}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{SubmitEntry()}{SubmitEntry()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Submit\+Entry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Submit object entry. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_acd73dcfe7d0f587fd985981511975301_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_game_object_ab13c929c99c3074d4a0467ce02cd7998}\label{class_game_object_ab13c929c99c3074d4a0467ce02cd7998}} 
+\index{GameObject@{GameObject}!SubmitExit@{SubmitExit}}
+\index{SubmitExit@{SubmitExit}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{SubmitExit()}{SubmitExit()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Submit\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Submit exit. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_ab13c929c99c3074d4a0467ce02cd7998_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_game_object_a29c6b1bd2c308a06311725924abd1c50}\label{class_game_object_a29c6b1bd2c308a06311725924abd1c50}} 
+\index{GameObject@{GameObject}!GameObjectAttorney@{GameObjectAttorney}}
+\index{GameObjectAttorney@{GameObjectAttorney}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObjectAttorney}{GameObjectAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_game_object_attorney}{Game\+Object\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_object_ad71c756084b7ccd964ca9939126b4e0f}\label{class_game_object_ad71c756084b7ccd964ca9939126b4e0f}} 
+\index{GameObject@{GameObject}!pEntryCommand@{pEntryCommand}}
+\index{pEntryCommand@{pEntryCommand}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{pEntryCommand}{pEntryCommand}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object_entry_command}{Game\+Object\+Entry\+Command}}$\ast$ Game\+Object\+::p\+Entry\+Command\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The entry command. 
+
+\mbox{\Hypertarget{class_game_object_a1fc8a46edf57742d7e3140890591ed06}\label{class_game_object_a1fc8a46edf57742d7e3140890591ed06}} 
+\index{GameObject@{GameObject}!pExitCommand@{pExitCommand}}
+\index{pExitCommand@{pExitCommand}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{pExitCommand}{pExitCommand}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object_exit_command}{Game\+Object\+Exit\+Command}}$\ast$ Game\+Object\+::p\+Exit\+Command\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The exit command. 
+
+\mbox{\Hypertarget{class_game_object_a9be97a7b91c9f282d4ed261a359975e2}\label{class_game_object_a9be97a7b91c9f282d4ed261a359975e2}} 
+\index{GameObject@{GameObject}!RegCurrState@{RegCurrState}}
+\index{RegCurrState@{RegCurrState}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{RegCurrState}{RegCurrState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_registration_state_8h_a7c6efa1e80dd77c20a8d82b1620ab85f}{Registration\+State}} Game\+Object\+::\+Reg\+Curr\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+State of the register curr. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_game_object_8h}{Game\+Object.\+h}}\item 
+\mbox{\hyperlink{_game_object_8cpp}{Game\+Object.\+cpp}}\end{DoxyCompactItemize}

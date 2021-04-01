@@ -1,0 +1,7 @@
+<map id="TextureManagerAttorney::Delete" name="TextureManagerAttorney::Delete">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,169,65"/>
+<area shape="rect" id="node2" href="$class_texture_manager.html#a33f1955011fe8ca64f0b50c6a5b972b4" title="Deletes the pointer instance. Only to be called internally by Sly." alt="" coords="217,31,377,57"/>
+<area shape="rect" id="node3" href="$class_texture_manager.html#af8c4f47e97491dc5001ce1ee5b0fce3f" title="Gets the instance." alt="" coords="429,5,601,32"/>
+<area shape="rect" id="node5" href="$class_texture_manager.html#a8a9131247f92b179147da3651f8e8f3d" title="Private delete, delete ptrInstance." alt="" coords="425,56,604,83"/>
+<area shape="rect" id="node4" href="$class_texture_manager.html#ad76abb178b37cedf4514eb0154349935" title="Default constructor." alt="" coords="652,5,868,32"/>
+</map>

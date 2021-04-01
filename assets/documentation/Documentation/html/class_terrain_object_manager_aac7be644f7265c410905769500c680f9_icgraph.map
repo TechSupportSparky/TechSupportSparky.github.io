@@ -1,0 +1,9 @@
+<map id="TerrainObjectManager::TerrainObjectManager" name="TerrainObjectManager::TerrainObjectManager">
+<area shape="rect" id="node1" title="Default constructor." alt="" coords="863,64,1020,105"/>
+<area shape="rect" id="node2" href="$class_terrain_object_manager.html#a3e1de183b4aaca5f75c4f756099fc393" title="Gets the instance of TerrainObjectManager (Singleton)" alt="" coords="665,64,815,105"/>
+<area shape="rect" id="node3" href="$class_terrain_object_manager.html#a1123203fe6b4a86085b6bb9daa36fbc4" title="Sly&#39;s hook into the delete section of the TerrainObjectManager. Only called within Sly." alt="" coords="453,5,603,47"/>
+<area shape="rect" id="node6" href="$class_terrain_object_manager.html#ab712917ef91c1fe238454b82adfe8ab3" title="Gets a terrain object* using the given key." alt="" coords="439,71,617,98"/>
+<area shape="rect" id="node7" href="$class_terrain_object_manager.html#ac557665da6faf6a79bbf8332e6c539dd" title="Call to load the heightmap and create a terrainObject that will be stored internally." alt="" coords="453,123,603,164"/>
+<area shape="rect" id="node4" href="$class_terrain_object_manager_attorney.html#a245d2a507cde9b62803e486163dc0b5d" title=" " alt="" coords="192,5,391,47"/>
+<area shape="rect" id="node5" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="5,13,144,39"/>
+</map>

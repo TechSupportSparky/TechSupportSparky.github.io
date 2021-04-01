@@ -1,0 +1,4 @@
+<map id="TerrainManager::Instance" name="TerrainManager::Instance">
+<area shape="rect" id="node1" title="Gets the instance of TerrainManager." alt="" coords="5,5,173,32"/>
+<area shape="rect" id="node2" href="$class_terrain_manager.html#ac90a7e0cb7b7960b752e1e0df307a6b5" title="Default constructor." alt="" coords="221,5,429,32"/>
+</map>

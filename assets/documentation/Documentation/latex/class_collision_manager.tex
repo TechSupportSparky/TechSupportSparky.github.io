@@ -1,0 +1,426 @@
+\hypertarget{class_collision_manager}{}\doxysection{Collision\+Manager Class Reference}
+\label{class_collision_manager}\index{CollisionManager@{CollisionManager}}
+
+
+{\ttfamily \#include $<$Collision\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Collision\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_collision_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_collision_manager_aff2d5477cb47750c1fb96901163097dc}{P\+W\+Type\+ID}} = int
+\begin{DoxyCompactList}\small\item\em Identifier type definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_manager_a81f0b3f0cc0268c80f54714cd7ddb55f}{Collision\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_manager_a1a3bf1bd4afe92cf349b44cbd19a1cb4}{Collision\+Manager}} (const \mbox{\hyperlink{class_collision_manager}{Collision\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_manager_a70b85ec04b62eea38e96b0d26fb2269f}{Collision\+Manager}} (\mbox{\hyperlink{class_collision_manager}{Collision\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_manager}{Collision\+Manager}} \& \mbox{\hyperlink{class_collision_manager_ad8c17f15ec5b1a91d0d2e5457634a81c}{operator=}} (const \mbox{\hyperlink{class_collision_manager}{Collision\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_manager}{Collision\+Manager}} \& \mbox{\hyperlink{class_collision_manager_a64c5e091221094f1ce265764d42d6db5}{operator=}} (\mbox{\hyperlink{class_collision_manager}{Collision\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_manager_acdbb3c842f0ef1c7a028d3f080855766}{$\sim$\+Collision\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename C $>$ }\\\mbox{\hyperlink{class_collision_manager_aff2d5477cb47750c1fb96901163097dc}{P\+W\+Type\+ID}} \mbox{\hyperlink{class_collision_manager_a9afd2c8669efb8f85159456d8410decf}{Get\+Type\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Gets type identifier. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename C1 , typename C2 $>$ }\\void \mbox{\hyperlink{class_collision_manager_a068cfcfa9bab15f5f8471dab77b10a3e}{Set\+Collision\+Pair}} ()
+\begin{DoxyCompactList}\small\item\em Sets collision pair. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename C1 $>$ }\\void \mbox{\hyperlink{class_collision_manager_a87ae5ba464b59df483efbe0fed6108ad}{Set\+Collision\+Self}} ()
+\begin{DoxyCompactList}\small\item\em Sets collision self. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename C1 $>$ }\\void \mbox{\hyperlink{class_collision_manager_a4fb3423c3f87c7db7362f032781d44b2}{Set\+Collision\+Terrain}} ()
+\begin{DoxyCompactList}\small\item\em Sets collision terrain. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} $\ast$ \mbox{\hyperlink{class_collision_manager_a8093534ecbf9ec54cb3205237c545021}{Get\+Col\+Group}} (\mbox{\hyperlink{class_collision_manager_aff2d5477cb47750c1fb96901163097dc}{P\+W\+Type\+ID}} id)
+\begin{DoxyCompactList}\small\item\em Gets col group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_manager_a4c4a68f2fba71bcd21c777b7fd2be96a}{Process\+Collisions}} ()
+\begin{DoxyCompactList}\small\item\em Process the collisions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_manager_acb523a764556c6852b4e81e853fac7e7}{Update\+Group\+Volumes}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{class_collision_manager_aff2d5477cb47750c1fb96901163097dc}{P\+W\+Type\+ID}} \mbox{\hyperlink{class_collision_manager_adca36946aecdf6390ce0c017d7753de7}{P\+W\+I\+D\+\_\+\+U\+N\+D\+E\+F\+I\+N\+ED}} = -\/1
+\begin{DoxyCompactList}\small\item\em The pwid undefined. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} $\ast$ $>$ \mbox{\hyperlink{class_collision_manager_ae765c34732650d8ae55e4e6b374ee1c9}{Collidable\+Group\+Collection}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing collection of collidable groups. \end{DoxyCompactList}\item 
+typedef std\+::list$<$ \mbox{\hyperlink{class_collision_test_command_base}{Collision\+Test\+Command\+Base}} $\ast$ $>$ \mbox{\hyperlink{class_collision_manager_af068da5263aee87d6318b008d32b2cc9}{Collision\+Test\+Commands}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the collision test commands. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_collision_manager_a19c3b4657a5e2e1cec75d77fd6724b9a}{Set\+Group\+For\+Type\+ID}} (\mbox{\hyperlink{class_collision_manager_aff2d5477cb47750c1fb96901163097dc}{Collision\+Manager\+::\+P\+W\+Type\+ID}} ind)
+\begin{DoxyCompactList}\small\item\em Sets group for type identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_collision_manager_ad3dd55a4a300d82ea8982377c020cedf}{M\+A\+X\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+G\+R\+O\+UP}} = 20
+\begin{DoxyCompactList}\small\item\em Maximum amount of collision groups allowed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_manager_ae765c34732650d8ae55e4e6b374ee1c9}{Collidable\+Group\+Collection}} \mbox{\hyperlink{class_collision_manager_af5f98ac73f8418ee8700a8c0e0b89754}{Col\+Group\+Collection}}
+\begin{DoxyCompactList}\small\item\em Collection of col groups. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_manager_af068da5263aee87d6318b008d32b2cc9}{Collision\+Test\+Commands}} \mbox{\hyperlink{class_collision_manager_ad83ebbddf68a4400b6d55aad81a51e6d}{col\+Test\+Commands}}
+\begin{DoxyCompactList}\small\item\em The collision test commands. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_collision_manager_aff2d5477cb47750c1fb96901163097dc}{P\+W\+Type\+ID}} \mbox{\hyperlink{class_collision_manager_a3dea025e250d5f162c3b9cea39eaa69c}{Type\+I\+D\+Next\+Number}} = 0
+\begin{DoxyCompactList}\small\item\em The type identifier next number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_collision_manager_ae765c34732650d8ae55e4e6b374ee1c9}\label{class_collision_manager_ae765c34732650d8ae55e4e6b374ee1c9}} 
+\index{CollisionManager@{CollisionManager}!CollidableGroupCollection@{CollidableGroupCollection}}
+\index{CollidableGroupCollection@{CollidableGroupCollection}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{CollidableGroupCollection}{CollidableGroupCollection}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} $\ast$ $>$ \mbox{\hyperlink{class_collision_manager_ae765c34732650d8ae55e4e6b374ee1c9}{Collision\+Manager\+::\+Collidable\+Group\+Collection}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing collection of collidable groups. 
+
+\mbox{\Hypertarget{class_collision_manager_af068da5263aee87d6318b008d32b2cc9}\label{class_collision_manager_af068da5263aee87d6318b008d32b2cc9}} 
+\index{CollisionManager@{CollisionManager}!CollisionTestCommands@{CollisionTestCommands}}
+\index{CollisionTestCommands@{CollisionTestCommands}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{CollisionTestCommands}{CollisionTestCommands}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{class_collision_test_command_base}{Collision\+Test\+Command\+Base}} $\ast$ $>$ \mbox{\hyperlink{class_collision_manager_af068da5263aee87d6318b008d32b2cc9}{Collision\+Manager\+::\+Collision\+Test\+Commands}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing the collision test commands. 
+
+\mbox{\Hypertarget{class_collision_manager_aff2d5477cb47750c1fb96901163097dc}\label{class_collision_manager_aff2d5477cb47750c1fb96901163097dc}} 
+\index{CollisionManager@{CollisionManager}!PWTypeID@{PWTypeID}}
+\index{PWTypeID@{PWTypeID}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{PWTypeID}{PWTypeID}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{class_collision_manager_aff2d5477cb47750c1fb96901163097dc}{Collision\+Manager\+::\+P\+W\+Type\+ID}} =  int}
+
+
+
+Identifier type definition. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_collision_manager_a81f0b3f0cc0268c80f54714cd7ddb55f}\label{class_collision_manager_a81f0b3f0cc0268c80f54714cd7ddb55f}} 
+\index{CollisionManager@{CollisionManager}!CollisionManager@{CollisionManager}}
+\index{CollisionManager@{CollisionManager}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{CollisionManager()}{CollisionManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Collision\+Manager\+::\+Collision\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_collision_manager_a1a3bf1bd4afe92cf349b44cbd19a1cb4}\label{class_collision_manager_a1a3bf1bd4afe92cf349b44cbd19a1cb4}} 
+\index{CollisionManager@{CollisionManager}!CollisionManager@{CollisionManager}}
+\index{CollisionManager@{CollisionManager}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{CollisionManager()}{CollisionManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Collision\+Manager\+::\+Collision\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_manager}{Collision\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_collision_manager_a70b85ec04b62eea38e96b0d26fb2269f}\label{class_collision_manager_a70b85ec04b62eea38e96b0d26fb2269f}} 
+\index{CollisionManager@{CollisionManager}!CollisionManager@{CollisionManager}}
+\index{CollisionManager@{CollisionManager}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{CollisionManager()}{CollisionManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Collision\+Manager\+::\+Collision\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_manager}{Collision\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_collision_manager_acdbb3c842f0ef1c7a028d3f080855766}\label{class_collision_manager_acdbb3c842f0ef1c7a028d3f080855766}} 
+\index{CollisionManager@{CollisionManager}!````~CollisionManager@{$\sim$CollisionManager}}
+\index{````~CollisionManager@{$\sim$CollisionManager}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$CollisionManager()}{~CollisionManager()}}
+{\footnotesize\ttfamily Collision\+Manager\+::$\sim$\+Collision\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collision_manager_a8093534ecbf9ec54cb3205237c545021}\label{class_collision_manager_a8093534ecbf9ec54cb3205237c545021}} 
+\index{CollisionManager@{CollisionManager}!GetColGroup@{GetColGroup}}
+\index{GetColGroup@{GetColGroup}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{GetColGroup()}{GetColGroup()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} $\ast$ Collision\+Manager\+::\+Get\+Col\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_manager_aff2d5477cb47750c1fb96901163097dc}{P\+W\+Type\+ID}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Gets col group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Null if it fails, else the collision group identifier. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a8093534ecbf9ec54cb3205237c545021_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_manager_a9afd2c8669efb8f85159456d8410decf}\label{class_collision_manager_a9afd2c8669efb8f85159456d8410decf}} 
+\index{CollisionManager@{CollisionManager}!GetTypeID@{GetTypeID}}
+\index{GetTypeID@{GetTypeID}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{GetTypeID()}{GetTypeID()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+template$<$ typename C $>$ \mbox{\hyperlink{class_collision_manager_aff2d5477cb47750c1fb96901163097dc}{P\+W\+Type\+ID}} Collision\+Manager\+::\+Get\+Type\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets type identifier. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em C} & Type of the c.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+The type identifier. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a9afd2c8669efb8f85159456d8410decf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a9afd2c8669efb8f85159456d8410decf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_manager_a64c5e091221094f1ce265764d42d6db5}\label{class_collision_manager_a64c5e091221094f1ce265764d42d6db5}} 
+\index{CollisionManager@{CollisionManager}!operator=@{operator=}}
+\index{operator=@{operator=}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_manager}{Collision\+Manager}}\& Collision\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_manager}{Collision\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_collision_manager_ad8c17f15ec5b1a91d0d2e5457634a81c}\label{class_collision_manager_ad8c17f15ec5b1a91d0d2e5457634a81c}} 
+\index{CollisionManager@{CollisionManager}!operator=@{operator=}}
+\index{operator=@{operator=}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_manager}{Collision\+Manager}}\& Collision\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_manager}{Collision\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_collision_manager_a4c4a68f2fba71bcd21c777b7fd2be96a}\label{class_collision_manager_a4c4a68f2fba71bcd21c777b7fd2be96a}} 
+\index{CollisionManager@{CollisionManager}!ProcessCollisions@{ProcessCollisions}}
+\index{ProcessCollisions@{ProcessCollisions}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{ProcessCollisions()}{ProcessCollisions()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Process\+Collisions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Process the collisions. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a4c4a68f2fba71bcd21c777b7fd2be96a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a4c4a68f2fba71bcd21c777b7fd2be96a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_manager_a068cfcfa9bab15f5f8471dab77b10a3e}\label{class_collision_manager_a068cfcfa9bab15f5f8471dab77b10a3e}} 
+\index{CollisionManager@{CollisionManager}!SetCollisionPair@{SetCollisionPair}}
+\index{SetCollisionPair@{SetCollisionPair}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{SetCollisionPair()}{SetCollisionPair()}}
+{\footnotesize\ttfamily template$<$typename C1 , typename C2 $>$ \\
+template$<$ typename C1, typename C2 $>$ void Collision\+Manager\+::\+Set\+Collision\+Pair (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets collision pair. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em C1} & Type of the c 1. \\
+\hline
+{\em C2} & Type of the c 2. \\
+\hline
+\end{DoxyTemplParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a068cfcfa9bab15f5f8471dab77b10a3e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_manager_a87ae5ba464b59df483efbe0fed6108ad}\label{class_collision_manager_a87ae5ba464b59df483efbe0fed6108ad}} 
+\index{CollisionManager@{CollisionManager}!SetCollisionSelf@{SetCollisionSelf}}
+\index{SetCollisionSelf@{SetCollisionSelf}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{SetCollisionSelf()}{SetCollisionSelf()}}
+{\footnotesize\ttfamily template$<$typename C1 $>$ \\
+template$<$ typename C1 $>$ void Collision\+Manager\+::\+Set\+Collision\+Self (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets collision self. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em C1} & Type of the c 1. \\
+\hline
+\end{DoxyTemplParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a87ae5ba464b59df483efbe0fed6108ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_manager_a4fb3423c3f87c7db7362f032781d44b2}\label{class_collision_manager_a4fb3423c3f87c7db7362f032781d44b2}} 
+\index{CollisionManager@{CollisionManager}!SetCollisionTerrain@{SetCollisionTerrain}}
+\index{SetCollisionTerrain@{SetCollisionTerrain}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{SetCollisionTerrain()}{SetCollisionTerrain()}}
+{\footnotesize\ttfamily template$<$typename C1 $>$ \\
+template$<$ typename C1 $>$ void Collision\+Manager\+::\+Set\+Collision\+Terrain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets collision terrain. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em C1} & Type of the c 1. \\
+\hline
+\end{DoxyTemplParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a4fb3423c3f87c7db7362f032781d44b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_manager_a19c3b4657a5e2e1cec75d77fd6724b9a}\label{class_collision_manager_a19c3b4657a5e2e1cec75d77fd6724b9a}} 
+\index{CollisionManager@{CollisionManager}!SetGroupForTypeID@{SetGroupForTypeID}}
+\index{SetGroupForTypeID@{SetGroupForTypeID}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{SetGroupForTypeID()}{SetGroupForTypeID()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Set\+Group\+For\+Type\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_manager_aff2d5477cb47750c1fb96901163097dc}{Collision\+Manager\+::\+P\+W\+Type\+ID}}}]{ind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets group for type identifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ind} & The collection group identifier. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a19c3b4657a5e2e1cec75d77fd6724b9a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_manager_acb523a764556c6852b4e81e853fac7e7}\label{class_collision_manager_acb523a764556c6852b4e81e853fac7e7}} 
+\index{CollisionManager@{CollisionManager}!UpdateGroupVolumes@{UpdateGroupVolumes}}
+\index{UpdateGroupVolumes@{UpdateGroupVolumes}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{UpdateGroupVolumes()}{UpdateGroupVolumes()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Update\+Group\+Volumes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_acb523a764556c6852b4e81e853fac7e7_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_collision_manager_af5f98ac73f8418ee8700a8c0e0b89754}\label{class_collision_manager_af5f98ac73f8418ee8700a8c0e0b89754}} 
+\index{CollisionManager@{CollisionManager}!ColGroupCollection@{ColGroupCollection}}
+\index{ColGroupCollection@{ColGroupCollection}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{ColGroupCollection}{ColGroupCollection}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_manager_ae765c34732650d8ae55e4e6b374ee1c9}{Collidable\+Group\+Collection}} Collision\+Manager\+::\+Col\+Group\+Collection\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Collection of col groups. 
+
+\mbox{\Hypertarget{class_collision_manager_ad83ebbddf68a4400b6d55aad81a51e6d}\label{class_collision_manager_ad83ebbddf68a4400b6d55aad81a51e6d}} 
+\index{CollisionManager@{CollisionManager}!colTestCommands@{colTestCommands}}
+\index{colTestCommands@{colTestCommands}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{colTestCommands}{colTestCommands}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_manager_af068da5263aee87d6318b008d32b2cc9}{Collision\+Test\+Commands}} Collision\+Manager\+::col\+Test\+Commands\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The collision test commands. 
+
+\mbox{\Hypertarget{class_collision_manager_ad3dd55a4a300d82ea8982377c020cedf}\label{class_collision_manager_ad3dd55a4a300d82ea8982377c020cedf}} 
+\index{CollisionManager@{CollisionManager}!MAX\_COLLISION\_GROUP@{MAX\_COLLISION\_GROUP}}
+\index{MAX\_COLLISION\_GROUP@{MAX\_COLLISION\_GROUP}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{MAX\_COLLISION\_GROUP}{MAX\_COLLISION\_GROUP}}
+{\footnotesize\ttfamily const int Collision\+Manager\+::\+M\+A\+X\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+G\+R\+O\+UP = 20\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Maximum amount of collision groups allowed. 
+
+\mbox{\Hypertarget{class_collision_manager_adca36946aecdf6390ce0c017d7753de7}\label{class_collision_manager_adca36946aecdf6390ce0c017d7753de7}} 
+\index{CollisionManager@{CollisionManager}!PWID\_UNDEFINED@{PWID\_UNDEFINED}}
+\index{PWID\_UNDEFINED@{PWID\_UNDEFINED}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{PWID\_UNDEFINED}{PWID\_UNDEFINED}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_collision_manager_aff2d5477cb47750c1fb96901163097dc}{P\+W\+Type\+ID}} Collision\+Manager\+::\+P\+W\+I\+D\+\_\+\+U\+N\+D\+E\+F\+I\+N\+ED = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The pwid undefined. 
+
+\mbox{\Hypertarget{class_collision_manager_a3dea025e250d5f162c3b9cea39eaa69c}\label{class_collision_manager_a3dea025e250d5f162c3b9cea39eaa69c}} 
+\index{CollisionManager@{CollisionManager}!TypeIDNextNumber@{TypeIDNextNumber}}
+\index{TypeIDNextNumber@{TypeIDNextNumber}!CollisionManager@{CollisionManager}}
+\doxysubsubsection{\texorpdfstring{TypeIDNextNumber}{TypeIDNextNumber}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_manager_aff2d5477cb47750c1fb96901163097dc}{Collision\+Manager\+::\+P\+W\+Type\+ID}} Collision\+Manager\+::\+Type\+I\+D\+Next\+Number = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The type identifier next number. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_collision_manager_8h}{Collision\+Manager.\+h}}\item 
+\mbox{\hyperlink{_collision_manager_8cpp}{Collision\+Manager.\+cpp}}\end{DoxyCompactItemize}

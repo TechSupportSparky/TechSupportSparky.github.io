@@ -1,0 +1,8 @@
+<map id="Scene::Initialize" name="Scene::Initialize">
+<area shape="rect" id="node1" title="Initializes the scene. Put scene related startup here." alt="" coords="724,53,839,80"/>
+<area shape="rect" id="node2" href="$class_scene_manager.html#a5b6d93729bec795ce2576d37d2a56236" title="Private change scene." alt="" coords="495,13,675,54"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#a2aaa0ac57ba8558468461515d88568ae" title="Private initialize start scene." alt="" coords="495,78,676,119"/>
+<area shape="rect" id="node3" href="$class_scene_manager_attorney_1_1_scene_swap_registration.html#ad8d2f066bb45baad2678c5edb97a9253" title=" " alt="" coords="263,5,431,61"/>
+<area shape="rect" id="node4" href="$class_scene_change_command_swap.html#a3ee022de55997954b84e2e2e43e421c4" title="Executes this command." alt="" coords="5,13,200,54"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#aff7da0d699248ad14e9d99fd12f2284d" title="Initializes the start scene." alt="" coords="248,85,447,112"/>
+</map>

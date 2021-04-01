@@ -1,0 +1,393 @@
+\hypertarget{class_drawable}{}\doxysection{Drawable Class Reference}
+\label{class_drawable}\index{Drawable@{Drawable}}
+
+
+{\ttfamily \#include $<$Drawable.\+h$>$}
+
+
+
+Inheritance diagram for Drawable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_drawable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Drawable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_drawable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_drawable_aac88608db6081da479c772c96636acb1}{Drawable}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_drawable_af5daeee24d8880387fa62f6531f52ce6}{Drawable}} (const \mbox{\hyperlink{class_drawable}{Drawable}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_drawable_a0c324cb6597e31d3936b83f4cbbc9ecb}{Drawable}} (\mbox{\hyperlink{class_drawable}{Drawable}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_drawable}{Drawable}} \& \mbox{\hyperlink{class_drawable_a40fef3b1b492786adf5dac86bc73fd6b}{operator=}} (const \mbox{\hyperlink{class_drawable}{Drawable}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_drawable}{Drawable}} \& \mbox{\hyperlink{class_drawable_ae5a1ed24600ccef253e662ec6730347e}{operator=}} (\mbox{\hyperlink{class_drawable}{Drawable}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_drawable_a5db44942658aab760a7418e338582e0a}{$\sim$\+Drawable}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_drawable_a4f89e20fc4a5efe3ed173743498d93eb}{Submit\+Draw\+Registration}} ()
+\begin{DoxyCompactList}\small\item\em Submit draw registration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_drawable_a04fdefc737ea11759ed7334949420cf8}{Submit\+Draw\+Deregistration}} ()
+\begin{DoxyCompactList}\small\item\em Submit draw deregistration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_drawable_manager_a84169d429bd90272bae5c8791722a457}{Drawable\+Manager\+::\+Storage\+List\+Ref}} \mbox{\hyperlink{class_drawable_a63cdb08db2ac90edca0d72982ab2fb29}{Get\+Storage\+Ref}} ()
+\begin{DoxyCompactList}\small\item\em Gets storage reference. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_drawable_a8d5d4d2f2bca40d931c1b8b762be8d42}{Draw}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function draw. Derived objects must override. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_drawable_a8bf1d3ebf3d0ce3574596b5ea0953945}{Draw2D}} ()
+\begin{DoxyCompactList}\small\item\em Function to draw 2D sprites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_drawable_a7fcee39362c678403998dd6454ed0720}{Scene\+Registration}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_scene}{Scene}} registration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_drawable_a457619b2a757693baa43f115128fc73f}{Scene\+Deregistration}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_scene}{Scene}} deregistration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_drawable_ace6f9ecdc70f88299309d58764d523c5}{Forced\+Scene\+Deregistration}} (\mbox{\hyperlink{class_drawable}{Drawable}} $\ast$the\+Object)
+\begin{DoxyCompactList}\small\item\em Forced scene deregistration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_registration_state_8h_a7c6efa1e80dd77c20a8d82b1620ab85f}{Registration\+State}} \mbox{\hyperlink{class_drawable_ad1788e727938bb20f418950de7afc11d}{Reg\+State\+Curr}}
+\begin{DoxyCompactList}\small\item\em The register state curr. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_drawable_manager_a84169d429bd90272bae5c8791722a457}{Drawable\+Manager\+::\+Storage\+List\+Ref}} \mbox{\hyperlink{class_drawable_a7dde0c785c06c5cef1c441245b78d40c}{p\+My\+Delete\+Ref}}
+\begin{DoxyCompactList}\small\item\em my delete reference \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_drawable_registration_command}{Drawable\+Registration\+Command}} $\ast$ \mbox{\hyperlink{class_drawable_a5400e50153223f2fc0dc3ec55f4a1056}{p\+Registration\+Cmd}}
+\begin{DoxyCompactList}\small\item\em The registration command. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_drawable_deregistration_command}{Drawable\+Deregistration\+Command}} $\ast$ \mbox{\hyperlink{class_drawable_a1f7e2e0b593539f9fbf0f2dd9a5b95eb}{p\+Deregistration\+Cmd}}
+\begin{DoxyCompactList}\small\item\em The deregistration command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_drawable_a15727630d49d300b726ad67209db18e3}{Drawable\+Attorney}}
+\item 
+class \mbox{\hyperlink{class_drawable_a16e0e075d75997e866c3dc71a56c0d16}{Scene\+Attorney}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_drawable_aac88608db6081da479c772c96636acb1}\label{class_drawable_aac88608db6081da479c772c96636acb1}} 
+\index{Drawable@{Drawable}!Drawable@{Drawable}}
+\index{Drawable@{Drawable}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{Drawable()}{Drawable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Drawable\+::\+Drawable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_drawable_af5daeee24d8880387fa62f6531f52ce6}\label{class_drawable_af5daeee24d8880387fa62f6531f52ce6}} 
+\index{Drawable@{Drawable}!Drawable@{Drawable}}
+\index{Drawable@{Drawable}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{Drawable()}{Drawable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Drawable\+::\+Drawable (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_drawable}{Drawable}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_drawable_a0c324cb6597e31d3936b83f4cbbc9ecb}\label{class_drawable_a0c324cb6597e31d3936b83f4cbbc9ecb}} 
+\index{Drawable@{Drawable}!Drawable@{Drawable}}
+\index{Drawable@{Drawable}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{Drawable()}{Drawable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Drawable\+::\+Drawable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_drawable}{Drawable}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_drawable_a5db44942658aab760a7418e338582e0a}\label{class_drawable_a5db44942658aab760a7418e338582e0a}} 
+\index{Drawable@{Drawable}!````~Drawable@{$\sim$Drawable}}
+\index{````~Drawable@{$\sim$Drawable}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{$\sim$Drawable()}{~Drawable()}}
+{\footnotesize\ttfamily Drawable\+::$\sim$\+Drawable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_drawable_a8d5d4d2f2bca40d931c1b8b762be8d42}\label{class_drawable_a8d5d4d2f2bca40d931c1b8b762be8d42}} 
+\index{Drawable@{Drawable}!Draw@{Draw}}
+\index{Draw@{Draw}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Drawable\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function draw. Derived objects must override. 
+
+
+
+Implemented in \mbox{\hyperlink{class_terrain_object_ad6d6320337c1c12c2a1852294d3c4150}{Terrain\+Object}}, \mbox{\hyperlink{class_particle_emitter_a545cf19b9a40b5de9c2402e8c429c6f5}{Particle\+Emitter}}, and \mbox{\hyperlink{class_sky_box_ab9db46f2e34683cae517ba97a44aee9e}{Sky\+Box}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_drawable_a8d5d4d2f2bca40d931c1b8b762be8d42_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_drawable_a8bf1d3ebf3d0ce3574596b5ea0953945}\label{class_drawable_a8bf1d3ebf3d0ce3574596b5ea0953945}} 
+\index{Drawable@{Drawable}!Draw2D@{Draw2D}}
+\index{Draw2D@{Draw2D}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{Draw2D()}{Draw2D()}}
+{\footnotesize\ttfamily void Drawable\+::\+Draw2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Function to draw 2D sprites. 
+
+The purpose of Draw2D is to draw 2D sprites A\+F\+T\+ER 3D objects. This ensures that the sprites are always drawn on top of 3D objects. This function is not a pure virtual function as not all Game\+Objects may need to Draw a sprite. ~\newline
+ Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_drawable_a8bf1d3ebf3d0ce3574596b5ea0953945_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_drawable_ace6f9ecdc70f88299309d58764d523c5}\label{class_drawable_ace6f9ecdc70f88299309d58764d523c5}} 
+\index{Drawable@{Drawable}!ForcedSceneDeregistration@{ForcedSceneDeregistration}}
+\index{ForcedSceneDeregistration@{ForcedSceneDeregistration}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{ForcedSceneDeregistration()}{ForcedSceneDeregistration()}}
+{\footnotesize\ttfamily void Drawable\+::\+Forced\+Scene\+Deregistration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_drawable}{Drawable}} $\ast$}]{the\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Forced scene deregistration. 
+
+This is a forced deregistration of assets that are managed internally. When a scene ends, managed assets must request a deregistration or else they will be unable to register for draw as they will lose their associated registration broker within the same frame. Thus, this bypasses the standard registration.
+
+This function is to only be called internally. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_drawable_ace6f9ecdc70f88299309d58764d523c5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_drawable_ace6f9ecdc70f88299309d58764d523c5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_drawable_a63cdb08db2ac90edca0d72982ab2fb29}\label{class_drawable_a63cdb08db2ac90edca0d72982ab2fb29}} 
+\index{Drawable@{Drawable}!GetStorageRef@{GetStorageRef}}
+\index{GetStorageRef@{GetStorageRef}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{GetStorageRef()}{GetStorageRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_drawable_manager_a84169d429bd90272bae5c8791722a457}{Drawable\+Manager\+::\+Storage\+List\+Ref}} Drawable\+::\+Get\+Storage\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gets storage reference. 
+
+\begin{DoxyReturn}{Returns}
+The storage reference. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_drawable_a63cdb08db2ac90edca0d72982ab2fb29_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_drawable_a40fef3b1b492786adf5dac86bc73fd6b}\label{class_drawable_a40fef3b1b492786adf5dac86bc73fd6b}} 
+\index{Drawable@{Drawable}!operator=@{operator=}}
+\index{operator=@{operator=}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_drawable}{Drawable}}\& Drawable\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_drawable}{Drawable}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_drawable_ae5a1ed24600ccef253e662ec6730347e}\label{class_drawable_ae5a1ed24600ccef253e662ec6730347e}} 
+\index{Drawable@{Drawable}!operator=@{operator=}}
+\index{operator=@{operator=}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_drawable}{Drawable}}\& Drawable\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_drawable}{Drawable}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_drawable_a457619b2a757693baa43f115128fc73f}\label{class_drawable_a457619b2a757693baa43f115128fc73f}} 
+\index{Drawable@{Drawable}!SceneDeregistration@{SceneDeregistration}}
+\index{SceneDeregistration@{SceneDeregistration}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{SceneDeregistration()}{SceneDeregistration()}}
+{\footnotesize\ttfamily void Drawable\+::\+Scene\+Deregistration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_scene}{Scene}} deregistration. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_drawable_a457619b2a757693baa43f115128fc73f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_drawable_a457619b2a757693baa43f115128fc73f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_drawable_a7fcee39362c678403998dd6454ed0720}\label{class_drawable_a7fcee39362c678403998dd6454ed0720}} 
+\index{Drawable@{Drawable}!SceneRegistration@{SceneRegistration}}
+\index{SceneRegistration@{SceneRegistration}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{SceneRegistration()}{SceneRegistration()}}
+{\footnotesize\ttfamily void Drawable\+::\+Scene\+Registration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_scene}{Scene}} registration. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_drawable_a7fcee39362c678403998dd6454ed0720_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_drawable_a7fcee39362c678403998dd6454ed0720_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_drawable_a04fdefc737ea11759ed7334949420cf8}\label{class_drawable_a04fdefc737ea11759ed7334949420cf8}} 
+\index{Drawable@{Drawable}!SubmitDrawDeregistration@{SubmitDrawDeregistration}}
+\index{SubmitDrawDeregistration@{SubmitDrawDeregistration}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{SubmitDrawDeregistration()}{SubmitDrawDeregistration()}}
+{\footnotesize\ttfamily void Drawable\+::\+Submit\+Draw\+Deregistration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Submit draw deregistration. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_drawable_a04fdefc737ea11759ed7334949420cf8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_drawable_a04fdefc737ea11759ed7334949420cf8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_drawable_a4f89e20fc4a5efe3ed173743498d93eb}\label{class_drawable_a4f89e20fc4a5efe3ed173743498d93eb}} 
+\index{Drawable@{Drawable}!SubmitDrawRegistration@{SubmitDrawRegistration}}
+\index{SubmitDrawRegistration@{SubmitDrawRegistration}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{SubmitDrawRegistration()}{SubmitDrawRegistration()}}
+{\footnotesize\ttfamily void Drawable\+::\+Submit\+Draw\+Registration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Submit draw registration. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_drawable_a4f89e20fc4a5efe3ed173743498d93eb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_drawable_a4f89e20fc4a5efe3ed173743498d93eb_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_drawable_a15727630d49d300b726ad67209db18e3}\label{class_drawable_a15727630d49d300b726ad67209db18e3}} 
+\index{Drawable@{Drawable}!DrawableAttorney@{DrawableAttorney}}
+\index{DrawableAttorney@{DrawableAttorney}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{DrawableAttorney}{DrawableAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_drawable_attorney}{Drawable\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_drawable_a16e0e075d75997e866c3dc71a56c0d16}\label{class_drawable_a16e0e075d75997e866c3dc71a56c0d16}} 
+\index{Drawable@{Drawable}!SceneAttorney@{SceneAttorney}}
+\index{SceneAttorney@{SceneAttorney}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{SceneAttorney}{SceneAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_scene_attorney}{Scene\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_drawable_a1f7e2e0b593539f9fbf0f2dd9a5b95eb}\label{class_drawable_a1f7e2e0b593539f9fbf0f2dd9a5b95eb}} 
+\index{Drawable@{Drawable}!pDeregistrationCmd@{pDeregistrationCmd}}
+\index{pDeregistrationCmd@{pDeregistrationCmd}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{pDeregistrationCmd}{pDeregistrationCmd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_drawable_deregistration_command}{Drawable\+Deregistration\+Command}}$\ast$ Drawable\+::p\+Deregistration\+Cmd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The deregistration command. 
+
+\mbox{\Hypertarget{class_drawable_a7dde0c785c06c5cef1c441245b78d40c}\label{class_drawable_a7dde0c785c06c5cef1c441245b78d40c}} 
+\index{Drawable@{Drawable}!pMyDeleteRef@{pMyDeleteRef}}
+\index{pMyDeleteRef@{pMyDeleteRef}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{pMyDeleteRef}{pMyDeleteRef}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_drawable_manager_a84169d429bd90272bae5c8791722a457}{Drawable\+Manager\+::\+Storage\+List\+Ref}} Drawable\+::p\+My\+Delete\+Ref\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+my delete reference 
+
+\mbox{\Hypertarget{class_drawable_a5400e50153223f2fc0dc3ec55f4a1056}\label{class_drawable_a5400e50153223f2fc0dc3ec55f4a1056}} 
+\index{Drawable@{Drawable}!pRegistrationCmd@{pRegistrationCmd}}
+\index{pRegistrationCmd@{pRegistrationCmd}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{pRegistrationCmd}{pRegistrationCmd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_drawable_registration_command}{Drawable\+Registration\+Command}}$\ast$ Drawable\+::p\+Registration\+Cmd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The registration command. 
+
+\mbox{\Hypertarget{class_drawable_ad1788e727938bb20f418950de7afc11d}\label{class_drawable_ad1788e727938bb20f418950de7afc11d}} 
+\index{Drawable@{Drawable}!RegStateCurr@{RegStateCurr}}
+\index{RegStateCurr@{RegStateCurr}!Drawable@{Drawable}}
+\doxysubsubsection{\texorpdfstring{RegStateCurr}{RegStateCurr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_registration_state_8h_a7c6efa1e80dd77c20a8d82b1620ab85f}{Registration\+State}} Drawable\+::\+Reg\+State\+Curr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The register state curr. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_drawable_8h}{Drawable.\+h}}\item 
+\mbox{\hyperlink{_drawable_8cpp}{Drawable.\+cpp}}\end{DoxyCompactItemize}

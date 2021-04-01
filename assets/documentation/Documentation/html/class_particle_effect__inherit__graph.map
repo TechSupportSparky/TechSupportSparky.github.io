@@ -1,0 +1,5 @@
+<map id="ParticleEffect" name="ParticleEffect">
+<area shape="rect" id="node1" title=" " alt="" coords="128,5,295,420"/>
+<area shape="rect" id="node2" href="$class_particle_effect_pulse_burst.html" title=" " alt="" coords="5,475,196,729"/>
+<area shape="rect" id="node3" href="$class_particle_effect_spherical_burst.html" title=" " alt="" coords="220,468,424,736"/>
+</map>

@@ -1,0 +1,122 @@
+\hypertarget{class_particle_emitter_memory_pool}{}\doxysection{Particle\+Emitter\+Memory\+Pool Class Reference}
+\label{class_particle_emitter_memory_pool}\index{ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}}
+
+
+{\ttfamily \#include $<$Particle\+Emitter\+Memory\+Pool.\+h$>$}
+
+
+
+Collaboration diagram for Particle\+Emitter\+Memory\+Pool\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_particle_emitter_memory_pool__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_particle_emitter_memory_pool_a87f000eb35b81b2d212f799153f82e4e}{Particle\+Emitter\+Memory\+Pool}} ()=default
+\item 
+\mbox{\hyperlink{class_particle_emitter_memory_pool_a2c6fe500d5c3015d76228d13232b4c8f}{Particle\+Emitter\+Memory\+Pool}} (const \mbox{\hyperlink{class_particle_emitter_memory_pool}{Particle\+Emitter\+Memory\+Pool}} \&)=delete
+\item 
+\mbox{\hyperlink{class_particle_emitter_memory_pool_a21e1fdce6c03cf37b39d646c9b934770}{Particle\+Emitter\+Memory\+Pool}} (\mbox{\hyperlink{class_particle_emitter_memory_pool}{Particle\+Emitter\+Memory\+Pool}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_particle_emitter_memory_pool}{Particle\+Emitter\+Memory\+Pool}} \& \mbox{\hyperlink{class_particle_emitter_memory_pool_a74120d81379a3929acf527260f2fa882}{operator=}} (const \mbox{\hyperlink{class_particle_emitter_memory_pool}{Particle\+Emitter\+Memory\+Pool}} \&)=delete
+\item 
+\mbox{\hyperlink{class_particle_emitter_memory_pool}{Particle\+Emitter\+Memory\+Pool}} \& \mbox{\hyperlink{class_particle_emitter_memory_pool_ac5e194c4eea2f63cc51bddf87129384e}{operator=}} (\mbox{\hyperlink{class_particle_emitter_memory_pool}{Particle\+Emitter\+Memory\+Pool}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_particle_emitter_memory_pool_a7437c175ef2d7e101443c1a42ffaa768}{$\sim$\+Particle\+Emitter\+Memory\+Pool}} ()
+\item 
+\mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} $\ast$ \mbox{\hyperlink{class_particle_emitter_memory_pool_ab2645ddba5a7d3ff776f62e2e1733d2c}{get\+Emitter}} ()
+\item 
+void \mbox{\hyperlink{class_particle_emitter_memory_pool_a43c8a635747bc83aaf7b5e786728d0a2}{return\+Emitter}} (\mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} $\ast$the\+Emitter)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::stack$<$ \mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} $\ast$ $>$ \mbox{\hyperlink{class_particle_emitter_memory_pool_ab110abeae9ef1fba0939a8676f8d54aa}{recycled\+Items}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_particle_emitter_memory_pool_a87f000eb35b81b2d212f799153f82e4e}\label{class_particle_emitter_memory_pool_a87f000eb35b81b2d212f799153f82e4e}} 
+\index{ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}!ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}}
+\index{ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}!ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}}
+\doxysubsubsection{\texorpdfstring{ParticleEmitterMemoryPool()}{ParticleEmitterMemoryPool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Particle\+Emitter\+Memory\+Pool\+::\+Particle\+Emitter\+Memory\+Pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_particle_emitter_memory_pool_a2c6fe500d5c3015d76228d13232b4c8f}\label{class_particle_emitter_memory_pool_a2c6fe500d5c3015d76228d13232b4c8f}} 
+\index{ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}!ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}}
+\index{ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}!ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}}
+\doxysubsubsection{\texorpdfstring{ParticleEmitterMemoryPool()}{ParticleEmitterMemoryPool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Particle\+Emitter\+Memory\+Pool\+::\+Particle\+Emitter\+Memory\+Pool (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_particle_emitter_memory_pool}{Particle\+Emitter\+Memory\+Pool}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_emitter_memory_pool_a21e1fdce6c03cf37b39d646c9b934770}\label{class_particle_emitter_memory_pool_a21e1fdce6c03cf37b39d646c9b934770}} 
+\index{ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}!ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}}
+\index{ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}!ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}}
+\doxysubsubsection{\texorpdfstring{ParticleEmitterMemoryPool()}{ParticleEmitterMemoryPool()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Particle\+Emitter\+Memory\+Pool\+::\+Particle\+Emitter\+Memory\+Pool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_emitter_memory_pool}{Particle\+Emitter\+Memory\+Pool}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_emitter_memory_pool_a7437c175ef2d7e101443c1a42ffaa768}\label{class_particle_emitter_memory_pool_a7437c175ef2d7e101443c1a42ffaa768}} 
+\index{ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}!````~ParticleEmitterMemoryPool@{$\sim$ParticleEmitterMemoryPool}}
+\index{````~ParticleEmitterMemoryPool@{$\sim$ParticleEmitterMemoryPool}!ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParticleEmitterMemoryPool()}{~ParticleEmitterMemoryPool()}}
+{\footnotesize\ttfamily Particle\+Emitter\+Memory\+Pool\+::$\sim$\+Particle\+Emitter\+Memory\+Pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_particle_emitter_memory_pool_ab2645ddba5a7d3ff776f62e2e1733d2c}\label{class_particle_emitter_memory_pool_ab2645ddba5a7d3ff776f62e2e1733d2c}} 
+\index{ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}!getEmitter@{getEmitter}}
+\index{getEmitter@{getEmitter}!ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}}
+\doxysubsubsection{\texorpdfstring{getEmitter()}{getEmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} $\ast$ Particle\+Emitter\+Memory\+Pool\+::get\+Emitter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_memory_pool_ab2645ddba5a7d3ff776f62e2e1733d2c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_emitter_memory_pool_a74120d81379a3929acf527260f2fa882}\label{class_particle_emitter_memory_pool_a74120d81379a3929acf527260f2fa882}} 
+\index{ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}!operator=@{operator=}}
+\index{operator=@{operator=}!ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_emitter_memory_pool}{Particle\+Emitter\+Memory\+Pool}}\& Particle\+Emitter\+Memory\+Pool\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_particle_emitter_memory_pool}{Particle\+Emitter\+Memory\+Pool}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_emitter_memory_pool_ac5e194c4eea2f63cc51bddf87129384e}\label{class_particle_emitter_memory_pool_ac5e194c4eea2f63cc51bddf87129384e}} 
+\index{ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}!operator=@{operator=}}
+\index{operator=@{operator=}!ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_emitter_memory_pool}{Particle\+Emitter\+Memory\+Pool}}\& Particle\+Emitter\+Memory\+Pool\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_emitter_memory_pool}{Particle\+Emitter\+Memory\+Pool}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_emitter_memory_pool_a43c8a635747bc83aaf7b5e786728d0a2}\label{class_particle_emitter_memory_pool_a43c8a635747bc83aaf7b5e786728d0a2}} 
+\index{ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}!returnEmitter@{returnEmitter}}
+\index{returnEmitter@{returnEmitter}!ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}}
+\doxysubsubsection{\texorpdfstring{returnEmitter()}{returnEmitter()}}
+{\footnotesize\ttfamily void Particle\+Emitter\+Memory\+Pool\+::return\+Emitter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} $\ast$}]{the\+Emitter }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_memory_pool_a43c8a635747bc83aaf7b5e786728d0a2_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_particle_emitter_memory_pool_ab110abeae9ef1fba0939a8676f8d54aa}\label{class_particle_emitter_memory_pool_ab110abeae9ef1fba0939a8676f8d54aa}} 
+\index{ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}!recycledItems@{recycledItems}}
+\index{recycledItems@{recycledItems}!ParticleEmitterMemoryPool@{ParticleEmitterMemoryPool}}
+\doxysubsubsection{\texorpdfstring{recycledItems}{recycledItems}}
+{\footnotesize\ttfamily std\+::stack$<$\mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}}$\ast$$>$ Particle\+Emitter\+Memory\+Pool\+::recycled\+Items\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_particle_emitter_memory_pool_8h}{Particle\+Emitter\+Memory\+Pool.\+h}}\item 
+\mbox{\hyperlink{_particle_emitter_memory_pool_8cpp}{Particle\+Emitter\+Memory\+Pool.\+cpp}}\end{DoxyCompactItemize}

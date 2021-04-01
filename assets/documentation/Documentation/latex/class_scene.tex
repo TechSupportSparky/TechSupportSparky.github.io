@@ -1,0 +1,553 @@
+\hypertarget{class_scene}{}\doxysection{Scene Class Reference}
+\label{class_scene}\index{Scene@{Scene}}
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+
+
+Inheritance diagram for Scene\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Scene\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_ad10176d75a9cc0da56626f682d083507}{Scene}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_a817e38149ed312f00941b7fbb28a4fcb}{Scene}} (const \mbox{\hyperlink{class_scene}{Scene}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_ac8da64e4c17db10489db6112c584532c}{Scene}} (\mbox{\hyperlink{class_scene}{Scene}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene}{Scene}} \& \mbox{\hyperlink{class_scene_a9e8d2978197a3cd67a4203ab6c7425e7}{operator=}} (const \mbox{\hyperlink{class_scene}{Scene}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene}{Scene}} \& \mbox{\hyperlink{class_scene_a26be22455b24b64733f67485d61a0cfe}{operator=}} (\mbox{\hyperlink{class_scene}{Scene}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_scene_a3b8cec2e32546713915f8c6303c951f1}{$\sim$\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_aafd7510b1309c6ba864791c429870959}{Initialize}} ()=0
+\begin{DoxyCompactList}\small\item\em Initializes the scene. Put scene related startup here. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_aedaeb93be94ac521c34a5ffd5168d178}{Scene\+End}} ()=0
+\begin{DoxyCompactList}\small\item\em Shuts down the scene. Put scene related end tasks here. \end{DoxyCompactList}\item 
+Camera $\ast$ \mbox{\hyperlink{class_scene_ac2acbfa7955327da74ecef419a510955}{Get\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Gets the camera. \end{DoxyCompactList}\item 
+Camera $\ast$ \mbox{\hyperlink{class_scene_a955f5f3def520197d2dbafe4d86eb900}{Get2\+D\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Camera Manager\textquotesingle{}s 2D camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a7fda2dfc185f4658c4345deb11b10c9d}{Set\+Current\+Camera}} (Camera $\ast$new\+Camera)
+\begin{DoxyCompactList}\small\item\em Sets current camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_acb6351322930187aface38ff5a7dacbf}{Set\+Current2\+D\+Camera}} (Camera $\ast$new\+Camera)
+\begin{DoxyCompactList}\small\item\em Sets current 2D camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_ad1cd83d45cb70aa4a69eb0716ab507e1}{Process\+God\+Cam}} ()
+\begin{DoxyCompactList}\small\item\em Process the god camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a234803609bf0a9e497a82da09c3c2188}{Request\+God\+Cam}} ()
+\begin{DoxyCompactList}\small\item\em Request god camera be present in the current scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename C1 , typename C2 $>$ }\\void \mbox{\hyperlink{class_scene_a2347326f8d2a9c9d5847a16b95b7d28d}{Set\+Collision\+Pair}} ()
+\begin{DoxyCompactList}\small\item\em Sets collision pair. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename C1 $>$ }\\void \mbox{\hyperlink{class_scene_a0b23e5dbba5461d00cb9eaf503effc22}{Set\+Collision\+Self}} ()
+\begin{DoxyCompactList}\small\item\em Sets collision self. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename C1 $>$ }\\void \mbox{\hyperlink{class_scene_a993faddb2d7ddabc6b7b19725cd6e68a}{Set\+Collision\+Terrain}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_scene_a713cce013f0244d71b16c2e33638ed6d}{Submit\+Command}} (\mbox{\hyperlink{class_scene_registry}{Scene\+Registry}} $\ast$cmd)
+\begin{DoxyCompactList}\small\item\em Submit command. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a4813338ee7c6c995f5bb6f10e3673804}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em Processes draw commands for the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a71a71b4f7752b853ff8032b0941a9d8d}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Processes update commands for the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_updatable_manager}{Updatable\+Manager}} $\ast$ \mbox{\hyperlink{class_scene_aaf1aacc72928db74960ebee4f1824b77}{Updateable\+Mgr}}
+\item 
+\mbox{\hyperlink{class_drawable_manager}{Drawable\+Manager}} $\ast$ \mbox{\hyperlink{class_scene_a02d467a3b97d153ec0945327656b3014}{Drawable\+Mgr}}
+\item 
+\mbox{\hyperlink{class_scene_registration_broker}{Scene\+Registration\+Broker}} $\ast$ \mbox{\hyperlink{class_scene_aa2f1e1d6aeea1dfdf82144d95d32f36a}{Registration\+Brkr}}
+\item 
+\mbox{\hyperlink{class_alarmable_manager}{Alarmable\+Manager}} $\ast$ \mbox{\hyperlink{class_scene_a4959e6a77317c86e5fa4b8439bafbd0e}{Alarm\+Mgr}}
+\item 
+\mbox{\hyperlink{class_keyboard_event_manager}{Keyboard\+Event\+Manager}} $\ast$ \mbox{\hyperlink{class_scene_a3f9b11ca880807055296c31adf530d46}{K\+B\+Event\+Mgr}}
+\item 
+\mbox{\hyperlink{class_camera_manager}{Camera\+Manager}} $\ast$ \mbox{\hyperlink{class_scene_a570bc09694af4dc9fbf30e9e23c758cd}{Cam\+Mgr}}
+\item 
+\mbox{\hyperlink{class_collision_manager}{Collision\+Manager}} $\ast$ \mbox{\hyperlink{class_scene_ad7844ccb5cd87f81a0fcdf88eecb4b36}{Col\+Mgr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_scene_a16e0e075d75997e866c3dc71a56c0d16}{Scene\+Attorney}}
+\begin{DoxyCompactList}\small\item\em Dictates access to the \mbox{\hyperlink{class_scene}{Scene}} through the \mbox{\hyperlink{class_scene_attorney}{Scene\+Attorney}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scene_ad10176d75a9cc0da56626f682d083507}\label{class_scene_ad10176d75a9cc0da56626f682d083507}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_ad10176d75a9cc0da56626f682d083507_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_a817e38149ed312f00941b7fbb28a4fcb}\label{class_scene_a817e38149ed312f00941b7fbb28a4fcb}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_scene}{Scene}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_scene_ac8da64e4c17db10489db6112c584532c}\label{class_scene_ac8da64e4c17db10489db6112c584532c}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_scene_a3b8cec2e32546713915f8c6303c951f1}\label{class_scene_a3b8cec2e32546713915f8c6303c951f1}} 
+\index{Scene@{Scene}!````~Scene@{$\sim$Scene}}
+\index{````~Scene@{$\sim$Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{$\sim$Scene()}{~Scene()}}
+{\footnotesize\ttfamily Scene\+::$\sim$\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deconstructor. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_a3b8cec2e32546713915f8c6303c951f1_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_a4813338ee7c6c995f5bb6f10e3673804}\label{class_scene_a4813338ee7c6c995f5bb6f10e3673804}} 
+\index{Scene@{Scene}!Draw@{Draw}}
+\index{Draw@{Draw}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Scene\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Processes draw commands for the scene. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_a4813338ee7c6c995f5bb6f10e3673804_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_a4813338ee7c6c995f5bb6f10e3673804_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_a955f5f3def520197d2dbafe4d86eb900}\label{class_scene_a955f5f3def520197d2dbafe4d86eb900}} 
+\index{Scene@{Scene}!Get2DCamera@{Get2DCamera}}
+\index{Get2DCamera@{Get2DCamera}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Get2DCamera()}{Get2DCamera()}}
+{\footnotesize\ttfamily Camera $\ast$ Scene\+::\+Get2\+D\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the Camera Manager\textquotesingle{}s 2D camera. 
+
+\begin{DoxyReturn}{Returns}
+Null if it fails, else the current 2D camera. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_a955f5f3def520197d2dbafe4d86eb900_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_ac2acbfa7955327da74ecef419a510955}\label{class_scene_ac2acbfa7955327da74ecef419a510955}} 
+\index{Scene@{Scene}!GetCamera@{GetCamera}}
+\index{GetCamera@{GetCamera}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{GetCamera()}{GetCamera()}}
+{\footnotesize\ttfamily Camera $\ast$ Scene\+::\+Get\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the camera. 
+
+\begin{DoxyReturn}{Returns}
+Null if it fails, else the current stored camera. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_ac2acbfa7955327da74ecef419a510955_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_scene_ac2acbfa7955327da74ecef419a510955_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_aafd7510b1309c6ba864791c429870959}\label{class_scene_aafd7510b1309c6ba864791c429870959}} 
+\index{Scene@{Scene}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Scene\+::\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initializes the scene. Put scene related startup here. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_aafd7510b1309c6ba864791c429870959_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_a9e8d2978197a3cd67a4203ab6c7425e7}\label{class_scene_a9e8d2978197a3cd67a4203ab6c7425e7}} 
+\index{Scene@{Scene}!operator=@{operator=}}
+\index{operator=@{operator=}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene}{Scene}}\& Scene\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_scene}{Scene}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_scene_a26be22455b24b64733f67485d61a0cfe}\label{class_scene_a26be22455b24b64733f67485d61a0cfe}} 
+\index{Scene@{Scene}!operator=@{operator=}}
+\index{operator=@{operator=}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene}{Scene}}\& Scene\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_scene_ad1cd83d45cb70aa4a69eb0716ab507e1}\label{class_scene_ad1cd83d45cb70aa4a69eb0716ab507e1}} 
+\index{Scene@{Scene}!ProcessGodCam@{ProcessGodCam}}
+\index{ProcessGodCam@{ProcessGodCam}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{ProcessGodCam()}{ProcessGodCam()}}
+{\footnotesize\ttfamily void Scene\+::\+Process\+God\+Cam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Process the god camera. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_ad1cd83d45cb70aa4a69eb0716ab507e1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_ad1cd83d45cb70aa4a69eb0716ab507e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_a234803609bf0a9e497a82da09c3c2188}\label{class_scene_a234803609bf0a9e497a82da09c3c2188}} 
+\index{Scene@{Scene}!RequestGodCam@{RequestGodCam}}
+\index{RequestGodCam@{RequestGodCam}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{RequestGodCam()}{RequestGodCam()}}
+{\footnotesize\ttfamily void Scene\+::\+Request\+God\+Cam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Request god camera be present in the current scene. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_a234803609bf0a9e497a82da09c3c2188_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_a234803609bf0a9e497a82da09c3c2188_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_aedaeb93be94ac521c34a5ffd5168d178}\label{class_scene_aedaeb93be94ac521c34a5ffd5168d178}} 
+\index{Scene@{Scene}!SceneEnd@{SceneEnd}}
+\index{SceneEnd@{SceneEnd}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SceneEnd()}{SceneEnd()}}
+{\footnotesize\ttfamily void Scene\+::\+Scene\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Shuts down the scene. Put scene related end tasks here. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_aedaeb93be94ac521c34a5ffd5168d178_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_a2347326f8d2a9c9d5847a16b95b7d28d}\label{class_scene_a2347326f8d2a9c9d5847a16b95b7d28d}} 
+\index{Scene@{Scene}!SetCollisionPair@{SetCollisionPair}}
+\index{SetCollisionPair@{SetCollisionPair}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetCollisionPair()}{SetCollisionPair()}}
+{\footnotesize\ttfamily template$<$typename C1 , typename C2 $>$ \\
+template$<$ typename C1, typename C2 $>$ void Scene\+::\+Set\+Collision\+Pair (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Sets collision pair. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em C1} & Type of the c1. \\
+\hline
+{\em C2} & Type of the c2. \\
+\hline
+\end{DoxyTemplParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_a2347326f8d2a9c9d5847a16b95b7d28d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_a0b23e5dbba5461d00cb9eaf503effc22}\label{class_scene_a0b23e5dbba5461d00cb9eaf503effc22}} 
+\index{Scene@{Scene}!SetCollisionSelf@{SetCollisionSelf}}
+\index{SetCollisionSelf@{SetCollisionSelf}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetCollisionSelf()}{SetCollisionSelf()}}
+{\footnotesize\ttfamily template$<$typename C1 $>$ \\
+template$<$ typename C1 $>$ void Scene\+::\+Set\+Collision\+Self (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Sets collision self. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em C1} & Type of the c1. \\
+\hline
+\end{DoxyTemplParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_a0b23e5dbba5461d00cb9eaf503effc22_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_a993faddb2d7ddabc6b7b19725cd6e68a}\label{class_scene_a993faddb2d7ddabc6b7b19725cd6e68a}} 
+\index{Scene@{Scene}!SetCollisionTerrain@{SetCollisionTerrain}}
+\index{SetCollisionTerrain@{SetCollisionTerrain}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetCollisionTerrain()}{SetCollisionTerrain()}}
+{\footnotesize\ttfamily template$<$typename C1 $>$ \\
+void Scene\+::\+Set\+Collision\+Terrain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_a993faddb2d7ddabc6b7b19725cd6e68a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_acb6351322930187aface38ff5a7dacbf}\label{class_scene_acb6351322930187aface38ff5a7dacbf}} 
+\index{Scene@{Scene}!SetCurrent2DCamera@{SetCurrent2DCamera}}
+\index{SetCurrent2DCamera@{SetCurrent2DCamera}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetCurrent2DCamera()}{SetCurrent2DCamera()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Current2\+D\+Camera (\begin{DoxyParamCaption}\item[{Camera $\ast$}]{new\+Camera }\end{DoxyParamCaption})}
+
+
+
+Sets current 2D camera. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em new\+Camera} & If non-\/null, the new camera.\\
+\hline
+\end{DoxyParams}
+Ensure the input camera is an Orthographic camera to avoid perspective on the rendered sprites. ~\newline
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_acb6351322930187aface38ff5a7dacbf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_a7fda2dfc185f4658c4345deb11b10c9d}\label{class_scene_a7fda2dfc185f4658c4345deb11b10c9d}} 
+\index{Scene@{Scene}!SetCurrentCamera@{SetCurrentCamera}}
+\index{SetCurrentCamera@{SetCurrentCamera}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetCurrentCamera()}{SetCurrentCamera()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Current\+Camera (\begin{DoxyParamCaption}\item[{Camera $\ast$}]{new\+Camera }\end{DoxyParamCaption})}
+
+
+
+Sets current camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Camera} & If non-\/null, the new camera. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_a7fda2dfc185f4658c4345deb11b10c9d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_a713cce013f0244d71b16c2e33638ed6d}\label{class_scene_a713cce013f0244d71b16c2e33638ed6d}} 
+\index{Scene@{Scene}!SubmitCommand@{SubmitCommand}}
+\index{SubmitCommand@{SubmitCommand}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SubmitCommand()}{SubmitCommand()}}
+{\footnotesize\ttfamily void Scene\+::\+Submit\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_registry}{Scene\+Registry}} $\ast$}]{cmd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Submit command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & Adds the command to the Registration\+Broker \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_a713cce013f0244d71b16c2e33638ed6d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_a713cce013f0244d71b16c2e33638ed6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_a71a71b4f7752b853ff8032b0941a9d8d}\label{class_scene_a71a71b4f7752b853ff8032b0941a9d8d}} 
+\index{Scene@{Scene}!Update@{Update}}
+\index{Update@{Update}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Scene\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Processes update commands for the scene. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_a71a71b4f7752b853ff8032b0941a9d8d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_a71a71b4f7752b853ff8032b0941a9d8d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_scene_a16e0e075d75997e866c3dc71a56c0d16}\label{class_scene_a16e0e075d75997e866c3dc71a56c0d16}} 
+\index{Scene@{Scene}!SceneAttorney@{SceneAttorney}}
+\index{SceneAttorney@{SceneAttorney}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SceneAttorney}{SceneAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_scene_attorney}{Scene\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Dictates access to the \mbox{\hyperlink{class_scene}{Scene}} through the \mbox{\hyperlink{class_scene_attorney}{Scene\+Attorney}}. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_scene_a4959e6a77317c86e5fa4b8439bafbd0e}\label{class_scene_a4959e6a77317c86e5fa4b8439bafbd0e}} 
+\index{Scene@{Scene}!AlarmMgr@{AlarmMgr}}
+\index{AlarmMgr@{AlarmMgr}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{AlarmMgr}{AlarmMgr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_alarmable_manager}{Alarmable\+Manager}}$\ast$ Scene\+::\+Alarm\+Mgr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_scene_a570bc09694af4dc9fbf30e9e23c758cd}\label{class_scene_a570bc09694af4dc9fbf30e9e23c758cd}} 
+\index{Scene@{Scene}!CamMgr@{CamMgr}}
+\index{CamMgr@{CamMgr}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{CamMgr}{CamMgr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_camera_manager}{Camera\+Manager}}$\ast$ Scene\+::\+Cam\+Mgr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_scene_ad7844ccb5cd87f81a0fcdf88eecb4b36}\label{class_scene_ad7844ccb5cd87f81a0fcdf88eecb4b36}} 
+\index{Scene@{Scene}!ColMgr@{ColMgr}}
+\index{ColMgr@{ColMgr}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{ColMgr}{ColMgr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_manager}{Collision\+Manager}}$\ast$ Scene\+::\+Col\+Mgr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_scene_a02d467a3b97d153ec0945327656b3014}\label{class_scene_a02d467a3b97d153ec0945327656b3014}} 
+\index{Scene@{Scene}!DrawableMgr@{DrawableMgr}}
+\index{DrawableMgr@{DrawableMgr}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{DrawableMgr}{DrawableMgr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_drawable_manager}{Drawable\+Manager}}$\ast$ Scene\+::\+Drawable\+Mgr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_scene_a3f9b11ca880807055296c31adf530d46}\label{class_scene_a3f9b11ca880807055296c31adf530d46}} 
+\index{Scene@{Scene}!KBEventMgr@{KBEventMgr}}
+\index{KBEventMgr@{KBEventMgr}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{KBEventMgr}{KBEventMgr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_keyboard_event_manager}{Keyboard\+Event\+Manager}}$\ast$ Scene\+::\+K\+B\+Event\+Mgr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_scene_aa2f1e1d6aeea1dfdf82144d95d32f36a}\label{class_scene_aa2f1e1d6aeea1dfdf82144d95d32f36a}} 
+\index{Scene@{Scene}!RegistrationBrkr@{RegistrationBrkr}}
+\index{RegistrationBrkr@{RegistrationBrkr}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{RegistrationBrkr}{RegistrationBrkr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_registration_broker}{Scene\+Registration\+Broker}}$\ast$ Scene\+::\+Registration\+Brkr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_scene_aaf1aacc72928db74960ebee4f1824b77}\label{class_scene_aaf1aacc72928db74960ebee4f1824b77}} 
+\index{Scene@{Scene}!UpdateableMgr@{UpdateableMgr}}
+\index{UpdateableMgr@{UpdateableMgr}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{UpdateableMgr}{UpdateableMgr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_updatable_manager}{Updatable\+Manager}}$\ast$ Scene\+::\+Updateable\+Mgr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_scene_8h}{Scene.\+h}}\item 
+\mbox{\hyperlink{_scene_8cpp}{Scene.\+cpp}}\end{DoxyCompactItemize}

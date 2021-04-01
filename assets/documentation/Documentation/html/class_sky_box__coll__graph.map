@@ -1,0 +1,10 @@
+<map id="SkyBox" name="SkyBox">
+<area shape="rect" id="node1" title=" " alt="" coords="18,795,146,1092"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,617,71,694"/>
+<area shape="rect" id="node3" href="$class_drawable_game_object.html" title=" " alt="" coords="95,580,271,731"/>
+<area shape="rect" id="node4" href="$class_drawable.html" title=" " alt="" coords="302,220,497,503"/>
+<area shape="rect" id="node5" href="$class_drawable_registration_command.html" title=" " alt="" coords="580,565,811,745"/>
+<area shape="rect" id="node8" href="$class_drawable_deregistration_command.html" title=" " alt="" coords="295,565,538,745"/>
+<area shape="rect" id="node6" href="$class_scene_registry.html" title="A scene registry." alt="" coords="705,286,840,437"/>
+<area shape="rect" id="node7" href="$class_command_base.html" title=" " alt="" coords="703,5,842,171"/>
+</map>

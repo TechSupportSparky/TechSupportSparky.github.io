@@ -1,0 +1,9 @@
+<map id="Scene::SceneEnd" name="Scene::SceneEnd">
+<area shape="rect" id="node1" title="Shuts down the scene. Put scene related end tasks here." alt="" coords="692,53,819,80"/>
+<area shape="rect" id="node2" href="$class_scene_manager.html#a5b6d93729bec795ce2576d37d2a56236" title="Private change scene." alt="" coords="464,15,644,57"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#ae637b8ddc620e5903c1b44293f56bf08" title="Private delete." alt="" coords="467,83,641,109"/>
+<area shape="rect" id="node3" href="$class_scene_manager_attorney_1_1_scene_swap_registration.html#ad8d2f066bb45baad2678c5edb97a9253" title=" " alt="" coords="248,5,416,61"/>
+<area shape="rect" id="node4" href="$class_scene_change_command_swap.html#a3ee022de55997954b84e2e2e43e421c4" title="Executes this command." alt="" coords="5,13,200,54"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#aefba8a3a94173f0dc139220284d214e2" title="Deletes the scene swap commands and pointer instance." alt="" coords="255,85,409,112"/>
+<area shape="rect" id="node7" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="33,85,172,112"/>
+</map>

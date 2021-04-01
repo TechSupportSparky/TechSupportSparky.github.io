@@ -1,0 +1,190 @@
+\hypertarget{group___c_o_n_s_o_l_e___o_b_j_e_c_t}{}\doxysection{Sly Console Object}
+\label{group___c_o_n_s_o_l_e___o_b_j_e_c_t}\index{Sly Console Object@{Sly Console Object}}
+
+
+This tutorial will go over the process for creating a console object.  
+
+
+Collaboration diagram for Sly Console Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{group___c_o_n_s_o_l_e___o_b_j_e_c_t}
+\end{center}
+\end{figure}
+This tutorial will go over the process for creating a console object. 
+
+To begin making a console, you must first create a header file. Name the console however you would like and define the console as such\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{_game_object_8h}{GameObject.h}}"}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{_console_8h}{Console.h}}"}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{class_sly_sprite}{SlySprite}}; \textcolor{comment}{// Forward deceleration }}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }RadConsole : \textcolor{keyword}{public} \mbox{\hyperlink{class_console}{Console}}, \textcolor{keyword}{public} \mbox{\hyperlink{class_game_object}{GameObject}} \{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{    \textcolor{comment}{// Thou who forgets the Big Six, forgets themselves.}}
+\DoxyCodeLine{    RadConsole();}
+\DoxyCodeLine{    RadConsole(\textcolor{keyword}{const} RadConsole\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    RadConsole(RadConsole\&\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    RadConsole\& \mbox{\hyperlink{class_console_a3769f2428a22a9944ab1baddb579d9f1}{operator=}}(\textcolor{keyword}{const} RadConsole\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    RadConsole\& \mbox{\hyperlink{class_console_a3769f2428a22a9944ab1baddb579d9f1}{operator=}}(RadConsole\&\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \string~RadConsole(); \textcolor{comment}{// Virtual inheritance! YA!}}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// I force you to define an update and draw to avoid any}}
+\DoxyCodeLine{    \textcolor{comment}{// "why does my code not work :( messages.}}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_updatable_ae4951bd0a70ffeaeb7a6d476ed788ee2}{Update}}() \{\}; }
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drawable_a8d5d4d2f2bca40d931c1b8b762be8d42}{Draw}}() \{\};}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drawable_a8bf1d3ebf3d0ce3574596b5ea0953945}{Draw2D}}() \textcolor{keyword}{override}; \textcolor{comment}{// Not required either unless we have a background}}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Handler for keyboard input}}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_inputable_a078023808b567064fd0e0adb4b610547}{KeyPressed}}(AZUL\_KEY k) \textcolor{keyword}{override};}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_inputable_ac4268a25091e245e467fc3b124fcbfb2}{KeyReleased}}(AZUL\_KEY k) \textcolor{keyword}{override};}
+\DoxyCodeLine{    }
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{    \textcolor{comment}{// Key setup helper function}}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} KeyInitialize() \textcolor{keyword}{override};}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{class_sly_sprite}{SlySprite}}* background}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} consoleToggled;}
+\DoxyCodeLine{    \textcolor{keywordtype}{int} asciiOffset;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+Now with a header file defined, we jump to an implementation file (.cpp for the new users)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{_console_manager_8h}{ConsoleManager.h}}"}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "RadConsole.h"}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{_sly_sprite_8h}{SlySprite.h}}"}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{_inputable_8h}{Inputable.h}}"}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{_console_8h}{Console.h}}"}}
+\DoxyCodeLine{     }
+\DoxyCodeLine{RadConsole::RadConsole() \{}
+\DoxyCodeLine{    consoleToggled = \textcolor{keyword}{false}; \textcolor{comment}{// Start with the console off}}
+\DoxyCodeLine{    asciiOffset = 32;}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    KeyInitialize(); \textcolor{comment}{// Submit inputable requests for the keyboard}}
+\DoxyCodeLine{    }
+\DoxyCodeLine{     \textcolor{comment}{// Built-\/in commands request}}
+\DoxyCodeLine{     \textcolor{comment}{// If you do not want your user to be }}
+\DoxyCodeLine{     \textcolor{comment}{// able to use these commands, leave}}
+\DoxyCodeLine{     \textcolor{comment}{// them off}}
+\DoxyCodeLine{     Reload();}
+\DoxyCodeLine{     GodCam();}
+\DoxyCodeLine{     Ping();}
+\DoxyCodeLine{     Time();}
+\DoxyCodeLine{     }
+\DoxyCodeLine{     \textcolor{comment}{// User commands, these are the ones you create!}}
+\DoxyCodeLine{     \textcolor{comment}{// These commands use the inherited "addCommand()" }}
+\DoxyCodeLine{     \textcolor{comment}{// function.  }}
+\DoxyCodeLine{     addCommand(\textcolor{stringliteral}{"spawn"}, \textcolor{keyword}{new} SpawnTankCommand(), 1 \textcolor{stringliteral}{"tank"});}
+\DoxyCodeLine{     addCommand(\textcolor{stringliteral}{"spawn"}, \textcolor{keyword}{new} SpawnFrigateCommand(), 1, \textcolor{stringliteral}{"frigate"});}
+\DoxyCodeLine{     addCommand(\textcolor{stringliteral}{"spawn"}, \textcolor{keyword}{new} SpawnHydraCommand(), 2, \textcolor{stringliteral}{"tank frigate"});}
+\DoxyCodeLine{     }
+\DoxyCodeLine{     \textcolor{comment}{// Background is not required, but it looks pretty.}}
+\DoxyCodeLine{     \textcolor{comment}{// This is merely a sprite that overlays the back}}
+\DoxyCodeLine{     \textcolor{comment}{// of the console.}}
+\DoxyCodeLine{     background = \textcolor{keyword}{new} \mbox{\hyperlink{class_sly_sprite}{SlySprite}}(\textcolor{stringliteral}{"ConsoleBackground"});}
+\DoxyCodeLine{     background-\/>SetPosition(500, 500);}
+\DoxyCodeLine{             }
+\DoxyCodeLine{     \textcolor{comment}{// Submitting a draw request for the Draw2D() function}}
+\DoxyCodeLine{     \textcolor{comment}{// for the background.  If you choose to not have a }}
+\DoxyCodeLine{     \textcolor{comment}{// background, there is no reason for the console to draw}}
+\DoxyCodeLine{     \mbox{\hyperlink{class_drawable_a4f89e20fc4a5efe3ed173743498d93eb}{Drawable::SubmitDrawRegistration}}();}
+\DoxyCodeLine{     }
+\DoxyCodeLine{     \mbox{\hyperlink{class_console_manager_ae48abbaff55f3c9cb54a63f460edf056}{ConsoleManager::SetCurrentConsole}}(\textcolor{keyword}{this}); \textcolor{comment}{// Tell the console manager we want to use this console}}
+\DoxyCodeLine{\}    }
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} RadConsole::KeyInitialize() \{}
+\DoxyCodeLine{    \textcolor{comment}{// LETTERS}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_A, KEY\_PRESS);}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_B, KEY\_PRESS);}
+\DoxyCodeLine{    ...}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_Z, KEY\_PRESS);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// NUMS}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_0, KEY\_PRESS);}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_1, KEY\_PRESS);}
+\DoxyCodeLine{    ...}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_9, KEY\_PRESS);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// SPECIAL}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_ENTER, KEY\_PRESS);         \textcolor{comment}{// Execute command}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_BACKSPACE, KEY\_PRESS);     \textcolor{comment}{// Backspace command line}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_SPACE, KEY\_PRESS);         \textcolor{comment}{// Space command line}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_GRAVE\_ACCENT, KEY\_PRESS);  \textcolor{comment}{// Toggle console}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_LEFT\_SHIFT, KEY\_PRESS);    \textcolor{comment}{// Shift letter}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_LEFT\_SHIFT, KEY\_RELEASE);}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_RIGHT\_SHIFT, KEY\_PRESS);}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_RIGHT\_SHIFT, KEY\_RELEASE);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} RadConsole::KeyPressed(AZUL\_KEY k) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (k == AZUL\_KEY::KEY\_GRAVE\_ACCENT) \{}
+\DoxyCodeLine{        consoleToggled = !consoleToggled;}
+\DoxyCodeLine{        \mbox{\hyperlink{class_console_log_a9f4cdb033609ccd4882a7604d1e0a5e0}{ConsoleLog::ToggleActive}}(); \textcolor{comment}{// Tell the logger to stop drawing...}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (consoleToggled) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{switch} (k) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_LEFT\_SHIFT:}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_RIGHT\_SHIFT:}
+\DoxyCodeLine{                asciiOffset = 0;}
+\DoxyCodeLine{                \textcolor{keywordflow}{break};}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_ENTER:}
+\DoxyCodeLine{                this-\/>passIntro(); \textcolor{comment}{// Pass intro is the execution command, KEY\_ENTER is standard but not required}}
+\DoxyCodeLine{                \mbox{\hyperlink{class_console_log_a6d6030511a8e12488a9496d9810973d8}{ConsoleLog::ClearInput}}();}
+\DoxyCodeLine{                \textcolor{keywordflow}{break};}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_BACKSPACE:}
+\DoxyCodeLine{                this-\/>passBackspace();}
+\DoxyCodeLine{                \mbox{\hyperlink{class_console_log_a4e0b06f10fb3245eef8b32240026d305}{ConsoleLog::BackspaceInput}}();}
+\DoxyCodeLine{                \textcolor{keywordflow}{break};}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_0:}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_1:}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_2:}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_3:}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_4:}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_5:}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_6:}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_7:}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_8:}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_9:}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_SPACE:}
+\DoxyCodeLine{                \textcolor{comment}{// avoid offsetting}}
+\DoxyCodeLine{                this-\/>passKey(\textcolor{keywordtype}{char}(k));}
+\DoxyCodeLine{                \textcolor{keywordflow}{break};}
+\DoxyCodeLine{            \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{                \textcolor{comment}{// only works for letters of course...}}
+\DoxyCodeLine{                this-\/>passKey(\textcolor{keywordtype}{char}(\textcolor{keywordtype}{int}(k) + asciiOffset));}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} RadConsole::KeyReleased(AZUL\_KEY k) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (k == AZUL\_KEY::KEY\_LEFT\_SHIFT || k == AZUL\_KEY::KEY\_RIGHT\_SHIFT) \{}
+\DoxyCodeLine{        asciiOffset = 32;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} RadConsole::\string~RadConsole \{}
+\DoxyCodeLine{    \textcolor{keyword}{delete} background;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} RadConsole::Draw2D() \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (consoleToggled) \{}
+\DoxyCodeLine{        background-\/>Render();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+That\textquotesingle{}s it! The console is registered with the \mbox{\hyperlink{class_console_manager}{Console\+Manager}} and is ready to go. The best place to start is to get the \mbox{\hyperlink{class_ping_command}{Ping\+Command}} working first. Once that\textquotesingle{}s setup, try bringing in the rest of the built-\/ins, then finally the developer made commands. 

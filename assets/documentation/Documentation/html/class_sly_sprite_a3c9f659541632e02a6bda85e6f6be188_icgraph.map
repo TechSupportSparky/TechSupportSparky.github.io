@@ -1,0 +1,6 @@
+<map id="SlySprite::GetWidth" name="SlySprite::GetWidth">
+<area shape="rect" id="node1" title="Gets the sprite&#39;s width." alt="" coords="435,31,573,57"/>
+<area shape="rect" id="node2" href="$class_sprite_string.html#a2e111c5525b167af3817403696123b30" title="Specialized Constructor." alt="" coords="212,5,379,32"/>
+<area shape="rect" id="node3" href="$class_sprite_font.html#ae67ec68b7c169f0279e06d8905b34c33" title=" " alt="" coords="204,56,387,83"/>
+<area shape="rect" id="node4" href="$class_sprite_font.html#ac2010590f8dbb0e2bb0226c591b2324c" title=" " alt="" coords="5,56,156,83"/>
+</map>

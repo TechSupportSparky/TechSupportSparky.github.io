@@ -1,0 +1,6 @@
+<map id="TerrainObjectManager::Get" name="TerrainObjectManager::Get">
+<area shape="rect" id="node1" title="Gets a terrain object* using the given key." alt="" coords="5,46,184,73"/>
+<area shape="rect" id="node2" href="$class_terrain_object_manager.html#a3e1de183b4aaca5f75c4f756099fc393" title="Gets the instance of TerrainObjectManager (Singleton)" alt="" coords="232,5,381,47"/>
+<area shape="rect" id="node4" href="$class_terrain_object_manager.html#a4d0359e3da3722914be5cff2dd25782b" title="Internal call to get the requested terrain object from the terrainObjectMap." alt="" coords="232,71,381,112"/>
+<area shape="rect" id="node3" href="$class_terrain_object_manager.html#aac7be644f7265c410905769500c680f9" title="Default constructor." alt="" coords="429,5,587,47"/>
+</map>

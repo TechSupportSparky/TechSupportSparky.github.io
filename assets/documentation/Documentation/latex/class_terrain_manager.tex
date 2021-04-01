@@ -1,0 +1,392 @@
+\hypertarget{class_terrain_manager}{}\doxysection{Terrain\+Manager Class Reference}
+\label{class_terrain_manager}\index{TerrainManager@{TerrainManager}}
+
+
+{\ttfamily \#include $<$Terrain\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Terrain\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_terrain_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$ \mbox{\hyperlink{class_terrain_manager_aa82b2b0b9f2c7e2235fa98c903eea44c}{Get\+Current\+Terrain}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current terrain. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_terrain_manager_ad217e6e714b19bab7336663d54c4340c}{Set\+Current\+Terrain}} (\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$new\+Terrain)
+\begin{DoxyCompactList}\small\item\em Sets current terrain. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_terrain_manager_a5e8b9bd1c534ad89bbb2e80539980908}{Deinitialize\+Current\+Terrain}} ()
+\begin{DoxyCompactList}\small\item\em Deinitialize the current terrain. Required if a scene will be revisited later on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_terrain_manager_ac90a7e0cb7b7960b752e1e0df307a6b5}{Terrain\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_manager_a4ca04d0390fd0c862558e724eb0c3fd7}{Terrain\+Manager}} (const \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_manager_a94f460be34cbdd18283c537183ba5519}{Terrain\+Manager}} (\mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} \& \mbox{\hyperlink{class_terrain_manager_afd32fb1d53915ae72f2529f60507670b}{operator=}} (const \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} \& \mbox{\hyperlink{class_terrain_manager_a2f3a53be3e66d2c1d8e798562f58296a}{operator=}} (\mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_manager_a914a45f126ef70c3df889565ab0ead13}{$\sim$\+Terrain\+Manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$ \mbox{\hyperlink{class_terrain_manager_a6441da9774296d8a7e7818b490289582}{priv\+Get\+Current\+Terrain}} ()
+\begin{DoxyCompactList}\small\item\em Internal call to return the current terrain. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_terrain_manager_a19d7a2dfd5af9430ba5aff26a8c95e25}{priv\+Set\+Current\+Terrain}} (\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$new\+Terrain)
+\begin{DoxyCompactList}\small\item\em Internal call to change the current terrain. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_terrain_manager_a9396b8be4f7c265e104c03a696c2ab41}{priv\+Delete}} ()
+\begin{DoxyCompactList}\small\item\em Internal call to delete the pointer of \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_terrain_manager_a9e333c481ca5cd48e8063b260a45fa97}{priv\+Scene\+End}} ()
+\begin{DoxyCompactList}\small\item\em Private scene end, forces a draw deregistration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_terrain_manager_ad22990a6e3e76b9767b615c411a5ca9c}{priv\+Scene\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Private scene start, gently asks for a draw registration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} \& \mbox{\hyperlink{class_terrain_manager_a9ed6f4cc405eefa3f8d7bee61ac12be9}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the instance of \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_terrain_manager_af9c0900b9272813ab331b278bd7e5e94}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em Delete the \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$ \mbox{\hyperlink{class_terrain_manager_a961bc40f675d015e8988cd0c3df2a572}{p\+Current\+Terrain}}
+\begin{DoxyCompactList}\small\item\em The current terrain. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} $\ast$ \mbox{\hyperlink{class_terrain_manager_a6d56e56d9be7936be0a66fcde878b7a9}{ptr\+Instance}} = nullptr
+\begin{DoxyCompactList}\small\item\em Dictates the usage of \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}}\textquotesingle{}s internals. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_terrain_manager_aa45f1ed8fc666193d07a071181ece605}{Terrain\+Manager\+Attorney}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_terrain_manager_ac90a7e0cb7b7960b752e1e0df307a6b5}\label{class_terrain_manager_ac90a7e0cb7b7960b752e1e0df307a6b5}} 
+\index{TerrainManager@{TerrainManager}!TerrainManager@{TerrainManager}}
+\index{TerrainManager@{TerrainManager}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{TerrainManager()}{TerrainManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Terrain\+Manager\+::\+Terrain\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Default constructor. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_manager_ac90a7e0cb7b7960b752e1e0df307a6b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_manager_a4ca04d0390fd0c862558e724eb0c3fd7}\label{class_terrain_manager_a4ca04d0390fd0c862558e724eb0c3fd7}} 
+\index{TerrainManager@{TerrainManager}!TerrainManager@{TerrainManager}}
+\index{TerrainManager@{TerrainManager}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{TerrainManager()}{TerrainManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Terrain\+Manager\+::\+Terrain\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_terrain_manager_a94f460be34cbdd18283c537183ba5519}\label{class_terrain_manager_a94f460be34cbdd18283c537183ba5519}} 
+\index{TerrainManager@{TerrainManager}!TerrainManager@{TerrainManager}}
+\index{TerrainManager@{TerrainManager}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{TerrainManager()}{TerrainManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Terrain\+Manager\+::\+Terrain\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_terrain_manager_a914a45f126ef70c3df889565ab0ead13}\label{class_terrain_manager_a914a45f126ef70c3df889565ab0ead13}} 
+\index{TerrainManager@{TerrainManager}!````~TerrainManager@{$\sim$TerrainManager}}
+\index{````~TerrainManager@{$\sim$TerrainManager}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$TerrainManager()}{~TerrainManager()}}
+{\footnotesize\ttfamily Terrain\+Manager\+::$\sim$\+Terrain\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_terrain_manager_a5e8b9bd1c534ad89bbb2e80539980908}\label{class_terrain_manager_a5e8b9bd1c534ad89bbb2e80539980908}} 
+\index{TerrainManager@{TerrainManager}!DeinitializeCurrentTerrain@{DeinitializeCurrentTerrain}}
+\index{DeinitializeCurrentTerrain@{DeinitializeCurrentTerrain}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{DeinitializeCurrentTerrain()}{DeinitializeCurrentTerrain()}}
+{\footnotesize\ttfamily static void Terrain\+Manager\+::\+Deinitialize\+Current\+Terrain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Deinitialize the current terrain. Required if a scene will be revisited later on. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_manager_a5e8b9bd1c534ad89bbb2e80539980908_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_manager_af9c0900b9272813ab331b278bd7e5e94}\label{class_terrain_manager_af9c0900b9272813ab331b278bd7e5e94}} 
+\index{TerrainManager@{TerrainManager}!Delete@{Delete}}
+\index{Delete@{Delete}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily static void Terrain\+Manager\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Delete the \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}}. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_manager_af9c0900b9272813ab331b278bd7e5e94_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_manager_af9c0900b9272813ab331b278bd7e5e94_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_manager_aa82b2b0b9f2c7e2235fa98c903eea44c}\label{class_terrain_manager_aa82b2b0b9f2c7e2235fa98c903eea44c}} 
+\index{TerrainManager@{TerrainManager}!GetCurrentTerrain@{GetCurrentTerrain}}
+\index{GetCurrentTerrain@{GetCurrentTerrain}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{GetCurrentTerrain()}{GetCurrentTerrain()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$ Terrain\+Manager\+::\+Get\+Current\+Terrain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the current terrain. 
+
+\begin{DoxyReturn}{Returns}
+Null if it fails, else the current terrain. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_manager_aa82b2b0b9f2c7e2235fa98c903eea44c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_manager_aa82b2b0b9f2c7e2235fa98c903eea44c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_manager_a9ed6f4cc405eefa3f8d7bee61ac12be9}\label{class_terrain_manager_a9ed6f4cc405eefa3f8d7bee61ac12be9}} 
+\index{TerrainManager@{TerrainManager}!Instance@{Instance}}
+\index{Instance@{Instance}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} \& Terrain\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the instance of \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}}. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_manager_a9ed6f4cc405eefa3f8d7bee61ac12be9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_manager_a9ed6f4cc405eefa3f8d7bee61ac12be9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_manager_afd32fb1d53915ae72f2529f60507670b}\label{class_terrain_manager_afd32fb1d53915ae72f2529f60507670b}} 
+\index{TerrainManager@{TerrainManager}!operator=@{operator=}}
+\index{operator=@{operator=}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}}\& Terrain\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_terrain_manager_a2f3a53be3e66d2c1d8e798562f58296a}\label{class_terrain_manager_a2f3a53be3e66d2c1d8e798562f58296a}} 
+\index{TerrainManager@{TerrainManager}!operator=@{operator=}}
+\index{operator=@{operator=}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}}\& Terrain\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_terrain_manager_a9396b8be4f7c265e104c03a696c2ab41}\label{class_terrain_manager_a9396b8be4f7c265e104c03a696c2ab41}} 
+\index{TerrainManager@{TerrainManager}!privDelete@{privDelete}}
+\index{privDelete@{privDelete}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{privDelete()}{privDelete()}}
+{\footnotesize\ttfamily void Terrain\+Manager\+::priv\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal call to delete the pointer of \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} instance. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_manager_a9396b8be4f7c265e104c03a696c2ab41_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_manager_a6441da9774296d8a7e7818b490289582}\label{class_terrain_manager_a6441da9774296d8a7e7818b490289582}} 
+\index{TerrainManager@{TerrainManager}!privGetCurrentTerrain@{privGetCurrentTerrain}}
+\index{privGetCurrentTerrain@{privGetCurrentTerrain}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{privGetCurrentTerrain()}{privGetCurrentTerrain()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$ Terrain\+Manager\+::priv\+Get\+Current\+Terrain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal call to return the current terrain. 
+
+\begin{DoxyReturn}{Returns}
+Null if it fails, else a pointer to a \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}}. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_manager_a6441da9774296d8a7e7818b490289582_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_manager_a9e333c481ca5cd48e8063b260a45fa97}\label{class_terrain_manager_a9e333c481ca5cd48e8063b260a45fa97}} 
+\index{TerrainManager@{TerrainManager}!privSceneEnd@{privSceneEnd}}
+\index{privSceneEnd@{privSceneEnd}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{privSceneEnd()}{privSceneEnd()}}
+{\footnotesize\ttfamily void Terrain\+Manager\+::priv\+Scene\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private scene end, forces a draw deregistration. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_manager_a9e333c481ca5cd48e8063b260a45fa97_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_manager_a9e333c481ca5cd48e8063b260a45fa97_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_manager_ad22990a6e3e76b9767b615c411a5ca9c}\label{class_terrain_manager_ad22990a6e3e76b9767b615c411a5ca9c}} 
+\index{TerrainManager@{TerrainManager}!privSceneStart@{privSceneStart}}
+\index{privSceneStart@{privSceneStart}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{privSceneStart()}{privSceneStart()}}
+{\footnotesize\ttfamily void Terrain\+Manager\+::priv\+Scene\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private scene start, gently asks for a draw registration. 
+
+\mbox{\Hypertarget{class_terrain_manager_a19d7a2dfd5af9430ba5aff26a8c95e25}\label{class_terrain_manager_a19d7a2dfd5af9430ba5aff26a8c95e25}} 
+\index{TerrainManager@{TerrainManager}!privSetCurrentTerrain@{privSetCurrentTerrain}}
+\index{privSetCurrentTerrain@{privSetCurrentTerrain}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{privSetCurrentTerrain()}{privSetCurrentTerrain()}}
+{\footnotesize\ttfamily void Terrain\+Manager\+::priv\+Set\+Current\+Terrain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$}]{new\+Terrain }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal call to change the current terrain. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em new\+Terrain} & If non-\/null, the new terrain. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_manager_a19d7a2dfd5af9430ba5aff26a8c95e25_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_manager_ad217e6e714b19bab7336663d54c4340c}\label{class_terrain_manager_ad217e6e714b19bab7336663d54c4340c}} 
+\index{TerrainManager@{TerrainManager}!SetCurrentTerrain@{SetCurrentTerrain}}
+\index{SetCurrentTerrain@{SetCurrentTerrain}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{SetCurrentTerrain()}{SetCurrentTerrain()}}
+{\footnotesize\ttfamily static void Terrain\+Manager\+::\+Set\+Current\+Terrain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$}]{new\+Terrain }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sets current terrain. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em new\+Terrain} & If non-\/null, the new terrain. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_manager_ad217e6e714b19bab7336663d54c4340c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_terrain_manager_aa45f1ed8fc666193d07a071181ece605}\label{class_terrain_manager_aa45f1ed8fc666193d07a071181ece605}} 
+\index{TerrainManager@{TerrainManager}!TerrainManagerAttorney@{TerrainManagerAttorney}}
+\index{TerrainManagerAttorney@{TerrainManagerAttorney}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{TerrainManagerAttorney}{TerrainManagerAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_terrain_manager_attorney}{Terrain\+Manager\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_terrain_manager_a961bc40f675d015e8988cd0c3df2a572}\label{class_terrain_manager_a961bc40f675d015e8988cd0c3df2a572}} 
+\index{TerrainManager@{TerrainManager}!pCurrentTerrain@{pCurrentTerrain}}
+\index{pCurrentTerrain@{pCurrentTerrain}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{pCurrentTerrain}{pCurrentTerrain}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}}$\ast$ Terrain\+Manager\+::p\+Current\+Terrain\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The current terrain. 
+
+\mbox{\Hypertarget{class_terrain_manager_a6d56e56d9be7936be0a66fcde878b7a9}\label{class_terrain_manager_a6d56e56d9be7936be0a66fcde878b7a9}} 
+\index{TerrainManager@{TerrainManager}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!TerrainManager@{TerrainManager}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}} $\ast$ Terrain\+Manager\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Dictates the usage of \mbox{\hyperlink{class_terrain_manager}{Terrain\+Manager}}\textquotesingle{}s internals. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_terrain_manager_8h}{Terrain\+Manager.\+h}}\item 
+\mbox{\hyperlink{_terrain_manager_8cpp}{Terrain\+Manager.\+cpp}}\end{DoxyCompactItemize}

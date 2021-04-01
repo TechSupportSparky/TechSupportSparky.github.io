@@ -1,0 +1,11 @@
+<map id="SkyBox::TerminateDraw" name="SkyBox::TerminateDraw">
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,168,61"/>
+<area shape="rect" id="node2" href="$class_drawable_attorney_1_1_specialized_registration.html#a600c30ea7a50c9742cdf87eb3b17737c" title=" " alt="" coords="216,27,472,69"/>
+<area shape="rect" id="node3" href="$class_drawable.html#ace6f9ecdc70f88299309d58764d523c5" title="Forced scene deregistration." alt="" coords="520,35,760,61"/>
+<area shape="rect" id="node4" href="$class_drawable_manager.html#a2f9f6b6512e3b67a4b237389597c5cf5" title="Deregisters this." alt="" coords="831,5,1023,32"/>
+<area shape="rect" id="node5" href="$class_scene_attorney_1_1_drawable_registration.html#a2761d941b8dddd859ef3d9cbdc7bf118" title=" " alt="" coords="808,57,1047,98"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="1095,57,1275,98"/>
+<area shape="rect" id="node7" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="1339,35,1505,61"/>
+<area shape="rect" id="node9" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="1323,86,1521,127"/>
+<area shape="rect" id="node8" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="1569,35,1773,61"/>
+</map>

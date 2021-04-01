@@ -1,0 +1,9 @@
+<map id="SlyMath::Intersect" name="SlyMath::Intersect">
+<area shape="rect" id="node1" title="Intersection test for two OBBs." alt="" coords="5,98,133,125"/>
+<area shape="rect" id="node2" href="$class_collision_volume_o_b_b.html#a97e12225214258e014dbc2d6ef844488" title="Gets the world matrix stored in the OBB." alt="" coords="629,5,772,47"/>
+<area shape="rect" id="node3" href="$class_sly_math.html#a98ed49077e1a30093baead836ee5ebd1" title="Obb overlap test for OBB and OBB." alt="" coords="181,123,331,150"/>
+<area shape="rect" id="node4" href="$class_collision_volume_o_b_b.html#afd76dca327efe7448f967acbe0f44d46" title="Gets the center of the OBB." alt="" coords="629,201,772,243"/>
+<area shape="rect" id="node5" href="$class_sly_math.html#a78935b826fbe03836f019d4c203c347f" title="Obb projection length for the OBB projected on V." alt="" coords="379,123,581,150"/>
+<area shape="rect" id="node6" href="$class_collision_volume_o_b_b.html#aaec889d702eeb44a979a2309500fa816" title="Gets the maximum corner of the OBB." alt="" coords="629,71,772,112"/>
+<area shape="rect" id="node7" href="$class_collision_volume_o_b_b.html#a91724b4bd8678eb41c2eb5b6dbccd91e" title="Gets the stored scale." alt="" coords="629,136,772,177"/>
+</map>

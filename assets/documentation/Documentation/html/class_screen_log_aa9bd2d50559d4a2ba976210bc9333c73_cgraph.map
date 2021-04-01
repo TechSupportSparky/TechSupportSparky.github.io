@@ -1,0 +1,5 @@
+<map id="ScreenLog::privRender" name="ScreenLog::privRender">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,157,57"/>
+<area shape="rect" id="node2" href="$class_sprite_string.html#a18230ee5b9e835561923b9a7cdf71d66" title="Gets the height of the string." alt="" coords="205,5,361,32"/>
+<area shape="rect" id="node3" href="$class_sprite_string.html#a2bcc30e71415fde602900dd21beab032" title="Renders the Sprite String." alt="" coords="214,56,353,83"/>
+</map>

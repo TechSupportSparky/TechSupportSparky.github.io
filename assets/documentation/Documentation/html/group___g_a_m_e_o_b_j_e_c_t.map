@@ -1,0 +1,4 @@
+<map id="GameObject" name="GameObject">
+<area shape="rect" id="node1" href="$group___g_e_t_t_i_n_g___s_t_a_r_t_e_d.html" title="Engine provided functions to setup the game." alt="" coords="5,5,116,31"/>
+<area shape="rect" id="node2" title="The entities of your game" alt="" coords="164,5,259,31"/>
+</map>

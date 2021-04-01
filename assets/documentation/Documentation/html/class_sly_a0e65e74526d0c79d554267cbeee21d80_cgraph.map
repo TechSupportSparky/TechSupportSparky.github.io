@@ -1,0 +1,13 @@
+<map id="Sly::LoadContent" name="Sly::LoadContent">
+<area shape="rect" id="node1" title="Loads engine starting content. Loads first scene." alt="" coords="5,95,128,121"/>
+<area shape="rect" id="node2" href="$class_console_manager.html#ae15d57e183d41a974f345e8e7b072ca8" title="Initializes a text console." alt="" coords="189,44,364,71"/>
+<area shape="rect" id="node6" href="$class_sly.html#a2f502a5aa9cd07dcc29858a104827213" title="User defined LoadResources. Content to be defined by the user. Typically models, textures,..." alt="" coords="199,95,354,121"/>
+<area shape="rect" id="node7" href="$class_scene_manager.html#a5254df5df6700fee4ad13692901bb0c7" title="Sets next scene." alt="" coords="176,145,377,172"/>
+<area shape="rect" id="node3" href="$class_console_manager.html#a906c569f9ea442602dbe61e65b779ccc" title=" " alt="" coords="434,5,610,32"/>
+<area shape="rect" id="node5" href="$class_console_manager.html#aa9004c9d7b21c8a1be3113fac2ed916c" title=" " alt="" coords="425,56,619,83"/>
+<area shape="rect" id="node4" href="$class_console_manager.html#aa9f719ce8b6bb8c2efda952e49f534d6" title="Default constructor." alt="" coords="667,5,891,32"/>
+<area shape="rect" id="node8" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="439,132,605,159"/>
+<area shape="rect" id="node10" href="$class_scene_manager.html#ae6e47dd4f04aa6250b5873bfa5cd60f3" title="Private set next scene." alt="" coords="431,183,613,225"/>
+<area shape="rect" id="node9" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="677,132,881,159"/>
+<area shape="rect" id="node11" href="$class_scene_change_command_swap.html#a9a47ff1daa88a1d782007eb3094b0753" title="Initializes this." alt="" coords="681,183,876,225"/>
+</map>

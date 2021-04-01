@@ -1,0 +1,12 @@
+<map id="TerrainCell::getAABB" name="TerrainCell::getAABB">
+<area shape="rect" id="node1" title="Creates an AABB volume from the information stored and passes a reference." alt="" coords="5,173,151,200"/>
+<area shape="rect" id="node2" href="$class_collision_volume_a_a_b_b.html#a9edd61f0f14828905f4abdfb8ae69451" title="Calculates the data that is required for the AABB to know." alt="" coords="211,83,361,125"/>
+<area shape="rect" id="node6" href="$class_terrain_object.html#a4c43a408f7f76167250291fa14e272eb" title=" " alt="" coords="199,166,373,207"/>
+<area shape="rect" id="node10" href="$class_collision_volume_a_a_b_b.html#a08a30598a5349c125e315c2d229f9e44" title="Sets minimum and maximum corners of the AABB, no additional computation." alt="" coords="211,231,361,273"/>
+<area shape="rect" id="node3" href="$class_sly_math.html#acff7ede1babf8b72b1eba29cad8d1ecb" title=" " alt="" coords="443,5,579,32"/>
+<area shape="rect" id="node4" href="$class_sly_math.html#abd011d8412f44acaf472dbdd67c2e88a" title=" " alt="" coords="434,56,587,83"/>
+<area shape="rect" id="node5" href="$class_sly_math.html#a4ce19dcbd537f62828fa012343455583" title=" " alt="" coords="436,107,585,133"/>
+<area shape="rect" id="node7" href="$class_sly_math.html#a54757af5758b29cc50874e5bc4601af2" title="Finds the absolute min of X, Y, and Z between the champ and tester. Returns new vect." alt="" coords="421,157,600,184"/>
+<area shape="rect" id="node8" href="$class_sly_math.html#aab65962ec4129ba72e994626eefdc238" title="Finds the absolute min of X, Y, and Z between the champ and tester. Returns new vect." alt="" coords="423,208,598,235"/>
+<area shape="rect" id="node9" href="$class_terrain_object.html#a11b5cde5c63c5894f1a2d7f6a8884e9a" title=" " alt="" coords="423,259,599,285"/>
+</map>

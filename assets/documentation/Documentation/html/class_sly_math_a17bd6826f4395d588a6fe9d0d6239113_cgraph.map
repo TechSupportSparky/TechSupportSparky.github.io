@@ -1,0 +1,11 @@
+<map id="SlyMath::Intersect" name="SlyMath::Intersect">
+<area shape="rect" id="node1" title="Intersection test for an OBB and a BSphere." alt="" coords="5,163,133,189"/>
+<area shape="rect" id="node2" href="$class_sly_math.html#ac38165799766775dda0c195a302bc61a" title="Clamp point V to the min max vectors provided." alt="" coords="193,5,335,32"/>
+<area shape="rect" id="node4" href="$class_collision_volume_b_sphere.html#a402765fc07a14cac53aef1dec725e0c4" title="Gets the center." alt="" coords="181,57,347,98"/>
+<area shape="rect" id="node5" href="$class_collision_volume_o_b_b.html#aaec889d702eeb44a979a2309500fa816" title="Gets the maximum corner of the OBB." alt="" coords="193,122,335,163"/>
+<area shape="rect" id="node6" href="$class_collision_volume_o_b_b.html#afea9510452232207634cd166d2d66912" title="Gets the minimum corner of the OBB." alt="" coords="193,187,335,229"/>
+<area shape="rect" id="node7" href="$class_collision_volume_o_b_b.html#a97e12225214258e014dbc2d6ef844488" title="Gets the world matrix stored in the OBB." alt="" coords="193,253,335,294"/>
+<area shape="rect" id="node8" href="$class_sly_math.html#ad9992315252b94ab27ffeb15076005de" title=" " alt="" coords="200,319,328,345"/>
+<area shape="rect" id="node3" href="$class_sly_math.html#a2515094d2f6bbe1059b14a59218ecc97" title=" " alt="" coords="410,5,553,32"/>
+<area shape="rect" id="node9" href="$class_collision_volume.html#a8086c85688be5d4bcbdf8e78b046f4fe" title="Intersect accept utilizing the visitor pattern." alt="" coords="395,311,568,353"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="ShaderManager::privDelete" name="ShaderManager::privDelete">
+<area shape="rect" id="node1" title="Deletes pointer instance. To be called internally only." alt="" coords="609,13,787,39"/>
+<area shape="rect" id="node2" href="$class_shader_manager.html#ae5e338a92e3c784c333c1775d8dd2ea3" title="Deletes pointer instance. To be called within Engine code only." alt="" coords="403,13,561,39"/>
+<area shape="rect" id="node3" href="$class_shader_manager_attorney.html#a9fa0fdaca64fc5a44bb63bdd967a38e3" title=" " alt="" coords="192,5,355,47"/>
+<area shape="rect" id="node4" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="5,13,144,39"/>
+</map>

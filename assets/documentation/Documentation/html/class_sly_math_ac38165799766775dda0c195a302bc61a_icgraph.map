@@ -1,0 +1,4 @@
+<map id="SlyMath::clampPoint" name="SlyMath::clampPoint">
+<area shape="rect" id="node1" title="Clamp point V to the min max vectors provided." alt="" coords="181,5,324,32"/>
+<area shape="rect" id="node2" href="$class_sly_math.html#a17bd6826f4395d588a6fe9d0d6239113" title="Intersection test for an OBB and a BSphere." alt="" coords="5,5,133,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="SkyBoxAssetManager::Get" name="SkyBoxAssetManager::Get">
+<area shape="rect" id="node1" title="Gets a sky box* using the given key." alt="" coords="5,46,187,73"/>
+<area shape="rect" id="node2" href="$class_sky_box_asset_manager.html#ada957918e4ed91420cb80d1493495cca" title="Gets the instance of SkyBoxAssetManager." alt="" coords="235,5,387,47"/>
+<area shape="rect" id="node4" href="$class_sky_box_asset_manager.html#ae7b2347198cb70376ae851e34db77192" title="Internal call to get the associated skybox." alt="" coords="235,71,387,112"/>
+<area shape="rect" id="node3" href="$class_sky_box_asset_manager.html#a2a647eab7f61ed83c89a778266cb7881" title="Default constructor." alt="" coords="435,5,595,47"/>
+</map>

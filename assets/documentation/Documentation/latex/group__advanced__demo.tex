@@ -1,0 +1,219 @@
+\hypertarget{group__advanced__demo}{}\doxysection{Advanced Demo}
+\label{group__advanced__demo}\index{Advanced Demo@{Advanced Demo}}
+
+
+This is an advanced demo.  
+
+
+Collaboration diagram for Advanced Demo\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{group__advanced__demo}
+\end{center}
+\end{figure}
+This is an advanced demo. 
+
+Similar to the basic demo, this details the basic scene header as well as a game object setup with all of the \textquotesingle{}able\textquotesingle{} functions. Here is the beginning scene\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//TankScene.h}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }Tank; \textcolor{comment}{// Forward declaration}}
+\DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{class_terrain_object}{TerrainObject}}*}
+\DoxyCodeLine{     }
+\DoxyCodeLine{\textcolor{keyword}{class }TankScene : \textcolor{keyword}{public} \mbox{\hyperlink{class_scene}{Scene}} \{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{    \textcolor{comment}{// We do not create objects at construction}}
+\DoxyCodeLine{    TankScene() = \{\};}
+\DoxyCodeLine{    \string~TankScene() = \{\};   }
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Create objects within initialization}}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_aafd7510b1309c6ba864791c429870959}{Initialize}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_aedaeb93be94ac521c34a5ffd5168d178}{SceneEnd}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{    }
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{    \textcolor{comment}{// Our object}}
+\DoxyCodeLine{    Tank* tank; }
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// A pointer to a plane}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_terrain_object}{TerrainObject}}* terrain;}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+As well as the implementation file\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{TankScene::Initialize() \{}
+\DoxyCodeLine{    pFrigate = \textcolor{keyword}{new} Frigate();}
+\DoxyCodeLine{    pFrigate.setPosition(Vect(40, 10, 40)); \textcolor{comment}{// This can also be done at construction     }}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Assuming a terrain has been properly loaded in the asset manager}}
+\DoxyCodeLine{    pGlobTerrain = \mbox{\hyperlink{class_terrain_object_manager_ab712917ef91c1fe238454b82adfe8ab3}{TerrainObjectManager::Get}}(\textcolor{stringliteral}{"Grass"});}
+\DoxyCodeLine{    \mbox{\hyperlink{class_terrain_manager_ad217e6e714b19bab7336663d54c4340c}{TerrainManager::SetCurrentTerrain}}(pGlobTerrain); \textcolor{comment}{// Tell the terrain manager about our new terrain}}
+\DoxyCodeLine{    pGlobTerrain-\/>Initialize(); \textcolor{comment}{// Setup the terrain for drawing}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{TankScene::SceneEnd() \{}
+\DoxyCodeLine{    \textcolor{keyword}{delete} pFrigate;}
+\DoxyCodeLine{    BulletFactory::Terminate(); \textcolor{comment}{// singleton instance of bullets dynamically allocated with an object pool}}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{class_terrain_manager_a5e8b9bd1c534ad89bbb2e80539980908}{TerrainManager::DeinitializeCurrentTerrain}}(); \textcolor{comment}{// Tell the terrain manager to stop drawing}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+The header of the Frigate itself includes\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }Frigate : \textcolor{keyword}{public} \mbox{\hyperlink{class_game_object}{GameObject}} \{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Big four}}
+\DoxyCodeLine{    Frigate();}
+\DoxyCodeLine{    Frigate(\textcolor{keyword}{const} Frigate\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    Frigate\& \mbox{\hyperlink{class_game_object_a6417101a0e08f9cf216736ae95bbe772}{operator=}}(\textcolor{keyword}{const} Frigate\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    \string~Frigate();}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Alarmable overrides}}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_alarmable_accbf4b8e8f2fa14fd7803706e268f904}{Alarm0}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_alarmable_a345658b4526baaf3207278d9237f7dca}{Alarm1}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_alarmable_acbedfd8613edd1830974dec08f19f3eb}{Alarm2}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_alarmable_ac0749e14bef102bc2e7c20f7ff10d852}{Alarm3}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Standard Update and Draw}}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_updatable_ae4951bd0a70ffeaeb7a6d476ed788ee2}{Update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drawable_a8d5d4d2f2bca40d931c1b8b762be8d42}{Draw}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Inputable}}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_inputable_a078023808b567064fd0e0adb4b610547}{KeyPressed}}(AZUL\_KEY k) \textcolor{keyword}{override};}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_inputable_ac4268a25091e245e467fc3b124fcbfb2}{KeyReleased}}(AZUL\_KEY k) \textcolor{keyword}{override};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Collidable}}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} Collision(Cottage*);}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} Collision(Frigate*) \{ DebugMsg::out(\textcolor{stringliteral}{"Collision Frigate with Frigate\(\backslash\)n"}); \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Full TRS ship positioning}}
+\DoxyCodeLine{    Vect shipPos;     \textcolor{comment}{// T}}
+\DoxyCodeLine{    Matrix shipRot;   \textcolor{comment}{// R}}
+\DoxyCodeLine{    Matrix shipScale; \textcolor{comment}{// S}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Translation and rotation speed}}
+\DoxyCodeLine{    \textcolor{keyword}{const} \textcolor{keywordtype}{float} shipTransSpeed = 1.0f;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \textcolor{keywordtype}{float} shipRotAngle = 0.05f;}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Special camera controls}}
+\DoxyCodeLine{    Vect CamShipOffset;}
+\DoxyCodeLine{    Vect CamLookAt;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{    \textcolor{comment}{// A texture-\/light graphics object}}
+\DoxyCodeLine{    GraphicsObject\_TextureLight* pObjFT;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    Matrix WorldMat1;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordtype}{float} angle;}
+\DoxyCodeLine{\};}
+\end{DoxyCode}
+
+
+The resulting implementation must define the overloaded functions and do something interesting with the position and activity of the model.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Frigate::Frigate() \{}
+\DoxyCodeLine{    \textcolor{comment}{// Light parameters and graphics object setup.}}
+\DoxyCodeLine{    Vect LightColor(1.50f, 1.50f, 1.50f, 1.0f);}
+\DoxyCodeLine{    Vect LightPos(1.0f, 1.0f, 1.0f, 1.0f);}
+\DoxyCodeLine{    pObjFT = \textcolor{keyword}{new} GraphicsObject\_TextureLight(\mbox{\hyperlink{class_model_manager_ac48466a9c8c05c81a6d6acd19b13233a}{ModelManager::Get}}(\textcolor{stringliteral}{"Space\_Frigate"}), \mbox{\hyperlink{class_shader_manager_a102591e663e0897ac54aee3bb097ab5f}{ShaderManager::Get}}(\textcolor{stringliteral}{"TextureFlatRender"}), \mbox{\hyperlink{class_texture_manager_a2c8c249eeca164c77c18b36243da6a9a}{TextureManager::Get}}(\textcolor{stringliteral}{"Space\_Frigate"}), LightColor, LightPos);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// TRS and World matrix setup}}
+\DoxyCodeLine{    shipScale.set(SCALE, 0.5f, 0.5f, 0.5f);}
+\DoxyCodeLine{    shipRot.set(IDENTITY);}
+\DoxyCodeLine{    shipPos.set(0, 20, 0);}
+\DoxyCodeLine{    Matrix world = shipScale * shipRot * Matrix(TRANS, shipPos);}
+\DoxyCodeLine{    pObjFT-\/>SetWorld(world);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Submission of all 'able's for registration }}
+\DoxyCodeLine{    \mbox{\hyperlink{class_updatable_a705b2573da6eaa190a30bba0f7f4dddc}{Updatable::SubmitUpdateRegistration}}();}
+\DoxyCodeLine{    \mbox{\hyperlink{class_drawable_a4f89e20fc4a5efe3ed173743498d93eb}{Drawable::SubmitDrawRegistration}}();}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Setting 3 different alarms with various time indexes}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_alarmable_aa3ad5019037da19edac3857d3e3436ba}{Alarmable::SubmitAlarmRegistration}}(0, 1);}
+\DoxyCodeLine{    \mbox{\hyperlink{class_alarmable_aa3ad5019037da19edac3857d3e3436ba}{Alarmable::SubmitAlarmRegistration}}(1, 2);}
+\DoxyCodeLine{    \mbox{\hyperlink{class_alarmable_aa3ad5019037da19edac3857d3e3436ba}{Alarmable::SubmitAlarmRegistration}}(2, 3);}
+\DoxyCodeLine{    \mbox{\hyperlink{class_alarmable_aa3ad5019037da19edac3857d3e3436ba}{Alarmable::SubmitAlarmRegistration}}(3, 4);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Submitting key registration for space (to fire bullets)}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_SPACE, KEY\_PRESS);}
+\DoxyCodeLine{    \mbox{\hyperlink{class_inputable_a9a99e7fd7742070bc42eb33b09c6f9f4}{Inputable::SubmitKeyRegistration}}(AZUL\_KEY::KEY\_END, KEY\_RELEASE);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Setting a collider model for testing collision.}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_collidable_aa22411ee6adec32d9dade15f5612b3d3}{Collidable::SetColliderModel}}(pObjFT-\/>getModel(), VolumeType::OBB); \textcolor{comment}{// The collider model may be either a BSphere, AABB, or OBB.}}
+\DoxyCodeLine{    Collidable::SetCollidableGroup<Frigate>(); }
+\DoxyCodeLine{    \mbox{\hyperlink{class_collidable_a2a98ae0764e59293da67b3451dc6dceb}{Collidable::SubmitCollisionRegistration}}();}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+How these various \textquotesingle{}able\textquotesingle{} functions are defined are going to vary wildly with each implementation of a game object. Below are a few common ways of implementing a couple of these functions.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} Frigate::Alarm0() \{}
+\DoxyCodeLine{    DebugMsg::out(\textcolor{stringliteral}{"Alarm0 called in Frigate, deregistering alarm 2\(\backslash\)n"}); \textcolor{comment}{// Lets the user know what alarm triggered}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_alarmable_a2359d1b4e7fca6e6a019c7b1ce36e292}{Alarmable::SubmitAlarmDeregistration}}(2); \textcolor{comment}{// Deregisters a different alarm}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} Frigate::KeyPressed(AZUL\_KEY inputKey) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{switch} (inputKey) \{ \textcolor{comment}{// Begrudgingly switch on the input}}
+\DoxyCodeLine{    \textcolor{keywordflow}{case} AZUL\_KEY::KEY\_SPACE:}
+\DoxyCodeLine{        \textcolor{comment}{//DebugMsg::out("<SPACE> HAS BEEN PRESSED\(\backslash\)n");}}
+\DoxyCodeLine{        EnemyBulletFactory::CreateBullet(shipRot, shipPos); \textcolor{comment}{// Factory implementaiton! }}
+\DoxyCodeLine{        \textcolor{keywordflow}{break};}
+\DoxyCodeLine{    \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{        DebugMsg::out(\textcolor{stringliteral}{"PROBLEM, Key \%i was not meant to be processed"}, inputKey); \textcolor{comment}{// No key other than those registered should be present}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} Frigate::Collision(Cottage* theCottage) \{}
+\DoxyCodeLine{    UNREFERENCED\_PARAMETER(theCottage); \textcolor{comment}{// Using only for type safety in this demo, though cottage work can be done.}}
+\DoxyCodeLine{    DebugMsg::out(\textcolor{stringliteral}{"Collision Frigate with Cottage\(\backslash\)n"}); }
+\DoxyCodeLine{    \mbox{\hyperlink{class_visualizer_a5f994c8f3251111defd4c0e4d7aa5402}{Visualizer::ShowBSphere}}(GetBSphere(), \mbox{\hyperlink{class_color_ae115f546073b973028ed9a2c5b86969b}{Color::Red}}); \textcolor{comment}{// Display a sphere on screen, be sure to checkout the visualizer tool.}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} Frigate::Update() \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (Keyboard::GetKeyState(AZUL\_KEY::KEY\_W))}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        shipPos += Vect(0, 0, 1) * shipRot * shipTransSpeed;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (Keyboard::GetKeyState(AZUL\_KEY::KEY\_S))}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        shipPos += Vect(0, 0, 1) * shipRot * -\/shipTransSpeed;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Ship Rotation movement (not using time-\/based values for simplicity)}}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (Keyboard::GetKeyState(AZUL\_KEY::KEY\_A))}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        shipRot *= Matrix(ROT\_Y, shipRotAngle);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (Keyboard::GetKeyState(AZUL\_KEY::KEY\_D))}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        shipRot *= Matrix(ROT\_Y, -\/shipRotAngle);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Adjust Spaceship Matrix}}
+\DoxyCodeLine{    Matrix world = shipScale * shipRot * Matrix(TRANS, shipPos);}
+\DoxyCodeLine{    pObjFT-\/>SetWorld(world);}
+\DoxyCodeLine{    this-\/>UpdateCollisionData(world);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} Frigate::Draw() \{}
+\DoxyCodeLine{    pObjFT-\/>Render(\mbox{\hyperlink{class_scene_manager_a547a841067e4c8f44be20fbebd15f9fa}{SceneManager::GetCurrentScene}}()-\/>GetCamera());}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{Frigate::\string~Frigate() \{}
+\DoxyCodeLine{    \textcolor{keyword}{delete} pObjFT;}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ 

@@ -1,0 +1,731 @@
+\hypertarget{class_sly}{}\doxysection{Sly Class Reference}
+\label{class_sly}\index{Sly@{Sly}}
+
+
+{\ttfamily \#include $<$Sly.\+h$>$}
+
+
+
+Inheritance diagram for Sly\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_sly__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sly\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{class_sly__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_sly_acd746a078514b0ee415c1835e67ece47}{Run}} ()
+\begin{DoxyCompactList}\small\item\em Kick starts the engine. Begins by loading the framework followed by initializing the \mbox{\hyperlink{class_sly}{Sly}} Engine. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_sly_a3fd862c9a26805f47c81ba514e6e61bd}{Get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Gets the window height. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_sly_aee11857c1e3b02cb0c6956eb7184721b}{Get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Gets the window width. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sly_ada036894bb164e8fd06681d8acf81d1f}{Set\+Clear}} (float r, float g, float b, float a)
+\begin{DoxyCompactList}\small\item\em Sets the color to clear the screen with. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sly_ada6f9f785a466b07836faec0edbc7e86}{Set\+Width\+Height}} (int w, int h)
+\begin{DoxyCompactList}\small\item\em Sets width and height of the main window. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sly_aca2d20db1b68077c8d30299f0a63b7ee}{Set\+Window\+Name}} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Sets window name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sly_a50e7c55c362cf0a3dec26ad4e77370e0}{Sly}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly_aabbe64c46c63f26505a9d5ba8d07c4b4}{Sly}} (const \mbox{\hyperlink{class_sly}{Sly}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly_ad9c6110ce773b3d2614456735d79b3c9}{Sly}} (\mbox{\hyperlink{class_sly}{Sly}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly}{Sly}} \& \mbox{\hyperlink{class_sly_aea4048e4a0c493c72c35698b7fdcb73d}{operator=}} (const \mbox{\hyperlink{class_sly}{Sly}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly}{Sly}} \& \mbox{\hyperlink{class_sly_a7cbf2f15b9794919212c747ed20e7d1d}{operator=}} (\mbox{\hyperlink{class_sly}{Sly}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly_a2d9f18b387e43dd502031dc02015ae88}{$\sim$\+Sly}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sly_a4a1ba96ab96474fdf6b2f89f60dd46c8}{Initialize}} ()
+\begin{DoxyCompactList}\small\item\em Engine initialization. Setups up various managers. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sly_a0e65e74526d0c79d554267cbeee21d80}{Load\+Content}} ()
+\begin{DoxyCompactList}\small\item\em Loads engine starting content. Loads first scene. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sly_a3becf1f9f9075b00b27ee727b5503013}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Main update loop. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sly_a175f9ff26a02b3a97eef61131f2b812c}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em Main draw loop. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sly_a11db0b5f493d787187ddc55172ec8981}{Un\+Load\+Content}} ()
+\begin{DoxyCompactList}\small\item\em Cleans up engine content. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sly_afbf29ffa5d0b7911286c79eafe84d840}{priv\+Get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Internal get height, pulls height from Azul framework. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sly_adc6e75da3dc32d2a2a32e83a396be078}{priv\+Get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Internal get width, pulls width from Azul framework. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sly_a0ea1147dfdac6a38095dd46f5d847482}{priv\+Set\+Clear}} (float r, float g, float b, float a)
+\begin{DoxyCompactList}\small\item\em Internal set clear. Passes values to Azul framework. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sly_aceea4ff43545c6336081a2d961d0aa4c}{priv\+Set\+Width\+Height}} (int w, int h)
+\begin{DoxyCompactList}\small\item\em Internal set Width and Height, passes values to Azul framework. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sly_a76fe5895505102775d1cd86f2fcd8e81}{priv\+Set\+Window\+Name}} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Internal set window name. Passes this info to the Azul framework. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly_abf69ce89e3080fa4429433f384effbb0}{Sly}} (const char $\ast$window\+Name, const int Width, const int Height)
+\begin{DoxyCompactList}\small\item\em Legacy Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sly_a2f502a5aa9cd07dcc29858a104827213}{Load\+All\+Resources}} ()
+\begin{DoxyCompactList}\small\item\em User defined Load\+Resources. Content to be defined by the user. Typically models, textures, and shaders are loaded here. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sly_a8124f3efd8a43cff220efd4e8e1c1c16}{Game\+Initialize}} ()
+\begin{DoxyCompactList}\small\item\em Game initialize, window and engine modifications to be defined by the user. ~\newline
+ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sly_add7937a5ff10830f496b6e00c43e3d91}{Game\+End}} ()
+\begin{DoxyCompactList}\small\item\em Game end, to be defined by the user. Typically used for cleaning up memory. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_sly_a872cf3416674598e34f31fbde41e1b09}{priv\+Get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Gets internal time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_sly}{Sly}} \& \mbox{\hyperlink{class_sly_a1d59581314e3040746c9a40b2d9a2577}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the instance. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_sly_a88024a40997b78b3f7fd235307d3f255}{Get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Gets the time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_sly}{Sly}} $\ast$ \mbox{\hyperlink{class_sly_af6994e372cdca1afd2ecacc781d24c1b}{ptr\+Instance}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_sly_ac9ea5234176fe619d9e6952a0c0a80a7}{Sly\+Attorney}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sly_a50e7c55c362cf0a3dec26ad4e77370e0}\label{class_sly_a50e7c55c362cf0a3dec26ad4e77370e0}} 
+\index{Sly@{Sly}!Sly@{Sly}}
+\index{Sly@{Sly}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{Sly()}{Sly()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Sly\+::\+Sly (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_a50e7c55c362cf0a3dec26ad4e77370e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_aabbe64c46c63f26505a9d5ba8d07c4b4}\label{class_sly_aabbe64c46c63f26505a9d5ba8d07c4b4}} 
+\index{Sly@{Sly}!Sly@{Sly}}
+\index{Sly@{Sly}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{Sly()}{Sly()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Sly\+::\+Sly (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sly}{Sly}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_sly_ad9c6110ce773b3d2614456735d79b3c9}\label{class_sly_ad9c6110ce773b3d2614456735d79b3c9}} 
+\index{Sly@{Sly}!Sly@{Sly}}
+\index{Sly@{Sly}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{Sly()}{Sly()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Sly\+::\+Sly (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sly}{Sly}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_sly_a2d9f18b387e43dd502031dc02015ae88}\label{class_sly_a2d9f18b387e43dd502031dc02015ae88}} 
+\index{Sly@{Sly}!````~Sly@{$\sim$Sly}}
+\index{````~Sly@{$\sim$Sly}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{$\sim$Sly()}{~Sly()}}
+{\footnotesize\ttfamily Sly\+::$\sim$\+Sly (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+\mbox{\Hypertarget{class_sly_abf69ce89e3080fa4429433f384effbb0}\label{class_sly_abf69ce89e3080fa4429433f384effbb0}} 
+\index{Sly@{Sly}!Sly@{Sly}}
+\index{Sly@{Sly}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{Sly()}{Sly()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Sly\+::\+Sly (\begin{DoxyParamCaption}\item[{const char $\ast$}]{window\+Name,  }\item[{const int}]{Width,  }\item[{const int}]{Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Legacy Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Name} & Name of the window. \\
+\hline
+{\em Width} & The width. \\
+\hline
+{\em Height} & The height. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sly_a175f9ff26a02b3a97eef61131f2b812c}\label{class_sly_a175f9ff26a02b3a97eef61131f2b812c}} 
+\index{Sly@{Sly}!Draw@{Draw}}
+\index{Draw@{Draw}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Sly\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Main draw loop. 
+
+Calls internal systems to process their draw loops. Routed through the \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}}. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_a175f9ff26a02b3a97eef61131f2b812c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_add7937a5ff10830f496b6e00c43e3d91}\label{class_sly_add7937a5ff10830f496b6e00c43e3d91}} 
+\index{Sly@{Sly}!GameEnd@{GameEnd}}
+\index{GameEnd@{GameEnd}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{GameEnd()}{GameEnd()}}
+{\footnotesize\ttfamily void Sly\+::\+Game\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Game end, to be defined by the user. Typically used for cleaning up memory. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{class_sly_add7937a5ff10830f496b6e00c43e3d91}{Sly::GameEnd}}() \{}
+\DoxyCodeLine{    BulletFactory::Terminate();}
+\DoxyCodeLine{    TankFactory::Terminate();}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_sly_add7937a5ff10830f496b6e00c43e3d91_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_a8124f3efd8a43cff220efd4e8e1c1c16}\label{class_sly_a8124f3efd8a43cff220efd4e8e1c1c16}} 
+\index{Sly@{Sly}!GameInitialize@{GameInitialize}}
+\index{GameInitialize@{GameInitialize}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{GameInitialize()}{GameInitialize()}}
+{\footnotesize\ttfamily void Sly\+::\+Game\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Game initialize, window and engine modifications to be defined by the user. ~\newline
+ 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{class_sly_a8124f3efd8a43cff220efd4e8e1c1c16}{Sly::GameInitialize}}() \{}
+\DoxyCodeLine{    this-\/>setWindowName(\textcolor{stringliteral}{"Sly Engine"});}
+\DoxyCodeLine{    this-\/>setWidthHeight(800, 600);}
+\DoxyCodeLine{    this-\/>SetClearColor(0.4f, 0.4f, 0.8f, 1.0f);}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{class_sly_a8124f3efd8a43cff220efd4e8e1c1c16_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_a3fd862c9a26805f47c81ba514e6e61bd}\label{class_sly_a3fd862c9a26805f47c81ba514e6e61bd}} 
+\index{Sly@{Sly}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily static int Sly\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the window height. 
+
+\begin{DoxyReturn}{Returns}
+The height. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_a3fd862c9a26805f47c81ba514e6e61bd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_a3fd862c9a26805f47c81ba514e6e61bd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_a88024a40997b78b3f7fd235307d3f255}\label{class_sly_a88024a40997b78b3f7fd235307d3f255}} 
+\index{Sly@{Sly}!GetTime@{GetTime}}
+\index{GetTime@{GetTime}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{GetTime()}{GetTime()}}
+{\footnotesize\ttfamily static float Sly\+::\+Get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the time. 
+
+To be used by internal processes. Specifically, passes current time info to the \mbox{\hyperlink{class_time_manager}{Time\+Manager}}. Not user accessible, all calls for time should be routed through the \mbox{\hyperlink{class_time_manager}{Time\+Manager}}.
+
+\begin{DoxyReturn}{Returns}
+The time. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_a88024a40997b78b3f7fd235307d3f255_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{class_sly_a88024a40997b78b3f7fd235307d3f255_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_aee11857c1e3b02cb0c6956eb7184721b}\label{class_sly_aee11857c1e3b02cb0c6956eb7184721b}} 
+\index{Sly@{Sly}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily static int Sly\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the window width. 
+
+\begin{DoxyReturn}{Returns}
+The width. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_aee11857c1e3b02cb0c6956eb7184721b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_aee11857c1e3b02cb0c6956eb7184721b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_a4a1ba96ab96474fdf6b2f89f60dd46c8}\label{class_sly_a4a1ba96ab96474fdf6b2f89f60dd46c8}} 
+\index{Sly@{Sly}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Sly\+::\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Engine initialization. Setups up various managers. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_a4a1ba96ab96474fdf6b2f89f60dd46c8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_a1d59581314e3040746c9a40b2d9a2577}\label{class_sly_a1d59581314e3040746c9a40b2d9a2577}} 
+\index{Sly@{Sly}!Instance@{Instance}}
+\index{Instance@{Instance}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_sly}{Sly}} \& Sly\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the instance. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_sly}{Sly}}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{class_sly_a1d59581314e3040746c9a40b2d9a2577_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_a1d59581314e3040746c9a40b2d9a2577_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_a2f502a5aa9cd07dcc29858a104827213}\label{class_sly_a2f502a5aa9cd07dcc29858a104827213}} 
+\index{Sly@{Sly}!LoadAllResources@{LoadAllResources}}
+\index{LoadAllResources@{LoadAllResources}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{LoadAllResources()}{LoadAllResources()}}
+{\footnotesize\ttfamily void Sly\+::\+Load\+All\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+User defined Load\+Resources. Content to be defined by the user. Typically models, textures, and shaders are loaded here. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sly_a2f502a5aa9cd07dcc29858a104827213}{Sly::LoadAllResources}}() \{}
+\DoxyCodeLine{ }
+\DoxyCodeLine{    \textcolor{comment}{// Models}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_model_manager_a4301eefe8a038b679b484d3440a5cb5b}{ModelManager::Load}}(\textcolor{stringliteral}{"Axis"}, \textcolor{stringliteral}{"Axis.azul"});}
+\DoxyCodeLine{    \mbox{\hyperlink{class_model_manager_a4301eefe8a038b679b484d3440a5cb5b}{ModelManager::Load}}(\textcolor{stringliteral}{"Plane"}, \textcolor{stringliteral}{"Plane.azul"});}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Textures}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_texture_manager_a3005389b043a4022a7f36458d84696ac}{TextureManager::Load}}(\textcolor{stringliteral}{"Space\_Frigate"}, \textcolor{stringliteral}{"space\_frigate.tga"});}
+\DoxyCodeLine{    \mbox{\hyperlink{class_texture_manager_a3005389b043a4022a7f36458d84696ac}{TextureManager::Load}}(\textcolor{stringliteral}{"red"}, \textcolor{charliteral}{'F'}, \textcolor{charliteral}{'0'}, \textcolor{charliteral}{'0'}, \textcolor{charliteral}{'F'});}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Shaders}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_shader_manager_a7b8e7d53f2af123307c0c6bd4c137501}{ShaderManager::Load}}(\textcolor{stringliteral}{"TextureFlatRender"}, \textcolor{stringliteral}{"textureFlatRender"});}
+\DoxyCodeLine{    \mbox{\hyperlink{class_shader_manager_a7b8e7d53f2af123307c0c6bd4c137501}{ShaderManager::Load}}(\textcolor{stringliteral}{"TextureLightRender"}, \textcolor{stringliteral}{"textureLightRender"});}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_sly_a2f502a5aa9cd07dcc29858a104827213_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_a0e65e74526d0c79d554267cbeee21d80}\label{class_sly_a0e65e74526d0c79d554267cbeee21d80}} 
+\index{Sly@{Sly}!LoadContent@{LoadContent}}
+\index{LoadContent@{LoadContent}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{LoadContent()}{LoadContent()}}
+{\footnotesize\ttfamily void Sly\+::\+Load\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Loads engine starting content. Loads first scene. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_a0e65e74526d0c79d554267cbeee21d80_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_aea4048e4a0c493c72c35698b7fdcb73d}\label{class_sly_aea4048e4a0c493c72c35698b7fdcb73d}} 
+\index{Sly@{Sly}!operator=@{operator=}}
+\index{operator=@{operator=}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sly}{Sly}}\& Sly\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sly}{Sly}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_sly_a7cbf2f15b9794919212c747ed20e7d1d}\label{class_sly_a7cbf2f15b9794919212c747ed20e7d1d}} 
+\index{Sly@{Sly}!operator=@{operator=}}
+\index{operator=@{operator=}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sly}{Sly}}\& Sly\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sly}{Sly}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_sly_afbf29ffa5d0b7911286c79eafe84d840}\label{class_sly_afbf29ffa5d0b7911286c79eafe84d840}} 
+\index{Sly@{Sly}!privGetHeight@{privGetHeight}}
+\index{privGetHeight@{privGetHeight}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{privGetHeight()}{privGetHeight()}}
+{\footnotesize\ttfamily int Sly\+::priv\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal get height, pulls height from Azul framework. 
+
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_afbf29ffa5d0b7911286c79eafe84d840_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_a872cf3416674598e34f31fbde41e1b09}\label{class_sly_a872cf3416674598e34f31fbde41e1b09}} 
+\index{Sly@{Sly}!privGetTime@{privGetTime}}
+\index{privGetTime@{privGetTime}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{privGetTime()}{privGetTime()}}
+{\footnotesize\ttfamily float Sly\+::priv\+Get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gets internal time. 
+
+Accesses the Azul framework to retrieve the time.
+
+\begin{DoxyReturn}{Returns}
+The time. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_a872cf3416674598e34f31fbde41e1b09_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_adc6e75da3dc32d2a2a32e83a396be078}\label{class_sly_adc6e75da3dc32d2a2a32e83a396be078}} 
+\index{Sly@{Sly}!privGetWidth@{privGetWidth}}
+\index{privGetWidth@{privGetWidth}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{privGetWidth()}{privGetWidth()}}
+{\footnotesize\ttfamily int Sly\+::priv\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal get width, pulls width from Azul framework. 
+
+\begin{DoxyReturn}{Returns}
+An int. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_adc6e75da3dc32d2a2a32e83a396be078_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_a0ea1147dfdac6a38095dd46f5d847482}\label{class_sly_a0ea1147dfdac6a38095dd46f5d847482}} 
+\index{Sly@{Sly}!privSetClear@{privSetClear}}
+\index{privSetClear@{privSetClear}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{privSetClear()}{privSetClear()}}
+{\footnotesize\ttfamily void Sly\+::priv\+Set\+Clear (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal set clear. Passes values to Azul framework. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & A float to process. \\
+\hline
+{\em g} & A float to process. \\
+\hline
+{\em b} & A float to process. \\
+\hline
+{\em a} & A float to process. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{class_sly_a0ea1147dfdac6a38095dd46f5d847482_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_aceea4ff43545c6336081a2d961d0aa4c}\label{class_sly_aceea4ff43545c6336081a2d961d0aa4c}} 
+\index{Sly@{Sly}!privSetWidthHeight@{privSetWidthHeight}}
+\index{privSetWidthHeight@{privSetWidthHeight}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{privSetWidthHeight()}{privSetWidthHeight()}}
+{\footnotesize\ttfamily void Sly\+::priv\+Set\+Width\+Height (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal set Width and Height, passes values to Azul framework. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & The width. \\
+\hline
+{\em h} & The height. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_sly_aceea4ff43545c6336081a2d961d0aa4c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_a76fe5895505102775d1cd86f2fcd8e81}\label{class_sly_a76fe5895505102775d1cd86f2fcd8e81}} 
+\index{Sly@{Sly}!privSetWindowName@{privSetWindowName}}
+\index{privSetWindowName@{privSetWindowName}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{privSetWindowName()}{privSetWindowName()}}
+{\footnotesize\ttfamily void Sly\+::priv\+Set\+Window\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal set window name. Passes this info to the Azul framework. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sly_acd746a078514b0ee415c1835e67ece47}\label{class_sly_acd746a078514b0ee415c1835e67ece47}} 
+\index{Sly@{Sly}!Run@{Run}}
+\index{Run@{Run}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily static void Sly\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Kick starts the engine. Begins by loading the framework followed by initializing the \mbox{\hyperlink{class_sly}{Sly}} Engine. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{class_sly_acd746a078514b0ee415c1835e67ece47_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{class_sly_acd746a078514b0ee415c1835e67ece47_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_ada036894bb164e8fd06681d8acf81d1f}\label{class_sly_ada036894bb164e8fd06681d8acf81d1f}} 
+\index{Sly@{Sly}!SetClear@{SetClear}}
+\index{SetClear@{SetClear}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{SetClear()}{SetClear()}}
+{\footnotesize\ttfamily static void Sly\+::\+Set\+Clear (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sets the color to clear the screen with. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & red. \\
+\hline
+{\em g} & green. \\
+\hline
+{\em b} & blue. \\
+\hline
+{\em a} & alpha. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_ada036894bb164e8fd06681d8acf81d1f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_ada6f9f785a466b07836faec0edbc7e86}\label{class_sly_ada6f9f785a466b07836faec0edbc7e86}} 
+\index{Sly@{Sly}!SetWidthHeight@{SetWidthHeight}}
+\index{SetWidthHeight@{SetWidthHeight}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{SetWidthHeight()}{SetWidthHeight()}}
+{\footnotesize\ttfamily static void Sly\+::\+Set\+Width\+Height (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sets width and height of the main window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & The width. \\
+\hline
+{\em h} & The height. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_ada6f9f785a466b07836faec0edbc7e86_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_aca2d20db1b68077c8d30299f0a63b7ee}\label{class_sly_aca2d20db1b68077c8d30299f0a63b7ee}} 
+\index{Sly@{Sly}!SetWindowName@{SetWindowName}}
+\index{SetWindowName@{SetWindowName}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{SetWindowName()}{SetWindowName()}}
+{\footnotesize\ttfamily static void Sly\+::\+Set\+Window\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sets window name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the window. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_aca2d20db1b68077c8d30299f0a63b7ee_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_sly_aca2d20db1b68077c8d30299f0a63b7ee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_a11db0b5f493d787187ddc55172ec8981}\label{class_sly_a11db0b5f493d787187ddc55172ec8981}} 
+\index{Sly@{Sly}!UnLoadContent@{UnLoadContent}}
+\index{UnLoadContent@{UnLoadContent}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{UnLoadContent()}{UnLoadContent()}}
+{\footnotesize\ttfamily void Sly\+::\+Un\+Load\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Cleans up engine content. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_a11db0b5f493d787187ddc55172ec8981_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_a3becf1f9f9075b00b27ee727b5503013}\label{class_sly_a3becf1f9f9075b00b27ee727b5503013}} 
+\index{Sly@{Sly}!Update@{Update}}
+\index{Update@{Update}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Sly\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Main update loop. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_a3becf1f9f9075b00b27ee727b5503013_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_sly_ac9ea5234176fe619d9e6952a0c0a80a7}\label{class_sly_ac9ea5234176fe619d9e6952a0c0a80a7}} 
+\index{Sly@{Sly}!SlyAttorney@{SlyAttorney}}
+\index{SlyAttorney@{SlyAttorney}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{SlyAttorney}{SlyAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_sly_attorney}{Sly\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sly_af6994e372cdca1afd2ecacc781d24c1b}\label{class_sly_af6994e372cdca1afd2ecacc781d24c1b}} 
+\index{Sly@{Sly}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!Sly@{Sly}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sly}{Sly}} $\ast$ Sly\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sly_8h}{Sly.\+h}}\item 
+\mbox{\hyperlink{_sly_8cpp}{Sly.\+cpp}}\end{DoxyCompactItemize}

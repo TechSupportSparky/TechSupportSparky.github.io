@@ -1,0 +1,6 @@
+<map id="TimeManager::GetFrameTime" name="TimeManager::GetFrameTime">
+<area shape="rect" id="node1" title="Gets frame time." alt="" coords="5,31,200,57"/>
+<area shape="rect" id="node2" href="$class_time_manager.html#ac06b0a182b394ddc0ac554ad090ee019" title="Gets the instance." alt="" coords="276,5,433,32"/>
+<area shape="rect" id="node4" href="$class_time_manager.html#a613cea801de384ab2608a34cbaab2444" title="Private get frame time." alt="" coords="248,56,461,83"/>
+<area shape="rect" id="node3" href="$class_time_manager.html#a46d2773caea1858a19594d58d57404c2" title="Default constructor." alt="" coords="509,5,696,32"/>
+</map>

@@ -1,0 +1,282 @@
+\hypertarget{class_particle_factory}{}\doxysection{Particle\+Factory Class Reference}
+\label{class_particle_factory}\index{ParticleFactory@{ParticleFactory}}
+
+
+{\ttfamily \#include $<$Particle\+Factory.\+h$>$}
+
+
+
+Collaboration diagram for Particle\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_particle_factory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Item\+List\+::iterator \mbox{\hyperlink{class_particle_factory_ad0b5504b15e3521856bdb1a2fafd18de}{Storage\+Ref}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_particle}{Particle}} $\ast$ \mbox{\hyperlink{class_particle_factory_a9ee32d2422757b04bea43a751a442219}{Create\+Particle}} (Vect pos, Vect direction, float speed)
+\item 
+static void \mbox{\hyperlink{class_particle_factory_a39846e09ca61d38318d02bc7c6812304}{Recycle\+Particle}} (\mbox{\hyperlink{class_particle}{Particle}} $\ast$p)
+\item 
+static void \mbox{\hyperlink{class_particle_factory_a23f1fd1d1841c25f634b80ea75f9e83c}{Terminate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \mbox{\hyperlink{class_particle}{Particle}} $\ast$ $>$ \mbox{\hyperlink{class_particle_factory_a13ec9538d35547a6785e890b32149b21}{Item\+List}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_particle_factory_a1e85ff13952ed19d9f5db20f7f294bbd}{Particle\+Factory}} ()
+\item 
+\mbox{\hyperlink{class_particle_factory_a83ca919168a4e0aeaba4aaee3d218c4a}{Particle\+Factory}} (const \mbox{\hyperlink{class_particle_factory}{Particle\+Factory}} \&)=delete
+\item 
+\mbox{\hyperlink{class_particle_factory_a64940efce8a9eae371a51c1a2ac79462}{Particle\+Factory}} (\mbox{\hyperlink{class_particle_factory}{Particle\+Factory}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_particle_factory}{Particle\+Factory}} \& \mbox{\hyperlink{class_particle_factory_aa23d6f4d73b1143edc44f9b4ca6b37a4}{operator=}} (const \mbox{\hyperlink{class_particle_factory}{Particle\+Factory}} \&)=delete
+\item 
+\mbox{\hyperlink{class_particle_factory}{Particle\+Factory}} \& \mbox{\hyperlink{class_particle_factory_a005d2ba52d33d4791e277fe2b2bdeffa}{operator=}} (\mbox{\hyperlink{class_particle_factory}{Particle\+Factory}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_particle_factory_ae729b5326e921315f645fa953ab354ac}{$\sim$\+Particle\+Factory}} ()=default
+\item 
+\mbox{\hyperlink{class_particle}{Particle}} $\ast$ \mbox{\hyperlink{class_particle_factory_ae724e110054f1d4466fdbd8c7974dcb0}{priv\+Create\+Particle}} (Vect i\+Pos, Vect i\+Direction, float i\+Speed)
+\item 
+void \mbox{\hyperlink{class_particle_factory_aebd58ecc6e99b1c5dc463e95eeaf9bcb}{priv\+Recycle\+Particle}} (\mbox{\hyperlink{class_particle}{Particle}} $\ast$p)
+\item 
+void \mbox{\hyperlink{class_particle_factory_a4f1c1d614de2180877bd3a6b6df0d80a}{priv\+Terminate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_particle_factory}{Particle\+Factory}} \& \mbox{\hyperlink{class_particle_factory_a6e2961780b44f31cd008007dd5955b57}{Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_particle_memory_pool}{Particle\+Memory\+Pool}} \mbox{\hyperlink{class_particle_factory_a82c4151b5a53b69960441a9623cb2fea}{my\+Particle\+Pool}}
+\item 
+\mbox{\hyperlink{class_particle_factory_a13ec9538d35547a6785e890b32149b21}{Item\+List}} $\ast$ \mbox{\hyperlink{class_particle_factory_ac75752e31a955929e4a04f62eece630b}{active\+Items}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_particle_factory}{Particle\+Factory}} $\ast$ \mbox{\hyperlink{class_particle_factory_a9650982ed7799ab515b9ed487092af1d}{ptr\+Instance}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_particle_factory_a13ec9538d35547a6785e890b32149b21}\label{class_particle_factory_a13ec9538d35547a6785e890b32149b21}} 
+\index{ParticleFactory@{ParticleFactory}!ItemList@{ItemList}}
+\index{ItemList@{ItemList}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{ItemList}{ItemList}}
+{\footnotesize\ttfamily typedef std\+::list$<$\mbox{\hyperlink{class_particle}{Particle}}$\ast$$>$ \mbox{\hyperlink{class_particle_factory_a13ec9538d35547a6785e890b32149b21}{Particle\+Factory\+::\+Item\+List}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_particle_factory_ad0b5504b15e3521856bdb1a2fafd18de}\label{class_particle_factory_ad0b5504b15e3521856bdb1a2fafd18de}} 
+\index{ParticleFactory@{ParticleFactory}!StorageRef@{StorageRef}}
+\index{StorageRef@{StorageRef}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{StorageRef}{StorageRef}}
+{\footnotesize\ttfamily typedef Item\+List\+::iterator \mbox{\hyperlink{class_particle_factory_ad0b5504b15e3521856bdb1a2fafd18de}{Particle\+Factory\+::\+Storage\+Ref}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_particle_factory_a1e85ff13952ed19d9f5db20f7f294bbd}\label{class_particle_factory_a1e85ff13952ed19d9f5db20f7f294bbd}} 
+\index{ParticleFactory@{ParticleFactory}!ParticleFactory@{ParticleFactory}}
+\index{ParticleFactory@{ParticleFactory}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{ParticleFactory()}{ParticleFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Particle\+Factory\+::\+Particle\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_factory_a1e85ff13952ed19d9f5db20f7f294bbd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_factory_a83ca919168a4e0aeaba4aaee3d218c4a}\label{class_particle_factory_a83ca919168a4e0aeaba4aaee3d218c4a}} 
+\index{ParticleFactory@{ParticleFactory}!ParticleFactory@{ParticleFactory}}
+\index{ParticleFactory@{ParticleFactory}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{ParticleFactory()}{ParticleFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Particle\+Factory\+::\+Particle\+Factory (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_particle_factory}{Particle\+Factory}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_factory_a64940efce8a9eae371a51c1a2ac79462}\label{class_particle_factory_a64940efce8a9eae371a51c1a2ac79462}} 
+\index{ParticleFactory@{ParticleFactory}!ParticleFactory@{ParticleFactory}}
+\index{ParticleFactory@{ParticleFactory}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{ParticleFactory()}{ParticleFactory()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Particle\+Factory\+::\+Particle\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_factory}{Particle\+Factory}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_factory_ae729b5326e921315f645fa953ab354ac}\label{class_particle_factory_ae729b5326e921315f645fa953ab354ac}} 
+\index{ParticleFactory@{ParticleFactory}!````~ParticleFactory@{$\sim$ParticleFactory}}
+\index{````~ParticleFactory@{$\sim$ParticleFactory}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParticleFactory()}{~ParticleFactory()}}
+{\footnotesize\ttfamily Particle\+Factory\+::$\sim$\+Particle\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_particle_factory_a9ee32d2422757b04bea43a751a442219}\label{class_particle_factory_a9ee32d2422757b04bea43a751a442219}} 
+\index{ParticleFactory@{ParticleFactory}!CreateParticle@{CreateParticle}}
+\index{CreateParticle@{CreateParticle}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{CreateParticle()}{CreateParticle()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_particle}{Particle}}$\ast$ Particle\+Factory\+::\+Create\+Particle (\begin{DoxyParamCaption}\item[{Vect}]{pos,  }\item[{Vect}]{direction,  }\item[{float}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_factory_a9ee32d2422757b04bea43a751a442219_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_factory_a6e2961780b44f31cd008007dd5955b57}\label{class_particle_factory_a6e2961780b44f31cd008007dd5955b57}} 
+\index{ParticleFactory@{ParticleFactory}!Instance@{Instance}}
+\index{Instance@{Instance}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_particle_factory}{Particle\+Factory}}\& Particle\+Factory\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_factory_a6e2961780b44f31cd008007dd5955b57_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_factory_a6e2961780b44f31cd008007dd5955b57_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_factory_aa23d6f4d73b1143edc44f9b4ca6b37a4}\label{class_particle_factory_aa23d6f4d73b1143edc44f9b4ca6b37a4}} 
+\index{ParticleFactory@{ParticleFactory}!operator=@{operator=}}
+\index{operator=@{operator=}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_factory}{Particle\+Factory}}\& Particle\+Factory\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_particle_factory}{Particle\+Factory}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_factory_a005d2ba52d33d4791e277fe2b2bdeffa}\label{class_particle_factory_a005d2ba52d33d4791e277fe2b2bdeffa}} 
+\index{ParticleFactory@{ParticleFactory}!operator=@{operator=}}
+\index{operator=@{operator=}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_factory}{Particle\+Factory}}\& Particle\+Factory\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_factory}{Particle\+Factory}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_factory_ae724e110054f1d4466fdbd8c7974dcb0}\label{class_particle_factory_ae724e110054f1d4466fdbd8c7974dcb0}} 
+\index{ParticleFactory@{ParticleFactory}!privCreateParticle@{privCreateParticle}}
+\index{privCreateParticle@{privCreateParticle}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{privCreateParticle()}{privCreateParticle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle}{Particle}} $\ast$ Particle\+Factory\+::priv\+Create\+Particle (\begin{DoxyParamCaption}\item[{Vect}]{i\+Pos,  }\item[{Vect}]{i\+Direction,  }\item[{float}]{i\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_factory_ae724e110054f1d4466fdbd8c7974dcb0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_factory_ae724e110054f1d4466fdbd8c7974dcb0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_factory_aebd58ecc6e99b1c5dc463e95eeaf9bcb}\label{class_particle_factory_aebd58ecc6e99b1c5dc463e95eeaf9bcb}} 
+\index{ParticleFactory@{ParticleFactory}!privRecycleParticle@{privRecycleParticle}}
+\index{privRecycleParticle@{privRecycleParticle}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{privRecycleParticle()}{privRecycleParticle()}}
+{\footnotesize\ttfamily void Particle\+Factory\+::priv\+Recycle\+Particle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle}{Particle}} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_factory_aebd58ecc6e99b1c5dc463e95eeaf9bcb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_factory_aebd58ecc6e99b1c5dc463e95eeaf9bcb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_factory_a4f1c1d614de2180877bd3a6b6df0d80a}\label{class_particle_factory_a4f1c1d614de2180877bd3a6b6df0d80a}} 
+\index{ParticleFactory@{ParticleFactory}!privTerminate@{privTerminate}}
+\index{privTerminate@{privTerminate}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{privTerminate()}{privTerminate()}}
+{\footnotesize\ttfamily void Particle\+Factory\+::priv\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_factory_a4f1c1d614de2180877bd3a6b6df0d80a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_factory_a39846e09ca61d38318d02bc7c6812304}\label{class_particle_factory_a39846e09ca61d38318d02bc7c6812304}} 
+\index{ParticleFactory@{ParticleFactory}!RecycleParticle@{RecycleParticle}}
+\index{RecycleParticle@{RecycleParticle}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{RecycleParticle()}{RecycleParticle()}}
+{\footnotesize\ttfamily static void Particle\+Factory\+::\+Recycle\+Particle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle}{Particle}} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_factory_a39846e09ca61d38318d02bc7c6812304_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_factory_a23f1fd1d1841c25f634b80ea75f9e83c}\label{class_particle_factory_a23f1fd1d1841c25f634b80ea75f9e83c}} 
+\index{ParticleFactory@{ParticleFactory}!Terminate@{Terminate}}
+\index{Terminate@{Terminate}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{Terminate()}{Terminate()}}
+{\footnotesize\ttfamily static void Particle\+Factory\+::\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_factory_a23f1fd1d1841c25f634b80ea75f9e83c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_factory_a23f1fd1d1841c25f634b80ea75f9e83c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_particle_factory_ac75752e31a955929e4a04f62eece630b}\label{class_particle_factory_ac75752e31a955929e4a04f62eece630b}} 
+\index{ParticleFactory@{ParticleFactory}!activeItems@{activeItems}}
+\index{activeItems@{activeItems}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{activeItems}{activeItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_factory_a13ec9538d35547a6785e890b32149b21}{Item\+List}}$\ast$ Particle\+Factory\+::active\+Items\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_particle_factory_a82c4151b5a53b69960441a9623cb2fea}\label{class_particle_factory_a82c4151b5a53b69960441a9623cb2fea}} 
+\index{ParticleFactory@{ParticleFactory}!myParticlePool@{myParticlePool}}
+\index{myParticlePool@{myParticlePool}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{myParticlePool}{myParticlePool}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_memory_pool}{Particle\+Memory\+Pool}} Particle\+Factory\+::my\+Particle\+Pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_particle_factory_a9650982ed7799ab515b9ed487092af1d}\label{class_particle_factory_a9650982ed7799ab515b9ed487092af1d}} 
+\index{ParticleFactory@{ParticleFactory}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!ParticleFactory@{ParticleFactory}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_factory}{Particle\+Factory}} $\ast$ Particle\+Factory\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_particle_factory_8h}{Particle\+Factory.\+h}}\item 
+\mbox{\hyperlink{_particle_factory_8cpp}{Particle\+Factory.\+cpp}}\end{DoxyCompactItemize}

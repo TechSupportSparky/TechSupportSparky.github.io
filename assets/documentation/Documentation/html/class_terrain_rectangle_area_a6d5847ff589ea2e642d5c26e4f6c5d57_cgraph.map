@@ -1,0 +1,8 @@
+<map id="TerrainRectangleArea::TerrainRectangleArea" name="TerrainRectangleArea::TerrainRectangleArea">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,160,149"/>
+<area shape="rect" id="node2" href="$class_sly_math.html#a04dd48377e5db0b2dcf050f5b1689fa2" title="Clamp the int within the specified min&#45;max range." alt="" coords="250,5,377,32"/>
+<area shape="rect" id="node3" href="$class_terrain_object.html#a8c6125552c1cee7c7ccc6402601a49a5" title=" " alt="" coords="208,56,419,83"/>
+<area shape="rect" id="node4" href="$class_collision_volume_b_sphere.html#a402765fc07a14cac53aef1dec725e0c4" title="Gets the center." alt="" coords="231,107,396,149"/>
+<area shape="rect" id="node5" href="$class_collision_volume_b_sphere.html#a80a12a6234a934af889e9cf1e5ffd684" title="Gets the radius." alt="" coords="231,173,396,214"/>
+<area shape="rect" id="node6" href="$class_terrain_object.html#ab097d285a492f9d277521ee1cf612188" title="Gets the number of side vertices." alt="" coords="224,238,403,279"/>
+</map>

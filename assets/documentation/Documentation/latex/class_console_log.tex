@@ -1,0 +1,593 @@
+\hypertarget{class_console_log}{}\doxysection{Console\+Log Class Reference}
+\label{class_console_log}\index{ConsoleLog@{ConsoleLog}}
+
+
+{\ttfamily \#include $<$Console\+Log.\+h$>$}
+
+
+
+Collaboration diagram for Console\+Log\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_console_log__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_console_log_1_1message_data}{message\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_console_log_a1c346b3e687eaf864fa262328629d2b4}{Add}} (const char $\ast$A,...)
+\begin{DoxyCompactList}\small\item\em Adds a char list to the processing and textbuffer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_console_log_a6af2544a5ad4b729647a5fe92cc21b53}{Add\+Error}} (const char $\ast$A,...)
+\begin{DoxyCompactList}\small\item\em Adds a char list to the processing and textbuffer (in error message font) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_console_log_aba68cb62e3b15c39529f61fa30a193a9}{Add\+Warning}} (const char $\ast$A,...)
+\begin{DoxyCompactList}\small\item\em Adds a char list to the processing and textbuffer (in warning message font) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_console_log_ab195a855a6f090976eb1fd5ffa45daf9}{Add\+Input}} (const char $\ast$A,...)
+\begin{DoxyCompactList}\small\item\em Adds a message to the input box (the command line where the user types) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_console_log_a4e0b06f10fb3245eef8b32240026d305}{Backspace\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Removes the most recent entry from the buffer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_console_log_a6d6030511a8e12488a9496d9810973d8}{Clear\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Resets the input box. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_console_log_a9f4cdb033609ccd4882a7604d1e0a5e0}{Toggle\+Active}} ()
+\begin{DoxyCompactList}\small\item\em Toggles whether the messages are rendered. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_console_log_a96acce653e53dc3c2da5e2b971c51600}{Set\+Inactive}} ()
+\begin{DoxyCompactList}\small\item\em Forces the message to not be rendered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{struct_console_log_1_1message_data}{message\+Data}} $>$ \mbox{\hyperlink{class_console_log_a1799b788b797e1c76bbd651a9e11a01b}{Message\+Collection}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_console_log_a683fde8fdfcb010a1b7cba6ec69a2ac5}{Console\+Log}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_log_a2617a594902fdc177a8a8908e6b672cc}{Console\+Log}} (const \mbox{\hyperlink{class_console_log}{Console\+Log}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_log_a94e1fefe90bd79a4ef03778dbfe8a724}{Console\+Log}} (\mbox{\hyperlink{class_console_log}{Console\+Log}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_log}{Console\+Log}} \& \mbox{\hyperlink{class_console_log_ac0f076765c758f76e1cb15abd63c63af}{operator=}} (const \mbox{\hyperlink{class_console_log}{Console\+Log}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_log}{Console\+Log}} \& \mbox{\hyperlink{class_console_log_aec18d483d8f5b1a553816ecb67f1d8f4}{operator=}} (\mbox{\hyperlink{class_console_log}{Console\+Log}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_log_a356c7814f2a39197ccfd50402480b461}{$\sim$\+Console\+Log}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_log_ac8ed4290a6d69ee3247ed1b4ed85117b}{priv\+Delete}} ()
+\item 
+void \mbox{\hyperlink{class_console_log_ab4c41a814d01a2522b897da177953a31}{priv\+Render}} ()
+\item 
+void \mbox{\hyperlink{class_console_log_aa4fbf8bb456a78fb34f3a5f6fec04cd5}{priv\+Toggle\+Active}} ()
+\item 
+void \mbox{\hyperlink{class_console_log_a6793c375d34420dd65de20bf840243b6}{priv\+Set\+Inactive}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_console_log}{Console\+Log}} \& \mbox{\hyperlink{class_console_log_a56da2f3a37d16fb761aa6198754cdd23}{Instance}} ()
+\item 
+static void \mbox{\hyperlink{class_console_log_ae37be348e2300f9f41c13c06bcdcccda}{Delete}} ()
+\item 
+static void \mbox{\hyperlink{class_console_log_a2b9ab0591e320748b74fedc4c3e89e7a}{Render}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$ \mbox{\hyperlink{class_console_log_a1d438d2addff4190ee3a33f54d08bf83}{font\+Default}}
+\item 
+\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$ \mbox{\hyperlink{class_console_log_a94f30027d26773b9024c5a7b8d0b7b44}{font\+Warning}}
+\item 
+\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$ \mbox{\hyperlink{class_console_log_aa96628c20d7d6b0e7128a66e50ebcd51}{font\+Error}}
+\item 
+\mbox{\hyperlink{class_console_log_a1799b788b797e1c76bbd651a9e11a01b}{Message\+Collection}} \mbox{\hyperlink{class_console_log_a3bd601d87d91601c0097cf1ae86cadd3}{messages}}
+\item 
+std\+::string \mbox{\hyperlink{class_console_log_a5c78756387262dd5ca9fd98d8c962d8f}{input\+Box}}
+\item 
+int \mbox{\hyperlink{class_console_log_a6b69ab5a3510c2f6b4924e08e51716cc}{input\+Box\+Height}}
+\item 
+int \mbox{\hyperlink{class_console_log_a7ad205114454d8d85585c3ab3f127b42}{anchorX}}
+\item 
+int \mbox{\hyperlink{class_console_log_ab8d587222e500328b770cdafcbbb7488}{anchorY}}
+\item 
+bool \mbox{\hyperlink{class_console_log_a762bd4a929c7a80fffc8ec869c6a670f}{active}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_console_log}{Console\+Log}} $\ast$ \mbox{\hyperlink{class_console_log_a1409dfab2c8434a719b778403409007a}{ptr\+Instance}} = nullptr
+\item 
+static char \mbox{\hyperlink{class_console_log_a306e7802122bc05434fb845e466201a9}{Debug\+Buff}} \mbox{[}256\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_console_log_a7891c59a9caf2fb8ed28e3f43306d7ee}{Console\+Log\+Attorney}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_console_log_a1799b788b797e1c76bbd651a9e11a01b}\label{class_console_log_a1799b788b797e1c76bbd651a9e11a01b}} 
+\index{ConsoleLog@{ConsoleLog}!MessageCollection@{MessageCollection}}
+\index{MessageCollection@{MessageCollection}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{MessageCollection}{MessageCollection}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{struct_console_log_1_1message_data}{message\+Data}}$>$ \mbox{\hyperlink{class_console_log_a1799b788b797e1c76bbd651a9e11a01b}{Console\+Log\+::\+Message\+Collection}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_console_log_a683fde8fdfcb010a1b7cba6ec69a2ac5}\label{class_console_log_a683fde8fdfcb010a1b7cba6ec69a2ac5}} 
+\index{ConsoleLog@{ConsoleLog}!ConsoleLog@{ConsoleLog}}
+\index{ConsoleLog@{ConsoleLog}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{ConsoleLog()}{ConsoleLog()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Console\+Log\+::\+Console\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Default constructor. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_a683fde8fdfcb010a1b7cba6ec69a2ac5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_a683fde8fdfcb010a1b7cba6ec69a2ac5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_log_a2617a594902fdc177a8a8908e6b672cc}\label{class_console_log_a2617a594902fdc177a8a8908e6b672cc}} 
+\index{ConsoleLog@{ConsoleLog}!ConsoleLog@{ConsoleLog}}
+\index{ConsoleLog@{ConsoleLog}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{ConsoleLog()}{ConsoleLog()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Console\+Log\+::\+Console\+Log (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_console_log}{Console\+Log}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_console_log_a94e1fefe90bd79a4ef03778dbfe8a724}\label{class_console_log_a94e1fefe90bd79a4ef03778dbfe8a724}} 
+\index{ConsoleLog@{ConsoleLog}!ConsoleLog@{ConsoleLog}}
+\index{ConsoleLog@{ConsoleLog}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{ConsoleLog()}{ConsoleLog()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Console\+Log\+::\+Console\+Log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_log}{Console\+Log}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_console_log_a356c7814f2a39197ccfd50402480b461}\label{class_console_log_a356c7814f2a39197ccfd50402480b461}} 
+\index{ConsoleLog@{ConsoleLog}!````~ConsoleLog@{$\sim$ConsoleLog}}
+\index{````~ConsoleLog@{$\sim$ConsoleLog}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{$\sim$ConsoleLog()}{~ConsoleLog()}}
+{\footnotesize\ttfamily Console\+Log\+::$\sim$\+Console\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_console_log_a1c346b3e687eaf864fa262328629d2b4}\label{class_console_log_a1c346b3e687eaf864fa262328629d2b4}} 
+\index{ConsoleLog@{ConsoleLog}!Add@{Add}}
+\index{Add@{Add}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily static void Console\+Log\+::\+Add (\begin{DoxyParamCaption}\item[{const char $\ast$}]{A,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a char list to the processing and textbuffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A char \\
+\hline
+{\em ...} & Variable arguments providing additional letters \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_a1c346b3e687eaf864fa262328629d2b4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_a1c346b3e687eaf864fa262328629d2b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_log_a6af2544a5ad4b729647a5fe92cc21b53}\label{class_console_log_a6af2544a5ad4b729647a5fe92cc21b53}} 
+\index{ConsoleLog@{ConsoleLog}!AddError@{AddError}}
+\index{AddError@{AddError}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{AddError()}{AddError()}}
+{\footnotesize\ttfamily static void Console\+Log\+::\+Add\+Error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{A,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a char list to the processing and textbuffer (in error message font) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A char \\
+\hline
+{\em ...} & Variable arguments providing additional letters \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_a6af2544a5ad4b729647a5fe92cc21b53_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_a6af2544a5ad4b729647a5fe92cc21b53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_log_ab195a855a6f090976eb1fd5ffa45daf9}\label{class_console_log_ab195a855a6f090976eb1fd5ffa45daf9}} 
+\index{ConsoleLog@{ConsoleLog}!AddInput@{AddInput}}
+\index{AddInput@{AddInput}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{AddInput()}{AddInput()}}
+{\footnotesize\ttfamily static void Console\+Log\+::\+Add\+Input (\begin{DoxyParamCaption}\item[{const char $\ast$}]{A,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a message to the input box (the command line where the user types) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A char \\
+\hline
+{\em ...} & Variable arguments providing additional letters \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_ab195a855a6f090976eb1fd5ffa45daf9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_console_log_ab195a855a6f090976eb1fd5ffa45daf9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_log_aba68cb62e3b15c39529f61fa30a193a9}\label{class_console_log_aba68cb62e3b15c39529f61fa30a193a9}} 
+\index{ConsoleLog@{ConsoleLog}!AddWarning@{AddWarning}}
+\index{AddWarning@{AddWarning}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{AddWarning()}{AddWarning()}}
+{\footnotesize\ttfamily static void Console\+Log\+::\+Add\+Warning (\begin{DoxyParamCaption}\item[{const char $\ast$}]{A,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a char list to the processing and textbuffer (in warning message font) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A char \\
+\hline
+{\em ...} & Variable arguments providing additional information. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_aba68cb62e3b15c39529f61fa30a193a9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_aba68cb62e3b15c39529f61fa30a193a9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_log_a4e0b06f10fb3245eef8b32240026d305}\label{class_console_log_a4e0b06f10fb3245eef8b32240026d305}} 
+\index{ConsoleLog@{ConsoleLog}!BackspaceInput@{BackspaceInput}}
+\index{BackspaceInput@{BackspaceInput}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{BackspaceInput()}{BackspaceInput()}}
+{\footnotesize\ttfamily static void Console\+Log\+::\+Backspace\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Removes the most recent entry from the buffer. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_a4e0b06f10fb3245eef8b32240026d305_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_log_a6d6030511a8e12488a9496d9810973d8}\label{class_console_log_a6d6030511a8e12488a9496d9810973d8}} 
+\index{ConsoleLog@{ConsoleLog}!ClearInput@{ClearInput}}
+\index{ClearInput@{ClearInput}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{ClearInput()}{ClearInput()}}
+{\footnotesize\ttfamily static void Console\+Log\+::\+Clear\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Resets the input box. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_a6d6030511a8e12488a9496d9810973d8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_log_ae37be348e2300f9f41c13c06bcdcccda}\label{class_console_log_ae37be348e2300f9f41c13c06bcdcccda}} 
+\index{ConsoleLog@{ConsoleLog}!Delete@{Delete}}
+\index{Delete@{Delete}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily static void Console\+Log\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_ae37be348e2300f9f41c13c06bcdcccda_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_ae37be348e2300f9f41c13c06bcdcccda_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_log_a56da2f3a37d16fb761aa6198754cdd23}\label{class_console_log_a56da2f3a37d16fb761aa6198754cdd23}} 
+\index{ConsoleLog@{ConsoleLog}!Instance@{Instance}}
+\index{Instance@{Instance}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_console_log}{Console\+Log}}\& Console\+Log\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_a56da2f3a37d16fb761aa6198754cdd23_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_a56da2f3a37d16fb761aa6198754cdd23_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_log_aec18d483d8f5b1a553816ecb67f1d8f4}\label{class_console_log_aec18d483d8f5b1a553816ecb67f1d8f4}} 
+\index{ConsoleLog@{ConsoleLog}!operator=@{operator=}}
+\index{operator=@{operator=}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_log}{Console\+Log}}\& Console\+Log\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_log}{Console\+Log}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_console_log_ac0f076765c758f76e1cb15abd63c63af}\label{class_console_log_ac0f076765c758f76e1cb15abd63c63af}} 
+\index{ConsoleLog@{ConsoleLog}!operator=@{operator=}}
+\index{operator=@{operator=}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_log}{Console\+Log}}\& Console\+Log\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_console_log}{Console\+Log}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_console_log_ac8ed4290a6d69ee3247ed1b4ed85117b}\label{class_console_log_ac8ed4290a6d69ee3247ed1b4ed85117b}} 
+\index{ConsoleLog@{ConsoleLog}!privDelete@{privDelete}}
+\index{privDelete@{privDelete}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{privDelete()}{privDelete()}}
+{\footnotesize\ttfamily void Console\+Log\+::priv\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_ac8ed4290a6d69ee3247ed1b4ed85117b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_log_ab4c41a814d01a2522b897da177953a31}\label{class_console_log_ab4c41a814d01a2522b897da177953a31}} 
+\index{ConsoleLog@{ConsoleLog}!privRender@{privRender}}
+\index{privRender@{privRender}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{privRender()}{privRender()}}
+{\footnotesize\ttfamily void Console\+Log\+::priv\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_ab4c41a814d01a2522b897da177953a31_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_ab4c41a814d01a2522b897da177953a31_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_log_a6793c375d34420dd65de20bf840243b6}\label{class_console_log_a6793c375d34420dd65de20bf840243b6}} 
+\index{ConsoleLog@{ConsoleLog}!privSetInactive@{privSetInactive}}
+\index{privSetInactive@{privSetInactive}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{privSetInactive()}{privSetInactive()}}
+{\footnotesize\ttfamily void Console\+Log\+::priv\+Set\+Inactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_a6793c375d34420dd65de20bf840243b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_log_aa4fbf8bb456a78fb34f3a5f6fec04cd5}\label{class_console_log_aa4fbf8bb456a78fb34f3a5f6fec04cd5}} 
+\index{ConsoleLog@{ConsoleLog}!privToggleActive@{privToggleActive}}
+\index{privToggleActive@{privToggleActive}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{privToggleActive()}{privToggleActive()}}
+{\footnotesize\ttfamily void Console\+Log\+::priv\+Toggle\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_aa4fbf8bb456a78fb34f3a5f6fec04cd5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_log_a2b9ab0591e320748b74fedc4c3e89e7a}\label{class_console_log_a2b9ab0591e320748b74fedc4c3e89e7a}} 
+\index{ConsoleLog@{ConsoleLog}!Render@{Render}}
+\index{Render@{Render}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily static void Console\+Log\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_a2b9ab0591e320748b74fedc4c3e89e7a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_a2b9ab0591e320748b74fedc4c3e89e7a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_log_a96acce653e53dc3c2da5e2b971c51600}\label{class_console_log_a96acce653e53dc3c2da5e2b971c51600}} 
+\index{ConsoleLog@{ConsoleLog}!SetInactive@{SetInactive}}
+\index{SetInactive@{SetInactive}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{SetInactive()}{SetInactive()}}
+{\footnotesize\ttfamily static void Console\+Log\+::\+Set\+Inactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Forces the message to not be rendered. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_a96acce653e53dc3c2da5e2b971c51600_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_log_a9f4cdb033609ccd4882a7604d1e0a5e0}\label{class_console_log_a9f4cdb033609ccd4882a7604d1e0a5e0}} 
+\index{ConsoleLog@{ConsoleLog}!ToggleActive@{ToggleActive}}
+\index{ToggleActive@{ToggleActive}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{ToggleActive()}{ToggleActive()}}
+{\footnotesize\ttfamily static void Console\+Log\+::\+Toggle\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Toggles whether the messages are rendered. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_log_a9f4cdb033609ccd4882a7604d1e0a5e0_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_console_log_a7891c59a9caf2fb8ed28e3f43306d7ee}\label{class_console_log_a7891c59a9caf2fb8ed28e3f43306d7ee}} 
+\index{ConsoleLog@{ConsoleLog}!ConsoleLogAttorney@{ConsoleLogAttorney}}
+\index{ConsoleLogAttorney@{ConsoleLogAttorney}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{ConsoleLogAttorney}{ConsoleLogAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_console_log_attorney}{Console\+Log\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_console_log_a762bd4a929c7a80fffc8ec869c6a670f}\label{class_console_log_a762bd4a929c7a80fffc8ec869c6a670f}} 
+\index{ConsoleLog@{ConsoleLog}!active@{active}}
+\index{active@{active}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily bool Console\+Log\+::active\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_log_a7ad205114454d8d85585c3ab3f127b42}\label{class_console_log_a7ad205114454d8d85585c3ab3f127b42}} 
+\index{ConsoleLog@{ConsoleLog}!anchorX@{anchorX}}
+\index{anchorX@{anchorX}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{anchorX}{anchorX}}
+{\footnotesize\ttfamily int Console\+Log\+::anchorX\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_log_ab8d587222e500328b770cdafcbbb7488}\label{class_console_log_ab8d587222e500328b770cdafcbbb7488}} 
+\index{ConsoleLog@{ConsoleLog}!anchorY@{anchorY}}
+\index{anchorY@{anchorY}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{anchorY}{anchorY}}
+{\footnotesize\ttfamily int Console\+Log\+::anchorY\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_log_a306e7802122bc05434fb845e466201a9}\label{class_console_log_a306e7802122bc05434fb845e466201a9}} 
+\index{ConsoleLog@{ConsoleLog}!DebugBuff@{DebugBuff}}
+\index{DebugBuff@{DebugBuff}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{DebugBuff}{DebugBuff}}
+{\footnotesize\ttfamily char Console\+Log\+::\+Debug\+Buff\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_log_a1d438d2addff4190ee3a33f54d08bf83}\label{class_console_log_a1d438d2addff4190ee3a33f54d08bf83}} 
+\index{ConsoleLog@{ConsoleLog}!fontDefault@{fontDefault}}
+\index{fontDefault@{fontDefault}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{fontDefault}{fontDefault}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}}$\ast$ Console\+Log\+::font\+Default\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_log_aa96628c20d7d6b0e7128a66e50ebcd51}\label{class_console_log_aa96628c20d7d6b0e7128a66e50ebcd51}} 
+\index{ConsoleLog@{ConsoleLog}!fontError@{fontError}}
+\index{fontError@{fontError}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{fontError}{fontError}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}}$\ast$ Console\+Log\+::font\+Error\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_log_a94f30027d26773b9024c5a7b8d0b7b44}\label{class_console_log_a94f30027d26773b9024c5a7b8d0b7b44}} 
+\index{ConsoleLog@{ConsoleLog}!fontWarning@{fontWarning}}
+\index{fontWarning@{fontWarning}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{fontWarning}{fontWarning}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}}$\ast$ Console\+Log\+::font\+Warning\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_log_a5c78756387262dd5ca9fd98d8c962d8f}\label{class_console_log_a5c78756387262dd5ca9fd98d8c962d8f}} 
+\index{ConsoleLog@{ConsoleLog}!inputBox@{inputBox}}
+\index{inputBox@{inputBox}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{inputBox}{inputBox}}
+{\footnotesize\ttfamily std\+::string Console\+Log\+::input\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_log_a6b69ab5a3510c2f6b4924e08e51716cc}\label{class_console_log_a6b69ab5a3510c2f6b4924e08e51716cc}} 
+\index{ConsoleLog@{ConsoleLog}!inputBoxHeight@{inputBoxHeight}}
+\index{inputBoxHeight@{inputBoxHeight}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{inputBoxHeight}{inputBoxHeight}}
+{\footnotesize\ttfamily int Console\+Log\+::input\+Box\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_log_a3bd601d87d91601c0097cf1ae86cadd3}\label{class_console_log_a3bd601d87d91601c0097cf1ae86cadd3}} 
+\index{ConsoleLog@{ConsoleLog}!messages@{messages}}
+\index{messages@{messages}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{messages}{messages}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_log_a1799b788b797e1c76bbd651a9e11a01b}{Message\+Collection}} Console\+Log\+::messages\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_log_a1409dfab2c8434a719b778403409007a}\label{class_console_log_a1409dfab2c8434a719b778403409007a}} 
+\index{ConsoleLog@{ConsoleLog}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!ConsoleLog@{ConsoleLog}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_log}{Console\+Log}} $\ast$ Console\+Log\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_console_log_8h}{Console\+Log.\+h}}\item 
+\mbox{\hyperlink{_console_log_8cpp}{Console\+Log.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="SpriteFontManager" name="SpriteFontManager">
+<area shape="rect" id="node1" title=" " alt="" coords="5,947,161,1200"/>
+<area shape="rect" id="node2" title=" " alt="" coords="80,792,255,884"/>
+<area shape="rect" id="node3" href="$class_sprite_font.html" title=" " alt="" coords="203,549,342,729"/>
+<area shape="rect" id="node4" title=" " alt="" coords="198,409,369,487"/>
+<area shape="rect" id="node5" href="$class_sly_sprite.html" title=" " alt="" coords="225,5,341,347"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="94,409,174,487"/>
+<area shape="rect" id="node7" title="STL class." alt="" coords="71,130,197,222"/>
+</map>

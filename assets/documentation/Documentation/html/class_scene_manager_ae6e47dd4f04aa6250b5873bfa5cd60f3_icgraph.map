@@ -1,0 +1,8 @@
+<map id="SceneManager::privSetNextScene" name="SceneManager::privSetNextScene">
+<area shape="rect" id="node1" title="Private set next scene." alt="" coords="711,35,893,76"/>
+<area shape="rect" id="node2" href="$class_scene_manager.html#a2aa6f66a72fb0a3a7458d1053c9a58f5" title="Priv reload default." alt="" coords="474,5,650,47"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#a5254df5df6700fee4ad13692901bb0c7" title="Sets next scene." alt="" coords="461,71,663,98"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#a5637820d98428183b76f178b15312e84" title="Loads the default scene." alt="" coords="228,13,413,39"/>
+<area shape="rect" id="node4" href="$class_reload_command.html#ab02957bb0a308480ecbeec0abc60f149" title="The base command required to be implemented by all console commands. The resulting trigger mechanism ..." alt="" coords="5,13,180,39"/>
+<area shape="rect" id="node6" href="$class_sly.html#a0e65e74526d0c79d554267cbeee21d80" title="Loads engine starting content. Loads first scene." alt="" coords="259,71,382,98"/>
+</map>

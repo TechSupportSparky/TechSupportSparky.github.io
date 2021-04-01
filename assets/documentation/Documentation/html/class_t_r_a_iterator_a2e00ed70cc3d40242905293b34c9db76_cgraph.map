@@ -1,0 +1,7 @@
+<map id="TRAIterator::TRAIterator" name="TRAIterator::TRAIterator">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,165,134"/>
+<area shape="rect" id="node2" href="$class_terrain_rectangle_area.html#ae46e43312885a6700cc65f5f1b2baf9f" title="Gets minimum and maximum." alt="" coords="215,5,362,47"/>
+<area shape="rect" id="node3" href="$class_terrain_rectangle_area.html#a6c782efcbd32b969a205fa0f7f29c68a" title=" " alt="" coords="215,71,362,112"/>
+<area shape="rect" id="node4" href="$class_terrain_cell.html#a054f0cb8b8d5d7379c89c4b0264e602a" title="Sets the indices of i and j." alt="" coords="217,137,360,163"/>
+<area shape="rect" id="node5" href="$class_terrain_cell.html#a411077e6ed84e0cbadc9492e8cceb952" title="Sets the terrain to be held within the object." alt="" coords="213,187,364,214"/>
+</map>

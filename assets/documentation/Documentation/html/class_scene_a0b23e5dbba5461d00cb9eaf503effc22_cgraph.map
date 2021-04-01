@@ -1,0 +1,4 @@
+<map id="Scene::SetCollisionSelf" name="Scene::SetCollisionSelf">
+<area shape="rect" id="node1" title="Sets collision self." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node2" href="$class_collision_manager.html#a87ae5ba464b59df483efbe0fed6108ad" title="Sets collision self." alt="" coords="212,5,432,32"/>
+</map>

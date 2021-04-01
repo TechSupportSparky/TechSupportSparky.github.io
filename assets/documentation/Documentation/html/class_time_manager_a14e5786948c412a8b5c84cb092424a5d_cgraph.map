@@ -1,0 +1,6 @@
+<map id="TimeManager::ProcessTime" name="TimeManager::ProcessTime">
+<area shape="rect" id="node1" title="Process the time described by sys_time." alt="" coords="5,31,189,57"/>
+<area shape="rect" id="node2" href="$class_time_manager.html#ac06b0a182b394ddc0ac554ad090ee019" title="Gets the instance." alt="" coords="260,5,417,32"/>
+<area shape="rect" id="node4" href="$class_time_manager.html#abb2dec3e58a74f84c4c5c016b9dfdeaf" title="Private process time. Take currentTime &#45; previousTime." alt="" coords="237,56,440,83"/>
+<area shape="rect" id="node3" href="$class_time_manager.html#a46d2773caea1858a19594d58d57404c2" title="Default constructor." alt="" coords="488,5,675,32"/>
+</map>

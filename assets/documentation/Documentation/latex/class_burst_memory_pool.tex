@@ -1,0 +1,122 @@
+\hypertarget{class_burst_memory_pool}{}\doxysection{Burst\+Memory\+Pool Class Reference}
+\label{class_burst_memory_pool}\index{BurstMemoryPool@{BurstMemoryPool}}
+
+
+{\ttfamily \#include $<$Burst\+Memory\+Pool.\+h$>$}
+
+
+
+Collaboration diagram for Burst\+Memory\+Pool\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_memory_pool__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_burst_memory_pool_a587658fa8ce5430ea22070f9201fd077}{Burst\+Memory\+Pool}} ()=default
+\item 
+\mbox{\hyperlink{class_burst_memory_pool_a3a5b2173ecd6389f12e9379b1808c8c4}{Burst\+Memory\+Pool}} (const \mbox{\hyperlink{class_burst_memory_pool}{Burst\+Memory\+Pool}} \&)=delete
+\item 
+\mbox{\hyperlink{class_burst_memory_pool_a42956f33bf7f364fddf1527250f3eff0}{Burst\+Memory\+Pool}} (\mbox{\hyperlink{class_burst_memory_pool}{Burst\+Memory\+Pool}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_burst_memory_pool}{Burst\+Memory\+Pool}} \& \mbox{\hyperlink{class_burst_memory_pool_a62a41a0c125a647a6978e55a893f6a84}{operator=}} (const \mbox{\hyperlink{class_burst_memory_pool}{Burst\+Memory\+Pool}} \&)=delete
+\item 
+\mbox{\hyperlink{class_burst_memory_pool}{Burst\+Memory\+Pool}} \& \mbox{\hyperlink{class_burst_memory_pool_a0fa7ba53069c6ef056bb422de7cabedb}{operator=}} (\mbox{\hyperlink{class_burst_memory_pool}{Burst\+Memory\+Pool}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_burst_memory_pool_a404449fc37878238c0e0c35f5e32bd5c}{$\sim$\+Burst\+Memory\+Pool}} ()
+\item 
+\mbox{\hyperlink{class_burst}{Burst}} $\ast$ \mbox{\hyperlink{class_burst_memory_pool_a0d01419dfc8400b118540481ff7b5826}{get\+Burst}} ()
+\item 
+void \mbox{\hyperlink{class_burst_memory_pool_a87af950a286db4442e9597b4669b8322}{return\+Burst}} (\mbox{\hyperlink{class_burst}{Burst}} $\ast$the\+Burst)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::stack$<$ \mbox{\hyperlink{class_burst}{Burst}} $\ast$ $>$ \mbox{\hyperlink{class_burst_memory_pool_aa0b94fe841c9eb6ae76f5ab9d907ec72}{recycled\+Items}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_burst_memory_pool_a587658fa8ce5430ea22070f9201fd077}\label{class_burst_memory_pool_a587658fa8ce5430ea22070f9201fd077}} 
+\index{BurstMemoryPool@{BurstMemoryPool}!BurstMemoryPool@{BurstMemoryPool}}
+\index{BurstMemoryPool@{BurstMemoryPool}!BurstMemoryPool@{BurstMemoryPool}}
+\doxysubsubsection{\texorpdfstring{BurstMemoryPool()}{BurstMemoryPool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Burst\+Memory\+Pool\+::\+Burst\+Memory\+Pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_burst_memory_pool_a3a5b2173ecd6389f12e9379b1808c8c4}\label{class_burst_memory_pool_a3a5b2173ecd6389f12e9379b1808c8c4}} 
+\index{BurstMemoryPool@{BurstMemoryPool}!BurstMemoryPool@{BurstMemoryPool}}
+\index{BurstMemoryPool@{BurstMemoryPool}!BurstMemoryPool@{BurstMemoryPool}}
+\doxysubsubsection{\texorpdfstring{BurstMemoryPool()}{BurstMemoryPool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Burst\+Memory\+Pool\+::\+Burst\+Memory\+Pool (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_burst_memory_pool}{Burst\+Memory\+Pool}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_burst_memory_pool_a42956f33bf7f364fddf1527250f3eff0}\label{class_burst_memory_pool_a42956f33bf7f364fddf1527250f3eff0}} 
+\index{BurstMemoryPool@{BurstMemoryPool}!BurstMemoryPool@{BurstMemoryPool}}
+\index{BurstMemoryPool@{BurstMemoryPool}!BurstMemoryPool@{BurstMemoryPool}}
+\doxysubsubsection{\texorpdfstring{BurstMemoryPool()}{BurstMemoryPool()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Burst\+Memory\+Pool\+::\+Burst\+Memory\+Pool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_burst_memory_pool}{Burst\+Memory\+Pool}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_burst_memory_pool_a404449fc37878238c0e0c35f5e32bd5c}\label{class_burst_memory_pool_a404449fc37878238c0e0c35f5e32bd5c}} 
+\index{BurstMemoryPool@{BurstMemoryPool}!````~BurstMemoryPool@{$\sim$BurstMemoryPool}}
+\index{````~BurstMemoryPool@{$\sim$BurstMemoryPool}!BurstMemoryPool@{BurstMemoryPool}}
+\doxysubsubsection{\texorpdfstring{$\sim$BurstMemoryPool()}{~BurstMemoryPool()}}
+{\footnotesize\ttfamily Burst\+Memory\+Pool\+::$\sim$\+Burst\+Memory\+Pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_burst_memory_pool_a0d01419dfc8400b118540481ff7b5826}\label{class_burst_memory_pool_a0d01419dfc8400b118540481ff7b5826}} 
+\index{BurstMemoryPool@{BurstMemoryPool}!getBurst@{getBurst}}
+\index{getBurst@{getBurst}!BurstMemoryPool@{BurstMemoryPool}}
+\doxysubsubsection{\texorpdfstring{getBurst()}{getBurst()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_burst}{Burst}} $\ast$ Burst\+Memory\+Pool\+::get\+Burst (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_memory_pool_a0d01419dfc8400b118540481ff7b5826_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_burst_memory_pool_a0fa7ba53069c6ef056bb422de7cabedb}\label{class_burst_memory_pool_a0fa7ba53069c6ef056bb422de7cabedb}} 
+\index{BurstMemoryPool@{BurstMemoryPool}!operator=@{operator=}}
+\index{operator=@{operator=}!BurstMemoryPool@{BurstMemoryPool}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_burst_memory_pool}{Burst\+Memory\+Pool}}\& Burst\+Memory\+Pool\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_burst_memory_pool}{Burst\+Memory\+Pool}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_burst_memory_pool_a62a41a0c125a647a6978e55a893f6a84}\label{class_burst_memory_pool_a62a41a0c125a647a6978e55a893f6a84}} 
+\index{BurstMemoryPool@{BurstMemoryPool}!operator=@{operator=}}
+\index{operator=@{operator=}!BurstMemoryPool@{BurstMemoryPool}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_burst_memory_pool}{Burst\+Memory\+Pool}}\& Burst\+Memory\+Pool\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_burst_memory_pool}{Burst\+Memory\+Pool}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_burst_memory_pool_a87af950a286db4442e9597b4669b8322}\label{class_burst_memory_pool_a87af950a286db4442e9597b4669b8322}} 
+\index{BurstMemoryPool@{BurstMemoryPool}!returnBurst@{returnBurst}}
+\index{returnBurst@{returnBurst}!BurstMemoryPool@{BurstMemoryPool}}
+\doxysubsubsection{\texorpdfstring{returnBurst()}{returnBurst()}}
+{\footnotesize\ttfamily void Burst\+Memory\+Pool\+::return\+Burst (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_burst}{Burst}} $\ast$}]{the\+Burst }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_burst_memory_pool_a87af950a286db4442e9597b4669b8322_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_burst_memory_pool_aa0b94fe841c9eb6ae76f5ab9d907ec72}\label{class_burst_memory_pool_aa0b94fe841c9eb6ae76f5ab9d907ec72}} 
+\index{BurstMemoryPool@{BurstMemoryPool}!recycledItems@{recycledItems}}
+\index{recycledItems@{recycledItems}!BurstMemoryPool@{BurstMemoryPool}}
+\doxysubsubsection{\texorpdfstring{recycledItems}{recycledItems}}
+{\footnotesize\ttfamily std\+::stack$<$\mbox{\hyperlink{class_burst}{Burst}}$\ast$$>$ Burst\+Memory\+Pool\+::recycled\+Items\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_burst_memory_pool_8h}{Burst\+Memory\+Pool.\+h}}\item 
+\mbox{\hyperlink{_burst_memory_pool_8cpp}{Burst\+Memory\+Pool.\+cpp}}\end{DoxyCompactItemize}

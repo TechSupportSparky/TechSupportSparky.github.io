@@ -1,0 +1,5 @@
+<map id="TerrainManager::privGetCurrentTerrain" name="TerrainManager::privGetCurrentTerrain">
+<area shape="rect" id="node1" title="Internal call to return the current terrain." alt="" coords="479,5,680,47"/>
+<area shape="rect" id="node2" href="$class_terrain_manager.html#aa82b2b0b9f2c7e2235fa98c903eea44c" title="Gets the current terrain." alt="" coords="248,5,431,47"/>
+<area shape="rect" id="node3" href="$class_collision_test_terrain_command.html#adae6dfa0f875cdfa7e6a8cea76aa02cc" title="Executes this command. Pure virtual function must be defined by all derived commands." alt="" coords="5,5,200,47"/>
+</map>

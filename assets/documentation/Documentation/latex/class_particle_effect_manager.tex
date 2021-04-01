@@ -1,0 +1,359 @@
+\hypertarget{class_particle_effect_manager}{}\doxysection{Particle\+Effect\+Manager Class Reference}
+\label{class_particle_effect_manager}\index{ParticleEffectManager@{ParticleEffectManager}}
+
+
+{\ttfamily \#include $<$Particle\+Effect\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Particle\+Effect\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$ \mbox{\hyperlink{class_particle_effect_manager_a5219f3da0e879c9845f349b4c987a7b7}{Get}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Gets a particle effect$\ast$ using the given key. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_particle_effect_manager_a67731ce7db253e79d7d42afc6a12e9f4}{Load}} (std\+::string key, \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$pe)
+\begin{DoxyCompactList}\small\item\em Loads the particle effect into the manager using the associated key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::string \mbox{\hyperlink{class_particle_effect_manager_a0364327b6699409302c8e6bb8c503724}{Map\+Key}}
+\item 
+typedef std\+::map$<$ \mbox{\hyperlink{class_particle_effect_manager_a0364327b6699409302c8e6bb8c503724}{Map\+Key}}, \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$ $>$ \mbox{\hyperlink{class_particle_effect_manager_a0c96561ebdfbec0d9b750e6f5a1e0280}{Storage\+Map}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_particle_effect_manager_a5423d1a88f78ec6f779ac6685b043773}{Particle\+Effect\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_particle_effect_manager_a12c48f72f677dcf9c95716b298248ba7}{Particle\+Effect\+Manager}} (const \mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_particle_effect_manager_ad08f1b8ff007f313d0b254b230d55400}{Particle\+Effect\+Manager}} (\mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}} \& \mbox{\hyperlink{class_particle_effect_manager_a3f3855a89b85777520f646668cb52c23}{operator=}} (const \mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}} \& \mbox{\hyperlink{class_particle_effect_manager_aa80aea42f48153e50b54a6074f7f29be}{operator=}} (\mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_particle_effect_manager_a9c5d0c7e071ad725eb8f5a9a46cb08a2}{$\sim$\+Particle\+Effect\+Manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_particle_effect_manager_a25ef2bfd94329ae545caba60ffae473d}{priv\+Delete}} ()
+\begin{DoxyCompactList}\small\item\em Internal delete call to remove the instance of \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$ \mbox{\hyperlink{class_particle_effect_manager_abded40bbc3e6a76f9b47a0fb8103ff7b}{priv\+Get}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Internal call to get. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_particle_effect_manager_a62094284111f66b0079e02db590b9fe8}{priv\+Load}} (std\+::string key, \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$pe)
+\begin{DoxyCompactList}\small\item\em Loads a requested particle effect into the manager with the associated key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}} \& \mbox{\hyperlink{class_particle_effect_manager_a0ec038d10c4d82cba26ae84b9001a2e1}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the instance of particle effect manager. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_particle_effect_manager_a088a5d92f4259446a2a9d8b6d0875e1a}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em Call to delete the instance of \mbox{\hyperlink{class_particle}{Particle}} Effect. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_particle_effect_manager_a0c96561ebdfbec0d9b750e6f5a1e0280}{Storage\+Map}} \mbox{\hyperlink{class_particle_effect_manager_aaecd281f8cc39cdd5fd354b1282d7272}{Effect\+Map}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}} $\ast$ \mbox{\hyperlink{class_particle_effect_manager_ae50e6aa38cdcdbcb4d93ac4b887d80c7}{ptr\+Instance}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_particle_effect_manager_a05e6dec3cd25c54e36adea3224712e05}{Particle\+Effect\+Manager\+Attorney}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_particle_effect_manager_a0364327b6699409302c8e6bb8c503724}\label{class_particle_effect_manager_a0364327b6699409302c8e6bb8c503724}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!MapKey@{MapKey}}
+\index{MapKey@{MapKey}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{MapKey}{MapKey}}
+{\footnotesize\ttfamily typedef std\+::string \mbox{\hyperlink{class_particle_effect_manager_a0364327b6699409302c8e6bb8c503724}{Particle\+Effect\+Manager\+::\+Map\+Key}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_particle_effect_manager_a0c96561ebdfbec0d9b750e6f5a1e0280}\label{class_particle_effect_manager_a0c96561ebdfbec0d9b750e6f5a1e0280}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!StorageMap@{StorageMap}}
+\index{StorageMap@{StorageMap}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{StorageMap}{StorageMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$\mbox{\hyperlink{class_particle_effect_manager_a0364327b6699409302c8e6bb8c503724}{Map\+Key}}, \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}}$\ast$$>$ \mbox{\hyperlink{class_particle_effect_manager_a0c96561ebdfbec0d9b750e6f5a1e0280}{Particle\+Effect\+Manager\+::\+Storage\+Map}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_particle_effect_manager_a5423d1a88f78ec6f779ac6685b043773}\label{class_particle_effect_manager_a5423d1a88f78ec6f779ac6685b043773}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!ParticleEffectManager@{ParticleEffectManager}}
+\index{ParticleEffectManager@{ParticleEffectManager}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{ParticleEffectManager()}{ParticleEffectManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Particle\+Effect\+Manager\+::\+Particle\+Effect\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Default constructor. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_manager_a5423d1a88f78ec6f779ac6685b043773_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_manager_a12c48f72f677dcf9c95716b298248ba7}\label{class_particle_effect_manager_a12c48f72f677dcf9c95716b298248ba7}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!ParticleEffectManager@{ParticleEffectManager}}
+\index{ParticleEffectManager@{ParticleEffectManager}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{ParticleEffectManager()}{ParticleEffectManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Particle\+Effect\+Manager\+::\+Particle\+Effect\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_particle_effect_manager_ad08f1b8ff007f313d0b254b230d55400}\label{class_particle_effect_manager_ad08f1b8ff007f313d0b254b230d55400}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!ParticleEffectManager@{ParticleEffectManager}}
+\index{ParticleEffectManager@{ParticleEffectManager}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{ParticleEffectManager()}{ParticleEffectManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Particle\+Effect\+Manager\+::\+Particle\+Effect\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_particle_effect_manager_a9c5d0c7e071ad725eb8f5a9a46cb08a2}\label{class_particle_effect_manager_a9c5d0c7e071ad725eb8f5a9a46cb08a2}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!````~ParticleEffectManager@{$\sim$ParticleEffectManager}}
+\index{````~ParticleEffectManager@{$\sim$ParticleEffectManager}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParticleEffectManager()}{~ParticleEffectManager()}}
+{\footnotesize\ttfamily Particle\+Effect\+Manager\+::$\sim$\+Particle\+Effect\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_particle_effect_manager_a088a5d92f4259446a2a9d8b6d0875e1a}\label{class_particle_effect_manager_a088a5d92f4259446a2a9d8b6d0875e1a}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!Delete@{Delete}}
+\index{Delete@{Delete}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily static void Particle\+Effect\+Manager\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Call to delete the instance of \mbox{\hyperlink{class_particle}{Particle}} Effect. 
+
+This function is only to be called by the \mbox{\hyperlink{class_sly}{Sly}} engine. ~\newline
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_manager_a088a5d92f4259446a2a9d8b6d0875e1a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_manager_a088a5d92f4259446a2a9d8b6d0875e1a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_manager_a5219f3da0e879c9845f349b4c987a7b7}\label{class_particle_effect_manager_a5219f3da0e879c9845f349b4c987a7b7}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!Get@{Get}}
+\index{Get@{Get}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$ Particle\+Effect\+Manager\+::\+Get (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets a particle effect$\ast$ using the given key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to get.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Null if it fails, else a pointer to a \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_manager_a5219f3da0e879c9845f349b4c987a7b7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_manager_a0ec038d10c4d82cba26ae84b9001a2e1}\label{class_particle_effect_manager_a0ec038d10c4d82cba26ae84b9001a2e1}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!Instance@{Instance}}
+\index{Instance@{Instance}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}} \& Particle\+Effect\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the instance of particle effect manager. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_particle_effect_manager_a0ec038d10c4d82cba26ae84b9001a2e1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_manager_a0ec038d10c4d82cba26ae84b9001a2e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_manager_a67731ce7db253e79d7d42afc6a12e9f4}\label{class_particle_effect_manager_a67731ce7db253e79d7d42afc6a12e9f4}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!Load@{Load}}
+\index{Load@{Load}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily static void Particle\+Effect\+Manager\+::\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$}]{pe }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Loads the particle effect into the manager using the associated key. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em key} & The key. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pe} & If non-\/null, the pe. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_manager_a67731ce7db253e79d7d42afc6a12e9f4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_manager_a3f3855a89b85777520f646668cb52c23}\label{class_particle_effect_manager_a3f3855a89b85777520f646668cb52c23}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!operator=@{operator=}}
+\index{operator=@{operator=}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}}\& Particle\+Effect\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_particle_effect_manager_aa80aea42f48153e50b54a6074f7f29be}\label{class_particle_effect_manager_aa80aea42f48153e50b54a6074f7f29be}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!operator=@{operator=}}
+\index{operator=@{operator=}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}}\& Particle\+Effect\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_particle_effect_manager_a25ef2bfd94329ae545caba60ffae473d}\label{class_particle_effect_manager_a25ef2bfd94329ae545caba60ffae473d}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!privDelete@{privDelete}}
+\index{privDelete@{privDelete}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{privDelete()}{privDelete()}}
+{\footnotesize\ttfamily void Particle\+Effect\+Manager\+::priv\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal delete call to remove the instance of \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}}. 
+
+Only to be called within the engine ~\newline
+ Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_manager_a25ef2bfd94329ae545caba60ffae473d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_manager_abded40bbc3e6a76f9b47a0fb8103ff7b}\label{class_particle_effect_manager_abded40bbc3e6a76f9b47a0fb8103ff7b}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!privGet@{privGet}}
+\index{privGet@{privGet}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{privGet()}{privGet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$ Particle\+Effect\+Manager\+::priv\+Get (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal call to get. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Null if it fails, else a pointer to a \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}}.
+\end{DoxyReturn}
+std\+::string or Map\+Key as input. ~\newline
+ Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_effect_manager_abded40bbc3e6a76f9b47a0fb8103ff7b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_effect_manager_a62094284111f66b0079e02db590b9fe8}\label{class_particle_effect_manager_a62094284111f66b0079e02db590b9fe8}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!privLoad@{privLoad}}
+\index{privLoad@{privLoad}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{privLoad()}{privLoad()}}
+{\footnotesize\ttfamily void Particle\+Effect\+Manager\+::priv\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$}]{pe }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Loads a requested particle effect into the manager with the associated key. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em key} & The key. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pe} & If non-\/null, the pe. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_particle_effect_manager_a62094284111f66b0079e02db590b9fe8_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_particle_effect_manager_a05e6dec3cd25c54e36adea3224712e05}\label{class_particle_effect_manager_a05e6dec3cd25c54e36adea3224712e05}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!ParticleEffectManagerAttorney@{ParticleEffectManagerAttorney}}
+\index{ParticleEffectManagerAttorney@{ParticleEffectManagerAttorney}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{ParticleEffectManagerAttorney}{ParticleEffectManagerAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_particle_effect_manager_attorney}{Particle\+Effect\+Manager\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_particle_effect_manager_aaecd281f8cc39cdd5fd354b1282d7272}\label{class_particle_effect_manager_aaecd281f8cc39cdd5fd354b1282d7272}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!EffectMap@{EffectMap}}
+\index{EffectMap@{EffectMap}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{EffectMap}{EffectMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_effect_manager_a0c96561ebdfbec0d9b750e6f5a1e0280}{Storage\+Map}} Particle\+Effect\+Manager\+::\+Effect\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_particle_effect_manager_ae50e6aa38cdcdbcb4d93ac4b887d80c7}\label{class_particle_effect_manager_ae50e6aa38cdcdbcb4d93ac4b887d80c7}} 
+\index{ParticleEffectManager@{ParticleEffectManager}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!ParticleEffectManager@{ParticleEffectManager}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_effect_manager}{Particle\+Effect\+Manager}} $\ast$ Particle\+Effect\+Manager\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_particle_effect_manager_8h}{Particle\+Effect\+Manager.\+h}}\item 
+\mbox{\hyperlink{_particle_effect_manager_8cpp}{Particle\+Effect\+Manager.\+cpp}}\end{DoxyCompactItemize}

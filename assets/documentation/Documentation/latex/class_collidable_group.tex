@@ -1,0 +1,285 @@
+\hypertarget{class_collidable_group}{}\doxysection{Collidable\+Group Class Reference}
+\label{class_collidable_group}\index{CollidableGroup@{CollidableGroup}}
+
+
+{\ttfamily \#include $<$Collidable\+Group.\+h$>$}
+
+
+
+Inheritance diagram for Collidable\+Group\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{class_collidable_group__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Collidable\+Group\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_collidable_group__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \mbox{\hyperlink{class_collidable}{Collidable}} $\ast$ $>$ \mbox{\hyperlink{class_collidable_group_a0c02801a6371b872b70dddd09a191f00}{Collidable\+Collection}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing collection of collidables. \end{DoxyCompactList}\item 
+typedef Collidable\+Collection\+::iterator \mbox{\hyperlink{class_collidable_group_adb13e9dcb54fc8e1d17382ec10ef1941}{Collidable\+Collection\+Ref}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the collidable collection reference. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collidable_group_a3e281af0076387977b3dbf36b5eb1ea9}{Collidable\+Group}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collidable_group_a640d4741d52ff7698ac673018f393f26}{Collidable\+Group}} (const \mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collidable_group_a7e15dea26701776ab9129c2d949ab2a2}{Collidable\+Group}} (\mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} \& \mbox{\hyperlink{class_collidable_group_a45c237fde3fa248ab17060d4c0e2e3ad}{operator=}} (const \mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} \& \mbox{\hyperlink{class_collidable_group_ac139f0b251babfa6354f370ae7b9ba69}{operator=}} (\mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collidable_group_a13aa86309a1d59999bf5a717aaad3c23}{$\sim$\+Collidable\+Group}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collidable_group_a6a6eef7b7ed8f245f584a75aacae66fb}{Register}} (\mbox{\hyperlink{class_collidable}{Collidable}} $\ast$c, \mbox{\hyperlink{class_collidable_group_adb13e9dcb54fc8e1d17382ec10ef1941}{Collidable\+Collection\+Ref}} \&ref)
+\begin{DoxyCompactList}\small\item\em Registers this. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collidable_group_aa7cd1bfeb74ff290cf90d5f6e4946c79}{Deregister}} (const \mbox{\hyperlink{class_collidable_group_adb13e9dcb54fc8e1d17382ec10ef1941}{Collidable\+Collection\+Ref}} \&ref)
+\begin{DoxyCompactList}\small\item\em Deregisters given collidable. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_collidable_group_a0c02801a6371b872b70dddd09a191f00}{Collidable\+Collection}} \& \mbox{\hyperlink{class_collidable_group_a615a476f10bf84d03cd8ed7c9cf43acb}{Get\+Collider\+Collection}} ()
+\begin{DoxyCompactList}\small\item\em Gets collider collection. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \& \mbox{\hyperlink{class_collidable_group_a8637f0e497711c9ed4c7fdd758f73929}{priv\+Get\+A\+A\+BB}} ()
+\begin{DoxyCompactList}\small\item\em Gives the stored A\+A\+BB for the collider group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collidable_group_a555f233937baa206ca2fa0578d9f9122}{Update\+A\+A\+BB}} ()
+\begin{DoxyCompactList}\small\item\em Updates the A\+A\+BB Collision data (O\+N\+CE P\+ER F\+R\+A\+ME) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collidable_group_a0c02801a6371b872b70dddd09a191f00}{Collidable\+Collection}} \mbox{\hyperlink{class_collidable_group_a30397c8d20ba0bba14172a05c82e7e89}{Collide\+Col}}
+\begin{DoxyCompactList}\small\item\em The collidable collection. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} $\ast$ \mbox{\hyperlink{class_collidable_group_aff67b0f854c1c92196772be55167657f}{group\+A\+A\+BB}}
+\begin{DoxyCompactList}\small\item\em The shared A\+A\+BB for the group. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_collidable_group_a0c02801a6371b872b70dddd09a191f00}\label{class_collidable_group_a0c02801a6371b872b70dddd09a191f00}} 
+\index{CollidableGroup@{CollidableGroup}!CollidableCollection@{CollidableCollection}}
+\index{CollidableCollection@{CollidableCollection}!CollidableGroup@{CollidableGroup}}
+\doxysubsubsection{\texorpdfstring{CollidableCollection}{CollidableCollection}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{class_collidable}{Collidable}} $\ast$ $>$ \mbox{\hyperlink{class_collidable_group_a0c02801a6371b872b70dddd09a191f00}{Collidable\+Group\+::\+Collidable\+Collection}}}
+
+
+
+Defines an alias representing collection of collidables. 
+
+\mbox{\Hypertarget{class_collidable_group_adb13e9dcb54fc8e1d17382ec10ef1941}\label{class_collidable_group_adb13e9dcb54fc8e1d17382ec10ef1941}} 
+\index{CollidableGroup@{CollidableGroup}!CollidableCollectionRef@{CollidableCollectionRef}}
+\index{CollidableCollectionRef@{CollidableCollectionRef}!CollidableGroup@{CollidableGroup}}
+\doxysubsubsection{\texorpdfstring{CollidableCollectionRef}{CollidableCollectionRef}}
+{\footnotesize\ttfamily Collidable\+Collection\+::iterator \mbox{\hyperlink{class_collidable_group_adb13e9dcb54fc8e1d17382ec10ef1941}{Collidable\+Group\+::\+Collidable\+Collection\+Ref}}}
+
+
+
+Defines an alias representing the collidable collection reference. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_collidable_group_a3e281af0076387977b3dbf36b5eb1ea9}\label{class_collidable_group_a3e281af0076387977b3dbf36b5eb1ea9}} 
+\index{CollidableGroup@{CollidableGroup}!CollidableGroup@{CollidableGroup}}
+\index{CollidableGroup@{CollidableGroup}!CollidableGroup@{CollidableGroup}}
+\doxysubsubsection{\texorpdfstring{CollidableGroup()}{CollidableGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Collidable\+Group\+::\+Collidable\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_collidable_group_a640d4741d52ff7698ac673018f393f26}\label{class_collidable_group_a640d4741d52ff7698ac673018f393f26}} 
+\index{CollidableGroup@{CollidableGroup}!CollidableGroup@{CollidableGroup}}
+\index{CollidableGroup@{CollidableGroup}!CollidableGroup@{CollidableGroup}}
+\doxysubsubsection{\texorpdfstring{CollidableGroup()}{CollidableGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Collidable\+Group\+::\+Collidable\+Group (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_collidable_group_a7e15dea26701776ab9129c2d949ab2a2}\label{class_collidable_group_a7e15dea26701776ab9129c2d949ab2a2}} 
+\index{CollidableGroup@{CollidableGroup}!CollidableGroup@{CollidableGroup}}
+\index{CollidableGroup@{CollidableGroup}!CollidableGroup@{CollidableGroup}}
+\doxysubsubsection{\texorpdfstring{CollidableGroup()}{CollidableGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Collidable\+Group\+::\+Collidable\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_collidable_group_a13aa86309a1d59999bf5a717aaad3c23}\label{class_collidable_group_a13aa86309a1d59999bf5a717aaad3c23}} 
+\index{CollidableGroup@{CollidableGroup}!````~CollidableGroup@{$\sim$CollidableGroup}}
+\index{````~CollidableGroup@{$\sim$CollidableGroup}!CollidableGroup@{CollidableGroup}}
+\doxysubsubsection{\texorpdfstring{$\sim$CollidableGroup()}{~CollidableGroup()}}
+{\footnotesize\ttfamily Collidable\+Group\+::$\sim$\+Collidable\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collidable_group_aa7cd1bfeb74ff290cf90d5f6e4946c79}\label{class_collidable_group_aa7cd1bfeb74ff290cf90d5f6e4946c79}} 
+\index{CollidableGroup@{CollidableGroup}!Deregister@{Deregister}}
+\index{Deregister@{Deregister}!CollidableGroup@{CollidableGroup}}
+\doxysubsubsection{\texorpdfstring{Deregister()}{Deregister()}}
+{\footnotesize\ttfamily void Collidable\+Group\+::\+Deregister (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collidable_group_adb13e9dcb54fc8e1d17382ec10ef1941}{Collidable\+Collection\+Ref}} \&}]{ref }\end{DoxyParamCaption})}
+
+
+
+Deregisters given collidable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & The reference. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collidable_group_aa7cd1bfeb74ff290cf90d5f6e4946c79_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collidable_group_a615a476f10bf84d03cd8ed7c9cf43acb}\label{class_collidable_group_a615a476f10bf84d03cd8ed7c9cf43acb}} 
+\index{CollidableGroup@{CollidableGroup}!GetColliderCollection@{GetColliderCollection}}
+\index{GetColliderCollection@{GetColliderCollection}!CollidableGroup@{CollidableGroup}}
+\doxysubsubsection{\texorpdfstring{GetColliderCollection()}{GetColliderCollection()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_collidable_group_a0c02801a6371b872b70dddd09a191f00}{Collidable\+Collection}} \& Collidable\+Group\+::\+Get\+Collider\+Collection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets collider collection. 
+
+\begin{DoxyReturn}{Returns}
+The collider collection. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collidable_group_a615a476f10bf84d03cd8ed7c9cf43acb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collidable_group_ac139f0b251babfa6354f370ae7b9ba69}\label{class_collidable_group_ac139f0b251babfa6354f370ae7b9ba69}} 
+\index{CollidableGroup@{CollidableGroup}!operator=@{operator=}}
+\index{operator=@{operator=}!CollidableGroup@{CollidableGroup}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collidable_group}{Collidable\+Group}}\& Collidable\+Group\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_collidable_group_a45c237fde3fa248ab17060d4c0e2e3ad}\label{class_collidable_group_a45c237fde3fa248ab17060d4c0e2e3ad}} 
+\index{CollidableGroup@{CollidableGroup}!operator=@{operator=}}
+\index{operator=@{operator=}!CollidableGroup@{CollidableGroup}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collidable_group}{Collidable\+Group}}\& Collidable\+Group\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collidable_group}{Collidable\+Group}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_collidable_group_a8637f0e497711c9ed4c7fdd758f73929}\label{class_collidable_group_a8637f0e497711c9ed4c7fdd758f73929}} 
+\index{CollidableGroup@{CollidableGroup}!privGetAABB@{privGetAABB}}
+\index{privGetAABB@{privGetAABB}!CollidableGroup@{CollidableGroup}}
+\doxysubsubsection{\texorpdfstring{privGetAABB()}{privGetAABB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \& Collidable\+Group\+::priv\+Get\+A\+A\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gives the stored A\+A\+BB for the collider group. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}}. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collidable_group_a8637f0e497711c9ed4c7fdd758f73929_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collidable_group_a6a6eef7b7ed8f245f584a75aacae66fb}\label{class_collidable_group_a6a6eef7b7ed8f245f584a75aacae66fb}} 
+\index{CollidableGroup@{CollidableGroup}!Register@{Register}}
+\index{Register@{Register}!CollidableGroup@{CollidableGroup}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily void Collidable\+Group\+::\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collidable}{Collidable}} $\ast$}]{c,  }\item[{\mbox{\hyperlink{class_collidable_group_adb13e9dcb54fc8e1d17382ec10ef1941}{Collidable\+Collection\+Ref}} \&}]{ref }\end{DoxyParamCaption})}
+
+
+
+Registers this. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em c} & If non-\/null, a \mbox{\hyperlink{class_collidable}{Collidable}} to process. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ref} & The reference to the collidable storage. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collidable_group_a6a6eef7b7ed8f245f584a75aacae66fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collidable_group_a555f233937baa206ca2fa0578d9f9122}\label{class_collidable_group_a555f233937baa206ca2fa0578d9f9122}} 
+\index{CollidableGroup@{CollidableGroup}!UpdateAABB@{UpdateAABB}}
+\index{UpdateAABB@{UpdateAABB}!CollidableGroup@{CollidableGroup}}
+\doxysubsubsection{\texorpdfstring{UpdateAABB()}{UpdateAABB()}}
+{\footnotesize\ttfamily void Collidable\+Group\+::\+Update\+A\+A\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the A\+A\+BB Collision data (O\+N\+CE P\+ER F\+R\+A\+ME) 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collidable_group_a555f233937baa206ca2fa0578d9f9122_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_collidable_group_a30397c8d20ba0bba14172a05c82e7e89}\label{class_collidable_group_a30397c8d20ba0bba14172a05c82e7e89}} 
+\index{CollidableGroup@{CollidableGroup}!CollideCol@{CollideCol}}
+\index{CollideCol@{CollideCol}!CollidableGroup@{CollidableGroup}}
+\doxysubsubsection{\texorpdfstring{CollideCol}{CollideCol}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collidable_group_a0c02801a6371b872b70dddd09a191f00}{Collidable\+Collection}} Collidable\+Group\+::\+Collide\+Col\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The collidable collection. 
+
+\mbox{\Hypertarget{class_collidable_group_aff67b0f854c1c92196772be55167657f}\label{class_collidable_group_aff67b0f854c1c92196772be55167657f}} 
+\index{CollidableGroup@{CollidableGroup}!groupAABB@{groupAABB}}
+\index{groupAABB@{groupAABB}!CollidableGroup@{CollidableGroup}}
+\doxysubsubsection{\texorpdfstring{groupAABB}{groupAABB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}}$\ast$ Collidable\+Group\+::group\+A\+A\+BB\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The shared A\+A\+BB for the group. 
+
+To work with Tiered collision, a group A\+A\+BB was added for cheaper intersection testing with multiple collider volumes. ~\newline
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_collidable_group_8h}{Collidable\+Group.\+h}}\item 
+\mbox{\hyperlink{_collidable_group_8cpp}{Collidable\+Group.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="TerrainObjectManager::privGet" name="TerrainObjectManager::privGet">
+<area shape="rect" id="node1" title="Internal call to get the requested terrain object from the terrainObjectMap." alt="" coords="232,5,381,47"/>
+<area shape="rect" id="node2" href="$class_terrain_object_manager.html#ab712917ef91c1fe238454b82adfe8ab3" title="Gets a terrain object* using the given key." alt="" coords="5,13,184,39"/>
+</map>

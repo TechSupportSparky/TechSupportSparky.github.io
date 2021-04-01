@@ -1,0 +1,852 @@
+\hypertarget{class_console_manager}{}\doxysection{Console\+Manager Class Reference}
+\label{class_console_manager}\index{ConsoleManager@{ConsoleManager}}
+
+
+{\ttfamily \#include $<$Console\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Console\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_console_manager_ae48abbaff55f3c9cb54a63f460edf056}{Set\+Current\+Console}} (\mbox{\hyperlink{class_console}{Console}} $\ast$p\+New\+Console)
+\item 
+static \mbox{\hyperlink{class_console}{Console}} $\ast$ \mbox{\hyperlink{class_console_manager_af774f3b3ef57c508adcdcd9b475f842b}{Get\+Current\+Console}} ()
+\item 
+static void \mbox{\hyperlink{class_console_manager_a776feb8fb79801025d0492c3815f756f}{Terminate}} ()
+\begin{DoxyCompactList}\small\item\em Terminates this instance. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_console_manager_a0440882248a18f7c7d1ee1477156dcf4}{Add\+Command}} (const std\+::string \&str\+Name, \mbox{\hyperlink{class_console_command}{Console\+Command}} $\ast$command, int Num\+Arguments=0, std\+::string i\+Qualifier=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em The process of adding a command to the console system. ~\newline
+ \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_console_manager_ad49b0626cc2835ca742a50ad86a732cc}{Print}} (const std\+::string \&str\+Text, bool prompt\+Key=true)
+\begin{DoxyCompactList}\small\item\em Print the message to the console. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_console_manager_aa4ce80f60c03fc100cbbdaad169d59e5}{Print\+Warning}} (const std\+::string \&str\+Text, bool prompt\+Key=true)
+\begin{DoxyCompactList}\small\item\em Print a warning message to the console. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_console_manager_a559d59659f676677b1a6a19b6861c91e}{Print\+Error}} (const std\+::string \&str\+Text, bool prompt\+Key=true)
+\begin{DoxyCompactList}\small\item\em Prints an error message to the console. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_console_manager_ae15d57e183d41a974f345e8e7b072ca8}{Initialize}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a text console. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_console_manager_a74cbc71d0290ede82810815e0550408c}{New\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new console ~\newline
+ \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_console_manager_aa8d22d1f87e52c58768968e52edf8313}{Scene\+End}} ()
+\begin{DoxyCompactList}\small\item\em Tearsdown the current console. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_console_manager_a55c555a78805e5fd40c1483c6361524f}{Kill}} (const std\+::string \&obj\+Name, \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$the\+Object)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_console_manager_aa9f719ce8b6bb8c2efda952e49f534d6}{Console\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_manager_a1297ecaffe9937deb9691fba30d1ca3e}{Console\+Manager}} (const \mbox{\hyperlink{class_console_manager}{Console\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_manager_a963ea53fd154d7309536c2abdfae7daa}{Console\+Manager}} (\mbox{\hyperlink{class_console_manager}{Console\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_manager}{Console\+Manager}} \& \mbox{\hyperlink{class_console_manager_a62bbf38237ead7499f9e4132caebd7f8}{operator=}} (const \mbox{\hyperlink{class_console_manager}{Console\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_manager}{Console\+Manager}} \& \mbox{\hyperlink{class_console_manager_a39cd12178d2c822ad2b079ee620d16a7}{operator=}} (\mbox{\hyperlink{class_console_manager}{Console\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_manager_a5124d1be043583db7b4b52a675ce5a3c}{$\sim$\+Console\+Manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_manager_af42aab7d44756440ac9ff4ef77d75bb1}{priv\+Set\+Current\+Console}} (\mbox{\hyperlink{class_console}{Console}} $\ast$p\+New\+Console)
+\item 
+\mbox{\hyperlink{class_console}{Console}} $\ast$ \mbox{\hyperlink{class_console_manager_af0a1e39e8875335fe2b7a721de7b6d22}{priv\+Get\+Current\+Console}} ()
+\item 
+void \mbox{\hyperlink{class_console_manager_ae4f06e8dbe84e9cd0d2c5d8fdd8bb78d}{priv\+Process\+Events}} ()
+\item 
+void \mbox{\hyperlink{class_console_manager_a2dace8a32d6a13d21b931afa96634195}{priv\+Execute\+Commands}} ()
+\item 
+void \mbox{\hyperlink{class_console_manager_a90b72ca1f154571438c793744326c906}{priv\+Terminate}} ()
+\item 
+void \mbox{\hyperlink{class_console_manager_a1ab29ad36117d25ee80ecf4f6894483c}{priv\+Add\+Variable}} (const std\+::string \&str\+Name, void $\ast$var, \mbox{\hyperlink{_console_items_8h_a58413948967126ebd4103471e7581cb0}{console\+Item\+Types}} type)
+\item 
+void \mbox{\hyperlink{class_console_manager_ad5eba1fe07222ce260f402c1e423fde1}{priv\+Add\+Command}} (const std\+::string \&str\+Name, \mbox{\hyperlink{class_console_command}{Console\+Command}} $\ast$cmd, int Num\+Arguments=0, std\+::string i\+Qualifier=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em The process of adding a command to the console system. ~\newline
+ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_manager_a415bb72309d66c7537ebd0a1933d5185}{priv\+Print}} (const std\+::string \&str\+Text, bool prompt\+Key=true)
+\item 
+void \mbox{\hyperlink{class_console_manager_a3e9efb12c3aec27eee46690796b20d4f}{priv\+Print\+Error}} (const std\+::string \&str\+Text, bool prompt\+Key=true)
+\item 
+void \mbox{\hyperlink{class_console_manager_a1b9e0f6253536413891267a553113dc6}{priv\+Print\+Warning}} (const std\+::string \&str\+Text, bool prompt\+Key=true)
+\item 
+void \mbox{\hyperlink{class_console_manager_aa9004c9d7b21c8a1be3113fac2ed916c}{priv\+Initialize}} ()
+\item 
+void \mbox{\hyperlink{class_console_manager_aeb037ae6338922f42c838b29162a7620}{priv\+New\+Scene}} ()
+\item 
+void \mbox{\hyperlink{class_console_manager_a0ed58866580ffdfc63a8c15c6617924b}{priv\+Scene\+End}} ()
+\item 
+void \mbox{\hyperlink{class_console_manager_a2b232039855044fcaadcdb62c937bc11}{priv\+Kill}} (const std\+::string \&obj\+Name, \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$the\+Object)
+\item 
+void \mbox{\hyperlink{class_console_manager_a9d5c1a7ebf3db6971184d95171b3389a}{priv\+Add\+To\+Broker}} (\mbox{\hyperlink{class_console_command}{Console\+Command}} $\ast$cmd)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_console_manager}{Console\+Manager}} \& \mbox{\hyperlink{class_console_manager_a906c569f9ea442602dbe61e65b779ccc}{Instance}} ()
+\item 
+static void \mbox{\hyperlink{class_console_manager_a9fb1189d0738cbf3e094677e502bdabb}{Process\+Events}} ()
+\item 
+static void \mbox{\hyperlink{class_console_manager_a22d68138ef4a2eeb1855d5fa88289667}{Execute\+Commands}} ()
+\item 
+static void \mbox{\hyperlink{class_console_manager_a7c9ba9666ec8231bc967c284052729db}{Add\+Variable}} (const std\+::string \&str\+Name, void $\ast$var, \mbox{\hyperlink{_console_items_8h_a58413948967126ebd4103471e7581cb0}{console\+Item\+Types}} type)
+\item 
+static void \mbox{\hyperlink{class_console_manager_a429e8392fbd8a72c4ee0e88a2796710c}{Add\+To\+Broker}} (\mbox{\hyperlink{class_console_command}{Console\+Command}} $\ast$cmd)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_console_command_broker}{Console\+Command\+Broker}} $\ast$ \mbox{\hyperlink{class_console_manager_ac0cd28422acddbb2d27bc303c45f023a}{console\+Broker}}
+\begin{DoxyCompactList}\small\item\em Manages the execution of commands. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console}{Console}} $\ast$ \mbox{\hyperlink{class_console_manager_af27783b2f67940cc44d4a2b576a14d13}{p\+Current\+Console}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_console_manager}{Console\+Manager}} $\ast$ \mbox{\hyperlink{class_console_manager_ac0031cbad9d63ef1d035f4677ba67239}{ptr\+Instance}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_console_manager_a617e603e63798cfb351e496750ff030f}{Console\+Manager\+Attorney}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_console_manager_aa9f719ce8b6bb8c2efda952e49f534d6}\label{class_console_manager_aa9f719ce8b6bb8c2efda952e49f534d6}} 
+\index{ConsoleManager@{ConsoleManager}!ConsoleManager@{ConsoleManager}}
+\index{ConsoleManager@{ConsoleManager}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{ConsoleManager()}{ConsoleManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Console\+Manager\+::\+Console\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Default constructor. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_aa9f719ce8b6bb8c2efda952e49f534d6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a1297ecaffe9937deb9691fba30d1ca3e}\label{class_console_manager_a1297ecaffe9937deb9691fba30d1ca3e}} 
+\index{ConsoleManager@{ConsoleManager}!ConsoleManager@{ConsoleManager}}
+\index{ConsoleManager@{ConsoleManager}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{ConsoleManager()}{ConsoleManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Console\+Manager\+::\+Console\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_console_manager}{Console\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_console_manager_a963ea53fd154d7309536c2abdfae7daa}\label{class_console_manager_a963ea53fd154d7309536c2abdfae7daa}} 
+\index{ConsoleManager@{ConsoleManager}!ConsoleManager@{ConsoleManager}}
+\index{ConsoleManager@{ConsoleManager}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{ConsoleManager()}{ConsoleManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Console\+Manager\+::\+Console\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_manager}{Console\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_console_manager_a5124d1be043583db7b4b52a675ce5a3c}\label{class_console_manager_a5124d1be043583db7b4b52a675ce5a3c}} 
+\index{ConsoleManager@{ConsoleManager}!````~ConsoleManager@{$\sim$ConsoleManager}}
+\index{````~ConsoleManager@{$\sim$ConsoleManager}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$ConsoleManager()}{~ConsoleManager()}}
+{\footnotesize\ttfamily Console\+Manager\+::$\sim$\+Console\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_console_manager_a0440882248a18f7c7d1ee1477156dcf4}\label{class_console_manager_a0440882248a18f7c7d1ee1477156dcf4}} 
+\index{ConsoleManager@{ConsoleManager}!AddCommand@{AddCommand}}
+\index{AddCommand@{AddCommand}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{AddCommand()}{AddCommand()}}
+{\footnotesize\ttfamily static void Console\+Manager\+::\+Add\+Command (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Name,  }\item[{\mbox{\hyperlink{class_console_command}{Console\+Command}} $\ast$}]{command,  }\item[{int}]{Num\+Arguments = {\ttfamily 0},  }\item[{std\+::string}]{i\+Qualifier = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The process of adding a command to the console system. ~\newline
+ 
+
+\begin{DoxyVerb}    The only requirements here are the name and command (note this must be a ConsoleCommand, inherit from this
+    class).  The number of arguments and qualifier are for associating commands with objects/entities.  IE
+    "map FortySeven" would be outlined as
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_console_manager_a0440882248a18f7c7d1ee1477156dcf4}{AddCommand}}(\textcolor{stringliteral}{"map"}, MapCommandFactory::GetCommand(\textcolor{keyword}{new} LevelFortySeven), 1, \textcolor{stringliteral}{"FortySeven"});}
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em str\+Name} & The name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em command} & If non-\/null, the command. \\
+\hline
+ & {\em Num\+Arguments} & (Optional) Number of arguments. \\
+\hline
+ & {\em i\+Qualifier} & (Optional) Zero-\/based index of the qualifier. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a0440882248a18f7c7d1ee1477156dcf4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a429e8392fbd8a72c4ee0e88a2796710c}\label{class_console_manager_a429e8392fbd8a72c4ee0e88a2796710c}} 
+\index{ConsoleManager@{ConsoleManager}!AddToBroker@{AddToBroker}}
+\index{AddToBroker@{AddToBroker}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{AddToBroker()}{AddToBroker()}}
+{\footnotesize\ttfamily static void Console\+Manager\+::\+Add\+To\+Broker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_command}{Console\+Command}} $\ast$}]{cmd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a429e8392fbd8a72c4ee0e88a2796710c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a429e8392fbd8a72c4ee0e88a2796710c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a7c9ba9666ec8231bc967c284052729db}\label{class_console_manager_a7c9ba9666ec8231bc967c284052729db}} 
+\index{ConsoleManager@{ConsoleManager}!AddVariable@{AddVariable}}
+\index{AddVariable@{AddVariable}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{AddVariable()}{AddVariable()}}
+{\footnotesize\ttfamily static void Console\+Manager\+::\+Add\+Variable (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Name,  }\item[{void $\ast$}]{var,  }\item[{\mbox{\hyperlink{_console_items_8h_a58413948967126ebd4103471e7581cb0}{console\+Item\+Types}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a7c9ba9666ec8231bc967c284052729db_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a22d68138ef4a2eeb1855d5fa88289667}\label{class_console_manager_a22d68138ef4a2eeb1855d5fa88289667}} 
+\index{ConsoleManager@{ConsoleManager}!ExecuteCommands@{ExecuteCommands}}
+\index{ExecuteCommands@{ExecuteCommands}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{ExecuteCommands()}{ExecuteCommands()}}
+{\footnotesize\ttfamily static void Console\+Manager\+::\+Execute\+Commands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a22d68138ef4a2eeb1855d5fa88289667_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a22d68138ef4a2eeb1855d5fa88289667_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_af774f3b3ef57c508adcdcd9b475f842b}\label{class_console_manager_af774f3b3ef57c508adcdcd9b475f842b}} 
+\index{ConsoleManager@{ConsoleManager}!GetCurrentConsole@{GetCurrentConsole}}
+\index{GetCurrentConsole@{GetCurrentConsole}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{GetCurrentConsole()}{GetCurrentConsole()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_console}{Console}}$\ast$ Console\+Manager\+::\+Get\+Current\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_af774f3b3ef57c508adcdcd9b475f842b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_ae15d57e183d41a974f345e8e7b072ca8}\label{class_console_manager_ae15d57e183d41a974f345e8e7b072ca8}} 
+\index{ConsoleManager@{ConsoleManager}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily static void Console\+Manager\+::\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Initializes a text console. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_ae15d57e183d41a974f345e8e7b072ca8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_console_manager_ae15d57e183d41a974f345e8e7b072ca8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a906c569f9ea442602dbe61e65b779ccc}\label{class_console_manager_a906c569f9ea442602dbe61e65b779ccc}} 
+\index{ConsoleManager@{ConsoleManager}!Instance@{Instance}}
+\index{Instance@{Instance}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_console_manager}{Console\+Manager}}\& Console\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a906c569f9ea442602dbe61e65b779ccc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a906c569f9ea442602dbe61e65b779ccc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a55c555a78805e5fd40c1483c6361524f}\label{class_console_manager_a55c555a78805e5fd40c1483c6361524f}} 
+\index{ConsoleManager@{ConsoleManager}!Kill@{Kill}}
+\index{Kill@{Kill}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{Kill()}{Kill()}}
+{\footnotesize\ttfamily static void Console\+Manager\+::\+Kill (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{obj\+Name,  }\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{the\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a55c555a78805e5fd40c1483c6361524f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a74cbc71d0290ede82810815e0550408c}\label{class_console_manager_a74cbc71d0290ede82810815e0550408c}} 
+\index{ConsoleManager@{ConsoleManager}!NewScene@{NewScene}}
+\index{NewScene@{NewScene}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{NewScene()}{NewScene()}}
+{\footnotesize\ttfamily static void Console\+Manager\+::\+New\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates a new console ~\newline
+ 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a74cbc71d0290ede82810815e0550408c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a74cbc71d0290ede82810815e0550408c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a39cd12178d2c822ad2b079ee620d16a7}\label{class_console_manager_a39cd12178d2c822ad2b079ee620d16a7}} 
+\index{ConsoleManager@{ConsoleManager}!operator=@{operator=}}
+\index{operator=@{operator=}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_manager}{Console\+Manager}}\& Console\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_manager}{Console\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_console_manager_a62bbf38237ead7499f9e4132caebd7f8}\label{class_console_manager_a62bbf38237ead7499f9e4132caebd7f8}} 
+\index{ConsoleManager@{ConsoleManager}!operator=@{operator=}}
+\index{operator=@{operator=}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_manager}{Console\+Manager}}\& Console\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_console_manager}{Console\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_console_manager_ad49b0626cc2835ca742a50ad86a732cc}\label{class_console_manager_ad49b0626cc2835ca742a50ad86a732cc}} 
+\index{ConsoleManager@{ConsoleManager}!Print@{Print}}
+\index{Print@{Print}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily static void Console\+Manager\+::\+Print (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Text,  }\item[{bool}]{prompt\+Key = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Print the message to the console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Text} & The text. \\
+\hline
+{\em prompt\+Key} & (Optional) True to prompt key. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_ad49b0626cc2835ca742a50ad86a732cc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_ad49b0626cc2835ca742a50ad86a732cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a559d59659f676677b1a6a19b6861c91e}\label{class_console_manager_a559d59659f676677b1a6a19b6861c91e}} 
+\index{ConsoleManager@{ConsoleManager}!PrintError@{PrintError}}
+\index{PrintError@{PrintError}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{PrintError()}{PrintError()}}
+{\footnotesize\ttfamily static void Console\+Manager\+::\+Print\+Error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Text,  }\item[{bool}]{prompt\+Key = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Prints an error message to the console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Text} & The text. \\
+\hline
+{\em prompt\+Key} & (Optional) True to prompt key. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a559d59659f676677b1a6a19b6861c91e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a559d59659f676677b1a6a19b6861c91e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_aa4ce80f60c03fc100cbbdaad169d59e5}\label{class_console_manager_aa4ce80f60c03fc100cbbdaad169d59e5}} 
+\index{ConsoleManager@{ConsoleManager}!PrintWarning@{PrintWarning}}
+\index{PrintWarning@{PrintWarning}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{PrintWarning()}{PrintWarning()}}
+{\footnotesize\ttfamily static void Console\+Manager\+::\+Print\+Warning (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Text,  }\item[{bool}]{prompt\+Key = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Print a warning message to the console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Text} & The text. \\
+\hline
+{\em prompt\+Key} & (Optional) True to prompt key. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_aa4ce80f60c03fc100cbbdaad169d59e5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_ad5eba1fe07222ce260f402c1e423fde1}\label{class_console_manager_ad5eba1fe07222ce260f402c1e423fde1}} 
+\index{ConsoleManager@{ConsoleManager}!privAddCommand@{privAddCommand}}
+\index{privAddCommand@{privAddCommand}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{privAddCommand()}{privAddCommand()}}
+{\footnotesize\ttfamily void Console\+Manager\+::priv\+Add\+Command (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Name,  }\item[{\mbox{\hyperlink{class_console_command}{Console\+Command}} $\ast$}]{cmd,  }\item[{int}]{Num\+Arguments = {\ttfamily 0},  }\item[{std\+::string}]{i\+Qualifier = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The process of adding a command to the console system. ~\newline
+ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em str\+Name} & The name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em cmd} & If non-\/null, the command. \\
+\hline
+ & {\em Num\+Arguments} & (Optional) Number of arguments. \\
+\hline
+ & {\em i\+Qualifier} & (Optional) Zero-\/based index of the qualifier. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_ad5eba1fe07222ce260f402c1e423fde1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_ad5eba1fe07222ce260f402c1e423fde1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a9d5c1a7ebf3db6971184d95171b3389a}\label{class_console_manager_a9d5c1a7ebf3db6971184d95171b3389a}} 
+\index{ConsoleManager@{ConsoleManager}!privAddToBroker@{privAddToBroker}}
+\index{privAddToBroker@{privAddToBroker}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{privAddToBroker()}{privAddToBroker()}}
+{\footnotesize\ttfamily void Console\+Manager\+::priv\+Add\+To\+Broker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_command}{Console\+Command}} $\ast$}]{cmd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a9d5c1a7ebf3db6971184d95171b3389a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a9d5c1a7ebf3db6971184d95171b3389a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a1ab29ad36117d25ee80ecf4f6894483c}\label{class_console_manager_a1ab29ad36117d25ee80ecf4f6894483c}} 
+\index{ConsoleManager@{ConsoleManager}!privAddVariable@{privAddVariable}}
+\index{privAddVariable@{privAddVariable}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{privAddVariable()}{privAddVariable()}}
+{\footnotesize\ttfamily void Console\+Manager\+::priv\+Add\+Variable (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Name,  }\item[{void $\ast$}]{var,  }\item[{\mbox{\hyperlink{_console_items_8h_a58413948967126ebd4103471e7581cb0}{console\+Item\+Types}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a1ab29ad36117d25ee80ecf4f6894483c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a1ab29ad36117d25ee80ecf4f6894483c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a2dace8a32d6a13d21b931afa96634195}\label{class_console_manager_a2dace8a32d6a13d21b931afa96634195}} 
+\index{ConsoleManager@{ConsoleManager}!privExecuteCommands@{privExecuteCommands}}
+\index{privExecuteCommands@{privExecuteCommands}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{privExecuteCommands()}{privExecuteCommands()}}
+{\footnotesize\ttfamily void Console\+Manager\+::priv\+Execute\+Commands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a2dace8a32d6a13d21b931afa96634195_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a2dace8a32d6a13d21b931afa96634195_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_af0a1e39e8875335fe2b7a721de7b6d22}\label{class_console_manager_af0a1e39e8875335fe2b7a721de7b6d22}} 
+\index{ConsoleManager@{ConsoleManager}!privGetCurrentConsole@{privGetCurrentConsole}}
+\index{privGetCurrentConsole@{privGetCurrentConsole}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{privGetCurrentConsole()}{privGetCurrentConsole()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console}{Console}} $\ast$ Console\+Manager\+::priv\+Get\+Current\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_af0a1e39e8875335fe2b7a721de7b6d22_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_aa9004c9d7b21c8a1be3113fac2ed916c}\label{class_console_manager_aa9004c9d7b21c8a1be3113fac2ed916c}} 
+\index{ConsoleManager@{ConsoleManager}!privInitialize@{privInitialize}}
+\index{privInitialize@{privInitialize}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{privInitialize()}{privInitialize()}}
+{\footnotesize\ttfamily void Console\+Manager\+::priv\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_aa9004c9d7b21c8a1be3113fac2ed916c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a2b232039855044fcaadcdb62c937bc11}\label{class_console_manager_a2b232039855044fcaadcdb62c937bc11}} 
+\index{ConsoleManager@{ConsoleManager}!privKill@{privKill}}
+\index{privKill@{privKill}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{privKill()}{privKill()}}
+{\footnotesize\ttfamily void Console\+Manager\+::priv\+Kill (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{obj\+Name,  }\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{the\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a2b232039855044fcaadcdb62c937bc11_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_console_manager_a2b232039855044fcaadcdb62c937bc11_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_aeb037ae6338922f42c838b29162a7620}\label{class_console_manager_aeb037ae6338922f42c838b29162a7620}} 
+\index{ConsoleManager@{ConsoleManager}!privNewScene@{privNewScene}}
+\index{privNewScene@{privNewScene}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{privNewScene()}{privNewScene()}}
+{\footnotesize\ttfamily void Console\+Manager\+::priv\+New\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_aeb037ae6338922f42c838b29162a7620_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a415bb72309d66c7537ebd0a1933d5185}\label{class_console_manager_a415bb72309d66c7537ebd0a1933d5185}} 
+\index{ConsoleManager@{ConsoleManager}!privPrint@{privPrint}}
+\index{privPrint@{privPrint}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{privPrint()}{privPrint()}}
+{\footnotesize\ttfamily void Console\+Manager\+::priv\+Print (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Text,  }\item[{bool}]{prompt\+Key = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a415bb72309d66c7537ebd0a1933d5185_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a415bb72309d66c7537ebd0a1933d5185_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a3e9efb12c3aec27eee46690796b20d4f}\label{class_console_manager_a3e9efb12c3aec27eee46690796b20d4f}} 
+\index{ConsoleManager@{ConsoleManager}!privPrintError@{privPrintError}}
+\index{privPrintError@{privPrintError}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{privPrintError()}{privPrintError()}}
+{\footnotesize\ttfamily void Console\+Manager\+::priv\+Print\+Error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Text,  }\item[{bool}]{prompt\+Key = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a3e9efb12c3aec27eee46690796b20d4f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a3e9efb12c3aec27eee46690796b20d4f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a1b9e0f6253536413891267a553113dc6}\label{class_console_manager_a1b9e0f6253536413891267a553113dc6}} 
+\index{ConsoleManager@{ConsoleManager}!privPrintWarning@{privPrintWarning}}
+\index{privPrintWarning@{privPrintWarning}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{privPrintWarning()}{privPrintWarning()}}
+{\footnotesize\ttfamily void Console\+Manager\+::priv\+Print\+Warning (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Text,  }\item[{bool}]{prompt\+Key = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a1b9e0f6253536413891267a553113dc6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a1b9e0f6253536413891267a553113dc6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_ae4f06e8dbe84e9cd0d2c5d8fdd8bb78d}\label{class_console_manager_ae4f06e8dbe84e9cd0d2c5d8fdd8bb78d}} 
+\index{ConsoleManager@{ConsoleManager}!privProcessEvents@{privProcessEvents}}
+\index{privProcessEvents@{privProcessEvents}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{privProcessEvents()}{privProcessEvents()}}
+{\footnotesize\ttfamily void Console\+Manager\+::priv\+Process\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_ae4f06e8dbe84e9cd0d2c5d8fdd8bb78d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_ae4f06e8dbe84e9cd0d2c5d8fdd8bb78d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a0ed58866580ffdfc63a8c15c6617924b}\label{class_console_manager_a0ed58866580ffdfc63a8c15c6617924b}} 
+\index{ConsoleManager@{ConsoleManager}!privSceneEnd@{privSceneEnd}}
+\index{privSceneEnd@{privSceneEnd}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{privSceneEnd()}{privSceneEnd()}}
+{\footnotesize\ttfamily void Console\+Manager\+::priv\+Scene\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a0ed58866580ffdfc63a8c15c6617924b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_af42aab7d44756440ac9ff4ef77d75bb1}\label{class_console_manager_af42aab7d44756440ac9ff4ef77d75bb1}} 
+\index{ConsoleManager@{ConsoleManager}!privSetCurrentConsole@{privSetCurrentConsole}}
+\index{privSetCurrentConsole@{privSetCurrentConsole}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{privSetCurrentConsole()}{privSetCurrentConsole()}}
+{\footnotesize\ttfamily void Console\+Manager\+::priv\+Set\+Current\+Console (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console}{Console}} $\ast$}]{p\+New\+Console }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_af42aab7d44756440ac9ff4ef77d75bb1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a90b72ca1f154571438c793744326c906}\label{class_console_manager_a90b72ca1f154571438c793744326c906}} 
+\index{ConsoleManager@{ConsoleManager}!privTerminate@{privTerminate}}
+\index{privTerminate@{privTerminate}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{privTerminate()}{privTerminate()}}
+{\footnotesize\ttfamily void Console\+Manager\+::priv\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a90b72ca1f154571438c793744326c906_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a9fb1189d0738cbf3e094677e502bdabb}\label{class_console_manager_a9fb1189d0738cbf3e094677e502bdabb}} 
+\index{ConsoleManager@{ConsoleManager}!ProcessEvents@{ProcessEvents}}
+\index{ProcessEvents@{ProcessEvents}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{ProcessEvents()}{ProcessEvents()}}
+{\footnotesize\ttfamily static void Console\+Manager\+::\+Process\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a9fb1189d0738cbf3e094677e502bdabb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a9fb1189d0738cbf3e094677e502bdabb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_aa8d22d1f87e52c58768968e52edf8313}\label{class_console_manager_aa8d22d1f87e52c58768968e52edf8313}} 
+\index{ConsoleManager@{ConsoleManager}!SceneEnd@{SceneEnd}}
+\index{SceneEnd@{SceneEnd}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{SceneEnd()}{SceneEnd()}}
+{\footnotesize\ttfamily static void Console\+Manager\+::\+Scene\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Tearsdown the current console. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_aa8d22d1f87e52c58768968e52edf8313_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_ae48abbaff55f3c9cb54a63f460edf056}\label{class_console_manager_ae48abbaff55f3c9cb54a63f460edf056}} 
+\index{ConsoleManager@{ConsoleManager}!SetCurrentConsole@{SetCurrentConsole}}
+\index{SetCurrentConsole@{SetCurrentConsole}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{SetCurrentConsole()}{SetCurrentConsole()}}
+{\footnotesize\ttfamily static void Console\+Manager\+::\+Set\+Current\+Console (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console}{Console}} $\ast$}]{p\+New\+Console }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_ae48abbaff55f3c9cb54a63f460edf056_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_manager_a776feb8fb79801025d0492c3815f756f}\label{class_console_manager_a776feb8fb79801025d0492c3815f756f}} 
+\index{ConsoleManager@{ConsoleManager}!Terminate@{Terminate}}
+\index{Terminate@{Terminate}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{Terminate()}{Terminate()}}
+{\footnotesize\ttfamily static void Console\+Manager\+::\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Terminates this instance. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a776feb8fb79801025d0492c3815f756f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_manager_a776feb8fb79801025d0492c3815f756f_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_console_manager_a617e603e63798cfb351e496750ff030f}\label{class_console_manager_a617e603e63798cfb351e496750ff030f}} 
+\index{ConsoleManager@{ConsoleManager}!ConsoleManagerAttorney@{ConsoleManagerAttorney}}
+\index{ConsoleManagerAttorney@{ConsoleManagerAttorney}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{ConsoleManagerAttorney}{ConsoleManagerAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_console_manager_attorney}{Console\+Manager\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_console_manager_ac0cd28422acddbb2d27bc303c45f023a}\label{class_console_manager_ac0cd28422acddbb2d27bc303c45f023a}} 
+\index{ConsoleManager@{ConsoleManager}!consoleBroker@{consoleBroker}}
+\index{consoleBroker@{consoleBroker}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{consoleBroker}{consoleBroker}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_command_broker}{Console\+Command\+Broker}}$\ast$ Console\+Manager\+::console\+Broker\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Manages the execution of commands. 
+
+\mbox{\Hypertarget{class_console_manager_af27783b2f67940cc44d4a2b576a14d13}\label{class_console_manager_af27783b2f67940cc44d4a2b576a14d13}} 
+\index{ConsoleManager@{ConsoleManager}!pCurrentConsole@{pCurrentConsole}}
+\index{pCurrentConsole@{pCurrentConsole}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{pCurrentConsole}{pCurrentConsole}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console}{Console}}$\ast$ Console\+Manager\+::p\+Current\+Console\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_manager_ac0031cbad9d63ef1d035f4677ba67239}\label{class_console_manager_ac0031cbad9d63ef1d035f4677ba67239}} 
+\index{ConsoleManager@{ConsoleManager}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!ConsoleManager@{ConsoleManager}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_manager}{Console\+Manager}} $\ast$ Console\+Manager\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_console_manager_8h}{Console\+Manager.\+h}}\item 
+\mbox{\hyperlink{_console_manager_8cpp}{Console\+Manager.\+cpp}}\end{DoxyCompactItemize}

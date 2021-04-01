@@ -1,0 +1,6 @@
+<map id="TerrainObjectManager::privDelete" name="TerrainObjectManager::privDelete">
+<area shape="rect" id="node1" title="Internal call to delete pointer instance. Only to be called by the engine." alt="" coords="636,5,785,47"/>
+<area shape="rect" id="node2" href="$class_terrain_object_manager.html#a1123203fe6b4a86085b6bb9daa36fbc4" title="Sly&#39;s hook into the delete section of the TerrainObjectManager. Only called within Sly." alt="" coords="439,5,588,47"/>
+<area shape="rect" id="node3" href="$class_terrain_object_manager_attorney.html#a245d2a507cde9b62803e486163dc0b5d" title=" " alt="" coords="192,5,391,47"/>
+<area shape="rect" id="node4" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="5,13,144,39"/>
+</map>

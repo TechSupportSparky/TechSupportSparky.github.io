@@ -1,0 +1,534 @@
+\hypertarget{class_terrain_object}{}\doxysection{Terrain\+Object Class Reference}
+\label{class_terrain_object}\index{TerrainObject@{TerrainObject}}
+
+
+{\ttfamily \#include $<$Terrain\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Terrain\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_terrain_object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Terrain\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_terrain_object_1_1_cell}{Cell}}
+\begin{DoxyCompactList}\small\item\em A cell as it is stored within the terrain. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_terrain_object_a2cdf06ab4161d8083b8fda1a9759c63b}{Terrain\+Object}} ()=delete
+\item 
+\mbox{\hyperlink{class_terrain_object_a2c1763427e1b3453c817879e96d23169}{Terrain\+Object}} (const \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} \&)=delete
+\item 
+\mbox{\hyperlink{class_terrain_object_ac14fd18c7c10c5fccdf8e9f47eed0a9b}{Terrain\+Object}} (\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} \& \mbox{\hyperlink{class_terrain_object_a3b5466302c5eb5782777c0abcad33280}{operator=}} (const \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} \&)=delete
+\item 
+\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} \& \mbox{\hyperlink{class_terrain_object_acc626394bcd26a125d5bc8767fa2721f}{operator=}} (\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} \&\&)=delete
+\item 
+virtual \mbox{\hyperlink{class_terrain_object_af50afbf1a0ccb773393b0081555c8de7}{$\sim$\+Terrain\+Object}} ()
+\item 
+\mbox{\hyperlink{class_terrain_object_a3abf1f39d5986851e023ee41b2e2abb5}{Terrain\+Object}} (const char $\ast$height\+Map\+File, std\+::string texture\+Key, float side\+Length, float \mbox{\hyperlink{class_terrain_object_aee3360360a46e3dcf8b8a9a4c602a679}{max\+Height}}, int repeatU, int repeatV)
+\item 
+float \mbox{\hyperlink{class_terrain_object_a78e1227848339bd9f1fe37b418ba82e3}{Get\+Altitude}} (Vect pos)
+\item 
+Vect \mbox{\hyperlink{class_terrain_object_a2e49ca0ad15600bcfb4e52275b8e8b02}{Get\+Normal}} (Vect pos)
+\item 
+void \mbox{\hyperlink{class_terrain_object_a9994e4da55935e7de98614410ed1e3d6}{Set\+World}} (Matrix world)
+\item 
+Matrix \& \mbox{\hyperlink{class_terrain_object_ad28c343099ecc769231d6f96df678bb8}{Get\+World}} ()
+\item 
+virtual void \mbox{\hyperlink{class_terrain_object_ad6d6320337c1c12c2a1852294d3c4150}{Draw}} () override
+\begin{DoxyCompactList}\small\item\em Pure virtual function draw. Derived objects must override. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_terrain_object_a0e836450129193a08cf5b1c162a8223e}{Initialize}} ()
+\begin{DoxyCompactList}\small\item\em Sets the terrain object up for drawing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_terrain_object_ab117f89d34f614804c44a16e6ded802a}{Deinitialize}} ()
+\begin{DoxyCompactList}\small\item\em Deregisters the terrain. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_terrain_object_ab097d285a492f9d277521ee1cf612188}{Get\+Side\+Vert\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of side vertices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_terrain_object_a60236d0a56973bae5ab39a4f89fce896}{Compute\+Min\+Max}} ()
+\item 
+int \mbox{\hyperlink{class_terrain_object_a527b74aa5838d1ea410144ea716b9b97}{Cell\+Min\+Max\+Index}} (int i, int j)
+\item 
+int \mbox{\hyperlink{class_terrain_object_a8c6125552c1cee7c7ccc6402601a49a5}{Get\+Cell\+Dimension}} ()
+\item 
+void \mbox{\hyperlink{class_terrain_object_ad09353cd0cd4cfdfe4ec1bd68f61e257}{Show\+Line\+Position}} (Vect \&pos)
+\item 
+void \mbox{\hyperlink{class_terrain_object_ab69f274690b61328a929a942b7210a4d}{Show\+Normal}} (Frigate $\ast$the\+Frigate)
+\item 
+void \mbox{\hyperlink{class_terrain_object_ae4a408bb9e5db209cb1672e5b7033dd4}{Show\+Cells\+Under\+Collidable}} (\mbox{\hyperlink{class_collidable}{Collidable}} $\ast$col\+Object)
+\item 
+void \mbox{\hyperlink{class_terrain_object_a4c43a408f7f76167250291fa14e272eb}{Get\+Min\+Max\+Vects}} (int i, int j, Vect \&output\+Min, Vect \&output\+Max)
+\item 
+void \mbox{\hyperlink{class_terrain_object_a2f668923645ec531848141235ec4fafd}{Visualize\+All\+Cells}} ()
+\begin{DoxyCompactList}\small\item\em Visualize all cell\textquotesingle{}s A\+A\+BB\textquotesingle{}s. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_terrain_object_a11b5cde5c63c5894f1a2d7f6a8884e9a}{Vertex\+Index}} (int i, int j)
+\item 
+int \mbox{\hyperlink{class_terrain_object_a424c6ca19c548c7ae9ce024c66d1fb91}{Pixel\+Index}} (int side, int i, int j)
+\item 
+int \mbox{\hyperlink{class_terrain_object_a5117164cbfd8d12196c625473a3dd056}{Tri\+Index}} (int i, int j)
+\item 
+float \mbox{\hyperlink{class_terrain_object_abb7a2095c6494700cbc60220d8a49a32}{Pixel\+To\+Float}} (unsigned char hval)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vertex\+Stride\+\_\+\+V\+UN $\ast$ \mbox{\hyperlink{class_terrain_object_a130961af058a68a17bdac3bca201e18b}{p\+Verts}}
+\begin{DoxyCompactList}\small\item\em The vertices, only to be used at construction. \end{DoxyCompactList}\item 
+Triangle\+Index $\ast$ \mbox{\hyperlink{class_terrain_object_af999f7859896e832c4ba020aca8bf741}{p\+Tri\+List}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_terrain_object_1_1_cell}{Cell}} $>$ \mbox{\hyperlink{class_terrain_object_a6a0425a7353566330578eb4210121925}{Terrain\+Cells}}
+\begin{DoxyCompactList}\small\item\em The cells of the terrain containing min/max vectors. \end{DoxyCompactList}\item 
+Graphics\+Object\+\_\+\+Texture\+Flat $\ast$ \mbox{\hyperlink{class_terrain_object_a469bb67f9098a86d43a03fd8b9a1b120}{p\+G\+Obj\+FT}}
+\item 
+Graphics\+Object\+\_\+\+Wireframe\+Constant\+Color $\ast$ \mbox{\hyperlink{class_terrain_object_adeec232cf15c016294a94e849beba3f6}{p\+Obj\+WF}}
+\item 
+Model $\ast$ \mbox{\hyperlink{class_terrain_object_a154c306a5a895025d078ba06531c60a0}{p\+Mod\+Terrain}}
+\item 
+Matrix \mbox{\hyperlink{class_terrain_object_ad834cd5d3d11ee569b4fdaa318522e57}{World\+Mat}}
+\item 
+float \mbox{\hyperlink{class_terrain_object_aee3360360a46e3dcf8b8a9a4c602a679}{max\+Height}}
+\item 
+float \mbox{\hyperlink{class_terrain_object_a46732628a400fd735d73bb3bda661eba}{delta\+Length}}
+\item 
+float \mbox{\hyperlink{class_terrain_object_a8edc606a5433d0ee164c204c7332b6e0}{dimension}}
+\item 
+int \mbox{\hyperlink{class_terrain_object_af1ac3aa7193573e4ab0062d91eb22118}{Side\+Vert\+Count}}
+\item 
+int \mbox{\hyperlink{class_terrain_object_a1bb34c3ad2297e1a106030a38599afb6}{length}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_terrain_object_a2cdf06ab4161d8083b8fda1a9759c63b}\label{class_terrain_object_a2cdf06ab4161d8083b8fda1a9759c63b}} 
+\index{TerrainObject@{TerrainObject}!TerrainObject@{TerrainObject}}
+\index{TerrainObject@{TerrainObject}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{TerrainObject()}{TerrainObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Terrain\+Object\+::\+Terrain\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_terrain_object_a2c1763427e1b3453c817879e96d23169}\label{class_terrain_object_a2c1763427e1b3453c817879e96d23169}} 
+\index{TerrainObject@{TerrainObject}!TerrainObject@{TerrainObject}}
+\index{TerrainObject@{TerrainObject}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{TerrainObject()}{TerrainObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Terrain\+Object\+::\+Terrain\+Object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_terrain_object_ac14fd18c7c10c5fccdf8e9f47eed0a9b}\label{class_terrain_object_ac14fd18c7c10c5fccdf8e9f47eed0a9b}} 
+\index{TerrainObject@{TerrainObject}!TerrainObject@{TerrainObject}}
+\index{TerrainObject@{TerrainObject}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{TerrainObject()}{TerrainObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Terrain\+Object\+::\+Terrain\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_terrain_object_af50afbf1a0ccb773393b0081555c8de7}\label{class_terrain_object_af50afbf1a0ccb773393b0081555c8de7}} 
+\index{TerrainObject@{TerrainObject}!````~TerrainObject@{$\sim$TerrainObject}}
+\index{````~TerrainObject@{$\sim$TerrainObject}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$TerrainObject()}{~TerrainObject()}}
+{\footnotesize\ttfamily Terrain\+Object\+::$\sim$\+Terrain\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_terrain_object_a3abf1f39d5986851e023ee41b2e2abb5}\label{class_terrain_object_a3abf1f39d5986851e023ee41b2e2abb5}} 
+\index{TerrainObject@{TerrainObject}!TerrainObject@{TerrainObject}}
+\index{TerrainObject@{TerrainObject}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{TerrainObject()}{TerrainObject()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Terrain\+Object\+::\+Terrain\+Object (\begin{DoxyParamCaption}\item[{const char $\ast$}]{height\+Map\+File,  }\item[{std\+::string}]{texture\+Key,  }\item[{float}]{side\+Length,  }\item[{float}]{max\+Height,  }\item[{int}]{repeatU,  }\item[{int}]{repeatV }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_a3abf1f39d5986851e023ee41b2e2abb5_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_terrain_object_a527b74aa5838d1ea410144ea716b9b97}\label{class_terrain_object_a527b74aa5838d1ea410144ea716b9b97}} 
+\index{TerrainObject@{TerrainObject}!CellMinMaxIndex@{CellMinMaxIndex}}
+\index{CellMinMaxIndex@{CellMinMaxIndex}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{CellMinMaxIndex()}{CellMinMaxIndex()}}
+{\footnotesize\ttfamily int Terrain\+Object\+::\+Cell\+Min\+Max\+Index (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_terrain_object_a60236d0a56973bae5ab39a4f89fce896}\label{class_terrain_object_a60236d0a56973bae5ab39a4f89fce896}} 
+\index{TerrainObject@{TerrainObject}!ComputeMinMax@{ComputeMinMax}}
+\index{ComputeMinMax@{ComputeMinMax}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{ComputeMinMax()}{ComputeMinMax()}}
+{\footnotesize\ttfamily void Terrain\+Object\+::\+Compute\+Min\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_a60236d0a56973bae5ab39a4f89fce896_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_a60236d0a56973bae5ab39a4f89fce896_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_ab117f89d34f614804c44a16e6ded802a}\label{class_terrain_object_ab117f89d34f614804c44a16e6ded802a}} 
+\index{TerrainObject@{TerrainObject}!Deinitialize@{Deinitialize}}
+\index{Deinitialize@{Deinitialize}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{Deinitialize()}{Deinitialize()}}
+{\footnotesize\ttfamily void Terrain\+Object\+::\+Deinitialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deregisters the terrain. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_ab117f89d34f614804c44a16e6ded802a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_ad6d6320337c1c12c2a1852294d3c4150}\label{class_terrain_object_ad6d6320337c1c12c2a1852294d3c4150}} 
+\index{TerrainObject@{TerrainObject}!Draw@{Draw}}
+\index{Draw@{Draw}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Terrain\+Object\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Pure virtual function draw. Derived objects must override. 
+
+
+
+Implements \mbox{\hyperlink{class_drawable_a8d5d4d2f2bca40d931c1b8b762be8d42}{Drawable}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_ad6d6320337c1c12c2a1852294d3c4150_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_a78e1227848339bd9f1fe37b418ba82e3}\label{class_terrain_object_a78e1227848339bd9f1fe37b418ba82e3}} 
+\index{TerrainObject@{TerrainObject}!GetAltitude@{GetAltitude}}
+\index{GetAltitude@{GetAltitude}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{GetAltitude()}{GetAltitude()}}
+{\footnotesize\ttfamily float Terrain\+Object\+::\+Get\+Altitude (\begin{DoxyParamCaption}\item[{Vect}]{pos }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_a78e1227848339bd9f1fe37b418ba82e3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_a8c6125552c1cee7c7ccc6402601a49a5}\label{class_terrain_object_a8c6125552c1cee7c7ccc6402601a49a5}} 
+\index{TerrainObject@{TerrainObject}!GetCellDimension@{GetCellDimension}}
+\index{GetCellDimension@{GetCellDimension}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{GetCellDimension()}{GetCellDimension()}}
+{\footnotesize\ttfamily int Terrain\+Object\+::\+Get\+Cell\+Dimension (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_a8c6125552c1cee7c7ccc6402601a49a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_a4c43a408f7f76167250291fa14e272eb}\label{class_terrain_object_a4c43a408f7f76167250291fa14e272eb}} 
+\index{TerrainObject@{TerrainObject}!GetMinMaxVects@{GetMinMaxVects}}
+\index{GetMinMaxVects@{GetMinMaxVects}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{GetMinMaxVects()}{GetMinMaxVects()}}
+{\footnotesize\ttfamily void Terrain\+Object\+::\+Get\+Min\+Max\+Vects (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{Vect \&}]{output\+Min,  }\item[{Vect \&}]{output\+Max }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_a4c43a408f7f76167250291fa14e272eb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_a4c43a408f7f76167250291fa14e272eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_a2e49ca0ad15600bcfb4e52275b8e8b02}\label{class_terrain_object_a2e49ca0ad15600bcfb4e52275b8e8b02}} 
+\index{TerrainObject@{TerrainObject}!GetNormal@{GetNormal}}
+\index{GetNormal@{GetNormal}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{GetNormal()}{GetNormal()}}
+{\footnotesize\ttfamily Vect Terrain\+Object\+::\+Get\+Normal (\begin{DoxyParamCaption}\item[{Vect}]{pos }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_a2e49ca0ad15600bcfb4e52275b8e8b02_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_ab097d285a492f9d277521ee1cf612188}\label{class_terrain_object_ab097d285a492f9d277521ee1cf612188}} 
+\index{TerrainObject@{TerrainObject}!GetSideVertCount@{GetSideVertCount}}
+\index{GetSideVertCount@{GetSideVertCount}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{GetSideVertCount()}{GetSideVertCount()}}
+{\footnotesize\ttfamily int Terrain\+Object\+::\+Get\+Side\+Vert\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the number of side vertices. 
+
+\begin{DoxyReturn}{Returns}
+The side vertical count. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_ab097d285a492f9d277521ee1cf612188_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_ad28c343099ecc769231d6f96df678bb8}\label{class_terrain_object_ad28c343099ecc769231d6f96df678bb8}} 
+\index{TerrainObject@{TerrainObject}!GetWorld@{GetWorld}}
+\index{GetWorld@{GetWorld}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{GetWorld()}{GetWorld()}}
+{\footnotesize\ttfamily Matrix \& Terrain\+Object\+::\+Get\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_terrain_object_a0e836450129193a08cf5b1c162a8223e}\label{class_terrain_object_a0e836450129193a08cf5b1c162a8223e}} 
+\index{TerrainObject@{TerrainObject}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Terrain\+Object\+::\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the terrain object up for drawing. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_a0e836450129193a08cf5b1c162a8223e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_a3b5466302c5eb5782777c0abcad33280}\label{class_terrain_object_a3b5466302c5eb5782777c0abcad33280}} 
+\index{TerrainObject@{TerrainObject}!operator=@{operator=}}
+\index{operator=@{operator=}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}}\& Terrain\+Object\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_terrain_object_acc626394bcd26a125d5bc8767fa2721f}\label{class_terrain_object_acc626394bcd26a125d5bc8767fa2721f}} 
+\index{TerrainObject@{TerrainObject}!operator=@{operator=}}
+\index{operator=@{operator=}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}}\& Terrain\+Object\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_terrain_object_a424c6ca19c548c7ae9ce024c66d1fb91}\label{class_terrain_object_a424c6ca19c548c7ae9ce024c66d1fb91}} 
+\index{TerrainObject@{TerrainObject}!PixelIndex@{PixelIndex}}
+\index{PixelIndex@{PixelIndex}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{PixelIndex()}{PixelIndex()}}
+{\footnotesize\ttfamily int Terrain\+Object\+::\+Pixel\+Index (\begin{DoxyParamCaption}\item[{int}]{side,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_a424c6ca19c548c7ae9ce024c66d1fb91_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_abb7a2095c6494700cbc60220d8a49a32}\label{class_terrain_object_abb7a2095c6494700cbc60220d8a49a32}} 
+\index{TerrainObject@{TerrainObject}!PixelToFloat@{PixelToFloat}}
+\index{PixelToFloat@{PixelToFloat}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{PixelToFloat()}{PixelToFloat()}}
+{\footnotesize\ttfamily float Terrain\+Object\+::\+Pixel\+To\+Float (\begin{DoxyParamCaption}\item[{unsigned char}]{hval }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_abb7a2095c6494700cbc60220d8a49a32_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_a9994e4da55935e7de98614410ed1e3d6}\label{class_terrain_object_a9994e4da55935e7de98614410ed1e3d6}} 
+\index{TerrainObject@{TerrainObject}!SetWorld@{SetWorld}}
+\index{SetWorld@{SetWorld}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{SetWorld()}{SetWorld()}}
+{\footnotesize\ttfamily void Terrain\+Object\+::\+Set\+World (\begin{DoxyParamCaption}\item[{Matrix}]{world }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_terrain_object_ae4a408bb9e5db209cb1672e5b7033dd4}\label{class_terrain_object_ae4a408bb9e5db209cb1672e5b7033dd4}} 
+\index{TerrainObject@{TerrainObject}!ShowCellsUnderCollidable@{ShowCellsUnderCollidable}}
+\index{ShowCellsUnderCollidable@{ShowCellsUnderCollidable}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{ShowCellsUnderCollidable()}{ShowCellsUnderCollidable()}}
+{\footnotesize\ttfamily void Terrain\+Object\+::\+Show\+Cells\+Under\+Collidable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collidable}{Collidable}} $\ast$}]{col\+Object }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_ae4a408bb9e5db209cb1672e5b7033dd4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_ad09353cd0cd4cfdfe4ec1bd68f61e257}\label{class_terrain_object_ad09353cd0cd4cfdfe4ec1bd68f61e257}} 
+\index{TerrainObject@{TerrainObject}!ShowLinePosition@{ShowLinePosition}}
+\index{ShowLinePosition@{ShowLinePosition}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{ShowLinePosition()}{ShowLinePosition()}}
+{\footnotesize\ttfamily void Terrain\+Object\+::\+Show\+Line\+Position (\begin{DoxyParamCaption}\item[{Vect \&}]{pos }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_ad09353cd0cd4cfdfe4ec1bd68f61e257_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_ab69f274690b61328a929a942b7210a4d}\label{class_terrain_object_ab69f274690b61328a929a942b7210a4d}} 
+\index{TerrainObject@{TerrainObject}!ShowNormal@{ShowNormal}}
+\index{ShowNormal@{ShowNormal}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{ShowNormal()}{ShowNormal()}}
+{\footnotesize\ttfamily void Terrain\+Object\+::\+Show\+Normal (\begin{DoxyParamCaption}\item[{Frigate $\ast$}]{the\+Frigate }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_ab69f274690b61328a929a942b7210a4d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_a5117164cbfd8d12196c625473a3dd056}\label{class_terrain_object_a5117164cbfd8d12196c625473a3dd056}} 
+\index{TerrainObject@{TerrainObject}!TriIndex@{TriIndex}}
+\index{TriIndex@{TriIndex}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{TriIndex()}{TriIndex()}}
+{\footnotesize\ttfamily int Terrain\+Object\+::\+Tri\+Index (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_object_a11b5cde5c63c5894f1a2d7f6a8884e9a}\label{class_terrain_object_a11b5cde5c63c5894f1a2d7f6a8884e9a}} 
+\index{TerrainObject@{TerrainObject}!VertexIndex@{VertexIndex}}
+\index{VertexIndex@{VertexIndex}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{VertexIndex()}{VertexIndex()}}
+{\footnotesize\ttfamily int Terrain\+Object\+::\+Vertex\+Index (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_a11b5cde5c63c5894f1a2d7f6a8884e9a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_object_a2f668923645ec531848141235ec4fafd}\label{class_terrain_object_a2f668923645ec531848141235ec4fafd}} 
+\index{TerrainObject@{TerrainObject}!VisualizeAllCells@{VisualizeAllCells}}
+\index{VisualizeAllCells@{VisualizeAllCells}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{VisualizeAllCells()}{VisualizeAllCells()}}
+{\footnotesize\ttfamily void Terrain\+Object\+::\+Visualize\+All\+Cells (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Visualize all cell\textquotesingle{}s A\+A\+BB\textquotesingle{}s. 
+
+This is an expensive operation that loops through all the cell\textquotesingle{}s and pulls their Vects to visualize an A\+A\+BB. Use only for debugging purposes. A small heightmap may be required. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_object_a2f668923645ec531848141235ec4fafd_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_terrain_object_a46732628a400fd735d73bb3bda661eba}\label{class_terrain_object_a46732628a400fd735d73bb3bda661eba}} 
+\index{TerrainObject@{TerrainObject}!deltaLength@{deltaLength}}
+\index{deltaLength@{deltaLength}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{deltaLength}{deltaLength}}
+{\footnotesize\ttfamily float Terrain\+Object\+::delta\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_object_a8edc606a5433d0ee164c204c7332b6e0}\label{class_terrain_object_a8edc606a5433d0ee164c204c7332b6e0}} 
+\index{TerrainObject@{TerrainObject}!dimension@{dimension}}
+\index{dimension@{dimension}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{dimension}{dimension}}
+{\footnotesize\ttfamily float Terrain\+Object\+::dimension\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_object_a1bb34c3ad2297e1a106030a38599afb6}\label{class_terrain_object_a1bb34c3ad2297e1a106030a38599afb6}} 
+\index{TerrainObject@{TerrainObject}!length@{length}}
+\index{length@{length}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily int Terrain\+Object\+::length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_object_aee3360360a46e3dcf8b8a9a4c602a679}\label{class_terrain_object_aee3360360a46e3dcf8b8a9a4c602a679}} 
+\index{TerrainObject@{TerrainObject}!maxHeight@{maxHeight}}
+\index{maxHeight@{maxHeight}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{maxHeight}{maxHeight}}
+{\footnotesize\ttfamily float Terrain\+Object\+::max\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_object_a469bb67f9098a86d43a03fd8b9a1b120}\label{class_terrain_object_a469bb67f9098a86d43a03fd8b9a1b120}} 
+\index{TerrainObject@{TerrainObject}!pGObjFT@{pGObjFT}}
+\index{pGObjFT@{pGObjFT}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{pGObjFT}{pGObjFT}}
+{\footnotesize\ttfamily Graphics\+Object\+\_\+\+Texture\+Flat$\ast$ Terrain\+Object\+::p\+G\+Obj\+FT\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_object_a154c306a5a895025d078ba06531c60a0}\label{class_terrain_object_a154c306a5a895025d078ba06531c60a0}} 
+\index{TerrainObject@{TerrainObject}!pModTerrain@{pModTerrain}}
+\index{pModTerrain@{pModTerrain}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{pModTerrain}{pModTerrain}}
+{\footnotesize\ttfamily Model$\ast$ Terrain\+Object\+::p\+Mod\+Terrain\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_object_adeec232cf15c016294a94e849beba3f6}\label{class_terrain_object_adeec232cf15c016294a94e849beba3f6}} 
+\index{TerrainObject@{TerrainObject}!pObjWF@{pObjWF}}
+\index{pObjWF@{pObjWF}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{pObjWF}{pObjWF}}
+{\footnotesize\ttfamily Graphics\+Object\+\_\+\+Wireframe\+Constant\+Color$\ast$ Terrain\+Object\+::p\+Obj\+WF\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_object_af999f7859896e832c4ba020aca8bf741}\label{class_terrain_object_af999f7859896e832c4ba020aca8bf741}} 
+\index{TerrainObject@{TerrainObject}!pTriList@{pTriList}}
+\index{pTriList@{pTriList}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{pTriList}{pTriList}}
+{\footnotesize\ttfamily Triangle\+Index$\ast$ Terrain\+Object\+::p\+Tri\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_object_a130961af058a68a17bdac3bca201e18b}\label{class_terrain_object_a130961af058a68a17bdac3bca201e18b}} 
+\index{TerrainObject@{TerrainObject}!pVerts@{pVerts}}
+\index{pVerts@{pVerts}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{pVerts}{pVerts}}
+{\footnotesize\ttfamily Vertex\+Stride\+\_\+\+V\+UN$\ast$ Terrain\+Object\+::p\+Verts\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The vertices, only to be used at construction. 
+
+\mbox{\Hypertarget{class_terrain_object_af1ac3aa7193573e4ab0062d91eb22118}\label{class_terrain_object_af1ac3aa7193573e4ab0062d91eb22118}} 
+\index{TerrainObject@{TerrainObject}!SideVertCount@{SideVertCount}}
+\index{SideVertCount@{SideVertCount}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{SideVertCount}{SideVertCount}}
+{\footnotesize\ttfamily int Terrain\+Object\+::\+Side\+Vert\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_object_a6a0425a7353566330578eb4210121925}\label{class_terrain_object_a6a0425a7353566330578eb4210121925}} 
+\index{TerrainObject@{TerrainObject}!TerrainCells@{TerrainCells}}
+\index{TerrainCells@{TerrainCells}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{TerrainCells}{TerrainCells}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{struct_terrain_object_1_1_cell}{Cell}}$>$ Terrain\+Object\+::\+Terrain\+Cells\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The cells of the terrain containing min/max vectors. 
+
+\mbox{\Hypertarget{class_terrain_object_ad834cd5d3d11ee569b4fdaa318522e57}\label{class_terrain_object_ad834cd5d3d11ee569b4fdaa318522e57}} 
+\index{TerrainObject@{TerrainObject}!WorldMat@{WorldMat}}
+\index{WorldMat@{WorldMat}!TerrainObject@{TerrainObject}}
+\doxysubsubsection{\texorpdfstring{WorldMat}{WorldMat}}
+{\footnotesize\ttfamily Matrix Terrain\+Object\+::\+World\+Mat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_terrain_object_8h}{Terrain\+Object.\+h}}\item 
+\mbox{\hyperlink{_terrain_object_8cpp}{Terrain\+Object.\+cpp}}\end{DoxyCompactItemize}

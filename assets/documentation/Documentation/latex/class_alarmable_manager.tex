@@ -1,0 +1,324 @@
+\hypertarget{class_alarmable_manager}{}\doxysection{Alarmable\+Manager Class Reference}
+\label{class_alarmable_manager}\index{AlarmableManager@{AlarmableManager}}
+
+
+{\ttfamily \#include $<$Alarmable\+Manager.\+h$>$}
+
+
+
+Inheritance diagram for Alarmable\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_alarmable_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alarmable\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{class_alarmable_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{A\+L\+A\+R\+M\+\_\+\+ID}} \{ \newline
+\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68ac483605f18e6e177cb37d207df8bec77}{A\+L\+A\+R\+M\+\_\+0}}, 
+\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68ad58c8711c8d2a2a541d39d405eacb28a}{A\+L\+A\+R\+M\+\_\+1}}, 
+\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68a7a420f0b8c11fa87d4526f3b483d5134}{A\+L\+A\+R\+M\+\_\+2}}, 
+\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68a1cac00c8aa021a3fbf6ba2f865b7d884}{A\+L\+A\+R\+M\+\_\+3}}, 
+\newline
+\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68afb8987bbf35b811c2b7b17be549ccae1}{A\+L\+A\+R\+M\+\_\+4}}
+ \}
+\begin{DoxyCompactList}\small\item\em Values that represent alarm Identifiers. \end{DoxyCompactList}\item 
+typedef std\+::pair$<$ \mbox{\hyperlink{class_alarmable}{Alarmable}} $\ast$, \mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{A\+L\+A\+R\+M\+\_\+\+ID}} $>$ \mbox{\hyperlink{class_alarmable_manager_aa56a775eed7192fb32dfa9f0f7bf8b51}{Alarm\+Event}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the alarm event. \end{DoxyCompactList}\item 
+typedef std\+::multimap$<$ float, \mbox{\hyperlink{class_alarmable_manager_aa56a775eed7192fb32dfa9f0f7bf8b51}{Alarm\+Event}} $>$ \mbox{\hyperlink{class_alarmable_manager_ae10ad82bdb4433417203ebef382b2bea}{Time\+Line\+Map}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the time line map. \end{DoxyCompactList}\item 
+typedef Time\+Line\+Map\+::iterator \mbox{\hyperlink{class_alarmable_manager_a01dfa733b70a9ca2734d1f0cb1d4b238}{Storage\+Entry\+Ref}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the storage entry reference. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_alarmable_manager_af701f8a4f711d5600c2bf8acc1e01e42}{Alarmable\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_alarmable_manager_a5bc36e5715344cda74161b470a386681}{Alarmable\+Manager}} (const \mbox{\hyperlink{class_alarmable_manager}{Alarmable\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_alarmable_manager_a0ee0eaf0a38f858e9c81954edca1476a}{Alarmable\+Manager}} (\mbox{\hyperlink{class_alarmable_manager}{Alarmable\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_alarmable_manager}{Alarmable\+Manager}} \& \mbox{\hyperlink{class_alarmable_manager_ad265d71a287fd16eca7b5ecf5ae45881}{operator=}} (const \mbox{\hyperlink{class_alarmable_manager}{Alarmable\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_alarmable_manager}{Alarmable\+Manager}} \& \mbox{\hyperlink{class_alarmable_manager_a8567f5369c0e15241c1d890056281fee}{operator=}} (\mbox{\hyperlink{class_alarmable_manager}{Alarmable\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_alarmable_manager_a38a881c00be2f62c280b74345b684ac4}{$\sim$\+Alarmable\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alarmable_manager_a39a3b6fe7c3a5c252e153d5a682dada7}{Process\+Alarms}} ()
+\begin{DoxyCompactList}\small\item\em Process the alarms. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alarmable_manager_a105340b37247dc431b5b495630c934ba}{Register}} (float deltaT, \mbox{\hyperlink{class_alarmable}{Alarmable}} $\ast$al, \mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}} input\+Id, \mbox{\hyperlink{class_alarmable_manager_a01dfa733b70a9ca2734d1f0cb1d4b238}{Storage\+Entry\+Ref}} \&ref)
+\begin{DoxyCompactList}\small\item\em Registers this. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alarmable_manager_a1608ca5a71b376407f31b4180687340d}{Deregister}} (\mbox{\hyperlink{class_alarmable_manager_a01dfa733b70a9ca2734d1f0cb1d4b238}{Storage\+Entry\+Ref}} \&ref)
+\begin{DoxyCompactList}\small\item\em Deregisters this. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{class_alarmable_manager_a150cd5139908865b6c02232612a17d34}{A\+L\+A\+R\+M\+\_\+\+N\+U\+M\+B\+ER}} = 5
+\begin{DoxyCompactList}\small\item\em The max alarm number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_alarmable_manager_ae10ad82bdb4433417203ebef382b2bea}{Time\+Line\+Map}} $\ast$ \mbox{\hyperlink{class_alarmable_manager_ab3c7fefa655f767909cae66559333510}{timeline}}
+\begin{DoxyCompactList}\small\item\em The timeline for triggers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_alarmable_manager_aa56a775eed7192fb32dfa9f0f7bf8b51}\label{class_alarmable_manager_aa56a775eed7192fb32dfa9f0f7bf8b51}} 
+\index{AlarmableManager@{AlarmableManager}!AlarmEvent@{AlarmEvent}}
+\index{AlarmEvent@{AlarmEvent}!AlarmableManager@{AlarmableManager}}
+\doxysubsubsection{\texorpdfstring{AlarmEvent}{AlarmEvent}}
+{\footnotesize\ttfamily std\+::pair$<$ \mbox{\hyperlink{class_alarmable}{Alarmable}} $\ast$, \mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{A\+L\+A\+R\+M\+\_\+\+ID}} $>$ \mbox{\hyperlink{class_alarmable_manager_aa56a775eed7192fb32dfa9f0f7bf8b51}{Alarmable\+Manager\+::\+Alarm\+Event}}}
+
+
+
+Defines an alias representing the alarm event. 
+
+\mbox{\Hypertarget{class_alarmable_manager_a01dfa733b70a9ca2734d1f0cb1d4b238}\label{class_alarmable_manager_a01dfa733b70a9ca2734d1f0cb1d4b238}} 
+\index{AlarmableManager@{AlarmableManager}!StorageEntryRef@{StorageEntryRef}}
+\index{StorageEntryRef@{StorageEntryRef}!AlarmableManager@{AlarmableManager}}
+\doxysubsubsection{\texorpdfstring{StorageEntryRef}{StorageEntryRef}}
+{\footnotesize\ttfamily Time\+Line\+Map\+::iterator \mbox{\hyperlink{class_alarmable_manager_a01dfa733b70a9ca2734d1f0cb1d4b238}{Alarmable\+Manager\+::\+Storage\+Entry\+Ref}}}
+
+
+
+Defines an alias representing the storage entry reference. 
+
+\mbox{\Hypertarget{class_alarmable_manager_ae10ad82bdb4433417203ebef382b2bea}\label{class_alarmable_manager_ae10ad82bdb4433417203ebef382b2bea}} 
+\index{AlarmableManager@{AlarmableManager}!TimeLineMap@{TimeLineMap}}
+\index{TimeLineMap@{TimeLineMap}!AlarmableManager@{AlarmableManager}}
+\doxysubsubsection{\texorpdfstring{TimeLineMap}{TimeLineMap}}
+{\footnotesize\ttfamily std\+::multimap$<$ float, \mbox{\hyperlink{class_alarmable_manager_aa56a775eed7192fb32dfa9f0f7bf8b51}{Alarm\+Event}} $>$ \mbox{\hyperlink{class_alarmable_manager_ae10ad82bdb4433417203ebef382b2bea}{Alarmable\+Manager\+::\+Time\+Line\+Map}}}
+
+
+
+Defines an alias representing the time line map. 
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}\label{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}} 
+\index{AlarmableManager@{AlarmableManager}!ALARM\_ID@{ALARM\_ID}}
+\index{ALARM\_ID@{ALARM\_ID}!AlarmableManager@{AlarmableManager}}
+\doxysubsubsection{\texorpdfstring{ALARM\_ID}{ALARM\_ID}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}}}
+
+
+
+Values that represent alarm Identifiers. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALARM\_0@{ALARM\_0}!AlarmableManager@{AlarmableManager}}\index{AlarmableManager@{AlarmableManager}!ALARM\_0@{ALARM\_0}}}\mbox{\Hypertarget{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68ac483605f18e6e177cb37d207df8bec77}\label{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68ac483605f18e6e177cb37d207df8bec77}} 
+A\+L\+A\+R\+M\+\_\+0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALARM\_1@{ALARM\_1}!AlarmableManager@{AlarmableManager}}\index{AlarmableManager@{AlarmableManager}!ALARM\_1@{ALARM\_1}}}\mbox{\Hypertarget{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68ad58c8711c8d2a2a541d39d405eacb28a}\label{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68ad58c8711c8d2a2a541d39d405eacb28a}} 
+A\+L\+A\+R\+M\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALARM\_2@{ALARM\_2}!AlarmableManager@{AlarmableManager}}\index{AlarmableManager@{AlarmableManager}!ALARM\_2@{ALARM\_2}}}\mbox{\Hypertarget{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68a7a420f0b8c11fa87d4526f3b483d5134}\label{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68a7a420f0b8c11fa87d4526f3b483d5134}} 
+A\+L\+A\+R\+M\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALARM\_3@{ALARM\_3}!AlarmableManager@{AlarmableManager}}\index{AlarmableManager@{AlarmableManager}!ALARM\_3@{ALARM\_3}}}\mbox{\Hypertarget{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68a1cac00c8aa021a3fbf6ba2f865b7d884}\label{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68a1cac00c8aa021a3fbf6ba2f865b7d884}} 
+A\+L\+A\+R\+M\+\_\+3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALARM\_4@{ALARM\_4}!AlarmableManager@{AlarmableManager}}\index{AlarmableManager@{AlarmableManager}!ALARM\_4@{ALARM\_4}}}\mbox{\Hypertarget{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68afb8987bbf35b811c2b7b17be549ccae1}\label{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68afb8987bbf35b811c2b7b17be549ccae1}} 
+A\+L\+A\+R\+M\+\_\+4&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_alarmable_manager_af701f8a4f711d5600c2bf8acc1e01e42}\label{class_alarmable_manager_af701f8a4f711d5600c2bf8acc1e01e42}} 
+\index{AlarmableManager@{AlarmableManager}!AlarmableManager@{AlarmableManager}}
+\index{AlarmableManager@{AlarmableManager}!AlarmableManager@{AlarmableManager}}
+\doxysubsubsection{\texorpdfstring{AlarmableManager()}{AlarmableManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Alarmable\+Manager\+::\+Alarmable\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_alarmable_manager_af701f8a4f711d5600c2bf8acc1e01e42_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarmable_manager_a5bc36e5715344cda74161b470a386681}\label{class_alarmable_manager_a5bc36e5715344cda74161b470a386681}} 
+\index{AlarmableManager@{AlarmableManager}!AlarmableManager@{AlarmableManager}}
+\index{AlarmableManager@{AlarmableManager}!AlarmableManager@{AlarmableManager}}
+\doxysubsubsection{\texorpdfstring{AlarmableManager()}{AlarmableManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Alarmable\+Manager\+::\+Alarmable\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_alarmable_manager}{Alarmable\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_alarmable_manager_a0ee0eaf0a38f858e9c81954edca1476a}\label{class_alarmable_manager_a0ee0eaf0a38f858e9c81954edca1476a}} 
+\index{AlarmableManager@{AlarmableManager}!AlarmableManager@{AlarmableManager}}
+\index{AlarmableManager@{AlarmableManager}!AlarmableManager@{AlarmableManager}}
+\doxysubsubsection{\texorpdfstring{AlarmableManager()}{AlarmableManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Alarmable\+Manager\+::\+Alarmable\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alarmable_manager}{Alarmable\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_alarmable_manager_a38a881c00be2f62c280b74345b684ac4}\label{class_alarmable_manager_a38a881c00be2f62c280b74345b684ac4}} 
+\index{AlarmableManager@{AlarmableManager}!````~AlarmableManager@{$\sim$AlarmableManager}}
+\index{````~AlarmableManager@{$\sim$AlarmableManager}!AlarmableManager@{AlarmableManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$AlarmableManager()}{~AlarmableManager()}}
+{\footnotesize\ttfamily Alarmable\+Manager\+::$\sim$\+Alarmable\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_alarmable_manager_a1608ca5a71b376407f31b4180687340d}\label{class_alarmable_manager_a1608ca5a71b376407f31b4180687340d}} 
+\index{AlarmableManager@{AlarmableManager}!Deregister@{Deregister}}
+\index{Deregister@{Deregister}!AlarmableManager@{AlarmableManager}}
+\doxysubsubsection{\texorpdfstring{Deregister()}{Deregister()}}
+{\footnotesize\ttfamily void Alarmable\+Manager\+::\+Deregister (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alarmable_manager_a01dfa733b70a9ca2734d1f0cb1d4b238}{Storage\+Entry\+Ref}} \&}]{ref }\end{DoxyParamCaption})}
+
+
+
+Deregisters this. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em ref} & The reference. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_manager_a1608ca5a71b376407f31b4180687340d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarmable_manager_a8567f5369c0e15241c1d890056281fee}\label{class_alarmable_manager_a8567f5369c0e15241c1d890056281fee}} 
+\index{AlarmableManager@{AlarmableManager}!operator=@{operator=}}
+\index{operator=@{operator=}!AlarmableManager@{AlarmableManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_alarmable_manager}{Alarmable\+Manager}}\& Alarmable\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_alarmable_manager}{Alarmable\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_alarmable_manager_ad265d71a287fd16eca7b5ecf5ae45881}\label{class_alarmable_manager_ad265d71a287fd16eca7b5ecf5ae45881}} 
+\index{AlarmableManager@{AlarmableManager}!operator=@{operator=}}
+\index{operator=@{operator=}!AlarmableManager@{AlarmableManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_alarmable_manager}{Alarmable\+Manager}}\& Alarmable\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_alarmable_manager}{Alarmable\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_alarmable_manager_a39a3b6fe7c3a5c252e153d5a682dada7}\label{class_alarmable_manager_a39a3b6fe7c3a5c252e153d5a682dada7}} 
+\index{AlarmableManager@{AlarmableManager}!ProcessAlarms@{ProcessAlarms}}
+\index{ProcessAlarms@{ProcessAlarms}!AlarmableManager@{AlarmableManager}}
+\doxysubsubsection{\texorpdfstring{ProcessAlarms()}{ProcessAlarms()}}
+{\footnotesize\ttfamily void Alarmable\+Manager\+::\+Process\+Alarms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Process the alarms. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_manager_a39a3b6fe7c3a5c252e153d5a682dada7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_manager_a39a3b6fe7c3a5c252e153d5a682dada7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_alarmable_manager_a105340b37247dc431b5b495630c934ba}\label{class_alarmable_manager_a105340b37247dc431b5b495630c934ba}} 
+\index{AlarmableManager@{AlarmableManager}!Register@{Register}}
+\index{Register@{Register}!AlarmableManager@{AlarmableManager}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily void Alarmable\+Manager\+::\+Register (\begin{DoxyParamCaption}\item[{float}]{deltaT,  }\item[{\mbox{\hyperlink{class_alarmable}{Alarmable}} $\ast$}]{al,  }\item[{\mbox{\hyperlink{class_alarmable_manager_a78cfc784d78e1cda78df7d5a42b2cc68}{Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+ID}}}]{input\+Id,  }\item[{\mbox{\hyperlink{class_alarmable_manager_a01dfa733b70a9ca2734d1f0cb1d4b238}{Storage\+Entry\+Ref}} \&}]{ref }\end{DoxyParamCaption})}
+
+
+
+Registers this. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em deltaT} & The delta t for alarm trigger time. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em al} & If non-\/null, the alarmable. \\
+\hline
+ & {\em input\+Id} & The alarm identifier. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ref} & The storage reference. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_manager_a105340b37247dc431b5b495630c934ba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alarmable_manager_a105340b37247dc431b5b495630c934ba_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_alarmable_manager_a150cd5139908865b6c02232612a17d34}\label{class_alarmable_manager_a150cd5139908865b6c02232612a17d34}} 
+\index{AlarmableManager@{AlarmableManager}!ALARM\_NUMBER@{ALARM\_NUMBER}}
+\index{ALARM\_NUMBER@{ALARM\_NUMBER}!AlarmableManager@{AlarmableManager}}
+\doxysubsubsection{\texorpdfstring{ALARM\_NUMBER}{ALARM\_NUMBER}}
+{\footnotesize\ttfamily const int Alarmable\+Manager\+::\+A\+L\+A\+R\+M\+\_\+\+N\+U\+M\+B\+ER = 5\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The max alarm number. 
+
+\mbox{\Hypertarget{class_alarmable_manager_ab3c7fefa655f767909cae66559333510}\label{class_alarmable_manager_ab3c7fefa655f767909cae66559333510}} 
+\index{AlarmableManager@{AlarmableManager}!timeline@{timeline}}
+\index{timeline@{timeline}!AlarmableManager@{AlarmableManager}}
+\doxysubsubsection{\texorpdfstring{timeline}{timeline}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_alarmable_manager_ae10ad82bdb4433417203ebef382b2bea}{Time\+Line\+Map}}$\ast$ Alarmable\+Manager\+::timeline\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The timeline for triggers. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_alarmable_manager_8h}{Alarmable\+Manager.\+h}}\item 
+\mbox{\hyperlink{_alarmable_manager_8cpp}{Alarmable\+Manager.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,183 @@
+\hypertarget{class_scene_registration_broker}{}\doxysection{Scene\+Registration\+Broker Class Reference}
+\label{class_scene_registration_broker}\index{SceneRegistrationBroker@{SceneRegistrationBroker}}
+
+
+{\ttfamily \#include $<$Scene\+Registration\+Broker.\+h$>$}
+
+
+
+Collaboration diagram for Scene\+Registration\+Broker\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_scene_registration_broker__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_registration_broker_a3e9aaaf830e0071780b9c8032f8a298e}{Scene\+Registration\+Broker}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_registration_broker_a8ce0b3db8d9d008e2cef7a9231ddf7f3}{Scene\+Registration\+Broker}} (const \mbox{\hyperlink{class_scene_registration_broker}{Scene\+Registration\+Broker}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_registration_broker_a75c4eb77e7f5f230f76375f3d7a59c99}{Scene\+Registration\+Broker}} (\mbox{\hyperlink{class_scene_registration_broker}{Scene\+Registration\+Broker}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_registration_broker}{Scene\+Registration\+Broker}} \& \mbox{\hyperlink{class_scene_registration_broker_ad994001896b1059e7487f793bf14f90f}{operator=}} (const \mbox{\hyperlink{class_scene_registration_broker}{Scene\+Registration\+Broker}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_registration_broker}{Scene\+Registration\+Broker}} \& \mbox{\hyperlink{class_scene_registration_broker_a0e946b844d82cba39edbf312954b4f97}{operator=}} (\mbox{\hyperlink{class_scene_registration_broker}{Scene\+Registration\+Broker}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_registration_broker_a15767329ec0671fa4b0d98cf5e8d3e9d}{$\sim$\+Scene\+Registration\+Broker}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_registration_broker_a2de26f860998866920e681e330d3dac3}{add\+Command}} (\mbox{\hyperlink{class_scene_registry}{Scene\+Registry}} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Adds a command. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_registration_broker_aa696d2be6640639785d5ff5d8ffcfe95}{Execute\+Commands}} ()
+\begin{DoxyCompactList}\small\item\em Executes the commands operation. ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \mbox{\hyperlink{class_scene_registry}{Scene\+Registry}} $\ast$ $>$ \mbox{\hyperlink{class_scene_registration_broker_aa5b730a2bebab1069ea811d40b2b5d7c}{Command\+List}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing list of commands. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_registration_broker_aa5b730a2bebab1069ea811d40b2b5d7c}{Command\+List}} $\ast$ \mbox{\hyperlink{class_scene_registration_broker_a43f383ab8a9b3a6948cd2903cfaf2355}{lst\+Commands}}
+\begin{DoxyCompactList}\small\item\em The list of commands. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_scene_registration_broker_aa5b730a2bebab1069ea811d40b2b5d7c}\label{class_scene_registration_broker_aa5b730a2bebab1069ea811d40b2b5d7c}} 
+\index{SceneRegistrationBroker@{SceneRegistrationBroker}!CommandList@{CommandList}}
+\index{CommandList@{CommandList}!SceneRegistrationBroker@{SceneRegistrationBroker}}
+\doxysubsubsection{\texorpdfstring{CommandList}{CommandList}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{class_scene_registry}{Scene\+Registry}} $\ast$ $>$ \mbox{\hyperlink{class_scene_registration_broker_aa5b730a2bebab1069ea811d40b2b5d7c}{Scene\+Registration\+Broker\+::\+Command\+List}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing list of commands. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scene_registration_broker_a3e9aaaf830e0071780b9c8032f8a298e}\label{class_scene_registration_broker_a3e9aaaf830e0071780b9c8032f8a298e}} 
+\index{SceneRegistrationBroker@{SceneRegistrationBroker}!SceneRegistrationBroker@{SceneRegistrationBroker}}
+\index{SceneRegistrationBroker@{SceneRegistrationBroker}!SceneRegistrationBroker@{SceneRegistrationBroker}}
+\doxysubsubsection{\texorpdfstring{SceneRegistrationBroker()}{SceneRegistrationBroker()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Scene\+Registration\+Broker\+::\+Scene\+Registration\+Broker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_scene_registration_broker_a8ce0b3db8d9d008e2cef7a9231ddf7f3}\label{class_scene_registration_broker_a8ce0b3db8d9d008e2cef7a9231ddf7f3}} 
+\index{SceneRegistrationBroker@{SceneRegistrationBroker}!SceneRegistrationBroker@{SceneRegistrationBroker}}
+\index{SceneRegistrationBroker@{SceneRegistrationBroker}!SceneRegistrationBroker@{SceneRegistrationBroker}}
+\doxysubsubsection{\texorpdfstring{SceneRegistrationBroker()}{SceneRegistrationBroker()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Scene\+Registration\+Broker\+::\+Scene\+Registration\+Broker (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_scene_registration_broker}{Scene\+Registration\+Broker}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_scene_registration_broker_a75c4eb77e7f5f230f76375f3d7a59c99}\label{class_scene_registration_broker_a75c4eb77e7f5f230f76375f3d7a59c99}} 
+\index{SceneRegistrationBroker@{SceneRegistrationBroker}!SceneRegistrationBroker@{SceneRegistrationBroker}}
+\index{SceneRegistrationBroker@{SceneRegistrationBroker}!SceneRegistrationBroker@{SceneRegistrationBroker}}
+\doxysubsubsection{\texorpdfstring{SceneRegistrationBroker()}{SceneRegistrationBroker()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Scene\+Registration\+Broker\+::\+Scene\+Registration\+Broker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_registration_broker}{Scene\+Registration\+Broker}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_scene_registration_broker_a15767329ec0671fa4b0d98cf5e8d3e9d}\label{class_scene_registration_broker_a15767329ec0671fa4b0d98cf5e8d3e9d}} 
+\index{SceneRegistrationBroker@{SceneRegistrationBroker}!````~SceneRegistrationBroker@{$\sim$SceneRegistrationBroker}}
+\index{````~SceneRegistrationBroker@{$\sim$SceneRegistrationBroker}!SceneRegistrationBroker@{SceneRegistrationBroker}}
+\doxysubsubsection{\texorpdfstring{$\sim$SceneRegistrationBroker()}{~SceneRegistrationBroker()}}
+{\footnotesize\ttfamily Scene\+Registration\+Broker\+::$\sim$\+Scene\+Registration\+Broker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_registration_broker_a2de26f860998866920e681e330d3dac3}\label{class_scene_registration_broker_a2de26f860998866920e681e330d3dac3}} 
+\index{SceneRegistrationBroker@{SceneRegistrationBroker}!addCommand@{addCommand}}
+\index{addCommand@{addCommand}!SceneRegistrationBroker@{SceneRegistrationBroker}}
+\doxysubsubsection{\texorpdfstring{addCommand()}{addCommand()}}
+{\footnotesize\ttfamily void Scene\+Registration\+Broker\+::add\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_registry}{Scene\+Registry}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Adds a command. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em c} & A command to push into the list of commands \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_registration_broker_a2de26f860998866920e681e330d3dac3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_registration_broker_aa696d2be6640639785d5ff5d8ffcfe95}\label{class_scene_registration_broker_aa696d2be6640639785d5ff5d8ffcfe95}} 
+\index{SceneRegistrationBroker@{SceneRegistrationBroker}!ExecuteCommands@{ExecuteCommands}}
+\index{ExecuteCommands@{ExecuteCommands}!SceneRegistrationBroker@{SceneRegistrationBroker}}
+\doxysubsubsection{\texorpdfstring{ExecuteCommands()}{ExecuteCommands()}}
+{\footnotesize\ttfamily void Scene\+Registration\+Broker\+::\+Execute\+Commands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Executes the commands operation. ~\newline
+ 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_registration_broker_aa696d2be6640639785d5ff5d8ffcfe95_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_registration_broker_ad994001896b1059e7487f793bf14f90f}\label{class_scene_registration_broker_ad994001896b1059e7487f793bf14f90f}} 
+\index{SceneRegistrationBroker@{SceneRegistrationBroker}!operator=@{operator=}}
+\index{operator=@{operator=}!SceneRegistrationBroker@{SceneRegistrationBroker}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_registration_broker}{Scene\+Registration\+Broker}}\& Scene\+Registration\+Broker\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_scene_registration_broker}{Scene\+Registration\+Broker}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_scene_registration_broker_a0e946b844d82cba39edbf312954b4f97}\label{class_scene_registration_broker_a0e946b844d82cba39edbf312954b4f97}} 
+\index{SceneRegistrationBroker@{SceneRegistrationBroker}!operator=@{operator=}}
+\index{operator=@{operator=}!SceneRegistrationBroker@{SceneRegistrationBroker}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_registration_broker}{Scene\+Registration\+Broker}}\& Scene\+Registration\+Broker\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_registration_broker}{Scene\+Registration\+Broker}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_scene_registration_broker_a43f383ab8a9b3a6948cd2903cfaf2355}\label{class_scene_registration_broker_a43f383ab8a9b3a6948cd2903cfaf2355}} 
+\index{SceneRegistrationBroker@{SceneRegistrationBroker}!lstCommands@{lstCommands}}
+\index{lstCommands@{lstCommands}!SceneRegistrationBroker@{SceneRegistrationBroker}}
+\doxysubsubsection{\texorpdfstring{lstCommands}{lstCommands}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_registration_broker_aa5b730a2bebab1069ea811d40b2b5d7c}{Command\+List}}$\ast$ Scene\+Registration\+Broker\+::lst\+Commands\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The list of commands. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_scene_registration_broker_8h}{Scene\+Registration\+Broker.\+h}}\item 
+\mbox{\hyperlink{_scene_registration_broker_8cpp}{Scene\+Registration\+Broker.\+cpp}}\end{DoxyCompactItemize}

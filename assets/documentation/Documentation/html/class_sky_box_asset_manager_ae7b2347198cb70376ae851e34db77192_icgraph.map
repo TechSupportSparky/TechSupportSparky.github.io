@@ -1,0 +1,4 @@
+<map id="SkyBoxAssetManager::privGet" name="SkyBoxAssetManager::privGet">
+<area shape="rect" id="node1" title="Internal call to get the associated skybox." alt="" coords="235,5,387,47"/>
+<area shape="rect" id="node2" href="$class_sky_box_asset_manager.html#a82fde9259aa58fbe56be38c3ea97b5e3" title="Gets a sky box* using the given key." alt="" coords="5,13,187,39"/>
+</map>

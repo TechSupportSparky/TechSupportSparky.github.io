@@ -1,0 +1,4 @@
+<map id="SceneManager::privInitStartScene" name="SceneManager::privInitStartScene">
+<area shape="rect" id="node1" title="Private initialize start scene." alt="" coords="5,5,187,47"/>
+<area shape="rect" id="node2" href="$class_scene.html#aafd7510b1309c6ba864791c429870959" title="Initializes the scene. Put scene related startup here." alt="" coords="235,13,349,39"/>
+</map>

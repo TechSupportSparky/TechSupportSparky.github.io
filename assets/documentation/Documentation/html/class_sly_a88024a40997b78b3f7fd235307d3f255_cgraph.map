@@ -1,0 +1,6 @@
+<map id="Sly::GetTime" name="Sly::GetTime">
+<area shape="rect" id="node1" title="Gets the time." alt="" coords="5,31,104,57"/>
+<area shape="rect" id="node2" href="$class_sly.html#a1d59581314e3040746c9a40b2d9a2577" title="Gets the instance." alt="" coords="161,5,260,32"/>
+<area shape="rect" id="node4" href="$class_sly.html#a872cf3416674598e34f31fbde41e1b09" title="Gets internal time." alt="" coords="152,56,269,83"/>
+<area shape="rect" id="node3" href="$class_sly.html#a50e7c55c362cf0a3dec26ad4e77370e0" title="Default constructor." alt="" coords="317,5,385,32"/>
+</map>

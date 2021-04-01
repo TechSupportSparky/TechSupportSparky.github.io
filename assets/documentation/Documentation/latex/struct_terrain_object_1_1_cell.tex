@@ -1,0 +1,64 @@
+\hypertarget{struct_terrain_object_1_1_cell}{}\doxysection{Terrain\+Object\+::Cell Struct Reference}
+\label{struct_terrain_object_1_1_cell}\index{TerrainObject::Cell@{TerrainObject::Cell}}
+
+
+A cell as it is stored within the terrain.  
+
+
+
+
+Collaboration diagram for Terrain\+Object\+::Cell\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{struct_terrain_object_1_1_cell__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_terrain_object_1_1_cell_a83207e6662309d83d9be590f27575753}{Cell}} (Vect min, Vect max)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vect \mbox{\hyperlink{struct_terrain_object_1_1_cell_a2af7bda783e4c79aa8a2c4745f6de425}{min\+Vect}}
+\item 
+Vect \mbox{\hyperlink{struct_terrain_object_1_1_cell_adce5ec185f4f9d9d02aa66564395ea5b}{max\+Vect}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A cell as it is stored within the terrain. 
+
+The structure of the cell {\itshape could} be optimized utilizing just the Y value of each min and max value within the dataset. The reason I am choosing to store the whole Vect is for quick access when creating A\+A\+BB\textquotesingle{}s for visualization and collision. ~\newline
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_terrain_object_1_1_cell_a83207e6662309d83d9be590f27575753}\label{struct_terrain_object_1_1_cell_a83207e6662309d83d9be590f27575753}} 
+\index{TerrainObject::Cell@{TerrainObject::Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!TerrainObject::Cell@{TerrainObject::Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}}
+{\footnotesize\ttfamily Terrain\+Object\+::\+Cell\+::\+Cell (\begin{DoxyParamCaption}\item[{Vect}]{min,  }\item[{Vect}]{max }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_terrain_object_1_1_cell_adce5ec185f4f9d9d02aa66564395ea5b}\label{struct_terrain_object_1_1_cell_adce5ec185f4f9d9d02aa66564395ea5b}} 
+\index{TerrainObject::Cell@{TerrainObject::Cell}!maxVect@{maxVect}}
+\index{maxVect@{maxVect}!TerrainObject::Cell@{TerrainObject::Cell}}
+\doxysubsubsection{\texorpdfstring{maxVect}{maxVect}}
+{\footnotesize\ttfamily Vect Terrain\+Object\+::\+Cell\+::max\+Vect}
+
+\mbox{\Hypertarget{struct_terrain_object_1_1_cell_a2af7bda783e4c79aa8a2c4745f6de425}\label{struct_terrain_object_1_1_cell_a2af7bda783e4c79aa8a2c4745f6de425}} 
+\index{TerrainObject::Cell@{TerrainObject::Cell}!minVect@{minVect}}
+\index{minVect@{minVect}!TerrainObject::Cell@{TerrainObject::Cell}}
+\doxysubsubsection{\texorpdfstring{minVect}{minVect}}
+{\footnotesize\ttfamily Vect Terrain\+Object\+::\+Cell\+::min\+Vect}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_terrain_object_8h}{Terrain\+Object.\+h}}\item 
+\mbox{\hyperlink{_terrain_object_8cpp}{Terrain\+Object.\+cpp}}\end{DoxyCompactItemize}

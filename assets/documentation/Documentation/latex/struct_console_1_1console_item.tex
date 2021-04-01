@@ -1,0 +1,101 @@
+\hypertarget{struct_console_1_1console_item}{}\doxysection{Console\+::console\+Item Struct Reference}
+\label{struct_console_1_1console_item}\index{Console::consoleItem@{Console::consoleItem}}
+
+
+The specifics of what an \textquotesingle{}item\textquotesingle{} is.  
+
+
+
+
+Collaboration diagram for Console\+::console\+Item\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{struct_console_1_1console_item__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{struct_console_1_1console_item_a9f1a72429322789332be2cf1d65ad28c}{name}}
+\item 
+std\+::string \mbox{\hyperlink{struct_console_1_1console_item_af20ba5fc4685f708b471759244d95a36}{qualifier}}
+\item 
+std\+::string \mbox{\hyperlink{struct_console_1_1console_item_acdfe456d5b734403e33ec55efc268c43}{description}}
+\item 
+\mbox{\hyperlink{_console_items_8h_a58413948967126ebd4103471e7581cb0}{console\+Item\+Types}} \mbox{\hyperlink{struct_console_1_1console_item_ac7be4dfa4ef7b5feecbb28446ee3a741}{type}}
+\item 
+int \mbox{\hyperlink{struct_console_1_1console_item_ad27abd9efab6cc6936f08b705fe72ca2}{num\+Arguments}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>void $\ast$ \mbox{\hyperlink{struct_console_1_1console_item_a027a76a8a9708d57bc9549d6a40f6dd5}{variablePointer}}\\
+\>\mbox{\hyperlink{class_console_command}{ConsoleCommand}} $\ast$ \mbox{\hyperlink{struct_console_1_1console_item_a1b70aa8b758adc988f99ea328c1567c9}{function}}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The specifics of what an \textquotesingle{}item\textquotesingle{} is. 
+
+A console item is composed of a name identifier at the very least along with a pointer to either a variable or a command. A console item is expandable in the sense of having a qualifier to \char`\"{}associate\char`\"{} a name + qualifier together.
+
+The name and qualifier are stored together as a \char`\"{}description\char`\"{} internally for parsing simplicity.
+
+Lastly, the type is determined by the input data. Data may be either a command or a data type. Command type\textquotesingle{}s are automatically populated by the console manager, whereas variable data types must be declared explicitly. ~\newline
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_console_1_1console_item_a496d65bdb37af2fdf6240832a10dddfb}\label{struct_console_1_1console_item_a496d65bdb37af2fdf6240832a10dddfb}} 
+\doxysubsubsection{\texorpdfstring{"@1}{@1}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+\mbox{\Hypertarget{struct_console_1_1console_item_acdfe456d5b734403e33ec55efc268c43}\label{struct_console_1_1console_item_acdfe456d5b734403e33ec55efc268c43}} 
+\index{Console::consoleItem@{Console::consoleItem}!description@{description}}
+\index{description@{description}!Console::consoleItem@{Console::consoleItem}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily std\+::string Console\+::console\+Item\+::description}
+
+\mbox{\Hypertarget{struct_console_1_1console_item_a1b70aa8b758adc988f99ea328c1567c9}\label{struct_console_1_1console_item_a1b70aa8b758adc988f99ea328c1567c9}} 
+\index{Console::consoleItem@{Console::consoleItem}!function@{function}}
+\index{function@{function}!Console::consoleItem@{Console::consoleItem}}
+\doxysubsubsection{\texorpdfstring{function}{function}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_command}{Console\+Command}}$\ast$ Console\+::console\+Item\+::function}
+
+\mbox{\Hypertarget{struct_console_1_1console_item_a9f1a72429322789332be2cf1d65ad28c}\label{struct_console_1_1console_item_a9f1a72429322789332be2cf1d65ad28c}} 
+\index{Console::consoleItem@{Console::consoleItem}!name@{name}}
+\index{name@{name}!Console::consoleItem@{Console::consoleItem}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Console\+::console\+Item\+::name}
+
+\mbox{\Hypertarget{struct_console_1_1console_item_ad27abd9efab6cc6936f08b705fe72ca2}\label{struct_console_1_1console_item_ad27abd9efab6cc6936f08b705fe72ca2}} 
+\index{Console::consoleItem@{Console::consoleItem}!numArguments@{numArguments}}
+\index{numArguments@{numArguments}!Console::consoleItem@{Console::consoleItem}}
+\doxysubsubsection{\texorpdfstring{numArguments}{numArguments}}
+{\footnotesize\ttfamily int Console\+::console\+Item\+::num\+Arguments}
+
+\mbox{\Hypertarget{struct_console_1_1console_item_af20ba5fc4685f708b471759244d95a36}\label{struct_console_1_1console_item_af20ba5fc4685f708b471759244d95a36}} 
+\index{Console::consoleItem@{Console::consoleItem}!qualifier@{qualifier}}
+\index{qualifier@{qualifier}!Console::consoleItem@{Console::consoleItem}}
+\doxysubsubsection{\texorpdfstring{qualifier}{qualifier}}
+{\footnotesize\ttfamily std\+::string Console\+::console\+Item\+::qualifier}
+
+\mbox{\Hypertarget{struct_console_1_1console_item_ac7be4dfa4ef7b5feecbb28446ee3a741}\label{struct_console_1_1console_item_ac7be4dfa4ef7b5feecbb28446ee3a741}} 
+\index{Console::consoleItem@{Console::consoleItem}!type@{type}}
+\index{type@{type}!Console::consoleItem@{Console::consoleItem}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_console_items_8h_a58413948967126ebd4103471e7581cb0}{console\+Item\+Types}} Console\+::console\+Item\+::type}
+
+\mbox{\Hypertarget{struct_console_1_1console_item_a027a76a8a9708d57bc9549d6a40f6dd5}\label{struct_console_1_1console_item_a027a76a8a9708d57bc9549d6a40f6dd5}} 
+\index{Console::consoleItem@{Console::consoleItem}!variablePointer@{variablePointer}}
+\index{variablePointer@{variablePointer}!Console::consoleItem@{Console::consoleItem}}
+\doxysubsubsection{\texorpdfstring{variablePointer}{variablePointer}}
+{\footnotesize\ttfamily void$\ast$ Console\+::console\+Item\+::variable\+Pointer}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_console_8h}{Console.\+h}}\end{DoxyCompactItemize}

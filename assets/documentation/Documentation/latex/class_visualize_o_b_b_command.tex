@@ -1,0 +1,177 @@
+\hypertarget{class_visualize_o_b_b_command}{}\doxysection{Visualize\+O\+B\+B\+Command Class Reference}
+\label{class_visualize_o_b_b_command}\index{VisualizeOBBCommand@{VisualizeOBBCommand}}
+
+
+{\ttfamily \#include $<$Visualize\+O\+B\+B\+Command.\+h$>$}
+
+
+
+Inheritance diagram for Visualize\+O\+B\+B\+Command\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{class_visualize_o_b_b_command__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Visualize\+O\+B\+B\+Command\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{class_visualize_o_b_b_command__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_visualize_o_b_b_command_a3b71274422a54472eeb014e8b5d04aae}{Visualize\+O\+B\+B\+Command}} ()=default
+\item 
+\mbox{\hyperlink{class_visualize_o_b_b_command_a75d063e274afb8b4f82b6b657a3a4078}{Visualize\+O\+B\+B\+Command}} (const \mbox{\hyperlink{class_visualize_o_b_b_command}{Visualize\+O\+B\+B\+Command}} \&)=delete
+\item 
+\mbox{\hyperlink{class_visualize_o_b_b_command_ae92f5947b46389ce9703d61da22401d8}{Visualize\+O\+B\+B\+Command}} (\mbox{\hyperlink{class_visualize_o_b_b_command}{Visualize\+O\+B\+B\+Command}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_visualize_o_b_b_command}{Visualize\+O\+B\+B\+Command}} \& \mbox{\hyperlink{class_visualize_o_b_b_command_a154a79e01a78f7f075b1593ddfcbefd7}{operator=}} (const \mbox{\hyperlink{class_visualize_o_b_b_command}{Visualize\+O\+B\+B\+Command}} \&)=delete
+\item 
+\mbox{\hyperlink{class_visualize_o_b_b_command}{Visualize\+O\+B\+B\+Command}} \& \mbox{\hyperlink{class_visualize_o_b_b_command_a5af374e6f7e0e0575c86313f31c7ccef}{operator=}} (\mbox{\hyperlink{class_visualize_o_b_b_command}{Visualize\+O\+B\+B\+Command}} \&\&)=delete
+\item 
+virtual \mbox{\hyperlink{class_visualize_o_b_b_command_aaeeed6d3565de61ced1269bbbe40aec9}{$\sim$\+Visualize\+O\+B\+B\+Command}} ()=default
+\item 
+\mbox{\hyperlink{class_visualize_o_b_b_command_ada6112b6fe449b5dbdad9339130d53f0}{Visualize\+O\+B\+B\+Command}} (const Matrix \&\mbox{\hyperlink{class_visualize_o_b_b_command_a41f67c06c43e3503e5102ad81127e1d3}{world}}, const Vect \&col)
+\begin{DoxyCompactList}\small\item\em Specialize constructor for initial creation of the command. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_visualize_o_b_b_command_a9cf3ffc6899b40b33e7915f42c8393aa}{Initialize}} (const Matrix \&\mbox{\hyperlink{class_visualize_o_b_b_command_a41f67c06c43e3503e5102ad81127e1d3}{world}}, const Vect \&\mbox{\hyperlink{class_visualize_o_b_b_command_a3f31759a4f2ff55d3256c4f3615ae5fb}{color}})
+\begin{DoxyCompactList}\small\item\em Allows the O\+BB to be initialized with data so that a new command does not need to be created. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_visualize_o_b_b_command_ad01bd14c3e64c6cec80abb5262ce05a6}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes this command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Matrix \mbox{\hyperlink{class_visualize_o_b_b_command_a41f67c06c43e3503e5102ad81127e1d3}{world}}
+\item 
+Vect \mbox{\hyperlink{class_visualize_o_b_b_command_a3f31759a4f2ff55d3256c4f3615ae5fb}{color}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_visualize_o_b_b_command_a3b71274422a54472eeb014e8b5d04aae}\label{class_visualize_o_b_b_command_a3b71274422a54472eeb014e8b5d04aae}} 
+\index{VisualizeOBBCommand@{VisualizeOBBCommand}!VisualizeOBBCommand@{VisualizeOBBCommand}}
+\index{VisualizeOBBCommand@{VisualizeOBBCommand}!VisualizeOBBCommand@{VisualizeOBBCommand}}
+\doxysubsubsection{\texorpdfstring{VisualizeOBBCommand()}{VisualizeOBBCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Visualize\+O\+B\+B\+Command\+::\+Visualize\+O\+B\+B\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_visualize_o_b_b_command_a75d063e274afb8b4f82b6b657a3a4078}\label{class_visualize_o_b_b_command_a75d063e274afb8b4f82b6b657a3a4078}} 
+\index{VisualizeOBBCommand@{VisualizeOBBCommand}!VisualizeOBBCommand@{VisualizeOBBCommand}}
+\index{VisualizeOBBCommand@{VisualizeOBBCommand}!VisualizeOBBCommand@{VisualizeOBBCommand}}
+\doxysubsubsection{\texorpdfstring{VisualizeOBBCommand()}{VisualizeOBBCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Visualize\+O\+B\+B\+Command\+::\+Visualize\+O\+B\+B\+Command (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_visualize_o_b_b_command}{Visualize\+O\+B\+B\+Command}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_visualize_o_b_b_command_ae92f5947b46389ce9703d61da22401d8}\label{class_visualize_o_b_b_command_ae92f5947b46389ce9703d61da22401d8}} 
+\index{VisualizeOBBCommand@{VisualizeOBBCommand}!VisualizeOBBCommand@{VisualizeOBBCommand}}
+\index{VisualizeOBBCommand@{VisualizeOBBCommand}!VisualizeOBBCommand@{VisualizeOBBCommand}}
+\doxysubsubsection{\texorpdfstring{VisualizeOBBCommand()}{VisualizeOBBCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Visualize\+O\+B\+B\+Command\+::\+Visualize\+O\+B\+B\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visualize_o_b_b_command}{Visualize\+O\+B\+B\+Command}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_visualize_o_b_b_command_aaeeed6d3565de61ced1269bbbe40aec9}\label{class_visualize_o_b_b_command_aaeeed6d3565de61ced1269bbbe40aec9}} 
+\index{VisualizeOBBCommand@{VisualizeOBBCommand}!````~VisualizeOBBCommand@{$\sim$VisualizeOBBCommand}}
+\index{````~VisualizeOBBCommand@{$\sim$VisualizeOBBCommand}!VisualizeOBBCommand@{VisualizeOBBCommand}}
+\doxysubsubsection{\texorpdfstring{$\sim$VisualizeOBBCommand()}{~VisualizeOBBCommand()}}
+{\footnotesize\ttfamily virtual Visualize\+O\+B\+B\+Command\+::$\sim$\+Visualize\+O\+B\+B\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_visualize_o_b_b_command_ada6112b6fe449b5dbdad9339130d53f0}\label{class_visualize_o_b_b_command_ada6112b6fe449b5dbdad9339130d53f0}} 
+\index{VisualizeOBBCommand@{VisualizeOBBCommand}!VisualizeOBBCommand@{VisualizeOBBCommand}}
+\index{VisualizeOBBCommand@{VisualizeOBBCommand}!VisualizeOBBCommand@{VisualizeOBBCommand}}
+\doxysubsubsection{\texorpdfstring{VisualizeOBBCommand()}{VisualizeOBBCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Visualize\+O\+B\+B\+Command\+::\+Visualize\+O\+B\+B\+Command (\begin{DoxyParamCaption}\item[{const Matrix \&}]{world,  }\item[{const Vect \&}]{col }\end{DoxyParamCaption})}
+
+
+
+Specialize constructor for initial creation of the command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & The world. \\
+\hline
+{\em col} & The col. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_visualize_o_b_b_command_ad01bd14c3e64c6cec80abb5262ce05a6}\label{class_visualize_o_b_b_command_ad01bd14c3e64c6cec80abb5262ce05a6}} 
+\index{VisualizeOBBCommand@{VisualizeOBBCommand}!execute@{execute}}
+\index{execute@{execute}!VisualizeOBBCommand@{VisualizeOBBCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Visualize\+O\+B\+B\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes this command. 
+
+
+
+Implements \mbox{\hyperlink{class_command_base_a8977bf07d93b93c7d3c96cce558e9d45}{Command\+Base}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualize_o_b_b_command_ad01bd14c3e64c6cec80abb5262ce05a6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualize_o_b_b_command_a9cf3ffc6899b40b33e7915f42c8393aa}\label{class_visualize_o_b_b_command_a9cf3ffc6899b40b33e7915f42c8393aa}} 
+\index{VisualizeOBBCommand@{VisualizeOBBCommand}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!VisualizeOBBCommand@{VisualizeOBBCommand}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Visualize\+O\+B\+B\+Command\+::\+Initialize (\begin{DoxyParamCaption}\item[{const Matrix \&}]{world,  }\item[{const Vect \&}]{color }\end{DoxyParamCaption})}
+
+
+
+Allows the O\+BB to be initialized with data so that a new command does not need to be created. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & The world Matrix. \\
+\hline
+{\em color} & The color Vector. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualize_o_b_b_command_a9cf3ffc6899b40b33e7915f42c8393aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualize_o_b_b_command_a154a79e01a78f7f075b1593ddfcbefd7}\label{class_visualize_o_b_b_command_a154a79e01a78f7f075b1593ddfcbefd7}} 
+\index{VisualizeOBBCommand@{VisualizeOBBCommand}!operator=@{operator=}}
+\index{operator=@{operator=}!VisualizeOBBCommand@{VisualizeOBBCommand}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_visualize_o_b_b_command}{Visualize\+O\+B\+B\+Command}}\& Visualize\+O\+B\+B\+Command\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_visualize_o_b_b_command}{Visualize\+O\+B\+B\+Command}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_visualize_o_b_b_command_a5af374e6f7e0e0575c86313f31c7ccef}\label{class_visualize_o_b_b_command_a5af374e6f7e0e0575c86313f31c7ccef}} 
+\index{VisualizeOBBCommand@{VisualizeOBBCommand}!operator=@{operator=}}
+\index{operator=@{operator=}!VisualizeOBBCommand@{VisualizeOBBCommand}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_visualize_o_b_b_command}{Visualize\+O\+B\+B\+Command}}\& Visualize\+O\+B\+B\+Command\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visualize_o_b_b_command}{Visualize\+O\+B\+B\+Command}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_visualize_o_b_b_command_a3f31759a4f2ff55d3256c4f3615ae5fb}\label{class_visualize_o_b_b_command_a3f31759a4f2ff55d3256c4f3615ae5fb}} 
+\index{VisualizeOBBCommand@{VisualizeOBBCommand}!color@{color}}
+\index{color@{color}!VisualizeOBBCommand@{VisualizeOBBCommand}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily Vect Visualize\+O\+B\+B\+Command\+::color\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_visualize_o_b_b_command_a41f67c06c43e3503e5102ad81127e1d3}\label{class_visualize_o_b_b_command_a41f67c06c43e3503e5102ad81127e1d3}} 
+\index{VisualizeOBBCommand@{VisualizeOBBCommand}!world@{world}}
+\index{world@{world}!VisualizeOBBCommand@{VisualizeOBBCommand}}
+\doxysubsubsection{\texorpdfstring{world}{world}}
+{\footnotesize\ttfamily Matrix Visualize\+O\+B\+B\+Command\+::world\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_visualize_o_b_b_command_8h}{Visualize\+O\+B\+B\+Command.\+h}}\item 
+\mbox{\hyperlink{_visualize_o_b_b_command_8cpp}{Visualize\+O\+B\+B\+Command.\+cpp}}\end{DoxyCompactItemize}

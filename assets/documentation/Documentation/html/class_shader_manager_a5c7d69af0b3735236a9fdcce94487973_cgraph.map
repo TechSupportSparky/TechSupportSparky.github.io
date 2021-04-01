@@ -1,0 +1,6 @@
+<map id="ShaderManager::LoadSpriteShader" name="ShaderManager::LoadSpriteShader">
+<area shape="rect" id="node1" title="Loads sprite shader with the unique specified key." alt="" coords="5,27,188,69"/>
+<area shape="rect" id="node2" href="$class_shader_manager.html#a027cb5c486b20e641bcbf94e8186a965" title="Gets the instance." alt="" coords="252,5,423,32"/>
+<area shape="rect" id="node4" href="$class_shader_manager.html#ab2cdfb1ef3d5b95446ef266d22971584" title="Private load sprite shader." alt="" coords="236,57,439,98"/>
+<area shape="rect" id="node3" href="$class_shader_manager.html#aca25f81fd10a02b3e97e9c459b864186" title="Default constructor." alt="" coords="487,5,699,32"/>
+</map>

@@ -1,0 +1,59 @@
+\hypertarget{group__demo__basic}{}\doxysection{Basic Demo}
+\label{group__demo__basic}\index{Basic Demo@{Basic Demo}}
+
+
+This is a basic demo.  
+
+
+Collaboration diagram for Basic Demo\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{group__demo__basic}
+\end{center}
+\end{figure}
+This is a basic demo. 
+
+The beginning of a game must have two major components. We need a scene and we need an object. This tutorial is aimed at getting started with these basic components.
+
+To begin, you will need to create a named scene that inherits from the class \mbox{\hyperlink{class_scene}{Scene}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//TankScene.h}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }Tank; \textcolor{comment}{// Forward declaration}}
+\DoxyCodeLine{     }
+\DoxyCodeLine{\textcolor{keyword}{class }TankScene : \textcolor{keyword}{public} \mbox{\hyperlink{class_scene}{Scene}} \{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{    \textcolor{comment}{// We do not create objects at construction}}
+\DoxyCodeLine{    TankScene() = \{\};}
+\DoxyCodeLine{    \string~TankScene() = \{\};   }
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Create objects within initialization}}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_aafd7510b1309c6ba864791c429870959}{Initialize}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_aedaeb93be94ac521c34a5ffd5168d178}{SceneEnd}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{    }
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{    \textcolor{comment}{// Our object}}
+\DoxyCodeLine{    Tank* tank; }
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+This is the end of our basic scene header. We next need to setup the Initialize and Scene\+End functions to load in our game object. For further details about setting up the game object and loading in the model, textures, and shader see the \mbox{\hyperlink{group___g_e_t_t_i_n_g___s_t_a_r_t_e_d}{Getting started}} section.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// TankScene.cpp}}
+\DoxyCodeLine{}
+\DoxyCodeLine{... \textcolor{comment}{// Load in the appropriate headers}}
+\DoxyCodeLine{}
+\DoxyCodeLine{TankScene::Initialize() \{}
+\DoxyCodeLine{    pFrigate = \textcolor{keyword}{new} Frigate();}
+\DoxyCodeLine{    pFrigate.setPosition(Vect(40, 10, 40)); \textcolor{comment}{// This can also be done at construction}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{TankScene::SceneEnd() \{}
+\DoxyCodeLine{    \textcolor{keyword}{delete} pFrigate;}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ 

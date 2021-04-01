@@ -1,0 +1,9 @@
+<map id="SceneAttorney::AlarmableRegistration::GetAlarmMgr" name="SceneAttorney::AlarmableRegistration::GetAlarmMgr">
+<area shape="rect" id="node1" title=" " alt="" coords="784,37,960,79"/>
+<area shape="rect" id="node2" href="$class_alarmable.html#ad2da9852c51da5d0696d73fd69f647d2" title="Alarm deregistration." alt="" coords="533,17,736,43"/>
+<area shape="rect" id="node5" href="$class_alarmable.html#ad8f6202e8c5591ed93bf1f570bbfec62" title="Alarm registration." alt="" coords="539,71,730,98"/>
+<area shape="rect" id="node3" href="$class_alarmable_attorney_1_1_registration.html#a13101df0532f2029b8c1b170fd314f05" title=" " alt="" coords="272,5,485,47"/>
+<area shape="rect" id="node4" href="$class_alarmable_deregistration_command.html#a731360dc8ce29f80963461b70bc670c7" title="Executes this command." alt="" coords="5,5,224,47"/>
+<area shape="rect" id="node6" href="$class_alarmable_attorney_1_1_registration.html#adcce12c6b6113c78cf6f154405981e3d" title=" " alt="" coords="277,71,480,112"/>
+<area shape="rect" id="node7" href="$class_alarmable_registration_command.html#ac53830526031a10434890d8a61666516" title="Executes this command." alt="" coords="11,71,219,112"/>
+</map>

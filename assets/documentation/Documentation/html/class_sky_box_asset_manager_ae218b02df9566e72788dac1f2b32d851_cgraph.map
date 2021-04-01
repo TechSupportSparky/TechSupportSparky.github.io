@@ -1,0 +1,6 @@
+<map id="SkyBoxAssetManager::Load" name="SkyBoxAssetManager::Load">
+<area shape="rect" id="node1" title="Loads a new skybox and stores the associated key for later retrieval." alt="" coords="5,39,157,80"/>
+<area shape="rect" id="node2" href="$class_sky_box_asset_manager.html#ada957918e4ed91420cb80d1493495cca" title="Gets the instance of SkyBoxAssetManager." alt="" coords="205,5,357,47"/>
+<area shape="rect" id="node4" href="$class_sky_box_asset_manager.html#a74205ebdbdfc8bf232f2212c7c38bb3c" title="Private call to construct and store a skybox asset." alt="" coords="205,71,357,112"/>
+<area shape="rect" id="node3" href="$class_sky_box_asset_manager.html#a2a647eab7f61ed83c89a778266cb7881" title="Default constructor." alt="" coords="405,5,565,47"/>
+</map>

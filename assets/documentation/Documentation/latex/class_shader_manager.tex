@@ -1,0 +1,460 @@
+\hypertarget{class_shader_manager}{}\doxysection{Shader\+Manager Class Reference}
+\label{class_shader_manager}\index{ShaderManager@{ShaderManager}}
+
+
+{\ttfamily \#include $<$Shader\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Shader\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_shader_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Shader\+Object $\ast$ \mbox{\hyperlink{class_shader_manager_a102591e663e0897ac54aee3bb097ab5f}{Get}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Gets a shader object$\ast$ using the given key. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_shader_manager_a7b8e7d53f2af123307c0c6bd4c137501}{Load}} (std\+::string key, const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Loads the specified shader. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_shader_manager_a5c7d69af0b3735236a9fdcce94487973}{Load\+Sprite\+Shader}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Loads sprite shader with the unique specified key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::string \mbox{\hyperlink{class_shader_manager_a97100e537c487eb59bee696f885119e9}{Map\+Key}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the map key. \end{DoxyCompactList}\item 
+typedef std\+::map$<$ \mbox{\hyperlink{class_shader_manager_a97100e537c487eb59bee696f885119e9}{Map\+Key}}, Shader\+Object $\ast$ $>$ \mbox{\hyperlink{class_shader_manager_a70d380e065a9695b4bd1b03c2189ca93}{Storage\+Map}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the storage map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shader_manager_aca25f81fd10a02b3e97e9c459b864186}{Shader\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shader_manager_a7107f141de4148e9870d3870027337cd}{Shader\+Manager}} (const \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shader_manager_a2cd9bfa9a8d679fe1b38bc183ad3d13b}{Shader\+Manager}} (\mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} \& \mbox{\hyperlink{class_shader_manager_aac4b72bb581bbce0094efb49ce936907}{operator=}} (const \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} \& \mbox{\hyperlink{class_shader_manager_ae08bf4f0d47536646f3ae0c0d88da590}{operator=}} (\mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shader_manager_a23b053748b963e10cb17ae768467942a}{$\sim$\+Shader\+Manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor ~\newline
+ \end{DoxyCompactList}\item 
+Shader\+Object $\ast$ \mbox{\hyperlink{class_shader_manager_aa99cbaffdf83f033e1541b210a3da0c4}{priv\+Get}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Private get. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_a41ccca1682c66c0e893d06b065870e93}{priv\+Load}} (std\+::string key, const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Private load. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_ab2cdfb1ef3d5b95446ef266d22971584}{priv\+Load\+Sprite\+Shader}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Private load sprite shader. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_a3450b4c48e0e27497483b2d4b121cabe}{priv\+Delete}} ()
+\begin{DoxyCompactList}\small\item\em Deletes pointer instance. To be called internally only. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} \& \mbox{\hyperlink{class_shader_manager_a027cb5c486b20e641bcbf94e8186a965}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the instance. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_shader_manager_ae5e338a92e3c784c333c1775d8dd2ea3}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em Deletes pointer instance. To be called within Engine code only. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_shader_manager_a5993559d4233b14b8ce2b2537b39b24f}{default\+Path}}
+\begin{DoxyCompactList}\small\item\em The default path that Shaders are stored. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, Shader\+Object $\ast$ $>$ \mbox{\hyperlink{class_shader_manager_ac67d3748562e55810e0df43a554ef426}{shader\+Map}}
+\begin{DoxyCompactList}\small\item\em A map containing shaders specified by a string key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} $\ast$ \mbox{\hyperlink{class_shader_manager_adfd72f42ed44e4d6c3c54df11f20c575}{ptr\+Instance}} = nullptr
+\begin{DoxyCompactList}\small\item\em Pointer to the \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_shader_manager_a97022f78230dba6423365444e6c6f63d}{Shader\+Manager\+Attorney}}
+\begin{DoxyCompactList}\small\item\em Dictates access to \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}}\textquotesingle{}s private functions for engine usage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_shader_manager_a97100e537c487eb59bee696f885119e9}\label{class_shader_manager_a97100e537c487eb59bee696f885119e9}} 
+\index{ShaderManager@{ShaderManager}!MapKey@{MapKey}}
+\index{MapKey@{MapKey}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{MapKey}{MapKey}}
+{\footnotesize\ttfamily std\+::string \mbox{\hyperlink{class_shader_manager_a97100e537c487eb59bee696f885119e9}{Shader\+Manager\+::\+Map\+Key}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing the map key. 
+
+\mbox{\Hypertarget{class_shader_manager_a70d380e065a9695b4bd1b03c2189ca93}\label{class_shader_manager_a70d380e065a9695b4bd1b03c2189ca93}} 
+\index{ShaderManager@{ShaderManager}!StorageMap@{StorageMap}}
+\index{StorageMap@{StorageMap}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{StorageMap}{StorageMap}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{class_shader_manager_a97100e537c487eb59bee696f885119e9}{Map\+Key}}, Shader\+Object $\ast$ $>$ \mbox{\hyperlink{class_shader_manager_a70d380e065a9695b4bd1b03c2189ca93}{Shader\+Manager\+::\+Storage\+Map}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing the storage map. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_shader_manager_aca25f81fd10a02b3e97e9c459b864186}\label{class_shader_manager_aca25f81fd10a02b3e97e9c459b864186}} 
+\index{ShaderManager@{ShaderManager}!ShaderManager@{ShaderManager}}
+\index{ShaderManager@{ShaderManager}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{ShaderManager()}{ShaderManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Shader\+Manager\+::\+Shader\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Default constructor. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_aca25f81fd10a02b3e97e9c459b864186_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_a7107f141de4148e9870d3870027337cd}\label{class_shader_manager_a7107f141de4148e9870d3870027337cd}} 
+\index{ShaderManager@{ShaderManager}!ShaderManager@{ShaderManager}}
+\index{ShaderManager@{ShaderManager}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{ShaderManager()}{ShaderManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Shader\+Manager\+::\+Shader\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor ~\newline
+ 
+
+\mbox{\Hypertarget{class_shader_manager_a2cd9bfa9a8d679fe1b38bc183ad3d13b}\label{class_shader_manager_a2cd9bfa9a8d679fe1b38bc183ad3d13b}} 
+\index{ShaderManager@{ShaderManager}!ShaderManager@{ShaderManager}}
+\index{ShaderManager@{ShaderManager}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{ShaderManager()}{ShaderManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Shader\+Manager\+::\+Shader\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_shader_manager_a23b053748b963e10cb17ae768467942a}\label{class_shader_manager_a23b053748b963e10cb17ae768467942a}} 
+\index{ShaderManager@{ShaderManager}!````~ShaderManager@{$\sim$ShaderManager}}
+\index{````~ShaderManager@{$\sim$ShaderManager}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$ShaderManager()}{~ShaderManager()}}
+{\footnotesize\ttfamily Shader\+Manager\+::$\sim$\+Shader\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Deconstructor ~\newline
+ 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_shader_manager_ae5e338a92e3c784c333c1775d8dd2ea3}\label{class_shader_manager_ae5e338a92e3c784c333c1775d8dd2ea3}} 
+\index{ShaderManager@{ShaderManager}!Delete@{Delete}}
+\index{Delete@{Delete}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily static void Shader\+Manager\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Deletes pointer instance. To be called within Engine code only. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_ae5e338a92e3c784c333c1775d8dd2ea3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_ae5e338a92e3c784c333c1775d8dd2ea3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_a102591e663e0897ac54aee3bb097ab5f}\label{class_shader_manager_a102591e663e0897ac54aee3bb097ab5f}} 
+\index{ShaderManager@{ShaderManager}!Get@{Get}}
+\index{Get@{Get}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily static Shader\+Object $\ast$ Shader\+Manager\+::\+Get (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets a shader object$\ast$ using the given key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to get.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Assertion if it fails, else a pointer to a Shader\+Object. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a102591e663e0897ac54aee3bb097ab5f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a102591e663e0897ac54aee3bb097ab5f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_a027cb5c486b20e641bcbf94e8186a965}\label{class_shader_manager_a027cb5c486b20e641bcbf94e8186a965}} 
+\index{ShaderManager@{ShaderManager}!Instance@{Instance}}
+\index{Instance@{Instance}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} \& Shader\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the instance. 
+
+\begin{DoxyReturn}{Returns}
+A reference to \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a027cb5c486b20e641bcbf94e8186a965_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a027cb5c486b20e641bcbf94e8186a965_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_a7b8e7d53f2af123307c0c6bd4c137501}\label{class_shader_manager_a7b8e7d53f2af123307c0c6bd4c137501}} 
+\index{ShaderManager@{ShaderManager}!Load@{Load}}
+\index{Load@{Load}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily static void Shader\+Manager\+::\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Loads the specified shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key. \\
+\hline
+{\em path} & Partial pathname of the file. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a7b8e7d53f2af123307c0c6bd4c137501_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_a5c7d69af0b3735236a9fdcce94487973}\label{class_shader_manager_a5c7d69af0b3735236a9fdcce94487973}} 
+\index{ShaderManager@{ShaderManager}!LoadSpriteShader@{LoadSpriteShader}}
+\index{LoadSpriteShader@{LoadSpriteShader}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{LoadSpriteShader()}{LoadSpriteShader()}}
+{\footnotesize\ttfamily static void Shader\+Manager\+::\+Load\+Sprite\+Shader (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Loads sprite shader with the unique specified key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The unique key.\\
+\hline
+\end{DoxyParams}
+This loading of this sprite shader ensures that no two sprites can load the same shader under the same name. As an example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// This code is NOT valid:}}
+\DoxyCodeLine{mySprite = \textcolor{keyword}{new} \mbox{\hyperlink{class_sly_sprite}{SlySprite}}(\textcolor{stringliteral}{"Gordon-\/Freeman"});}
+\DoxyCodeLine{myOtherSprite = \textcolor{keyword}{new} \mbox{\hyperlink{class_sly_sprite}{SlySprite}}(\textcolor{stringliteral}{"Gordon-\/Freeman"});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// This code IS valid:}}
+\DoxyCodeLine{mySprite = \textcolor{keyword}{new} \mbox{\hyperlink{class_sly_sprite}{SlySprite}}(\textcolor{stringliteral}{"Gordon-\/Freeman"});}
+\DoxyCodeLine{myOtherSprite = \textcolor{keyword}{new} \mbox{\hyperlink{class_sly_sprite}{SlySprite}}(\textcolor{stringliteral}{"The-\/Free-\/Man"});}
+\end{DoxyCode}
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a5c7d69af0b3735236a9fdcce94487973_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_aac4b72bb581bbce0094efb49ce936907}\label{class_shader_manager_aac4b72bb581bbce0094efb49ce936907}} 
+\index{ShaderManager@{ShaderManager}!operator=@{operator=}}
+\index{operator=@{operator=}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}}\& Shader\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_shader_manager_ae08bf4f0d47536646f3ae0c0d88da590}\label{class_shader_manager_ae08bf4f0d47536646f3ae0c0d88da590}} 
+\index{ShaderManager@{ShaderManager}!operator=@{operator=}}
+\index{operator=@{operator=}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}}\& Shader\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_shader_manager_a3450b4c48e0e27497483b2d4b121cabe}\label{class_shader_manager_a3450b4c48e0e27497483b2d4b121cabe}} 
+\index{ShaderManager@{ShaderManager}!privDelete@{privDelete}}
+\index{privDelete@{privDelete}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{privDelete()}{privDelete()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::priv\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Deletes pointer instance. To be called internally only. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a3450b4c48e0e27497483b2d4b121cabe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_aa99cbaffdf83f033e1541b210a3da0c4}\label{class_shader_manager_aa99cbaffdf83f033e1541b210a3da0c4}} 
+\index{ShaderManager@{ShaderManager}!privGet@{privGet}}
+\index{privGet@{privGet}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{privGet()}{privGet()}}
+{\footnotesize\ttfamily Shader\+Object $\ast$ Shader\+Manager\+::priv\+Get (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private get. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Assertion if it fails, else a pointer to a Shader\+Object. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_aa99cbaffdf83f033e1541b210a3da0c4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_a41ccca1682c66c0e893d06b065870e93}\label{class_shader_manager_a41ccca1682c66c0e893d06b065870e93}} 
+\index{ShaderManager@{ShaderManager}!privLoad@{privLoad}}
+\index{privLoad@{privLoad}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{privLoad()}{privLoad()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::priv\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{key,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private load. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key. \\
+\hline
+{\em path} & Partial pathname of the file. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a41ccca1682c66c0e893d06b065870e93_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_ab2cdfb1ef3d5b95446ef266d22971584}\label{class_shader_manager_ab2cdfb1ef3d5b95446ef266d22971584}} 
+\index{ShaderManager@{ShaderManager}!privLoadSpriteShader@{privLoadSpriteShader}}
+\index{privLoadSpriteShader@{privLoadSpriteShader}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{privLoadSpriteShader()}{privLoadSpriteShader()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::priv\+Load\+Sprite\+Shader (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private load sprite shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The unique key.\\
+\hline
+\end{DoxyParams}
+Internal process for loading the sprite shader. Checks the existing map if the key is unique. If it is, the default Sprite\+Shader is loaded and added to the map. Assertion fail otherwise. ~\newline
+ Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_ab2cdfb1ef3d5b95446ef266d22971584_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_shader_manager_a97022f78230dba6423365444e6c6f63d}\label{class_shader_manager_a97022f78230dba6423365444e6c6f63d}} 
+\index{ShaderManager@{ShaderManager}!ShaderManagerAttorney@{ShaderManagerAttorney}}
+\index{ShaderManagerAttorney@{ShaderManagerAttorney}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{ShaderManagerAttorney}{ShaderManagerAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_shader_manager_attorney}{Shader\+Manager\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Dictates access to \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}}\textquotesingle{}s private functions for engine usage. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_shader_manager_a5993559d4233b14b8ce2b2537b39b24f}\label{class_shader_manager_a5993559d4233b14b8ce2b2537b39b24f}} 
+\index{ShaderManager@{ShaderManager}!defaultPath@{defaultPath}}
+\index{defaultPath@{defaultPath}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{defaultPath}{defaultPath}}
+{\footnotesize\ttfamily std\+::string Shader\+Manager\+::default\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The default path that Shaders are stored. 
+
+\mbox{\Hypertarget{class_shader_manager_adfd72f42ed44e4d6c3c54df11f20c575}\label{class_shader_manager_adfd72f42ed44e4d6c3c54df11f20c575}} 
+\index{ShaderManager@{ShaderManager}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} $\ast$ Shader\+Manager\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Pointer to the \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} instance. 
+
+\mbox{\Hypertarget{class_shader_manager_ac67d3748562e55810e0df43a554ef426}\label{class_shader_manager_ac67d3748562e55810e0df43a554ef426}} 
+\index{ShaderManager@{ShaderManager}!shaderMap@{shaderMap}}
+\index{shaderMap@{shaderMap}!ShaderManager@{ShaderManager}}
+\doxysubsubsection{\texorpdfstring{shaderMap}{shaderMap}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, Shader\+Object$\ast$$>$ Shader\+Manager\+::shader\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A map containing shaders specified by a string key. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_shader_manager_8h}{Shader\+Manager.\+h}}\item 
+\mbox{\hyperlink{_shader_manager_8cpp}{Shader\+Manager.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="SkyBoxAssetManager::privDelete" name="SkyBoxAssetManager::privDelete">
+<area shape="rect" id="node1" title="Internal call to delete the ptrInstance and cleanup assets." alt="" coords="641,5,793,47"/>
+<area shape="rect" id="node2" href="$class_sky_box_asset_manager.html#ab1387a06d42cbc4e099c931eb05f417e" title="Internal static call to delete internal assets." alt="" coords="441,5,593,47"/>
+<area shape="rect" id="node3" href="$class_sky_box_asset_manager_attorney.html#aca47c3859bb3257cd9a4bcd1180c1ecc" title=" " alt="" coords="192,5,393,47"/>
+<area shape="rect" id="node4" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="5,13,144,39"/>
+</map>

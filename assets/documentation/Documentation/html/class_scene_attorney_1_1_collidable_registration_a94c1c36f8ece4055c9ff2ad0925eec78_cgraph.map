@@ -1,0 +1,7 @@
+<map id="SceneAttorney::CollidableRegistration::GetCollisionMgr" name="SceneAttorney::CollidableRegistration::GetCollisionMgr">
+<area shape="rect" id="node1" title=" " alt="" coords="5,27,196,69"/>
+<area shape="rect" id="node2" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="244,27,424,69"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="488,5,655,32"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="472,57,671,98"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="719,5,923,32"/>
+</map>

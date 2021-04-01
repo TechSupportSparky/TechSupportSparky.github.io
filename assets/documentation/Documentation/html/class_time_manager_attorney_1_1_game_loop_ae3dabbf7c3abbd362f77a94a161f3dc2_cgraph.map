@@ -1,0 +1,7 @@
+<map id="TimeManagerAttorney::GameLoop::ProcessTime" name="TimeManagerAttorney::GameLoop::ProcessTime">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,183,65"/>
+<area shape="rect" id="node2" href="$class_time_manager.html#a14e5786948c412a8b5c84cb092424a5d" title="Process the time described by sys_time." alt="" coords="231,31,415,57"/>
+<area shape="rect" id="node3" href="$class_time_manager.html#ac06b0a182b394ddc0ac554ad090ee019" title="Gets the instance." alt="" coords="485,5,643,32"/>
+<area shape="rect" id="node5" href="$class_time_manager.html#abb2dec3e58a74f84c4c5c016b9dfdeaf" title="Private process time. Take currentTime &#45; previousTime." alt="" coords="463,56,665,83"/>
+<area shape="rect" id="node4" href="$class_time_manager.html#a46d2773caea1858a19594d58d57404c2" title="Default constructor." alt="" coords="713,5,900,32"/>
+</map>

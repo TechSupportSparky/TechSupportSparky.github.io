@@ -1,0 +1,481 @@
+\hypertarget{class_sly_sprite}{}\doxysection{Sly\+Sprite Class Reference}
+\label{class_sly_sprite}\index{SlySprite@{SlySprite}}
+
+
+{\ttfamily \#include $<$Sly\+Sprite.\+h$>$}
+
+
+
+Collaboration diagram for Sly\+Sprite\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_sly_sprite__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::string \mbox{\hyperlink{class_sly_sprite_a34dddff5b83fe9c129a8fa6f148bf399}{Image\+Key}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the image key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sly_sprite_a4add397295d700ff6202019769a696bf}{Sly\+Sprite}} ()=delete
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly_sprite_a2097d8ee5800c67afcc0f39b8d27af1c}{Sly\+Sprite}} (const \mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly_sprite_aa1e4c6b5621a49ae3da4271f7ec57ce1}{Sly\+Sprite}} (\mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}} \& \mbox{\hyperlink{class_sly_sprite_a3f6c854e0d2d673a80b149eefd0362df}{operator=}} (const \mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}} \& \mbox{\hyperlink{class_sly_sprite_a35b71d3a46ccfce6fbe798a7861e8a53}{operator=}} (\mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_sly_sprite_afc61d06ee492728448362bbcbc418520}{$\sim$\+Sly\+Sprite}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly_sprite_afec4fb5020146e01a6396f4fbf45c93a}{Sly\+Sprite}} (\mbox{\hyperlink{class_sly_sprite_a34dddff5b83fe9c129a8fa6f148bf399}{Image\+Key}} img\+Key)
+\begin{DoxyCompactList}\small\item\em Specialized Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sly_sprite_a833953fd978f9e7c6d3010513b2db1cc}{Sly\+Sprite}} (Image $\ast$input\+Image)
+\item 
+float \mbox{\hyperlink{class_sly_sprite_a40b179b8330195677e5bae2b6d6c5f5f}{Get\+Angle}} ()
+\begin{DoxyCompactList}\small\item\em Gets the angle. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_sly_sprite_a3c9f659541632e02a6bda85e6f6be188}{Get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Gets the sprite\textquotesingle{}s width. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_sly_sprite_a4b813e0dab3a057af7ddd9e724f33352}{Get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Gets the sprite height. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sly_sprite_a24a7c9d604053569f5e43d50dd8ec694}{Render}} ()
+\begin{DoxyCompactList}\small\item\em Renders the sprite with the current 2D Camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sly_sprite_aa05ce5d3025ce51739fe5271fe168d2f}{Render}} (Camera $\ast$render\+Cam)
+\begin{DoxyCompactList}\small\item\em Renders the sprite to the given render\+Cam. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sly_sprite_a112c4b4134a43252c4a69a9bccce53e9}{Set\+Angle}} (float a)
+\begin{DoxyCompactList}\small\item\em Sets the sprite angle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sly_sprite_a6357f099ee754434e4bbb41c92c805d7}{Set\+Center}} (float offsetX, float offsetY)
+\begin{DoxyCompactList}\small\item\em Sets the center of the sprite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sly_sprite_a944271f7dd4837932d8342d0a6705046}{Set\+Position}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Sets the sprite position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sly_sprite_a2d97c0ce963ec9b3a0d4b5b193452e52}{Set\+Scale\+Factor}} (float scalex, float scaley)
+\begin{DoxyCompactList}\small\item\em Sets scale factor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sly_sprite_aa7d2168748f31fd808450b8f600f719f}{Set\+Scale\+Pixel}} (float \mbox{\hyperlink{class_sly_sprite_afaa1a2f141e1bb96c797bd3336683820}{width}}, float \mbox{\hyperlink{class_sly_sprite_aac6583e926fbb9a540651d068bfe62a1}{height}})
+\begin{DoxyCompactList}\small\item\em Sets scale pixel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sly_sprite_aca5903e8e4961d74b386029967414d24}{Set\+World}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Graphics\+Object\+\_\+\+Sprite $\ast$ \mbox{\hyperlink{class_sly_sprite_a50623716a135605472f6450a8fab016d}{p\+G\+O\+Sprite}}
+\item 
+Rect $\ast$ \mbox{\hyperlink{class_sly_sprite_afe5170ba78e9995412fa6d9c6e74434c}{input\+Rectangle}}
+\item 
+float \mbox{\hyperlink{class_sly_sprite_abc90bc2ba3e15d2e16575027796e48ae}{angle}}
+\item 
+float \mbox{\hyperlink{class_sly_sprite_a0a5e497cbed9a799e46ebf0e75925910}{centerX}}
+\item 
+float \mbox{\hyperlink{class_sly_sprite_a6f4e233f24018d85d35f95871227e0f5}{centerY}}
+\item 
+float \mbox{\hyperlink{class_sly_sprite_ae658918d7619dea8e8356d4713c237d3}{scaleX}}
+\item 
+float \mbox{\hyperlink{class_sly_sprite_adcee8c70b112cb11d031ec8fad8ee466}{scaleY}}
+\item 
+float \mbox{\hyperlink{class_sly_sprite_afaa1a2f141e1bb96c797bd3336683820}{width}}
+\item 
+float \mbox{\hyperlink{class_sly_sprite_aac6583e926fbb9a540651d068bfe62a1}{height}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_sly_sprite_a34dddff5b83fe9c129a8fa6f148bf399}\label{class_sly_sprite_a34dddff5b83fe9c129a8fa6f148bf399}} 
+\index{SlySprite@{SlySprite}!ImageKey@{ImageKey}}
+\index{ImageKey@{ImageKey}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{ImageKey}{ImageKey}}
+{\footnotesize\ttfamily std\+::string \mbox{\hyperlink{class_sly_sprite_a34dddff5b83fe9c129a8fa6f148bf399}{Sly\+Sprite\+::\+Image\+Key}}}
+
+
+
+Defines an alias representing the image key. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sly_sprite_a4add397295d700ff6202019769a696bf}\label{class_sly_sprite_a4add397295d700ff6202019769a696bf}} 
+\index{SlySprite@{SlySprite}!SlySprite@{SlySprite}}
+\index{SlySprite@{SlySprite}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{SlySprite()}{SlySprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Sly\+Sprite\+::\+Sly\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_sly_sprite_a2097d8ee5800c67afcc0f39b8d27af1c}\label{class_sly_sprite_a2097d8ee5800c67afcc0f39b8d27af1c}} 
+\index{SlySprite@{SlySprite}!SlySprite@{SlySprite}}
+\index{SlySprite@{SlySprite}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{SlySprite()}{SlySprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Sly\+Sprite\+::\+Sly\+Sprite (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_sly_sprite_aa1e4c6b5621a49ae3da4271f7ec57ce1}\label{class_sly_sprite_aa1e4c6b5621a49ae3da4271f7ec57ce1}} 
+\index{SlySprite@{SlySprite}!SlySprite@{SlySprite}}
+\index{SlySprite@{SlySprite}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{SlySprite()}{SlySprite()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Sly\+Sprite\+::\+Sly\+Sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_sly_sprite_afc61d06ee492728448362bbcbc418520}\label{class_sly_sprite_afc61d06ee492728448362bbcbc418520}} 
+\index{SlySprite@{SlySprite}!````~SlySprite@{$\sim$SlySprite}}
+\index{````~SlySprite@{$\sim$SlySprite}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{$\sim$SlySprite()}{~SlySprite()}}
+{\footnotesize\ttfamily Sly\+Sprite\+::$\sim$\+Sly\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deconstructor. 
+
+\mbox{\Hypertarget{class_sly_sprite_afec4fb5020146e01a6396f4fbf45c93a}\label{class_sly_sprite_afec4fb5020146e01a6396f4fbf45c93a}} 
+\index{SlySprite@{SlySprite}!SlySprite@{SlySprite}}
+\index{SlySprite@{SlySprite}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{SlySprite()}{SlySprite()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Sly\+Sprite\+::\+Sly\+Sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sly_sprite_a34dddff5b83fe9c129a8fa6f148bf399}{Image\+Key}}}]{img\+Key }\end{DoxyParamCaption})}
+
+
+
+Specialized Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img\+Key} & The image key.\\
+\hline
+\end{DoxyParams}
+The creation of a \mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}} requires an image. This is the normal way to setup a \mbox{\hyperlink{class_sly}{Sly}} Sprite. Image must be loaded in prior to calling creating a sprite. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_sprite_afec4fb5020146e01a6396f4fbf45c93a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_sprite_a833953fd978f9e7c6d3010513b2db1cc}\label{class_sly_sprite_a833953fd978f9e7c6d3010513b2db1cc}} 
+\index{SlySprite@{SlySprite}!SlySprite@{SlySprite}}
+\index{SlySprite@{SlySprite}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{SlySprite()}{SlySprite()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Sly\+Sprite\+::\+Sly\+Sprite (\begin{DoxyParamCaption}\item[{Image $\ast$}]{input\+Image }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_sprite_a833953fd978f9e7c6d3010513b2db1cc_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sly_sprite_a40b179b8330195677e5bae2b6d6c5f5f}\label{class_sly_sprite_a40b179b8330195677e5bae2b6d6c5f5f}} 
+\index{SlySprite@{SlySprite}!GetAngle@{GetAngle}}
+\index{GetAngle@{GetAngle}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{GetAngle()}{GetAngle()}}
+{\footnotesize\ttfamily float Sly\+Sprite\+::\+Get\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the angle. 
+
+\begin{DoxyReturn}{Returns}
+The sprite\textquotesingle{}s angle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sly_sprite_a4b813e0dab3a057af7ddd9e724f33352}\label{class_sly_sprite_a4b813e0dab3a057af7ddd9e724f33352}} 
+\index{SlySprite@{SlySprite}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily float Sly\+Sprite\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the sprite height. 
+
+\begin{DoxyReturn}{Returns}
+The height. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_sprite_a4b813e0dab3a057af7ddd9e724f33352_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_sprite_a3c9f659541632e02a6bda85e6f6be188}\label{class_sly_sprite_a3c9f659541632e02a6bda85e6f6be188}} 
+\index{SlySprite@{SlySprite}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily float Sly\+Sprite\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the sprite\textquotesingle{}s width. 
+
+\begin{DoxyReturn}{Returns}
+The width. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_sprite_a3c9f659541632e02a6bda85e6f6be188_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_sprite_a3f6c854e0d2d673a80b149eefd0362df}\label{class_sly_sprite_a3f6c854e0d2d673a80b149eefd0362df}} 
+\index{SlySprite@{SlySprite}!operator=@{operator=}}
+\index{operator=@{operator=}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}}\& Sly\+Sprite\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_sly_sprite_a35b71d3a46ccfce6fbe798a7861e8a53}\label{class_sly_sprite_a35b71d3a46ccfce6fbe798a7861e8a53}} 
+\index{SlySprite@{SlySprite}!operator=@{operator=}}
+\index{operator=@{operator=}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}}\& Sly\+Sprite\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_sly_sprite_a24a7c9d604053569f5e43d50dd8ec694}\label{class_sly_sprite_a24a7c9d604053569f5e43d50dd8ec694}} 
+\index{SlySprite@{SlySprite}!Render@{Render}}
+\index{Render@{Render}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Sly\+Sprite\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renders the sprite with the current 2D Camera. 
+
+The \mbox{\hyperlink{class_camera_manager}{Camera\+Manager}} loads in a default 2D Camera to be used for sprite rendering. This camera may be changed at the scene level if a different camera is desired.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_scene_acb6351322930187aface38ff5a7dacbf}{Scene\+::\+Set\+Current2\+D\+Camera}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_sprite_a24a7c9d604053569f5e43d50dd8ec694_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_sprite_aa05ce5d3025ce51739fe5271fe168d2f}\label{class_sly_sprite_aa05ce5d3025ce51739fe5271fe168d2f}} 
+\index{SlySprite@{SlySprite}!Render@{Render}}
+\index{Render@{Render}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Sly\+Sprite\+::\+Render (\begin{DoxyParamCaption}\item[{Camera $\ast$}]{render\+Cam }\end{DoxyParamCaption})}
+
+
+
+Renders the sprite to the given render\+Cam. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em render\+Cam} & If non-\/null, the render camera.\\
+\hline
+\end{DoxyParams}
+This render operation should be avoided unless the user specifically wishes to render to a different camera other than the current 2D one associated with the scene. ~\newline
+ \mbox{\Hypertarget{class_sly_sprite_a112c4b4134a43252c4a69a9bccce53e9}\label{class_sly_sprite_a112c4b4134a43252c4a69a9bccce53e9}} 
+\index{SlySprite@{SlySprite}!SetAngle@{SetAngle}}
+\index{SetAngle@{SetAngle}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{SetAngle()}{SetAngle()}}
+{\footnotesize\ttfamily void Sly\+Sprite\+::\+Set\+Angle (\begin{DoxyParamCaption}\item[{float}]{a }\end{DoxyParamCaption})}
+
+
+
+Sets the sprite angle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The angle. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_sly_sprite_a112c4b4134a43252c4a69a9bccce53e9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_sprite_a6357f099ee754434e4bbb41c92c805d7}\label{class_sly_sprite_a6357f099ee754434e4bbb41c92c805d7}} 
+\index{SlySprite@{SlySprite}!SetCenter@{SetCenter}}
+\index{SetCenter@{SetCenter}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{SetCenter()}{SetCenter()}}
+{\footnotesize\ttfamily void Sly\+Sprite\+::\+Set\+Center (\begin{DoxyParamCaption}\item[{float}]{offsetX,  }\item[{float}]{offsetY }\end{DoxyParamCaption})}
+
+
+
+Sets the center of the sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offsetX} & The offset x coordinate. \\
+\hline
+{\em offsetY} & The offset y coordinate. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sly_sprite_a6357f099ee754434e4bbb41c92c805d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_sprite_a944271f7dd4837932d8342d0a6705046}\label{class_sly_sprite_a944271f7dd4837932d8342d0a6705046}} 
+\index{SlySprite@{SlySprite}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Sly\+Sprite\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Sets the sprite position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate. \\
+\hline
+{\em y} & The y coordinate. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_sly_sprite_a944271f7dd4837932d8342d0a6705046_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_sprite_a2d97c0ce963ec9b3a0d4b5b193452e52}\label{class_sly_sprite_a2d97c0ce963ec9b3a0d4b5b193452e52}} 
+\index{SlySprite@{SlySprite}!SetScaleFactor@{SetScaleFactor}}
+\index{SetScaleFactor@{SetScaleFactor}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{SetScaleFactor()}{SetScaleFactor()}}
+{\footnotesize\ttfamily void Sly\+Sprite\+::\+Set\+Scale\+Factor (\begin{DoxyParamCaption}\item[{float}]{scalex,  }\item[{float}]{scaley }\end{DoxyParamCaption})}
+
+
+
+Sets scale factor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scalex} & The x scale. \\
+\hline
+{\em scaley} & The y scale. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_sly_sprite_a2d97c0ce963ec9b3a0d4b5b193452e52_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_sprite_aa7d2168748f31fd808450b8f600f719f}\label{class_sly_sprite_aa7d2168748f31fd808450b8f600f719f}} 
+\index{SlySprite@{SlySprite}!SetScalePixel@{SetScalePixel}}
+\index{SetScalePixel@{SetScalePixel}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{SetScalePixel()}{SetScalePixel()}}
+{\footnotesize\ttfamily void Sly\+Sprite\+::\+Set\+Scale\+Pixel (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})}
+
+
+
+Sets scale pixel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width. \\
+\hline
+{\em height} & The height. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_sly_sprite_aa7d2168748f31fd808450b8f600f719f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sly_sprite_aca5903e8e4961d74b386029967414d24}\label{class_sly_sprite_aca5903e8e4961d74b386029967414d24}} 
+\index{SlySprite@{SlySprite}!SetWorld@{SetWorld}}
+\index{SetWorld@{SetWorld}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{SetWorld()}{SetWorld()}}
+{\footnotesize\ttfamily void Sly\+Sprite\+::\+Set\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_sly_sprite_aca5903e8e4961d74b386029967414d24_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sly_sprite_abc90bc2ba3e15d2e16575027796e48ae}\label{class_sly_sprite_abc90bc2ba3e15d2e16575027796e48ae}} 
+\index{SlySprite@{SlySprite}!angle@{angle}}
+\index{angle@{angle}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily float Sly\+Sprite\+::angle\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sly_sprite_a0a5e497cbed9a799e46ebf0e75925910}\label{class_sly_sprite_a0a5e497cbed9a799e46ebf0e75925910}} 
+\index{SlySprite@{SlySprite}!centerX@{centerX}}
+\index{centerX@{centerX}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{centerX}{centerX}}
+{\footnotesize\ttfamily float Sly\+Sprite\+::centerX\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sly_sprite_a6f4e233f24018d85d35f95871227e0f5}\label{class_sly_sprite_a6f4e233f24018d85d35f95871227e0f5}} 
+\index{SlySprite@{SlySprite}!centerY@{centerY}}
+\index{centerY@{centerY}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{centerY}{centerY}}
+{\footnotesize\ttfamily float Sly\+Sprite\+::centerY\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sly_sprite_aac6583e926fbb9a540651d068bfe62a1}\label{class_sly_sprite_aac6583e926fbb9a540651d068bfe62a1}} 
+\index{SlySprite@{SlySprite}!height@{height}}
+\index{height@{height}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily float Sly\+Sprite\+::height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sly_sprite_afe5170ba78e9995412fa6d9c6e74434c}\label{class_sly_sprite_afe5170ba78e9995412fa6d9c6e74434c}} 
+\index{SlySprite@{SlySprite}!inputRectangle@{inputRectangle}}
+\index{inputRectangle@{inputRectangle}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{inputRectangle}{inputRectangle}}
+{\footnotesize\ttfamily Rect$\ast$ Sly\+Sprite\+::input\+Rectangle\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sly_sprite_a50623716a135605472f6450a8fab016d}\label{class_sly_sprite_a50623716a135605472f6450a8fab016d}} 
+\index{SlySprite@{SlySprite}!pGOSprite@{pGOSprite}}
+\index{pGOSprite@{pGOSprite}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{pGOSprite}{pGOSprite}}
+{\footnotesize\ttfamily Graphics\+Object\+\_\+\+Sprite$\ast$ Sly\+Sprite\+::p\+G\+O\+Sprite\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sly_sprite_ae658918d7619dea8e8356d4713c237d3}\label{class_sly_sprite_ae658918d7619dea8e8356d4713c237d3}} 
+\index{SlySprite@{SlySprite}!scaleX@{scaleX}}
+\index{scaleX@{scaleX}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{scaleX}{scaleX}}
+{\footnotesize\ttfamily float Sly\+Sprite\+::scaleX\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sly_sprite_adcee8c70b112cb11d031ec8fad8ee466}\label{class_sly_sprite_adcee8c70b112cb11d031ec8fad8ee466}} 
+\index{SlySprite@{SlySprite}!scaleY@{scaleY}}
+\index{scaleY@{scaleY}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{scaleY}{scaleY}}
+{\footnotesize\ttfamily float Sly\+Sprite\+::scaleY\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sly_sprite_afaa1a2f141e1bb96c797bd3336683820}\label{class_sly_sprite_afaa1a2f141e1bb96c797bd3336683820}} 
+\index{SlySprite@{SlySprite}!width@{width}}
+\index{width@{width}!SlySprite@{SlySprite}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily float Sly\+Sprite\+::width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sly_sprite_8h}{Sly\+Sprite.\+h}}\item 
+\mbox{\hyperlink{_sly_sprite_8cpp}{Sly\+Sprite.\+cpp}}\end{DoxyCompactItemize}

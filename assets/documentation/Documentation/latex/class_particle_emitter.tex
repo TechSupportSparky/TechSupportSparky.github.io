@@ -1,0 +1,416 @@
+\hypertarget{class_particle_emitter}{}\doxysection{Particle\+Emitter Class Reference}
+\label{class_particle_emitter}\index{ParticleEmitter@{ParticleEmitter}}
+
+
+{\ttfamily \#include $<$Particle\+Emitter.\+h$>$}
+
+
+
+Inheritance diagram for Particle\+Emitter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_particle_emitter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Particle\+Emitter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_particle_emitter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \mbox{\hyperlink{class_burst}{Burst}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_particle_emitter_a7646bec086ece9fd9e8ebecf640f1fa0}{Particle\+Emitter\+Storage\+Ref}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_particle_emitter_a97c9af76255229c2eb9a23e039b68751}{Particle\+Emitter}} ()=default
+\item 
+\mbox{\hyperlink{class_particle_emitter_a524d6534e2c5f825798e26d771279f2d}{Particle\+Emitter}} (const \mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} \&)=delete
+\item 
+\mbox{\hyperlink{class_particle_emitter_a7f230b3f6b2cf40c788115088d29cf86}{Particle\+Emitter}} (\mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} \& \mbox{\hyperlink{class_particle_emitter_aeb9a1e9d05736186cfd6c948711aa130}{operator=}} (const \mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} \&)=delete
+\item 
+\mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} \& \mbox{\hyperlink{class_particle_emitter_af58daacf3bc6f3e50a14177481760d54}{operator=}} (\mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_particle_emitter_a6f4952f7555ede99d74d42b30c80f3e2}{$\sim$\+Particle\+Emitter}} ()
+\item 
+\mbox{\hyperlink{class_particle_emitter_a68faa1ef5e736e7bfed92bf9846768f1}{Particle\+Emitter}} (\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$pe, const Vect \&\mbox{\hyperlink{class_particle_emitter_ab436e53f7110e9d39ea820cdbf96b2b3}{pos}}, const Matrix \&\mbox{\hyperlink{class_particle_emitter_add35331da73218dd9bd5b4663b28bb21}{rot}})
+\item 
+void \mbox{\hyperlink{class_particle_emitter_a5f079a162468035cf3eb7f11d09670b6}{Initialize}} (\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$pe, const Vect \&\mbox{\hyperlink{class_particle_emitter_ab436e53f7110e9d39ea820cdbf96b2b3}{pos}}, const Matrix \&\mbox{\hyperlink{class_particle_emitter_add35331da73218dd9bd5b4663b28bb21}{rot}})
+\item 
+void \mbox{\hyperlink{class_particle_emitter_ae60d7c514c9aff3462d1b973b252e358}{Enter}} ()
+\item 
+void \mbox{\hyperlink{class_particle_emitter_a4e80b12742a6b6fe7c694c56b7a968bc}{New\+Burst}} ()
+\item 
+void \mbox{\hyperlink{class_particle_emitter_a079e3273bf9bc58cd095beff0fbd36e1}{Exit}} ()
+\item 
+virtual void \mbox{\hyperlink{class_particle_emitter_a700fc45f5c9db613808f54dc330c50e4}{Alarm0}} () override
+\item 
+virtual void \mbox{\hyperlink{class_particle_emitter_a8f5a95c78acd538a86c3788e8feeaa4a}{Alarm1}} () override
+\item 
+virtual void \mbox{\hyperlink{class_particle_emitter_a545cf19b9a40b5de9c2402e8c429c6f5}{Draw}} () override
+\begin{DoxyCompactList}\small\item\em Pure virtual function draw. Derived objects must override. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$ \mbox{\hyperlink{class_particle_emitter_acf7ccfe7bdf5a7ff3846ddb44ecd0a46}{Get\+Particle\+Effect}} ()
+\item 
+\mbox{\hyperlink{class_particle_emitter_factory_adfe17646d343178983d38b200110b32b}{Particle\+Emitter\+Factory\+::\+Storage\+Ref}} \mbox{\hyperlink{class_particle_emitter_a48be2e4272a618e9b3c5a3a5fbc2ffcd}{Get\+Emitter\+Ref}} ()
+\item 
+void \mbox{\hyperlink{class_particle_emitter_a61bde9c8d863f4423781c9755476336e}{Set\+Emitter\+Ref}} (\mbox{\hyperlink{class_particle_emitter_factory_adfe17646d343178983d38b200110b32b}{Particle\+Emitter\+Factory\+::\+Storage\+Ref}} my\+Ref)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_particle_emitter_aa4dca864b24e8d81f83bc10782c1f88c}{Check\+Expiration}} (\mbox{\hyperlink{class_burst}{Burst}} $\ast$burst)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \mbox{\hyperlink{class_burst}{Burst}} $\ast$ $>$ \mbox{\hyperlink{class_particle_emitter_aae3aebe9a541682f420db9b4b78e0418}{Burst\+Collection}}
+\item 
+\mbox{\hyperlink{class_particle_emitter_factory_adfe17646d343178983d38b200110b32b}{Particle\+Emitter\+Factory\+::\+Storage\+Ref}} \mbox{\hyperlink{class_particle_emitter_ada2318e1d3eb0d8c02fb508a417c247b}{my\+Storage\+Ref}}
+\item 
+\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$ \mbox{\hyperlink{class_particle_emitter_a269029e851f78ccb36de086284f92648}{p\+Particle\+Effect}}
+\item 
+\mbox{\hyperlink{class_burst_type}{Burst\+Type}} $\ast$ \mbox{\hyperlink{class_particle_emitter_a5406b19817ad64fab93d4fcc50216566}{type}}
+\item 
+Matrix \mbox{\hyperlink{class_particle_emitter_a653fe0076829d84e426eed090742f503}{world}}
+\item 
+Matrix \mbox{\hyperlink{class_particle_emitter_add35331da73218dd9bd5b4663b28bb21}{rot}}
+\item 
+Vect \mbox{\hyperlink{class_particle_emitter_ab436e53f7110e9d39ea820cdbf96b2b3}{pos}}
+\item 
+float \mbox{\hyperlink{class_particle_emitter_ace2c6e584969510004c1de67bb15bd8a}{Emitter\+Life}}
+\item 
+float \mbox{\hyperlink{class_particle_emitter_a17c372ba7d05a50c2ab6b1406bc951e0}{Burst\+Count}}
+\item 
+float \mbox{\hyperlink{class_particle_emitter_a254c6c62b86d80fbe04ec6154a5c3175}{Burst\+Frequency}}
+\item 
+bool \mbox{\hyperlink{class_particle_emitter_a2081d76d8c01c9fbbce278b1c19e49b1}{active}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_particle_emitter_a7646bec086ece9fd9e8ebecf640f1fa0}\label{class_particle_emitter_a7646bec086ece9fd9e8ebecf640f1fa0}} 
+\index{ParticleEmitter@{ParticleEmitter}!ParticleEmitterStorageRef@{ParticleEmitterStorageRef}}
+\index{ParticleEmitterStorageRef@{ParticleEmitterStorageRef}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{ParticleEmitterStorageRef}{ParticleEmitterStorageRef}}
+{\footnotesize\ttfamily typedef std\+::list$<$\mbox{\hyperlink{class_burst}{Burst}}$\ast$$>$\+::iterator \mbox{\hyperlink{class_particle_emitter_a7646bec086ece9fd9e8ebecf640f1fa0}{Particle\+Emitter\+::\+Particle\+Emitter\+Storage\+Ref}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_particle_emitter_a97c9af76255229c2eb9a23e039b68751}\label{class_particle_emitter_a97c9af76255229c2eb9a23e039b68751}} 
+\index{ParticleEmitter@{ParticleEmitter}!ParticleEmitter@{ParticleEmitter}}
+\index{ParticleEmitter@{ParticleEmitter}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{ParticleEmitter()}{ParticleEmitter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Particle\+Emitter\+::\+Particle\+Emitter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_particle_emitter_a524d6534e2c5f825798e26d771279f2d}\label{class_particle_emitter_a524d6534e2c5f825798e26d771279f2d}} 
+\index{ParticleEmitter@{ParticleEmitter}!ParticleEmitter@{ParticleEmitter}}
+\index{ParticleEmitter@{ParticleEmitter}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{ParticleEmitter()}{ParticleEmitter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Particle\+Emitter\+::\+Particle\+Emitter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_emitter_a7f230b3f6b2cf40c788115088d29cf86}\label{class_particle_emitter_a7f230b3f6b2cf40c788115088d29cf86}} 
+\index{ParticleEmitter@{ParticleEmitter}!ParticleEmitter@{ParticleEmitter}}
+\index{ParticleEmitter@{ParticleEmitter}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{ParticleEmitter()}{ParticleEmitter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Particle\+Emitter\+::\+Particle\+Emitter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_emitter_a6f4952f7555ede99d74d42b30c80f3e2}\label{class_particle_emitter_a6f4952f7555ede99d74d42b30c80f3e2}} 
+\index{ParticleEmitter@{ParticleEmitter}!````~ParticleEmitter@{$\sim$ParticleEmitter}}
+\index{````~ParticleEmitter@{$\sim$ParticleEmitter}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParticleEmitter()}{~ParticleEmitter()}}
+{\footnotesize\ttfamily Particle\+Emitter\+::$\sim$\+Particle\+Emitter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_particle_emitter_a68faa1ef5e736e7bfed92bf9846768f1}\label{class_particle_emitter_a68faa1ef5e736e7bfed92bf9846768f1}} 
+\index{ParticleEmitter@{ParticleEmitter}!ParticleEmitter@{ParticleEmitter}}
+\index{ParticleEmitter@{ParticleEmitter}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{ParticleEmitter()}{ParticleEmitter()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Particle\+Emitter\+::\+Particle\+Emitter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$}]{pe,  }\item[{const Vect \&}]{pos,  }\item[{const Matrix \&}]{rot }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_a68faa1ef5e736e7bfed92bf9846768f1_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_particle_emitter_a700fc45f5c9db613808f54dc330c50e4}\label{class_particle_emitter_a700fc45f5c9db613808f54dc330c50e4}} 
+\index{ParticleEmitter@{ParticleEmitter}!Alarm0@{Alarm0}}
+\index{Alarm0@{Alarm0}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{Alarm0()}{Alarm0()}}
+{\footnotesize\ttfamily void Particle\+Emitter\+::\+Alarm0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_alarmable_accbf4b8e8f2fa14fd7803706e268f904}{Alarmable}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_a700fc45f5c9db613808f54dc330c50e4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_emitter_a8f5a95c78acd538a86c3788e8feeaa4a}\label{class_particle_emitter_a8f5a95c78acd538a86c3788e8feeaa4a}} 
+\index{ParticleEmitter@{ParticleEmitter}!Alarm1@{Alarm1}}
+\index{Alarm1@{Alarm1}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{Alarm1()}{Alarm1()}}
+{\footnotesize\ttfamily void Particle\+Emitter\+::\+Alarm1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_alarmable_a345658b4526baaf3207278d9237f7dca}{Alarmable}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_a8f5a95c78acd538a86c3788e8feeaa4a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_emitter_aa4dca864b24e8d81f83bc10782c1f88c}\label{class_particle_emitter_aa4dca864b24e8d81f83bc10782c1f88c}} 
+\index{ParticleEmitter@{ParticleEmitter}!CheckExpiration@{CheckExpiration}}
+\index{CheckExpiration@{CheckExpiration}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{CheckExpiration()}{CheckExpiration()}}
+{\footnotesize\ttfamily bool Particle\+Emitter\+::\+Check\+Expiration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_burst}{Burst}} $\ast$}]{burst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_aa4dca864b24e8d81f83bc10782c1f88c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_aa4dca864b24e8d81f83bc10782c1f88c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_emitter_a545cf19b9a40b5de9c2402e8c429c6f5}\label{class_particle_emitter_a545cf19b9a40b5de9c2402e8c429c6f5}} 
+\index{ParticleEmitter@{ParticleEmitter}!Draw@{Draw}}
+\index{Draw@{Draw}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Particle\+Emitter\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Pure virtual function draw. Derived objects must override. 
+
+
+
+Implements \mbox{\hyperlink{class_drawable_a8d5d4d2f2bca40d931c1b8b762be8d42}{Drawable}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_a545cf19b9a40b5de9c2402e8c429c6f5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_emitter_ae60d7c514c9aff3462d1b973b252e358}\label{class_particle_emitter_ae60d7c514c9aff3462d1b973b252e358}} 
+\index{ParticleEmitter@{ParticleEmitter}!Enter@{Enter}}
+\index{Enter@{Enter}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{Enter()}{Enter()}}
+{\footnotesize\ttfamily void Particle\+Emitter\+::\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_ae60d7c514c9aff3462d1b973b252e358_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_ae60d7c514c9aff3462d1b973b252e358_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_emitter_a079e3273bf9bc58cd095beff0fbd36e1}\label{class_particle_emitter_a079e3273bf9bc58cd095beff0fbd36e1}} 
+\index{ParticleEmitter@{ParticleEmitter}!Exit@{Exit}}
+\index{Exit@{Exit}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{Exit()}{Exit()}}
+{\footnotesize\ttfamily void Particle\+Emitter\+::\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_a079e3273bf9bc58cd095beff0fbd36e1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_emitter_a48be2e4272a618e9b3c5a3a5fbc2ffcd}\label{class_particle_emitter_a48be2e4272a618e9b3c5a3a5fbc2ffcd}} 
+\index{ParticleEmitter@{ParticleEmitter}!GetEmitterRef@{GetEmitterRef}}
+\index{GetEmitterRef@{GetEmitterRef}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{GetEmitterRef()}{GetEmitterRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_emitter_factory_adfe17646d343178983d38b200110b32b}{Particle\+Emitter\+Factory\+::\+Storage\+Ref}} Particle\+Emitter\+::\+Get\+Emitter\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_a48be2e4272a618e9b3c5a3a5fbc2ffcd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_emitter_acf7ccfe7bdf5a7ff3846ddb44ecd0a46}\label{class_particle_emitter_acf7ccfe7bdf5a7ff3846ddb44ecd0a46}} 
+\index{ParticleEmitter@{ParticleEmitter}!GetParticleEffect@{GetParticleEffect}}
+\index{GetParticleEffect@{GetParticleEffect}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{GetParticleEffect()}{GetParticleEffect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$ Particle\+Emitter\+::\+Get\+Particle\+Effect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_particle_emitter_a5f079a162468035cf3eb7f11d09670b6}\label{class_particle_emitter_a5f079a162468035cf3eb7f11d09670b6}} 
+\index{ParticleEmitter@{ParticleEmitter}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Particle\+Emitter\+::\+Initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_effect}{Particle\+Effect}} $\ast$}]{pe,  }\item[{const Vect \&}]{pos,  }\item[{const Matrix \&}]{rot }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_a5f079a162468035cf3eb7f11d09670b6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_a5f079a162468035cf3eb7f11d09670b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_emitter_a4e80b12742a6b6fe7c694c56b7a968bc}\label{class_particle_emitter_a4e80b12742a6b6fe7c694c56b7a968bc}} 
+\index{ParticleEmitter@{ParticleEmitter}!NewBurst@{NewBurst}}
+\index{NewBurst@{NewBurst}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{NewBurst()}{NewBurst()}}
+{\footnotesize\ttfamily void Particle\+Emitter\+::\+New\+Burst (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_a4e80b12742a6b6fe7c694c56b7a968bc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_a4e80b12742a6b6fe7c694c56b7a968bc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_emitter_aeb9a1e9d05736186cfd6c948711aa130}\label{class_particle_emitter_aeb9a1e9d05736186cfd6c948711aa130}} 
+\index{ParticleEmitter@{ParticleEmitter}!operator=@{operator=}}
+\index{operator=@{operator=}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}}\& Particle\+Emitter\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_emitter_af58daacf3bc6f3e50a14177481760d54}\label{class_particle_emitter_af58daacf3bc6f3e50a14177481760d54}} 
+\index{ParticleEmitter@{ParticleEmitter}!operator=@{operator=}}
+\index{operator=@{operator=}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}}\& Particle\+Emitter\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_emitter}{Particle\+Emitter}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_emitter_a61bde9c8d863f4423781c9755476336e}\label{class_particle_emitter_a61bde9c8d863f4423781c9755476336e}} 
+\index{ParticleEmitter@{ParticleEmitter}!SetEmitterRef@{SetEmitterRef}}
+\index{SetEmitterRef@{SetEmitterRef}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{SetEmitterRef()}{SetEmitterRef()}}
+{\footnotesize\ttfamily void Particle\+Emitter\+::\+Set\+Emitter\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_emitter_factory_adfe17646d343178983d38b200110b32b}{Particle\+Emitter\+Factory\+::\+Storage\+Ref}}}]{my\+Ref }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_emitter_a61bde9c8d863f4423781c9755476336e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_particle_emitter_a2081d76d8c01c9fbbce278b1c19e49b1}\label{class_particle_emitter_a2081d76d8c01c9fbbce278b1c19e49b1}} 
+\index{ParticleEmitter@{ParticleEmitter}!active@{active}}
+\index{active@{active}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily bool Particle\+Emitter\+::active\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_particle_emitter_aae3aebe9a541682f420db9b4b78e0418}\label{class_particle_emitter_aae3aebe9a541682f420db9b4b78e0418}} 
+\index{ParticleEmitter@{ParticleEmitter}!BurstCollection@{BurstCollection}}
+\index{BurstCollection@{BurstCollection}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{BurstCollection}{BurstCollection}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{class_burst}{Burst}}$\ast$$>$ Particle\+Emitter\+::\+Burst\+Collection\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_particle_emitter_a17c372ba7d05a50c2ab6b1406bc951e0}\label{class_particle_emitter_a17c372ba7d05a50c2ab6b1406bc951e0}} 
+\index{ParticleEmitter@{ParticleEmitter}!BurstCount@{BurstCount}}
+\index{BurstCount@{BurstCount}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{BurstCount}{BurstCount}}
+{\footnotesize\ttfamily float Particle\+Emitter\+::\+Burst\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_particle_emitter_a254c6c62b86d80fbe04ec6154a5c3175}\label{class_particle_emitter_a254c6c62b86d80fbe04ec6154a5c3175}} 
+\index{ParticleEmitter@{ParticleEmitter}!BurstFrequency@{BurstFrequency}}
+\index{BurstFrequency@{BurstFrequency}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{BurstFrequency}{BurstFrequency}}
+{\footnotesize\ttfamily float Particle\+Emitter\+::\+Burst\+Frequency\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_particle_emitter_ace2c6e584969510004c1de67bb15bd8a}\label{class_particle_emitter_ace2c6e584969510004c1de67bb15bd8a}} 
+\index{ParticleEmitter@{ParticleEmitter}!EmitterLife@{EmitterLife}}
+\index{EmitterLife@{EmitterLife}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{EmitterLife}{EmitterLife}}
+{\footnotesize\ttfamily float Particle\+Emitter\+::\+Emitter\+Life\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_particle_emitter_ada2318e1d3eb0d8c02fb508a417c247b}\label{class_particle_emitter_ada2318e1d3eb0d8c02fb508a417c247b}} 
+\index{ParticleEmitter@{ParticleEmitter}!myStorageRef@{myStorageRef}}
+\index{myStorageRef@{myStorageRef}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{myStorageRef}{myStorageRef}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_emitter_factory_adfe17646d343178983d38b200110b32b}{Particle\+Emitter\+Factory\+::\+Storage\+Ref}} Particle\+Emitter\+::my\+Storage\+Ref\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_particle_emitter_ab436e53f7110e9d39ea820cdbf96b2b3}\label{class_particle_emitter_ab436e53f7110e9d39ea820cdbf96b2b3}} 
+\index{ParticleEmitter@{ParticleEmitter}!pos@{pos}}
+\index{pos@{pos}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily Vect Particle\+Emitter\+::pos\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_particle_emitter_a269029e851f78ccb36de086284f92648}\label{class_particle_emitter_a269029e851f78ccb36de086284f92648}} 
+\index{ParticleEmitter@{ParticleEmitter}!pParticleEffect@{pParticleEffect}}
+\index{pParticleEffect@{pParticleEffect}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{pParticleEffect}{pParticleEffect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_effect}{Particle\+Effect}}$\ast$ Particle\+Emitter\+::p\+Particle\+Effect\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_particle_emitter_add35331da73218dd9bd5b4663b28bb21}\label{class_particle_emitter_add35331da73218dd9bd5b4663b28bb21}} 
+\index{ParticleEmitter@{ParticleEmitter}!rot@{rot}}
+\index{rot@{rot}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{rot}{rot}}
+{\footnotesize\ttfamily Matrix Particle\+Emitter\+::rot\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_particle_emitter_a5406b19817ad64fab93d4fcc50216566}\label{class_particle_emitter_a5406b19817ad64fab93d4fcc50216566}} 
+\index{ParticleEmitter@{ParticleEmitter}!type@{type}}
+\index{type@{type}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_burst_type}{Burst\+Type}}$\ast$ Particle\+Emitter\+::type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_particle_emitter_a653fe0076829d84e426eed090742f503}\label{class_particle_emitter_a653fe0076829d84e426eed090742f503}} 
+\index{ParticleEmitter@{ParticleEmitter}!world@{world}}
+\index{world@{world}!ParticleEmitter@{ParticleEmitter}}
+\doxysubsubsection{\texorpdfstring{world}{world}}
+{\footnotesize\ttfamily Matrix Particle\+Emitter\+::world\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_particle_emitter_8h}{Particle\+Emitter.\+h}}\item 
+\mbox{\hyperlink{_particle_emitter_8cpp}{Particle\+Emitter.\+cpp}}\end{DoxyCompactItemize}

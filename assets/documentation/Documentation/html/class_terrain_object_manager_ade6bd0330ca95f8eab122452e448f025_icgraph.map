@@ -1,0 +1,4 @@
+<map id="TerrainObjectManager::privLoad" name="TerrainObjectManager::privLoad">
+<area shape="rect" id="node1" title="Internal call to load the heightmap and create a terrainObject that will be stored internally." alt="" coords="203,5,352,47"/>
+<area shape="rect" id="node2" href="$class_terrain_object_manager.html#ac557665da6faf6a79bbf8332e6c539dd" title="Call to load the heightmap and create a terrainObject that will be stored internally." alt="" coords="5,5,155,47"/>
+</map>

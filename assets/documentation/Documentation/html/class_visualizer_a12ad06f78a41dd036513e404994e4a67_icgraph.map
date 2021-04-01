@@ -1,0 +1,6 @@
+<map id="Visualizer::ShowLine" name="Visualizer::ShowLine">
+<area shape="rect" id="node1" title="Shows a line between the points A and B." alt="" coords="264,71,407,98"/>
+<area shape="rect" id="node2" href="$class_terrain_object.html#ae4a408bb9e5db209cb1672e5b7033dd4" title=" " alt="" coords="27,5,195,47"/>
+<area shape="rect" id="node3" href="$class_terrain_object.html#ad09353cd0cd4cfdfe4ec1bd68f61e257" title=" " alt="" coords="5,71,216,98"/>
+<area shape="rect" id="node4" href="$class_terrain_object.html#ab69f274690b61328a929a942b7210a4d" title=" " alt="" coords="21,122,201,149"/>
+</map>

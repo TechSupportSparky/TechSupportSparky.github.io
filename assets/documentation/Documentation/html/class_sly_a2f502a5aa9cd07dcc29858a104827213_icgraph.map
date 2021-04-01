@@ -1,0 +1,4 @@
+<map id="Sly::LoadAllResources" name="Sly::LoadAllResources">
+<area shape="rect" id="node1" title="User defined LoadResources. Content to be defined by the user. Typically models, textures,..." alt="" coords="176,5,331,32"/>
+<area shape="rect" id="node2" href="$class_sly.html#a0e65e74526d0c79d554267cbeee21d80" title="Loads engine starting content. Loads first scene." alt="" coords="5,5,128,32"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="SingleKeyEventManager" name="SingleKeyEventManager">
+<area shape="rect" id="node1" title=" " alt="" coords="5,837,196,1076"/>
+<area shape="rect" id="node2" title=" " alt="" coords="41,587,184,694"/>
+<area shape="rect" id="node3" href="$class_inputable.html" title=" " alt="" coords="179,220,364,459"/>
+<area shape="rect" id="node6" href="$class_inputable_deregistration_command.html" title=" " alt="" coords="272,521,505,760"/>
+<area shape="rect" id="node10" href="$class_inputable_registration_command.html" title=" " alt="" coords="529,529,760,753"/>
+<area shape="rect" id="node4" title=" " alt="" coords="187,1139,331,1231"/>
+<area shape="rect" id="node5" href="$struct_inputable_1_1_inputable_data.html" title="An inputable data." alt="" coords="308,918,469,995"/>
+<area shape="rect" id="node9" title=" " alt="" coords="373,1139,551,1231"/>
+<area shape="rect" id="node7" href="$class_scene_registry.html" title="A scene registry." alt="" coords="432,264,567,415"/>
+<area shape="rect" id="node8" href="$class_command_base.html" title=" " alt="" coords="430,5,569,171"/>
+</map>

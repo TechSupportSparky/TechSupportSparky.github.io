@@ -1,0 +1,680 @@
+\hypertarget{class_visualizer}{}\doxysection{Visualizer Class Reference}
+\label{class_visualizer}\index{Visualizer@{Visualizer}}
+
+
+{\ttfamily \#include $<$Visualizer.\+h$>$}
+
+
+
+Collaboration diagram for Visualizer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_visualizer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_visualizer_a5f994c8f3251111defd4c0e4d7aa5402}{Show\+B\+Sphere}} (const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&S, const Vect \&col=\mbox{\hyperlink{class_visualizer_a9fe571d7d003bad427bb15648685b679}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+OR}})
+\begin{DoxyCompactList}\small\item\em Shows the b sphere with the passed in color (or a default color). \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_visualizer_aaf042d354e6c2a374e0b13e607730336}{Show\+A\+A\+BB}} (const Vect \&min, const Vect \&max, const Vect \&col=\mbox{\hyperlink{class_visualizer_a9fe571d7d003bad427bb15648685b679}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+OR}})
+\begin{DoxyCompactList}\small\item\em Shows the A\+A\+BB specified by the min and max values. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_visualizer_a91add6db721ca7ba5ea48912dadeeae6}{Show\+O\+BB}} (const Matrix \&world, const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&V, const Vect \&col=\mbox{\hyperlink{class_visualizer_a9fe571d7d003bad427bb15648685b679}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+OR}})
+\begin{DoxyCompactList}\small\item\em Shows the O\+BB via min and max corners. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_visualizer_ab475cc5045d01a9f20f1b130e35da794}{Show\+Collision\+Volume}} (const \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&c, const Vect \&col=\mbox{\hyperlink{class_visualizer_a9fe571d7d003bad427bb15648685b679}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+OR}})
+\begin{DoxyCompactList}\small\item\em Maps the correct call for \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} c to visualize itself. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_visualizer_ad28625ef28ab1f23ddfdc852a8a13f54}{Show\+Marker}} (const Vect \&pos, const Vect \&color=\mbox{\hyperlink{class_visualizer_a9fe571d7d003bad427bb15648685b679}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+OR}}, float radius=1.\+0f)
+\begin{DoxyCompactList}\small\item\em Shows the marker at the given position. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_visualizer_a12ad06f78a41dd036513e404994e4a67}{Show\+Line}} (const Vect \&A, const Vect \&B, const Vect \&color=\mbox{\hyperlink{class_visualizer_a9fe571d7d003bad427bb15648685b679}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+OR}})
+\begin{DoxyCompactList}\small\item\em Shows a line between the points A and B. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_visualizer_a104487003c9fea602e26c072aae27efc}{Visualizer}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_visualizer_a74e89c75b05f50baeb692fd62437e4e4}{Visualizer}} (const \mbox{\hyperlink{class_visualizer}{Visualizer}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_visualizer_a28d372074c4cacdc426cdcfe56973b1b}{Visualizer}} (\mbox{\hyperlink{class_visualizer}{Visualizer}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_visualizer}{Visualizer}} \& \mbox{\hyperlink{class_visualizer_a1deadc2181bf14d0e3e893e48ea85cd9}{operator=}} (const \mbox{\hyperlink{class_visualizer}{Visualizer}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_visualizer}{Visualizer}} \& \mbox{\hyperlink{class_visualizer_acc7d02591b6b89ea9f05c12f58d2ae66}{operator=}} (\mbox{\hyperlink{class_visualizer}{Visualizer}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_visualizer_a91614cdd863191d9b466b5c81cd43d1b}{$\sim$\+Visualizer}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_visualizer_a7676124e5429184080ad944c387b4fd3}{priv\+Render\+B\+Sphere}} (const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&S, Vect col)
+\begin{DoxyCompactList}\small\item\em Private call render b sphere. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_visualizer_ae416d2e8738be5d29c02b9a6b3f3553a}{priv\+Render\+A\+A\+BB}} (Matrix \&M, Vect col) const
+\begin{DoxyCompactList}\small\item\em Private call to render the A\+A\+BB box. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_visualizer_aaf3a0de5ceb499947a18dd009a765bf6}{priv\+Render\+O\+BB}} (Matrix \&world, Vect color) const
+\begin{DoxyCompactList}\small\item\em Internal call to render the O\+BB box. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_visualizer_ab16b9b518eed999e53ee4663c1f35d21}{priv\+Render\+Marker}} (Matrix \&world, Vect color) const
+\begin{DoxyCompactList}\small\item\em Internal call to render a marker at the given position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_visualizer_a7136b695c5d8779f3bb32516bbde5f02}{priv\+Render\+Line}} (Matrix \&world, Vect color) const
+\begin{DoxyCompactList}\small\item\em Private call to render a line. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_visualizer_a5dd16607ead98f5cdd003529c6e7ab73}{priv\+Terminate}} ()
+\begin{DoxyCompactList}\small\item\em Private terminate, to be called internally. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_visualizer}{Visualizer}} \& \mbox{\hyperlink{class_visualizer_abfb60fda248002a438ce627986f44abb}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the \mbox{\hyperlink{class_visualizer}{Visualizer}} instance. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_visualizer_af2e8b1d59608d86e26327333ac5b10f1}{Visualize\+All}} ()
+\begin{DoxyCompactList}\small\item\em Visualize all commands within the visualizer broker. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_visualizer_a61597f4a1cdb82452a2e761cb52b9024}{Terminate}} ()
+\begin{DoxyCompactList}\small\item\em Terminates this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Graphics\+Object\+\_\+\+Wireframe\+Constant\+Color $\ast$ \mbox{\hyperlink{class_visualizer_a3632f74b2f490d27fe7dbcdd46263e8d}{W\+F\+Unit\+Sphere}}
+\begin{DoxyCompactList}\small\item\em The single wf unit sphere to be used for sphere commands. \end{DoxyCompactList}\item 
+Graphics\+Object\+\_\+\+Wireframe\+Constant\+Color $\ast$ \mbox{\hyperlink{class_visualizer_a5ee8b8b85c18fac391f8bd93b16a2d5b}{W\+F\+Unit\+Box}}
+\begin{DoxyCompactList}\small\item\em The wireframe unit box to be used for unit box commands. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_visualizer_broker}{Visualizer\+Broker}} $\ast$ \mbox{\hyperlink{class_visualizer_a09c26e3797923f917648bf1bb4d48d89}{vis\+Broker}}
+\begin{DoxyCompactList}\small\item\em The visualizer broker. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_visualizer}{Visualizer}} $\ast$ \mbox{\hyperlink{class_visualizer_a7eaf6b6757c0558a6706bf36b4ba4893}{ptr\+Instance}} = nullptr
+\begin{DoxyCompactList}\small\item\em The pointer to the singleton instance. \end{DoxyCompactList}\item 
+static Vect \mbox{\hyperlink{class_visualizer_a9fe571d7d003bad427bb15648685b679}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+OR}} = Vect(0.\+0f, 0.\+0f, 1.\+0f)
+\begin{DoxyCompactList}\small\item\em The default color for the bsphere. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_visualizer_a2e6a31cef441019265b9ec458434ba31}{Visualizer\+Attorney}}
+\begin{DoxyCompactList}\small\item\em Dictates access to visualizer functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_visualizer_a104487003c9fea602e26c072aae27efc}\label{class_visualizer_a104487003c9fea602e26c072aae27efc}} 
+\index{Visualizer@{Visualizer}!Visualizer@{Visualizer}}
+\index{Visualizer@{Visualizer}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{Visualizer()}{Visualizer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Visualizer\+::\+Visualizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Default constructor. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_a104487003c9fea602e26c072aae27efc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_a104487003c9fea602e26c072aae27efc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualizer_a74e89c75b05f50baeb692fd62437e4e4}\label{class_visualizer_a74e89c75b05f50baeb692fd62437e4e4}} 
+\index{Visualizer@{Visualizer}!Visualizer@{Visualizer}}
+\index{Visualizer@{Visualizer}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{Visualizer()}{Visualizer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Visualizer\+::\+Visualizer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_visualizer}{Visualizer}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_visualizer_a28d372074c4cacdc426cdcfe56973b1b}\label{class_visualizer_a28d372074c4cacdc426cdcfe56973b1b}} 
+\index{Visualizer@{Visualizer}!Visualizer@{Visualizer}}
+\index{Visualizer@{Visualizer}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{Visualizer()}{Visualizer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Visualizer\+::\+Visualizer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visualizer}{Visualizer}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_visualizer_a91614cdd863191d9b466b5c81cd43d1b}\label{class_visualizer_a91614cdd863191d9b466b5c81cd43d1b}} 
+\index{Visualizer@{Visualizer}!````~Visualizer@{$\sim$Visualizer}}
+\index{````~Visualizer@{$\sim$Visualizer}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Visualizer()}{~Visualizer()}}
+{\footnotesize\ttfamily Visualizer\+::$\sim$\+Visualizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_visualizer_abfb60fda248002a438ce627986f44abb}\label{class_visualizer_abfb60fda248002a438ce627986f44abb}} 
+\index{Visualizer@{Visualizer}!Instance@{Instance}}
+\index{Instance@{Instance}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_visualizer}{Visualizer}} \& Visualizer\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the \mbox{\hyperlink{class_visualizer}{Visualizer}} instance. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_visualizer}{Visualizer}}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_abfb60fda248002a438ce627986f44abb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_abfb60fda248002a438ce627986f44abb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualizer_a1deadc2181bf14d0e3e893e48ea85cd9}\label{class_visualizer_a1deadc2181bf14d0e3e893e48ea85cd9}} 
+\index{Visualizer@{Visualizer}!operator=@{operator=}}
+\index{operator=@{operator=}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_visualizer}{Visualizer}}\& Visualizer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_visualizer}{Visualizer}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_visualizer_acc7d02591b6b89ea9f05c12f58d2ae66}\label{class_visualizer_acc7d02591b6b89ea9f05c12f58d2ae66}} 
+\index{Visualizer@{Visualizer}!operator=@{operator=}}
+\index{operator=@{operator=}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_visualizer}{Visualizer}}\& Visualizer\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visualizer}{Visualizer}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_visualizer_ae416d2e8738be5d29c02b9a6b3f3553a}\label{class_visualizer_ae416d2e8738be5d29c02b9a6b3f3553a}} 
+\index{Visualizer@{Visualizer}!privRenderAABB@{privRenderAABB}}
+\index{privRenderAABB@{privRenderAABB}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{privRenderAABB()}{privRenderAABB()}}
+{\footnotesize\ttfamily void Visualizer\+::priv\+Render\+A\+A\+BB (\begin{DoxyParamCaption}\item[{Matrix \&}]{M,  }\item[{Vect}]{col }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private call to render the A\+A\+BB box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & A \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} to process. \\
+\hline
+{\em col} & The color. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_ae416d2e8738be5d29c02b9a6b3f3553a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_ae416d2e8738be5d29c02b9a6b3f3553a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualizer_a7676124e5429184080ad944c387b4fd3}\label{class_visualizer_a7676124e5429184080ad944c387b4fd3}} 
+\index{Visualizer@{Visualizer}!privRenderBSphere@{privRenderBSphere}}
+\index{privRenderBSphere@{privRenderBSphere}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{privRenderBSphere()}{privRenderBSphere()}}
+{\footnotesize\ttfamily void Visualizer\+::priv\+Render\+B\+Sphere (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&}]{S,  }\item[{Vect}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private call render b sphere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & A \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} to process. \\
+\hline
+{\em col} & The color. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_a7676124e5429184080ad944c387b4fd3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_a7676124e5429184080ad944c387b4fd3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualizer_a7136b695c5d8779f3bb32516bbde5f02}\label{class_visualizer_a7136b695c5d8779f3bb32516bbde5f02}} 
+\index{Visualizer@{Visualizer}!privRenderLine@{privRenderLine}}
+\index{privRenderLine@{privRenderLine}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{privRenderLine()}{privRenderLine()}}
+{\footnotesize\ttfamily void Visualizer\+::priv\+Render\+Line (\begin{DoxyParamCaption}\item[{Matrix \&}]{world,  }\item[{Vect}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private call to render a line. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em world} & The world. \\
+\hline
+ & {\em color} & The color. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_a7136b695c5d8779f3bb32516bbde5f02_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualizer_ab16b9b518eed999e53ee4663c1f35d21}\label{class_visualizer_ab16b9b518eed999e53ee4663c1f35d21}} 
+\index{Visualizer@{Visualizer}!privRenderMarker@{privRenderMarker}}
+\index{privRenderMarker@{privRenderMarker}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{privRenderMarker()}{privRenderMarker()}}
+{\footnotesize\ttfamily void Visualizer\+::priv\+Render\+Marker (\begin{DoxyParamCaption}\item[{Matrix \&}]{world,  }\item[{Vect}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal call to render a marker at the given position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em world} & The world. \\
+\hline
+ & {\em color} & The color. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_ab16b9b518eed999e53ee4663c1f35d21_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_ab16b9b518eed999e53ee4663c1f35d21_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualizer_aaf3a0de5ceb499947a18dd009a765bf6}\label{class_visualizer_aaf3a0de5ceb499947a18dd009a765bf6}} 
+\index{Visualizer@{Visualizer}!privRenderOBB@{privRenderOBB}}
+\index{privRenderOBB@{privRenderOBB}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{privRenderOBB()}{privRenderOBB()}}
+{\footnotesize\ttfamily void Visualizer\+::priv\+Render\+O\+BB (\begin{DoxyParamCaption}\item[{Matrix \&}]{world,  }\item[{Vect}]{color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal call to render the O\+BB box. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em world} & The world. \\
+\hline
+ & {\em color} & The color. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_aaf3a0de5ceb499947a18dd009a765bf6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_aaf3a0de5ceb499947a18dd009a765bf6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualizer_a5dd16607ead98f5cdd003529c6e7ab73}\label{class_visualizer_a5dd16607ead98f5cdd003529c6e7ab73}} 
+\index{Visualizer@{Visualizer}!privTerminate@{privTerminate}}
+\index{privTerminate@{privTerminate}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{privTerminate()}{privTerminate()}}
+{\footnotesize\ttfamily void Visualizer\+::priv\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private terminate, to be called internally. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_a5dd16607ead98f5cdd003529c6e7ab73_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_a5dd16607ead98f5cdd003529c6e7ab73_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualizer_aaf042d354e6c2a374e0b13e607730336}\label{class_visualizer_aaf042d354e6c2a374e0b13e607730336}} 
+\index{Visualizer@{Visualizer}!ShowAABB@{ShowAABB}}
+\index{ShowAABB@{ShowAABB}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{ShowAABB()}{ShowAABB()}}
+{\footnotesize\ttfamily static void Visualizer\+::\+Show\+A\+A\+BB (\begin{DoxyParamCaption}\item[{const Vect \&}]{min,  }\item[{const Vect \&}]{max,  }\item[{const Vect \&}]{col = {\ttfamily \mbox{\hyperlink{class_visualizer_a9fe571d7d003bad427bb15648685b679}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+OR}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shows the A\+A\+BB specified by the min and max values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & The minimum corner. \\
+\hline
+{\em max} & The maximum corner. \\
+\hline
+{\em col} & (Optional) The col. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_aaf042d354e6c2a374e0b13e607730336_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_aaf042d354e6c2a374e0b13e607730336_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualizer_a5f994c8f3251111defd4c0e4d7aa5402}\label{class_visualizer_a5f994c8f3251111defd4c0e4d7aa5402}} 
+\index{Visualizer@{Visualizer}!ShowBSphere@{ShowBSphere}}
+\index{ShowBSphere@{ShowBSphere}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{ShowBSphere()}{ShowBSphere()}}
+{\footnotesize\ttfamily static void Visualizer\+::\+Show\+B\+Sphere (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&}]{S,  }\item[{const Vect \&}]{col = {\ttfamily \mbox{\hyperlink{class_visualizer_a9fe571d7d003bad427bb15648685b679}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+OR}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shows the b sphere with the passed in color (or a default color). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & A \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} to process. \\
+\hline
+{\em col} & (Optional) The col. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_a5f994c8f3251111defd4c0e4d7aa5402_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_a5f994c8f3251111defd4c0e4d7aa5402_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualizer_ab475cc5045d01a9f20f1b130e35da794}\label{class_visualizer_ab475cc5045d01a9f20f1b130e35da794}} 
+\index{Visualizer@{Visualizer}!ShowCollisionVolume@{ShowCollisionVolume}}
+\index{ShowCollisionVolume@{ShowCollisionVolume}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{ShowCollisionVolume()}{ShowCollisionVolume()}}
+{\footnotesize\ttfamily static void Visualizer\+::\+Show\+Collision\+Volume (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&}]{c,  }\item[{const Vect \&}]{col = {\ttfamily \mbox{\hyperlink{class_visualizer_a9fe571d7d003bad427bb15648685b679}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+OR}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Maps the correct call for \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} c to visualize itself. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & A \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} to process. \\
+\hline
+{\em col} & (Optional) The col. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_ab475cc5045d01a9f20f1b130e35da794_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_ab475cc5045d01a9f20f1b130e35da794_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualizer_a12ad06f78a41dd036513e404994e4a67}\label{class_visualizer_a12ad06f78a41dd036513e404994e4a67}} 
+\index{Visualizer@{Visualizer}!ShowLine@{ShowLine}}
+\index{ShowLine@{ShowLine}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{ShowLine()}{ShowLine()}}
+{\footnotesize\ttfamily static void Visualizer\+::\+Show\+Line (\begin{DoxyParamCaption}\item[{const Vect \&}]{A,  }\item[{const Vect \&}]{B,  }\item[{const Vect \&}]{color = {\ttfamily \mbox{\hyperlink{class_visualizer_a9fe571d7d003bad427bb15648685b679}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+OR}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shows a line between the points A and B. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A Point in space to be connected with B \\
+\hline
+{\em B} & A Point in space to be connected with A \\
+\hline
+{\em color} & (Optional) The color. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_a12ad06f78a41dd036513e404994e4a67_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_a12ad06f78a41dd036513e404994e4a67_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualizer_ad28625ef28ab1f23ddfdc852a8a13f54}\label{class_visualizer_ad28625ef28ab1f23ddfdc852a8a13f54}} 
+\index{Visualizer@{Visualizer}!ShowMarker@{ShowMarker}}
+\index{ShowMarker@{ShowMarker}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{ShowMarker()}{ShowMarker()}}
+{\footnotesize\ttfamily static void Visualizer\+::\+Show\+Marker (\begin{DoxyParamCaption}\item[{const Vect \&}]{pos,  }\item[{const Vect \&}]{col = {\ttfamily \mbox{\hyperlink{class_visualizer_a9fe571d7d003bad427bb15648685b679}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+OR}}},  }\item[{float}]{radius = {\ttfamily 1.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shows the marker at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position. \\
+\hline
+{\em col} & (Optional) The color. \\
+\hline
+{\em radius} & (Optional) The radius. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_ad28625ef28ab1f23ddfdc852a8a13f54_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_ad28625ef28ab1f23ddfdc852a8a13f54_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualizer_a91add6db721ca7ba5ea48912dadeeae6}\label{class_visualizer_a91add6db721ca7ba5ea48912dadeeae6}} 
+\index{Visualizer@{Visualizer}!ShowOBB@{ShowOBB}}
+\index{ShowOBB@{ShowOBB}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{ShowOBB()}{ShowOBB()}}
+{\footnotesize\ttfamily static void Visualizer\+::\+Show\+O\+BB (\begin{DoxyParamCaption}\item[{const Matrix \&}]{world,  }\item[{const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&}]{V,  }\item[{const Vect \&}]{col = {\ttfamily \mbox{\hyperlink{class_visualizer_a9fe571d7d003bad427bb15648685b679}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+OR}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shows the O\+BB via min and max corners. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & The minimum corner. \\
+\hline
+{\em max} & The maximum corner. \\
+\hline
+{\em col} & (Optional) The col. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_a91add6db721ca7ba5ea48912dadeeae6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_visualizer_a91add6db721ca7ba5ea48912dadeeae6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualizer_a61597f4a1cdb82452a2e761cb52b9024}\label{class_visualizer_a61597f4a1cdb82452a2e761cb52b9024}} 
+\index{Visualizer@{Visualizer}!Terminate@{Terminate}}
+\index{Terminate@{Terminate}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{Terminate()}{Terminate()}}
+{\footnotesize\ttfamily static void Visualizer\+::\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Terminates this instance. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_a61597f4a1cdb82452a2e761cb52b9024_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_a61597f4a1cdb82452a2e761cb52b9024_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_visualizer_af2e8b1d59608d86e26327333ac5b10f1}\label{class_visualizer_af2e8b1d59608d86e26327333ac5b10f1}} 
+\index{Visualizer@{Visualizer}!VisualizeAll@{VisualizeAll}}
+\index{VisualizeAll@{VisualizeAll}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{VisualizeAll()}{VisualizeAll()}}
+{\footnotesize\ttfamily static void Visualizer\+::\+Visualize\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Visualize all commands within the visualizer broker. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_af2e8b1d59608d86e26327333ac5b10f1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_visualizer_af2e8b1d59608d86e26327333ac5b10f1_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_visualizer_a2e6a31cef441019265b9ec458434ba31}\label{class_visualizer_a2e6a31cef441019265b9ec458434ba31}} 
+\index{Visualizer@{Visualizer}!VisualizerAttorney@{VisualizerAttorney}}
+\index{VisualizerAttorney@{VisualizerAttorney}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{VisualizerAttorney}{VisualizerAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_visualizer_attorney}{Visualizer\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Dictates access to visualizer functions. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_visualizer_a9fe571d7d003bad427bb15648685b679}\label{class_visualizer_a9fe571d7d003bad427bb15648685b679}} 
+\index{Visualizer@{Visualizer}!DEFAULT\_COLOR@{DEFAULT\_COLOR}}
+\index{DEFAULT\_COLOR@{DEFAULT\_COLOR}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_COLOR}{DEFAULT\_COLOR}}
+{\footnotesize\ttfamily Vect Visualizer\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+OR = Vect(0.\+0f, 0.\+0f, 1.\+0f)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The default color for the bsphere. 
+
+\mbox{\Hypertarget{class_visualizer_a7eaf6b6757c0558a6706bf36b4ba4893}\label{class_visualizer_a7eaf6b6757c0558a6706bf36b4ba4893}} 
+\index{Visualizer@{Visualizer}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_visualizer}{Visualizer}} $\ast$ Visualizer\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The pointer to the singleton instance. 
+
+\mbox{\Hypertarget{class_visualizer_a09c26e3797923f917648bf1bb4d48d89}\label{class_visualizer_a09c26e3797923f917648bf1bb4d48d89}} 
+\index{Visualizer@{Visualizer}!visBroker@{visBroker}}
+\index{visBroker@{visBroker}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{visBroker}{visBroker}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_visualizer_broker}{Visualizer\+Broker}}$\ast$ Visualizer\+::vis\+Broker\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The visualizer broker. 
+
+\mbox{\Hypertarget{class_visualizer_a5ee8b8b85c18fac391f8bd93b16a2d5b}\label{class_visualizer_a5ee8b8b85c18fac391f8bd93b16a2d5b}} 
+\index{Visualizer@{Visualizer}!WFUnitBox@{WFUnitBox}}
+\index{WFUnitBox@{WFUnitBox}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{WFUnitBox}{WFUnitBox}}
+{\footnotesize\ttfamily Graphics\+Object\+\_\+\+Wireframe\+Constant\+Color$\ast$ Visualizer\+::\+W\+F\+Unit\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The wireframe unit box to be used for unit box commands. 
+
+\mbox{\Hypertarget{class_visualizer_a3632f74b2f490d27fe7dbcdd46263e8d}\label{class_visualizer_a3632f74b2f490d27fe7dbcdd46263e8d}} 
+\index{Visualizer@{Visualizer}!WFUnitSphere@{WFUnitSphere}}
+\index{WFUnitSphere@{WFUnitSphere}!Visualizer@{Visualizer}}
+\doxysubsubsection{\texorpdfstring{WFUnitSphere}{WFUnitSphere}}
+{\footnotesize\ttfamily Graphics\+Object\+\_\+\+Wireframe\+Constant\+Color$\ast$ Visualizer\+::\+W\+F\+Unit\+Sphere\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The single wf unit sphere to be used for sphere commands. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_visualizer_8h}{Visualizer.\+h}}\item 
+\mbox{\hyperlink{_visualizer_8cpp}{Visualizer.\+cpp}}\end{DoxyCompactItemize}

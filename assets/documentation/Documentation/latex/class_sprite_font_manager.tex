@@ -1,0 +1,372 @@
+\hypertarget{class_sprite_font_manager}{}\doxysection{Sprite\+Font\+Manager Class Reference}
+\label{class_sprite_font_manager}\index{SpriteFontManager@{SpriteFontManager}}
+
+
+{\ttfamily \#include $<$Sprite\+Font\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Sprite\+Font\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sprite_font_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$ \mbox{\hyperlink{class_sprite_font_manager_adfd159763b5c4b06c1d574aa9e0f7594}{Get}} (const \mbox{\hyperlink{class_sprite_font_manager_ac18380d17ee63c0e48e6f910025f03fd}{Map\+Key}} \&key)
+\item 
+static void \mbox{\hyperlink{class_sprite_font_manager_a7a6efb4ae95af6d4284504083e03dbdc}{Load}} (const \mbox{\hyperlink{class_sprite_font_manager_ac18380d17ee63c0e48e6f910025f03fd}{Map\+Key}} \&key, const std\+::string \&path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::string \mbox{\hyperlink{class_sprite_font_manager_ac18380d17ee63c0e48e6f910025f03fd}{Map\+Key}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the map key. \end{DoxyCompactList}\item 
+typedef std\+::map$<$ \mbox{\hyperlink{class_sprite_font_manager_ac18380d17ee63c0e48e6f910025f03fd}{Map\+Key}}, \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$ $>$ \mbox{\hyperlink{class_sprite_font_manager_aa24a8a4da945fb8c26a8a05b244fb566}{Storage\+Map}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the storage map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sprite_font_manager_ab5b2044dd6c59141389d5d9d7127f3f2}{Sprite\+Font\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_font_manager_ae481992e5558ee66a8933901d4dfd875}{Sprite\+Font\+Manager}} (const \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_font_manager_a7a2ca1d531a2a6aa137d0edadfabc46c}{Sprite\+Font\+Manager}} (\mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} \& \mbox{\hyperlink{class_sprite_font_manager_a8d102b52578e175aa2a692fdbe434014}{operator=}} (const \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} \& \mbox{\hyperlink{class_sprite_font_manager_a10eac1132202549bd35f701012c5a24c}{operator=}} (\mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_font_manager_aba31f88fef01416107077ba0da5963d4}{$\sim$\+Sprite\+Font\+Manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_font_manager_ac552adf139de02381fcf6a907a5dbfed}{priv\+Delete}} ()
+\begin{DoxyCompactList}\small\item\em Delete\textquotesingle{}s the pointer instance. Only to be called internally. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$ \mbox{\hyperlink{class_sprite_font_manager_ac7dd0530569ff2848974663a01e7714f}{priv\+Get}} (const \mbox{\hyperlink{class_sprite_font_manager_ac18380d17ee63c0e48e6f910025f03fd}{Map\+Key}} \&key)
+\begin{DoxyCompactList}\small\item\em Private get method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_font_manager_a32b79ad7d2e9ae3c9f0923012685c030}{priv\+Load}} (const \mbox{\hyperlink{class_sprite_font_manager_ac18380d17ee63c0e48e6f910025f03fd}{Map\+Key}} \&key, const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Loads the provided key and stores it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} \& \mbox{\hyperlink{class_sprite_font_manager_a174cfb5ca2e6ce0381d5df7090e96a19}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the instance of \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sprite_font_manager_a44a1b071254e805966140523d628d4b4}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em Deletes \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}}\textquotesingle{}s pointer instance. Only to be called by engine code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_sprite_font_manager_ab5ba3da95f83b7b1ebbe59fd07a51c3f}{Default\+Path}}
+\begin{DoxyCompactList}\small\item\em The default path where fonts are stored. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_font_manager_aa24a8a4da945fb8c26a8a05b244fb566}{Storage\+Map}} \mbox{\hyperlink{class_sprite_font_manager_ac0078e30d8155d2c311b6b5c512b4490}{sprite\+Font\+Map}}
+\begin{DoxyCompactList}\small\item\em A map containing all of the sprite fonts loaded in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} $\ast$ \mbox{\hyperlink{class_sprite_font_manager_acf4c35812dcd783f8a40a522a0d6091c}{ptr\+Instance}} = nullptr
+\begin{DoxyCompactList}\small\item\em Pointer to \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_sprite_font_manager_abfa6cd21a2ca74e2eb686db41e8edd1f}{Sprite\+Font\+Manager\+Attorney}}
+\begin{DoxyCompactList}\small\item\em Dictates access to \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}}\textquotesingle{}s private functions for engine usage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_sprite_font_manager_ac18380d17ee63c0e48e6f910025f03fd}\label{class_sprite_font_manager_ac18380d17ee63c0e48e6f910025f03fd}} 
+\index{SpriteFontManager@{SpriteFontManager}!MapKey@{MapKey}}
+\index{MapKey@{MapKey}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{MapKey}{MapKey}}
+{\footnotesize\ttfamily std\+::string \mbox{\hyperlink{class_sprite_font_manager_ac18380d17ee63c0e48e6f910025f03fd}{Sprite\+Font\+Manager\+::\+Map\+Key}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing the map key. 
+
+\mbox{\Hypertarget{class_sprite_font_manager_aa24a8a4da945fb8c26a8a05b244fb566}\label{class_sprite_font_manager_aa24a8a4da945fb8c26a8a05b244fb566}} 
+\index{SpriteFontManager@{SpriteFontManager}!StorageMap@{StorageMap}}
+\index{StorageMap@{StorageMap}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{StorageMap}{StorageMap}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{class_sprite_font_manager_ac18380d17ee63c0e48e6f910025f03fd}{Map\+Key}}, \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$ $>$ \mbox{\hyperlink{class_sprite_font_manager_aa24a8a4da945fb8c26a8a05b244fb566}{Sprite\+Font\+Manager\+::\+Storage\+Map}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing the storage map. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sprite_font_manager_ab5b2044dd6c59141389d5d9d7127f3f2}\label{class_sprite_font_manager_ab5b2044dd6c59141389d5d9d7127f3f2}} 
+\index{SpriteFontManager@{SpriteFontManager}!SpriteFontManager@{SpriteFontManager}}
+\index{SpriteFontManager@{SpriteFontManager}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{SpriteFontManager()}{SpriteFontManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Sprite\+Font\+Manager\+::\+Sprite\+Font\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Default constructor. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_font_manager_ab5b2044dd6c59141389d5d9d7127f3f2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sprite_font_manager_ae481992e5558ee66a8933901d4dfd875}\label{class_sprite_font_manager_ae481992e5558ee66a8933901d4dfd875}} 
+\index{SpriteFontManager@{SpriteFontManager}!SpriteFontManager@{SpriteFontManager}}
+\index{SpriteFontManager@{SpriteFontManager}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{SpriteFontManager()}{SpriteFontManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Sprite\+Font\+Manager\+::\+Sprite\+Font\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_sprite_font_manager_a7a2ca1d531a2a6aa137d0edadfabc46c}\label{class_sprite_font_manager_a7a2ca1d531a2a6aa137d0edadfabc46c}} 
+\index{SpriteFontManager@{SpriteFontManager}!SpriteFontManager@{SpriteFontManager}}
+\index{SpriteFontManager@{SpriteFontManager}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{SpriteFontManager()}{SpriteFontManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Sprite\+Font\+Manager\+::\+Sprite\+Font\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_sprite_font_manager_aba31f88fef01416107077ba0da5963d4}\label{class_sprite_font_manager_aba31f88fef01416107077ba0da5963d4}} 
+\index{SpriteFontManager@{SpriteFontManager}!````~SpriteFontManager@{$\sim$SpriteFontManager}}
+\index{````~SpriteFontManager@{$\sim$SpriteFontManager}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$SpriteFontManager()}{~SpriteFontManager()}}
+{\footnotesize\ttfamily Sprite\+Font\+Manager\+::$\sim$\+Sprite\+Font\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sprite_font_manager_a44a1b071254e805966140523d628d4b4}\label{class_sprite_font_manager_a44a1b071254e805966140523d628d4b4}} 
+\index{SpriteFontManager@{SpriteFontManager}!Delete@{Delete}}
+\index{Delete@{Delete}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily static void Sprite\+Font\+Manager\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Deletes \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}}\textquotesingle{}s pointer instance. Only to be called by engine code. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_font_manager_a44a1b071254e805966140523d628d4b4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_font_manager_a44a1b071254e805966140523d628d4b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sprite_font_manager_adfd159763b5c4b06c1d574aa9e0f7594}\label{class_sprite_font_manager_adfd159763b5c4b06c1d574aa9e0f7594}} 
+\index{SpriteFontManager@{SpriteFontManager}!Get@{Get}}
+\index{Get@{Get}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}}$\ast$ Sprite\+Font\+Manager\+::\+Get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sprite_font_manager_ac18380d17ee63c0e48e6f910025f03fd}{Map\+Key}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_font_manager_adfd159763b5c4b06c1d574aa9e0f7594_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_font_manager_adfd159763b5c4b06c1d574aa9e0f7594_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sprite_font_manager_a174cfb5ca2e6ce0381d5df7090e96a19}\label{class_sprite_font_manager_a174cfb5ca2e6ce0381d5df7090e96a19}} 
+\index{SpriteFontManager@{SpriteFontManager}!Instance@{Instance}}
+\index{Instance@{Instance}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} \& Sprite\+Font\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the instance of \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}}. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_sprite_font_manager_a174cfb5ca2e6ce0381d5df7090e96a19_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_font_manager_a174cfb5ca2e6ce0381d5df7090e96a19_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sprite_font_manager_a7a6efb4ae95af6d4284504083e03dbdc}\label{class_sprite_font_manager_a7a6efb4ae95af6d4284504083e03dbdc}} 
+\index{SpriteFontManager@{SpriteFontManager}!Load@{Load}}
+\index{Load@{Load}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily static void Sprite\+Font\+Manager\+::\+Load (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sprite_font_manager_ac18380d17ee63c0e48e6f910025f03fd}{Map\+Key}} \&}]{key,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_font_manager_a7a6efb4ae95af6d4284504083e03dbdc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sprite_font_manager_a8d102b52578e175aa2a692fdbe434014}\label{class_sprite_font_manager_a8d102b52578e175aa2a692fdbe434014}} 
+\index{SpriteFontManager@{SpriteFontManager}!operator=@{operator=}}
+\index{operator=@{operator=}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}}\& Sprite\+Font\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_sprite_font_manager_a10eac1132202549bd35f701012c5a24c}\label{class_sprite_font_manager_a10eac1132202549bd35f701012c5a24c}} 
+\index{SpriteFontManager@{SpriteFontManager}!operator=@{operator=}}
+\index{operator=@{operator=}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}}\& Sprite\+Font\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_sprite_font_manager_ac552adf139de02381fcf6a907a5dbfed}\label{class_sprite_font_manager_ac552adf139de02381fcf6a907a5dbfed}} 
+\index{SpriteFontManager@{SpriteFontManager}!privDelete@{privDelete}}
+\index{privDelete@{privDelete}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{privDelete()}{privDelete()}}
+{\footnotesize\ttfamily void Sprite\+Font\+Manager\+::priv\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Delete\textquotesingle{}s the pointer instance. Only to be called internally. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_font_manager_ac552adf139de02381fcf6a907a5dbfed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sprite_font_manager_ac7dd0530569ff2848974663a01e7714f}\label{class_sprite_font_manager_ac7dd0530569ff2848974663a01e7714f}} 
+\index{SpriteFontManager@{SpriteFontManager}!privGet@{privGet}}
+\index{privGet@{privGet}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{privGet()}{privGet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$ Sprite\+Font\+Manager\+::priv\+Get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sprite_font_manager_ac18380d17ee63c0e48e6f910025f03fd}{Map\+Key}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private get method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key associated with the stored sprite font.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Null if it fails, else a pointer to a \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}}. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_font_manager_ac7dd0530569ff2848974663a01e7714f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sprite_font_manager_a32b79ad7d2e9ae3c9f0923012685c030}\label{class_sprite_font_manager_a32b79ad7d2e9ae3c9f0923012685c030}} 
+\index{SpriteFontManager@{SpriteFontManager}!privLoad@{privLoad}}
+\index{privLoad@{privLoad}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{privLoad()}{privLoad()}}
+{\footnotesize\ttfamily void Sprite\+Font\+Manager\+::priv\+Load (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sprite_font_manager_ac18380d17ee63c0e48e6f910025f03fd}{Map\+Key}} \&}]{key,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Loads the provided key and stores it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The associated sprite font key. \\
+\hline
+{\em path} & Partial pathname of the file. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_sprite_font_manager_a32b79ad7d2e9ae3c9f0923012685c030_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_sprite_font_manager_abfa6cd21a2ca74e2eb686db41e8edd1f}\label{class_sprite_font_manager_abfa6cd21a2ca74e2eb686db41e8edd1f}} 
+\index{SpriteFontManager@{SpriteFontManager}!SpriteFontManagerAttorney@{SpriteFontManagerAttorney}}
+\index{SpriteFontManagerAttorney@{SpriteFontManagerAttorney}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{SpriteFontManagerAttorney}{SpriteFontManagerAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_sprite_font_manager_attorney}{Sprite\+Font\+Manager\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Dictates access to \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}}\textquotesingle{}s private functions for engine usage. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sprite_font_manager_ab5ba3da95f83b7b1ebbe59fd07a51c3f}\label{class_sprite_font_manager_ab5ba3da95f83b7b1ebbe59fd07a51c3f}} 
+\index{SpriteFontManager@{SpriteFontManager}!DefaultPath@{DefaultPath}}
+\index{DefaultPath@{DefaultPath}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{DefaultPath}{DefaultPath}}
+{\footnotesize\ttfamily std\+::string Sprite\+Font\+Manager\+::\+Default\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The default path where fonts are stored. 
+
+\mbox{\Hypertarget{class_sprite_font_manager_acf4c35812dcd783f8a40a522a0d6091c}\label{class_sprite_font_manager_acf4c35812dcd783f8a40a522a0d6091c}} 
+\index{SpriteFontManager@{SpriteFontManager}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} $\ast$ Sprite\+Font\+Manager\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Pointer to \mbox{\hyperlink{class_sprite_font_manager}{Sprite\+Font\+Manager}} instance. 
+
+\mbox{\Hypertarget{class_sprite_font_manager_ac0078e30d8155d2c311b6b5c512b4490}\label{class_sprite_font_manager_ac0078e30d8155d2c311b6b5c512b4490}} 
+\index{SpriteFontManager@{SpriteFontManager}!spriteFontMap@{spriteFontMap}}
+\index{spriteFontMap@{spriteFontMap}!SpriteFontManager@{SpriteFontManager}}
+\doxysubsubsection{\texorpdfstring{spriteFontMap}{spriteFontMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_font_manager_aa24a8a4da945fb8c26a8a05b244fb566}{Storage\+Map}} Sprite\+Font\+Manager\+::sprite\+Font\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A map containing all of the sprite fonts loaded in. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sprite_font_manager_8h}{Sprite\+Font\+Manager.\+h}}\item 
+\mbox{\hyperlink{_sprite_font_manager_8cpp}{Sprite\+Font\+Manager.\+cpp}}\end{DoxyCompactItemize}

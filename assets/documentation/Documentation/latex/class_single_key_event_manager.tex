@@ -1,0 +1,297 @@
+\hypertarget{class_single_key_event_manager}{}\doxysection{Single\+Key\+Event\+Manager Class Reference}
+\label{class_single_key_event_manager}\index{SingleKeyEventManager@{SingleKeyEventManager}}
+
+
+{\ttfamily \#include $<$Single\+Key\+Event\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Single\+Key\+Event\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_single_key_event_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ \mbox{\hyperlink{class_inputable}{Inputable}} $\ast$, \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{Inputable\+::\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} $>$ \mbox{\hyperlink{class_single_key_event_manager_a5b99bf1e30cba799905a74e74151ecb3}{Inputable\+Collection}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing collection of inputables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_single_key_event_manager_a874e044c1f6d156ced0b15d5bfac9e11}{Single\+Key\+Event\+Manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_single_key_event_manager_a65722d475f1a43d7da25a9916dcf75d2}{Single\+Key\+Event\+Manager}} (const \mbox{\hyperlink{class_single_key_event_manager}{Single\+Key\+Event\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_single_key_event_manager_aed52bacec356fefbedadaf4fd225fcc9}{Single\+Key\+Event\+Manager}} (\mbox{\hyperlink{class_single_key_event_manager}{Single\+Key\+Event\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_single_key_event_manager}{Single\+Key\+Event\+Manager}} \& \mbox{\hyperlink{class_single_key_event_manager_a5bd4c337b49ac2e533dbf7a0d7809117}{operator=}} (const \mbox{\hyperlink{class_single_key_event_manager}{Single\+Key\+Event\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_single_key_event_manager}{Single\+Key\+Event\+Manager}} \& \mbox{\hyperlink{class_single_key_event_manager_a0825cc838cffb0b9f1c714b28c59663c}{operator=}} (\mbox{\hyperlink{class_single_key_event_manager}{Single\+Key\+Event\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_single_key_event_manager_ad2dddac4d8cef0a7a8659311e1140f50}{$\sim$\+Single\+Key\+Event\+Manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_single_key_event_manager_a08b11d05faa0403c1e13d6ccf76f5bb2}{Single\+Key\+Event\+Manager}} (A\+Z\+U\+L\+\_\+\+K\+EY input\+Key)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_single_key_event_manager_a41037b02d4e687d6f8260869e3aa333f}{Single\+Key\+Event\+Manager}} (A\+Z\+U\+L\+\_\+\+K\+EY input\+Key, \mbox{\hyperlink{class_inputable}{Inputable}} $\ast$input\+Callback, \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{Inputable\+::\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} e)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_single_key_event_manager_adb0a9495514471a2bcc363a14ade1d43}{Process\+Key\+Event}} ()
+\begin{DoxyCompactList}\small\item\em Process the key event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_single_key_event_manager_a2a6ef4db5fbd2d1f6b295ddde74cb01b}{Register}} (\mbox{\hyperlink{class_inputable}{Inputable}} $\ast$input\+In, \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{Inputable\+::\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} e)
+\begin{DoxyCompactList}\small\item\em Registers this. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_single_key_event_manager_a6f0925ef6dbb398be2e2152123ec64c0}{Deregister}} (\mbox{\hyperlink{class_inputable}{Inputable}} $\ast$input\+In, \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{Inputable\+::\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} e)
+\begin{DoxyCompactList}\small\item\em Deregisters this. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+A\+Z\+U\+L\+\_\+\+K\+EY \mbox{\hyperlink{class_single_key_event_manager_a11d5c912806e2ee016f7b96c669a7e7d}{key}}
+\begin{DoxyCompactList}\small\item\em The key. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{Inputable\+::\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{class_single_key_event_manager_a299bf70a71b64baec4ac4b5e4d91e65e}{current\+State}}
+\begin{DoxyCompactList}\small\item\em The current state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_single_key_event_manager_a5b99bf1e30cba799905a74e74151ecb3}{Inputable\+Collection}} \mbox{\hyperlink{class_single_key_event_manager_a15bdf75925064c3c09b193c0bfbe0357}{key\+Press\+Col}}
+\begin{DoxyCompactList}\small\item\em The key press col. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_single_key_event_manager_a5b99bf1e30cba799905a74e74151ecb3}{Inputable\+Collection}} \mbox{\hyperlink{class_single_key_event_manager_a24b86a3f9a39ef5e91fb883bd6e5e5d4}{key\+Release\+Col}}
+\begin{DoxyCompactList}\small\item\em The key release col. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_single_key_event_manager_a72f34925212cc8fb6e6a7b0e739aa429}{Inputable\+Attorney}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_single_key_event_manager_a5b99bf1e30cba799905a74e74151ecb3}\label{class_single_key_event_manager_a5b99bf1e30cba799905a74e74151ecb3}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!InputableCollection@{InputableCollection}}
+\index{InputableCollection@{InputableCollection}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{InputableCollection}{InputableCollection}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{class_inputable}{Inputable}} $\ast$, \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{Inputable\+::\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} $>$ \mbox{\hyperlink{class_single_key_event_manager_a5b99bf1e30cba799905a74e74151ecb3}{Single\+Key\+Event\+Manager\+::\+Inputable\+Collection}}}
+
+
+
+Defines an alias representing collection of inputables. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_single_key_event_manager_a874e044c1f6d156ced0b15d5bfac9e11}\label{class_single_key_event_manager_a874e044c1f6d156ced0b15d5bfac9e11}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!SingleKeyEventManager@{SingleKeyEventManager}}
+\index{SingleKeyEventManager@{SingleKeyEventManager}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{SingleKeyEventManager()}{SingleKeyEventManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Single\+Key\+Event\+Manager\+::\+Single\+Key\+Event\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_single_key_event_manager_a65722d475f1a43d7da25a9916dcf75d2}\label{class_single_key_event_manager_a65722d475f1a43d7da25a9916dcf75d2}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!SingleKeyEventManager@{SingleKeyEventManager}}
+\index{SingleKeyEventManager@{SingleKeyEventManager}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{SingleKeyEventManager()}{SingleKeyEventManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Single\+Key\+Event\+Manager\+::\+Single\+Key\+Event\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_single_key_event_manager}{Single\+Key\+Event\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_single_key_event_manager_aed52bacec356fefbedadaf4fd225fcc9}\label{class_single_key_event_manager_aed52bacec356fefbedadaf4fd225fcc9}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!SingleKeyEventManager@{SingleKeyEventManager}}
+\index{SingleKeyEventManager@{SingleKeyEventManager}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{SingleKeyEventManager()}{SingleKeyEventManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Single\+Key\+Event\+Manager\+::\+Single\+Key\+Event\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_key_event_manager}{Single\+Key\+Event\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_single_key_event_manager_ad2dddac4d8cef0a7a8659311e1140f50}\label{class_single_key_event_manager_ad2dddac4d8cef0a7a8659311e1140f50}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!````~SingleKeyEventManager@{$\sim$SingleKeyEventManager}}
+\index{````~SingleKeyEventManager@{$\sim$SingleKeyEventManager}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$SingleKeyEventManager()}{~SingleKeyEventManager()}}
+{\footnotesize\ttfamily Single\+Key\+Event\+Manager\+::$\sim$\+Single\+Key\+Event\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+\mbox{\Hypertarget{class_single_key_event_manager_a08b11d05faa0403c1e13d6ccf76f5bb2}\label{class_single_key_event_manager_a08b11d05faa0403c1e13d6ccf76f5bb2}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!SingleKeyEventManager@{SingleKeyEventManager}}
+\index{SingleKeyEventManager@{SingleKeyEventManager}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{SingleKeyEventManager()}{SingleKeyEventManager()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Single\+Key\+Event\+Manager\+::\+Single\+Key\+Event\+Manager (\begin{DoxyParamCaption}\item[{A\+Z\+U\+L\+\_\+\+K\+EY}]{input\+Key }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Key} & The input key. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_single_key_event_manager_a41037b02d4e687d6f8260869e3aa333f}\label{class_single_key_event_manager_a41037b02d4e687d6f8260869e3aa333f}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!SingleKeyEventManager@{SingleKeyEventManager}}
+\index{SingleKeyEventManager@{SingleKeyEventManager}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{SingleKeyEventManager()}{SingleKeyEventManager()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Single\+Key\+Event\+Manager\+::\+Single\+Key\+Event\+Manager (\begin{DoxyParamCaption}\item[{A\+Z\+U\+L\+\_\+\+K\+EY}]{input\+Key,  }\item[{\mbox{\hyperlink{class_inputable}{Inputable}} $\ast$}]{input\+Callback,  }\item[{\mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{Inputable\+::\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}}}]{e }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em input\+Key} & The input key. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em input\+Callback} & If non-\/null, the input callback. \\
+\hline
+ & {\em e} & An \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{Inputable\+::\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} to process. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_single_key_event_manager_a41037b02d4e687d6f8260869e3aa333f_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_single_key_event_manager_a6f0925ef6dbb398be2e2152123ec64c0}\label{class_single_key_event_manager_a6f0925ef6dbb398be2e2152123ec64c0}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!Deregister@{Deregister}}
+\index{Deregister@{Deregister}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{Deregister()}{Deregister()}}
+{\footnotesize\ttfamily void Single\+Key\+Event\+Manager\+::\+Deregister (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inputable}{Inputable}} $\ast$}]{input\+In,  }\item[{\mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{Inputable\+::\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}}}]{e }\end{DoxyParamCaption})}
+
+
+
+Deregisters this. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em input\+In} & If non-\/null, the input in. \\
+\hline
+ & {\em e} & An \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{Inputable\+::\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} to process. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_single_key_event_manager_a5bd4c337b49ac2e533dbf7a0d7809117}\label{class_single_key_event_manager_a5bd4c337b49ac2e533dbf7a0d7809117}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!operator=@{operator=}}
+\index{operator=@{operator=}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_single_key_event_manager}{Single\+Key\+Event\+Manager}}\& Single\+Key\+Event\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_single_key_event_manager}{Single\+Key\+Event\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_single_key_event_manager_a0825cc838cffb0b9f1c714b28c59663c}\label{class_single_key_event_manager_a0825cc838cffb0b9f1c714b28c59663c}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!operator=@{operator=}}
+\index{operator=@{operator=}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_single_key_event_manager}{Single\+Key\+Event\+Manager}}\& Single\+Key\+Event\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_single_key_event_manager}{Single\+Key\+Event\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_single_key_event_manager_adb0a9495514471a2bcc363a14ade1d43}\label{class_single_key_event_manager_adb0a9495514471a2bcc363a14ade1d43}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!ProcessKeyEvent@{ProcessKeyEvent}}
+\index{ProcessKeyEvent@{ProcessKeyEvent}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{ProcessKeyEvent()}{ProcessKeyEvent()}}
+{\footnotesize\ttfamily void Single\+Key\+Event\+Manager\+::\+Process\+Key\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Process the key event. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_single_key_event_manager_adb0a9495514471a2bcc363a14ade1d43_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_single_key_event_manager_a2a6ef4db5fbd2d1f6b295ddde74cb01b}\label{class_single_key_event_manager_a2a6ef4db5fbd2d1f6b295ddde74cb01b}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!Register@{Register}}
+\index{Register@{Register}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily void Single\+Key\+Event\+Manager\+::\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inputable}{Inputable}} $\ast$}]{input\+In,  }\item[{\mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{Inputable\+::\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}}}]{e }\end{DoxyParamCaption})}
+
+
+
+Registers this. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em input\+In} & If non-\/null, the input in. \\
+\hline
+ & {\em e} & An \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{Inputable\+::\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} to process. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_single_key_event_manager_a2a6ef4db5fbd2d1f6b295ddde74cb01b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_single_key_event_manager_a72f34925212cc8fb6e6a7b0e739aa429}\label{class_single_key_event_manager_a72f34925212cc8fb6e6a7b0e739aa429}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!InputableAttorney@{InputableAttorney}}
+\index{InputableAttorney@{InputableAttorney}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{InputableAttorney}{InputableAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_inputable_attorney}{Inputable\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_single_key_event_manager_a299bf70a71b64baec4ac4b5e4d91e65e}\label{class_single_key_event_manager_a299bf70a71b64baec4ac4b5e4d91e65e}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!currentState@{currentState}}
+\index{currentState@{currentState}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{currentState}{currentState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_inputable_ab4aea8b7165229e46d9ba33f8f2f23fc}{Inputable\+::\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}} Single\+Key\+Event\+Manager\+::current\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The current state. 
+
+\mbox{\Hypertarget{class_single_key_event_manager_a11d5c912806e2ee016f7b96c669a7e7d}\label{class_single_key_event_manager_a11d5c912806e2ee016f7b96c669a7e7d}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!key@{key}}
+\index{key@{key}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily A\+Z\+U\+L\+\_\+\+K\+EY Single\+Key\+Event\+Manager\+::key\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The key. 
+
+\mbox{\Hypertarget{class_single_key_event_manager_a15bdf75925064c3c09b193c0bfbe0357}\label{class_single_key_event_manager_a15bdf75925064c3c09b193c0bfbe0357}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!keyPressCol@{keyPressCol}}
+\index{keyPressCol@{keyPressCol}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{keyPressCol}{keyPressCol}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_single_key_event_manager_a5b99bf1e30cba799905a74e74151ecb3}{Inputable\+Collection}} Single\+Key\+Event\+Manager\+::key\+Press\+Col\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The key press col. 
+
+\mbox{\Hypertarget{class_single_key_event_manager_a24b86a3f9a39ef5e91fb883bd6e5e5d4}\label{class_single_key_event_manager_a24b86a3f9a39ef5e91fb883bd6e5e5d4}} 
+\index{SingleKeyEventManager@{SingleKeyEventManager}!keyReleaseCol@{keyReleaseCol}}
+\index{keyReleaseCol@{keyReleaseCol}!SingleKeyEventManager@{SingleKeyEventManager}}
+\doxysubsubsection{\texorpdfstring{keyReleaseCol}{keyReleaseCol}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_single_key_event_manager_a5b99bf1e30cba799905a74e74151ecb3}{Inputable\+Collection}} Single\+Key\+Event\+Manager\+::key\+Release\+Col\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The key release col. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_single_key_event_manager_8h}{Single\+Key\+Event\+Manager.\+h}}\item 
+\mbox{\hyperlink{_single_key_event_manager_8cpp}{Single\+Key\+Event\+Manager.\+cpp}}\end{DoxyCompactItemize}

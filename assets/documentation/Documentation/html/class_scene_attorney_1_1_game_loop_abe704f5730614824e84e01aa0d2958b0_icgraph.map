@@ -1,0 +1,6 @@
+<map id="SceneAttorney::GameLoop::Update" name="SceneAttorney::GameLoop::Update">
+<area shape="rect" id="node1" title=" " alt="" coords="576,5,755,47"/>
+<area shape="rect" id="node2" href="$class_scene_manager.html#af23e516129cec83e0a301ec6a987ab77" title="Priv update." alt="" coords="351,13,528,39"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#ab61cbf725d6649c4fea3a61159baa404" title="Calls the main update loop for the current scene." alt="" coords="144,13,303,39"/>
+<area shape="rect" id="node4" href="$class_sly.html#a3becf1f9f9075b00b27ee727b5503013" title="Main update loop." alt="" coords="5,13,96,39"/>
+</map>

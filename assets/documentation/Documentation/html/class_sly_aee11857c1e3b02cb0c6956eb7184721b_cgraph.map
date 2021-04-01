@@ -1,0 +1,6 @@
+<map id="Sly::GetWidth" name="Sly::GetWidth">
+<area shape="rect" id="node1" title="Gets the window width." alt="" coords="5,31,109,57"/>
+<area shape="rect" id="node2" href="$class_sly.html#a1d59581314e3040746c9a40b2d9a2577" title="Gets the instance." alt="" coords="169,5,268,32"/>
+<area shape="rect" id="node4" href="$class_sly.html#adc6e75da3dc32d2a2a32e83a396be078" title="Internal get width, pulls width from Azul framework." alt="" coords="157,56,280,83"/>
+<area shape="rect" id="node3" href="$class_sly.html#a50e7c55c362cf0a3dec26ad4e77370e0" title="Default constructor." alt="" coords="328,5,396,32"/>
+</map>

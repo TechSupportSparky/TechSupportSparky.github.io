@@ -1,0 +1,6 @@
+<map id="ShaderManager::Delete" name="ShaderManager::Delete">
+<area shape="rect" id="node1" title="Deletes pointer instance. To be called within Engine code only." alt="" coords="5,31,164,57"/>
+<area shape="rect" id="node2" href="$class_shader_manager.html#a027cb5c486b20e641bcbf94e8186a965" title="Gets the instance." alt="" coords="215,5,386,32"/>
+<area shape="rect" id="node4" href="$class_shader_manager.html#a3450b4c48e0e27497483b2d4b121cabe" title="Deletes pointer instance. To be called internally only." alt="" coords="212,56,389,83"/>
+<area shape="rect" id="node3" href="$class_shader_manager.html#aca25f81fd10a02b3e97e9c459b864186" title="Default constructor." alt="" coords="437,5,649,32"/>
+</map>

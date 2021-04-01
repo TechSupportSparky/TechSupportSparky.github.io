@@ -1,0 +1,4 @@
+<map id="Sly::privSetClear" name="Sly::privSetClear">
+<area shape="rect" id="node1" title="Internal set clear. Passes values to Azul framework." alt="" coords="152,5,271,32"/>
+<area shape="rect" id="node2" href="$class_sly.html#ada036894bb164e8fd06681d8acf81d1f" title="Sets the color to clear the screen with." alt="" coords="5,5,104,32"/>
+</map>

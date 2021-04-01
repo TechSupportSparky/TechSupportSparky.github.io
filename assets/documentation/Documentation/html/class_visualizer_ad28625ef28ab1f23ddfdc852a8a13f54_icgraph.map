@@ -1,0 +1,4 @@
+<map id="Visualizer::ShowMarker" name="Visualizer::ShowMarker">
+<area shape="rect" id="node1" title="Shows the marker at the given position." alt="" coords="233,5,392,32"/>
+<area shape="rect" id="node2" href="$class_terrain_object.html#ab69f274690b61328a929a942b7210a4d" title=" " alt="" coords="5,5,185,32"/>
+</map>

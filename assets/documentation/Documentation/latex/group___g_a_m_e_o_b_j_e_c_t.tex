@@ -1,0 +1,78 @@
+\hypertarget{group___g_a_m_e_o_b_j_e_c_t}{}\doxysection{Game\+Object}
+\label{group___g_a_m_e_o_b_j_e_c_t}\index{GameObject@{GameObject}}
+
+
+The entities of your game ~\newline
+  
+
+
+Collaboration diagram for Game\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{group___g_a_m_e_o_b_j_e_c_t}
+\end{center}
+\end{figure}
+The entities of your game ~\newline
+ 
+
+Game Objects are the entities of the game, they can be created within a scene and can interact with one another. Game Objects derive from a number of different classes that give them the ability to be updatable, drawable inputable, alarmable, and collidable. ~\newline
+
+
+Of these classes, the only two that are required are \mbox{\hyperlink{class_updatable}{Updatable}} and \mbox{\hyperlink{class_drawable}{Drawable}}. Below we have a basic header setup for a game object 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// Forward declarations}}
+\DoxyCodeLine{\textcolor{keyword}{class }GraphicsObject\_TextureFlat;}
+\DoxyCodeLine{\textcolor{keyword}{class }Matrix;}
+\DoxyCodeLine{\textcolor{keyword}{class }Vect;}
+\DoxyCodeLine{     }
+\DoxyCodeLine{\textcolor{keyword}{class }Frigate : \textcolor{keyword}{public} \mbox{\hyperlink{class_game_object}{GameObject}} \{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{    Frigate();}
+\DoxyCodeLine{    \string~Frigate();}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_updatable_ae4951bd0a70ffeaeb7a6d476ed788ee2}{Update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_drawable_a8d5d4d2f2bca40d931c1b8b762be8d42}{Draw}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{    }
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{    Vect   shipPosition;}
+\DoxyCodeLine{    Matrix shipRotation;}
+\DoxyCodeLine{    Matrix shipScale;}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    GraphicsObject\_TextureFlat* FrigateGraphicObject; }
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+From here, setting up the game object is straightforward\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{... \textcolor{comment}{// assuming the correct includes}}
+\DoxyCodeLine{     }
+\DoxyCodeLine{Frigate::Frigate() \{}
+\DoxyCodeLine{    FrigateGraphicObject = \textcolor{keyword}{new} GraphicsObject\_TextureFlat(\mbox{\hyperlink{class_model_manager_ac48466a9c8c05c81a6d6acd19b13233a}{ModelManager::Get}}(\textcolor{stringliteral}{"FrigateModel"}), \mbox{\hyperlink{class_shader_manager_a102591e663e0897ac54aee3bb097ab5f}{ShaderManager::Get}}(\textcolor{stringliteral}{"TextureFlatRender"}), \mbox{\hyperlink{class_texture_manager_a2c8c249eeca164c77c18b36243da6a9a}{TextureManager::Get}}(\textcolor{stringliteral}{"FrigateTexture"});}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    shipPosition = Matrix(TRANS, 0, 10, 0); \textcolor{comment}{// Set the position slightly off the ground}}
+\DoxyCodeLine{    shipRotation = Matrix(IDENTITY);}
+\DoxyCodeLine{    shipScale = Matrix(IDENTITY);}
+\DoxyCodeLine{     }
+\DoxyCodeLine{    \textcolor{comment}{// Register to allow for updating and drawing of the frigate}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_updatable_a705b2573da6eaa190a30bba0f7f4dddc}{Updatable::SubmitUpdateRegistration}}();}
+\DoxyCodeLine{    \mbox{\hyperlink{class_drawable_a4f89e20fc4a5efe3ed173743498d93eb}{Drawable::SubmitDrawRegistration}}();}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{Frigate::Update() \{}
+\DoxyCodeLine{    shipPosition += Vect(0, 0, 1) * shipRotation;}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    Matrix newWorld = shipScale * shipRotation * Matrix(TRANS, shipPosition);}
+\DoxyCodeLine{    FrigateGraphicObject-\/>SetWorld(newWorld);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{Frigate::Draw() \{}
+\DoxyCodeLine{    FrigateGraphicObject-\/>Render(\mbox{\hyperlink{class_scene_manager_a547a841067e4c8f44be20fbebd15f9fa}{SceneManager::GetCurrentScene}}()-\/>GetCamera());}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{Frigate::\string~Frigate \{}
+\DoxyCodeLine{    \textcolor{keyword}{delete} FrigateGraphiObject;}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ 

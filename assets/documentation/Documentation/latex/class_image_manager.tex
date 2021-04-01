@@ -1,0 +1,429 @@
+\hypertarget{class_image_manager}{}\doxysection{Image\+Manager Class Reference}
+\label{class_image_manager}\index{ImageManager@{ImageManager}}
+
+
+{\ttfamily \#include $<$Image\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Image\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_image_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Image $\ast$ \mbox{\hyperlink{class_image_manager_a9521b5248002fd6f48355c7f8edf27c8}{Get}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Gets an image$\ast$ using the given key. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_image_manager_a43a542026fe550159d7aaea3fe19a22f}{Load}} (const \mbox{\hyperlink{class_image_manager_a67190ed847d08764441f830228b2ef6b}{Map\+Key}} \&key, Texture $\ast$tex)
+\item 
+static void \mbox{\hyperlink{class_image_manager_a82164447152f49a367813d54fb4c1e0c}{Load}} (const \mbox{\hyperlink{class_image_manager_a67190ed847d08764441f830228b2ef6b}{Map\+Key}} \&key, Texture $\ast$tex, Rect $\ast$r)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::string \mbox{\hyperlink{class_image_manager_a67190ed847d08764441f830228b2ef6b}{Map\+Key}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the map key. \end{DoxyCompactList}\item 
+typedef std\+::map$<$ \mbox{\hyperlink{class_image_manager_a67190ed847d08764441f830228b2ef6b}{Map\+Key}}, Image $\ast$ $>$ \mbox{\hyperlink{class_image_manager_adb4e59ce2637fa53e9cf547b0b5d8db0}{Storage\+Map}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the storage map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_image_manager_a8c856af0e3f0d23da7c765b0e33e585e}{Image\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_image_manager_a1258c36ccc63ae8add08b171283ad759}{Image\+Manager}} (const \mbox{\hyperlink{class_image_manager}{Image\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_image_manager_a32de499374de6c7a3c2499628d7d2ab1}{Image\+Manager}} (\mbox{\hyperlink{class_image_manager}{Image\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_image_manager}{Image\+Manager}} \& \mbox{\hyperlink{class_image_manager_af2094a4523cc7da5bd758efb3e1ba837}{operator=}} (const \mbox{\hyperlink{class_image_manager}{Image\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_image_manager}{Image\+Manager}} \& \mbox{\hyperlink{class_image_manager_a2638cb2b48b19ac5880e426cc7d132e8}{operator=}} (\mbox{\hyperlink{class_image_manager}{Image\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_image_manager_a6b2ea1a5539cb48c3815c6c6599188ce}{$\sim$\+Image\+Manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_image_manager_aefe58979c6872aea5a7691249bcca1e1}{priv\+Delete}} ()
+\begin{DoxyCompactList}\small\item\em Deletes this pointer instance. To only be called internally. ~\newline
+ \end{DoxyCompactList}\item 
+Image $\ast$ \mbox{\hyperlink{class_image_manager_a15ccbf48104c58d6acabca0f7a47d77c}{priv\+Get}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Private get. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_image_manager_aa82ce274d48cae6aa901161bd9e13245}{priv\+Load}} (const \mbox{\hyperlink{class_image_manager_a67190ed847d08764441f830228b2ef6b}{Map\+Key}} \&key, Texture $\ast$tex)
+\begin{DoxyCompactList}\small\item\em Priv load. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_image_manager_a752c3a446e3062842b39e9dc934be88e}{priv\+Load}} (const \mbox{\hyperlink{class_image_manager_a67190ed847d08764441f830228b2ef6b}{Map\+Key}} \&key, Texture $\ast$tex, Rect $\ast$r4)
+\begin{DoxyCompactList}\small\item\em Priv load. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_image_manager}{Image\+Manager}} \& \mbox{\hyperlink{class_image_manager_ae1fff2154dfa21faf1baab26521cb99f}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the \mbox{\hyperlink{class_image_manager}{Image\+Manager}} instance. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_image_manager_ae01895974e6e3e9ae95dbb11c6070e23}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em Deletes this pointer instance. To only be called by the engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_image_manager_ac225ade62395431ad1e83ca722ad9a5d}{default\+Path}}
+\begin{DoxyCompactList}\small\item\em The default path where images are stored. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_image_manager_adb4e59ce2637fa53e9cf547b0b5d8db0}{Storage\+Map}} \mbox{\hyperlink{class_image_manager_af13df26852ffb705ddcdd85558552f60}{image\+Map}}
+\begin{DoxyCompactList}\small\item\em A map containing images specified by a string key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_image_manager}{Image\+Manager}} $\ast$ \mbox{\hyperlink{class_image_manager_acde30474c2e1ac1d40d01e467d32ef21}{ptr\+Instance}} = nullptr
+\begin{DoxyCompactList}\small\item\em Pointer instance to \mbox{\hyperlink{class_image_manager}{Image\+Manager}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_image_manager_a4daaf56e6be07960cba4d17438f6d7b3}{Image\+Manager\+Attorney}}
+\begin{DoxyCompactList}\small\item\em Dictates access to \mbox{\hyperlink{class_image_manager}{Image\+Manager}}\textquotesingle{}s private functions for engine usage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_image_manager_a67190ed847d08764441f830228b2ef6b}\label{class_image_manager_a67190ed847d08764441f830228b2ef6b}} 
+\index{ImageManager@{ImageManager}!MapKey@{MapKey}}
+\index{MapKey@{MapKey}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{MapKey}{MapKey}}
+{\footnotesize\ttfamily std\+::string \mbox{\hyperlink{class_image_manager_a67190ed847d08764441f830228b2ef6b}{Image\+Manager\+::\+Map\+Key}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing the map key. 
+
+\mbox{\Hypertarget{class_image_manager_adb4e59ce2637fa53e9cf547b0b5d8db0}\label{class_image_manager_adb4e59ce2637fa53e9cf547b0b5d8db0}} 
+\index{ImageManager@{ImageManager}!StorageMap@{StorageMap}}
+\index{StorageMap@{StorageMap}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{StorageMap}{StorageMap}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{class_image_manager_a67190ed847d08764441f830228b2ef6b}{Map\+Key}}, Image $\ast$ $>$ \mbox{\hyperlink{class_image_manager_adb4e59ce2637fa53e9cf547b0b5d8db0}{Image\+Manager\+::\+Storage\+Map}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing the storage map. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_image_manager_a8c856af0e3f0d23da7c765b0e33e585e}\label{class_image_manager_a8c856af0e3f0d23da7c765b0e33e585e}} 
+\index{ImageManager@{ImageManager}!ImageManager@{ImageManager}}
+\index{ImageManager@{ImageManager}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{ImageManager()}{ImageManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Image\+Manager\+::\+Image\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Default constructor. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_image_manager_a8c856af0e3f0d23da7c765b0e33e585e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_image_manager_a1258c36ccc63ae8add08b171283ad759}\label{class_image_manager_a1258c36ccc63ae8add08b171283ad759}} 
+\index{ImageManager@{ImageManager}!ImageManager@{ImageManager}}
+\index{ImageManager@{ImageManager}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{ImageManager()}{ImageManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Image\+Manager\+::\+Image\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image_manager}{Image\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_image_manager_a32de499374de6c7a3c2499628d7d2ab1}\label{class_image_manager_a32de499374de6c7a3c2499628d7d2ab1}} 
+\index{ImageManager@{ImageManager}!ImageManager@{ImageManager}}
+\index{ImageManager@{ImageManager}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{ImageManager()}{ImageManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Image\+Manager\+::\+Image\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_image_manager}{Image\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_image_manager_a6b2ea1a5539cb48c3815c6c6599188ce}\label{class_image_manager_a6b2ea1a5539cb48c3815c6c6599188ce}} 
+\index{ImageManager@{ImageManager}!````~ImageManager@{$\sim$ImageManager}}
+\index{````~ImageManager@{$\sim$ImageManager}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$ImageManager()}{~ImageManager()}}
+{\footnotesize\ttfamily Image\+Manager\+::$\sim$\+Image\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_image_manager_ae01895974e6e3e9ae95dbb11c6070e23}\label{class_image_manager_ae01895974e6e3e9ae95dbb11c6070e23}} 
+\index{ImageManager@{ImageManager}!Delete@{Delete}}
+\index{Delete@{Delete}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily static void Image\+Manager\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Deletes this pointer instance. To only be called by the engine. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_image_manager_ae01895974e6e3e9ae95dbb11c6070e23_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_image_manager_ae01895974e6e3e9ae95dbb11c6070e23_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_image_manager_a9521b5248002fd6f48355c7f8edf27c8}\label{class_image_manager_a9521b5248002fd6f48355c7f8edf27c8}} 
+\index{ImageManager@{ImageManager}!Get@{Get}}
+\index{Get@{Get}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily static Image $\ast$ Image\+Manager\+::\+Get (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets an image$\ast$ using the given key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to get.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Assertion if it fails, else a pointer to an Image. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_image_manager_a9521b5248002fd6f48355c7f8edf27c8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_image_manager_a9521b5248002fd6f48355c7f8edf27c8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_image_manager_ae1fff2154dfa21faf1baab26521cb99f}\label{class_image_manager_ae1fff2154dfa21faf1baab26521cb99f}} 
+\index{ImageManager@{ImageManager}!Instance@{Instance}}
+\index{Instance@{Instance}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_image_manager}{Image\+Manager}} \& Image\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the \mbox{\hyperlink{class_image_manager}{Image\+Manager}} instance. 
+
+\begin{DoxyReturn}{Returns}
+A reference to \mbox{\hyperlink{class_image_manager}{Image\+Manager}}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_image_manager_ae1fff2154dfa21faf1baab26521cb99f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_image_manager_ae1fff2154dfa21faf1baab26521cb99f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_image_manager_a43a542026fe550159d7aaea3fe19a22f}\label{class_image_manager_a43a542026fe550159d7aaea3fe19a22f}} 
+\index{ImageManager@{ImageManager}!Load@{Load}}
+\index{Load@{Load}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Image\+Manager\+::\+Load (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image_manager_a67190ed847d08764441f830228b2ef6b}{Map\+Key}} \&}]{key,  }\item[{Texture $\ast$}]{tex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_image_manager_a43a542026fe550159d7aaea3fe19a22f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_image_manager_a43a542026fe550159d7aaea3fe19a22f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_image_manager_a82164447152f49a367813d54fb4c1e0c}\label{class_image_manager_a82164447152f49a367813d54fb4c1e0c}} 
+\index{ImageManager@{ImageManager}!Load@{Load}}
+\index{Load@{Load}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Image\+Manager\+::\+Load (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image_manager_a67190ed847d08764441f830228b2ef6b}{Map\+Key}} \&}]{key,  }\item[{Texture $\ast$}]{tex,  }\item[{Rect $\ast$}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_image_manager_a82164447152f49a367813d54fb4c1e0c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_image_manager_af2094a4523cc7da5bd758efb3e1ba837}\label{class_image_manager_af2094a4523cc7da5bd758efb3e1ba837}} 
+\index{ImageManager@{ImageManager}!operator=@{operator=}}
+\index{operator=@{operator=}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image_manager}{Image\+Manager}}\& Image\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image_manager}{Image\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_image_manager_a2638cb2b48b19ac5880e426cc7d132e8}\label{class_image_manager_a2638cb2b48b19ac5880e426cc7d132e8}} 
+\index{ImageManager@{ImageManager}!operator=@{operator=}}
+\index{operator=@{operator=}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image_manager}{Image\+Manager}}\& Image\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_image_manager}{Image\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_image_manager_aefe58979c6872aea5a7691249bcca1e1}\label{class_image_manager_aefe58979c6872aea5a7691249bcca1e1}} 
+\index{ImageManager@{ImageManager}!privDelete@{privDelete}}
+\index{privDelete@{privDelete}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{privDelete()}{privDelete()}}
+{\footnotesize\ttfamily void Image\+Manager\+::priv\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Deletes this pointer instance. To only be called internally. ~\newline
+ 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_image_manager_aefe58979c6872aea5a7691249bcca1e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_image_manager_a15ccbf48104c58d6acabca0f7a47d77c}\label{class_image_manager_a15ccbf48104c58d6acabca0f7a47d77c}} 
+\index{ImageManager@{ImageManager}!privGet@{privGet}}
+\index{privGet@{privGet}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{privGet()}{privGet()}}
+{\footnotesize\ttfamily Image $\ast$ Image\+Manager\+::priv\+Get (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private get. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Assertion if it fails, else a pointer to an Image. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_image_manager_a15ccbf48104c58d6acabca0f7a47d77c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_image_manager_aa82ce274d48cae6aa901161bd9e13245}\label{class_image_manager_aa82ce274d48cae6aa901161bd9e13245}} 
+\index{ImageManager@{ImageManager}!privLoad@{privLoad}}
+\index{privLoad@{privLoad}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{privLoad()}{privLoad()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Image\+Manager\+::priv\+Load (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image_manager_a67190ed847d08764441f830228b2ef6b}{Map\+Key}} \&}]{key,  }\item[{Texture $\ast$}]{tex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Priv load. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em key} & The key. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em tex} & If non-\/null, the tex. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_image_manager_aa82ce274d48cae6aa901161bd9e13245_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_image_manager_a752c3a446e3062842b39e9dc934be88e}\label{class_image_manager_a752c3a446e3062842b39e9dc934be88e}} 
+\index{ImageManager@{ImageManager}!privLoad@{privLoad}}
+\index{privLoad@{privLoad}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{privLoad()}{privLoad()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Image\+Manager\+::priv\+Load (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image_manager_a67190ed847d08764441f830228b2ef6b}{Map\+Key}} \&}]{key,  }\item[{Texture $\ast$}]{tex,  }\item[{Rect $\ast$}]{r4 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Priv load. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em key} & The key. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em tex} & If non-\/null, the tex. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em r4} & If non-\/null, the fourth Rect. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_image_manager_a4daaf56e6be07960cba4d17438f6d7b3}\label{class_image_manager_a4daaf56e6be07960cba4d17438f6d7b3}} 
+\index{ImageManager@{ImageManager}!ImageManagerAttorney@{ImageManagerAttorney}}
+\index{ImageManagerAttorney@{ImageManagerAttorney}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{ImageManagerAttorney}{ImageManagerAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_image_manager_attorney}{Image\+Manager\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Dictates access to \mbox{\hyperlink{class_image_manager}{Image\+Manager}}\textquotesingle{}s private functions for engine usage. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_image_manager_ac225ade62395431ad1e83ca722ad9a5d}\label{class_image_manager_ac225ade62395431ad1e83ca722ad9a5d}} 
+\index{ImageManager@{ImageManager}!defaultPath@{defaultPath}}
+\index{defaultPath@{defaultPath}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{defaultPath}{defaultPath}}
+{\footnotesize\ttfamily std\+::string Image\+Manager\+::default\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The default path where images are stored. 
+
+\mbox{\Hypertarget{class_image_manager_af13df26852ffb705ddcdd85558552f60}\label{class_image_manager_af13df26852ffb705ddcdd85558552f60}} 
+\index{ImageManager@{ImageManager}!imageMap@{imageMap}}
+\index{imageMap@{imageMap}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{imageMap}{imageMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image_manager_adb4e59ce2637fa53e9cf547b0b5d8db0}{Storage\+Map}} Image\+Manager\+::image\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A map containing images specified by a string key. 
+
+\mbox{\Hypertarget{class_image_manager_acde30474c2e1ac1d40d01e467d32ef21}\label{class_image_manager_acde30474c2e1ac1d40d01e467d32ef21}} 
+\index{ImageManager@{ImageManager}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image_manager}{Image\+Manager}} $\ast$ Image\+Manager\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Pointer instance to \mbox{\hyperlink{class_image_manager}{Image\+Manager}}. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_image_manager_8h}{Image\+Manager.\+h}}\item 
+\mbox{\hyperlink{_image_manager_8cpp}{Image\+Manager.\+cpp}}\end{DoxyCompactItemize}

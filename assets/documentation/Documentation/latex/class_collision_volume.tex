@@ -1,0 +1,279 @@
+\hypertarget{class_collision_volume}{}\doxysection{Collision\+Volume Class Reference}
+\label{class_collision_volume}\index{CollisionVolume@{CollisionVolume}}
+
+
+{\ttfamily \#include $<$Collision\+Volume.\+h$>$}
+
+
+
+Inheritance diagram for Collision\+Volume\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_volume__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Collision\+Volume\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_collision_volume__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_volume_aaed8d3ff1cd31d903ce8d41c93d8e392}{Collision\+Volume}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_volume_af6934269437b8bd7b94429525b05c356}{Collision\+Volume}} (const \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_volume_a0d10b4142b28e0ceda1c0793555db98d}{Collision\+Volume}} (\mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \& \mbox{\hyperlink{class_collision_volume_ad74ed0e679c440b84271ab8c2f1796bc}{operator=}} (const \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&)=default
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \& \mbox{\hyperlink{class_collision_volume_a2f96aff488eeba0d435d793502b6ffd5}{operator=}} (\mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_collision_volume_aa8b03d1c06d8a3d1dbb300168e9be5e1}{$\sim$\+Collision\+Volume}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_collision_volume_a1680a406aa5708e794934e90fe46dcd7}{Compute\+Data}} (Model $\ast$mod, const Matrix \&mat)=0
+\begin{DoxyCompactList}\small\item\em Calculates the data. Pure virtual. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_collision_volume_a39a99cf5e88844e0ae5bded02e3cb3f8}{Debug\+View}} (const Vect \&col) const =0
+\begin{DoxyCompactList}\small\item\em Debug view for internal acknowledgment of type information on a generic collision volume. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_collision_volume_a8086c85688be5d4bcbdf8e78b046f4fe}{Intersect\+Accept}} (const \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&other) const =0
+\begin{DoxyCompactList}\small\item\em Intersect accept utilizing the visitor pattern. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_collision_volume_a9dfdb40c55a76bc26476012157cac4b3}{Intersect\+Visit}} (const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&other) const =0
+\begin{DoxyCompactList}\small\item\em Intersect visit for Sphere, using the visitor pattern. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_collision_volume_ada0d564599acbcd2f6ce06d875f773d5}{Intersect\+Visit}} (const \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \&other) const =0
+\begin{DoxyCompactList}\small\item\em Intersect visit for A\+A\+BB, using the visitor pattern. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_collision_volume_a38966a8a02595ae78b4f012be2c14526}{Intersect\+Visit}} (const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&other) const =0
+\begin{DoxyCompactList}\small\item\em Intersect visit for O\+BB, using the visitor pattern. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_collision_volume_aaed8d3ff1cd31d903ce8d41c93d8e392}\label{class_collision_volume_aaed8d3ff1cd31d903ce8d41c93d8e392}} 
+\index{CollisionVolume@{CollisionVolume}!CollisionVolume@{CollisionVolume}}
+\index{CollisionVolume@{CollisionVolume}!CollisionVolume@{CollisionVolume}}
+\doxysubsubsection{\texorpdfstring{CollisionVolume()}{CollisionVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Collision\+Volume\+::\+Collision\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_collision_volume_af6934269437b8bd7b94429525b05c356}\label{class_collision_volume_af6934269437b8bd7b94429525b05c356}} 
+\index{CollisionVolume@{CollisionVolume}!CollisionVolume@{CollisionVolume}}
+\index{CollisionVolume@{CollisionVolume}!CollisionVolume@{CollisionVolume}}
+\doxysubsubsection{\texorpdfstring{CollisionVolume()}{CollisionVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Collision\+Volume\+::\+Collision\+Volume (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_collision_volume_a0d10b4142b28e0ceda1c0793555db98d}\label{class_collision_volume_a0d10b4142b28e0ceda1c0793555db98d}} 
+\index{CollisionVolume@{CollisionVolume}!CollisionVolume@{CollisionVolume}}
+\index{CollisionVolume@{CollisionVolume}!CollisionVolume@{CollisionVolume}}
+\doxysubsubsection{\texorpdfstring{CollisionVolume()}{CollisionVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Collision\+Volume\+::\+Collision\+Volume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_collision_volume_aa8b03d1c06d8a3d1dbb300168e9be5e1}\label{class_collision_volume_aa8b03d1c06d8a3d1dbb300168e9be5e1}} 
+\index{CollisionVolume@{CollisionVolume}!````~CollisionVolume@{$\sim$CollisionVolume}}
+\index{````~CollisionVolume@{$\sim$CollisionVolume}!CollisionVolume@{CollisionVolume}}
+\doxysubsubsection{\texorpdfstring{$\sim$CollisionVolume()}{~CollisionVolume()}}
+{\footnotesize\ttfamily virtual Collision\+Volume\+::$\sim$\+Collision\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collision_volume_a1680a406aa5708e794934e90fe46dcd7}\label{class_collision_volume_a1680a406aa5708e794934e90fe46dcd7}} 
+\index{CollisionVolume@{CollisionVolume}!ComputeData@{ComputeData}}
+\index{ComputeData@{ComputeData}!CollisionVolume@{CollisionVolume}}
+\doxysubsubsection{\texorpdfstring{ComputeData()}{ComputeData()}}
+{\footnotesize\ttfamily void Collision\+Volume\+::\+Compute\+Data (\begin{DoxyParamCaption}\item[{Model $\ast$}]{mod,  }\item[{const Matrix \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculates the data. Pure virtual. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em mod} & If non-\/null, the modifier. \\
+\hline
+ & {\em mat} & The matrix. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_collision_volume_o_b_b_af0a9a1a3eee0eeb888dd683743ea0ebc}{Collision\+Volume\+O\+BB}}, \mbox{\hyperlink{class_collision_volume_a_a_b_b_a9edd61f0f14828905f4abdfb8ae69451}{Collision\+Volume\+A\+A\+BB}}, and \mbox{\hyperlink{class_collision_volume_b_sphere_a9f820c3f61a36f192140d1c4a2552ae6}{Collision\+Volume\+B\+Sphere}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_volume_a1680a406aa5708e794934e90fe46dcd7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_volume_a39a99cf5e88844e0ae5bded02e3cb3f8}\label{class_collision_volume_a39a99cf5e88844e0ae5bded02e3cb3f8}} 
+\index{CollisionVolume@{CollisionVolume}!DebugView@{DebugView}}
+\index{DebugView@{DebugView}!CollisionVolume@{CollisionVolume}}
+\doxysubsubsection{\texorpdfstring{DebugView()}{DebugView()}}
+{\footnotesize\ttfamily void Collision\+Volume\+::\+Debug\+View (\begin{DoxyParamCaption}\item[{const Vect \&}]{col }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Debug view for internal acknowledgment of type information on a generic collision volume. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & The col.\\
+\hline
+\end{DoxyParams}
+The debug view is utilizing a trick when calculating the collider visualization models. We are using a generic \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} within the visualization that does not contain information on what type of model is being passed. Forcing all derived types to implement this functions allows a generic call on specific objects to act appropriately. ~\newline
+ 
+
+Implemented in \mbox{\hyperlink{class_collision_volume_o_b_b_ae15ebe918f3836cb997b35015267a694}{Collision\+Volume\+O\+BB}}, \mbox{\hyperlink{class_collision_volume_a_a_b_b_a179ac896cc06d4fdc4cf7cac750f2afd}{Collision\+Volume\+A\+A\+BB}}, and \mbox{\hyperlink{class_collision_volume_b_sphere_abce423e36f6772b1fc53bdf17c05dc74}{Collision\+Volume\+B\+Sphere}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_volume_a39a99cf5e88844e0ae5bded02e3cb3f8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_volume_a8086c85688be5d4bcbdf8e78b046f4fe}\label{class_collision_volume_a8086c85688be5d4bcbdf8e78b046f4fe}} 
+\index{CollisionVolume@{CollisionVolume}!IntersectAccept@{IntersectAccept}}
+\index{IntersectAccept@{IntersectAccept}!CollisionVolume@{CollisionVolume}}
+\doxysubsubsection{\texorpdfstring{IntersectAccept()}{IntersectAccept()}}
+{\footnotesize\ttfamily bool Collision\+Volume\+::\+Intersect\+Accept (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Intersect accept utilizing the visitor pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other collision volume.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_collision_volume_o_b_b_af119a8f3faf50b46c9f2cb81606794c6}{Collision\+Volume\+O\+BB}}, \mbox{\hyperlink{class_collision_volume_a_a_b_b_ac8b11caa4308ef401e1f3e2d569edc96}{Collision\+Volume\+A\+A\+BB}}, and \mbox{\hyperlink{class_collision_volume_b_sphere_a6ad8d06a51984bc57b54956154b2fd2c}{Collision\+Volume\+B\+Sphere}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_volume_a8086c85688be5d4bcbdf8e78b046f4fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_volume_ada0d564599acbcd2f6ce06d875f773d5}\label{class_collision_volume_ada0d564599acbcd2f6ce06d875f773d5}} 
+\index{CollisionVolume@{CollisionVolume}!IntersectVisit@{IntersectVisit}}
+\index{IntersectVisit@{IntersectVisit}!CollisionVolume@{CollisionVolume}}
+\doxysubsubsection{\texorpdfstring{IntersectVisit()}{IntersectVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool Collision\+Volume\+::\+Intersect\+Visit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Intersect visit for A\+A\+BB, using the visitor pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other A\+A\+BB.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_collision_volume_o_b_b_aaf4a12bb2a8169d635099a2d96c409b5}{Collision\+Volume\+O\+BB}}, \mbox{\hyperlink{class_collision_volume_a_a_b_b_a532d082c85eaabf3ffe363a6bc766b4b}{Collision\+Volume\+A\+A\+BB}}, and \mbox{\hyperlink{class_collision_volume_b_sphere_ab1dd2af1c5ceb08eb55d2ae58400fa5b}{Collision\+Volume\+B\+Sphere}}.
+
+\mbox{\Hypertarget{class_collision_volume_a9dfdb40c55a76bc26476012157cac4b3}\label{class_collision_volume_a9dfdb40c55a76bc26476012157cac4b3}} 
+\index{CollisionVolume@{CollisionVolume}!IntersectVisit@{IntersectVisit}}
+\index{IntersectVisit@{IntersectVisit}!CollisionVolume@{CollisionVolume}}
+\doxysubsubsection{\texorpdfstring{IntersectVisit()}{IntersectVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool Collision\+Volume\+::\+Intersect\+Visit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume_b_sphere}{Collision\+Volume\+B\+Sphere}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Intersect visit for Sphere, using the visitor pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other collision volume.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_collision_volume_o_b_b_a319640df426c6487185e65791eea501e}{Collision\+Volume\+O\+BB}}, \mbox{\hyperlink{class_collision_volume_a_a_b_b_af140d914d65c798d4a84ea10565b36bf}{Collision\+Volume\+A\+A\+BB}}, and \mbox{\hyperlink{class_collision_volume_b_sphere_a7d0057fed78c440b3a0be957de0b7d21}{Collision\+Volume\+B\+Sphere}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_volume_a9dfdb40c55a76bc26476012157cac4b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_volume_a38966a8a02595ae78b4f012be2c14526}\label{class_collision_volume_a38966a8a02595ae78b4f012be2c14526}} 
+\index{CollisionVolume@{CollisionVolume}!IntersectVisit@{IntersectVisit}}
+\index{IntersectVisit@{IntersectVisit}!CollisionVolume@{CollisionVolume}}
+\doxysubsubsection{\texorpdfstring{IntersectVisit()}{IntersectVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool Collision\+Volume\+::\+Intersect\+Visit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume_o_b_b}{Collision\+Volume\+O\+BB}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Intersect visit for O\+BB, using the visitor pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other O\+BB.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_collision_volume_o_b_b_ab005de452537e956418c9532186dcb86}{Collision\+Volume\+O\+BB}}, \mbox{\hyperlink{class_collision_volume_a_a_b_b_a9abfd176f2d4f00d20befa6961e77f18}{Collision\+Volume\+A\+A\+BB}}, and \mbox{\hyperlink{class_collision_volume_b_sphere_af27162a0454b5696027d0128feecfacd}{Collision\+Volume\+B\+Sphere}}.
+
+\mbox{\Hypertarget{class_collision_volume_a2f96aff488eeba0d435d793502b6ffd5}\label{class_collision_volume_a2f96aff488eeba0d435d793502b6ffd5}} 
+\index{CollisionVolume@{CollisionVolume}!operator=@{operator=}}
+\index{operator=@{operator=}!CollisionVolume@{CollisionVolume}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}}\& Collision\+Volume\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_collision_volume_ad74ed0e679c440b84271ab8c2f1796bc}\label{class_collision_volume_ad74ed0e679c440b84271ab8c2f1796bc}} 
+\index{CollisionVolume@{CollisionVolume}!operator=@{operator=}}
+\index{operator=@{operator=}!CollisionVolume@{CollisionVolume}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}}\& Collision\+Volume\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_volume}{Collision\+Volume}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Assignment operator. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_collision_volume_8h}{Collision\+Volume.\+h}}\end{DoxyCompactItemize}

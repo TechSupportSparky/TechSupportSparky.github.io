@@ -1,0 +1,4 @@
+<map id="SceneManager::Update" name="SceneManager::Update">
+<area shape="rect" id="node1" title="Calls the main update loop for the current scene." alt="" coords="144,5,303,32"/>
+<area shape="rect" id="node2" href="$class_sly.html#a3becf1f9f9075b00b27ee727b5503013" title="Main update loop." alt="" coords="5,5,96,32"/>
+</map>

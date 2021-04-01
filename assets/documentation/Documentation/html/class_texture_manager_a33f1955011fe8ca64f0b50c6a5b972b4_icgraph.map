@@ -1,0 +1,5 @@
+<map id="TextureManager::Delete" name="TextureManager::Delete">
+<area shape="rect" id="node1" title="Deletes the pointer instance. Only to be called internally by Sly." alt="" coords="404,13,564,39"/>
+<area shape="rect" id="node2" href="$class_texture_manager_attorney.html#a4b85bea5e9bdd5724c9d3c6d7ff9890c" title=" " alt="" coords="192,5,356,47"/>
+<area shape="rect" id="node3" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="5,13,144,39"/>
+</map>

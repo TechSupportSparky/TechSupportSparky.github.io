@@ -1,0 +1,7 @@
+<map id="UpdateRegistrationCommand" name="UpdateRegistrationCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="45,420,264,600"/>
+<area shape="rect" id="node4" href="$class_updatable.html" title=" " alt="" coords="5,663,208,916"/>
+<area shape="rect" id="node2" href="$class_scene_registry.html" title="A scene registry." alt="" coords="189,220,323,371"/>
+<area shape="rect" id="node5" href="$class_update_deregistration_command.html" title=" " alt="" coords="43,979,274,1159"/>
+<area shape="rect" id="node3" href="$class_command_base.html" title=" " alt="" coords="187,5,325,171"/>
+</map>

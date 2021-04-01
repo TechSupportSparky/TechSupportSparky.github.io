@@ -1,0 +1,5 @@
+<map id="SlySprite::SetCenter" name="SlySprite::SetCenter">
+<area shape="rect" id="node1" title="Sets the center of the sprite." alt="" coords="435,5,576,32"/>
+<area shape="rect" id="node2" href="$class_sprite_font.html#ae67ec68b7c169f0279e06d8905b34c33" title=" " alt="" coords="204,5,387,32"/>
+<area shape="rect" id="node3" href="$class_sprite_font.html#ac2010590f8dbb0e2bb0226c591b2324c" title=" " alt="" coords="5,5,156,32"/>
+</map>

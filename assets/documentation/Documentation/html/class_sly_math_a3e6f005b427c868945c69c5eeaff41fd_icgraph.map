@@ -1,0 +1,8 @@
+<map id="SlyMath::GetRandomFloat" name="SlyMath::GetRandomFloat">
+<area shape="rect" id="node1" title="Returns a random float between the lower bound and uppeprbound." alt="" coords="1020,13,1196,39"/>
+<area shape="rect" id="node2" href="$class_burst.html#ac1935ecdda2ccbbc98fa3a8fa9c3a99d" title=" " alt="" coords="864,13,972,39"/>
+<area shape="rect" id="node3" href="$class_burst_factory.html#abfdc71c95a5a53fee6ae803d92cec9e5" title=" " alt="" coords="653,5,816,47"/>
+<area shape="rect" id="node4" href="$class_burst_factory.html#a188e946f392ce69610c6aedaa4f97f0a" title=" " alt="" coords="431,13,605,39"/>
+<area shape="rect" id="node5" href="$class_particle_emitter.html#a4e80b12742a6b6fe7c694c56b7a968bc" title=" " alt="" coords="211,13,383,39"/>
+<area shape="rect" id="node6" href="$class_particle_emitter.html#a700fc45f5c9db613808f54dc330c50e4" title=" " alt="" coords="5,13,163,39"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="SpriteFontManager::Delete" name="SpriteFontManager::Delete">
+<area shape="rect" id="node1" title="Deletes SpriteFontManager&#39;s pointer instance. Only to be called by engine code." alt="" coords="5,39,145,80"/>
+<area shape="rect" id="node2" href="$class_sprite_font_manager.html#a174cfb5ca2e6ce0381d5df7090e96a19" title="Gets the instance of SpriteFontManager." alt="" coords="193,5,333,47"/>
+<area shape="rect" id="node4" href="$class_sprite_font_manager.html#ac552adf139de02381fcf6a907a5dbfed" title="Delete&#39;s the pointer instance. Only to be called internally." alt="" coords="193,71,333,112"/>
+<area shape="rect" id="node3" href="$class_sprite_font_manager.html#ab5b2044dd6c59141389d5d9d7127f3f2" title="Default constructor." alt="" coords="381,5,521,47"/>
+</map>

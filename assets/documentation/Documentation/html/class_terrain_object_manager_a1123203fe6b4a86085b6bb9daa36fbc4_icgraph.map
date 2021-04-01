@@ -1,0 +1,5 @@
+<map id="TerrainObjectManager::Delete" name="TerrainObjectManager::Delete">
+<area shape="rect" id="node1" title="Sly&#39;s hook into the delete section of the TerrainObjectManager. Only called within Sly." alt="" coords="439,5,588,47"/>
+<area shape="rect" id="node2" href="$class_terrain_object_manager_attorney.html#a245d2a507cde9b62803e486163dc0b5d" title=" " alt="" coords="192,5,391,47"/>
+<area shape="rect" id="node3" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="5,13,144,39"/>
+</map>

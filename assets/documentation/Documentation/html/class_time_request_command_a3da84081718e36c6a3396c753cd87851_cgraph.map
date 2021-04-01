@@ -1,0 +1,12 @@
+<map id="TimeRequestCommand::execute" name="TimeRequestCommand::execute">
+<area shape="rect" id="node1" title="Requests the time from the time manager." alt="" coords="5,74,163,115"/>
+<area shape="rect" id="node2" href="$class_time_manager.html#a187b37ea46e36d1bba730d833ce82540" title="Gets the time." alt="" coords="211,56,368,83"/>
+<area shape="rect" id="node6" href="$class_console_manager.html#ad49b0626cc2835ca742a50ad86a732cc" title="Print the message to the console." alt="" coords="212,107,367,133"/>
+<area shape="rect" id="node3" href="$class_time_manager.html#ac06b0a182b394ddc0ac554ad090ee019" title="Gets the instance." alt="" coords="425,5,583,32"/>
+<area shape="rect" id="node5" href="$class_time_manager.html#a7e338d6167ec2bf8a00e967f27b5b59f" title="Private get time." alt="" coords="416,56,592,83"/>
+<area shape="rect" id="node4" href="$class_time_manager.html#a46d2773caea1858a19594d58d57404c2" title="Default constructor." alt="" coords="659,5,845,32"/>
+<area shape="rect" id="node7" href="$class_console_manager.html#a906c569f9ea442602dbe61e65b779ccc" title=" " alt="" coords="416,107,592,133"/>
+<area shape="rect" id="node9" href="$class_console_manager.html#a415bb72309d66c7537ebd0a1933d5185" title=" " alt="" coords="417,157,591,184"/>
+<area shape="rect" id="node8" href="$class_console_manager.html#aa9f719ce8b6bb8c2efda952e49f534d6" title="Default constructor." alt="" coords="640,107,864,133"/>
+<area shape="rect" id="node10" href="$class_console.html#ab89aba48f1fe17a74e2dc0bebb6909b0" title="Console print to the screen logger." alt="" coords="677,157,827,184"/>
+</map>

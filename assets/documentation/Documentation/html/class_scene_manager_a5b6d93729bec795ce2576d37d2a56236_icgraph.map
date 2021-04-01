@@ -1,0 +1,5 @@
+<map id="SceneManager::privChangeScene" name="SceneManager::privChangeScene">
+<area shape="rect" id="node1" title="Private change scene." alt="" coords="464,13,644,54"/>
+<area shape="rect" id="node2" href="$class_scene_manager_attorney_1_1_scene_swap_registration.html#ad8d2f066bb45baad2678c5edb97a9253" title=" " alt="" coords="248,5,416,61"/>
+<area shape="rect" id="node3" href="$class_scene_change_command_swap.html#a3ee022de55997954b84e2e2e43e421c4" title="Executes this command." alt="" coords="5,13,200,54"/>
+</map>

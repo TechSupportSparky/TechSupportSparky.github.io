@@ -1,0 +1,195 @@
+\hypertarget{class_sprite_font}{}\doxysection{Sprite\+Font Class Reference}
+\label{class_sprite_font}\index{SpriteFont@{SpriteFont}}
+
+
+{\ttfamily \#include $<$Sprite\+Font.\+h$>$}
+
+
+
+Collaboration diagram for Sprite\+Font\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sprite_font__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_sprite_font_a523c9076148e224b6d3928f7a7a71a48}{Key}} = int
+\item 
+using \mbox{\hyperlink{class_sprite_font_a4d05b920d4c5ae2a6e73db5ec4a3c7ee}{Glyph}} = \mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sprite_font_af08703831de8fed6888a0a411d4df3f3}{Sprite\+Font}} ()=delete
+\item 
+\mbox{\hyperlink{class_sprite_font_ac2010590f8dbb0e2bb0226c591b2324c}{Sprite\+Font}} (std\+::string path)
+\item 
+\mbox{\hyperlink{class_sprite_font_a1551f794941555f969c9a3b58985b76d}{$\sim$\+Sprite\+Font}} ()
+\item 
+\mbox{\hyperlink{class_sprite_font_a8b24c4fc57aee1abadb7e990146f5555}{Sprite\+Font}} (const \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} \&)=delete
+\item 
+\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} \& \mbox{\hyperlink{class_sprite_font_a3959a16799dcff9e405a8fe2fa5c8fc8}{operator=}} (const \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} \&)=delete
+\item 
+\mbox{\hyperlink{class_sprite_font_a4d05b920d4c5ae2a6e73db5ec4a3c7ee}{Glyph}} $\ast$ \mbox{\hyperlink{class_sprite_font_a0ef72714c70fdd755a1b0d1a5a097d0d}{Get\+Glyph}} (char c)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_sprite_font_a03bffcdba850ae3e1bb3820ebc116849}{Font\+Map}} = std\+::map$<$ \mbox{\hyperlink{class_sprite_font_a523c9076148e224b6d3928f7a7a71a48}{Key}}, \mbox{\hyperlink{class_sprite_font_a4d05b920d4c5ae2a6e73db5ec4a3c7ee}{Glyph}} $\ast$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sprite_font_ae67ec68b7c169f0279e06d8905b34c33}{X\+M\+Lto\+Collection}} (std\+::string filename)
+\item 
+void \mbox{\hyperlink{class_sprite_font_a6238ba063832527e3eb644610cd667e0}{Element\+Text\+To\+Int}} (I\+Xml\+Reader $\ast$p\+Reader, int \&out)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_sprite_font_a96f3779e787f55248efc1256d12c18a1}{Name}}
+\item 
+Texture $\ast$ \mbox{\hyperlink{class_sprite_font_a11a20254de3b974f53b1ce4cc7b3a882}{Font\+Texture}}
+\item 
+\mbox{\hyperlink{class_sprite_font_a03bffcdba850ae3e1bb3820ebc116849}{Font\+Map}} \mbox{\hyperlink{class_sprite_font_ad2c65b033df9c43545d26a0c05ea334c}{fontmap}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_sprite_font_a03bffcdba850ae3e1bb3820ebc116849}\label{class_sprite_font_a03bffcdba850ae3e1bb3820ebc116849}} 
+\index{SpriteFont@{SpriteFont}!FontMap@{FontMap}}
+\index{FontMap@{FontMap}!SpriteFont@{SpriteFont}}
+\doxysubsubsection{\texorpdfstring{FontMap}{FontMap}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{class_sprite_font_a03bffcdba850ae3e1bb3820ebc116849}{Sprite\+Font\+::\+Font\+Map}} =  std\+::map$<$ \mbox{\hyperlink{class_sprite_font_a523c9076148e224b6d3928f7a7a71a48}{Key}}, \mbox{\hyperlink{class_sprite_font_a4d05b920d4c5ae2a6e73db5ec4a3c7ee}{Glyph}}$\ast$ $>$\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sprite_font_a4d05b920d4c5ae2a6e73db5ec4a3c7ee}\label{class_sprite_font_a4d05b920d4c5ae2a6e73db5ec4a3c7ee}} 
+\index{SpriteFont@{SpriteFont}!Glyph@{Glyph}}
+\index{Glyph@{Glyph}!SpriteFont@{SpriteFont}}
+\doxysubsubsection{\texorpdfstring{Glyph}{Glyph}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{class_sprite_font_a4d05b920d4c5ae2a6e73db5ec4a3c7ee}{Sprite\+Font\+::\+Glyph}} =  \mbox{\hyperlink{class_sly_sprite}{Sly\+Sprite}}}
+
+\mbox{\Hypertarget{class_sprite_font_a523c9076148e224b6d3928f7a7a71a48}\label{class_sprite_font_a523c9076148e224b6d3928f7a7a71a48}} 
+\index{SpriteFont@{SpriteFont}!Key@{Key}}
+\index{Key@{Key}!SpriteFont@{SpriteFont}}
+\doxysubsubsection{\texorpdfstring{Key}{Key}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{class_sprite_font_a523c9076148e224b6d3928f7a7a71a48}{Sprite\+Font\+::\+Key}} =  int}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sprite_font_af08703831de8fed6888a0a411d4df3f3}\label{class_sprite_font_af08703831de8fed6888a0a411d4df3f3}} 
+\index{SpriteFont@{SpriteFont}!SpriteFont@{SpriteFont}}
+\index{SpriteFont@{SpriteFont}!SpriteFont@{SpriteFont}}
+\doxysubsubsection{\texorpdfstring{SpriteFont()}{SpriteFont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Sprite\+Font\+::\+Sprite\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_sprite_font_ac2010590f8dbb0e2bb0226c591b2324c}\label{class_sprite_font_ac2010590f8dbb0e2bb0226c591b2324c}} 
+\index{SpriteFont@{SpriteFont}!SpriteFont@{SpriteFont}}
+\index{SpriteFont@{SpriteFont}!SpriteFont@{SpriteFont}}
+\doxysubsubsection{\texorpdfstring{SpriteFont()}{SpriteFont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Sprite\+Font\+::\+Sprite\+Font (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_font_ac2010590f8dbb0e2bb0226c591b2324c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sprite_font_a1551f794941555f969c9a3b58985b76d}\label{class_sprite_font_a1551f794941555f969c9a3b58985b76d}} 
+\index{SpriteFont@{SpriteFont}!````~SpriteFont@{$\sim$SpriteFont}}
+\index{````~SpriteFont@{$\sim$SpriteFont}!SpriteFont@{SpriteFont}}
+\doxysubsubsection{\texorpdfstring{$\sim$SpriteFont()}{~SpriteFont()}}
+{\footnotesize\ttfamily Sprite\+Font\+::$\sim$\+Sprite\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sprite_font_a8b24c4fc57aee1abadb7e990146f5555}\label{class_sprite_font_a8b24c4fc57aee1abadb7e990146f5555}} 
+\index{SpriteFont@{SpriteFont}!SpriteFont@{SpriteFont}}
+\index{SpriteFont@{SpriteFont}!SpriteFont@{SpriteFont}}
+\doxysubsubsection{\texorpdfstring{SpriteFont()}{SpriteFont()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Sprite\+Font\+::\+Sprite\+Font (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sprite_font_a6238ba063832527e3eb644610cd667e0}\label{class_sprite_font_a6238ba063832527e3eb644610cd667e0}} 
+\index{SpriteFont@{SpriteFont}!ElementTextToInt@{ElementTextToInt}}
+\index{ElementTextToInt@{ElementTextToInt}!SpriteFont@{SpriteFont}}
+\doxysubsubsection{\texorpdfstring{ElementTextToInt()}{ElementTextToInt()}}
+{\footnotesize\ttfamily void Sprite\+Font\+::\+Element\+Text\+To\+Int (\begin{DoxyParamCaption}\item[{I\+Xml\+Reader $\ast$}]{p\+Reader,  }\item[{int \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_font_a6238ba063832527e3eb644610cd667e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sprite_font_a0ef72714c70fdd755a1b0d1a5a097d0d}\label{class_sprite_font_a0ef72714c70fdd755a1b0d1a5a097d0d}} 
+\index{SpriteFont@{SpriteFont}!GetGlyph@{GetGlyph}}
+\index{GetGlyph@{GetGlyph}!SpriteFont@{SpriteFont}}
+\doxysubsubsection{\texorpdfstring{GetGlyph()}{GetGlyph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_font_a4d05b920d4c5ae2a6e73db5ec4a3c7ee}{Sprite\+Font\+::\+Glyph}} $\ast$ Sprite\+Font\+::\+Get\+Glyph (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_font_a0ef72714c70fdd755a1b0d1a5a097d0d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sprite_font_a3959a16799dcff9e405a8fe2fa5c8fc8}\label{class_sprite_font_a3959a16799dcff9e405a8fe2fa5c8fc8}} 
+\index{SpriteFont@{SpriteFont}!operator=@{operator=}}
+\index{operator=@{operator=}!SpriteFont@{SpriteFont}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}}\& Sprite\+Font\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_sprite_font_ae67ec68b7c169f0279e06d8905b34c33}\label{class_sprite_font_ae67ec68b7c169f0279e06d8905b34c33}} 
+\index{SpriteFont@{SpriteFont}!XMLtoCollection@{XMLtoCollection}}
+\index{XMLtoCollection@{XMLtoCollection}!SpriteFont@{SpriteFont}}
+\doxysubsubsection{\texorpdfstring{XMLtoCollection()}{XMLtoCollection()}}
+{\footnotesize\ttfamily void Sprite\+Font\+::\+X\+M\+Lto\+Collection (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_font_ae67ec68b7c169f0279e06d8905b34c33_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sprite_font_ae67ec68b7c169f0279e06d8905b34c33_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sprite_font_ad2c65b033df9c43545d26a0c05ea334c}\label{class_sprite_font_ad2c65b033df9c43545d26a0c05ea334c}} 
+\index{SpriteFont@{SpriteFont}!fontmap@{fontmap}}
+\index{fontmap@{fontmap}!SpriteFont@{SpriteFont}}
+\doxysubsubsection{\texorpdfstring{fontmap}{fontmap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_font_a03bffcdba850ae3e1bb3820ebc116849}{Font\+Map}} Sprite\+Font\+::fontmap\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sprite_font_a11a20254de3b974f53b1ce4cc7b3a882}\label{class_sprite_font_a11a20254de3b974f53b1ce4cc7b3a882}} 
+\index{SpriteFont@{SpriteFont}!FontTexture@{FontTexture}}
+\index{FontTexture@{FontTexture}!SpriteFont@{SpriteFont}}
+\doxysubsubsection{\texorpdfstring{FontTexture}{FontTexture}}
+{\footnotesize\ttfamily Texture$\ast$ Sprite\+Font\+::\+Font\+Texture\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sprite_font_a96f3779e787f55248efc1256d12c18a1}\label{class_sprite_font_a96f3779e787f55248efc1256d12c18a1}} 
+\index{SpriteFont@{SpriteFont}!Name@{Name}}
+\index{Name@{Name}!SpriteFont@{SpriteFont}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily std\+::string Sprite\+Font\+::\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sprite_font_8h}{Sprite\+Font.\+h}}\item 
+\mbox{\hyperlink{_sprite_font_8cpp}{Sprite\+Font.\+cpp}}\end{DoxyCompactItemize}

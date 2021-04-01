@@ -1,0 +1,7 @@
+<map id="SlySprite::SetWorld" name="SlySprite::SetWorld">
+<area shape="rect" id="node1" title=" " alt="" coords="227,81,364,108"/>
+<area shape="rect" id="node2" href="$class_sly_sprite.html#a112c4b4134a43252c4a69a9bccce53e9" title="Sets the sprite angle." alt="" coords="24,5,160,32"/>
+<area shape="rect" id="node3" href="$class_sly_sprite.html#a944271f7dd4837932d8342d0a6705046" title="Sets the sprite position." alt="" coords="17,56,167,83"/>
+<area shape="rect" id="node4" href="$class_sly_sprite.html#a2d97c0ce963ec9b3a0d4b5b193452e52" title="Sets scale factor." alt="" coords="5,107,179,133"/>
+<area shape="rect" id="node5" href="$class_sly_sprite.html#aa7d2168748f31fd808450b8f600f719f" title="Sets scale pixel." alt="" coords="9,157,175,184"/>
+</map>

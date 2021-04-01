@@ -1,0 +1,4 @@
+<map id="Visualizer::ShowOBB" name="Visualizer::ShowOBB">
+<area shape="rect" id="node1" title="Shows the OBB via min and max corners." alt="" coords="196,13,343,39"/>
+<area shape="rect" id="node2" href="$class_collision_volume_o_b_b.html#ae15ebe918f3836cb997b35015267a694" title="Call to visualize the OBB from a generic collision volume with the specified color." alt="" coords="5,5,148,47"/>
+</map>

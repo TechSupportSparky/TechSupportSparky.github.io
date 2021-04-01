@@ -1,0 +1,4 @@
+<map id="Visualizer::ShowCollisionVolume" name="Visualizer::ShowCollisionVolume">
+<area shape="rect" id="node1" title="Maps the correct call for CollisionVolume c to visualize itself." alt="" coords="5,5,173,47"/>
+<area shape="rect" id="node2" href="$class_collision_volume.html#a39a99cf5e88844e0ae5bded02e3cb3f8" title="Debug view for internal acknowledgment of type information on a generic collision volume." alt="" coords="221,13,409,39"/>
+</map>

@@ -1,0 +1,686 @@
+\hypertarget{class_console}{}\doxysection{Console Class Reference}
+\label{class_console}\index{Console@{Console}}
+
+
+{\ttfamily \#include $<$Console.\+h$>$}
+
+
+
+Collaboration diagram for Console\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_console_1_1console_item}{console\+Item}}
+\begin{DoxyCompactList}\small\item\em The specifics of what an \textquotesingle{}item\textquotesingle{} is. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_console_1_1message_data}{message\+Data}}
+\begin{DoxyCompactList}\small\item\em Message data of \textquotesingle{}message\textquotesingle{} and the type of message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_console_aba16cfd9f0894eb1312b1bc1155b6646}{Console}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_a39d7cb8024e7e20d4624e7ca0a367dc7}{Console}} (const \mbox{\hyperlink{class_console}{Console}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_adc3e446fe00129019700fe311d55025a}{Console}} (\mbox{\hyperlink{class_console}{Console}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console}{Console}} \& \mbox{\hyperlink{class_console_a3769f2428a22a9944ab1baddb579d9f1}{operator=}} (const \mbox{\hyperlink{class_console}{Console}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console}{Console}} \& \mbox{\hyperlink{class_console_ad60b6aa4c97472d68413078f09e455e1}{operator=}} (\mbox{\hyperlink{class_console}{Console}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_console_a32e8c79c8579b1b076e53848c540d4e7}{$\sim$\+Console}} ()
+\begin{DoxyCompactList}\small\item\em Destructor (Virtual from \mbox{\hyperlink{class_command_base}{Command\+Base}}) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_a6d8def1ddae11ebfcf35ab0b46a72417}{add\+Variable}} (const std\+::string \&str\+Name, void $\ast$var, \mbox{\hyperlink{_console_items_8h_a58413948967126ebd4103471e7581cb0}{console\+Item\+Types}})
+\begin{DoxyCompactList}\small\item\em Adds a variable to the console for tweaking. Feature not maintained. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_a03ea789d3593a73c0b979722de03e856}{add\+Command}} (const std\+::string \&str\+Name, \mbox{\hyperlink{class_console_command}{Console\+Command}} $\ast$cmd, int Num\+Argments=0, std\+::string qualifier=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Adds a command to the console for later execution. User commands are passed in this way through the console manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_adb8669509fbcff98552208e2e6e19625}{remove\+Item}} (const std\+::string \&str\+Name)
+\begin{DoxyCompactList}\small\item\em Removes a command/variable from the console. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_ab89aba48f1fe17a74e2dc0bebb6909b0}{console\+Print}} (const std\+::string \&str\+Text, bool prompt\+Key=true)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_console}{Console}} print to the screen logger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_af2a87f15c467e961a7264267e5cf2e39}{console\+Print\+Error}} (const std\+::string \&str\+Text, bool prompt\+Key=true)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_console}{Console}} print to the screen logger in error color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_addce99a62c7bf8711aee2a5bc691d21b}{console\+Print\+Warning}} (const std\+::string \&str\+Text, bool prompt\+Key=true)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_console}{Console}} print to the screen logger in warning color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_a963808baf4e4f1ff1d0222c78f300d61}{pass\+Key}} (char key)
+\begin{DoxyCompactList}\small\item\em How the console communicates with the user created console. Passes a key into the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_a9173c73ff05484d7a89bcc15e0d4416a}{pass\+Backspace}} ()
+\begin{DoxyCompactList}\small\item\em Passes backspace into the console system to communicate with the string buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_a331a1f3ab6ce5210810f5c65f533e202}{pass\+Intro}} ()
+\begin{DoxyCompactList}\small\item\em Passes the \char`\"{}execute\char`\"{} command into the console. Typically this is achieved when the user hits the \textquotesingle{}enter\textquotesingle{} key, however this can be set to whatever the user would like. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_a650dd9caa83203c420c9171b0fb4d3a8}{toggle\+Echo}} ()
+\begin{DoxyCompactList}\small\item\em Toggle the echo\textquotesingle{}ing of commands into the string buffer after execution. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_a861f4563f56fbc8995c658f4fdb18195}{Ping}} ()
+\begin{DoxyCompactList}\small\item\em Pings the console. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_adbe07f6a87f0cf0b07ba12e538db291f}{Time}} ()
+\begin{DoxyCompactList}\small\item\em Gets the engine runtime. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_af7d32cb0546e9a566c858b5b811517a9}{Reload}} ()
+\begin{DoxyCompactList}\small\item\em Reloads the scene manger\textquotesingle{}s default scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_a443ace061f74eaeb6fe94dfd91a9e021}{Godcam}} ()
+\begin{DoxyCompactList}\small\item\em Triggers and activates the godcam. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_a7675c68531f9fcf4c193c1491699d77e}{Kill}} (const std\+::string \&object\+Name, \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$the\+Object)
+\begin{DoxyCompactList}\small\item\em Kills the stored gameobject. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_ac1581ec60ad42b215a9e8674b0b410c8}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders the console\textquotesingle{}s text buffer. (All messages on screen). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_console_a05864b6c638643fa34c12bdf1aa1c486}{message\+Type}} \{ \mbox{\hyperlink{class_console_a05864b6c638643fa34c12bdf1aa1c486a6e218bcbc69bcf85f5d0a4c96c8b49a7}{M\+S\+G\+W\+A\+R\+N\+I\+NG}}, 
+\mbox{\hyperlink{class_console_a05864b6c638643fa34c12bdf1aa1c486ae6223d3ebc9d106c9265fa59eb763968}{M\+S\+G\+E\+R\+R\+OR}}, 
+\mbox{\hyperlink{class_console_a05864b6c638643fa34c12bdf1aa1c486a46564be38fb92e579e032c892a4e1281}{M\+S\+G\+D\+E\+F\+A\+U\+LT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Values that represent message types. \end{DoxyCompactList}\item 
+typedef std\+::list$<$ \mbox{\hyperlink{struct_console_1_1message_data}{message\+Data}} $>$\+::iterator \mbox{\hyperlink{class_console_aa6086326c5b6d7de1a7710f88c84c62b}{Buffer\+Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_console_aa8664d5ed3c5596bebb2fbf6e8304abb}{command\+Buffer}}
+\begin{DoxyCompactList}\small\item\em Buffer for command data. \end{DoxyCompactList}\item 
+std\+::list$<$ \mbox{\hyperlink{struct_console_1_1message_data}{message\+Data}} $>$ \mbox{\hyperlink{class_console_a2d953752e8ff7b5e146360153db4bf2a}{text\+Buffer}}
+\begin{DoxyCompactList}\small\item\em Buffer for text data. Manipulated by user\textquotesingle{}s console. Contains not only the message but also the type of message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \mbox{\hyperlink{struct_console_1_1console_item}{console\+Item}} $>$ \mbox{\hyperlink{class_console_a6ecab5bb3d2ead55d523c709476a9e75}{Item\+List}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing list of items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_console_acc6585a1d780aee98a2a11a6f47d3731}{parse\+Command\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Parses the command line after the passintro() command reports the user is ready for parsing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_console_a6ecab5bb3d2ead55d523c709476a9e75}{Item\+List}} $\ast$ \mbox{\hyperlink{class_console_af8bbfe0f23aea494d1e14cecb5dd3e8e}{item\+List}}
+\begin{DoxyCompactList}\small\item\em List of console items. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_time_request_command}{Time\+Request\+Command}} $\ast$ \mbox{\hyperlink{class_console_aaac2c2b1e50ce6b37fb434240db0661e}{built\+Time}}
+\item 
+\mbox{\hyperlink{class_reload_command}{Reload\+Command}} $\ast$ \mbox{\hyperlink{class_console_a286f5176faa22770af5b18208c20daf1}{built\+Reload}}
+\item 
+\mbox{\hyperlink{class_god_cam_command}{God\+Cam\+Command}} $\ast$ \mbox{\hyperlink{class_console_a40e14e9a6486ceafebee579149e4d4bd}{built\+God\+Cam}}
+\item 
+\mbox{\hyperlink{class_ping_command}{Ping\+Command}} $\ast$ \mbox{\hyperlink{class_console_a46d7fe18aa5c3fdb971a764bd03b4dcf}{built\+Ping}}
+\item 
+std\+::string \mbox{\hyperlink{class_console_a4d910e9eb10e4abb30b8d4b0b0d3c87f}{command\+Line}}
+\begin{DoxyCompactList}\small\item\em The actual line of text containing the text buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_console_a9c43c18f0b72a686b4840ecc660fe1d6}{line\+Index}}
+\item 
+int \mbox{\hyperlink{class_console_ae21b5f89b6e2cef319feac5c462555a2}{command\+Buffer\+Cap}}
+\item 
+int \mbox{\hyperlink{class_console_a37101bf8c366027d41b87620312292c8}{text\+Buffer\+Cap}}
+\item 
+bool \mbox{\hyperlink{class_console_a5144ecdedbbdacbc60667ec0a12fc289}{echo\+Commands}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_console_aa6086326c5b6d7de1a7710f88c84c62b}\label{class_console_aa6086326c5b6d7de1a7710f88c84c62b}} 
+\index{Console@{Console}!BufferIterator@{BufferIterator}}
+\index{BufferIterator@{BufferIterator}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{BufferIterator}{BufferIterator}}
+{\footnotesize\ttfamily typedef std\+::list$<$\mbox{\hyperlink{struct_console_1_1message_data}{message\+Data}}$>$\+::iterator \mbox{\hyperlink{class_console_aa6086326c5b6d7de1a7710f88c84c62b}{Console\+::\+Buffer\+Iterator}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_console_a6ecab5bb3d2ead55d523c709476a9e75}\label{class_console_a6ecab5bb3d2ead55d523c709476a9e75}} 
+\index{Console@{Console}!ItemList@{ItemList}}
+\index{ItemList@{ItemList}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{ItemList}{ItemList}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{struct_console_1_1console_item}{console\+Item}} $>$ \mbox{\hyperlink{class_console_a6ecab5bb3d2ead55d523c709476a9e75}{Console\+::\+Item\+List}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defines an alias representing list of items. 
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_console_a05864b6c638643fa34c12bdf1aa1c486}\label{class_console_a05864b6c638643fa34c12bdf1aa1c486}} 
+\index{Console@{Console}!messageType@{messageType}}
+\index{messageType@{messageType}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{messageType}{messageType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_console_a05864b6c638643fa34c12bdf1aa1c486}{Console\+::message\+Type}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Values that represent message types. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MSGWARNING@{MSGWARNING}!Console@{Console}}\index{Console@{Console}!MSGWARNING@{MSGWARNING}}}\mbox{\Hypertarget{class_console_a05864b6c638643fa34c12bdf1aa1c486a6e218bcbc69bcf85f5d0a4c96c8b49a7}\label{class_console_a05864b6c638643fa34c12bdf1aa1c486a6e218bcbc69bcf85f5d0a4c96c8b49a7}} 
+M\+S\+G\+W\+A\+R\+N\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MSGERROR@{MSGERROR}!Console@{Console}}\index{Console@{Console}!MSGERROR@{MSGERROR}}}\mbox{\Hypertarget{class_console_a05864b6c638643fa34c12bdf1aa1c486ae6223d3ebc9d106c9265fa59eb763968}\label{class_console_a05864b6c638643fa34c12bdf1aa1c486ae6223d3ebc9d106c9265fa59eb763968}} 
+M\+S\+G\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MSGDEFAULT@{MSGDEFAULT}!Console@{Console}}\index{Console@{Console}!MSGDEFAULT@{MSGDEFAULT}}}\mbox{\Hypertarget{class_console_a05864b6c638643fa34c12bdf1aa1c486a46564be38fb92e579e032c892a4e1281}\label{class_console_a05864b6c638643fa34c12bdf1aa1c486a46564be38fb92e579e032c892a4e1281}} 
+M\+S\+G\+D\+E\+F\+A\+U\+LT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_console_aba16cfd9f0894eb1312b1bc1155b6646}\label{class_console_aba16cfd9f0894eb1312b1bc1155b6646}} 
+\index{Console@{Console}!Console@{Console}}
+\index{Console@{Console}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{Console()}{Console()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Console\+::\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+\mbox{\Hypertarget{class_console_a39d7cb8024e7e20d4624e7ca0a367dc7}\label{class_console_a39d7cb8024e7e20d4624e7ca0a367dc7}} 
+\index{Console@{Console}!Console@{Console}}
+\index{Console@{Console}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{Console()}{Console()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Console\+::\+Console (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_console}{Console}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy Constructor. 
+
+\mbox{\Hypertarget{class_console_adc3e446fe00129019700fe311d55025a}\label{class_console_adc3e446fe00129019700fe311d55025a}} 
+\index{Console@{Console}!Console@{Console}}
+\index{Console@{Console}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{Console()}{Console()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Console\+::\+Console (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console}{Console}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move operator. 
+
+\mbox{\Hypertarget{class_console_a32e8c79c8579b1b076e53848c540d4e7}\label{class_console_a32e8c79c8579b1b076e53848c540d4e7}} 
+\index{Console@{Console}!````~Console@{$\sim$Console}}
+\index{````~Console@{$\sim$Console}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{$\sim$Console()}{~Console()}}
+{\footnotesize\ttfamily Console\+::$\sim$\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor (Virtual from \mbox{\hyperlink{class_command_base}{Command\+Base}}) 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_a32e8c79c8579b1b076e53848c540d4e7_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_console_a03ea789d3593a73c0b979722de03e856}\label{class_console_a03ea789d3593a73c0b979722de03e856}} 
+\index{Console@{Console}!addCommand@{addCommand}}
+\index{addCommand@{addCommand}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{addCommand()}{addCommand()}}
+{\footnotesize\ttfamily void Console\+::add\+Command (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Name,  }\item[{\mbox{\hyperlink{class_console_command}{Console\+Command}} $\ast$}]{cmd,  }\item[{int}]{Num\+Argments = {\ttfamily 0},  }\item[{std\+::string}]{qualifier = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Adds a command to the console for later execution. User commands are passed in this way through the console manager. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em str\+Name} & The name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em cmd} & If non-\/null, the command. \\
+\hline
+ & {\em Num\+Argments} & (Optional) Number of arguments. \\
+\hline
+ & {\em qualifier} & (Optional) The qualifier -- describes a specific entity. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_a03ea789d3593a73c0b979722de03e856_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_a6d8def1ddae11ebfcf35ab0b46a72417}\label{class_console_a6d8def1ddae11ebfcf35ab0b46a72417}} 
+\index{Console@{Console}!addVariable@{addVariable}}
+\index{addVariable@{addVariable}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{addVariable()}{addVariable()}}
+{\footnotesize\ttfamily void Console\+::add\+Variable (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Name,  }\item[{void $\ast$}]{var,  }\item[{\mbox{\hyperlink{_console_items_8h_a58413948967126ebd4103471e7581cb0}{console\+Item\+Types}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Adds a variable to the console for tweaking. Feature not maintained. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em str\+Name} & The name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em var} & If non-\/null, the variable. \\
+\hline
+ & {\em parameter3} & The third parameter. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_a6d8def1ddae11ebfcf35ab0b46a72417_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_ab89aba48f1fe17a74e2dc0bebb6909b0}\label{class_console_ab89aba48f1fe17a74e2dc0bebb6909b0}} 
+\index{Console@{Console}!consolePrint@{consolePrint}}
+\index{consolePrint@{consolePrint}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{consolePrint()}{consolePrint()}}
+{\footnotesize\ttfamily void Console\+::console\+Print (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Text,  }\item[{bool}]{prompt\+Key = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_console}{Console}} print to the screen logger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Text} & The text. \\
+\hline
+{\em prompt\+Key} & (Optional) True to prompt key. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_ab89aba48f1fe17a74e2dc0bebb6909b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_af2a87f15c467e961a7264267e5cf2e39}\label{class_console_af2a87f15c467e961a7264267e5cf2e39}} 
+\index{Console@{Console}!consolePrintError@{consolePrintError}}
+\index{consolePrintError@{consolePrintError}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{consolePrintError()}{consolePrintError()}}
+{\footnotesize\ttfamily void Console\+::console\+Print\+Error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Text,  }\item[{bool}]{prompt\+Key = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_console}{Console}} print to the screen logger in error color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Text} & The text. \\
+\hline
+{\em prompt\+Key} & (Optional) True to prompt key. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_af2a87f15c467e961a7264267e5cf2e39_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_addce99a62c7bf8711aee2a5bc691d21b}\label{class_console_addce99a62c7bf8711aee2a5bc691d21b}} 
+\index{Console@{Console}!consolePrintWarning@{consolePrintWarning}}
+\index{consolePrintWarning@{consolePrintWarning}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{consolePrintWarning()}{consolePrintWarning()}}
+{\footnotesize\ttfamily void Console\+::console\+Print\+Warning (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Text,  }\item[{bool}]{prompt\+Key = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_console}{Console}} print to the screen logger in warning color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Text} & The text. \\
+\hline
+{\em prompt\+Key} & (Optional) True to prompt key. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_addce99a62c7bf8711aee2a5bc691d21b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_a443ace061f74eaeb6fe94dfd91a9e021}\label{class_console_a443ace061f74eaeb6fe94dfd91a9e021}} 
+\index{Console@{Console}!Godcam@{Godcam}}
+\index{Godcam@{Godcam}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{Godcam()}{Godcam()}}
+{\footnotesize\ttfamily void Console\+::\+Godcam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Triggers and activates the godcam. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_console_a443ace061f74eaeb6fe94dfd91a9e021_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_a7675c68531f9fcf4c193c1491699d77e}\label{class_console_a7675c68531f9fcf4c193c1491699d77e}} 
+\index{Console@{Console}!Kill@{Kill}}
+\index{Kill@{Kill}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{Kill()}{Kill()}}
+{\footnotesize\ttfamily void Console\+::\+Kill (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{object\+Name,  }\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{the\+Object }\end{DoxyParamCaption})}
+
+
+
+Kills the stored gameobject. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_a7675c68531f9fcf4c193c1491699d77e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_a7675c68531f9fcf4c193c1491699d77e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_ad60b6aa4c97472d68413078f09e455e1}\label{class_console_ad60b6aa4c97472d68413078f09e455e1}} 
+\index{Console@{Console}!operator=@{operator=}}
+\index{operator=@{operator=}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console}{Console}}\& Console\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console}{Console}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_console_a3769f2428a22a9944ab1baddb579d9f1}\label{class_console_a3769f2428a22a9944ab1baddb579d9f1}} 
+\index{Console@{Console}!operator=@{operator=}}
+\index{operator=@{operator=}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console}{Console}}\& Console\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_console}{Console}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy assignment operator. 
+
+\mbox{\Hypertarget{class_console_acc6585a1d780aee98a2a11a6f47d3731}\label{class_console_acc6585a1d780aee98a2a11a6f47d3731}} 
+\index{Console@{Console}!parseCommandLine@{parseCommandLine}}
+\index{parseCommandLine@{parseCommandLine}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{parseCommandLine()}{parseCommandLine()}}
+{\footnotesize\ttfamily bool Console\+::parse\+Command\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Parses the command line after the passintro() command reports the user is ready for parsing. 
+
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+$<$ composing the output (typically a string)
+
+$<$ Initializer list to pass to the user
+
+$<$ To traverse the console list
+
+$<$ Determining if a command was found
+
+$<$ Determining if an argument matches the found commandHere is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_acc6585a1d780aee98a2a11a6f47d3731_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_acc6585a1d780aee98a2a11a6f47d3731_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_a9173c73ff05484d7a89bcc15e0d4416a}\label{class_console_a9173c73ff05484d7a89bcc15e0d4416a}} 
+\index{Console@{Console}!passBackspace@{passBackspace}}
+\index{passBackspace@{passBackspace}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{passBackspace()}{passBackspace()}}
+{\footnotesize\ttfamily void Console\+::pass\+Backspace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Passes backspace into the console system to communicate with the string buffer. 
+
+\mbox{\Hypertarget{class_console_a331a1f3ab6ce5210810f5c65f533e202}\label{class_console_a331a1f3ab6ce5210810f5c65f533e202}} 
+\index{Console@{Console}!passIntro@{passIntro}}
+\index{passIntro@{passIntro}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{passIntro()}{passIntro()}}
+{\footnotesize\ttfamily void Console\+::pass\+Intro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Passes the \char`\"{}execute\char`\"{} command into the console. Typically this is achieved when the user hits the \textquotesingle{}enter\textquotesingle{} key, however this can be set to whatever the user would like. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_a331a1f3ab6ce5210810f5c65f533e202_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_a963808baf4e4f1ff1d0222c78f300d61}\label{class_console_a963808baf4e4f1ff1d0222c78f300d61}} 
+\index{Console@{Console}!passKey@{passKey}}
+\index{passKey@{passKey}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{passKey()}{passKey()}}
+{\footnotesize\ttfamily void Console\+::pass\+Key (\begin{DoxyParamCaption}\item[{char}]{key }\end{DoxyParamCaption})}
+
+
+
+How the console communicates with the user created console. Passes a key into the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_a963808baf4e4f1ff1d0222c78f300d61_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_a861f4563f56fbc8995c658f4fdb18195}\label{class_console_a861f4563f56fbc8995c658f4fdb18195}} 
+\index{Console@{Console}!Ping@{Ping}}
+\index{Ping@{Ping}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{Ping()}{Ping()}}
+{\footnotesize\ttfamily void Console\+::\+Ping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pings the console. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{class_console_a861f4563f56fbc8995c658f4fdb18195_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_af7d32cb0546e9a566c858b5b811517a9}\label{class_console_af7d32cb0546e9a566c858b5b811517a9}} 
+\index{Console@{Console}!Reload@{Reload}}
+\index{Reload@{Reload}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{Reload()}{Reload()}}
+{\footnotesize\ttfamily void Console\+::\+Reload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reloads the scene manger\textquotesingle{}s default scene. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_console_af7d32cb0546e9a566c858b5b811517a9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_adb8669509fbcff98552208e2e6e19625}\label{class_console_adb8669509fbcff98552208e2e6e19625}} 
+\index{Console@{Console}!removeItem@{removeItem}}
+\index{removeItem@{removeItem}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{removeItem()}{removeItem()}}
+{\footnotesize\ttfamily void Console\+::remove\+Item (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Name }\end{DoxyParamCaption})}
+
+
+
+Removes a command/variable from the console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Name} & The name. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_console_ac1581ec60ad42b215a9e8674b0b410c8}\label{class_console_ac1581ec60ad42b215a9e8674b0b410c8}} 
+\index{Console@{Console}!render@{render}}
+\index{render@{render}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Console\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renders the console\textquotesingle{}s text buffer. (All messages on screen). 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_ac1581ec60ad42b215a9e8674b0b410c8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_ac1581ec60ad42b215a9e8674b0b410c8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_adbe07f6a87f0cf0b07ba12e538db291f}\label{class_console_adbe07f6a87f0cf0b07ba12e538db291f}} 
+\index{Console@{Console}!Time@{Time}}
+\index{Time@{Time}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{Time()}{Time()}}
+{\footnotesize\ttfamily void Console\+::\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the engine runtime. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_console_adbe07f6a87f0cf0b07ba12e538db291f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_a650dd9caa83203c420c9171b0fb4d3a8}\label{class_console_a650dd9caa83203c420c9171b0fb4d3a8}} 
+\index{Console@{Console}!toggleEcho@{toggleEcho}}
+\index{toggleEcho@{toggleEcho}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{toggleEcho()}{toggleEcho()}}
+{\footnotesize\ttfamily void Console\+::toggle\+Echo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Toggle the echo\textquotesingle{}ing of commands into the string buffer after execution. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_console_a40e14e9a6486ceafebee579149e4d4bd}\label{class_console_a40e14e9a6486ceafebee579149e4d4bd}} 
+\index{Console@{Console}!builtGodCam@{builtGodCam}}
+\index{builtGodCam@{builtGodCam}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{builtGodCam}{builtGodCam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_god_cam_command}{God\+Cam\+Command}}$\ast$ Console\+::built\+God\+Cam\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_a46d7fe18aa5c3fdb971a764bd03b4dcf}\label{class_console_a46d7fe18aa5c3fdb971a764bd03b4dcf}} 
+\index{Console@{Console}!builtPing@{builtPing}}
+\index{builtPing@{builtPing}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{builtPing}{builtPing}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ping_command}{Ping\+Command}}$\ast$ Console\+::built\+Ping\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_a286f5176faa22770af5b18208c20daf1}\label{class_console_a286f5176faa22770af5b18208c20daf1}} 
+\index{Console@{Console}!builtReload@{builtReload}}
+\index{builtReload@{builtReload}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{builtReload}{builtReload}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_reload_command}{Reload\+Command}}$\ast$ Console\+::built\+Reload\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_aaac2c2b1e50ce6b37fb434240db0661e}\label{class_console_aaac2c2b1e50ce6b37fb434240db0661e}} 
+\index{Console@{Console}!builtTime@{builtTime}}
+\index{builtTime@{builtTime}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{builtTime}{builtTime}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_time_request_command}{Time\+Request\+Command}}$\ast$ Console\+::built\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_aa8664d5ed3c5596bebb2fbf6e8304abb}\label{class_console_aa8664d5ed3c5596bebb2fbf6e8304abb}} 
+\index{Console@{Console}!commandBuffer@{commandBuffer}}
+\index{commandBuffer@{commandBuffer}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{commandBuffer}{commandBuffer}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Console\+::command\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Buffer for command data. 
+
+\mbox{\Hypertarget{class_console_ae21b5f89b6e2cef319feac5c462555a2}\label{class_console_ae21b5f89b6e2cef319feac5c462555a2}} 
+\index{Console@{Console}!commandBufferCap@{commandBufferCap}}
+\index{commandBufferCap@{commandBufferCap}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{commandBufferCap}{commandBufferCap}}
+{\footnotesize\ttfamily int Console\+::command\+Buffer\+Cap\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_a4d910e9eb10e4abb30b8d4b0b0d3c87f}\label{class_console_a4d910e9eb10e4abb30b8d4b0b0d3c87f}} 
+\index{Console@{Console}!commandLine@{commandLine}}
+\index{commandLine@{commandLine}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{commandLine}{commandLine}}
+{\footnotesize\ttfamily std\+::string Console\+::command\+Line\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The actual line of text containing the text buffer. 
+
+\mbox{\Hypertarget{class_console_a5144ecdedbbdacbc60667ec0a12fc289}\label{class_console_a5144ecdedbbdacbc60667ec0a12fc289}} 
+\index{Console@{Console}!echoCommands@{echoCommands}}
+\index{echoCommands@{echoCommands}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{echoCommands}{echoCommands}}
+{\footnotesize\ttfamily bool Console\+::echo\+Commands\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_af8bbfe0f23aea494d1e14cecb5dd3e8e}\label{class_console_af8bbfe0f23aea494d1e14cecb5dd3e8e}} 
+\index{Console@{Console}!itemList@{itemList}}
+\index{itemList@{itemList}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{itemList}{itemList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_a6ecab5bb3d2ead55d523c709476a9e75}{Item\+List}}$\ast$ Console\+::item\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+List of console items. 
+
+\mbox{\Hypertarget{class_console_a9c43c18f0b72a686b4840ecc660fe1d6}\label{class_console_a9c43c18f0b72a686b4840ecc660fe1d6}} 
+\index{Console@{Console}!lineIndex@{lineIndex}}
+\index{lineIndex@{lineIndex}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{lineIndex}{lineIndex}}
+{\footnotesize\ttfamily int Console\+::line\+Index\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_console_a2d953752e8ff7b5e146360153db4bf2a}\label{class_console_a2d953752e8ff7b5e146360153db4bf2a}} 
+\index{Console@{Console}!textBuffer@{textBuffer}}
+\index{textBuffer@{textBuffer}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{textBuffer}{textBuffer}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{struct_console_1_1message_data}{message\+Data}}$>$ Console\+::text\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Buffer for text data. Manipulated by user\textquotesingle{}s console. Contains not only the message but also the type of message. 
+
+\mbox{\Hypertarget{class_console_a37101bf8c366027d41b87620312292c8}\label{class_console_a37101bf8c366027d41b87620312292c8}} 
+\index{Console@{Console}!textBufferCap@{textBufferCap}}
+\index{textBufferCap@{textBufferCap}!Console@{Console}}
+\doxysubsubsection{\texorpdfstring{textBufferCap}{textBufferCap}}
+{\footnotesize\ttfamily int Console\+::text\+Buffer\+Cap\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_console_8h}{Console.\+h}}\item 
+\mbox{\hyperlink{_console_8cpp}{Console.\+cpp}}\end{DoxyCompactItemize}

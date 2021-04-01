@@ -1,0 +1,6 @@
+<map id="TerrainObjectManager::Load" name="TerrainObjectManager::Load">
+<area shape="rect" id="node1" title="Call to load the heightmap and create a terrainObject that will be stored internally." alt="" coords="5,39,155,80"/>
+<area shape="rect" id="node2" href="$class_terrain_object_manager.html#a3e1de183b4aaca5f75c4f756099fc393" title="Gets the instance of TerrainObjectManager (Singleton)" alt="" coords="203,5,352,47"/>
+<area shape="rect" id="node4" href="$class_terrain_object_manager.html#ade6bd0330ca95f8eab122452e448f025" title="Internal call to load the heightmap and create a terrainObject that will be stored internally." alt="" coords="203,71,352,112"/>
+<area shape="rect" id="node3" href="$class_terrain_object_manager.html#aac7be644f7265c410905769500c680f9" title="Default constructor." alt="" coords="400,5,557,47"/>
+</map>

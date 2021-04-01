@@ -1,0 +1,4 @@
+<map id="Scene::SetCollisionTerrain" name="Scene::SetCollisionTerrain">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,180,39"/>
+<area shape="rect" id="node2" href="$class_collision_manager.html#a4fb3423c3f87c7db7362f032781d44b2" title="Sets collision terrain." alt="" coords="228,5,427,47"/>
+</map>

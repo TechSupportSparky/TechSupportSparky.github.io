@@ -1,0 +1,278 @@
+\hypertarget{class_terrain_cell}{}\doxysection{Terrain\+Cell Class Reference}
+\label{class_terrain_cell}\index{TerrainCell@{TerrainCell}}
+
+
+{\ttfamily \#include $<$Terrain\+Cell.\+h$>$}
+
+
+
+Collaboration diagram for Terrain\+Cell\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_cell__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_terrain_cell_a76e01e951f674388c687cc9f480c2aad}{Terrain\+Cell}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_cell_a39689c507d71fdafea8e2d54b760b3a9}{Terrain\+Cell}} (const \mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_cell_a9b4a724a826865b0ecfa0bbd8b0ceb42}{Terrain\+Cell}} (\mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \& \mbox{\hyperlink{class_terrain_cell_a691a6399cc35af13db13ea385029218a}{operator=}} (const \mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \&)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \& \mbox{\hyperlink{class_terrain_cell_ae259c8fe103b78ea0fe9b15e8a44bd10}{operator=}} (\mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_cell_ad55d3a9d43807eb9ee8ef3f029ac6efa}{$\sim$\+Terrain\+Cell}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain_cell_aa6dbccb30e4eb82db56195b1dc893f0e}{Terrain\+Cell}} (int \mbox{\hyperlink{class_terrain_cell_acac3913a97c674a8961e04cb4172b27b}{i}}, int \mbox{\hyperlink{class_terrain_cell_a0e5b1e4ae9d7352270a64cb8e0fae0b9}{j}})
+\begin{DoxyCompactList}\small\item\em Specialized constructor for passing the i and j coordinates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \& \mbox{\hyperlink{class_terrain_cell_ab920207f1e34d6e100beb486a475db16}{get\+A\+A\+BB}} ()
+\begin{DoxyCompactList}\small\item\em Creates an A\+A\+BB volume from the information stored and passes a reference. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_terrain_cell_a10b06840f5774241f35d6c9b6220dbac}{get\+Index}} (int \&outputI, int \&outputJ)
+\begin{DoxyCompactList}\small\item\em Gets the stored indices of i and j, outputs to arguments. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_terrain_cell_a054f0cb8b8d5d7379c89c4b0264e602a}{Set\+Index}} (int \mbox{\hyperlink{class_terrain_cell_acac3913a97c674a8961e04cb4172b27b}{i}}, int \mbox{\hyperlink{class_terrain_cell_a0e5b1e4ae9d7352270a64cb8e0fae0b9}{j}})
+\begin{DoxyCompactList}\small\item\em Sets the indices of i and j. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_terrain_cell_a411077e6ed84e0cbadc9492e8cceb952}{Set\+Terrain}} (\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$input\+Terrain)
+\begin{DoxyCompactList}\small\item\em Sets the terrain to be held within the object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_terrain_cell_a7a6e68df24b514502387f747cd150405}{operator==}} (const \mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \&other\+Cell) const
+\begin{DoxyCompactList}\small\item\em Equality operator for two cells. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_terrain_cell_acac3913a97c674a8961e04cb4172b27b}{i}}
+\item 
+int \mbox{\hyperlink{class_terrain_cell_a0e5b1e4ae9d7352270a64cb8e0fae0b9}{j}}
+\item 
+\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$ \mbox{\hyperlink{class_terrain_cell_a3afc8b35e062e4ee70126fc7905508ca}{terrain}}
+\item 
+\mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \mbox{\hyperlink{class_terrain_cell_a44f070f49990d212f8530056b7bee105}{aabb}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_terrain_cell_a76e01e951f674388c687cc9f480c2aad}\label{class_terrain_cell_a76e01e951f674388c687cc9f480c2aad}} 
+\index{TerrainCell@{TerrainCell}!TerrainCell@{TerrainCell}}
+\index{TerrainCell@{TerrainCell}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{TerrainCell()}{TerrainCell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Terrain\+Cell\+::\+Terrain\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_terrain_cell_a39689c507d71fdafea8e2d54b760b3a9}\label{class_terrain_cell_a39689c507d71fdafea8e2d54b760b3a9}} 
+\index{TerrainCell@{TerrainCell}!TerrainCell@{TerrainCell}}
+\index{TerrainCell@{TerrainCell}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{TerrainCell()}{TerrainCell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Terrain\+Cell\+::\+Terrain\+Cell (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_terrain_cell_a9b4a724a826865b0ecfa0bbd8b0ceb42}\label{class_terrain_cell_a9b4a724a826865b0ecfa0bbd8b0ceb42}} 
+\index{TerrainCell@{TerrainCell}!TerrainCell@{TerrainCell}}
+\index{TerrainCell@{TerrainCell}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{TerrainCell()}{TerrainCell()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Terrain\+Cell\+::\+Terrain\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_terrain_cell_ad55d3a9d43807eb9ee8ef3f029ac6efa}\label{class_terrain_cell_ad55d3a9d43807eb9ee8ef3f029ac6efa}} 
+\index{TerrainCell@{TerrainCell}!````~TerrainCell@{$\sim$TerrainCell}}
+\index{````~TerrainCell@{$\sim$TerrainCell}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{$\sim$TerrainCell()}{~TerrainCell()}}
+{\footnotesize\ttfamily Terrain\+Cell\+::$\sim$\+Terrain\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+\mbox{\Hypertarget{class_terrain_cell_aa6dbccb30e4eb82db56195b1dc893f0e}\label{class_terrain_cell_aa6dbccb30e4eb82db56195b1dc893f0e}} 
+\index{TerrainCell@{TerrainCell}!TerrainCell@{TerrainCell}}
+\index{TerrainCell@{TerrainCell}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{TerrainCell()}{TerrainCell()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Terrain\+Cell\+::\+Terrain\+Cell (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Specialized constructor for passing the i and j coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Zero-\/based index of the. \\
+\hline
+{\em j} & An int to process. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_terrain_cell_ab920207f1e34d6e100beb486a475db16}\label{class_terrain_cell_ab920207f1e34d6e100beb486a475db16}} 
+\index{TerrainCell@{TerrainCell}!getAABB@{getAABB}}
+\index{getAABB@{getAABB}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{getAABB()}{getAABB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} \& Terrain\+Cell\+::get\+A\+A\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates an A\+A\+BB volume from the information stored and passes a reference. 
+
+\begin{DoxyReturn}{Returns}
+An A\+A\+BB 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terrain_cell_ab920207f1e34d6e100beb486a475db16_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_cell_a10b06840f5774241f35d6c9b6220dbac}\label{class_terrain_cell_a10b06840f5774241f35d6c9b6220dbac}} 
+\index{TerrainCell@{TerrainCell}!getIndex@{getIndex}}
+\index{getIndex@{getIndex}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{getIndex()}{getIndex()}}
+{\footnotesize\ttfamily void Terrain\+Cell\+::get\+Index (\begin{DoxyParamCaption}\item[{int \&}]{outputI,  }\item[{int \&}]{outputJ }\end{DoxyParamCaption})}
+
+
+
+Gets the stored indices of i and j, outputs to arguments. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em outputI} & The output i. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em outputJ} & The output j. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_terrain_cell_a10b06840f5774241f35d6c9b6220dbac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_cell_a691a6399cc35af13db13ea385029218a}\label{class_terrain_cell_a691a6399cc35af13db13ea385029218a}} 
+\index{TerrainCell@{TerrainCell}!operator=@{operator=}}
+\index{operator=@{operator=}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \& Terrain\+Cell\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \&}]{other\+Cell }\end{DoxyParamCaption})}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_terrain_cell_ae259c8fe103b78ea0fe9b15e8a44bd10}\label{class_terrain_cell_ae259c8fe103b78ea0fe9b15e8a44bd10}} 
+\index{TerrainCell@{TerrainCell}!operator=@{operator=}}
+\index{operator=@{operator=}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}}\& Terrain\+Cell\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_terrain_cell_a7a6e68df24b514502387f747cd150405}\label{class_terrain_cell_a7a6e68df24b514502387f747cd150405}} 
+\index{TerrainCell@{TerrainCell}!operator==@{operator==}}
+\index{operator==@{operator==}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Terrain\+Cell\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \&}]{other\+Cell }\end{DoxyParamCaption}) const}
+
+
+
+Equality operator for two cells. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Cell} & The other cell.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the parameters are considered equivalent.
+\end{DoxyReturn}
+Primarily used within comparison checking of two iterators (whether or not the cells they hold are equivalent). ~\newline
+ \mbox{\Hypertarget{class_terrain_cell_a054f0cb8b8d5d7379c89c4b0264e602a}\label{class_terrain_cell_a054f0cb8b8d5d7379c89c4b0264e602a}} 
+\index{TerrainCell@{TerrainCell}!SetIndex@{SetIndex}}
+\index{SetIndex@{SetIndex}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{SetIndex()}{SetIndex()}}
+{\footnotesize\ttfamily void Terrain\+Cell\+::\+Set\+Index (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Sets the indices of i and j. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Zero-\/based index of the. \\
+\hline
+{\em j} & An int to process. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_terrain_cell_a054f0cb8b8d5d7379c89c4b0264e602a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_terrain_cell_a411077e6ed84e0cbadc9492e8cceb952}\label{class_terrain_cell_a411077e6ed84e0cbadc9492e8cceb952}} 
+\index{TerrainCell@{TerrainCell}!SetTerrain@{SetTerrain}}
+\index{SetTerrain@{SetTerrain}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{SetTerrain()}{SetTerrain()}}
+{\footnotesize\ttfamily void Terrain\+Cell\+::\+Set\+Terrain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_object}{Terrain\+Object}} $\ast$}]{input\+Terrain }\end{DoxyParamCaption})}
+
+
+
+Sets the terrain to be held within the object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em input\+Terrain} & If non-\/null, the input terrain. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_terrain_cell_a411077e6ed84e0cbadc9492e8cceb952_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_terrain_cell_a44f070f49990d212f8530056b7bee105}\label{class_terrain_cell_a44f070f49990d212f8530056b7bee105}} 
+\index{TerrainCell@{TerrainCell}!aabb@{aabb}}
+\index{aabb@{aabb}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{aabb}{aabb}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_volume_a_a_b_b}{Collision\+Volume\+A\+A\+BB}} Terrain\+Cell\+::aabb\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_cell_acac3913a97c674a8961e04cb4172b27b}\label{class_terrain_cell_acac3913a97c674a8961e04cb4172b27b}} 
+\index{TerrainCell@{TerrainCell}!i@{i}}
+\index{i@{i}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int Terrain\+Cell\+::i\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_cell_a0e5b1e4ae9d7352270a64cb8e0fae0b9}\label{class_terrain_cell_a0e5b1e4ae9d7352270a64cb8e0fae0b9}} 
+\index{TerrainCell@{TerrainCell}!j@{j}}
+\index{j@{j}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{j}{j}}
+{\footnotesize\ttfamily int Terrain\+Cell\+::j\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_terrain_cell_a3afc8b35e062e4ee70126fc7905508ca}\label{class_terrain_cell_a3afc8b35e062e4ee70126fc7905508ca}} 
+\index{TerrainCell@{TerrainCell}!terrain@{terrain}}
+\index{terrain@{terrain}!TerrainCell@{TerrainCell}}
+\doxysubsubsection{\texorpdfstring{terrain}{terrain}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_object}{Terrain\+Object}}$\ast$ Terrain\+Cell\+::terrain\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_terrain_cell_8h}{Terrain\+Cell.\+h}}\item 
+\mbox{\hyperlink{_terrain_cell_8cpp}{Terrain\+Cell.\+cpp}}\end{DoxyCompactItemize}

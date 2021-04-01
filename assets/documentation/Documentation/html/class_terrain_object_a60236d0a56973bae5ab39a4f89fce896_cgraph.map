@@ -1,0 +1,7 @@
+<map id="TerrainObject::ComputeMinMax" name="TerrainObject::ComputeMinMax">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,211,83"/>
+<area shape="rect" id="node2" href="$class_terrain_object.html#a4c43a408f7f76167250291fa14e272eb" title=" " alt="" coords="259,49,433,90"/>
+<area shape="rect" id="node3" href="$class_sly_math.html#a54757af5758b29cc50874e5bc4601af2" title="Finds the absolute min of X, Y, and Z between the champ and tester. Returns new vect." alt="" coords="481,5,660,32"/>
+<area shape="rect" id="node4" href="$class_sly_math.html#aab65962ec4129ba72e994626eefdc238" title="Finds the absolute min of X, Y, and Z between the champ and tester. Returns new vect." alt="" coords="483,56,658,83"/>
+<area shape="rect" id="node5" href="$class_terrain_object.html#a11b5cde5c63c5894f1a2d7f6a8884e9a" title=" " alt="" coords="483,107,659,133"/>
+</map>

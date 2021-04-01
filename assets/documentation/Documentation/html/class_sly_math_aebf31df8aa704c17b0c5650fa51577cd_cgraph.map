@@ -1,0 +1,8 @@
+<map id="SlyMath::OBBProjectionLength" name="SlyMath::OBBProjectionLength">
+<area shape="rect" id="node1" title="Obb projection length for AABB projected on V." alt="" coords="5,143,208,170"/>
+<area shape="rect" id="node2" href="$class_collision_volume_a_a_b_b.html#a22bfde5004aae040ae4cf5fa6f260ade" title="Gets the center of the AABB and returns it." alt="" coords="256,5,407,47"/>
+<area shape="rect" id="node3" href="$class_collision_volume_a_a_b_b.html#adf44bcac5709c41d1651fc251f9a1430" title="Gets half diagonal." alt="" coords="256,71,407,112"/>
+<area shape="rect" id="node4" href="$class_collision_volume_a_a_b_b.html#a24be3d97a67c20a82e0c2315ad494598" title="Gets the maximum of the AABB (calculated through ComputeData) and returns it." alt="" coords="256,136,407,177"/>
+<area shape="rect" id="node5" href="$class_collision_volume_a_a_b_b.html#aca609e59b7ab8c8ead0445487129bba0" title="Gets the scale." alt="" coords="256,201,407,243"/>
+<area shape="rect" id="node6" href="$class_collision_volume_a_a_b_b.html#a4a0d1c11f59912b924dac3defd84b6b4" title="Gets the world matrix." alt="" coords="256,267,407,308"/>
+</map>

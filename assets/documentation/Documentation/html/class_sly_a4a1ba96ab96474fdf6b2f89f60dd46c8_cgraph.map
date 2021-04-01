@@ -1,0 +1,9 @@
+<map id="Sly::Initialize" name="Sly::Initialize">
+<area shape="rect" id="node1" title="Engine initialization. Setups up various managers." alt="" coords="5,35,101,61"/>
+<area shape="rect" id="node2" href="$class_sly.html#a8124f3efd8a43cff220efd4e8e1c1c16" title="Game initialize, window and engine modifications to be defined by the user." alt="" coords="173,5,303,32"/>
+<area shape="rect" id="node3" href="$class_time_manager_attorney_1_1_game_loop.html#a24f86faafff4621282ebd32003258903" title=" " alt="" coords="149,57,327,98"/>
+<area shape="rect" id="node4" href="$class_time_manager.html#a3baf6fbb9150f09a678feb39e9ae7dac" title=" " alt="" coords="375,64,559,91"/>
+<area shape="rect" id="node5" href="$class_time_manager.html#ac06b0a182b394ddc0ac554ad090ee019" title="Gets the instance." alt="" coords="629,39,787,65"/>
+<area shape="rect" id="node7" href="$class_time_manager.html#a2eb47fffc76b85a6cd05e464dc39d302" title=" " alt="" coords="607,89,809,116"/>
+<area shape="rect" id="node6" href="$class_time_manager.html#a46d2773caea1858a19594d58d57404c2" title="Default constructor." alt="" coords="857,39,1044,65"/>
+</map>

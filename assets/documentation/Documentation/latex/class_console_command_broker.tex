@@ -1,0 +1,173 @@
+\hypertarget{class_console_command_broker}{}\doxysection{Console\+Command\+Broker Class Reference}
+\label{class_console_command_broker}\index{ConsoleCommandBroker@{ConsoleCommandBroker}}
+
+
+{\ttfamily \#include $<$Console\+Command\+Broker.\+h$>$}
+
+
+
+Collaboration diagram for Console\+Command\+Broker\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_console_command_broker__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_console_command_broker_a48d50a8fc91d7c3ad063984828c6342c}{Console\+Command\+Broker}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_command_broker_a3ee3dcef49aeb41b9b7d70647e4f7931}{Console\+Command\+Broker}} (const \mbox{\hyperlink{class_console_command_broker}{Console\+Command\+Broker}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_command_broker_a9acf170b9140f26f01470803c2af288b}{Console\+Command\+Broker}} (\mbox{\hyperlink{class_console_command_broker}{Console\+Command\+Broker}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_command_broker}{Console\+Command\+Broker}} \& \mbox{\hyperlink{class_console_command_broker_a1dd65f2029e3c32a6e1e0bfc237f5382}{operator=}} (const \mbox{\hyperlink{class_console_command_broker}{Console\+Command\+Broker}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_command_broker}{Console\+Command\+Broker}} \& \mbox{\hyperlink{class_console_command_broker_aa6198927e3904da987e1453290015030}{operator=}} (\mbox{\hyperlink{class_console_command_broker}{Console\+Command\+Broker}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_console_command_broker_a5049bf60118fd2585f122a85fa503555}{$\sim$\+Console\+Command\+Broker}} ()
+\begin{DoxyCompactList}\small\item\em Destructor (Virtual from \mbox{\hyperlink{class_command_base}{Command\+Base}}) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_command_broker_a1ddee6a460ceb0551f0f6ad3627cb717}{add\+Command}} (\mbox{\hyperlink{class_console_command}{Console\+Command}} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Adds a command to the console for execution. This is how user commands are passed in through the console manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_command_broker_aef5701b92e57838023e1779f41a1f9e8}{Execute\+Commands}} ()
+\begin{DoxyCompactList}\small\item\em Executes the commands added to the broker. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \mbox{\hyperlink{class_console_command}{Console\+Command}} $\ast$ $>$ \mbox{\hyperlink{class_console_command_broker_a34acb13161f078136f19f9a0e7cc1019}{Command\+List}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_console_command_broker_a34acb13161f078136f19f9a0e7cc1019}{Command\+List}} $\ast$ \mbox{\hyperlink{class_console_command_broker_ac994f86fd3a14175dd0ebaafd5658359}{lst\+Commands}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_console_command_broker_a34acb13161f078136f19f9a0e7cc1019}\label{class_console_command_broker_a34acb13161f078136f19f9a0e7cc1019}} 
+\index{ConsoleCommandBroker@{ConsoleCommandBroker}!CommandList@{CommandList}}
+\index{CommandList@{CommandList}!ConsoleCommandBroker@{ConsoleCommandBroker}}
+\doxysubsubsection{\texorpdfstring{CommandList}{CommandList}}
+{\footnotesize\ttfamily typedef std\+::list$<$\mbox{\hyperlink{class_console_command}{Console\+Command}}$\ast$$>$ \mbox{\hyperlink{class_console_command_broker_a34acb13161f078136f19f9a0e7cc1019}{Console\+Command\+Broker\+::\+Command\+List}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_console_command_broker_a48d50a8fc91d7c3ad063984828c6342c}\label{class_console_command_broker_a48d50a8fc91d7c3ad063984828c6342c}} 
+\index{ConsoleCommandBroker@{ConsoleCommandBroker}!ConsoleCommandBroker@{ConsoleCommandBroker}}
+\index{ConsoleCommandBroker@{ConsoleCommandBroker}!ConsoleCommandBroker@{ConsoleCommandBroker}}
+\doxysubsubsection{\texorpdfstring{ConsoleCommandBroker()}{ConsoleCommandBroker()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Console\+Command\+Broker\+::\+Console\+Command\+Broker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+\mbox{\Hypertarget{class_console_command_broker_a3ee3dcef49aeb41b9b7d70647e4f7931}\label{class_console_command_broker_a3ee3dcef49aeb41b9b7d70647e4f7931}} 
+\index{ConsoleCommandBroker@{ConsoleCommandBroker}!ConsoleCommandBroker@{ConsoleCommandBroker}}
+\index{ConsoleCommandBroker@{ConsoleCommandBroker}!ConsoleCommandBroker@{ConsoleCommandBroker}}
+\doxysubsubsection{\texorpdfstring{ConsoleCommandBroker()}{ConsoleCommandBroker()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Console\+Command\+Broker\+::\+Console\+Command\+Broker (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_console_command_broker}{Console\+Command\+Broker}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy Constructor. 
+
+\mbox{\Hypertarget{class_console_command_broker_a9acf170b9140f26f01470803c2af288b}\label{class_console_command_broker_a9acf170b9140f26f01470803c2af288b}} 
+\index{ConsoleCommandBroker@{ConsoleCommandBroker}!ConsoleCommandBroker@{ConsoleCommandBroker}}
+\index{ConsoleCommandBroker@{ConsoleCommandBroker}!ConsoleCommandBroker@{ConsoleCommandBroker}}
+\doxysubsubsection{\texorpdfstring{ConsoleCommandBroker()}{ConsoleCommandBroker()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Console\+Command\+Broker\+::\+Console\+Command\+Broker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_command_broker}{Console\+Command\+Broker}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move operator. 
+
+\mbox{\Hypertarget{class_console_command_broker_a5049bf60118fd2585f122a85fa503555}\label{class_console_command_broker_a5049bf60118fd2585f122a85fa503555}} 
+\index{ConsoleCommandBroker@{ConsoleCommandBroker}!````~ConsoleCommandBroker@{$\sim$ConsoleCommandBroker}}
+\index{````~ConsoleCommandBroker@{$\sim$ConsoleCommandBroker}!ConsoleCommandBroker@{ConsoleCommandBroker}}
+\doxysubsubsection{\texorpdfstring{$\sim$ConsoleCommandBroker()}{~ConsoleCommandBroker()}}
+{\footnotesize\ttfamily Console\+Command\+Broker\+::$\sim$\+Console\+Command\+Broker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor (Virtual from \mbox{\hyperlink{class_command_base}{Command\+Base}}) 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_console_command_broker_a1ddee6a460ceb0551f0f6ad3627cb717}\label{class_console_command_broker_a1ddee6a460ceb0551f0f6ad3627cb717}} 
+\index{ConsoleCommandBroker@{ConsoleCommandBroker}!addCommand@{addCommand}}
+\index{addCommand@{addCommand}!ConsoleCommandBroker@{ConsoleCommandBroker}}
+\doxysubsubsection{\texorpdfstring{addCommand()}{addCommand()}}
+{\footnotesize\ttfamily void Console\+Command\+Broker\+::add\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_command}{Console\+Command}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Adds a command to the console for execution. This is how user commands are passed in through the console manager. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em c} & If non-\/null, a \mbox{\hyperlink{class_console_command}{Console\+Command}} to process. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_command_broker_a1ddee6a460ceb0551f0f6ad3627cb717_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_command_broker_aef5701b92e57838023e1779f41a1f9e8}\label{class_console_command_broker_aef5701b92e57838023e1779f41a1f9e8}} 
+\index{ConsoleCommandBroker@{ConsoleCommandBroker}!ExecuteCommands@{ExecuteCommands}}
+\index{ExecuteCommands@{ExecuteCommands}!ConsoleCommandBroker@{ConsoleCommandBroker}}
+\doxysubsubsection{\texorpdfstring{ExecuteCommands()}{ExecuteCommands()}}
+{\footnotesize\ttfamily void Console\+Command\+Broker\+::\+Execute\+Commands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Executes the commands added to the broker. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_command_broker_aef5701b92e57838023e1779f41a1f9e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_command_broker_aa6198927e3904da987e1453290015030}\label{class_console_command_broker_aa6198927e3904da987e1453290015030}} 
+\index{ConsoleCommandBroker@{ConsoleCommandBroker}!operator=@{operator=}}
+\index{operator=@{operator=}!ConsoleCommandBroker@{ConsoleCommandBroker}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_command_broker}{Console\+Command\+Broker}}\& Console\+Command\+Broker\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_command_broker}{Console\+Command\+Broker}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_console_command_broker_a1dd65f2029e3c32a6e1e0bfc237f5382}\label{class_console_command_broker_a1dd65f2029e3c32a6e1e0bfc237f5382}} 
+\index{ConsoleCommandBroker@{ConsoleCommandBroker}!operator=@{operator=}}
+\index{operator=@{operator=}!ConsoleCommandBroker@{ConsoleCommandBroker}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_command_broker}{Console\+Command\+Broker}}\& Console\+Command\+Broker\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_console_command_broker}{Console\+Command\+Broker}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy assignment operator. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_console_command_broker_ac994f86fd3a14175dd0ebaafd5658359}\label{class_console_command_broker_ac994f86fd3a14175dd0ebaafd5658359}} 
+\index{ConsoleCommandBroker@{ConsoleCommandBroker}!lstCommands@{lstCommands}}
+\index{lstCommands@{lstCommands}!ConsoleCommandBroker@{ConsoleCommandBroker}}
+\doxysubsubsection{\texorpdfstring{lstCommands}{lstCommands}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_command_broker_a34acb13161f078136f19f9a0e7cc1019}{Command\+List}}$\ast$ Console\+Command\+Broker\+::lst\+Commands\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_console_command_broker_8h}{Console\+Command\+Broker.\+h}}\item 
+\mbox{\hyperlink{_console_command_broker_8cpp}{Console\+Command\+Broker.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="ParticleEmitterFactory::RecycleBurst" name="ParticleEmitterFactory::RecycleBurst">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,157,80"/>
+<area shape="rect" id="node2" href="$class_particle_emitter_factory.html#a79393e0877905865a602a39c16bc4e63" title=" " alt="" coords="205,5,357,47"/>
+<area shape="rect" id="node4" href="$class_particle_emitter_factory.html#a3e699b15d3aa01c99f77982bd46d056c" title=" " alt="" coords="205,71,357,112"/>
+<area shape="rect" id="node3" href="$class_particle_emitter_factory.html#a8dec2925d592e6db7d50fd52c8976379" title=" " alt="" coords="425,5,585,47"/>
+<area shape="rect" id="node5" href="$class_particle_emitter.html#a48be2e4272a618e9b3c5a3a5fbc2ffcd" title=" " alt="" coords="405,74,604,101"/>
+<area shape="rect" id="node6" href="$class_particle_emitter_memory_pool.html#a43c8a635747bc83aaf7b5e786728d0a2" title=" " alt="" coords="414,125,595,167"/>
+</map>

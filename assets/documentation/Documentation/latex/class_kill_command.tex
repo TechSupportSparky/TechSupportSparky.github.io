@@ -1,0 +1,241 @@
+\hypertarget{class_kill_command}{}\doxysection{Kill\+Command Class Reference}
+\label{class_kill_command}\index{KillCommand@{KillCommand}}
+
+
+{\ttfamily \#include $<$Kill\+Command.\+h$>$}
+
+
+
+Inheritance diagram for Kill\+Command\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_kill_command__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Kill\+Command\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_command__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \mbox{\hyperlink{class_kill_command}{Kill\+Command}} $\ast$ $>$ \mbox{\hyperlink{class_kill_command_a67a41734deab0eca92cad76db83431e8}{Item\+List}}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing list of items. \end{DoxyCompactList}\item 
+typedef Item\+List\+::iterator \mbox{\hyperlink{class_kill_command_a845dd80965de2606650130206a4804f1}{Storage\+Ref}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kill_command_a8deddd7e8dd90ca9b36f6f5fea105c45}{Kill\+Command}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_kill_command_aecaa51abf4e3373b9aa309614bbf30e5}{Kill\+Command}} (const \mbox{\hyperlink{class_kill_command}{Kill\+Command}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_kill_command_a41c09182b94ef8ba58a583559158a9d5}{Kill\+Command}} (\mbox{\hyperlink{class_kill_command}{Kill\+Command}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_kill_command}{Kill\+Command}} \& \mbox{\hyperlink{class_kill_command_ae66b657b66da5507718b04dea7026391}{operator=}} (const \mbox{\hyperlink{class_kill_command}{Kill\+Command}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_kill_command}{Kill\+Command}} \& \mbox{\hyperlink{class_kill_command_ac50142fdf76734d0d0ccbc7784b4c03b}{operator=}} (\mbox{\hyperlink{class_kill_command}{Kill\+Command}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_kill_command_aecab9a6b353adbe03553c07ac338fc70}{$\sim$\+Kill\+Command}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor (Virtual from \mbox{\hyperlink{class_command_base}{Command\+Base}}) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_kill_command_afe0e1f097d23e405591da0b48370e190}{Kill\+Command}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$to\+Kill)
+\begin{DoxyCompactList}\small\item\em Specialized constructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_kill_command_a9347b459c9072a452015d85267fa68a0}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Kills the stored game object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_kill_command_aaee07140b70b6776c23ea742392efaa9}{set\+Object}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$\mbox{\hyperlink{class_kill_command_aaa606df2e333a07e099221f11d059731}{target}}, \mbox{\hyperlink{class_kill_command_a845dd80965de2606650130206a4804f1}{Storage\+Ref}} ref)
+\begin{DoxyCompactList}\small\item\em Sets an object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_kill_command_a845dd80965de2606650130206a4804f1}{Storage\+Ref}} \mbox{\hyperlink{class_kill_command_a332e5848e40ce89ca9db31fc16d8f475}{get\+Delete\+Ref}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kill_command_a845dd80965de2606650130206a4804f1}{Storage\+Ref}} \mbox{\hyperlink{class_kill_command_aeb162f449565ccabaa4af88c947d01e8}{my\+Storage\+Ref}}
+\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ \mbox{\hyperlink{class_kill_command_aaa606df2e333a07e099221f11d059731}{target}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_kill_command_a67a41734deab0eca92cad76db83431e8}\label{class_kill_command_a67a41734deab0eca92cad76db83431e8}} 
+\index{KillCommand@{KillCommand}!ItemList@{ItemList}}
+\index{ItemList@{ItemList}!KillCommand@{KillCommand}}
+\doxysubsubsection{\texorpdfstring{ItemList}{ItemList}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{class_kill_command}{Kill\+Command}} $\ast$ $>$ \mbox{\hyperlink{class_kill_command_a67a41734deab0eca92cad76db83431e8}{Kill\+Command\+::\+Item\+List}}}
+
+
+
+Defines an alias representing list of items. 
+
+\mbox{\Hypertarget{class_kill_command_a845dd80965de2606650130206a4804f1}\label{class_kill_command_a845dd80965de2606650130206a4804f1}} 
+\index{KillCommand@{KillCommand}!StorageRef@{StorageRef}}
+\index{StorageRef@{StorageRef}!KillCommand@{KillCommand}}
+\doxysubsubsection{\texorpdfstring{StorageRef}{StorageRef}}
+{\footnotesize\ttfamily typedef Item\+List\+::iterator \mbox{\hyperlink{class_kill_command_a845dd80965de2606650130206a4804f1}{Kill\+Command\+::\+Storage\+Ref}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_kill_command_a8deddd7e8dd90ca9b36f6f5fea105c45}\label{class_kill_command_a8deddd7e8dd90ca9b36f6f5fea105c45}} 
+\index{KillCommand@{KillCommand}!KillCommand@{KillCommand}}
+\index{KillCommand@{KillCommand}!KillCommand@{KillCommand}}
+\doxysubsubsection{\texorpdfstring{KillCommand()}{KillCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Kill\+Command\+::\+Kill\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+\mbox{\Hypertarget{class_kill_command_aecaa51abf4e3373b9aa309614bbf30e5}\label{class_kill_command_aecaa51abf4e3373b9aa309614bbf30e5}} 
+\index{KillCommand@{KillCommand}!KillCommand@{KillCommand}}
+\index{KillCommand@{KillCommand}!KillCommand@{KillCommand}}
+\doxysubsubsection{\texorpdfstring{KillCommand()}{KillCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Kill\+Command\+::\+Kill\+Command (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_kill_command}{Kill\+Command}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy Constructor. 
+
+\mbox{\Hypertarget{class_kill_command_a41c09182b94ef8ba58a583559158a9d5}\label{class_kill_command_a41c09182b94ef8ba58a583559158a9d5}} 
+\index{KillCommand@{KillCommand}!KillCommand@{KillCommand}}
+\index{KillCommand@{KillCommand}!KillCommand@{KillCommand}}
+\doxysubsubsection{\texorpdfstring{KillCommand()}{KillCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Kill\+Command\+::\+Kill\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_kill_command}{Kill\+Command}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move operator. 
+
+\mbox{\Hypertarget{class_kill_command_aecab9a6b353adbe03553c07ac338fc70}\label{class_kill_command_aecab9a6b353adbe03553c07ac338fc70}} 
+\index{KillCommand@{KillCommand}!````~KillCommand@{$\sim$KillCommand}}
+\index{````~KillCommand@{$\sim$KillCommand}!KillCommand@{KillCommand}}
+\doxysubsubsection{\texorpdfstring{$\sim$KillCommand()}{~KillCommand()}}
+{\footnotesize\ttfamily virtual Kill\+Command\+::$\sim$\+Kill\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor (Virtual from \mbox{\hyperlink{class_command_base}{Command\+Base}}) 
+
+\mbox{\Hypertarget{class_kill_command_afe0e1f097d23e405591da0b48370e190}\label{class_kill_command_afe0e1f097d23e405591da0b48370e190}} 
+\index{KillCommand@{KillCommand}!KillCommand@{KillCommand}}
+\index{KillCommand@{KillCommand}!KillCommand@{KillCommand}}
+\doxysubsubsection{\texorpdfstring{KillCommand()}{KillCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Kill\+Command\+::\+Kill\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{to\+Kill }\end{DoxyParamCaption})}
+
+
+
+Specialized constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em to\+Kill} & If non-\/null, the object to kill.\\
+\hline
+\end{DoxyParams}
+The kill command requires a specific object to be initialized in order to kill. This object must be a game object with the Scene\+Exit() function overridden. If this method is not overriden, the base class Scene\+Exit() for \mbox{\hyperlink{class_game_object}{Game\+Object}} will be called and nothing will happen. ~\newline
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_kill_command_a9347b459c9072a452015d85267fa68a0}\label{class_kill_command_a9347b459c9072a452015d85267fa68a0}} 
+\index{KillCommand@{KillCommand}!execute@{execute}}
+\index{execute@{execute}!KillCommand@{KillCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Kill\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Kills the stored game object. 
+
+
+
+Implements \mbox{\hyperlink{class_console_command_ae564b82a2826122cfc0b22013e0c6d71}{Console\+Command}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_command_a9347b459c9072a452015d85267fa68a0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_kill_command_a332e5848e40ce89ca9db31fc16d8f475}\label{class_kill_command_a332e5848e40ce89ca9db31fc16d8f475}} 
+\index{KillCommand@{KillCommand}!getDeleteRef@{getDeleteRef}}
+\index{getDeleteRef@{getDeleteRef}!KillCommand@{KillCommand}}
+\doxysubsubsection{\texorpdfstring{getDeleteRef()}{getDeleteRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kill_command_a845dd80965de2606650130206a4804f1}{Kill\+Command\+::\+Storage\+Ref}} Kill\+Command\+::get\+Delete\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_command_a332e5848e40ce89ca9db31fc16d8f475_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_kill_command_ae66b657b66da5507718b04dea7026391}\label{class_kill_command_ae66b657b66da5507718b04dea7026391}} 
+\index{KillCommand@{KillCommand}!operator=@{operator=}}
+\index{operator=@{operator=}!KillCommand@{KillCommand}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kill_command}{Kill\+Command}}\& Kill\+Command\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_kill_command}{Kill\+Command}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy assignment operator. 
+
+\mbox{\Hypertarget{class_kill_command_ac50142fdf76734d0d0ccbc7784b4c03b}\label{class_kill_command_ac50142fdf76734d0d0ccbc7784b4c03b}} 
+\index{KillCommand@{KillCommand}!operator=@{operator=}}
+\index{operator=@{operator=}!KillCommand@{KillCommand}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kill_command}{Kill\+Command}}\& Kill\+Command\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_kill_command}{Kill\+Command}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_kill_command_aaee07140b70b6776c23ea742392efaa9}\label{class_kill_command_aaee07140b70b6776c23ea742392efaa9}} 
+\index{KillCommand@{KillCommand}!setObject@{setObject}}
+\index{setObject@{setObject}!KillCommand@{KillCommand}}
+\doxysubsubsection{\texorpdfstring{setObject()}{setObject()}}
+{\footnotesize\ttfamily void Kill\+Command\+::set\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{target,  }\item[{\mbox{\hyperlink{class_kill_command_a845dd80965de2606650130206a4804f1}{Storage\+Ref}}}]{ref }\end{DoxyParamCaption})}
+
+
+
+Sets an object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em target} & If non-\/null, target for the. \\
+\hline
+ & {\em ref} & The reference. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_kill_command_aaee07140b70b6776c23ea742392efaa9_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_kill_command_aeb162f449565ccabaa4af88c947d01e8}\label{class_kill_command_aeb162f449565ccabaa4af88c947d01e8}} 
+\index{KillCommand@{KillCommand}!myStorageRef@{myStorageRef}}
+\index{myStorageRef@{myStorageRef}!KillCommand@{KillCommand}}
+\doxysubsubsection{\texorpdfstring{myStorageRef}{myStorageRef}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kill_command_a845dd80965de2606650130206a4804f1}{Storage\+Ref}} Kill\+Command\+::my\+Storage\+Ref\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_kill_command_aaa606df2e333a07e099221f11d059731}\label{class_kill_command_aaa606df2e333a07e099221f11d059731}} 
+\index{KillCommand@{KillCommand}!target@{target}}
+\index{target@{target}!KillCommand@{KillCommand}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object}{Game\+Object}}$\ast$ Kill\+Command\+::target\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_kill_command_8h}{Kill\+Command.\+h}}\item 
+\mbox{\hyperlink{_kill_command_8cpp}{Kill\+Command.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="TerrainRectangleArea::end" name="TerrainRectangleArea::end">
+<area shape="rect" id="node1" title="Gets the ned." alt="" coords="248,13,423,39"/>
+<area shape="rect" id="node2" href="$class_collision_test_terrain_command.html#adae6dfa0f875cdfa7e6a8cea76aa02cc" title="Executes this command. Pure virtual function must be defined by all derived commands." alt="" coords="5,5,200,47"/>
+</map>

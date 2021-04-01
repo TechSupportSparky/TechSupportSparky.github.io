@@ -1,0 +1,284 @@
+\hypertarget{class_t_r_a_iterator}{}\doxysection{T\+R\+A\+Iterator Class Reference}
+\label{class_t_r_a_iterator}\index{TRAIterator@{TRAIterator}}
+
+
+{\ttfamily \#include $<$T\+R\+A\+Iterator.\+h$>$}
+
+
+
+Collaboration diagram for T\+R\+A\+Iterator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_t_r_a_iterator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_r_a_iterator_a592921afe552278041e8b41038e65f51}{T\+R\+A\+Iterator}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_r_a_iterator_a1a90c86bb36158d176d2230f326a87a7}{T\+R\+A\+Iterator}} (const \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&other\+Iterator)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_r_a_iterator_af9d3217d0ecb4fe141c8311ab83a5093}{T\+R\+A\+Iterator}} (\mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \& \mbox{\hyperlink{class_t_r_a_iterator_ac4107f38cd49f535333001db4867a460}{operator=}} (const \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \& \mbox{\hyperlink{class_t_r_a_iterator_aa7ab867a8a42623464aa8abfe385648e}{operator=}} (\mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&\&)=default
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_r_a_iterator_af995b12fb6144a909fd540b2880dffb6}{$\sim$\+T\+R\+A\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_r_a_iterator_a2e00ed70cc3d40242905293b34c9db76}{T\+R\+A\+Iterator}} (\mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}} $\ast$range)
+\item 
+\mbox{\hyperlink{class_t_r_a_iterator_a75122dd3830fd10492d0bb0378bbaa4e}{T\+R\+A\+Iterator}} (\mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}} $\ast$range, int i, int j)
+\item 
+\mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \& \mbox{\hyperlink{class_t_r_a_iterator_a065371c70d6df7a107fc5f503ce8804a}{operator++}} ()
+\item 
+bool \mbox{\hyperlink{class_t_r_a_iterator_ae3cfcb76317749435c23d0612c203eeb}{operator!=}} (\mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&other\+Iterator)
+\item 
+bool \mbox{\hyperlink{class_t_r_a_iterator_abe79b4851d28c5c27abfaf9468a6f4d4}{operator==}} (\mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&other\+Iterator)
+\item 
+bool \mbox{\hyperlink{class_t_r_a_iterator_aef848484bcbb7a95050bd1d8338ffd76}{operator!=}} (const \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&other\+Iterator)
+\item 
+bool \mbox{\hyperlink{class_t_r_a_iterator_ac52c5186f366569cf1b58b47e4705f95}{operator==}} (const \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&other\+Iterator)
+\item 
+\mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} $\ast$ \mbox{\hyperlink{class_t_r_a_iterator_a428aa320dc17bda12dc08fad14ac81b8}{operator-\/$>$}} ()
+\item 
+\mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \& \mbox{\hyperlink{class_t_r_a_iterator_ae97ae50d4008e9ced0d10fbdbb96aa63}{operator$\ast$}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \& \mbox{\hyperlink{class_t_r_a_iterator_a69c418c138b4db5fac0dd4e4a04a9f0b}{get\+Cell}} () const
+\begin{DoxyCompactList}\small\item\em Gets the cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}} $\ast$ \mbox{\hyperlink{class_t_r_a_iterator_ab1cf2958b43946f8a9067cad4c18dc23}{callback}}
+\item 
+\mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \mbox{\hyperlink{class_t_r_a_iterator_aa8d2be9e544cdb747cfc55eb2f7548e4}{cell}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_r_a_iterator_a592921afe552278041e8b41038e65f51}\label{class_t_r_a_iterator_a592921afe552278041e8b41038e65f51}} 
+\index{TRAIterator@{TRAIterator}!TRAIterator@{TRAIterator}}
+\index{TRAIterator@{TRAIterator}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{TRAIterator()}{TRAIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily T\+R\+A\+Iterator\+::\+T\+R\+A\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_t_r_a_iterator_a1a90c86bb36158d176d2230f326a87a7}\label{class_t_r_a_iterator_a1a90c86bb36158d176d2230f326a87a7}} 
+\index{TRAIterator@{TRAIterator}!TRAIterator@{TRAIterator}}
+\index{TRAIterator@{TRAIterator}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{TRAIterator()}{TRAIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily T\+R\+A\+Iterator\+::\+T\+R\+A\+Iterator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&}]{other\+Iterator }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_t_r_a_iterator_a1a90c86bb36158d176d2230f326a87a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_t_r_a_iterator_af9d3217d0ecb4fe141c8311ab83a5093}\label{class_t_r_a_iterator_af9d3217d0ecb4fe141c8311ab83a5093}} 
+\index{TRAIterator@{TRAIterator}!TRAIterator@{TRAIterator}}
+\index{TRAIterator@{TRAIterator}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{TRAIterator()}{TRAIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily T\+R\+A\+Iterator\+::\+T\+R\+A\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_t_r_a_iterator_af995b12fb6144a909fd540b2880dffb6}\label{class_t_r_a_iterator_af995b12fb6144a909fd540b2880dffb6}} 
+\index{TRAIterator@{TRAIterator}!````~TRAIterator@{$\sim$TRAIterator}}
+\index{````~TRAIterator@{$\sim$TRAIterator}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{$\sim$TRAIterator()}{~TRAIterator()}}
+{\footnotesize\ttfamily T\+R\+A\+Iterator\+::$\sim$\+T\+R\+A\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor. 
+
+\mbox{\Hypertarget{class_t_r_a_iterator_a2e00ed70cc3d40242905293b34c9db76}\label{class_t_r_a_iterator_a2e00ed70cc3d40242905293b34c9db76}} 
+\index{TRAIterator@{TRAIterator}!TRAIterator@{TRAIterator}}
+\index{TRAIterator@{TRAIterator}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{TRAIterator()}{TRAIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily T\+R\+A\+Iterator\+::\+T\+R\+A\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}} $\ast$}]{range }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_t_r_a_iterator_a2e00ed70cc3d40242905293b34c9db76_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_t_r_a_iterator_a75122dd3830fd10492d0bb0378bbaa4e}\label{class_t_r_a_iterator_a75122dd3830fd10492d0bb0378bbaa4e}} 
+\index{TRAIterator@{TRAIterator}!TRAIterator@{TRAIterator}}
+\index{TRAIterator@{TRAIterator}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{TRAIterator()}{TRAIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily T\+R\+A\+Iterator\+::\+T\+R\+A\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}} $\ast$}]{range,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_t_r_a_iterator_a75122dd3830fd10492d0bb0378bbaa4e_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_r_a_iterator_a69c418c138b4db5fac0dd4e4a04a9f0b}\label{class_t_r_a_iterator_a69c418c138b4db5fac0dd4e4a04a9f0b}} 
+\index{TRAIterator@{TRAIterator}!getCell@{getCell}}
+\index{getCell@{getCell}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{getCell()}{getCell()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \& T\+R\+A\+Iterator\+::get\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gets the cell. 
+
+\begin{DoxyReturn}{Returns}
+The cell. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_t_r_a_iterator_a69c418c138b4db5fac0dd4e4a04a9f0b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_t_r_a_iterator_aef848484bcbb7a95050bd1d8338ffd76}\label{class_t_r_a_iterator_aef848484bcbb7a95050bd1d8338ffd76}} 
+\index{TRAIterator@{TRAIterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool T\+R\+A\+Iterator\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&}]{other\+Iterator }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_t_r_a_iterator_aef848484bcbb7a95050bd1d8338ffd76_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_t_r_a_iterator_ae3cfcb76317749435c23d0612c203eeb}\label{class_t_r_a_iterator_ae3cfcb76317749435c23d0612c203eeb}} 
+\index{TRAIterator@{TRAIterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool T\+R\+A\+Iterator\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&}]{other\+Iterator }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_t_r_a_iterator_ae3cfcb76317749435c23d0612c203eeb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_t_r_a_iterator_ae97ae50d4008e9ced0d10fbdbb96aa63}\label{class_t_r_a_iterator_ae97ae50d4008e9ced0d10fbdbb96aa63}} 
+\index{TRAIterator@{TRAIterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} \& T\+R\+A\+Iterator\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_r_a_iterator_a065371c70d6df7a107fc5f503ce8804a}\label{class_t_r_a_iterator_a065371c70d6df7a107fc5f503ce8804a}} 
+\index{TRAIterator@{TRAIterator}!operator++@{operator++}}
+\index{operator++@{operator++}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \& T\+R\+A\+Iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_t_r_a_iterator_a065371c70d6df7a107fc5f503ce8804a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_t_r_a_iterator_a428aa320dc17bda12dc08fad14ac81b8}\label{class_t_r_a_iterator_a428aa320dc17bda12dc08fad14ac81b8}} 
+\index{TRAIterator@{TRAIterator}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} $\ast$ T\+R\+A\+Iterator\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_t_r_a_iterator_ac4107f38cd49f535333001db4867a460}\label{class_t_r_a_iterator_ac4107f38cd49f535333001db4867a460}} 
+\index{TRAIterator@{TRAIterator}!operator=@{operator=}}
+\index{operator=@{operator=}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \& T\+R\+A\+Iterator\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&}]{other\+Iterator }\end{DoxyParamCaption})}
+
+
+
+Assignment operator. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_t_r_a_iterator_ac4107f38cd49f535333001db4867a460_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_t_r_a_iterator_aa7ab867a8a42623464aa8abfe385648e}\label{class_t_r_a_iterator_aa7ab867a8a42623464aa8abfe385648e}} 
+\index{TRAIterator@{TRAIterator}!operator=@{operator=}}
+\index{operator=@{operator=}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}}\& T\+R\+A\+Iterator\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_t_r_a_iterator_ac52c5186f366569cf1b58b47e4705f95}\label{class_t_r_a_iterator_ac52c5186f366569cf1b58b47e4705f95}} 
+\index{TRAIterator@{TRAIterator}!operator==@{operator==}}
+\index{operator==@{operator==}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool T\+R\+A\+Iterator\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&}]{other\+Iterator }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_t_r_a_iterator_ac52c5186f366569cf1b58b47e4705f95_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_t_r_a_iterator_abe79b4851d28c5c27abfaf9468a6f4d4}\label{class_t_r_a_iterator_abe79b4851d28c5c27abfaf9468a6f4d4}} 
+\index{TRAIterator@{TRAIterator}!operator==@{operator==}}
+\index{operator==@{operator==}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool T\+R\+A\+Iterator\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_r_a_iterator}{T\+R\+A\+Iterator}} \&}]{other\+Iterator }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_t_r_a_iterator_abe79b4851d28c5c27abfaf9468a6f4d4_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_r_a_iterator_ab1cf2958b43946f8a9067cad4c18dc23}\label{class_t_r_a_iterator_ab1cf2958b43946f8a9067cad4c18dc23}} 
+\index{TRAIterator@{TRAIterator}!callback@{callback}}
+\index{callback@{callback}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{callback}{callback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_rectangle_area}{Terrain\+Rectangle\+Area}}$\ast$ T\+R\+A\+Iterator\+::callback\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_t_r_a_iterator_aa8d2be9e544cdb747cfc55eb2f7548e4}\label{class_t_r_a_iterator_aa8d2be9e544cdb747cfc55eb2f7548e4}} 
+\index{TRAIterator@{TRAIterator}!cell@{cell}}
+\index{cell@{cell}!TRAIterator@{TRAIterator}}
+\doxysubsubsection{\texorpdfstring{cell}{cell}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain_cell}{Terrain\+Cell}} T\+R\+A\+Iterator\+::cell\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_t_r_a_iterator_8h}{T\+R\+A\+Iterator.\+h}}\item 
+\mbox{\hyperlink{_t_r_a_iterator_8cpp}{T\+R\+A\+Iterator.\+cpp}}\end{DoxyCompactItemize}

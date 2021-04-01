@@ -1,0 +1,4 @@
+<map id="Scene::SubmitCommand" name="Scene::SubmitCommand">
+<area shape="rect" id="node1" title="Submit command." alt="" coords="5,13,172,39"/>
+<area shape="rect" id="node2" href="$class_scene_registration_broker.html#a2de26f860998866920e681e330d3dac3" title="Adds a command." alt="" coords="220,5,387,47"/>
+</map>

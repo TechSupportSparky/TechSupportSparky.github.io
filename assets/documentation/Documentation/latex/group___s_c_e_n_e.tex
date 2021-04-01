@@ -1,0 +1,55 @@
+\hypertarget{group___s_c_e_n_e}{}\doxysection{Scene}
+\label{group___s_c_e_n_e}\index{Scene@{Scene}}
+
+
+The place where everything lives.  
+
+
+Collaboration diagram for Scene\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{group___s_c_e_n_e}
+\end{center}
+\end{figure}
+The place where everything lives. 
+
+The scene is the starting place to create Game\+Objects. A scene can be a menu, a level, or even the credits.
+
+Getting started with a scene is easy! Pick a name for a scene and inherit from the \mbox{\hyperlink{class_scene}{Scene}} class and overload the various virtual functions derived from \mbox{\hyperlink{class_scene}{Scene}}. For example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }Frigate; \textcolor{comment}{// Forward declaration    }}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }SceneTest : \textcolor{keyword}{public} \mbox{\hyperlink{class_scene}{Scene}} \{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{    \textcolor{comment}{// Big four}}
+\DoxyCodeLine{    SceneTest() \{\}; \textcolor{comment}{// Member initialization takes place in the Initialize function, not at construction.}}
+\DoxyCodeLine{    SceneTest(\textcolor{keyword}{const} SceneTest\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    SceneTest\& \mbox{\hyperlink{class_scene_a9e8d2978197a3cd67a4203ab6c7425e7}{operator= }}(\textcolor{keyword}{const} SceneTest\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    \string~SceneTest() \{\}; \textcolor{comment}{// Cleanup of game objects takes place in SceneEnd() instead of deconstruction. }}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_aafd7510b1309c6ba864791c429870959}{Initialize}}() \textcolor{keyword}{override}; \textcolor{comment}{// Setup game object parameters}}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_aedaeb93be94ac521c34a5ffd5168d178}{SceneEnd}}() \textcolor{keyword}{override};   \textcolor{comment}{// Cleanup game object parameters}}
+\DoxyCodeLine{    }
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{    Frigate *pFrigate; \textcolor{comment}{// The game object}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+Within the implementation of this scene, we setup the Initialize and Scene\+End functions. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} SceneTest::Initialize() \{}
+\DoxyCodeLine{    pFrigate = \textcolor{keyword}{new} Frigate();}
+\DoxyCodeLine{    pFrigate.setPosition(Vect(40, 10, 40));}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{    }
+\DoxyCodeLine{\textcolor{keywordtype}{void} SceneTest::SceneEnd() \{}
+\DoxyCodeLine{    \textcolor{keyword}{delete} pFrigate;}
+\DoxyCodeLine{\} }
+\end{DoxyCode}
+
+
+See the full class for Scene \mbox{\hyperlink{class_scene}{here}}. 

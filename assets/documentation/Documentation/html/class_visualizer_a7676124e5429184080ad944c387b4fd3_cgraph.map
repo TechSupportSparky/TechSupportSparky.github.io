@@ -1,0 +1,9 @@
+<map id="Visualizer::privRenderBSphere" name="Visualizer::privRenderBSphere">
+<area shape="rect" id="node1" title="Private call render b sphere." alt="" coords="5,78,203,105"/>
+<area shape="rect" id="node2" href="$class_collision_volume_b_sphere.html#a402765fc07a14cac53aef1dec725e0c4" title="Gets the center." alt="" coords="258,5,423,47"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="251,71,431,112"/>
+<area shape="rect" id="node7" href="$class_collision_volume_b_sphere.html#a80a12a6234a934af889e9cf1e5ffd684" title="Gets the radius." alt="" coords="258,136,423,177"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="495,49,661,75"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="479,100,677,141"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="725,49,929,75"/>
+</map>

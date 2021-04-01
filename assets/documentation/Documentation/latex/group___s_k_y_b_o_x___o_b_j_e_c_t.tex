@@ -1,0 +1,23 @@
+\hypertarget{group___s_k_y_b_o_x___o_b_j_e_c_t}{}\doxysection{Sky\+Box\+Object}
+\label{group___s_k_y_b_o_x___o_b_j_e_c_t}\index{SkyBoxObject@{SkyBoxObject}}
+Collaboration diagram for Sky\+Box\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{group___s_k_y_b_o_x___o_b_j_e_c_t}
+\end{center}
+\end{figure}
+The Sky\+Box\+Object is a \mbox{\hyperlink{class_sky_box}{Sky\+Box}} that is internally maintained by the \mbox{\hyperlink{class_sly}{Sly}} Engine. An example of loading a \mbox{\hyperlink{class_sky_box}{Sky\+Box}} object is as follows\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "SkyBoxObjectManager.h"}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_sly_a2f502a5aa9cd07dcc29858a104827213}{Sly::LoadAllResources}}() \{}
+\DoxyCodeLine{    \mbox{\hyperlink{class_texture_manager_a3005389b043a4022a7f36458d84696ac}{TextureManager::Load}}(\textcolor{stringliteral}{"desertTexture"}, \textcolor{stringliteral}{"SkyboxDesert.tga"});}
+\DoxyCodeLine{    \mbox{\hyperlink{class_sky_box_asset_manager_ae218b02df9566e72788dac1f2b32d851}{SkyBoxAssetManager::Load}}(\textcolor{stringliteral}{"Desert"}, \textcolor{stringliteral}{"desertTexture"}, 2000, 0);}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+The above line of code will generate a \mbox{\hyperlink{class_sky_box}{Sky\+Box}} with a \char`\"{}desert\char`\"{} texture. Note, the \mbox{\hyperlink{class_sky_box}{Sky\+Box}} object merely wraps the given texture to a cube, thus the format of the image must adhere to a standard \mbox{\hyperlink{class_sky_box}{Sky\+Box}} image. The \mbox{\hyperlink{class_sky_box}{Sky\+Box}} is of size 2000 with a y offset (altitude) of 0. 

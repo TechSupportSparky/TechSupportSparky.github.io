@@ -1,0 +1,7 @@
+<map id="Visualizer::Terminate" name="Visualizer::Terminate">
+<area shape="rect" id="node1" title="Terminates this instance." alt="" coords="792,13,936,39"/>
+<area shape="rect" id="node2" href="$class_visualizer_attorney_1_1_end.html#a4e89eb1969759d40947ba9571cebe896" title=" " alt="" coords="616,5,744,47"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#ae637b8ddc620e5903c1b44293f56bf08" title="Private delete." alt="" coords="395,13,568,39"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#aefba8a3a94173f0dc139220284d214e2" title="Deletes the scene swap commands and pointer instance." alt="" coords="192,13,347,39"/>
+<area shape="rect" id="node5" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="5,13,144,39"/>
+</map>

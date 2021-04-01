@@ -1,0 +1,7 @@
+<map id="ScreenPanelFactory::ReturnPanel" name="ScreenPanelFactory::ReturnPanel">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,145,80"/>
+<area shape="rect" id="node2" href="$class_screen_panel_factory.html#a9ef7d218833f73d13a050eed3845165b" title="Gets the instance of ScreenPanelFactory." alt="" coords="193,5,333,47"/>
+<area shape="rect" id="node4" href="$class_screen_panel_factory.html#a2f88c734cff9cbea96ae45b47bcdc18f" title=" " alt="" coords="193,71,333,112"/>
+<area shape="rect" id="node3" href="$class_screen_panel_factory.html#a0ecb2fc668abf8e9b035fb32cb73ae0a" title="Default constructor." alt="" coords="404,5,552,47"/>
+<area shape="rect" id="node5" href="$class_panel_object_pool.html#a6519aff600f8872502c928716e4abdcd" title=" " alt="" coords="381,78,575,105"/>
+</map>

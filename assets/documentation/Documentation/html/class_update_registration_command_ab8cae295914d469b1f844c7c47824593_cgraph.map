@@ -1,0 +1,11 @@
+<map id="UpdateRegistrationCommand::execute" name="UpdateRegistrationCommand::execute">
+<area shape="rect" id="node1" title="Executes this" alt="" coords="5,57,196,98"/>
+<area shape="rect" id="node2" href="$class_updatable_attorney_1_1_registration.html#a2dbd3c390dedb13ba97c15c297edddd1" title=" " alt="" coords="244,57,449,98"/>
+<area shape="rect" id="node3" href="$class_updatable.html#a16534a7b64346e19b6182d7e1e6c7723" title="Scene registration." alt="" coords="497,64,692,91"/>
+<area shape="rect" id="node4" href="$class_scene_attorney_1_1_updatable_registration.html#adc0ad1efa898756cfb4b80390c1bc6fa" title=" " alt="" coords="742,27,925,69"/>
+<area shape="rect" id="node9" href="$class_updatable_manager.html#ae135907d44e82d80bcaf3552c9c00e76" title="Registers this." alt="" coords="740,93,927,120"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="975,27,1155,69"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="1219,5,1385,32"/>
+<area shape="rect" id="node8" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="1203,57,1401,98"/>
+<area shape="rect" id="node7" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="1449,5,1653,32"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="ScreenPanelFactory" name="ScreenPanelFactory">
+<area shape="rect" id="node1" title=" " alt="" coords="106,1520,270,1803"/>
+<area shape="rect" id="node2" href="$class_panel_object_pool.html" title=" " alt="" coords="115,1277,261,1457"/>
+<area shape="rect" id="node3" title=" " alt="" coords="95,1137,281,1215"/>
+<area shape="rect" id="node4" href="$class_screen_panel.html" title=" " alt="" coords="126,792,250,1075"/>
+<area shape="rect" id="node5" href="$class_sprite_font.html" title=" " alt="" coords="21,549,160,729"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,409,176,487"/>
+<area shape="rect" id="node7" href="$class_sly_sprite.html" title=" " alt="" coords="33,5,149,347"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="204,409,284,487"/>
+<area shape="rect" id="node10" title=" " alt="" coords="185,601,349,678"/>
+<area shape="rect" id="node9" title="STL class." alt="" coords="181,130,307,222"/>
+</map>

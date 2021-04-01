@@ -1,0 +1,4 @@
+<map id="Scene::ProcessGodCam" name="Scene::ProcessGodCam">
+<area shape="rect" id="node1" title="Process the god camera." alt="" coords="5,13,172,39"/>
+<area shape="rect" id="node2" href="$class_camera_manager.html#a8763ba7f2776e7f224f1d09b452e6e6c" title="Process the god camera." alt="" coords="220,5,417,47"/>
+</map>

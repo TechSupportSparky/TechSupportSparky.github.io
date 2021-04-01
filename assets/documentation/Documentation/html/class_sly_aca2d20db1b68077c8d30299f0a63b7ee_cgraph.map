@@ -1,0 +1,5 @@
+<map id="Sly::SetWindowName" name="Sly::SetWindowName">
+<area shape="rect" id="node1" title="Sets window name." alt="" coords="5,29,155,56"/>
+<area shape="rect" id="node2" href="$class_sly.html#a1d59581314e3040746c9a40b2d9a2577" title="Gets the instance." alt="" coords="203,29,301,56"/>
+<area shape="rect" id="node3" href="$class_sly.html#a50e7c55c362cf0a3dec26ad4e77370e0" title="Default constructor." alt="" coords="349,29,417,56"/>
+</map>

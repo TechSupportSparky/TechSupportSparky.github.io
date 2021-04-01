@@ -1,0 +1,802 @@
+\hypertarget{class_scene_manager}{}\doxysection{Scene\+Manager Class Reference}
+\label{class_scene_manager}\index{SceneManager@{SceneManager}}
+
+
+{\ttfamily \#include $<$Scene\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Scene\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_scene_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_scene_manager_aff7da0d699248ad14e9d99fd12f2284d}{Init\+Start\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the start scene. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_scene}{Scene}} $\ast$ \mbox{\hyperlink{class_scene_manager_a547a841067e4c8f44be20fbebd15f9fa}{Get\+Current\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Gets current scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_manager_a52689af75e2f40c9ccd99d985fa77a2d}{Set\+Start\+Scene}} (\mbox{\hyperlink{class_scene}{Scene}} $\ast$start\+Scene)
+\begin{DoxyCompactList}\small\item\em Sets start scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_manager_a5254df5df6700fee4ad13692901bb0c7}{Set\+Next\+Scene}} (\mbox{\hyperlink{class_scene}{Scene}} $\ast$next\+Scene)
+\begin{DoxyCompactList}\small\item\em Sets next scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_manager_ab61cbf725d6649c4fea3a61159baa404}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Calls the main update loop for the current scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_manager_a459d07314249b308793274d303db1fb6}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em Calls the current scene\textquotesingle{}s draw loop. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_manager_aefba8a3a94173f0dc139220284d214e2}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em Deletes the scene swap commands and pointer instance. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_manager_a5637820d98428183b76f178b15312e84}{Load\+Default}} ()
+\begin{DoxyCompactList}\small\item\em Loads the default scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_manager_ac8258eb6b8bec75bd018fa7d28b516d3}{Set\+Default}} (\mbox{\hyperlink{class_scene}{Scene}} $\ast$new\+Scene)
+\begin{DoxyCompactList}\small\item\em Sets up what scene should be loaded as the default startup. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_manager_a2417742d3fef90ea663bba247cebb0ee}{Setup\+God\+Cam}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_manager_a52085e6737c23b491c228e86781af808}{Scene\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_manager_a453ab6cc351aa4a8a2dd5d44bcf929f3}{Scene\+Manager}} (const \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_manager_a18e52fac4a453fa5cd6a9ae2f9ab6cb8}{Scene\+Manager}} (\mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \& \mbox{\hyperlink{class_scene_manager_af12069bf78e076bd8d6ba0fe1a00d7f1}{operator=}} (const \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \& \mbox{\hyperlink{class_scene_manager_aa4fbe5f61cefd4ae258052db9a584f45}{operator=}} (\mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_manager_a28343dd605fcb93f6536424ad9d91c76}{$\sim$\+Scene\+Manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a2aaa0ac57ba8558468461515d88568ae}{priv\+Init\+Start\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Private initialize start scene. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene}{Scene}} $\ast$ \mbox{\hyperlink{class_scene_manager_ac24e8ef292407a7d5902c23e1ae3bee7}{priv\+Get\+Current\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Priv get current scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_abf7a57d08b171214c90586edb9c6c486}{priv\+Set\+Start\+Scene}} (\mbox{\hyperlink{class_scene}{Scene}} $\ast$start\+Scene)
+\begin{DoxyCompactList}\small\item\em Private set start scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_ae6e47dd4f04aa6250b5873bfa5cd60f3}{priv\+Set\+Next\+Scene}} (\mbox{\hyperlink{class_scene}{Scene}} $\ast$next\+Scene)
+\begin{DoxyCompactList}\small\item\em Private set next scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a5b6d93729bec795ce2576d37d2a56236}{priv\+Change\+Scene}} (\mbox{\hyperlink{class_scene}{Scene}} $\ast$next\+Scene)
+\begin{DoxyCompactList}\small\item\em Private change scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_af23e516129cec83e0a301ec6a987ab77}{priv\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Priv update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a237c3ab9c40ae879f04b4c7adec701f3}{priv\+Draw}} ()
+\begin{DoxyCompactList}\small\item\em Private draw. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a2aa6f66a72fb0a3a7458d1053c9a58f5}{priv\+Reload\+Default}} ()
+\begin{DoxyCompactList}\small\item\em Priv reload default. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a6d03392112fc954910194a8bbd94eda5}{priv\+Set\+Default}} (\mbox{\hyperlink{class_scene}{Scene}} $\ast$new\+Scene)
+\begin{DoxyCompactList}\small\item\em Priv set default. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a9ddef0643e3927f519b9a9bc17483f74}{priv\+Setup\+God\+Cam}} ()
+\begin{DoxyCompactList}\small\item\em Private call to setup god camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_ae637b8ddc620e5903c1b44293f56bf08}{priv\+Delete}} ()
+\begin{DoxyCompactList}\small\item\em Private delete. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \& \mbox{\hyperlink{class_scene_manager_a2c16c811641825fa41e28cd7aab197d0}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene}{Scene}} $\ast$ \mbox{\hyperlink{class_scene_manager_ab5526af2f616d2876ba4a4f725b1d672}{p\+Default\+Scene}}
+\begin{DoxyCompactList}\small\item\em Starter scene. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene}{Scene}} $\ast$ \mbox{\hyperlink{class_scene_manager_a2e75ae888b6345757f36f64498ef03fe}{p\+Current\+Scene}}
+\begin{DoxyCompactList}\small\item\em Keeps track of the current\+Scene registered. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_change_null_command}{Scene\+Change\+Null\+Command}} $\ast$ \mbox{\hyperlink{class_scene_manager_aa54be9b2edceb89202ac8a4fc4cdcf32}{p\+Command\+Null}}
+\begin{DoxyCompactList}\small\item\em Non\+Op command for swapping the scene. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_change_command_swap}{Scene\+Change\+Command\+Swap}} $\ast$ \mbox{\hyperlink{class_scene_manager_a456b90f5b2def05fc63bd955f0896924}{p\+Command\+Swap}}
+\begin{DoxyCompactList}\small\item\em Command to swap to a new scene. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_change_command_base}{Scene\+Change\+Command\+Base}} $\ast$ \mbox{\hyperlink{class_scene_manager_a8253d392cf987985438787a3ffff2b64}{p\+Command\+Base}}
+\begin{DoxyCompactList}\small\item\em Base command for Swap and Null commands. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} $\ast$ \mbox{\hyperlink{class_scene_manager_adb602cbbc97d4b9b0a9374365f15a78b}{ptr\+Instance}} = nullptr
+\begin{DoxyCompactList}\small\item\em The pointer instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_scene_manager_a30165f059417f4ed57a7ab134669d7e4}{Scene\+Manager\+Attorney}}
+\begin{DoxyCompactList}\small\item\em Dictates the usage of \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} internals. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scene_manager_a52085e6737c23b491c228e86781af808}\label{class_scene_manager_a52085e6737c23b491c228e86781af808}} 
+\index{SceneManager@{SceneManager}!SceneManager@{SceneManager}}
+\index{SceneManager@{SceneManager}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{SceneManager()}{SceneManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Scene\+Manager\+::\+Scene\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Default constructor. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a52085e6737c23b491c228e86781af808_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_a453ab6cc351aa4a8a2dd5d44bcf929f3}\label{class_scene_manager_a453ab6cc351aa4a8a2dd5d44bcf929f3}} 
+\index{SceneManager@{SceneManager}!SceneManager@{SceneManager}}
+\index{SceneManager@{SceneManager}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{SceneManager()}{SceneManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Scene\+Manager\+::\+Scene\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_scene_manager_a18e52fac4a453fa5cd6a9ae2f9ab6cb8}\label{class_scene_manager_a18e52fac4a453fa5cd6a9ae2f9ab6cb8}} 
+\index{SceneManager@{SceneManager}!SceneManager@{SceneManager}}
+\index{SceneManager@{SceneManager}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{SceneManager()}{SceneManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Scene\+Manager\+::\+Scene\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_scene_manager_a28343dd605fcb93f6536424ad9d91c76}\label{class_scene_manager_a28343dd605fcb93f6536424ad9d91c76}} 
+\index{SceneManager@{SceneManager}!````~SceneManager@{$\sim$SceneManager}}
+\index{````~SceneManager@{$\sim$SceneManager}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$SceneManager()}{~SceneManager()}}
+{\footnotesize\ttfamily Scene\+Manager\+::$\sim$\+Scene\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_manager_aefba8a3a94173f0dc139220284d214e2}\label{class_scene_manager_aefba8a3a94173f0dc139220284d214e2}} 
+\index{SceneManager@{SceneManager}!Delete@{Delete}}
+\index{Delete@{Delete}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily static void Scene\+Manager\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Deletes the scene swap commands and pointer instance. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_aefba8a3a94173f0dc139220284d214e2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_scene_manager_aefba8a3a94173f0dc139220284d214e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_a459d07314249b308793274d303db1fb6}\label{class_scene_manager_a459d07314249b308793274d303db1fb6}} 
+\index{SceneManager@{SceneManager}!Draw@{Draw}}
+\index{Draw@{Draw}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily static void Scene\+Manager\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Calls the current scene\textquotesingle{}s draw loop. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a459d07314249b308793274d303db1fb6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_scene_manager_a459d07314249b308793274d303db1fb6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_a547a841067e4c8f44be20fbebd15f9fa}\label{class_scene_manager_a547a841067e4c8f44be20fbebd15f9fa}} 
+\index{SceneManager@{SceneManager}!GetCurrentScene@{GetCurrentScene}}
+\index{GetCurrentScene@{GetCurrentScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{GetCurrentScene()}{GetCurrentScene()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_scene}{Scene}} $\ast$ Scene\+Manager\+::\+Get\+Current\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets current scene. 
+
+\begin{DoxyReturn}{Returns}
+Null if it fails, else the current scene. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a547a841067e4c8f44be20fbebd15f9fa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a547a841067e4c8f44be20fbebd15f9fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_aff7da0d699248ad14e9d99fd12f2284d}\label{class_scene_manager_aff7da0d699248ad14e9d99fd12f2284d}} 
+\index{SceneManager@{SceneManager}!InitStartScene@{InitStartScene}}
+\index{InitStartScene@{InitStartScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{InitStartScene()}{InitStartScene()}}
+{\footnotesize\ttfamily static void Scene\+Manager\+::\+Init\+Start\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Initializes the start scene. 
+
+Starts up the first scene. First scene is defined within this function which is passed to p\+Current\+Scene. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_aff7da0d699248ad14e9d99fd12f2284d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_a2c16c811641825fa41e28cd7aab197d0}\label{class_scene_manager_a2c16c811641825fa41e28cd7aab197d0}} 
+\index{SceneManager@{SceneManager}!Instance@{Instance}}
+\index{Instance@{Instance}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \& Scene\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the instance. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a2c16c811641825fa41e28cd7aab197d0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_scene_manager_a2c16c811641825fa41e28cd7aab197d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_a5637820d98428183b76f178b15312e84}\label{class_scene_manager_a5637820d98428183b76f178b15312e84}} 
+\index{SceneManager@{SceneManager}!LoadDefault@{LoadDefault}}
+\index{LoadDefault@{LoadDefault}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{LoadDefault()}{LoadDefault()}}
+{\footnotesize\ttfamily static void Scene\+Manager\+::\+Load\+Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Loads the default scene. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a5637820d98428183b76f178b15312e84_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a5637820d98428183b76f178b15312e84_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_af12069bf78e076bd8d6ba0fe1a00d7f1}\label{class_scene_manager_af12069bf78e076bd8d6ba0fe1a00d7f1}} 
+\index{SceneManager@{SceneManager}!operator=@{operator=}}
+\index{operator=@{operator=}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}}\& Scene\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_scene_manager_aa4fbe5f61cefd4ae258052db9a584f45}\label{class_scene_manager_aa4fbe5f61cefd4ae258052db9a584f45}} 
+\index{SceneManager@{SceneManager}!operator=@{operator=}}
+\index{operator=@{operator=}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}}\& Scene\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_scene_manager_a5b6d93729bec795ce2576d37d2a56236}\label{class_scene_manager_a5b6d93729bec795ce2576d37d2a56236}} 
+\index{SceneManager@{SceneManager}!privChangeScene@{privChangeScene}}
+\index{privChangeScene@{privChangeScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{privChangeScene()}{privChangeScene()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::priv\+Change\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} $\ast$}]{next\+Scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private change scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em next\+Scene} & The next scene to be loaded.\\
+\hline
+\end{DoxyParams}
+Performs the act of closing the current scene and starting the next one. The scene Initialization is called here. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a5b6d93729bec795ce2576d37d2a56236_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a5b6d93729bec795ce2576d37d2a56236_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_ae637b8ddc620e5903c1b44293f56bf08}\label{class_scene_manager_ae637b8ddc620e5903c1b44293f56bf08}} 
+\index{SceneManager@{SceneManager}!privDelete@{privDelete}}
+\index{privDelete@{privDelete}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{privDelete()}{privDelete()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::priv\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private delete. 
+
+Deletes the existing commands and the pointer instance for \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}}. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_ae637b8ddc620e5903c1b44293f56bf08_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_ae637b8ddc620e5903c1b44293f56bf08_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_a237c3ab9c40ae879f04b4c7adec701f3}\label{class_scene_manager_a237c3ab9c40ae879f04b4c7adec701f3}} 
+\index{SceneManager@{SceneManager}!privDraw@{privDraw}}
+\index{privDraw@{privDraw}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{privDraw()}{privDraw()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::priv\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private draw. 
+
+Calls draw on the current scene. ~\newline
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a237c3ab9c40ae879f04b4c7adec701f3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a237c3ab9c40ae879f04b4c7adec701f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_ac24e8ef292407a7d5902c23e1ae3bee7}\label{class_scene_manager_ac24e8ef292407a7d5902c23e1ae3bee7}} 
+\index{SceneManager@{SceneManager}!privGetCurrentScene@{privGetCurrentScene}}
+\index{privGetCurrentScene@{privGetCurrentScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{privGetCurrentScene()}{privGetCurrentScene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene}{Scene}} $\ast$ Scene\+Manager\+::priv\+Get\+Current\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Priv get current scene. 
+
+\begin{DoxyReturn}{Returns}
+Null if it fails, else a pointer to the current \mbox{\hyperlink{class_scene}{Scene}}. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_ac24e8ef292407a7d5902c23e1ae3bee7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_a2aaa0ac57ba8558468461515d88568ae}\label{class_scene_manager_a2aaa0ac57ba8558468461515d88568ae}} 
+\index{SceneManager@{SceneManager}!privInitStartScene@{privInitStartScene}}
+\index{privInitStartScene@{privInitStartScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{privInitStartScene()}{privInitStartScene()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::priv\+Init\+Start\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private initialize start scene. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_scene_manager_a2aaa0ac57ba8558468461515d88568ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a2aaa0ac57ba8558468461515d88568ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_a2aa6f66a72fb0a3a7458d1053c9a58f5}\label{class_scene_manager_a2aa6f66a72fb0a3a7458d1053c9a58f5}} 
+\index{SceneManager@{SceneManager}!privReloadDefault@{privReloadDefault}}
+\index{privReloadDefault@{privReloadDefault}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{privReloadDefault()}{privReloadDefault()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::priv\+Reload\+Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Priv reload default. 
+
+Deletes the current scene and loads the default back ~\newline
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a2aa6f66a72fb0a3a7458d1053c9a58f5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a2aa6f66a72fb0a3a7458d1053c9a58f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_a6d03392112fc954910194a8bbd94eda5}\label{class_scene_manager_a6d03392112fc954910194a8bbd94eda5}} 
+\index{SceneManager@{SceneManager}!privSetDefault@{privSetDefault}}
+\index{privSetDefault@{privSetDefault}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{privSetDefault()}{privSetDefault()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::priv\+Set\+Default (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} $\ast$}]{new\+Scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Priv set default. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em new\+Scene} & If non-\/null, the new scene.\\
+\hline
+\end{DoxyParams}
+Sets the default scene to the user specified one ~\newline
+ Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a6d03392112fc954910194a8bbd94eda5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_ae6e47dd4f04aa6250b5873bfa5cd60f3}\label{class_scene_manager_ae6e47dd4f04aa6250b5873bfa5cd60f3}} 
+\index{SceneManager@{SceneManager}!privSetNextScene@{privSetNextScene}}
+\index{privSetNextScene@{privSetNextScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{privSetNextScene()}{privSetNextScene()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::priv\+Set\+Next\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} $\ast$}]{next\+Scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private set next scene. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em next\+Scene} & If non-\/null, the next scene.\\
+\hline
+\end{DoxyParams}
+Readies the command for a scene change. p\+Command\+Swap is initialized with the next scene data.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_scene_manager_ae6e47dd4f04aa6250b5873bfa5cd60f3}{SceneManager::privSetNextScene}}(\mbox{\hyperlink{class_scene}{Scene}}* nextScene) \{}
+\DoxyCodeLine{    \textcolor{comment}{// Does not allow double scene registry.}}
+\DoxyCodeLine{    assert(\mbox{\hyperlink{class_scene_manager_a8253d392cf987985438787a3ffff2b64}{pCommandBase}} == \mbox{\hyperlink{class_scene_manager_aa54be9b2edceb89202ac8a4fc4cdcf32}{pCommandNull}} \&\& \textcolor{stringliteral}{"Double Scene Change Requested, not allowed."});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Set the scene change command (for the next frame) to swap to next scene.}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_scene_manager_a456b90f5b2def05fc63bd955f0896924}{pCommandSwap}}-\/>\mbox{\hyperlink{class_scene_change_command_swap_a9a47ff1daa88a1d782007eb3094b0753}{Initialize}}(\textcolor{keyword}{this}, nextScene);}
+\DoxyCodeLine{    \mbox{\hyperlink{class_scene_manager_a8253d392cf987985438787a3ffff2b64}{pCommandBase}} = \mbox{\hyperlink{class_scene_manager_a456b90f5b2def05fc63bd955f0896924}{pCommandSwap}};}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_ae6e47dd4f04aa6250b5873bfa5cd60f3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_ae6e47dd4f04aa6250b5873bfa5cd60f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_abf7a57d08b171214c90586edb9c6c486}\label{class_scene_manager_abf7a57d08b171214c90586edb9c6c486}} 
+\index{SceneManager@{SceneManager}!privSetStartScene@{privSetStartScene}}
+\index{privSetStartScene@{privSetStartScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{privSetStartScene()}{privSetStartScene()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::priv\+Set\+Start\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} $\ast$}]{start\+Scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private set start scene. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em start\+Scene} & If non-\/null, the start scene. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_abf7a57d08b171214c90586edb9c6c486_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_a9ddef0643e3927f519b9a9bc17483f74}\label{class_scene_manager_a9ddef0643e3927f519b9a9bc17483f74}} 
+\index{SceneManager@{SceneManager}!privSetupGodCam@{privSetupGodCam}}
+\index{privSetupGodCam@{privSetupGodCam}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{privSetupGodCam()}{privSetupGodCam()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::priv\+Setup\+God\+Cam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private call to setup god camera. 
+
+Sets the god camera up for usage. Notably useful for the \char`\"{}noclip\char`\"{} command or \char`\"{}god camera command.\char`\"{} ~\newline
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a9ddef0643e3927f519b9a9bc17483f74_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a9ddef0643e3927f519b9a9bc17483f74_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_af23e516129cec83e0a301ec6a987ab77}\label{class_scene_manager_af23e516129cec83e0a301ec6a987ab77}} 
+\index{SceneManager@{SceneManager}!privUpdate@{privUpdate}}
+\index{privUpdate@{privUpdate}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{privUpdate()}{privUpdate()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::priv\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Priv update. 
+
+Executes the scene swap resulting in either a No\+Op or a scene change. Afterwards, called scene update. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_af23e516129cec83e0a301ec6a987ab77_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_af23e516129cec83e0a301ec6a987ab77_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_ac8258eb6b8bec75bd018fa7d28b516d3}\label{class_scene_manager_ac8258eb6b8bec75bd018fa7d28b516d3}} 
+\index{SceneManager@{SceneManager}!SetDefault@{SetDefault}}
+\index{SetDefault@{SetDefault}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{SetDefault()}{SetDefault()}}
+{\footnotesize\ttfamily static void Scene\+Manager\+::\+Set\+Default (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} $\ast$}]{new\+Scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sets up what scene should be loaded as the default startup. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em new\+Scene} & If non-\/null, the new scene.\\
+\hline
+\end{DoxyParams}
+This function was created with the \char`\"{}reload\char`\"{} console command in mind. ~\newline
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_ac8258eb6b8bec75bd018fa7d28b516d3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_a5254df5df6700fee4ad13692901bb0c7}\label{class_scene_manager_a5254df5df6700fee4ad13692901bb0c7}} 
+\index{SceneManager@{SceneManager}!SetNextScene@{SetNextScene}}
+\index{SetNextScene@{SetNextScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{SetNextScene()}{SetNextScene()}}
+{\footnotesize\ttfamily static void Scene\+Manager\+::\+Set\+Next\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} $\ast$}]{next\+Scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sets next scene. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em next\+Scene} & If non-\/null, the next scene. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a5254df5df6700fee4ad13692901bb0c7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a5254df5df6700fee4ad13692901bb0c7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_a52689af75e2f40c9ccd99d985fa77a2d}\label{class_scene_manager_a52689af75e2f40c9ccd99d985fa77a2d}} 
+\index{SceneManager@{SceneManager}!SetStartScene@{SetStartScene}}
+\index{SetStartScene@{SetStartScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{SetStartScene()}{SetStartScene()}}
+{\footnotesize\ttfamily static void Scene\+Manager\+::\+Set\+Start\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} $\ast$}]{start\+Scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sets start scene. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em start\+Scene} & If non-\/null, the start scene. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a52689af75e2f40c9ccd99d985fa77a2d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_a2417742d3fef90ea663bba247cebb0ee}\label{class_scene_manager_a2417742d3fef90ea663bba247cebb0ee}} 
+\index{SceneManager@{SceneManager}!SetupGodCam@{SetupGodCam}}
+\index{SetupGodCam@{SetupGodCam}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{SetupGodCam()}{SetupGodCam()}}
+{\footnotesize\ttfamily static void Scene\+Manager\+::\+Setup\+God\+Cam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a2417742d3fef90ea663bba247cebb0ee_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_a2417742d3fef90ea663bba247cebb0ee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_manager_ab61cbf725d6649c4fea3a61159baa404}\label{class_scene_manager_ab61cbf725d6649c4fea3a61159baa404}} 
+\index{SceneManager@{SceneManager}!Update@{Update}}
+\index{Update@{Update}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily static void Scene\+Manager\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Calls the main update loop for the current scene. 
+
+Checks for a scene change command and if present, executes it. Proceeds with calling the current scene\textquotesingle{}s update loop. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_manager_ab61cbf725d6649c4fea3a61159baa404_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{class_scene_manager_ab61cbf725d6649c4fea3a61159baa404_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_scene_manager_a30165f059417f4ed57a7ab134669d7e4}\label{class_scene_manager_a30165f059417f4ed57a7ab134669d7e4}} 
+\index{SceneManager@{SceneManager}!SceneManagerAttorney@{SceneManagerAttorney}}
+\index{SceneManagerAttorney@{SceneManagerAttorney}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{SceneManagerAttorney}{SceneManagerAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_scene_manager_attorney}{Scene\+Manager\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Dictates the usage of \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} internals. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_scene_manager_a8253d392cf987985438787a3ffff2b64}\label{class_scene_manager_a8253d392cf987985438787a3ffff2b64}} 
+\index{SceneManager@{SceneManager}!pCommandBase@{pCommandBase}}
+\index{pCommandBase@{pCommandBase}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{pCommandBase}{pCommandBase}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_change_command_base}{Scene\+Change\+Command\+Base}}$\ast$ Scene\+Manager\+::p\+Command\+Base\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Base command for Swap and Null commands. 
+
+\mbox{\Hypertarget{class_scene_manager_aa54be9b2edceb89202ac8a4fc4cdcf32}\label{class_scene_manager_aa54be9b2edceb89202ac8a4fc4cdcf32}} 
+\index{SceneManager@{SceneManager}!pCommandNull@{pCommandNull}}
+\index{pCommandNull@{pCommandNull}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{pCommandNull}{pCommandNull}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_change_null_command}{Scene\+Change\+Null\+Command}}$\ast$ Scene\+Manager\+::p\+Command\+Null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Non\+Op command for swapping the scene. 
+
+\mbox{\Hypertarget{class_scene_manager_a456b90f5b2def05fc63bd955f0896924}\label{class_scene_manager_a456b90f5b2def05fc63bd955f0896924}} 
+\index{SceneManager@{SceneManager}!pCommandSwap@{pCommandSwap}}
+\index{pCommandSwap@{pCommandSwap}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{pCommandSwap}{pCommandSwap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_change_command_swap}{Scene\+Change\+Command\+Swap}}$\ast$ Scene\+Manager\+::p\+Command\+Swap\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Command to swap to a new scene. 
+
+\mbox{\Hypertarget{class_scene_manager_a2e75ae888b6345757f36f64498ef03fe}\label{class_scene_manager_a2e75ae888b6345757f36f64498ef03fe}} 
+\index{SceneManager@{SceneManager}!pCurrentScene@{pCurrentScene}}
+\index{pCurrentScene@{pCurrentScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{pCurrentScene}{pCurrentScene}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene}{Scene}}$\ast$ Scene\+Manager\+::p\+Current\+Scene\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Keeps track of the current\+Scene registered. 
+
+\mbox{\Hypertarget{class_scene_manager_ab5526af2f616d2876ba4a4f725b1d672}\label{class_scene_manager_ab5526af2f616d2876ba4a4f725b1d672}} 
+\index{SceneManager@{SceneManager}!pDefaultScene@{pDefaultScene}}
+\index{pDefaultScene@{pDefaultScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{pDefaultScene}{pDefaultScene}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene}{Scene}}$\ast$ Scene\+Manager\+::p\+Default\+Scene\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Starter scene. 
+
+\mbox{\Hypertarget{class_scene_manager_adb602cbbc97d4b9b0a9374365f15a78b}\label{class_scene_manager_adb602cbbc97d4b9b0a9374365f15a78b}} 
+\index{SceneManager@{SceneManager}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} $\ast$ Scene\+Manager\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The pointer instance. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_scene_manager_8h}{Scene\+Manager.\+h}}\item 
+\mbox{\hyperlink{_scene_manager_8cpp}{Scene\+Manager.\+cpp}}\end{DoxyCompactItemize}

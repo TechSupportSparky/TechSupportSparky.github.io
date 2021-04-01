@@ -1,0 +1,539 @@
+\hypertarget{class_time_manager}{}\doxysection{Time\+Manager Class Reference}
+\label{class_time_manager}\index{TimeManager@{TimeManager}}
+
+
+{\ttfamily \#include $<$Time\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Time\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{class_time_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_time_manager_af9f601ffa516a272f224dc72b9dea24f}{Terminate}} ()
+\begin{DoxyCompactList}\small\item\em Terminates the singleton. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_time_manager_abc678da7dd58d16cea641f5f0d0392a7}{Get\+Frame\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Gets frame time. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_time_manager_a187b37ea46e36d1bba730d833ce82540}{Get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Gets the time. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_time_manager_a14e5786948c412a8b5c84cb092424a5d}{Process\+Time}} (float sys\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Process the time described by sys\+\_\+time. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_time_manager_ad72edceb51413e094376257da42fefd9}{Get\+Start\+Time}} ()
+\item 
+static int \mbox{\hyperlink{class_time_manager_ae275024a213c63c864076cea4874ceb8}{Get\+Frame\+Count}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_time_manager_a46d2773caea1858a19594d58d57404c2}{Time\+Manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_time_manager_a10508dcd4da65973c3c341adfe83cb8e}{Time\+Manager}} (const \mbox{\hyperlink{class_time_manager}{Time\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_time_manager_adc774ecccf2321201841199981e99b8a}{Time\+Manager}} (\mbox{\hyperlink{class_time_manager}{Time\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_time_manager}{Time\+Manager}} \& \mbox{\hyperlink{class_time_manager_a39ec2f9b8d5a8fd23f39b5622f0c0405}{operator=}} (const \mbox{\hyperlink{class_time_manager}{Time\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_time_manager}{Time\+Manager}} \& \mbox{\hyperlink{class_time_manager_a575886ca9e6f3de524ca8789a325e6b6}{operator=}} (\mbox{\hyperlink{class_time_manager}{Time\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_time_manager_aef36434a56af7840559b2d509177440f}{$\sim$\+Time\+Manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_time_manager_ad0168ebd321c1800dcefa0a431388973}{priv\+Terminate}} ()
+\begin{DoxyCompactList}\small\item\em Private terminate. Deletes Pointer instance. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_time_manager_a613cea801de384ab2608a34cbaab2444}{priv\+Get\+Frame\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Private get frame time. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_time_manager_a7e338d6167ec2bf8a00e967f27b5b59f}{priv\+Get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Private get time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_time_manager_abb2dec3e58a74f84c4c5c016b9dfdeaf}{priv\+Process\+Time}} (float sys\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Private process time. Take current\+Time -\/ previous\+Time. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_time_manager_a5f75b1e68dc6ad82188022336da1c079}{priv\+Get\+Start\+Time}} ()
+\item 
+int \mbox{\hyperlink{class_time_manager_a1d5db704a030d07dda5ac71b6840736c}{priv\+Get\+Frame\+Count}} ()
+\item 
+void \mbox{\hyperlink{class_time_manager_a2eb47fffc76b85a6cd05e464dc39d302}{priv\+Set\+Start\+Time}} (float new\+Start\+Time)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_time_manager}{Time\+Manager}} \& \mbox{\hyperlink{class_time_manager_ac06b0a182b394ddc0ac554ad090ee019}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the instance. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_time_manager_a3baf6fbb9150f09a678feb39e9ae7dac}{Set\+Start\+Time}} (float new\+Start\+Time)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_time_manager_afefd14377fac7cc8512ee211b4a94415}{current\+Time}}
+\begin{DoxyCompactList}\small\item\em Current time of the system given by the engine. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_time_manager_a6e3778c6398d2bf34c7660354cb65e03}{frame\+Time}}
+\begin{DoxyCompactList}\small\item\em Frame time of the engine, result of current\+Time -\/ previous\+Time. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_time_manager_aec1c1974ec4b187f1bf4ad0b71a47559}{previous\+Time}}
+\begin{DoxyCompactList}\small\item\em Time marker used by Freeze\+Time. \end{DoxyCompactList}\item 
+Freeze\+Time \mbox{\hyperlink{class_time_manager_a7bea32bd32ba938fd217a579b6d0ee4e}{Frz\+Time}}
+\begin{DoxyCompactList}\small\item\em Freeze\+Time module, used for Freeze\+Time\+::\+Get\+Time\+In\+Seconds() \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_time_manager_adb117dfb5bef689d01bc39e019982eb4}{start\+Time}}
+\item 
+int \mbox{\hyperlink{class_time_manager_ab70f31880167a57699c980363f7f993b}{frame\+Count}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_time_manager}{Time\+Manager}} $\ast$ \mbox{\hyperlink{class_time_manager_a7faa13c8a963953ddb5c41e278d70df2}{ptr\+Instance}} = nullptr
+\begin{DoxyCompactList}\small\item\em Singleton reference. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_time_manager_ae1beb2ce31de4e59492462dd5030436c}{Time\+Manager\+Attorney}}
+\begin{DoxyCompactList}\small\item\em Dictates access for Engine calls. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_time_manager_a46d2773caea1858a19594d58d57404c2}\label{class_time_manager_a46d2773caea1858a19594d58d57404c2}} 
+\index{TimeManager@{TimeManager}!TimeManager@{TimeManager}}
+\index{TimeManager@{TimeManager}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{TimeManager()}{TimeManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Time\+Manager\+::\+Time\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_a46d2773caea1858a19594d58d57404c2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_manager_a10508dcd4da65973c3c341adfe83cb8e}\label{class_time_manager_a10508dcd4da65973c3c341adfe83cb8e}} 
+\index{TimeManager@{TimeManager}!TimeManager@{TimeManager}}
+\index{TimeManager@{TimeManager}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{TimeManager()}{TimeManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Time\+Manager\+::\+Time\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_time_manager}{Time\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_time_manager_adc774ecccf2321201841199981e99b8a}\label{class_time_manager_adc774ecccf2321201841199981e99b8a}} 
+\index{TimeManager@{TimeManager}!TimeManager@{TimeManager}}
+\index{TimeManager@{TimeManager}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{TimeManager()}{TimeManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Time\+Manager\+::\+Time\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_time_manager}{Time\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_time_manager_aef36434a56af7840559b2d509177440f}\label{class_time_manager_aef36434a56af7840559b2d509177440f}} 
+\index{TimeManager@{TimeManager}!````~TimeManager@{$\sim$TimeManager}}
+\index{````~TimeManager@{$\sim$TimeManager}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$TimeManager()}{~TimeManager()}}
+{\footnotesize\ttfamily Time\+Manager\+::$\sim$\+Time\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_time_manager_ae275024a213c63c864076cea4874ceb8}\label{class_time_manager_ae275024a213c63c864076cea4874ceb8}} 
+\index{TimeManager@{TimeManager}!GetFrameCount@{GetFrameCount}}
+\index{GetFrameCount@{GetFrameCount}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{GetFrameCount()}{GetFrameCount()}}
+{\footnotesize\ttfamily static int Time\+Manager\+::\+Get\+Frame\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_ae275024a213c63c864076cea4874ceb8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_manager_abc678da7dd58d16cea641f5f0d0392a7}\label{class_time_manager_abc678da7dd58d16cea641f5f0d0392a7}} 
+\index{TimeManager@{TimeManager}!GetFrameTime@{GetFrameTime}}
+\index{GetFrameTime@{GetFrameTime}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{GetFrameTime()}{GetFrameTime()}}
+{\footnotesize\ttfamily static float Time\+Manager\+::\+Get\+Frame\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets frame time. 
+
+\begin{DoxyReturn}{Returns}
+The frame time. Calculated as a result of the current time minus a time marker dictated by Freeze\+Time. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_abc678da7dd58d16cea641f5f0d0392a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_manager_ad72edceb51413e094376257da42fefd9}\label{class_time_manager_ad72edceb51413e094376257da42fefd9}} 
+\index{TimeManager@{TimeManager}!GetStartTime@{GetStartTime}}
+\index{GetStartTime@{GetStartTime}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{GetStartTime()}{GetStartTime()}}
+{\footnotesize\ttfamily static float Time\+Manager\+::\+Get\+Start\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_ad72edceb51413e094376257da42fefd9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_manager_a187b37ea46e36d1bba730d833ce82540}\label{class_time_manager_a187b37ea46e36d1bba730d833ce82540}} 
+\index{TimeManager@{TimeManager}!GetTime@{GetTime}}
+\index{GetTime@{GetTime}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{GetTime()}{GetTime()}}
+{\footnotesize\ttfamily static float Time\+Manager\+::\+Get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the time. 
+
+\begin{DoxyReturn}{Returns}
+Returns the time as provided by the \mbox{\hyperlink{class_sly}{Sly}} Engine through priv\+Process\+Time. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_a187b37ea46e36d1bba730d833ce82540_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_a187b37ea46e36d1bba730d833ce82540_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_manager_ac06b0a182b394ddc0ac554ad090ee019}\label{class_time_manager_ac06b0a182b394ddc0ac554ad090ee019}} 
+\index{TimeManager@{TimeManager}!Instance@{Instance}}
+\index{Instance@{Instance}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_time_manager}{Time\+Manager}} \& Time\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the instance. 
+
+\begin{DoxyReturn}{Returns}
+A reference to a \mbox{\hyperlink{class_time_manager}{Time\+Manager}}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_ac06b0a182b394ddc0ac554ad090ee019_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_ac06b0a182b394ddc0ac554ad090ee019_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_manager_a39ec2f9b8d5a8fd23f39b5622f0c0405}\label{class_time_manager_a39ec2f9b8d5a8fd23f39b5622f0c0405}} 
+\index{TimeManager@{TimeManager}!operator=@{operator=}}
+\index{operator=@{operator=}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_time_manager}{Time\+Manager}}\& Time\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_time_manager}{Time\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_time_manager_a575886ca9e6f3de524ca8789a325e6b6}\label{class_time_manager_a575886ca9e6f3de524ca8789a325e6b6}} 
+\index{TimeManager@{TimeManager}!operator=@{operator=}}
+\index{operator=@{operator=}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_time_manager}{Time\+Manager}}\& Time\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_time_manager}{Time\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_time_manager_a1d5db704a030d07dda5ac71b6840736c}\label{class_time_manager_a1d5db704a030d07dda5ac71b6840736c}} 
+\index{TimeManager@{TimeManager}!privGetFrameCount@{privGetFrameCount}}
+\index{privGetFrameCount@{privGetFrameCount}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{privGetFrameCount()}{privGetFrameCount()}}
+{\footnotesize\ttfamily int Time\+Manager\+::priv\+Get\+Frame\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_a1d5db704a030d07dda5ac71b6840736c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_manager_a613cea801de384ab2608a34cbaab2444}\label{class_time_manager_a613cea801de384ab2608a34cbaab2444}} 
+\index{TimeManager@{TimeManager}!privGetFrameTime@{privGetFrameTime}}
+\index{privGetFrameTime@{privGetFrameTime}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{privGetFrameTime()}{privGetFrameTime()}}
+{\footnotesize\ttfamily float Time\+Manager\+::priv\+Get\+Frame\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private get frame time. 
+
+\begin{DoxyReturn}{Returns}
+A float frame\+Time. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_a613cea801de384ab2608a34cbaab2444_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_manager_a5f75b1e68dc6ad82188022336da1c079}\label{class_time_manager_a5f75b1e68dc6ad82188022336da1c079}} 
+\index{TimeManager@{TimeManager}!privGetStartTime@{privGetStartTime}}
+\index{privGetStartTime@{privGetStartTime}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{privGetStartTime()}{privGetStartTime()}}
+{\footnotesize\ttfamily float Time\+Manager\+::priv\+Get\+Start\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_a5f75b1e68dc6ad82188022336da1c079_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_manager_a7e338d6167ec2bf8a00e967f27b5b59f}\label{class_time_manager_a7e338d6167ec2bf8a00e967f27b5b59f}} 
+\index{TimeManager@{TimeManager}!privGetTime@{privGetTime}}
+\index{privGetTime@{privGetTime}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{privGetTime()}{privGetTime()}}
+{\footnotesize\ttfamily float Time\+Manager\+::priv\+Get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private get time. 
+
+\begin{DoxyReturn}{Returns}
+A float for system time (current\+Time). 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_a7e338d6167ec2bf8a00e967f27b5b59f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_manager_abb2dec3e58a74f84c4c5c016b9dfdeaf}\label{class_time_manager_abb2dec3e58a74f84c4c5c016b9dfdeaf}} 
+\index{TimeManager@{TimeManager}!privProcessTime@{privProcessTime}}
+\index{privProcessTime@{privProcessTime}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{privProcessTime()}{privProcessTime()}}
+{\footnotesize\ttfamily void Time\+Manager\+::priv\+Process\+Time (\begin{DoxyParamCaption}\item[{float}]{sys\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private process time. Take current\+Time -\/ previous\+Time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sys\+\_\+time} & The system time. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_abb2dec3e58a74f84c4c5c016b9dfdeaf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_manager_a2eb47fffc76b85a6cd05e464dc39d302}\label{class_time_manager_a2eb47fffc76b85a6cd05e464dc39d302}} 
+\index{TimeManager@{TimeManager}!privSetStartTime@{privSetStartTime}}
+\index{privSetStartTime@{privSetStartTime}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{privSetStartTime()}{privSetStartTime()}}
+{\footnotesize\ttfamily void Time\+Manager\+::priv\+Set\+Start\+Time (\begin{DoxyParamCaption}\item[{float}]{new\+Start\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_a2eb47fffc76b85a6cd05e464dc39d302_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_manager_ad0168ebd321c1800dcefa0a431388973}\label{class_time_manager_ad0168ebd321c1800dcefa0a431388973}} 
+\index{TimeManager@{TimeManager}!privTerminate@{privTerminate}}
+\index{privTerminate@{privTerminate}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{privTerminate()}{privTerminate()}}
+{\footnotesize\ttfamily void Time\+Manager\+::priv\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private terminate. Deletes Pointer instance. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_ad0168ebd321c1800dcefa0a431388973_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_manager_a14e5786948c412a8b5c84cb092424a5d}\label{class_time_manager_a14e5786948c412a8b5c84cb092424a5d}} 
+\index{TimeManager@{TimeManager}!ProcessTime@{ProcessTime}}
+\index{ProcessTime@{ProcessTime}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{ProcessTime()}{ProcessTime()}}
+{\footnotesize\ttfamily static void Time\+Manager\+::\+Process\+Time (\begin{DoxyParamCaption}\item[{float}]{sys\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Process the time described by sys\+\_\+time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sys\+\_\+time} & The system time. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_a14e5786948c412a8b5c84cb092424a5d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_a14e5786948c412a8b5c84cb092424a5d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_manager_a3baf6fbb9150f09a678feb39e9ae7dac}\label{class_time_manager_a3baf6fbb9150f09a678feb39e9ae7dac}} 
+\index{TimeManager@{TimeManager}!SetStartTime@{SetStartTime}}
+\index{SetStartTime@{SetStartTime}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{SetStartTime()}{SetStartTime()}}
+{\footnotesize\ttfamily static void Time\+Manager\+::\+Set\+Start\+Time (\begin{DoxyParamCaption}\item[{float}]{new\+Start\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_a3baf6fbb9150f09a678feb39e9ae7dac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_a3baf6fbb9150f09a678feb39e9ae7dac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_manager_af9f601ffa516a272f224dc72b9dea24f}\label{class_time_manager_af9f601ffa516a272f224dc72b9dea24f}} 
+\index{TimeManager@{TimeManager}!Terminate@{Terminate}}
+\index{Terminate@{Terminate}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{Terminate()}{Terminate()}}
+{\footnotesize\ttfamily static void Time\+Manager\+::\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Terminates the singleton. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_af9f601ffa516a272f224dc72b9dea24f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_manager_af9f601ffa516a272f224dc72b9dea24f_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_time_manager_ae1beb2ce31de4e59492462dd5030436c}\label{class_time_manager_ae1beb2ce31de4e59492462dd5030436c}} 
+\index{TimeManager@{TimeManager}!TimeManagerAttorney@{TimeManagerAttorney}}
+\index{TimeManagerAttorney@{TimeManagerAttorney}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{TimeManagerAttorney}{TimeManagerAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_time_manager_attorney}{Time\+Manager\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Dictates access for Engine calls. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_time_manager_afefd14377fac7cc8512ee211b4a94415}\label{class_time_manager_afefd14377fac7cc8512ee211b4a94415}} 
+\index{TimeManager@{TimeManager}!currentTime@{currentTime}}
+\index{currentTime@{currentTime}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{currentTime}{currentTime}}
+{\footnotesize\ttfamily float Time\+Manager\+::current\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Current time of the system given by the engine. 
+
+\mbox{\Hypertarget{class_time_manager_ab70f31880167a57699c980363f7f993b}\label{class_time_manager_ab70f31880167a57699c980363f7f993b}} 
+\index{TimeManager@{TimeManager}!frameCount@{frameCount}}
+\index{frameCount@{frameCount}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{frameCount}{frameCount}}
+{\footnotesize\ttfamily int Time\+Manager\+::frame\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_time_manager_a6e3778c6398d2bf34c7660354cb65e03}\label{class_time_manager_a6e3778c6398d2bf34c7660354cb65e03}} 
+\index{TimeManager@{TimeManager}!frameTime@{frameTime}}
+\index{frameTime@{frameTime}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{frameTime}{frameTime}}
+{\footnotesize\ttfamily float Time\+Manager\+::frame\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Frame time of the engine, result of current\+Time -\/ previous\+Time. 
+
+\mbox{\Hypertarget{class_time_manager_a7bea32bd32ba938fd217a579b6d0ee4e}\label{class_time_manager_a7bea32bd32ba938fd217a579b6d0ee4e}} 
+\index{TimeManager@{TimeManager}!FrzTime@{FrzTime}}
+\index{FrzTime@{FrzTime}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{FrzTime}{FrzTime}}
+{\footnotesize\ttfamily Freeze\+Time Time\+Manager\+::\+Frz\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Freeze\+Time module, used for Freeze\+Time\+::\+Get\+Time\+In\+Seconds() 
+
+\mbox{\Hypertarget{class_time_manager_aec1c1974ec4b187f1bf4ad0b71a47559}\label{class_time_manager_aec1c1974ec4b187f1bf4ad0b71a47559}} 
+\index{TimeManager@{TimeManager}!previousTime@{previousTime}}
+\index{previousTime@{previousTime}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{previousTime}{previousTime}}
+{\footnotesize\ttfamily float Time\+Manager\+::previous\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Time marker used by Freeze\+Time. 
+
+\mbox{\Hypertarget{class_time_manager_a7faa13c8a963953ddb5c41e278d70df2}\label{class_time_manager_a7faa13c8a963953ddb5c41e278d70df2}} 
+\index{TimeManager@{TimeManager}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_time_manager}{Time\+Manager}} $\ast$ Time\+Manager\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Singleton reference. 
+
+\mbox{\Hypertarget{class_time_manager_adb117dfb5bef689d01bc39e019982eb4}\label{class_time_manager_adb117dfb5bef689d01bc39e019982eb4}} 
+\index{TimeManager@{TimeManager}!startTime@{startTime}}
+\index{startTime@{startTime}!TimeManager@{TimeManager}}
+\doxysubsubsection{\texorpdfstring{startTime}{startTime}}
+{\footnotesize\ttfamily float Time\+Manager\+::start\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_time_manager_8h}{Time\+Manager.\+h}}\item 
+\mbox{\hyperlink{_time_manager_8cpp}{Time\+Manager.\+cpp}}\end{DoxyCompactItemize}

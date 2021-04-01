@@ -1,0 +1,5 @@
+<map id="SceneManager::privReloadDefault" name="SceneManager::privReloadDefault">
+<area shape="rect" id="node1" title="Priv reload default." alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$class_scene_manager.html#ae6e47dd4f04aa6250b5873bfa5cd60f3" title="Private set next scene." alt="" coords="229,5,412,47"/>
+<area shape="rect" id="node3" href="$class_scene_change_command_swap.html#a9a47ff1daa88a1d782007eb3094b0753" title="Initializes this." alt="" coords="460,5,655,47"/>
+</map>

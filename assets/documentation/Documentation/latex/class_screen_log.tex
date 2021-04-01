@@ -1,0 +1,440 @@
+\hypertarget{class_screen_log}{}\doxysection{Screen\+Log Class Reference}
+\label{class_screen_log}\index{ScreenLog@{ScreenLog}}
+
+
+{\ttfamily \#include $<$Screen\+Log.\+h$>$}
+
+
+
+Collaboration diagram for Screen\+Log\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_screen_log__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_screen_log_af56f1285a8ba6a2df19060a577752069}{Add}} (char $\ast$A,...)
+\item 
+static void \mbox{\hyperlink{class_screen_log_ade1efeb9dc30328957da354e950dc281}{Add}} (const char $\ast$A,...)
+\item 
+static \mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} $\ast$ \mbox{\hyperlink{class_screen_log_a219aef65a56295f4c17a5e8ec4ae266c}{Get\+New\+Panel}} (int \mbox{\hyperlink{class_screen_log_a250cde80c3c81f49f4165a02265c795e}{anchorX}}, int \mbox{\hyperlink{class_screen_log_a6bd81eed34f78977fe42edfa17b123fe}{anchorY}})
+\item 
+static \mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} $\ast$ \mbox{\hyperlink{class_screen_log_a09c56c2a207b8df89ca0b47a02c1823e}{Get\+New\+Panel}} (int \mbox{\hyperlink{class_screen_log_a250cde80c3c81f49f4165a02265c795e}{anchorX}}, int \mbox{\hyperlink{class_screen_log_a6bd81eed34f78977fe42edfa17b123fe}{anchorY}}, \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$\mbox{\hyperlink{class_screen_log_af9005bc954773951177b9c9e35f8848e}{font}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_screen_log_a83a30316b0b4d34d82757d764373463d}{Message\+Collection}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} $\ast$ $>$ \mbox{\hyperlink{class_screen_log_ab3cc0cfd697ae3f717658928d14b2afb}{Panel\+Collection}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_screen_log_a34611e5aaf9b3433c97a7c30b2404aa3}{Screen\+Log}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_screen_log_a346fe4a5fcf74f7e9c6acf154c9b2b27}{Screen\+Log}} (const \mbox{\hyperlink{class_screen_log}{Screen\+Log}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_screen_log_ad179711ce3dad4daaa57302615651bb0}{Screen\+Log}} (\mbox{\hyperlink{class_screen_log}{Screen\+Log}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_screen_log}{Screen\+Log}} \& \mbox{\hyperlink{class_screen_log_a1f79d8a9ee0943c39919fe8983647115}{operator=}} (const \mbox{\hyperlink{class_screen_log}{Screen\+Log}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_screen_log}{Screen\+Log}} \& \mbox{\hyperlink{class_screen_log_a09a65ffa65f6e6de89091dd64d1c098c}{operator=}} (\mbox{\hyperlink{class_screen_log}{Screen\+Log}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_screen_log_a5339de844937f3374a4f1154f798dc63}{$\sim$\+Screen\+Log}} ()=default
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen_log_a698bf2b2e712c6384b51d4d4b4ea9710}{priv\+Delete}} ()
+\item 
+void \mbox{\hyperlink{class_screen_log_aa9bd2d50559d4a2ba976210bc9333c73}{priv\+Render}} ()
+\item 
+\mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} $\ast$ \mbox{\hyperlink{class_screen_log_ab664d15dc1ec752f8879d7efbc58a418}{priv\+Get\+New\+Panel}} (int \mbox{\hyperlink{class_screen_log_a250cde80c3c81f49f4165a02265c795e}{anchorX}}, int \mbox{\hyperlink{class_screen_log_a6bd81eed34f78977fe42edfa17b123fe}{anchorY}})
+\item 
+\mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} $\ast$ \mbox{\hyperlink{class_screen_log_a07911efc6c3299fea680b6b36f890ff9}{priv\+Get\+New\+Panel}} (int \mbox{\hyperlink{class_screen_log_a250cde80c3c81f49f4165a02265c795e}{anchorX}}, int \mbox{\hyperlink{class_screen_log_a6bd81eed34f78977fe42edfa17b123fe}{anchorY}}, \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$\mbox{\hyperlink{class_screen_log_af9005bc954773951177b9c9e35f8848e}{font}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_screen_log}{Screen\+Log}} \& \mbox{\hyperlink{class_screen_log_a3cfa452c03111efa584cf3a648e74c34}{Instance}} ()
+\item 
+static void \mbox{\hyperlink{class_screen_log_ad017d1cd044509ee5dd47311c7816aca}{Delete}} ()
+\item 
+static void \mbox{\hyperlink{class_screen_log_a10ee301cc04b1bf1d780baa43ba0a07d}{Render}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$ \mbox{\hyperlink{class_screen_log_af9005bc954773951177b9c9e35f8848e}{font}}
+\item 
+\mbox{\hyperlink{class_screen_log_a83a30316b0b4d34d82757d764373463d}{Message\+Collection}} \mbox{\hyperlink{class_screen_log_a816534cdeaf744f37fdca3610b33c773}{messages}}
+\begin{DoxyCompactList}\small\item\em The messages. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_screen_log_ab3cc0cfd697ae3f717658928d14b2afb}{Panel\+Collection}} \mbox{\hyperlink{class_screen_log_a3a587b4249bcd8b823dc6984ad1b4328}{panels}}
+\begin{DoxyCompactList}\small\item\em The panels. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_screen_log_a250cde80c3c81f49f4165a02265c795e}{anchorX}}
+\item 
+int \mbox{\hyperlink{class_screen_log_a6bd81eed34f78977fe42edfa17b123fe}{anchorY}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_screen_log}{Screen\+Log}} $\ast$ \mbox{\hyperlink{class_screen_log_a1de1982625c8654cd54974c38da2a005}{ptr\+Instance}} = nullptr
+\begin{DoxyCompactList}\small\item\em Pointer to \mbox{\hyperlink{class_screen_log}{Screen\+Log}} instance. \end{DoxyCompactList}\item 
+static char \mbox{\hyperlink{class_screen_log_a40cc86a3bef803c7ce2f9cfa43d3d7d1}{Debug\+Buff}} \mbox{[}256\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_screen_log_ae65f83d1f86a4da83d9f2581b0322d7a}{Screen\+Log\+Attorney}}
+\begin{DoxyCompactList}\small\item\em Dictates access to \mbox{\hyperlink{class_screen_log}{Screen\+Log}}\textquotesingle{}s private functions for engine use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_screen_log_a83a30316b0b4d34d82757d764373463d}\label{class_screen_log_a83a30316b0b4d34d82757d764373463d}} 
+\index{ScreenLog@{ScreenLog}!MessageCollection@{MessageCollection}}
+\index{MessageCollection@{MessageCollection}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{MessageCollection}{MessageCollection}}
+{\footnotesize\ttfamily typedef std\+::vector$<$std\+::string$>$ \mbox{\hyperlink{class_screen_log_a83a30316b0b4d34d82757d764373463d}{Screen\+Log\+::\+Message\+Collection}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_screen_log_ab3cc0cfd697ae3f717658928d14b2afb}\label{class_screen_log_ab3cc0cfd697ae3f717658928d14b2afb}} 
+\index{ScreenLog@{ScreenLog}!PanelCollection@{PanelCollection}}
+\index{PanelCollection@{PanelCollection}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{PanelCollection}{PanelCollection}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{class_screen_panel}{Screen\+Panel}}$\ast$$>$ \mbox{\hyperlink{class_screen_log_ab3cc0cfd697ae3f717658928d14b2afb}{Screen\+Log\+::\+Panel\+Collection}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_screen_log_a34611e5aaf9b3433c97a7c30b2404aa3}\label{class_screen_log_a34611e5aaf9b3433c97a7c30b2404aa3}} 
+\index{ScreenLog@{ScreenLog}!ScreenLog@{ScreenLog}}
+\index{ScreenLog@{ScreenLog}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{ScreenLog()}{ScreenLog()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Screen\+Log\+::\+Screen\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Default constructor. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_a34611e5aaf9b3433c97a7c30b2404aa3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_a34611e5aaf9b3433c97a7c30b2404aa3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen_log_a346fe4a5fcf74f7e9c6acf154c9b2b27}\label{class_screen_log_a346fe4a5fcf74f7e9c6acf154c9b2b27}} 
+\index{ScreenLog@{ScreenLog}!ScreenLog@{ScreenLog}}
+\index{ScreenLog@{ScreenLog}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{ScreenLog()}{ScreenLog()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Screen\+Log\+::\+Screen\+Log (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_screen_log}{Screen\+Log}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_screen_log_ad179711ce3dad4daaa57302615651bb0}\label{class_screen_log_ad179711ce3dad4daaa57302615651bb0}} 
+\index{ScreenLog@{ScreenLog}!ScreenLog@{ScreenLog}}
+\index{ScreenLog@{ScreenLog}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{ScreenLog()}{ScreenLog()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Screen\+Log\+::\+Screen\+Log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_screen_log}{Screen\+Log}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_screen_log_a5339de844937f3374a4f1154f798dc63}\label{class_screen_log_a5339de844937f3374a4f1154f798dc63}} 
+\index{ScreenLog@{ScreenLog}!````~ScreenLog@{$\sim$ScreenLog}}
+\index{````~ScreenLog@{$\sim$ScreenLog}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{$\sim$ScreenLog()}{~ScreenLog()}}
+{\footnotesize\ttfamily Screen\+Log\+::$\sim$\+Screen\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_screen_log_af56f1285a8ba6a2df19060a577752069}\label{class_screen_log_af56f1285a8ba6a2df19060a577752069}} 
+\index{ScreenLog@{ScreenLog}!Add@{Add}}
+\index{Add@{Add}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Screen\+Log\+::\+Add (\begin{DoxyParamCaption}\item[{char $\ast$}]{A,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_af56f1285a8ba6a2df19060a577752069_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen_log_ade1efeb9dc30328957da354e950dc281}\label{class_screen_log_ade1efeb9dc30328957da354e950dc281}} 
+\index{ScreenLog@{ScreenLog}!Add@{Add}}
+\index{Add@{Add}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Screen\+Log\+::\+Add (\begin{DoxyParamCaption}\item[{const char $\ast$}]{A,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_ade1efeb9dc30328957da354e950dc281_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen_log_ad017d1cd044509ee5dd47311c7816aca}\label{class_screen_log_ad017d1cd044509ee5dd47311c7816aca}} 
+\index{ScreenLog@{ScreenLog}!Delete@{Delete}}
+\index{Delete@{Delete}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily static void Screen\+Log\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_ad017d1cd044509ee5dd47311c7816aca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_ad017d1cd044509ee5dd47311c7816aca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen_log_a219aef65a56295f4c17a5e8ec4ae266c}\label{class_screen_log_a219aef65a56295f4c17a5e8ec4ae266c}} 
+\index{ScreenLog@{ScreenLog}!GetNewPanel@{GetNewPanel}}
+\index{GetNewPanel@{GetNewPanel}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{GetNewPanel()}{GetNewPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_screen_panel}{Screen\+Panel}}$\ast$ Screen\+Log\+::\+Get\+New\+Panel (\begin{DoxyParamCaption}\item[{int}]{anchorX,  }\item[{int}]{anchorY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_a219aef65a56295f4c17a5e8ec4ae266c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen_log_a09c56c2a207b8df89ca0b47a02c1823e}\label{class_screen_log_a09c56c2a207b8df89ca0b47a02c1823e}} 
+\index{ScreenLog@{ScreenLog}!GetNewPanel@{GetNewPanel}}
+\index{GetNewPanel@{GetNewPanel}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{GetNewPanel()}{GetNewPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_screen_panel}{Screen\+Panel}}$\ast$ Screen\+Log\+::\+Get\+New\+Panel (\begin{DoxyParamCaption}\item[{int}]{anchorX,  }\item[{int}]{anchorY,  }\item[{\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$}]{font }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_a09c56c2a207b8df89ca0b47a02c1823e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen_log_a3cfa452c03111efa584cf3a648e74c34}\label{class_screen_log_a3cfa452c03111efa584cf3a648e74c34}} 
+\index{ScreenLog@{ScreenLog}!Instance@{Instance}}
+\index{Instance@{Instance}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_screen_log}{Screen\+Log}}\& Screen\+Log\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_a3cfa452c03111efa584cf3a648e74c34_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_a3cfa452c03111efa584cf3a648e74c34_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen_log_a1f79d8a9ee0943c39919fe8983647115}\label{class_screen_log_a1f79d8a9ee0943c39919fe8983647115}} 
+\index{ScreenLog@{ScreenLog}!operator=@{operator=}}
+\index{operator=@{operator=}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_screen_log}{Screen\+Log}}\& Screen\+Log\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_screen_log}{Screen\+Log}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_screen_log_a09a65ffa65f6e6de89091dd64d1c098c}\label{class_screen_log_a09a65ffa65f6e6de89091dd64d1c098c}} 
+\index{ScreenLog@{ScreenLog}!operator=@{operator=}}
+\index{operator=@{operator=}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_screen_log}{Screen\+Log}}\& Screen\+Log\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_screen_log}{Screen\+Log}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_screen_log_a698bf2b2e712c6384b51d4d4b4ea9710}\label{class_screen_log_a698bf2b2e712c6384b51d4d4b4ea9710}} 
+\index{ScreenLog@{ScreenLog}!privDelete@{privDelete}}
+\index{privDelete@{privDelete}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{privDelete()}{privDelete()}}
+{\footnotesize\ttfamily void Screen\+Log\+::priv\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_a698bf2b2e712c6384b51d4d4b4ea9710_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen_log_ab664d15dc1ec752f8879d7efbc58a418}\label{class_screen_log_ab664d15dc1ec752f8879d7efbc58a418}} 
+\index{ScreenLog@{ScreenLog}!privGetNewPanel@{privGetNewPanel}}
+\index{privGetNewPanel@{privGetNewPanel}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{privGetNewPanel()}{privGetNewPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} $\ast$ Screen\+Log\+::priv\+Get\+New\+Panel (\begin{DoxyParamCaption}\item[{int}]{anchorX,  }\item[{int}]{anchorY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_ab664d15dc1ec752f8879d7efbc58a418_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_ab664d15dc1ec752f8879d7efbc58a418_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen_log_a07911efc6c3299fea680b6b36f890ff9}\label{class_screen_log_a07911efc6c3299fea680b6b36f890ff9}} 
+\index{ScreenLog@{ScreenLog}!privGetNewPanel@{privGetNewPanel}}
+\index{privGetNewPanel@{privGetNewPanel}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{privGetNewPanel()}{privGetNewPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_screen_panel}{Screen\+Panel}} $\ast$ Screen\+Log\+::priv\+Get\+New\+Panel (\begin{DoxyParamCaption}\item[{int}]{anchorX,  }\item[{int}]{anchorY,  }\item[{\mbox{\hyperlink{class_sprite_font}{Sprite\+Font}} $\ast$}]{font }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_a07911efc6c3299fea680b6b36f890ff9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen_log_aa9bd2d50559d4a2ba976210bc9333c73}\label{class_screen_log_aa9bd2d50559d4a2ba976210bc9333c73}} 
+\index{ScreenLog@{ScreenLog}!privRender@{privRender}}
+\index{privRender@{privRender}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{privRender()}{privRender()}}
+{\footnotesize\ttfamily void Screen\+Log\+::priv\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_screen_log_aa9bd2d50559d4a2ba976210bc9333c73_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_aa9bd2d50559d4a2ba976210bc9333c73_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen_log_a10ee301cc04b1bf1d780baa43ba0a07d}\label{class_screen_log_a10ee301cc04b1bf1d780baa43ba0a07d}} 
+\index{ScreenLog@{ScreenLog}!Render@{Render}}
+\index{Render@{Render}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily static void Screen\+Log\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_a10ee301cc04b1bf1d780baa43ba0a07d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen_log_a10ee301cc04b1bf1d780baa43ba0a07d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_screen_log_ae65f83d1f86a4da83d9f2581b0322d7a}\label{class_screen_log_ae65f83d1f86a4da83d9f2581b0322d7a}} 
+\index{ScreenLog@{ScreenLog}!ScreenLogAttorney@{ScreenLogAttorney}}
+\index{ScreenLogAttorney@{ScreenLogAttorney}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{ScreenLogAttorney}{ScreenLogAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_screen_log_attorney}{Screen\+Log\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Dictates access to \mbox{\hyperlink{class_screen_log}{Screen\+Log}}\textquotesingle{}s private functions for engine use. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_screen_log_a250cde80c3c81f49f4165a02265c795e}\label{class_screen_log_a250cde80c3c81f49f4165a02265c795e}} 
+\index{ScreenLog@{ScreenLog}!anchorX@{anchorX}}
+\index{anchorX@{anchorX}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{anchorX}{anchorX}}
+{\footnotesize\ttfamily int Screen\+Log\+::anchorX\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_screen_log_a6bd81eed34f78977fe42edfa17b123fe}\label{class_screen_log_a6bd81eed34f78977fe42edfa17b123fe}} 
+\index{ScreenLog@{ScreenLog}!anchorY@{anchorY}}
+\index{anchorY@{anchorY}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{anchorY}{anchorY}}
+{\footnotesize\ttfamily int Screen\+Log\+::anchorY\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_screen_log_a40cc86a3bef803c7ce2f9cfa43d3d7d1}\label{class_screen_log_a40cc86a3bef803c7ce2f9cfa43d3d7d1}} 
+\index{ScreenLog@{ScreenLog}!DebugBuff@{DebugBuff}}
+\index{DebugBuff@{DebugBuff}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{DebugBuff}{DebugBuff}}
+{\footnotesize\ttfamily char Screen\+Log\+::\+Debug\+Buff\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_screen_log_af9005bc954773951177b9c9e35f8848e}\label{class_screen_log_af9005bc954773951177b9c9e35f8848e}} 
+\index{ScreenLog@{ScreenLog}!font@{font}}
+\index{font@{font}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_font}{Sprite\+Font}}$\ast$ Screen\+Log\+::font\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_screen_log_a816534cdeaf744f37fdca3610b33c773}\label{class_screen_log_a816534cdeaf744f37fdca3610b33c773}} 
+\index{ScreenLog@{ScreenLog}!messages@{messages}}
+\index{messages@{messages}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{messages}{messages}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_screen_log_a83a30316b0b4d34d82757d764373463d}{Message\+Collection}} Screen\+Log\+::messages\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The messages. 
+
+A list of string messages that are stored and awaiting a call to render. Upon rendering, the strings are converted to Sprite\+Strings ~\newline
+ \mbox{\Hypertarget{class_screen_log_a3a587b4249bcd8b823dc6984ad1b4328}\label{class_screen_log_a3a587b4249bcd8b823dc6984ad1b4328}} 
+\index{ScreenLog@{ScreenLog}!panels@{panels}}
+\index{panels@{panels}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{panels}{panels}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_screen_log_ab3cc0cfd697ae3f717658928d14b2afb}{Panel\+Collection}} Screen\+Log\+::panels\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The panels. 
+
+A list of panels that store various messages. These panels can be displayed in a variety of places. \mbox{\Hypertarget{class_screen_log_a1de1982625c8654cd54974c38da2a005}\label{class_screen_log_a1de1982625c8654cd54974c38da2a005}} 
+\index{ScreenLog@{ScreenLog}!ptrInstance@{ptrInstance}}
+\index{ptrInstance@{ptrInstance}!ScreenLog@{ScreenLog}}
+\doxysubsubsection{\texorpdfstring{ptrInstance}{ptrInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_screen_log}{Screen\+Log}} $\ast$ Screen\+Log\+::ptr\+Instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Pointer to \mbox{\hyperlink{class_screen_log}{Screen\+Log}} instance. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_screen_log_8h}{Screen\+Log.\+h}}\item 
+\mbox{\hyperlink{_screen_log_8cpp}{Screen\+Log.\+cpp}}\end{DoxyCompactItemize}

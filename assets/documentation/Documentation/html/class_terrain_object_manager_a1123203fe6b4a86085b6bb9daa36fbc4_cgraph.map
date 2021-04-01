@@ -1,0 +1,6 @@
+<map id="TerrainObjectManager::Delete" name="TerrainObjectManager::Delete">
+<area shape="rect" id="node1" title="Sly&#39;s hook into the delete section of the TerrainObjectManager. Only called within Sly." alt="" coords="5,39,155,80"/>
+<area shape="rect" id="node2" href="$class_terrain_object_manager.html#a3e1de183b4aaca5f75c4f756099fc393" title="Gets the instance of TerrainObjectManager (Singleton)" alt="" coords="203,5,352,47"/>
+<area shape="rect" id="node4" href="$class_terrain_object_manager.html#a79a157a5b7b7b3849e47da00205f8aee" title="Internal call to delete pointer instance. Only to be called by the engine." alt="" coords="203,71,352,112"/>
+<area shape="rect" id="node3" href="$class_terrain_object_manager.html#aac7be644f7265c410905769500c680f9" title="Default constructor." alt="" coords="400,5,557,47"/>
+</map>

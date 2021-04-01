@@ -1,0 +1,8 @@
+<map id="SceneManager::LoadDefault" name="SceneManager::LoadDefault">
+<area shape="rect" id="node1" title="Loads the default scene." alt="" coords="5,35,191,61"/>
+<area shape="rect" id="node2" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="243,5,410,32"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#a2aa6f66a72fb0a3a7458d1053c9a58f5" title="Priv reload default." alt="" coords="239,57,415,98"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="463,5,667,32"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#ae6e47dd4f04aa6250b5873bfa5cd60f3" title="Private set next scene." alt="" coords="473,57,656,98"/>
+<area shape="rect" id="node6" href="$class_scene_change_command_swap.html#a9a47ff1daa88a1d782007eb3094b0753" title="Initializes this." alt="" coords="715,57,909,98"/>
+</map>

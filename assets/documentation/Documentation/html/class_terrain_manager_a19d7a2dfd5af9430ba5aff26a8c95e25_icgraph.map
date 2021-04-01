@@ -1,0 +1,4 @@
+<map id="TerrainManager::privSetCurrentTerrain" name="TerrainManager::privSetCurrentTerrain">
+<area shape="rect" id="node1" title="Internal call to change the current terrain." alt="" coords="235,5,435,47"/>
+<area shape="rect" id="node2" href="$class_terrain_manager.html#ad217e6e714b19bab7336663d54c4340c" title="Sets current terrain." alt="" coords="5,5,187,47"/>
+</map>

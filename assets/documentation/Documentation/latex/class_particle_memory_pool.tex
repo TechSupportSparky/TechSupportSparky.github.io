@@ -1,0 +1,122 @@
+\hypertarget{class_particle_memory_pool}{}\doxysection{Particle\+Memory\+Pool Class Reference}
+\label{class_particle_memory_pool}\index{ParticleMemoryPool@{ParticleMemoryPool}}
+
+
+{\ttfamily \#include $<$Particle\+Memory\+Pool.\+h$>$}
+
+
+
+Collaboration diagram for Particle\+Memory\+Pool\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_particle_memory_pool__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_particle_memory_pool_a24438e570d9d625c99d0d78cf76719d9}{Particle\+Memory\+Pool}} ()=default
+\item 
+\mbox{\hyperlink{class_particle_memory_pool_a4fc4a994e25fefa819bec59c33c8e4b8}{Particle\+Memory\+Pool}} (const \mbox{\hyperlink{class_particle_memory_pool}{Particle\+Memory\+Pool}} \&)=delete
+\item 
+\mbox{\hyperlink{class_particle_memory_pool_a3bf98942839f449571428b8dba6210c3}{Particle\+Memory\+Pool}} (\mbox{\hyperlink{class_particle_memory_pool}{Particle\+Memory\+Pool}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_particle_memory_pool}{Particle\+Memory\+Pool}} \& \mbox{\hyperlink{class_particle_memory_pool_a12707eb332c20c6faddf8bbdc0268736}{operator=}} (const \mbox{\hyperlink{class_particle_memory_pool}{Particle\+Memory\+Pool}} \&)=delete
+\item 
+\mbox{\hyperlink{class_particle_memory_pool}{Particle\+Memory\+Pool}} \& \mbox{\hyperlink{class_particle_memory_pool_a60765b698e49e0c415259f903475bfd1}{operator=}} (\mbox{\hyperlink{class_particle_memory_pool}{Particle\+Memory\+Pool}} \&\&)=delete
+\item 
+\mbox{\hyperlink{class_particle_memory_pool_aa3e08c41743d060c358c97c3b520e5b7}{$\sim$\+Particle\+Memory\+Pool}} ()
+\item 
+\mbox{\hyperlink{class_particle}{Particle}} $\ast$ \mbox{\hyperlink{class_particle_memory_pool_a012c7afde79add8ebc42b8fab03fec84}{get\+Particle}} ()
+\item 
+void \mbox{\hyperlink{class_particle_memory_pool_a01cc3400d5c58d9707d8a9ead6c98f21}{return\+Particle}} (\mbox{\hyperlink{class_particle}{Particle}} $\ast$the\+Particle)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::stack$<$ \mbox{\hyperlink{class_particle}{Particle}} $\ast$ $>$ \mbox{\hyperlink{class_particle_memory_pool_ad241447e8ba592e5cd59734244c6b2bb}{recycled\+Items}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_particle_memory_pool_a24438e570d9d625c99d0d78cf76719d9}\label{class_particle_memory_pool_a24438e570d9d625c99d0d78cf76719d9}} 
+\index{ParticleMemoryPool@{ParticleMemoryPool}!ParticleMemoryPool@{ParticleMemoryPool}}
+\index{ParticleMemoryPool@{ParticleMemoryPool}!ParticleMemoryPool@{ParticleMemoryPool}}
+\doxysubsubsection{\texorpdfstring{ParticleMemoryPool()}{ParticleMemoryPool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Particle\+Memory\+Pool\+::\+Particle\+Memory\+Pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_particle_memory_pool_a4fc4a994e25fefa819bec59c33c8e4b8}\label{class_particle_memory_pool_a4fc4a994e25fefa819bec59c33c8e4b8}} 
+\index{ParticleMemoryPool@{ParticleMemoryPool}!ParticleMemoryPool@{ParticleMemoryPool}}
+\index{ParticleMemoryPool@{ParticleMemoryPool}!ParticleMemoryPool@{ParticleMemoryPool}}
+\doxysubsubsection{\texorpdfstring{ParticleMemoryPool()}{ParticleMemoryPool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Particle\+Memory\+Pool\+::\+Particle\+Memory\+Pool (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_particle_memory_pool}{Particle\+Memory\+Pool}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_memory_pool_a3bf98942839f449571428b8dba6210c3}\label{class_particle_memory_pool_a3bf98942839f449571428b8dba6210c3}} 
+\index{ParticleMemoryPool@{ParticleMemoryPool}!ParticleMemoryPool@{ParticleMemoryPool}}
+\index{ParticleMemoryPool@{ParticleMemoryPool}!ParticleMemoryPool@{ParticleMemoryPool}}
+\doxysubsubsection{\texorpdfstring{ParticleMemoryPool()}{ParticleMemoryPool()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Particle\+Memory\+Pool\+::\+Particle\+Memory\+Pool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_memory_pool}{Particle\+Memory\+Pool}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_memory_pool_aa3e08c41743d060c358c97c3b520e5b7}\label{class_particle_memory_pool_aa3e08c41743d060c358c97c3b520e5b7}} 
+\index{ParticleMemoryPool@{ParticleMemoryPool}!````~ParticleMemoryPool@{$\sim$ParticleMemoryPool}}
+\index{````~ParticleMemoryPool@{$\sim$ParticleMemoryPool}!ParticleMemoryPool@{ParticleMemoryPool}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParticleMemoryPool()}{~ParticleMemoryPool()}}
+{\footnotesize\ttfamily Particle\+Memory\+Pool\+::$\sim$\+Particle\+Memory\+Pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_particle_memory_pool_a012c7afde79add8ebc42b8fab03fec84}\label{class_particle_memory_pool_a012c7afde79add8ebc42b8fab03fec84}} 
+\index{ParticleMemoryPool@{ParticleMemoryPool}!getParticle@{getParticle}}
+\index{getParticle@{getParticle}!ParticleMemoryPool@{ParticleMemoryPool}}
+\doxysubsubsection{\texorpdfstring{getParticle()}{getParticle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle}{Particle}} $\ast$ Particle\+Memory\+Pool\+::get\+Particle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_memory_pool_a012c7afde79add8ebc42b8fab03fec84_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_particle_memory_pool_a12707eb332c20c6faddf8bbdc0268736}\label{class_particle_memory_pool_a12707eb332c20c6faddf8bbdc0268736}} 
+\index{ParticleMemoryPool@{ParticleMemoryPool}!operator=@{operator=}}
+\index{operator=@{operator=}!ParticleMemoryPool@{ParticleMemoryPool}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_memory_pool}{Particle\+Memory\+Pool}}\& Particle\+Memory\+Pool\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_particle_memory_pool}{Particle\+Memory\+Pool}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_memory_pool_a60765b698e49e0c415259f903475bfd1}\label{class_particle_memory_pool_a60765b698e49e0c415259f903475bfd1}} 
+\index{ParticleMemoryPool@{ParticleMemoryPool}!operator=@{operator=}}
+\index{operator=@{operator=}!ParticleMemoryPool@{ParticleMemoryPool}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_particle_memory_pool}{Particle\+Memory\+Pool}}\& Particle\+Memory\+Pool\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle_memory_pool}{Particle\+Memory\+Pool}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_particle_memory_pool_a01cc3400d5c58d9707d8a9ead6c98f21}\label{class_particle_memory_pool_a01cc3400d5c58d9707d8a9ead6c98f21}} 
+\index{ParticleMemoryPool@{ParticleMemoryPool}!returnParticle@{returnParticle}}
+\index{returnParticle@{returnParticle}!ParticleMemoryPool@{ParticleMemoryPool}}
+\doxysubsubsection{\texorpdfstring{returnParticle()}{returnParticle()}}
+{\footnotesize\ttfamily void Particle\+Memory\+Pool\+::return\+Particle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_particle}{Particle}} $\ast$}]{the\+Particle }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_particle_memory_pool_a01cc3400d5c58d9707d8a9ead6c98f21_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_particle_memory_pool_ad241447e8ba592e5cd59734244c6b2bb}\label{class_particle_memory_pool_ad241447e8ba592e5cd59734244c6b2bb}} 
+\index{ParticleMemoryPool@{ParticleMemoryPool}!recycledItems@{recycledItems}}
+\index{recycledItems@{recycledItems}!ParticleMemoryPool@{ParticleMemoryPool}}
+\doxysubsubsection{\texorpdfstring{recycledItems}{recycledItems}}
+{\footnotesize\ttfamily std\+::stack$<$\mbox{\hyperlink{class_particle}{Particle}}$\ast$$>$ Particle\+Memory\+Pool\+::recycled\+Items\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_particle_memory_pool_8h}{Particle\+Memory\+Pool.\+h}}\item 
+\mbox{\hyperlink{_particle_memory_pool_8cpp}{Particle\+Memory\+Pool.\+cpp}}\end{DoxyCompactItemize}

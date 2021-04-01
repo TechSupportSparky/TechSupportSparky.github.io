@@ -1,0 +1,6 @@
+<map id="SceneManager::SetStartScene" name="SceneManager::SetStartScene">
+<area shape="rect" id="node1" title="Sets start scene." alt="" coords="5,35,208,61"/>
+<area shape="rect" id="node2" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="265,5,431,32"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#abf7a57d08b171214c90586edb9c6c486" title="Private set start scene." alt="" coords="256,57,440,98"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="488,5,692,32"/>
+</map>

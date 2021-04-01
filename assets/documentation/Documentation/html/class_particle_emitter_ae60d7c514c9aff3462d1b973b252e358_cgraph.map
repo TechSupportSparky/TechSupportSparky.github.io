@@ -1,0 +1,13 @@
+<map id="ParticleEmitter::Enter" name="ParticleEmitter::Enter">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,152,98"/>
+<area shape="rect" id="node2" href="$class_particle_effect.html#a406c9cfc43cb14166bfdbab722bffb2f" title=" " alt="" coords="237,5,395,47"/>
+<area shape="rect" id="node3" href="$class_alarmable.html#aa3ad5019037da19edac3857d3e3436ba" title="Submit alarm registration." alt="" coords="200,71,432,98"/>
+<area shape="rect" id="node4" href="$class_drawable.html#a4f89e20fc4a5efe3ed173743498d93eb" title="Submit draw registration." alt="" coords="205,122,427,149"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="498,85,678,127"/>
+<area shape="rect" id="node9" href="$class_scene_attorney.html#ad869342eb2583be16a0483ad2712416b" title="&quot;Global&quot; Submit command for the GameObject &#39;Able&#39;s&#39;" alt="" coords="480,151,696,178"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="760,34,927,61"/>
+<area shape="rect" id="node8" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="744,85,943,127"/>
+<area shape="rect" id="node7" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="991,34,1195,61"/>
+<area shape="rect" id="node10" href="$class_scene.html#a713cce013f0244d71b16c2e33638ed6d" title="Submit command." alt="" coords="760,151,927,178"/>
+<area shape="rect" id="node11" href="$class_scene_registration_broker.html#a2de26f860998866920e681e330d3dac3" title="Adds a command." alt="" coords="1009,144,1176,185"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="SkyBoxAssetManager" name="SkyBoxAssetManager">
+<area shape="rect" id="node1" title=" " alt="" coords="90,1295,266,1548"/>
+<area shape="rect" id="node2" title=" " alt="" coords="74,1155,282,1232"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="53,905,133,982"/>
+<area shape="rect" id="node4" title="STL class." alt="" coords="5,609,132,701"/>
+<area shape="rect" id="node5" href="$class_sky_box.html" title=" " alt="" coords="181,795,309,1092"/>
+<area shape="rect" id="node6" title=" " alt="" coords="624,617,689,694"/>
+<area shape="rect" id="node7" href="$class_drawable_game_object.html" title=" " alt="" coords="157,580,333,731"/>
+<area shape="rect" id="node8" href="$class_drawable.html" title=" " alt="" coords="381,220,575,503"/>
+<area shape="rect" id="node9" href="$class_drawable_registration_command.html" title=" " alt="" coords="713,565,944,745"/>
+<area shape="rect" id="node12" href="$class_drawable_deregistration_command.html" title=" " alt="" coords="357,565,599,745"/>
+<area shape="rect" id="node10" href="$class_scene_registry.html" title="A scene registry." alt="" coords="784,286,919,437"/>
+<area shape="rect" id="node11" href="$class_command_base.html" title=" " alt="" coords="782,5,921,171"/>
+</map>

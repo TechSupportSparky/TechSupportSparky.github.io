@@ -1,0 +1,363 @@
+\hypertarget{class_camera_manager}{}\doxysection{Camera\+Manager Class Reference}
+\label{class_camera_manager}\index{CameraManager@{CameraManager}}
+
+
+{\ttfamily \#include $<$Camera\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Camera\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_camera_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_camera_manager_ab66d897f3d5f01efe7e4368f16c42d7f}{Camera\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_camera_manager_a337865ab18c1a8bfc32d6bc65c294ebc}{Camera\+Manager}} (const \mbox{\hyperlink{class_camera_manager}{Camera\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_camera_manager_a09c0574cb750eedb39934bf3e195fb81}{Camera\+Manager}} (\mbox{\hyperlink{class_camera_manager}{Camera\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_camera_manager}{Camera\+Manager}} \& \mbox{\hyperlink{class_camera_manager_aef716f486fad7f6a2c26be6e01f6a6c3}{operator=}} (const \mbox{\hyperlink{class_camera_manager}{Camera\+Manager}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_camera_manager}{Camera\+Manager}} \& \mbox{\hyperlink{class_camera_manager_a88daaaad6a4368a6d3ba21e4b5512d7a}{operator=}} (\mbox{\hyperlink{class_camera_manager}{Camera\+Manager}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_camera_manager_a7a5d263f3fc28809d6c8c3935e571143}{$\sim$\+Camera\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_manager_a4ac9eba958b4fd743387ebef8ae6dad4}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em Deletes the defualt camera. \end{DoxyCompactList}\item 
+Camera $\ast$ \mbox{\hyperlink{class_camera_manager_a73be4132ae9a5523cd4e778a53013a16}{Get\+Current\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Gets current camera. \end{DoxyCompactList}\item 
+Camera $\ast$ \mbox{\hyperlink{class_camera_manager_a632460cdabc6d2e254f25cbdb21eabb2}{Get\+Current2\+D\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Gets current 2D camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_manager_afe3809b7067c6c125d7bdf445e7ff38e}{Set\+Current\+Camera}} (Camera $\ast$new\+Camera)
+\begin{DoxyCompactList}\small\item\em Sets current camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_manager_a86dc70ca6bc4930d790623e606685625}{Set\+Current2\+D\+Camera}} (Camera $\ast$new\+Camera)
+\begin{DoxyCompactList}\small\item\em Sets current 2D camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_manager_a8763ba7f2776e7f224f1d09b452e6e6c}{Process\+God\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Process the god camera. ~\newline
+ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_manager_a0ef653631c71f4bc37375127e043fabc}{Set\+God\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Sets god camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Camera $\ast$ \mbox{\hyperlink{class_camera_manager_a224e817feaa32ba3e6a2f35a5a3d5df0}{p\+Current\+Cam}}
+\begin{DoxyCompactList}\small\item\em The current camera used by the scene. \end{DoxyCompactList}\item 
+Camera $\ast$ \mbox{\hyperlink{class_camera_manager_a3bccde430e3d20ef5c588cf38ac2da25}{p\+Default\+Cam}}
+\begin{DoxyCompactList}\small\item\em The default camera setup and owned by the \mbox{\hyperlink{class_camera_manager}{Camera\+Manager}}. \end{DoxyCompactList}\item 
+Camera $\ast$ \mbox{\hyperlink{class_camera_manager_a39842ef07b8e1dbf0d39a93f9270065c}{p\+Current2\+D\+Cam}}
+\begin{DoxyCompactList}\small\item\em the current 2D camera used by the scene. \end{DoxyCompactList}\item 
+Camera $\ast$ \mbox{\hyperlink{class_camera_manager_a3e298678b9e76c10b3209eb6d68e8e3e}{p\+Default2\+D\+Cam}}
+\begin{DoxyCompactList}\small\item\em The default camera setup and owned by the \mbox{\hyperlink{class_camera_manager}{Camera\+Manager}}. \end{DoxyCompactList}\item 
+Camera $\ast$ \mbox{\hyperlink{class_camera_manager_a0493021dd9b36f53d59d329a021b94fa}{p\+God\+Cam}}
+\item 
+Vect \mbox{\hyperlink{class_camera_manager_a6161110aa2056aea411476bfcab92b40}{Cam\+Pos}}
+\item 
+Matrix \mbox{\hyperlink{class_camera_manager_a777b39570400c3037a80827b784e5010}{Cam\+Rot}}
+\item 
+Vect \mbox{\hyperlink{class_camera_manager_ab972adfb851beceedf86371b4c90caaf}{Cam\+Up}}
+\item 
+Vect \mbox{\hyperlink{class_camera_manager_a66a5173e282a6d91bfc261dbdf73eb46}{Cam\+Dir}}
+\item 
+const float \mbox{\hyperlink{class_camera_manager_a9a97c63adccfd394c5a9d08e1d79ae2a}{Cam\+Tran\+Speed}} = 5.\+0f
+\item 
+const float \mbox{\hyperlink{class_camera_manager_a08f842f4d00f0b2bccfd8c45a63e6733}{Cam\+Rot\+Speed}} = 0.\+02f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_camera_manager_ab66d897f3d5f01efe7e4368f16c42d7f}\label{class_camera_manager_ab66d897f3d5f01efe7e4368f16c42d7f}} 
+\index{CameraManager@{CameraManager}!CameraManager@{CameraManager}}
+\index{CameraManager@{CameraManager}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{CameraManager()}{CameraManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Camera\+Manager\+::\+Camera\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_camera_manager_ab66d897f3d5f01efe7e4368f16c42d7f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_camera_manager_a337865ab18c1a8bfc32d6bc65c294ebc}\label{class_camera_manager_a337865ab18c1a8bfc32d6bc65c294ebc}} 
+\index{CameraManager@{CameraManager}!CameraManager@{CameraManager}}
+\index{CameraManager@{CameraManager}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{CameraManager()}{CameraManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Camera\+Manager\+::\+Camera\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_camera_manager}{Camera\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_camera_manager_a09c0574cb750eedb39934bf3e195fb81}\label{class_camera_manager_a09c0574cb750eedb39934bf3e195fb81}} 
+\index{CameraManager@{CameraManager}!CameraManager@{CameraManager}}
+\index{CameraManager@{CameraManager}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{CameraManager()}{CameraManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Camera\+Manager\+::\+Camera\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera_manager}{Camera\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_camera_manager_a7a5d263f3fc28809d6c8c3935e571143}\label{class_camera_manager_a7a5d263f3fc28809d6c8c3935e571143}} 
+\index{CameraManager@{CameraManager}!````~CameraManager@{$\sim$CameraManager}}
+\index{````~CameraManager@{$\sim$CameraManager}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$CameraManager()}{~CameraManager()}}
+{\footnotesize\ttfamily Camera\+Manager\+::$\sim$\+Camera\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_manager_a4ac9eba958b4fd743387ebef8ae6dad4}\label{class_camera_manager_a4ac9eba958b4fd743387ebef8ae6dad4}} 
+\index{CameraManager@{CameraManager}!Delete@{Delete}}
+\index{Delete@{Delete}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void Camera\+Manager\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deletes the defualt camera. 
+
+\mbox{\Hypertarget{class_camera_manager_a632460cdabc6d2e254f25cbdb21eabb2}\label{class_camera_manager_a632460cdabc6d2e254f25cbdb21eabb2}} 
+\index{CameraManager@{CameraManager}!GetCurrent2DCamera@{GetCurrent2DCamera}}
+\index{GetCurrent2DCamera@{GetCurrent2DCamera}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{GetCurrent2DCamera()}{GetCurrent2DCamera()}}
+{\footnotesize\ttfamily Camera $\ast$ Camera\+Manager\+::\+Get\+Current2\+D\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets current 2D camera. 
+
+\begin{DoxyReturn}{Returns}
+Null if it fails, else the current 2D camera. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_camera_manager_a632460cdabc6d2e254f25cbdb21eabb2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_camera_manager_a73be4132ae9a5523cd4e778a53013a16}\label{class_camera_manager_a73be4132ae9a5523cd4e778a53013a16}} 
+\index{CameraManager@{CameraManager}!GetCurrentCamera@{GetCurrentCamera}}
+\index{GetCurrentCamera@{GetCurrentCamera}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{GetCurrentCamera()}{GetCurrentCamera()}}
+{\footnotesize\ttfamily Camera $\ast$ Camera\+Manager\+::\+Get\+Current\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets current camera. 
+
+\begin{DoxyReturn}{Returns}
+Null if it fails, else the current camera. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_camera_manager_a73be4132ae9a5523cd4e778a53013a16_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_camera_manager_a88daaaad6a4368a6d3ba21e4b5512d7a}\label{class_camera_manager_a88daaaad6a4368a6d3ba21e4b5512d7a}} 
+\index{CameraManager@{CameraManager}!operator=@{operator=}}
+\index{operator=@{operator=}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_camera_manager}{Camera\+Manager}}\& Camera\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera_manager}{Camera\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_camera_manager_aef716f486fad7f6a2c26be6e01f6a6c3}\label{class_camera_manager_aef716f486fad7f6a2c26be6e01f6a6c3}} 
+\index{CameraManager@{CameraManager}!operator=@{operator=}}
+\index{operator=@{operator=}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_camera_manager}{Camera\+Manager}}\& Camera\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_camera_manager}{Camera\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_camera_manager_a8763ba7f2776e7f224f1d09b452e6e6c}\label{class_camera_manager_a8763ba7f2776e7f224f1d09b452e6e6c}} 
+\index{CameraManager@{CameraManager}!ProcessGodCamera@{ProcessGodCamera}}
+\index{ProcessGodCamera@{ProcessGodCamera}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{ProcessGodCamera()}{ProcessGodCamera()}}
+{\footnotesize\ttfamily void Camera\+Manager\+::\+Process\+God\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Process the god camera. ~\newline
+ 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_camera_manager_a8763ba7f2776e7f224f1d09b452e6e6c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_camera_manager_a86dc70ca6bc4930d790623e606685625}\label{class_camera_manager_a86dc70ca6bc4930d790623e606685625}} 
+\index{CameraManager@{CameraManager}!SetCurrent2DCamera@{SetCurrent2DCamera}}
+\index{SetCurrent2DCamera@{SetCurrent2DCamera}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{SetCurrent2DCamera()}{SetCurrent2DCamera()}}
+{\footnotesize\ttfamily void Camera\+Manager\+::\+Set\+Current2\+D\+Camera (\begin{DoxyParamCaption}\item[{Camera $\ast$}]{new\+Camera }\end{DoxyParamCaption})}
+
+
+
+Sets current 2D camera. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em new\+Camera} & If non-\/null, the current 2D cam becomes the new\+Camera.\\
+\hline
+\end{DoxyParams}
+Changes the current 2D camera to be a user provided camera. Ensure the input is an Orthographic camera. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_camera_manager_a86dc70ca6bc4930d790623e606685625_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_camera_manager_afe3809b7067c6c125d7bdf445e7ff38e}\label{class_camera_manager_afe3809b7067c6c125d7bdf445e7ff38e}} 
+\index{CameraManager@{CameraManager}!SetCurrentCamera@{SetCurrentCamera}}
+\index{SetCurrentCamera@{SetCurrentCamera}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{SetCurrentCamera()}{SetCurrentCamera()}}
+{\footnotesize\ttfamily void Camera\+Manager\+::\+Set\+Current\+Camera (\begin{DoxyParamCaption}\item[{Camera $\ast$}]{new\+Camera }\end{DoxyParamCaption})}
+
+
+
+Sets current camera. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em new\+Camera} & If non-\/null, sets the p\+Current\+Cam to be the new\+Camera. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_camera_manager_afe3809b7067c6c125d7bdf445e7ff38e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_camera_manager_a0ef653631c71f4bc37375127e043fabc}\label{class_camera_manager_a0ef653631c71f4bc37375127e043fabc}} 
+\index{CameraManager@{CameraManager}!SetGodCamera@{SetGodCamera}}
+\index{SetGodCamera@{SetGodCamera}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{SetGodCamera()}{SetGodCamera()}}
+{\footnotesize\ttfamily void Camera\+Manager\+::\+Set\+God\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets god camera. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_camera_manager_a0ef653631c71f4bc37375127e043fabc_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_camera_manager_a66a5173e282a6d91bfc261dbdf73eb46}\label{class_camera_manager_a66a5173e282a6d91bfc261dbdf73eb46}} 
+\index{CameraManager@{CameraManager}!CamDir@{CamDir}}
+\index{CamDir@{CamDir}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{CamDir}{CamDir}}
+{\footnotesize\ttfamily Vect Camera\+Manager\+::\+Cam\+Dir\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_camera_manager_a6161110aa2056aea411476bfcab92b40}\label{class_camera_manager_a6161110aa2056aea411476bfcab92b40}} 
+\index{CameraManager@{CameraManager}!CamPos@{CamPos}}
+\index{CamPos@{CamPos}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{CamPos}{CamPos}}
+{\footnotesize\ttfamily Vect Camera\+Manager\+::\+Cam\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_camera_manager_a777b39570400c3037a80827b784e5010}\label{class_camera_manager_a777b39570400c3037a80827b784e5010}} 
+\index{CameraManager@{CameraManager}!CamRot@{CamRot}}
+\index{CamRot@{CamRot}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{CamRot}{CamRot}}
+{\footnotesize\ttfamily Matrix Camera\+Manager\+::\+Cam\+Rot\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_camera_manager_a08f842f4d00f0b2bccfd8c45a63e6733}\label{class_camera_manager_a08f842f4d00f0b2bccfd8c45a63e6733}} 
+\index{CameraManager@{CameraManager}!CamRotSpeed@{CamRotSpeed}}
+\index{CamRotSpeed@{CamRotSpeed}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{CamRotSpeed}{CamRotSpeed}}
+{\footnotesize\ttfamily const float Camera\+Manager\+::\+Cam\+Rot\+Speed = 0.\+02f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_camera_manager_a9a97c63adccfd394c5a9d08e1d79ae2a}\label{class_camera_manager_a9a97c63adccfd394c5a9d08e1d79ae2a}} 
+\index{CameraManager@{CameraManager}!CamTranSpeed@{CamTranSpeed}}
+\index{CamTranSpeed@{CamTranSpeed}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{CamTranSpeed}{CamTranSpeed}}
+{\footnotesize\ttfamily const float Camera\+Manager\+::\+Cam\+Tran\+Speed = 5.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_camera_manager_ab972adfb851beceedf86371b4c90caaf}\label{class_camera_manager_ab972adfb851beceedf86371b4c90caaf}} 
+\index{CameraManager@{CameraManager}!CamUp@{CamUp}}
+\index{CamUp@{CamUp}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{CamUp}{CamUp}}
+{\footnotesize\ttfamily Vect Camera\+Manager\+::\+Cam\+Up\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_camera_manager_a39842ef07b8e1dbf0d39a93f9270065c}\label{class_camera_manager_a39842ef07b8e1dbf0d39a93f9270065c}} 
+\index{CameraManager@{CameraManager}!pCurrent2DCam@{pCurrent2DCam}}
+\index{pCurrent2DCam@{pCurrent2DCam}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{pCurrent2DCam}{pCurrent2DCam}}
+{\footnotesize\ttfamily Camera$\ast$ Camera\+Manager\+::p\+Current2\+D\+Cam\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+the current 2D camera used by the scene. 
+
+\mbox{\Hypertarget{class_camera_manager_a224e817feaa32ba3e6a2f35a5a3d5df0}\label{class_camera_manager_a224e817feaa32ba3e6a2f35a5a3d5df0}} 
+\index{CameraManager@{CameraManager}!pCurrentCam@{pCurrentCam}}
+\index{pCurrentCam@{pCurrentCam}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{pCurrentCam}{pCurrentCam}}
+{\footnotesize\ttfamily Camera$\ast$ Camera\+Manager\+::p\+Current\+Cam\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The current camera used by the scene. 
+
+\mbox{\Hypertarget{class_camera_manager_a3e298678b9e76c10b3209eb6d68e8e3e}\label{class_camera_manager_a3e298678b9e76c10b3209eb6d68e8e3e}} 
+\index{CameraManager@{CameraManager}!pDefault2DCam@{pDefault2DCam}}
+\index{pDefault2DCam@{pDefault2DCam}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{pDefault2DCam}{pDefault2DCam}}
+{\footnotesize\ttfamily Camera$\ast$ Camera\+Manager\+::p\+Default2\+D\+Cam\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The default camera setup and owned by the \mbox{\hyperlink{class_camera_manager}{Camera\+Manager}}. 
+
+\mbox{\Hypertarget{class_camera_manager_a3bccde430e3d20ef5c588cf38ac2da25}\label{class_camera_manager_a3bccde430e3d20ef5c588cf38ac2da25}} 
+\index{CameraManager@{CameraManager}!pDefaultCam@{pDefaultCam}}
+\index{pDefaultCam@{pDefaultCam}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{pDefaultCam}{pDefaultCam}}
+{\footnotesize\ttfamily Camera$\ast$ Camera\+Manager\+::p\+Default\+Cam\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The default camera setup and owned by the \mbox{\hyperlink{class_camera_manager}{Camera\+Manager}}. 
+
+\mbox{\Hypertarget{class_camera_manager_a0493021dd9b36f53d59d329a021b94fa}\label{class_camera_manager_a0493021dd9b36f53d59d329a021b94fa}} 
+\index{CameraManager@{CameraManager}!pGodCam@{pGodCam}}
+\index{pGodCam@{pGodCam}!CameraManager@{CameraManager}}
+\doxysubsubsection{\texorpdfstring{pGodCam}{pGodCam}}
+{\footnotesize\ttfamily Camera$\ast$ Camera\+Manager\+::p\+God\+Cam\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_camera_manager_8h}{Camera\+Manager.\+h}}\item 
+\mbox{\hyperlink{_camera_manager_8cpp}{Camera\+Manager.\+cpp}}\end{DoxyCompactItemize}

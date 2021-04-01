@@ -1,0 +1,8 @@
+<map id="Alarmable::RegistrationData" name="Alarmable::RegistrationData">
+<area shape="rect" id="node1" title="The registration data for alarms." alt="" coords="337,42,521,134"/>
+<area shape="rect" id="node5" href="$class_alarmable.html" title=" " alt="" coords="331,233,527,575"/>
+<area shape="rect" id="node2" href="$class_alarmable_deregistration_command.html" title=" " alt="" coords="326,645,565,839"/>
+<area shape="rect" id="node3" href="$class_scene_registry.html" title="A scene registry." alt="" coords="7,329,142,479"/>
+<area shape="rect" id="node6" href="$class_alarmable_registration_command.html" title=" " alt="" coords="66,637,302,847"/>
+<area shape="rect" id="node4" href="$class_command_base.html" title=" " alt="" coords="5,5,144,171"/>
+</map>

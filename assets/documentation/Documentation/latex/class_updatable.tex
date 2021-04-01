@@ -1,0 +1,325 @@
+\hypertarget{class_updatable}{}\doxysection{Updatable Class Reference}
+\label{class_updatable}\index{Updatable@{Updatable}}
+
+
+{\ttfamily \#include $<$Updatable.\+h$>$}
+
+
+
+Inheritance diagram for Updatable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_updatable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Updatable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_updatable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_updatable_a9a8b6c0e34f2958db872b6090455f90d}{Updatable}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_updatable_ab8fc5838e65e29be996d9cca6534cd58}{Updatable}} (const \mbox{\hyperlink{class_updatable}{Updatable}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_updatable_a40a942254af25a0fe4a99aba0a9caf0f}{Updatable}} (\mbox{\hyperlink{class_updatable}{Updatable}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_updatable}{Updatable}} \& \mbox{\hyperlink{class_updatable_aca953a797d7cb84f57ac6d61988c8d8e}{operator=}} (const \mbox{\hyperlink{class_updatable}{Updatable}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_updatable}{Updatable}} \& \mbox{\hyperlink{class_updatable_a499914345ef826fde73d4058ae9d59fa}{operator=}} (\mbox{\hyperlink{class_updatable}{Updatable}} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_updatable_a8d575546f727080c9153a05986202cc1}{$\sim$\+Updatable}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_updatable_a705b2573da6eaa190a30bba0f7f4dddc}{Submit\+Update\+Registration}} ()
+\begin{DoxyCompactList}\small\item\em Submit update registration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_updatable_a1739b07f9bbc3a22c0ca6d9688f628a6}{Submit\+Update\+Deregistration}} ()
+\begin{DoxyCompactList}\small\item\em Submit update deregistration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_updatable_ae4951bd0a70ffeaeb7a6d476ed788ee2}{Update}} ()=0
+\begin{DoxyCompactList}\small\item\em Base class update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_updatable_a16534a7b64346e19b6182d7e1e6c7723}{Scene\+Registration}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_scene}{Scene}} registration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_updatable_a37eb54a213b8e1f0aac995234662276a}{Scene\+Deregistration}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_scene}{Scene}} deregistration. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_updatable_manager_ab3522bf3002033a3b08eda5de6266d0e}{Updatable\+Manager\+::\+Storage\+List\+Ref}} \mbox{\hyperlink{class_updatable_aa7753a453c785e0cbcc9e90aba892fec}{Get\+Storage\+Ref}} ()
+\begin{DoxyCompactList}\small\item\em Gets storage reference. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_registration_state_8h_a7c6efa1e80dd77c20a8d82b1620ab85f}{Registration\+State}} \mbox{\hyperlink{class_updatable_a68cf544a183ecbdec9ed5b0199a80c97}{Reg\+State\+Curr}}
+\begin{DoxyCompactList}\small\item\em The register state curr. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_updatable_manager_ab3522bf3002033a3b08eda5de6266d0e}{Updatable\+Manager\+::\+Storage\+List\+Ref}} \mbox{\hyperlink{class_updatable_a8f69d2a0d24e087e58bf585257a23f49}{p\+My\+Delete\+Ref}}
+\begin{DoxyCompactList}\small\item\em my delete reference \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_update_registration_command}{Update\+Registration\+Command}} $\ast$ \mbox{\hyperlink{class_updatable_a8e0a3ad800272cde3f5ad5c224cf766f}{p\+Registration\+Cmd}}
+\begin{DoxyCompactList}\small\item\em The registration command. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_update_deregistration_command}{Update\+Deregistration\+Command}} $\ast$ \mbox{\hyperlink{class_updatable_afe9913c9202de00f3eacab8447bf3f40}{p\+Deregistration\+Cmd}}
+\begin{DoxyCompactList}\small\item\em The deregistration command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_updatable_ab90058e20b77ccfb38b438ae0901d71f}{Updatable\+Attorney}}
+\item 
+class \mbox{\hyperlink{class_updatable_a16e0e075d75997e866c3dc71a56c0d16}{Scene\+Attorney}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_updatable_a9a8b6c0e34f2958db872b6090455f90d}\label{class_updatable_a9a8b6c0e34f2958db872b6090455f90d}} 
+\index{Updatable@{Updatable}!Updatable@{Updatable}}
+\index{Updatable@{Updatable}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{Updatable()}{Updatable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Updatable\+::\+Updatable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_updatable_ab8fc5838e65e29be996d9cca6534cd58}\label{class_updatable_ab8fc5838e65e29be996d9cca6534cd58}} 
+\index{Updatable@{Updatable}!Updatable@{Updatable}}
+\index{Updatable@{Updatable}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{Updatable()}{Updatable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Updatable\+::\+Updatable (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_updatable}{Updatable}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_updatable_a40a942254af25a0fe4a99aba0a9caf0f}\label{class_updatable_a40a942254af25a0fe4a99aba0a9caf0f}} 
+\index{Updatable@{Updatable}!Updatable@{Updatable}}
+\index{Updatable@{Updatable}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{Updatable()}{Updatable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Updatable\+::\+Updatable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_updatable}{Updatable}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{class_updatable_a8d575546f727080c9153a05986202cc1}\label{class_updatable_a8d575546f727080c9153a05986202cc1}} 
+\index{Updatable@{Updatable}!````~Updatable@{$\sim$Updatable}}
+\index{````~Updatable@{$\sim$Updatable}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{$\sim$Updatable()}{~Updatable()}}
+{\footnotesize\ttfamily Updatable\+::$\sim$\+Updatable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_updatable_aa7753a453c785e0cbcc9e90aba892fec}\label{class_updatable_aa7753a453c785e0cbcc9e90aba892fec}} 
+\index{Updatable@{Updatable}!GetStorageRef@{GetStorageRef}}
+\index{GetStorageRef@{GetStorageRef}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{GetStorageRef()}{GetStorageRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_updatable_manager_ab3522bf3002033a3b08eda5de6266d0e}{Updatable\+Manager\+::\+Storage\+List\+Ref}} Updatable\+::\+Get\+Storage\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gets storage reference. 
+
+\begin{DoxyReturn}{Returns}
+The storage reference. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_updatable_aa7753a453c785e0cbcc9e90aba892fec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_updatable_aca953a797d7cb84f57ac6d61988c8d8e}\label{class_updatable_aca953a797d7cb84f57ac6d61988c8d8e}} 
+\index{Updatable@{Updatable}!operator=@{operator=}}
+\index{operator=@{operator=}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_updatable}{Updatable}}\& Updatable\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_updatable}{Updatable}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{class_updatable_a499914345ef826fde73d4058ae9d59fa}\label{class_updatable_a499914345ef826fde73d4058ae9d59fa}} 
+\index{Updatable@{Updatable}!operator=@{operator=}}
+\index{operator=@{operator=}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_updatable}{Updatable}}\& Updatable\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_updatable}{Updatable}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move assignment operator. 
+
+\mbox{\Hypertarget{class_updatable_a37eb54a213b8e1f0aac995234662276a}\label{class_updatable_a37eb54a213b8e1f0aac995234662276a}} 
+\index{Updatable@{Updatable}!SceneDeregistration@{SceneDeregistration}}
+\index{SceneDeregistration@{SceneDeregistration}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{SceneDeregistration()}{SceneDeregistration()}}
+{\footnotesize\ttfamily void Updatable\+::\+Scene\+Deregistration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_scene}{Scene}} deregistration. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_updatable_a37eb54a213b8e1f0aac995234662276a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_updatable_a37eb54a213b8e1f0aac995234662276a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_updatable_a16534a7b64346e19b6182d7e1e6c7723}\label{class_updatable_a16534a7b64346e19b6182d7e1e6c7723}} 
+\index{Updatable@{Updatable}!SceneRegistration@{SceneRegistration}}
+\index{SceneRegistration@{SceneRegistration}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{SceneRegistration()}{SceneRegistration()}}
+{\footnotesize\ttfamily void Updatable\+::\+Scene\+Registration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_scene}{Scene}} registration. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_updatable_a16534a7b64346e19b6182d7e1e6c7723_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_updatable_a16534a7b64346e19b6182d7e1e6c7723_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_updatable_a1739b07f9bbc3a22c0ca6d9688f628a6}\label{class_updatable_a1739b07f9bbc3a22c0ca6d9688f628a6}} 
+\index{Updatable@{Updatable}!SubmitUpdateDeregistration@{SubmitUpdateDeregistration}}
+\index{SubmitUpdateDeregistration@{SubmitUpdateDeregistration}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{SubmitUpdateDeregistration()}{SubmitUpdateDeregistration()}}
+{\footnotesize\ttfamily void Updatable\+::\+Submit\+Update\+Deregistration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Submit update deregistration. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_updatable_a1739b07f9bbc3a22c0ca6d9688f628a6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_updatable_a705b2573da6eaa190a30bba0f7f4dddc}\label{class_updatable_a705b2573da6eaa190a30bba0f7f4dddc}} 
+\index{Updatable@{Updatable}!SubmitUpdateRegistration@{SubmitUpdateRegistration}}
+\index{SubmitUpdateRegistration@{SubmitUpdateRegistration}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{SubmitUpdateRegistration()}{SubmitUpdateRegistration()}}
+{\footnotesize\ttfamily void Updatable\+::\+Submit\+Update\+Registration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Submit update registration. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_updatable_a705b2573da6eaa190a30bba0f7f4dddc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_updatable_ae4951bd0a70ffeaeb7a6d476ed788ee2}\label{class_updatable_ae4951bd0a70ffeaeb7a6d476ed788ee2}} 
+\index{Updatable@{Updatable}!Update@{Update}}
+\index{Update@{Update}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Updatable\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+
+
+Base class update. 
+
+Pure virtual function. Derived class must override. ~\newline
+ Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_updatable_ae4951bd0a70ffeaeb7a6d476ed788ee2_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_updatable_a16e0e075d75997e866c3dc71a56c0d16}\label{class_updatable_a16e0e075d75997e866c3dc71a56c0d16}} 
+\index{Updatable@{Updatable}!SceneAttorney@{SceneAttorney}}
+\index{SceneAttorney@{SceneAttorney}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{SceneAttorney}{SceneAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_scene_attorney}{Scene\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_updatable_ab90058e20b77ccfb38b438ae0901d71f}\label{class_updatable_ab90058e20b77ccfb38b438ae0901d71f}} 
+\index{Updatable@{Updatable}!UpdatableAttorney@{UpdatableAttorney}}
+\index{UpdatableAttorney@{UpdatableAttorney}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{UpdatableAttorney}{UpdatableAttorney}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_updatable_attorney}{Updatable\+Attorney}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_updatable_afe9913c9202de00f3eacab8447bf3f40}\label{class_updatable_afe9913c9202de00f3eacab8447bf3f40}} 
+\index{Updatable@{Updatable}!pDeregistrationCmd@{pDeregistrationCmd}}
+\index{pDeregistrationCmd@{pDeregistrationCmd}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{pDeregistrationCmd}{pDeregistrationCmd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_update_deregistration_command}{Update\+Deregistration\+Command}}$\ast$ Updatable\+::p\+Deregistration\+Cmd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The deregistration command. 
+
+\mbox{\Hypertarget{class_updatable_a8f69d2a0d24e087e58bf585257a23f49}\label{class_updatable_a8f69d2a0d24e087e58bf585257a23f49}} 
+\index{Updatable@{Updatable}!pMyDeleteRef@{pMyDeleteRef}}
+\index{pMyDeleteRef@{pMyDeleteRef}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{pMyDeleteRef}{pMyDeleteRef}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_updatable_manager_ab3522bf3002033a3b08eda5de6266d0e}{Updatable\+Manager\+::\+Storage\+List\+Ref}} Updatable\+::p\+My\+Delete\+Ref\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+my delete reference 
+
+\mbox{\Hypertarget{class_updatable_a8e0a3ad800272cde3f5ad5c224cf766f}\label{class_updatable_a8e0a3ad800272cde3f5ad5c224cf766f}} 
+\index{Updatable@{Updatable}!pRegistrationCmd@{pRegistrationCmd}}
+\index{pRegistrationCmd@{pRegistrationCmd}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{pRegistrationCmd}{pRegistrationCmd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_update_registration_command}{Update\+Registration\+Command}}$\ast$ Updatable\+::p\+Registration\+Cmd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The registration command. 
+
+\mbox{\Hypertarget{class_updatable_a68cf544a183ecbdec9ed5b0199a80c97}\label{class_updatable_a68cf544a183ecbdec9ed5b0199a80c97}} 
+\index{Updatable@{Updatable}!RegStateCurr@{RegStateCurr}}
+\index{RegStateCurr@{RegStateCurr}!Updatable@{Updatable}}
+\doxysubsubsection{\texorpdfstring{RegStateCurr}{RegStateCurr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_registration_state_8h_a7c6efa1e80dd77c20a8d82b1620ab85f}{Registration\+State}} Updatable\+::\+Reg\+State\+Curr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The register state curr. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_updatable_8h}{Updatable.\+h}}\item 
+\mbox{\hyperlink{_updatable_8cpp}{Updatable.\+cpp}}\end{DoxyCompactItemize}

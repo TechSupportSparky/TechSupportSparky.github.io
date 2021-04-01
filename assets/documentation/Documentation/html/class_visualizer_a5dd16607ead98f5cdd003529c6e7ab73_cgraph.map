@@ -1,0 +1,19 @@
+<map id="Visualizer::privTerminate" name="Visualizer::privTerminate">
+<area shape="rect" id="node1" title="Private terminate, to be called internally." alt="" coords="5,242,168,269"/>
+<area shape="rect" id="node2" href="$class_visualize_generic_box_factory.html#a71cc2b9d024c526c186079934873b0ee" title=" " alt="" coords="221,71,407,112"/>
+<area shape="rect" id="node6" href="$class_visualize_b_sphere_cmd_factory.html#a68ecd829677c9f3b34fc6b9c5c12d195" title=" " alt="" coords="216,201,412,243"/>
+<area shape="rect" id="node10" href="$class_visualize_a_a_b_b_cmd_factory.html#a9e599f38a57eef7ced638ed52cc7f7a1" title=" " alt="" coords="223,267,405,308"/>
+<area shape="rect" id="node14" href="$class_visualize_o_b_b_cmd_factory.html#a6117f12a8fcbc1737e0c7cd7770308dc" title=" " alt="" coords="227,397,401,439"/>
+<area shape="rect" id="node3" href="$class_visualize_generic_box_factory.html#a7496ec91f5df6a1513cd1c8313271989" title=" " alt="" coords="465,5,651,47"/>
+<area shape="rect" id="node5" href="$class_visualize_generic_box_factory.html#a2ea9c575d9c2af0894af55106cce729b" title=" " alt="" coords="465,71,651,112"/>
+<area shape="rect" id="node4" href="$class_visualize_generic_box_factory.html#abb555d0db43c2fcc1c9cd02de307d7cf" title=" " alt="" coords="709,5,903,47"/>
+<area shape="rect" id="node7" href="$class_visualize_b_sphere_cmd_factory.html#a4b5647c2852aa51134bf8a815c8f042b" title=" " alt="" coords="460,136,656,177"/>
+<area shape="rect" id="node9" href="$class_visualize_b_sphere_cmd_factory.html#aa47059831833723687a4d879643978d2" title=" " alt="" coords="460,201,656,243"/>
+<area shape="rect" id="node8" href="$class_visualize_b_sphere_cmd_factory.html#a58a50e0279f8d88111ed5dda6a3323b0" title=" " alt="" coords="704,136,908,177"/>
+<area shape="rect" id="node11" href="$class_visualize_a_a_b_b_cmd_factory.html#a9a3594a5a35cd2cc5213a6d8b0e02069" title=" " alt="" coords="467,267,649,308"/>
+<area shape="rect" id="node13" href="$class_visualize_a_a_b_b_cmd_factory.html#a934065f0f0932e053f9764d093567cf2" title=" " alt="" coords="467,332,649,373"/>
+<area shape="rect" id="node12" href="$class_visualize_a_a_b_b_cmd_factory.html#af434253900a11e32b2f2c95c2c6d13ec" title=" " alt="" coords="711,267,901,308"/>
+<area shape="rect" id="node15" href="$class_visualize_o_b_b_cmd_factory.html#ab7ed535e9cad1379f2fbe1fc3f445a41" title=" " alt="" coords="471,397,645,439"/>
+<area shape="rect" id="node17" href="$class_visualize_o_b_b_cmd_factory.html#a4d5a2b235409e1037e8f3d8d2b9ac084" title=" " alt="" coords="471,463,645,504"/>
+<area shape="rect" id="node16" href="$class_visualize_o_b_b_cmd_factory.html#aacc35f4278df7bc37c4e021dc24f6689" title=" " alt="" coords="715,397,897,439"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="ShaderManager::Load" name="ShaderManager::Load">
+<area shape="rect" id="node1" title="Loads the specified shader." alt="" coords="5,31,155,57"/>
+<area shape="rect" id="node2" href="$class_shader_manager.html#a027cb5c486b20e641bcbf94e8186a965" title="Gets the instance." alt="" coords="203,5,373,32"/>
+<area shape="rect" id="node4" href="$class_shader_manager.html#a41ccca1682c66c0e893d06b065870e93" title="Private load." alt="" coords="204,56,372,83"/>
+<area shape="rect" id="node3" href="$class_shader_manager.html#aca25f81fd10a02b3e97e9c459b864186" title="Default constructor." alt="" coords="421,5,633,32"/>
+</map>

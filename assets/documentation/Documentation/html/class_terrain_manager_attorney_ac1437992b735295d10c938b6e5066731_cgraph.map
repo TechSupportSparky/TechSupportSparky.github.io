@@ -1,0 +1,7 @@
+<map id="TerrainManagerAttorney::Delete" name="TerrainManagerAttorney::Delete">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,165,65"/>
+<area shape="rect" id="node2" href="$class_terrain_manager.html#af9c0900b9272813ab331b278bd7e5e94" title="Delete the TerrainManager." alt="" coords="213,31,369,57"/>
+<area shape="rect" id="node3" href="$class_terrain_manager.html#a9ed6f4cc405eefa3f8d7bee61ac12be9" title="Gets the instance of TerrainManager." alt="" coords="421,5,589,32"/>
+<area shape="rect" id="node5" href="$class_terrain_manager.html#a9396b8be4f7c265e104c03a696c2ab41" title="Internal call to delete the pointer of TerrainManager instance." alt="" coords="417,56,592,83"/>
+<area shape="rect" id="node4" href="$class_terrain_manager.html#ac90a7e0cb7b7960b752e1e0df307a6b5" title="Default constructor." alt="" coords="640,5,848,32"/>
+</map>

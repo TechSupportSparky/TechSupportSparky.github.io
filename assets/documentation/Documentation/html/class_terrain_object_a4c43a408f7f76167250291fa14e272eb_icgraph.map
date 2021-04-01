@@ -1,0 +1,7 @@
+<map id="TerrainObject::GetMinMaxVects" name="TerrainObject::GetMinMaxVects">
+<area shape="rect" id="node1" title=" " alt="" coords="491,49,665,90"/>
+<area shape="rect" id="node2" href="$class_terrain_object.html#a60236d0a56973bae5ab39a4f89fce896" title=" " alt="" coords="237,5,443,32"/>
+<area shape="rect" id="node4" href="$class_terrain_cell.html#ab920207f1e34d6e100beb486a475db16" title="Creates an AABB volume from the information stored and passes a reference." alt="" coords="267,56,413,83"/>
+<area shape="rect" id="node5" href="$class_terrain_object.html#ae4a408bb9e5db209cb1672e5b7033dd4" title=" " alt="" coords="256,107,424,149"/>
+<area shape="rect" id="node3" href="$class_terrain_object.html#a3abf1f39d5986851e023ee41b2e2abb5" title=" " alt="" coords="5,5,189,32"/>
+</map>

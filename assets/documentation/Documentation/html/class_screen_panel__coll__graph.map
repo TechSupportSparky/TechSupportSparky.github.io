@@ -1,0 +1,9 @@
+<map id="ScreenPanel" name="ScreenPanel">
+<area shape="rect" id="node1" title=" " alt="" coords="126,792,250,1075"/>
+<area shape="rect" id="node2" href="$class_sprite_font.html" title=" " alt="" coords="21,549,160,729"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,409,176,487"/>
+<area shape="rect" id="node4" href="$class_sly_sprite.html" title=" " alt="" coords="33,5,149,347"/>
+<area shape="rect" id="node5" title="STL class." alt="" coords="204,409,284,487"/>
+<area shape="rect" id="node7" title=" " alt="" coords="185,601,349,678"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="181,130,307,222"/>
+</map>

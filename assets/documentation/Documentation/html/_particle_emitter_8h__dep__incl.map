@@ -1,0 +1,11 @@
+<map id="ParticleEmitter.h" name="ParticleEmitter.h">
+<area shape="rect" id="node1" title=" " alt="" coords="489,5,608,32"/>
+<area shape="rect" id="node2" href="$_burst_8h.html" title=" " alt="" coords="299,80,363,107"/>
+<area shape="rect" id="node6" href="$_particle_emitter_8cpp.html" title=" " alt="" coords="431,155,565,181"/>
+<area shape="rect" id="node7" href="$_particle_effect_8cpp.html" title=" " alt="" coords="487,80,611,107"/>
+<area shape="rect" id="node8" href="$_particle_emitter_factory_8cpp.html" title=" " alt="" coords="635,80,812,107"/>
+<area shape="rect" id="node9" href="$_particle_emitter_memory_pool_8cpp.html" title=" " alt="" coords="836,80,1043,107"/>
+<area shape="rect" id="node3" href="$_burst_8cpp.html" title=" " alt="" coords="5,155,84,181"/>
+<area shape="rect" id="node4" href="$_burst_factory_8cpp.html" title=" " alt="" coords="109,155,231,181"/>
+<area shape="rect" id="node5" href="$_burst_memory_pool_8cpp.html" title=" " alt="" coords="256,155,407,181"/>
+</map>

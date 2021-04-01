@@ -1,0 +1,6 @@
+<map id="Sly::GetHeight" name="Sly::GetHeight">
+<area shape="rect" id="node1" title="Gets the window height." alt="" coords="5,31,112,57"/>
+<area shape="rect" id="node2" href="$class_sly.html#a1d59581314e3040746c9a40b2d9a2577" title="Gets the instance." alt="" coords="174,5,273,32"/>
+<area shape="rect" id="node4" href="$class_sly.html#afbf29ffa5d0b7911286c79eafe84d840" title="Internal get height, pulls height from Azul framework." alt="" coords="160,56,287,83"/>
+<area shape="rect" id="node3" href="$class_sly.html#a50e7c55c362cf0a3dec26ad4e77370e0" title="Default constructor." alt="" coords="335,5,403,32"/>
+</map>

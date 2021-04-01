@@ -1,0 +1,4 @@
+<map id="Scene::SetCurrentCamera" name="Scene::SetCurrentCamera">
+<area shape="rect" id="node1" title="Sets current camera." alt="" coords="5,13,180,39"/>
+<area shape="rect" id="node2" href="$class_camera_manager.html#afe3809b7067c6c125d7bdf445e7ff38e" title="Sets current camera." alt="" coords="228,5,415,47"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="ScreenLogAttorney::Render" name="ScreenLogAttorney::Render">
+<area shape="rect" id="node1" title=" " alt="" coords="5,125,147,167"/>
+<area shape="rect" id="node2" href="$class_screen_log.html#a10ee301cc04b1bf1d780baa43ba0a07d" title=" " alt="" coords="195,133,328,159"/>
+<area shape="rect" id="node3" href="$class_screen_log.html#a3cfa452c03111efa584cf3a648e74c34" title=" " alt="" coords="381,107,523,134"/>
+<area shape="rect" id="node13" href="$class_screen_log.html#aa9bd2d50559d4a2ba976210bc9333c73" title=" " alt="" coords="376,158,528,185"/>
+<area shape="rect" id="node4" href="$class_screen_log.html#a34611e5aaf9b3433c97a7c30b2404aa3" title="Default constructor." alt="" coords="577,107,731,134"/>
+<area shape="rect" id="node5" href="$class_sprite_font_manager.html#adfd159763b5c4b06c1d574aa9e0f7594" title=" " alt="" coords="780,78,941,105"/>
+<area shape="rect" id="node9" href="$class_sly.html#a3fd862c9a26805f47c81ba514e6e61bd" title="Gets the window height." alt="" coords="807,137,914,163"/>
+<area shape="rect" id="node6" href="$class_sprite_font_manager.html#a174cfb5ca2e6ce0381d5df7090e96a19" title="Gets the instance of SpriteFontManager." alt="" coords="989,5,1129,47"/>
+<area shape="rect" id="node8" href="$class_sprite_font_manager.html#ac7dd0530569ff2848974663a01e7714f" title="Private get method." alt="" coords="989,71,1129,112"/>
+<area shape="rect" id="node7" href="$class_sprite_font_manager.html#ab5b2044dd6c59141389d5d9d7127f3f2" title="Default constructor." alt="" coords="1177,5,1317,47"/>
+<area shape="rect" id="node10" href="$class_sly.html#a1d59581314e3040746c9a40b2d9a2577" title="Gets the instance." alt="" coords="1010,137,1109,163"/>
+<area shape="rect" id="node12" href="$class_sly.html#afbf29ffa5d0b7911286c79eafe84d840" title="Internal get height, pulls height from Azul framework." alt="" coords="996,187,1123,214"/>
+<area shape="rect" id="node11" href="$class_sly.html#a50e7c55c362cf0a3dec26ad4e77370e0" title="Default constructor." alt="" coords="1213,137,1281,163"/>
+<area shape="rect" id="node14" href="$class_sprite_string.html#a18230ee5b9e835561923b9a7cdf71d66" title="Gets the height of the string." alt="" coords="576,158,732,185"/>
+<area shape="rect" id="node15" href="$class_sprite_string.html#a2bcc30e71415fde602900dd21beab032" title="Renders the Sprite String." alt="" coords="585,209,723,235"/>
+</map>

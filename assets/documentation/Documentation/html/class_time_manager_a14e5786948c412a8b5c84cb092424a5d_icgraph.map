@@ -1,0 +1,5 @@
+<map id="TimeManager::ProcessTime" name="TimeManager::ProcessTime">
+<area shape="rect" id="node1" title="Process the time described by sys_time." alt="" coords="369,13,553,39"/>
+<area shape="rect" id="node2" href="$class_time_manager_attorney_1_1_game_loop.html#ae3dabbf7c3abbd362f77a94a161f3dc2" title=" " alt="" coords="144,5,321,47"/>
+<area shape="rect" id="node3" href="$class_sly.html#a3becf1f9f9075b00b27ee727b5503013" title="Main update loop." alt="" coords="5,13,96,39"/>
+</map>

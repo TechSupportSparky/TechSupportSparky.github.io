@@ -1,0 +1,12 @@
+<map id="SlySprite::SlySprite" name="SlySprite::SlySprite">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,141,108"/>
+<area shape="rect" id="node2" href="$class_shader_manager.html#a102591e663e0897ac54aee3bb097ab5f" title="Gets a shader object* using the given key." alt="" coords="189,56,332,83"/>
+<area shape="rect" id="node6" href="$class_model_manager.html#ac48466a9c8c05c81a6d6acd19b13233a" title="Gets a model* using the given key." alt="" coords="193,107,329,133"/>
+<area shape="rect" id="node3" href="$class_shader_manager.html#a027cb5c486b20e641bcbf94e8186a965" title="Gets the instance." alt="" coords="380,5,551,32"/>
+<area shape="rect" id="node5" href="$class_shader_manager.html#aa99cbaffdf83f033e1541b210a3da0c4" title="Private get." alt="" coords="385,56,546,83"/>
+<area shape="rect" id="node4" href="$class_shader_manager.html#aca25f81fd10a02b3e97e9c459b864186" title="Default constructor." alt="" coords="599,5,811,32"/>
+<area shape="rect" id="node7" href="$class_model_manager.html#a34bb227e07db616a207d7e28bab70a31" title="Gets the instance." alt="" coords="383,107,547,133"/>
+<area shape="rect" id="node10" href="$class_model_manager.html#a0148b218c2cf5e0baa00049b6e604f9a" title="Priv get." alt="" coords="388,157,543,184"/>
+<area shape="rect" id="node8" href="$class_model_manager.html#a9b0d22b1baf59c5b566e82fcd8ca424a" title="Default constructor." alt="" coords="605,107,805,133"/>
+<area shape="rect" id="node9" href="$class_model_manager.html#aa736d7e7712bb2c0f7b8406a502cf152" title="Private load sprite model." alt="" coords="859,99,1055,141"/>
+</map>

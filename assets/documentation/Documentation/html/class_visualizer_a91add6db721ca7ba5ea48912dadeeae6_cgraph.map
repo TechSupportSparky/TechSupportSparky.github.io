@@ -1,0 +1,23 @@
+<map id="Visualizer::ShowOBB" name="Visualizer::ShowOBB">
+<area shape="rect" id="node1" title="Shows the OBB via min and max corners." alt="" coords="5,129,152,156"/>
+<area shape="rect" id="node2" href="$class_visualizer_broker.html#aed796d2786e99fb84049d6e7a1a21b66" title=" " alt="" coords="200,5,405,32"/>
+<area shape="rect" id="node3" href="$class_visualize_a_a_b_b_cmd_factory.html#a85e9b3b553756b0a3321e1e3cb0f7fcd" title=" " alt="" coords="211,57,394,98"/>
+<area shape="rect" id="node9" href="$class_collision_volume_o_b_b.html#aaec889d702eeb44a979a2309500fa816" title="Gets the maximum corner of the OBB." alt="" coords="231,122,374,163"/>
+<area shape="rect" id="node10" href="$class_collision_volume_o_b_b.html#afea9510452232207634cd166d2d66912" title="Gets the minimum corner of the OBB." alt="" coords="231,187,374,229"/>
+<area shape="rect" id="node11" href="$class_visualizer.html#abfb60fda248002a438ce627986f44abb" title="Gets the Visualizer instance." alt="" coords="235,253,371,280"/>
+<area shape="rect" id="node4" href="$class_visualize_a_a_b_b_cmd_factory.html#a9a3594a5a35cd2cc5213a6d8b0e02069" title=" " alt="" coords="453,31,636,73"/>
+<area shape="rect" id="node6" href="$class_visualize_a_a_b_b_cmd_factory.html#a8a4c0cf0e2f6d92d09215e30a4b23cf6" title=" " alt="" coords="453,97,636,138"/>
+<area shape="rect" id="node5" href="$class_visualize_a_a_b_b_cmd_factory.html#af434253900a11e32b2f2c95c2c6d13ec" title=" " alt="" coords="684,31,875,73"/>
+<area shape="rect" id="node7" href="$class_visualize_a_a_b_b_cmd_pool.html#abde07abb736d230c55ff1e5ec7160770" title=" " alt="" coords="697,97,861,138"/>
+<area shape="rect" id="node8" href="$class_visualize_a_a_b_b_command.html#a281df9ea018bbc0dbf41f3e9de1505b1" title=" " alt="" coords="694,162,865,203"/>
+<area shape="rect" id="node12" href="$class_visualizer.html#a104487003c9fea602e26c072aae27efc" title="Default constructor." alt="" coords="473,253,617,280"/>
+<area shape="rect" id="node13" href="$class_shader_manager.html#a102591e663e0897ac54aee3bb097ab5f" title="Gets a shader object* using the given key." alt="" coords="708,228,851,255"/>
+<area shape="rect" id="node17" href="$class_model_manager.html#ac48466a9c8c05c81a6d6acd19b13233a" title="Gets a model* using the given key." alt="" coords="711,279,847,305"/>
+<area shape="rect" id="node14" href="$class_shader_manager.html#a027cb5c486b20e641bcbf94e8186a965" title="Gets the instance." alt="" coords="923,177,1093,204"/>
+<area shape="rect" id="node16" href="$class_shader_manager.html#aa99cbaffdf83f033e1541b210a3da0c4" title="Private get." alt="" coords="927,228,1089,255"/>
+<area shape="rect" id="node15" href="$class_shader_manager.html#aca25f81fd10a02b3e97e9c459b864186" title="Default constructor." alt="" coords="1141,177,1353,204"/>
+<area shape="rect" id="node18" href="$class_model_manager.html#a34bb227e07db616a207d7e28bab70a31" title="Gets the instance." alt="" coords="926,279,1090,305"/>
+<area shape="rect" id="node21" href="$class_model_manager.html#a0148b218c2cf5e0baa00049b6e604f9a" title="Priv get." alt="" coords="931,329,1085,356"/>
+<area shape="rect" id="node19" href="$class_model_manager.html#a9b0d22b1baf59c5b566e82fcd8ca424a" title="Default constructor." alt="" coords="1147,279,1347,305"/>
+<area shape="rect" id="node20" href="$class_model_manager.html#aa736d7e7712bb2c0f7b8406a502cf152" title="Private load sprite model." alt="" coords="1401,271,1597,313"/>
+</map>

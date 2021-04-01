@@ -1,0 +1,261 @@
+\hypertarget{group___e_x_a_m_p_l_e___c_o_m_m_a_n_d_s}{}\doxysection{Example Developer Commands}
+\label{group___e_x_a_m_p_l_e___c_o_m_m_a_n_d_s}\index{Example Developer Commands@{Example Developer Commands}}
+
+
+The limitation of developer commands are the developer\textquotesingle{}s own creativity.  
+
+
+Collaboration diagram for Example Developer Commands\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{group___e_x_a_m_p_l_e___c_o_m_m_a_n_d_s}
+\end{center}
+\end{figure}
+The limitation of developer commands are the developer\textquotesingle{}s own creativity. 
+
+In this section, I will list a number of commands I have made to make my development easier for my demo. ~\newline
+\hypertarget{group___e_x_a_m_p_l_e___c_o_m_m_a_n_d_s_FPS_COMMAND}{}\doxysubsection{F\+PS}\label{group___e_x_a_m_p_l_e___c_o_m_m_a_n_d_s_FPS_COMMAND}
+The F\+PS command draws the F\+PS on screen. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// FPSCommand.h}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{_console_command_8h}{ConsoleCommand.h}}"}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }DrawableFPS; \textcolor{comment}{// Forward deceleration of a GameObject}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }DrawFPSCommand : \textcolor{keyword}{public} \mbox{\hyperlink{class_console_command}{ConsoleCommand}} \{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{    DrawFPSCommand();}
+\DoxyCodeLine{    DrawFPSCommand(\textcolor{keyword}{const} DrawFPSCommand\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    DrawFPSCommand(DrawFPSCommand\&\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    DrawFPSCommand\& \mbox{\hyperlink{class_console_command_a616d049ba465dbd032f6afb27220a136}{operator=}}(\textcolor{keyword}{const} DrawFPSCommand\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    DrawFPSCommand\& \mbox{\hyperlink{class_console_command_a616d049ba465dbd032f6afb27220a136}{operator=}}(DrawFPSCommand\&\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \string~DrawFPSCommand();}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_console_command_ae564b82a2826122cfc0b22013e0c6d71}{execute}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{    DrawableFPS* obj;}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} active;}
+\DoxyCodeLine{\};}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// FPSCommand.cpp}}
+\DoxyCodeLine{DrawFPSCommand::DrawFPSCommand()}
+\DoxyCodeLine{: obj(new DrawableFPS), active(false)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} DrawFPSCommand::execute() \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (active) \{}
+\DoxyCodeLine{        active = \textcolor{keyword}{false};}
+\DoxyCodeLine{        obj-\/>SceneExit();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{        active = \textcolor{keyword}{true};}
+\DoxyCodeLine{        obj-\/>SceneEntry(); \textcolor{comment}{// Scene entry calls draw upon the stored screen logger}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{DrawFPSCommand::\string~DrawFPSCommand() \{}
+\DoxyCodeLine{    \textcolor{keyword}{delete} obj;}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+\hypertarget{group___e_x_a_m_p_l_e___c_o_m_m_a_n_d_s_WIN_COMMAND}{}\doxysubsection{Win}\label{group___e_x_a_m_p_l_e___c_o_m_m_a_n_d_s_WIN_COMMAND}
+The Win command tells a user made level manager that the current level has been won.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// WinCommand.h}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{_console_command_8h}{ConsoleCommand.h}}"}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }WinCommand : \textcolor{keyword}{public} \mbox{\hyperlink{class_console_command}{ConsoleCommand}} \{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{    WinCommand() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{    WinCommand(\textcolor{keyword}{const} WinCommand\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    WinCommand(WinCommand\&\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    WinCommand\& \mbox{\hyperlink{class_console_command_a616d049ba465dbd032f6afb27220a136}{operator=}}(\textcolor{keyword}{const} WinCommand\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    WinCommand\& \mbox{\hyperlink{class_console_command_a616d049ba465dbd032f6afb27220a136}{operator=}}(WinCommand\&\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \string~WinCommand() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_console_command_ae564b82a2826122cfc0b22013e0c6d71}{execute}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\};}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// WinCommand.cpp}}
+\DoxyCodeLine{}
+\DoxyCodeLine{include \textcolor{stringliteral}{"LevelManagerAttorney.h"}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "LevelManager.h"}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "WinCommand.h"}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} WinCommand::execute() \{}
+\DoxyCodeLine{    LevelManagerAttorney::WinCurrentLevel();}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+\hypertarget{group___e_x_a_m_p_l_e___c_o_m_m_a_n_d_s_MAP_COMMAND}{}\doxysubsection{Map}\label{group___e_x_a_m_p_l_e___c_o_m_m_a_n_d_s_MAP_COMMAND}
+The Map command performs a scene change upon the stored scene in a \char`\"{}\+Source Engine -\/ esk\char`\"{} style.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// MapCommand.h}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{_console_command_8h}{ConsoleCommand.h}}"}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{class_scene}{Scene}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }MapCommand : \textcolor{keyword}{public} \mbox{\hyperlink{class_console_command}{ConsoleCommand}} \{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{    MapCommand();}
+\DoxyCodeLine{    MapCommand(\textcolor{keyword}{const} MapCommand\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    MapCommand(MapCommand\&\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    MapCommand\& \mbox{\hyperlink{class_console_command_a616d049ba465dbd032f6afb27220a136}{operator=}}(\textcolor{keyword}{const} MapCommand\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    MapCommand\& \mbox{\hyperlink{class_console_command_a616d049ba465dbd032f6afb27220a136}{operator=}}(MapCommand\&\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \string~MapCommand();}
+\DoxyCodeLine{}
+\DoxyCodeLine{    MapCommand(\mbox{\hyperlink{class_scene}{Scene}}* newScene);}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_console_command_ae564b82a2826122cfc0b22013e0c6d71}{execute}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{typedef} std::list<MapCommand*> ItemList;}
+\DoxyCodeLine{    \textcolor{keyword}{typedef} ItemList::iterator StorageRef;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{class_scene}{Scene}}* getScene();}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} Initialize(\mbox{\hyperlink{class_scene}{Scene}}* nextScene, StorageRef ref);}
+\DoxyCodeLine{    StorageRef getStorageRef();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{    StorageRef myStorageRef;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{class_scene}{Scene}}* nextScene;}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} fired;}
+\DoxyCodeLine{\};}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// MapCommand.cpp}}
+\DoxyCodeLine{}
+\DoxyCodeLine{MapCommand::MapCommand()}
+\DoxyCodeLine{: nextScene(nullptr), fired(false)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{MapCommand::MapCommand(\mbox{\hyperlink{class_scene}{Scene}}* newScene) \{}
+\DoxyCodeLine{    nextScene = newScene;}
+\DoxyCodeLine{    fired = \textcolor{keyword}{false};}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} MapCommand::execute() \{}
+\DoxyCodeLine{    fired = \textcolor{keyword}{true};}
+\DoxyCodeLine{    \mbox{\hyperlink{class_scene_manager_a5254df5df6700fee4ad13692901bb0c7}{SceneManager::SetNextScene}}(nextScene);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_scene}{Scene}}* MapCommand::getScene() \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} nextScene;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{MapCommand::StorageRef MapCommand::getStorageRef() \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} this-\/>myStorageRef;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} MapCommand::Initialize(\mbox{\hyperlink{class_scene}{Scene}}* iNextScene, MapCommand::StorageRef ref) \{}
+\DoxyCodeLine{    nextScene = iNextScene;}
+\DoxyCodeLine{    myStorageRef = ref;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{MapCommand::\string~MapCommand() \{}
+\DoxyCodeLine{    \textcolor{comment}{// We ensure the command never fired because as soon as a scene is}}
+\DoxyCodeLine{    \textcolor{comment}{// "given" to the SceneManager, it is now the scene manager's}}
+\DoxyCodeLine{    \textcolor{comment}{// responsibility of deleting it.  Not the command's.  That is}}
+\DoxyCodeLine{    \textcolor{comment}{//unless, the command never triggered}}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (!fired) \{}
+\DoxyCodeLine{        \textcolor{keyword}{delete} nextScene;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+\hypertarget{group___e_x_a_m_p_l_e___c_o_m_m_a_n_d_s_NIGHT_COMMAND}{}\doxysubsection{Night Command}\label{group___e_x_a_m_p_l_e___c_o_m_m_a_n_d_s_NIGHT_COMMAND}
+The night command simulates the changing of day. What is actually does is swaps two skyboxes and (if provided) a terrain.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// NightCommand.h}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{_console_command_8h}{ConsoleCommand.h}}"}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{class_sky_box}{SkyBox}};}
+\DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{class_terrain_object}{TerrainObject}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }NightCommand : \textcolor{keyword}{public} \mbox{\hyperlink{class_console_command}{ConsoleCommand}} \{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{    NightCommand() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{    NightCommand(\textcolor{keyword}{const} NightCommand\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    NightCommand(NightCommand\&\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    NightCommand\& \mbox{\hyperlink{class_console_command_a616d049ba465dbd032f6afb27220a136}{operator=}}(\textcolor{keyword}{const} NightCommand\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    NightCommand\& \mbox{\hyperlink{class_console_command_a616d049ba465dbd032f6afb27220a136}{operator=}}(NightCommand\&\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \string~NightCommand();}
+\DoxyCodeLine{}
+\DoxyCodeLine{    NightCommand(\mbox{\hyperlink{class_sky_box}{SkyBox}}* daySkybox, \mbox{\hyperlink{class_sky_box}{SkyBox}}* nightSkybox, \mbox{\hyperlink{class_terrain_object}{TerrainObject}}* daySkyBox = \textcolor{keyword}{nullptr}, \mbox{\hyperlink{class_terrain_object}{TerrainObject}}* nightSkyBox = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_console_command_ae564b82a2826122cfc0b22013e0c6d71}{execute}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{    \mbox{\hyperlink{class_sky_box}{SkyBox}}* daySkybox;}
+\DoxyCodeLine{    \mbox{\hyperlink{class_sky_box}{SkyBox}}* nightSkybox;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{class_terrain_object}{TerrainObject}}* dayTerrain;}
+\DoxyCodeLine{    \mbox{\hyperlink{class_terrain_object}{TerrainObject}}* nightTerrain;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} triggered;}
+\DoxyCodeLine{\};}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// NightCommand.cpp}}
+\DoxyCodeLine{NightCommand::NightCommand(\mbox{\hyperlink{class_sky_box}{SkyBox}}* daySky, \mbox{\hyperlink{class_sky_box}{SkyBox}}* nightSky, \mbox{\hyperlink{class_terrain_object}{TerrainObject}}* \_dayTerrain, \mbox{\hyperlink{class_terrain_object}{TerrainObject}}* \_nightTerrain)}
+\DoxyCodeLine{: daySkybox(daySky), nightSkybox(nightSky), dayTerrain(\_dayTerrain), nightTerrain(\_nightTerrain), triggered(false)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} NightCommand::execute() \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (!triggered) \{ \textcolor{comment}{// Check to see if we've triggered this command before (to avoid double registration)}}
+\DoxyCodeLine{        daySkybox-\/>TerminateDraw();}
+\DoxyCodeLine{        nightSkybox-\/>SetupDraw();}
+\DoxyCodeLine{        triggered = \textcolor{keyword}{true};}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (dayTerrain \&\& nightTerrain) \{ \textcolor{comment}{// If a terrain is defined, swap it too.}}
+\DoxyCodeLine{            \mbox{\hyperlink{class_terrain_manager_a5e8b9bd1c534ad89bbb2e80539980908}{TerrainManager::DeinitializeCurrentTerrain}}();}
+\DoxyCodeLine{            \mbox{\hyperlink{class_terrain_manager_ad217e6e714b19bab7336663d54c4340c}{TerrainManager::SetCurrentTerrain}}(nightTerrain);}
+\DoxyCodeLine{            nightTerrain-\/>Initialize();}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \mbox{\hyperlink{class_console_manager_ad49b0626cc2835ca742a50ad86a732cc}{ConsoleManager::Print}}(\textcolor{stringliteral}{"Set the time to day"}, \textcolor{keyword}{false}); \textcolor{comment}{// Let the dev know what state it's in}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{        nightSkybox-\/>TerminateDraw(); \textcolor{comment}{// Revert}}
+\DoxyCodeLine{        daySkybox-\/>SetupDraw();}
+\DoxyCodeLine{        triggered = \textcolor{keyword}{false};}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (dayTerrain \&\& nightTerrain) \{}
+\DoxyCodeLine{            \mbox{\hyperlink{class_terrain_manager_a5e8b9bd1c534ad89bbb2e80539980908}{TerrainManager::DeinitializeCurrentTerrain}}();}
+\DoxyCodeLine{            \mbox{\hyperlink{class_terrain_manager_ad217e6e714b19bab7336663d54c4340c}{TerrainManager::SetCurrentTerrain}}(dayTerrain);}
+\DoxyCodeLine{            dayTerrain-\/>Initialize();}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \mbox{\hyperlink{class_console_manager_ad49b0626cc2835ca742a50ad86a732cc}{ConsoleManager::Print}}(\textcolor{stringliteral}{"Set the time to night"}, \textcolor{keyword}{false});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{NightCommand::\string~NightCommand() \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (triggered) \{}
+\DoxyCodeLine{        nightSkybox-\/>TerminateDraw(); \textcolor{comment}{// Only required to deinitialize the draw for the night sky box if we fired it here}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ 

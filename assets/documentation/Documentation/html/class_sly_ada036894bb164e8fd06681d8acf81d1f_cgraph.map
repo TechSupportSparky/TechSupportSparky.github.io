@@ -1,0 +1,6 @@
+<map id="Sly::SetClear" name="Sly::SetClear">
+<area shape="rect" id="node1" title="Sets the color to clear the screen with." alt="" coords="5,31,104,57"/>
+<area shape="rect" id="node2" href="$class_sly.html#a1d59581314e3040746c9a40b2d9a2577" title="Gets the instance." alt="" coords="162,5,261,32"/>
+<area shape="rect" id="node4" href="$class_sly.html#a0ea1147dfdac6a38095dd46f5d847482" title="Internal set clear. Passes values to Azul framework." alt="" coords="152,56,271,83"/>
+<area shape="rect" id="node3" href="$class_sly.html#a50e7c55c362cf0a3dec26ad4e77370e0" title="Default constructor." alt="" coords="319,5,387,32"/>
+</map>

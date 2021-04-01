@@ -1,0 +1,5 @@
+<map id="UpdateRegistrationCommand" name="UpdateRegistrationCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="5,417,224,597"/>
+<area shape="rect" id="node2" href="$class_scene_registry.html" title="A scene registry." alt="" coords="47,219,182,369"/>
+<area shape="rect" id="node3" href="$class_command_base.html" title=" " alt="" coords="45,5,184,171"/>
+</map>

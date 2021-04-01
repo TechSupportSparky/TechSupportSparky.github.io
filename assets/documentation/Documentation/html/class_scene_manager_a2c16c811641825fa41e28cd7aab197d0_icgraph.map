@@ -1,0 +1,52 @@
+<map id="SceneManager::Instance" name="SceneManager::Instance">
+<area shape="rect" id="node1" title="Gets the instance." alt="" coords="843,1453,1009,1480"/>
+<area shape="rect" id="node2" href="$class_scene_manager.html#aefba8a3a94173f0dc139220284d214e2" title="Deletes the scene swap commands and pointer instance." alt="" coords="616,187,771,213"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#a459d07314249b308793274d303db1fb6" title="Calls the current scene&#39;s draw loop." alt="" coords="620,419,767,445"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="603,833,783,874"/>
+<area shape="rect" id="node40" href="$class_scene_manager.html#aff7da0d699248ad14e9d99fd12f2284d" title="Initializes the start scene." alt="" coords="594,1377,793,1404"/>
+<area shape="rect" id="node41" href="$class_scene_manager.html#a5637820d98428183b76f178b15312e84" title="Loads the default scene." alt="" coords="601,1428,786,1455"/>
+<area shape="rect" id="node43" href="$class_scene_manager.html#ac8258eb6b8bec75bd018fa7d28b516d3" title="Sets up what scene should be loaded as the default startup." alt="" coords="605,1479,782,1505"/>
+<area shape="rect" id="node44" href="$class_scene_manager.html#a5254df5df6700fee4ad13692901bb0c7" title="Sets next scene." alt="" coords="593,1529,794,1556"/>
+<area shape="rect" id="node46" href="$class_scene_manager.html#a52689af75e2f40c9ccd99d985fa77a2d" title="Sets start scene." alt="" coords="592,1580,795,1607"/>
+<area shape="rect" id="node47" href="$class_scene_manager.html#a2417742d3fef90ea663bba247cebb0ee" title=" " alt="" coords="592,1631,795,1657"/>
+<area shape="rect" id="node49" href="$class_scene_manager.html#ab61cbf725d6649c4fea3a61159baa404" title="Calls the main update loop for the current scene." alt="" coords="614,1681,773,1708"/>
+<area shape="rect" id="node3" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="349,5,488,32"/>
+<area shape="rect" id="node5" href="$class_sly.html#a175f9ff26a02b3a97eef61131f2b812c" title="Main draw loop." alt="" coords="379,56,458,83"/>
+<area shape="rect" id="node7" href="$class_sky_box.html#ab9db46f2e34683cae517ba97a44aee9e" title="Pure virtual function draw. Derived objects must override." alt="" coords="366,107,471,133"/>
+<area shape="rect" id="node8" href="$class_terrain_object.html#ad6d6320337c1c12c2a1852294d3c4150" title="Pure virtual function draw. Derived objects must override." alt="" coords="351,157,487,184"/>
+<area shape="rect" id="node9" href="$class_burst.html#a726e61d964723c98e044102920bb30e3" title=" " alt="" coords="348,208,489,235"/>
+<area shape="rect" id="node10" href="$class_scene_attorney_1_1_alarmable_registration.html#af7d301105712fdb50766a8e09699dfc2" title=" " alt="" coords="331,259,507,301"/>
+<area shape="rect" id="node13" href="$class_scene_attorney_1_1_collidable_registration.html#a94c1c36f8ece4055c9ff2ad0925eec78" title=" " alt="" coords="323,325,514,366"/>
+<area shape="rect" id="node17" href="$class_scene_attorney_1_1_drawable_registration.html#a2761d941b8dddd859ef3d9cbdc7bf118" title=" " alt="" coords="299,390,538,431"/>
+<area shape="rect" id="node20" href="$class_scene_attorney_1_1_inputable_registration.html#a136019c4cbc5eecc0975f66f058f0bac" title=" " alt="" coords="323,455,515,497"/>
+<area shape="rect" id="node21" href="$class_scene_attorney_1_1_updatable_registration.html#adc0ad1efa898756cfb4b80390c1bc6fa" title=" " alt="" coords="327,521,510,562"/>
+<area shape="rect" id="node22" href="$class_visualizer.html#ae416d2e8738be5d29c02b9a6b3f3553a" title="Private call to render the AABB box." alt="" coords="327,587,510,613"/>
+<area shape="rect" id="node23" href="$class_visualizer.html#a7676124e5429184080ad944c387b4fd3" title="Private call render b sphere." alt="" coords="320,637,517,664"/>
+<area shape="rect" id="node24" href="$class_visualizer.html#a7136b695c5d8779f3bb32516bbde5f02" title="Private call to render a line." alt="" coords="333,688,504,715"/>
+<area shape="rect" id="node25" href="$class_visualizer.html#ab16b9b518eed999e53ee4663c1f35d21" title="Internal call to render a marker at the given position." alt="" coords="325,739,512,765"/>
+<area shape="rect" id="node26" href="$class_visualizer.html#aaf3a0de5ceb499947a18dd009a765bf6" title="Internal call to render the OBB box." alt="" coords="331,789,506,816"/>
+<area shape="rect" id="node27" href="$class_sly_sprite.html#a24a7c9d604053569f5e43d50dd8ec694" title="Renders the sprite with the current 2D Camera." alt="" coords="357,840,481,867"/>
+<area shape="rect" id="node28" href="$class_alarmable.html#a53debebf4464c3e7c421e82a0fa21fe0" title="Submit alarm deregistration." alt="" coords="297,891,540,917"/>
+<area shape="rect" id="node29" href="$class_alarmable.html#aeadd2948f45d754a6b97910044270f26" title="Submit alarm registration." alt="" coords="303,941,535,968"/>
+<area shape="rect" id="node30" href="$class_collidable.html#ae45879abd73764b1357330f9c33c3fc0" title="Submit collision deregistration." alt="" coords="331,993,507,1034"/>
+<area shape="rect" id="node31" href="$class_collidable.html#a2a98ae0764e59293da67b3451dc6dceb" title="Submits the collision registration from the user&#39;s perspective." alt="" coords="331,1058,507,1099"/>
+<area shape="rect" id="node32" href="$class_drawable.html#a04fdefc737ea11759ed7334949420cf8" title="Submit draw deregistration." alt="" coords="302,1124,535,1151"/>
+<area shape="rect" id="node33" href="$class_drawable.html#a4f89e20fc4a5efe3ed173743498d93eb" title="Submit draw registration." alt="" coords="307,1175,530,1201"/>
+<area shape="rect" id="node34" href="$class_game_object.html#acd73dcfe7d0f587fd985981511975301" title="Submit object entry." alt="" coords="331,1225,506,1252"/>
+<area shape="rect" id="node35" href="$class_game_object.html#ab13c929c99c3074d4a0467ce02cd7998" title="Submit exit." alt="" coords="335,1276,502,1303"/>
+<area shape="rect" id="node36" href="$class_inputable.html#a54848d4c6e1f26ae64596fcb0b14e7b5" title="Submit key deregistration." alt="" coords="305,1327,532,1353"/>
+<area shape="rect" id="node37" href="$class_inputable.html#a9a99e7fd7742070bc42eb33b09c6f9f4" title="Submit key registration." alt="" coords="311,1377,526,1404"/>
+<area shape="rect" id="node38" href="$class_updatable.html#a1739b07f9bbc3a22c0ca6d9688f628a6" title="Submit update deregistration." alt="" coords="293,1428,544,1455"/>
+<area shape="rect" id="node39" href="$class_updatable.html#a705b2573da6eaa190a30bba0f7f4dddc" title="Submit update registration." alt="" coords="299,1479,538,1505"/>
+<area shape="rect" id="node11" href="$class_alarmable.html#ad2da9852c51da5d0696d73fd69f647d2" title="Alarm deregistration." alt="" coords="24,180,227,207"/>
+<area shape="rect" id="node12" href="$class_alarmable.html#ad8f6202e8c5591ed93bf1f570bbfec62" title="Alarm registration." alt="" coords="30,231,221,257"/>
+<area shape="rect" id="node14" href="$class_collidable.html#ab2935eb5445aa8413cf15b233569c515" title="Scene deregistration." alt="" coords="24,281,227,308"/>
+<area shape="rect" id="node15" href="$class_collidable.html#a78487a5481b7e229b12fba9f5ba11c4a" title="Scene registration." alt="" coords="29,332,221,359"/>
+<area shape="rect" id="node16" href="$class_collidable.html#aa05e6c186450b315db86379b2399e1b7" title="Sets collidable group." alt="" coords="44,383,207,425"/>
+<area shape="rect" id="node18" href="$class_drawable.html#ace6f9ecdc70f88299309d58764d523c5" title="Forced scene deregistration." alt="" coords="5,449,245,476"/>
+<area shape="rect" id="node19" href="$class_drawable.html#a457619b2a757693baa43f115128fc73f" title="Scene deregistration." alt="" coords="25,500,225,527"/>
+<area shape="rect" id="node42" href="$class_reload_command.html#ab02957bb0a308480ecbeec0abc60f149" title="The base command required to be implemented by all console commands. The resulting trigger mechanism ..." alt="" coords="331,1529,506,1556"/>
+<area shape="rect" id="node45" href="$class_sly.html#a0e65e74526d0c79d554267cbeee21d80" title="Loads engine starting content. Loads first scene." alt="" coords="357,1580,480,1607"/>
+<area shape="rect" id="node48" href="$class_god_cam_command.html#a19b5e32b95ef755edffbdd479f85c721" title="Executes the Godcam command." alt="" coords="325,1631,512,1657"/>
+<area shape="rect" id="node50" href="$class_sly.html#a3becf1f9f9075b00b27ee727b5503013" title="Main update loop." alt="" coords="373,1681,464,1708"/>
+</map>

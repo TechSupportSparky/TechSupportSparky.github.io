@@ -1,0 +1,11 @@
+<map id="SkyBox::SkyBox" name="SkyBox::SkyBox">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,128,108"/>
+<area shape="rect" id="node2" href="$class_shader_manager.html#a102591e663e0897ac54aee3bb097ab5f" title="Gets a shader object* using the given key." alt="" coords="177,56,319,83"/>
+<area shape="rect" id="node6" href="$class_texture_manager.html#a2c8c249eeca164c77c18b36243da6a9a" title="Gets a texture* using the given key." alt="" coords="176,107,320,133"/>
+<area shape="rect" id="node3" href="$class_shader_manager.html#a027cb5c486b20e641bcbf94e8186a965" title="Gets the instance." alt="" coords="369,5,539,32"/>
+<area shape="rect" id="node5" href="$class_shader_manager.html#aa99cbaffdf83f033e1541b210a3da0c4" title="Private get." alt="" coords="373,56,535,83"/>
+<area shape="rect" id="node4" href="$class_shader_manager.html#aca25f81fd10a02b3e97e9c459b864186" title="Default constructor." alt="" coords="590,5,802,32"/>
+<area shape="rect" id="node7" href="$class_texture_manager.html#af8c4f47e97491dc5001ce1ee5b0fce3f" title="Gets the instance." alt="" coords="368,107,540,133"/>
+<area shape="rect" id="node9" href="$class_texture_manager.html#ab2dc090498f7d63d4cda50b6a782706e" title="Priv get." alt="" coords="373,157,535,184"/>
+<area shape="rect" id="node8" href="$class_texture_manager.html#ad76abb178b37cedf4514eb0154349935" title="Default constructor." alt="" coords="588,107,804,133"/>
+</map>

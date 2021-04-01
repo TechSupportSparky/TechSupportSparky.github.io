@@ -1,0 +1,4 @@
+<map id="TerrainCell::getIndex" name="TerrainCell::getIndex">
+<area shape="rect" id="node1" title="Gets the stored indices of i and j, outputs to arguments." alt="" coords="212,5,352,32"/>
+<area shape="rect" id="node2" href="$class_t_r_a_iterator.html#a065371c70d6df7a107fc5f503ce8804a" title=" " alt="" coords="5,5,164,32"/>
+</map>

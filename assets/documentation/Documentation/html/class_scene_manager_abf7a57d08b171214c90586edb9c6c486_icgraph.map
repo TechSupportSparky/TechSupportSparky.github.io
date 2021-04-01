@@ -1,0 +1,4 @@
+<map id="SceneManager::privSetStartScene" name="SceneManager::privSetStartScene">
+<area shape="rect" id="node1" title="Private set start scene." alt="" coords="256,5,440,47"/>
+<area shape="rect" id="node2" href="$class_scene_manager.html#a52689af75e2f40c9ccd99d985fa77a2d" title="Sets start scene." alt="" coords="5,13,208,39"/>
+</map>
