@@ -1,0 +1,6 @@
+<map id="ImageManager::Delete" name="ImageManager::Delete">
+<area shape="rect" id="node1" title="Deletes this pointer instance. To only be called by the engine." alt="" coords="5,31,157,57"/>
+<area shape="rect" id="node2" href="$class_image_manager.html#ae1fff2154dfa21faf1baab26521cb99f" title="Gets the ImageManager instance." alt="" coords="209,5,373,32"/>
+<area shape="rect" id="node4" href="$class_image_manager.html#aefe58979c6872aea5a7691249bcca1e1" title="Deletes this pointer instance. To only be called internally." alt="" coords="205,56,376,83"/>
+<area shape="rect" id="node3" href="$class_image_manager.html#a8c856af0e3f0d23da7c765b0e33e585e" title="Default constructor." alt="" coords="424,5,624,32"/>
+</map>

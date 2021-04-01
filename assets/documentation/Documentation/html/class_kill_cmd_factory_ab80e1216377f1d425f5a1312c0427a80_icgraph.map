@@ -1,0 +1,4 @@
+<map id="KillCmdFactory::Terminate" name="KillCmdFactory::Terminate">
+<area shape="rect" id="node1" title=" " alt="" coords="185,5,361,32"/>
+<area shape="rect" id="node2" href="$class_console.html#a32e8c79c8579b1b076e53848c540d4e7" title="Destructor (Virtual from CommandBase)" alt="" coords="5,5,137,32"/>
+</map>

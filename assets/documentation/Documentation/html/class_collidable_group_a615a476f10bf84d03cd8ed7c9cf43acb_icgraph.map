@@ -1,0 +1,6 @@
+<map id="CollidableGroup::GetColliderCollection" name="CollidableGroup::GetColliderCollection">
+<area shape="rect" id="node1" title="Gets collider collection." alt="" coords="248,71,433,112"/>
+<area shape="rect" id="node2" href="$class_collision_test_pair_command.html#a489de7fe1a3b7c767d6d66ae5f7c9a4f" title="Executes this command. Pure virtual function must be defined by all derived commands." alt="" coords="13,5,192,47"/>
+<area shape="rect" id="node3" href="$class_collision_test_self_command.html#a630fc38f754cf9134bf2d51079b5f34e" title="Executes this command. Pure virtual function must be defined by all derived commands." alt="" coords="14,71,191,112"/>
+<area shape="rect" id="node4" href="$class_collision_test_terrain_command.html#adae6dfa0f875cdfa7e6a8cea76aa02cc" title="Executes this command. Pure virtual function must be defined by all derived commands." alt="" coords="5,136,200,177"/>
+</map>

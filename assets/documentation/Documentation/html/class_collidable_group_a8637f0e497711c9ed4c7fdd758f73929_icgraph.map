@@ -1,0 +1,4 @@
+<map id="CollidableGroup::privGetAABB" name="CollidableGroup::privGetAABB">
+<area shape="rect" id="node1" title="Gives the stored AABB for the collider group." alt="" coords="232,13,429,39"/>
+<area shape="rect" id="node2" href="$class_collision_test_pair_command.html#a489de7fe1a3b7c767d6d66ae5f7c9a4f" title="Executes this command. Pure virtual function must be defined by all derived commands." alt="" coords="5,5,184,47"/>
+</map>

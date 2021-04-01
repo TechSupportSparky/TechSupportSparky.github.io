@@ -1,0 +1,4 @@
+<map id="CollisionVolumeAABB::GetScale" name="CollisionVolumeAABB::GetScale">
+<area shape="rect" id="node1" title="Gets the scale." alt="" coords="256,5,407,47"/>
+<area shape="rect" id="node2" href="$class_sly_math.html#aebf31df8aa704c17b0c5650fa51577cd" title="Obb projection length for AABB projected on V." alt="" coords="5,13,208,39"/>
+</map>

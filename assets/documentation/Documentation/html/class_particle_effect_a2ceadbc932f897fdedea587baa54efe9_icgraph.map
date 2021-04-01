@@ -1,0 +1,5 @@
+<map id="ParticleEffect::GetBurstSpeed" name="ParticleEffect::GetBurstSpeed">
+<area shape="rect" id="node1" title=" " alt="" coords="431,5,589,47"/>
+<area shape="rect" id="node2" href="$class_particle_emitter.html#a4e80b12742a6b6fe7c694c56b7a968bc" title=" " alt="" coords="211,13,383,39"/>
+<area shape="rect" id="node3" href="$class_particle_emitter.html#a700fc45f5c9db613808f54dc330c50e4" title=" " alt="" coords="5,13,163,39"/>
+</map>

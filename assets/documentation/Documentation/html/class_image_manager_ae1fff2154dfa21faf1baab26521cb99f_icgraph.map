@@ -1,0 +1,11 @@
+<map id="ImageManager::Instance" name="ImageManager::Instance">
+<area shape="rect" id="node1" title="Gets the ImageManager instance." alt="" coords="635,71,799,98"/>
+<area shape="rect" id="node2" href="$class_image_manager.html#ae01895974e6e3e9ae95dbb11c6070e23" title="Deletes this pointer instance. To only be called by the engine." alt="" coords="435,17,587,43"/>
+<area shape="rect" id="node5" href="$class_image_manager.html#a9521b5248002fd6f48355c7f8edf27c8" title="Gets an image* using the given key." alt="" coords="443,71,579,98"/>
+<area shape="rect" id="node9" href="$class_image_manager.html#a43a542026fe550159d7aaea3fe19a22f" title=" " alt="" coords="439,122,582,149"/>
+<area shape="rect" id="node3" href="$class_image_manager_attorney.html#a5902cfaa0a7b68738d98abe7bb420d7f" title=" " alt="" coords="217,5,373,47"/>
+<area shape="rect" id="node4" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="11,13,150,39"/>
+<area shape="rect" id="node6" href="$class_sly_sprite.html#afec4fb5020146e01a6396f4fbf45c93a" title="Specialized Constructor." alt="" coords="227,71,363,98"/>
+<area shape="rect" id="node7" href="$class_sprite_font.html#ae67ec68b7c169f0279e06d8905b34c33" title=" " alt="" coords="204,122,387,149"/>
+<area shape="rect" id="node8" href="$class_sprite_font.html#ac2010590f8dbb0e2bb0226c591b2324c" title=" " alt="" coords="5,147,156,174"/>
+</map>

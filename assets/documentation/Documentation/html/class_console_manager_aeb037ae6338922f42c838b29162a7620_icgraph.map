@@ -1,0 +1,7 @@
+<map id="ConsoleManager::privNewScene" name="ConsoleManager::privNewScene">
+<area shape="rect" id="node1" title=" " alt="" coords="929,20,1137,47"/>
+<area shape="rect" id="node2" href="$class_console_manager.html#a74cbc71d0290ede82810815e0550408c" title="Creates a new console" alt="" coords="692,20,881,47"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#a5b6d93729bec795ce2576d37d2a56236" title="Private change scene." alt="" coords="464,13,644,54"/>
+<area shape="rect" id="node4" href="$class_scene_manager_attorney_1_1_scene_swap_registration.html#ad8d2f066bb45baad2678c5edb97a9253" title=" " alt="" coords="248,5,416,61"/>
+<area shape="rect" id="node5" href="$class_scene_change_command_swap.html#a3ee022de55997954b84e2e2e43e421c4" title="Executes this command." alt="" coords="5,13,200,54"/>
+</map>

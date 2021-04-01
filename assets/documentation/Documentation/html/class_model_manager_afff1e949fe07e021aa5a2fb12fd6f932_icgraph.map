@@ -1,0 +1,5 @@
+<map id="ModelManager::Delete" name="ModelManager::Delete">
+<area shape="rect" id="node1" title="Deletes ModelManager&#39;s pointer instance. Only to be called by engine code." alt="" coords="396,13,548,39"/>
+<area shape="rect" id="node2" href="$class_model_manager_attorney.html#a381d07049b36c8a9bb828a02fa68f7fa" title=" " alt="" coords="192,5,348,47"/>
+<area shape="rect" id="node3" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="5,13,144,39"/>
+</map>

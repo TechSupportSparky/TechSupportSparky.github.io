@@ -1,0 +1,4 @@
+<map id="CollidableAttorney::Registration::SceneRegistration" name="CollidableAttorney::Registration::SceneRegistration">
+<area shape="rect" id="node1" title=" " alt="" coords="252,5,465,47"/>
+<area shape="rect" id="node2" href="$class_collision_registration_command.html#a76c79284af71a10da9465082cc1666b4" title="Executes this command. Pure virtual function must be defined by all derived commands." alt="" coords="5,5,204,47"/>
+</map>

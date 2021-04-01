@@ -1,0 +1,5 @@
+<map id="ConsoleManagerAttorney::Execution::AddToBroker" name="ConsoleManagerAttorney::Execution::AddToBroker">
+<area shape="rect" id="node1" title=" " alt="" coords="424,5,595,47"/>
+<area shape="rect" id="node2" href="$class_console.html#acc6585a1d780aee98a2a11a6f47d3731" title="Parses the command line after the passintro() command reports the user is ready for parsing." alt="" coords="184,13,376,39"/>
+<area shape="rect" id="node3" href="$class_console.html#a331a1f3ab6ce5210810f5c65f533e202" title="Passes the &quot;execute&quot; command into the console. Typically this is achieved when the user hits the &#39;ent..." alt="" coords="5,13,136,39"/>
+</map>

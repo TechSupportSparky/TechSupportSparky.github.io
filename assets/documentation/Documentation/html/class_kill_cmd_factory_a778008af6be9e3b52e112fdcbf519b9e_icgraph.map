@@ -1,0 +1,7 @@
+<map id="KillCmdFactory::privCreateCommand" name="KillCmdFactory::privCreateCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="817,5,993,47"/>
+<area shape="rect" id="node2" href="$class_kill_cmd_factory.html#ace0b3ff33a5567a4e89a955db1e8d3d1" title=" " alt="" coords="553,13,769,39"/>
+<area shape="rect" id="node3" href="$class_console.html#a7675c68531f9fcf4c193c1491699d77e" title="Kills the stored gameobject." alt="" coords="411,13,505,39"/>
+<area shape="rect" id="node4" href="$class_console_manager.html#a2b232039855044fcaadcdb62c937bc11" title=" " alt="" coords="199,13,363,39"/>
+<area shape="rect" id="node5" href="$class_console_manager.html#a55c555a78805e5fd40c1483c6361524f" title=" " alt="" coords="5,13,151,39"/>
+</map>

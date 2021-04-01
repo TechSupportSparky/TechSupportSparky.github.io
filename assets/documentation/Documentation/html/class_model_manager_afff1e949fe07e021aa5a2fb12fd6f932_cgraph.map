@@ -1,0 +1,7 @@
+<map id="ModelManager::Delete" name="ModelManager::Delete">
+<area shape="rect" id="node1" title="Deletes ModelManager&#39;s pointer instance. Only to be called by engine code." alt="" coords="5,38,157,65"/>
+<area shape="rect" id="node2" href="$class_model_manager.html#a34bb227e07db616a207d7e28bab70a31" title="Gets the instance." alt="" coords="209,13,373,39"/>
+<area shape="rect" id="node5" href="$class_model_manager.html#a2953829b185d919052fe8a3102fa347e" title="Delete&#39;s ModelManager&#39;s pointer instance. Only to be called internally." alt="" coords="205,63,376,90"/>
+<area shape="rect" id="node3" href="$class_model_manager.html#a9b0d22b1baf59c5b566e82fcd8ca424a" title="Default constructor." alt="" coords="424,13,624,39"/>
+<area shape="rect" id="node4" href="$class_model_manager.html#aa736d7e7712bb2c0f7b8406a502cf152" title="Private load sprite model." alt="" coords="672,5,868,47"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="KillCmdFactory::privCreateCommand" name="KillCmdFactory::privCreateCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,181,65"/>
+<area shape="rect" id="node2" href="$class_kill_object_pool.html#a3819c81ec312c5670e57845dc23ca25f" title=" " alt="" coords="229,5,419,32"/>
+<area shape="rect" id="node3" href="$class_kill_command.html#aaee07140b70b6776c23ea742392efaa9" title="Sets an object." alt="" coords="243,56,405,83"/>
+</map>

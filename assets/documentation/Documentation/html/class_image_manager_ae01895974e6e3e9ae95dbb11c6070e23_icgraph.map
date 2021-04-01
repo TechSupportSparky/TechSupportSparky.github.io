@@ -1,0 +1,5 @@
+<map id="ImageManager::Delete" name="ImageManager::Delete">
+<area shape="rect" id="node1" title="Deletes this pointer instance. To only be called by the engine." alt="" coords="396,13,548,39"/>
+<area shape="rect" id="node2" href="$class_image_manager_attorney.html#a5902cfaa0a7b68738d98abe7bb420d7f" title=" " alt="" coords="192,5,348,47"/>
+<area shape="rect" id="node3" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="5,13,144,39"/>
+</map>

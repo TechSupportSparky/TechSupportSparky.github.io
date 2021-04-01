@@ -1,0 +1,11 @@
+<map id="ConsoleManager::privKill" name="ConsoleManager::privKill">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,169,57"/>
+<area shape="rect" id="node2" href="$class_console.html#a7675c68531f9fcf4c193c1491699d77e" title="Kills the stored gameobject." alt="" coords="217,31,312,57"/>
+<area shape="rect" id="node3" href="$class_console.html#a03ea789d3593a73c0b979722de03e856" title="Adds a command to the console for later execution. User commands are passed in this way through the c..." alt="" coords="389,5,547,32"/>
+<area shape="rect" id="node4" href="$class_kill_cmd_factory.html#ace0b3ff33a5567a4e89a955db1e8d3d1" title=" " alt="" coords="360,56,576,83"/>
+<area shape="rect" id="node5" href="$class_kill_cmd_factory.html#a92c41b857556cc255c193b1d312583bf" title=" " alt="" coords="628,27,796,53"/>
+<area shape="rect" id="node7" href="$class_kill_cmd_factory.html#a778008af6be9e3b52e112fdcbf519b9e" title=" " alt="" coords="624,78,800,119"/>
+<area shape="rect" id="node6" href="$class_kill_cmd_factory.html#a96ead439e46a8cd578a7617f6b2d9a58" title=" " alt="" coords="848,27,1056,53"/>
+<area shape="rect" id="node8" href="$class_kill_object_pool.html#a3819c81ec312c5670e57845dc23ca25f" title=" " alt="" coords="857,81,1047,108"/>
+<area shape="rect" id="node9" href="$class_kill_command.html#aaee07140b70b6776c23ea742392efaa9" title="Sets an object." alt="" coords="871,132,1033,159"/>
+</map>

@@ -1,0 +1,25 @@
+var class_collision_manager =
+[
+    [ "CollidableGroupCollection", "class_collision_manager.html#ae765c34732650d8ae55e4e6b374ee1c9", null ],
+    [ "CollisionTestCommands", "class_collision_manager.html#af068da5263aee87d6318b008d32b2cc9", null ],
+    [ "PWTypeID", "class_collision_manager.html#aff2d5477cb47750c1fb96901163097dc", null ],
+    [ "CollisionManager", "class_collision_manager.html#a81f0b3f0cc0268c80f54714cd7ddb55f", null ],
+    [ "CollisionManager", "class_collision_manager.html#a1a3bf1bd4afe92cf349b44cbd19a1cb4", null ],
+    [ "CollisionManager", "class_collision_manager.html#a70b85ec04b62eea38e96b0d26fb2269f", null ],
+    [ "~CollisionManager", "class_collision_manager.html#acdbb3c842f0ef1c7a028d3f080855766", null ],
+    [ "GetColGroup", "class_collision_manager.html#a8093534ecbf9ec54cb3205237c545021", null ],
+    [ "GetTypeID", "class_collision_manager.html#a9afd2c8669efb8f85159456d8410decf", null ],
+    [ "operator=", "class_collision_manager.html#a64c5e091221094f1ce265764d42d6db5", null ],
+    [ "operator=", "class_collision_manager.html#ad8c17f15ec5b1a91d0d2e5457634a81c", null ],
+    [ "ProcessCollisions", "class_collision_manager.html#a4c4a68f2fba71bcd21c777b7fd2be96a", null ],
+    [ "SetCollisionPair", "class_collision_manager.html#a068cfcfa9bab15f5f8471dab77b10a3e", null ],
+    [ "SetCollisionSelf", "class_collision_manager.html#a87ae5ba464b59df483efbe0fed6108ad", null ],
+    [ "SetCollisionTerrain", "class_collision_manager.html#a4fb3423c3f87c7db7362f032781d44b2", null ],
+    [ "SetGroupForTypeID", "class_collision_manager.html#a19c3b4657a5e2e1cec75d77fd6724b9a", null ],
+    [ "UpdateGroupVolumes", "class_collision_manager.html#acb523a764556c6852b4e81e853fac7e7", null ],
+    [ "ColGroupCollection", "class_collision_manager.html#af5f98ac73f8418ee8700a8c0e0b89754", null ],
+    [ "colTestCommands", "class_collision_manager.html#ad83ebbddf68a4400b6d55aad81a51e6d", null ],
+    [ "MAX_COLLISION_GROUP", "class_collision_manager.html#ad3dd55a4a300d82ea8982377c020cedf", null ],
+    [ "PWID_UNDEFINED", "class_collision_manager.html#adca36946aecdf6390ce0c017d7753de7", null ],
+    [ "TypeIDNextNumber", "class_collision_manager.html#a3dea025e250d5f162c3b9cea39eaa69c", null ]
+];

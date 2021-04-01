@@ -1,0 +1,8 @@
+<map id="Console::consolePrintError" name="Console::consolePrintError">
+<area shape="rect" id="node1" title="Console print to the screen logger in error color." alt="" coords="677,35,855,61"/>
+<area shape="rect" id="node2" href="$class_console.html#acc6585a1d780aee98a2a11a6f47d3731" title="Parses the command line after the passintro() command reports the user is ready for parsing." alt="" coords="437,5,629,32"/>
+<area shape="rect" id="node4" href="$class_console_manager.html#a3e9efb12c3aec27eee46690796b20d4f" title=" " alt="" coords="447,57,620,98"/>
+<area shape="rect" id="node3" href="$class_console.html#a331a1f3ab6ce5210810f5c65f533e202" title="Passes the &quot;execute&quot; command into the console. Typically this is achieved when the user hits the &#39;ent..." alt="" coords="233,5,363,32"/>
+<area shape="rect" id="node5" href="$class_console_manager.html#a559d59659f676677b1a6a19b6861c91e" title="Prints an error message to the console." alt="" coords="207,64,389,91"/>
+<area shape="rect" id="node6" href="$class_kill_command.html#a9347b459c9072a452015d85267fa68a0" title="Kills the stored game object." alt="" coords="5,64,159,91"/>
+</map>

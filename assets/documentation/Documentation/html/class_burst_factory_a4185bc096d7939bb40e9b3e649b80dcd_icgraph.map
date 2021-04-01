@@ -1,0 +1,10 @@
+<map id="BurstFactory::Instance" name="BurstFactory::Instance">
+<area shape="rect" id="node1" title=" " alt="" coords="661,56,816,83"/>
+<area shape="rect" id="node2" href="$class_burst_factory.html#a188e946f392ce69610c6aedaa4f97f0a" title=" " alt="" coords="435,5,609,32"/>
+<area shape="rect" id="node5" href="$class_burst_factory.html#a6832280f1d56489c599e07e8d12f6505" title=" " alt="" coords="431,56,613,83"/>
+<area shape="rect" id="node7" href="$class_burst_factory.html#ad17d39f3ba09ddce10ec8b742addb832" title=" " alt="" coords="441,107,603,133"/>
+<area shape="rect" id="node3" href="$class_particle_emitter.html#a4e80b12742a6b6fe7c694c56b7a968bc" title=" " alt="" coords="211,5,383,32"/>
+<area shape="rect" id="node4" href="$class_particle_emitter.html#a700fc45f5c9db613808f54dc330c50e4" title=" " alt="" coords="5,5,163,32"/>
+<area shape="rect" id="node6" href="$class_particle_emitter.html#a545cf19b9a40b5de9c2402e8c429c6f5" title="Pure virtual function draw. Derived objects must override." alt="" coords="224,56,369,83"/>
+<area shape="rect" id="node8" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="227,107,366,133"/>
+</map>

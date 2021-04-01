@@ -1,0 +1,6 @@
+<map id="Drawable::SubmitDrawDeregistration" name="Drawable::SubmitDrawDeregistration">
+<area shape="rect" id="node1" title="Submit draw deregistration." alt="" coords="224,56,457,83"/>
+<area shape="rect" id="node2" href="$class_particle_emitter.html#a8f5a95c78acd538a86c3788e8feeaa4a" title=" " alt="" coords="12,5,169,32"/>
+<area shape="rect" id="node3" href="$class_terrain_object.html#ab117f89d34f614804c44a16e6ded802a" title="Deregisters the terrain." alt="" coords="5,56,176,83"/>
+<area shape="rect" id="node4" href="$class_particle_emitter.html#a079e3273bf9bc58cd095beff0fbd36e1" title=" " alt="" coords="21,107,160,133"/>
+</map>

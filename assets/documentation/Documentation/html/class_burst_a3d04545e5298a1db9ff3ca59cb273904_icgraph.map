@@ -1,0 +1,5 @@
+<map id="Burst::GetExpiration" name="Burst::GetExpiration">
+<area shape="rect" id="node1" title=" " alt="" coords="457,5,597,32"/>
+<area shape="rect" id="node2" href="$class_particle_emitter.html#aa4dca864b24e8d81f83bc10782c1f88c" title=" " alt="" coords="199,5,409,32"/>
+<area shape="rect" id="node3" href="$class_particle_emitter.html#a545cf19b9a40b5de9c2402e8c429c6f5" title="Pure virtual function draw. Derived objects must override." alt="" coords="5,5,151,32"/>
+</map>

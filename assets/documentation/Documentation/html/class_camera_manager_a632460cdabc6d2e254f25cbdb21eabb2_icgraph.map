@@ -1,0 +1,4 @@
+<map id="CameraManager::GetCurrent2DCamera" name="CameraManager::GetCurrent2DCamera">
+<area shape="rect" id="node1" title="Gets current 2D camera." alt="" coords="203,5,397,47"/>
+<area shape="rect" id="node2" href="$class_scene.html#a955f5f3def520197d2dbafe4d86eb900" title="Gets the Camera Manager&#39;s 2D camera." alt="" coords="5,13,155,39"/>
+</map>

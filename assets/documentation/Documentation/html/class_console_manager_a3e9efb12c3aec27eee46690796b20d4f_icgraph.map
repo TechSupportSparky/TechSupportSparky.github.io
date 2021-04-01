@@ -1,0 +1,5 @@
+<map id="ConsoleManager::privPrintError" name="ConsoleManager::privPrintError">
+<area shape="rect" id="node1" title=" " alt="" coords="437,5,611,47"/>
+<area shape="rect" id="node2" href="$class_console_manager.html#a559d59659f676677b1a6a19b6861c91e" title="Prints an error message to the console." alt="" coords="207,13,389,39"/>
+<area shape="rect" id="node3" href="$class_kill_command.html#a9347b459c9072a452015d85267fa68a0" title="Kills the stored game object." alt="" coords="5,13,159,39"/>
+</map>

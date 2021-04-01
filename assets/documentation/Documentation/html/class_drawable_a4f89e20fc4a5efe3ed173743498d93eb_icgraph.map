@@ -1,0 +1,7 @@
+<map id="Drawable::SubmitDrawRegistration" name="Drawable::SubmitDrawRegistration">
+<area shape="rect" id="node1" title="Submit draw registration." alt="" coords="447,63,669,90"/>
+<area shape="rect" id="node2" href="$class_particle_emitter.html#ae60d7c514c9aff3462d1b973b252e358" title=" " alt="" coords="248,13,395,39"/>
+<area shape="rect" id="node4" href="$class_terrain_object.html#a0e836450129193a08cf5b1c162a8223e" title="Sets the terrain object up for drawing." alt="" coords="244,63,399,90"/>
+<area shape="rect" id="node5" href="$class_sky_box.html#a24c47bf0093c8d7beb665be3ad1d87fb" title=" " alt="" coords="252,114,391,141"/>
+<area shape="rect" id="node3" href="$class_particle_effect.html#aa2776d54b77502e514de682c24d61534" title=" " alt="" coords="5,5,196,47"/>
+</map>

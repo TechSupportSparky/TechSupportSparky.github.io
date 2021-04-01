@@ -1,0 +1,8 @@
+<map id="KillCmdFactory::CreateCommand" name="KillCmdFactory::CreateCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,221,61"/>
+<area shape="rect" id="node2" href="$class_kill_cmd_factory.html#a92c41b857556cc255c193b1d312583bf" title=" " alt="" coords="273,5,441,32"/>
+<area shape="rect" id="node4" href="$class_kill_cmd_factory.html#a778008af6be9e3b52e112fdcbf519b9e" title=" " alt="" coords="269,57,445,98"/>
+<area shape="rect" id="node3" href="$class_kill_cmd_factory.html#a96ead439e46a8cd578a7617f6b2d9a58" title=" " alt="" coords="493,5,701,32"/>
+<area shape="rect" id="node5" href="$class_kill_object_pool.html#a3819c81ec312c5670e57845dc23ca25f" title=" " alt="" coords="503,60,692,87"/>
+<area shape="rect" id="node6" href="$class_kill_command.html#aaee07140b70b6776c23ea742392efaa9" title="Sets an object." alt="" coords="516,111,679,137"/>
+</map>

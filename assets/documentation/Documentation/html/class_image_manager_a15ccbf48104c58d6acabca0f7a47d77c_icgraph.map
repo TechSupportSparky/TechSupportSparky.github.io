@@ -1,0 +1,7 @@
+<map id="ImageManager::privGet" name="ImageManager::privGet">
+<area shape="rect" id="node1" title="Private get." alt="" coords="619,31,773,57"/>
+<area shape="rect" id="node2" href="$class_image_manager.html#a9521b5248002fd6f48355c7f8edf27c8" title="Gets an image* using the given key." alt="" coords="435,31,571,57"/>
+<area shape="rect" id="node3" href="$class_sly_sprite.html#afec4fb5020146e01a6396f4fbf45c93a" title="Specialized Constructor." alt="" coords="227,5,363,32"/>
+<area shape="rect" id="node4" href="$class_sprite_font.html#ae67ec68b7c169f0279e06d8905b34c33" title=" " alt="" coords="204,56,387,83"/>
+<area shape="rect" id="node5" href="$class_sprite_font.html#ac2010590f8dbb0e2bb0226c591b2324c" title=" " alt="" coords="5,56,156,83"/>
+</map>

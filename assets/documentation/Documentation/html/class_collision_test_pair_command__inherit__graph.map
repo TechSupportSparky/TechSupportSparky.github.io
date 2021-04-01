@@ -1,0 +1,5 @@
+<map id="CollisionTestPairCommand" name="CollisionTestPairCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="9,417,215,627"/>
+<area shape="rect" id="node2" href="$class_collision_test_command_base.html" title=" " alt="" coords="5,219,219,369"/>
+<area shape="rect" id="node3" href="$class_command_base.html" title=" " alt="" coords="43,5,181,171"/>
+</map>

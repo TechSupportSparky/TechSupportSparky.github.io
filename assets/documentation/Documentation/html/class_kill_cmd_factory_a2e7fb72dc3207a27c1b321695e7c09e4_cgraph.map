@@ -1,0 +1,5 @@
+<map id="KillCmdFactory::privRecycleCommand" name="KillCmdFactory::privRecycleCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,191,65"/>
+<area shape="rect" id="node2" href="$class_kill_command.html#a332e5848e40ce89ca9db31fc16d8f475" title=" " alt="" coords="250,5,431,32"/>
+<area shape="rect" id="node3" href="$class_kill_object_pool.html#a892ade65e1231b5a1baafba0a50a0ed0" title=" " alt="" coords="239,56,443,83"/>
+</map>

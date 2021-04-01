@@ -1,0 +1,4 @@
+<map id="Console::Ping" name="Console::Ping">
+<area shape="rect" id="node1" title="Pings the console." alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node2" href="$class_console.html#a03ea789d3593a73c0b979722de03e856" title="Adds a command to the console for later execution. User commands are passed in this way through the c..." alt="" coords="156,5,313,32"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="Alarmable::SubmitAlarmRegistration" name="Alarmable::SubmitAlarmRegistration">
+<area shape="rect" id="node1" title="Submit alarm registration." alt="" coords="876,81,1108,108"/>
+<area shape="rect" id="node2" href="$class_particle_emitter.html#a700fc45f5c9db613808f54dc330c50e4" title=" " alt="" coords="668,5,825,32"/>
+<area shape="rect" id="node3" href="$class_particle_emitter.html#ae60d7c514c9aff3462d1b973b252e358" title=" " alt="" coords="457,52,604,79"/>
+<area shape="rect" id="node5" href="$class_particle_emitter.html#a5f079a162468035cf3eb7f11d09670b6" title=" " alt="" coords="665,107,828,133"/>
+<area shape="rect" id="node8" href="$class_particle_emitter.html#a68faa1ef5e736e7bfed92bf9846768f1" title=" " alt="" coords="667,158,827,199"/>
+<area shape="rect" id="node4" href="$class_particle_effect.html#aa2776d54b77502e514de682c24d61534" title=" " alt="" coords="5,74,196,115"/>
+<area shape="rect" id="node6" href="$class_particle_emitter_factory.html#a93f27a91c22ebc844703496dcd8d9c0f" title=" " alt="" coords="444,103,617,145"/>
+<area shape="rect" id="node7" href="$class_particle_emitter_factory.html#a8315a6bf6c7f527674fbc1de8f581286" title=" " alt="" coords="244,103,396,145"/>
+</map>

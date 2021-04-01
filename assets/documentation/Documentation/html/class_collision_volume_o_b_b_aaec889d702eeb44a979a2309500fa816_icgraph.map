@@ -1,0 +1,8 @@
+<map id="CollisionVolumeOBB::GetMax" name="CollisionVolumeOBB::GetMax">
+<area shape="rect" id="node1" title="Gets the maximum corner of the OBB." alt="" coords="453,49,596,90"/>
+<area shape="rect" id="node2" href="$class_sly_math.html#a17bd6826f4395d588a6fe9d0d6239113" title="Intersection test for an OBB and a BSphere." alt="" coords="240,5,368,32"/>
+<area shape="rect" id="node3" href="$class_sly_math.html#a78935b826fbe03836f019d4c203c347f" title="Obb projection length for the OBB projected on V." alt="" coords="203,56,405,83"/>
+<area shape="rect" id="node5" href="$class_visualizer.html#a91add6db721ca7ba5ea48912dadeeae6" title="Shows the OBB via min and max corners." alt="" coords="231,108,377,135"/>
+<area shape="rect" id="node4" href="$class_sly_math.html#a4d1645b8ffe4846b1a0ee710731eb09b" title="Obb overlap test for AABB and OBB." alt="" coords="5,53,155,80"/>
+<area shape="rect" id="node6" href="$class_collision_volume_o_b_b.html#ae15ebe918f3836cb997b35015267a694" title="Call to visualize the OBB from a generic collision volume with the specified color." alt="" coords="9,105,151,146"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="Alarmable::SubmitAlarmDeregistration" name="Alarmable::SubmitAlarmDeregistration">
+<area shape="rect" id="node1" title="Submit alarm deregistration." alt="" coords="5,93,248,120"/>
+<area shape="rect" id="node2" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="314,57,494,98"/>
+<area shape="rect" id="node6" href="$class_scene_attorney.html#ad869342eb2583be16a0483ad2712416b" title="&quot;Global&quot; Submit command for the GameObject &#39;Able&#39;s&#39;" alt="" coords="296,123,512,149"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="576,5,743,32"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="560,57,759,98"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="807,5,1011,32"/>
+<area shape="rect" id="node7" href="$class_scene.html#a713cce013f0244d71b16c2e33638ed6d" title="Submit command." alt="" coords="576,123,743,149"/>
+<area shape="rect" id="node8" href="$class_scene_registration_broker.html#a2de26f860998866920e681e330d3dac3" title="Adds a command." alt="" coords="825,115,992,157"/>
+</map>

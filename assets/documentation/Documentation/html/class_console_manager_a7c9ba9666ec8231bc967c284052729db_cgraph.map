@@ -1,0 +1,7 @@
+<map id="ConsoleManager::AddVariable" name="ConsoleManager::AddVariable">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,203,57"/>
+<area shape="rect" id="node2" href="$class_console_manager.html#a906c569f9ea442602dbe61e65b779ccc" title=" " alt="" coords="271,5,447,32"/>
+<area shape="rect" id="node4" href="$class_console_manager.html#a1ab29ad36117d25ee80ecf4f6894483c" title=" " alt="" coords="251,56,467,83"/>
+<area shape="rect" id="node3" href="$class_console_manager.html#aa9f719ce8b6bb8c2efda952e49f534d6" title="Default constructor." alt="" coords="515,5,739,32"/>
+<area shape="rect" id="node5" href="$class_console.html#a6d8def1ddae11ebfcf35ab0b46a72417" title="Adds a variable to the console for tweaking. Feature not maintained." alt="" coords="554,56,699,83"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="ParticleEffectManager::Instance" name="ParticleEffectManager::Instance">
+<area shape="rect" id="node1" title="Gets the instance of particle effect manager." alt="" coords="5,5,155,47"/>
+<area shape="rect" id="node2" href="$class_particle_effect_manager.html#a5423d1a88f78ec6f779ac6685b043773" title="Default constructor." alt="" coords="203,5,360,47"/>
+</map>

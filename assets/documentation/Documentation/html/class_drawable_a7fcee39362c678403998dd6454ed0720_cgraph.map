@@ -1,0 +1,9 @@
+<map id="Drawable::SceneRegistration" name="Drawable::SceneRegistration">
+<area shape="rect" id="node1" title="Scene registration." alt="" coords="5,64,195,91"/>
+<area shape="rect" id="node2" href="$class_scene_attorney_1_1_drawable_registration.html#a2761d941b8dddd859ef3d9cbdc7bf118" title=" " alt="" coords="243,27,481,69"/>
+<area shape="rect" id="node7" href="$class_drawable_manager.html#a6f10ca850d51b519f9f9c39c64c8836f" title="Registers this." alt="" coords="271,93,453,120"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="529,27,709,69"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="773,5,940,32"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="757,57,956,98"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="1004,5,1208,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Drawable::SceneDeregistration" name="Drawable::SceneDeregistration">
+<area shape="rect" id="node1" title="Scene deregistration." alt="" coords="517,13,717,39"/>
+<area shape="rect" id="node2" href="$class_drawable_attorney_1_1_registration.html#a39ca56a7f7cd611b5acf69ab23fa869b" title=" " alt="" coords="268,5,469,47"/>
+<area shape="rect" id="node3" href="$class_drawable_deregistration_command.html#ab64de267db79229e5fb98f3eba001468" title="Executes this command." alt="" coords="5,5,220,47"/>
+</map>

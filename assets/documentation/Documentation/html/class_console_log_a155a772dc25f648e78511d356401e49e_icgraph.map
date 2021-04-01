@@ -1,0 +1,4 @@
+<map id="ConsoleLog::AddInput" name="ConsoleLog::AddInput">
+<area shape="rect" id="node1" title=" " alt="" coords="181,5,331,32"/>
+<area shape="rect" id="node2" href="$class_console.html#a963808baf4e4f1ff1d0222c78f300d61" title="How the console communicates with the user created console. Passes a key into the buffer." alt="" coords="5,5,133,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="DrawableAttorney::SpecializedRegistration::ForcedSceneDeregistration" name="DrawableAttorney::SpecializedRegistration::ForcedSceneDeregistration">
+<area shape="rect" id="node1" title=" " alt="" coords="483,31,739,72"/>
+<area shape="rect" id="node2" href="$class_terrain_manager.html#a9e333c481ca5cd48e8063b260a45fa97" title="Private scene end, forces a draw deregistration." alt="" coords="236,13,435,39"/>
+<area shape="rect" id="node4" href="$class_sky_box.html#ae1073ea8db390142aaadc5fc18217bdd" title=" " alt="" coords="254,63,417,90"/>
+<area shape="rect" id="node3" href="$class_terrain_manager.html#a5e8b9bd1c534ad89bbb2e80539980908" title="Deinitialize the current terrain. Required if a scene will be revisited later on." alt="" coords="5,5,188,47"/>
+</map>

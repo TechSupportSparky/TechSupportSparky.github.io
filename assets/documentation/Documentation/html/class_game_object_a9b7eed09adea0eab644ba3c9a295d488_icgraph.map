@@ -1,0 +1,5 @@
+<map id="GameObject::SceneEntry" name="GameObject::SceneEntry">
+<area shape="rect" id="node1" title="Scene entry." alt="" coords="489,13,660,39"/>
+<area shape="rect" id="node2" href="$class_game_object.html#ac1b3409129559bfc11845d6437c3d587" title="Connects to scene." alt="" coords="239,13,441,39"/>
+<area shape="rect" id="node3" href="$class_game_object_entry_command.html#af1ff7420559a7afd97c41360a3234f0e" title="Executes this command." alt="" coords="5,5,191,47"/>
+</map>

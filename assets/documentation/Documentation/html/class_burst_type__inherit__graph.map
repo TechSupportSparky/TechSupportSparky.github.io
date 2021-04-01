@@ -1,0 +1,5 @@
+<map id="BurstType" name="BurstType">
+<area shape="rect" id="node1" title=" " alt="" coords="93,5,236,171"/>
+<area shape="rect" id="node2" href="$class_burst_type_pulse.html" title=" " alt="" coords="5,219,148,384"/>
+<area shape="rect" id="node3" href="$class_burst_type_spherical.html" title=" " alt="" coords="173,219,335,384"/>
+</map>

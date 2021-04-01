@@ -1,0 +1,5 @@
+<map id="Alarmable" name="Alarmable">
+<area shape="rect" id="node1" title=" " alt="" coords="84,5,280,347"/>
+<area shape="rect" id="node2" href="$class_game_object.html" title="A game object entity." alt="" coords="5,453,180,721"/>
+<area shape="rect" id="node3" href="$class_particle_emitter.html" title=" " alt="" coords="205,395,341,780"/>
+</map>

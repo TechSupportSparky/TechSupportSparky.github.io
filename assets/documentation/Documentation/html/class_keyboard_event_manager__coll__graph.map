@@ -1,0 +1,14 @@
+<map id="KeyboardEventManager" name="KeyboardEventManager">
+<area shape="rect" id="node1" title=" " alt="" coords="571,1293,758,1488"/>
+<area shape="rect" id="node2" title=" " alt="" coords="571,1139,759,1231"/>
+<area shape="rect" id="node3" href="$class_single_key_event_manager.html" title=" " alt="" coords="569,837,760,1076"/>
+<area shape="rect" id="node4" title=" " alt="" coords="576,587,719,694"/>
+<area shape="rect" id="node5" href="$class_inputable.html" title=" " alt="" coords="400,220,585,459"/>
+<area shape="rect" id="node8" href="$class_inputable_deregistration_command.html" title=" " alt="" coords="260,521,493,760"/>
+<area shape="rect" id="node12" href="$class_inputable_registration_command.html" title=" " alt="" coords="5,529,236,753"/>
+<area shape="rect" id="node6" title=" " alt="" coords="387,1139,531,1231"/>
+<area shape="rect" id="node7" href="$struct_inputable_1_1_inputable_data.html" title="An inputable data." alt="" coords="269,918,431,995"/>
+<area shape="rect" id="node11" title=" " alt="" coords="164,1139,341,1231"/>
+<area shape="rect" id="node9" href="$class_scene_registry.html" title="A scene registry." alt="" coords="123,264,257,415"/>
+<area shape="rect" id="node10" href="$class_command_base.html" title=" " alt="" coords="121,5,259,171"/>
+</map>

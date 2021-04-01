@@ -1,0 +1,12 @@
+<map id="CollisionVolume::IntersectAccept" name="CollisionVolume::IntersectAccept">
+<area shape="rect" id="node1" title="Intersect accept utilizing the visitor pattern." alt="" coords="424,224,597,265"/>
+<area shape="rect" id="node2" href="$class_sly_math.html#ad9992315252b94ab27ffeb15076005de" title=" " alt="" coords="248,231,376,258"/>
+<area shape="rect" id="node3" href="$class_collision_test_pair_command.html#a489de7fe1a3b7c767d6d66ae5f7c9a4f" title="Executes this command. Pure virtual function must be defined by all derived commands." alt="" coords="13,5,192,47"/>
+<area shape="rect" id="node4" href="$class_collision_test_self_command.html#a630fc38f754cf9134bf2d51079b5f34e" title="Executes this command. Pure virtual function must be defined by all derived commands." alt="" coords="14,71,191,112"/>
+<area shape="rect" id="node5" href="$class_collision_test_terrain_command.html#adae6dfa0f875cdfa7e6a8cea76aa02cc" title="Executes this command. Pure virtual function must be defined by all derived commands." alt="" coords="5,136,200,177"/>
+<area shape="rect" id="node6" href="$class_sly_math.html#a212730959eb3a85f2a3887ea6498148d" title="Intersection test for Sphere &#45; AABB." alt="" coords="39,202,167,229"/>
+<area shape="rect" id="node7" href="$class_collision_volume_b_sphere.html#a7d0057fed78c440b3a0be957de0b7d21" title="Intersect visit for Sphere, using the visitor pattern." alt="" coords="20,253,185,295"/>
+<area shape="rect" id="node8" href="$class_collision_volume_a_a_b_b.html#af140d914d65c798d4a84ea10565b36bf" title="Intersect visit for another collision volume of type BSphere." alt="" coords="27,319,178,360"/>
+<area shape="rect" id="node9" href="$class_collision_volume_o_b_b.html#a319640df426c6487185e65791eea501e" title="Intersect visit for a second dispatch of BSphere." alt="" coords="31,384,174,425"/>
+<area shape="rect" id="node10" href="$class_terrain_object.html#ae4a408bb9e5db209cb1672e5b7033dd4" title=" " alt="" coords="19,449,187,491"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="AlarmableRegistrationCommand" name="AlarmableRegistrationCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="5,417,241,641"/>
+<area shape="rect" id="node2" href="$class_scene_registry.html" title="A scene registry." alt="" coords="56,219,191,369"/>
+<area shape="rect" id="node3" href="$class_command_base.html" title=" " alt="" coords="54,5,193,171"/>
+</map>

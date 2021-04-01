@@ -1,0 +1,5 @@
+<map id="CollisionVolumeOBB::GetScale" name="CollisionVolumeOBB::GetScale">
+<area shape="rect" id="node1" title="Gets the stored scale." alt="" coords="453,5,596,47"/>
+<area shape="rect" id="node2" href="$class_sly_math.html#a78935b826fbe03836f019d4c203c347f" title="Obb projection length for the OBB projected on V." alt="" coords="203,13,405,39"/>
+<area shape="rect" id="node3" href="$class_sly_math.html#a4d1645b8ffe4846b1a0ee710731eb09b" title="Obb overlap test for AABB and OBB." alt="" coords="5,13,155,39"/>
+</map>

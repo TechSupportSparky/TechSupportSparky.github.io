@@ -1,0 +1,12 @@
+<map id="Console::addCommand" name="Console::addCommand">
+<area shape="rect" id="node1" title="Adds a command to the console for later execution. User commands are passed in this way through the c..." alt="" coords="732,132,889,159"/>
+<area shape="rect" id="node2" href="$class_console.html#a443ace061f74eaeb6fe94dfd91a9e021" title="Triggers and activates the godcam." alt="" coords="507,5,633,32"/>
+<area shape="rect" id="node3" href="$class_console.html#a7675c68531f9fcf4c193c1491699d77e" title="Kills the stored gameobject." alt="" coords="523,56,617,83"/>
+<area shape="rect" id="node6" href="$class_console.html#a861f4563f56fbc8995c658f4fdb18195" title="Pings the console." alt="" coords="519,107,621,133"/>
+<area shape="rect" id="node7" href="$class_console_manager.html#ad5eba1fe07222ce260f402c1e423fde1" title="The process of adding a command to the console system." alt="" coords="456,157,684,184"/>
+<area shape="rect" id="node9" href="$class_console.html#af7d32cb0546e9a566c858b5b811517a9" title="Reloads the scene manger&#39;s default scene." alt="" coords="511,208,629,235"/>
+<area shape="rect" id="node10" href="$class_console.html#adbe07f6a87f0cf0b07ba12e538db291f" title="Gets the engine runtime." alt="" coords="517,259,623,285"/>
+<area shape="rect" id="node4" href="$class_console_manager.html#a2b232039855044fcaadcdb62c937bc11" title=" " alt="" coords="221,56,385,83"/>
+<area shape="rect" id="node5" href="$class_console_manager.html#a55c555a78805e5fd40c1483c6361524f" title=" " alt="" coords="5,56,151,83"/>
+<area shape="rect" id="node8" href="$class_console_manager.html#a0440882248a18f7c7d1ee1477156dcf4" title="The process of adding a command to the console system." alt="" coords="199,157,408,184"/>
+</map>

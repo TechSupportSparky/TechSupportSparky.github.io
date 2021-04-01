@@ -1,0 +1,5 @@
+<map id="Collidable::UpdateCollisionData" name="Collidable::UpdateCollisionData">
+<area shape="rect" id="node1" title="Updates the collision data described by mat." alt="" coords="5,35,208,61"/>
+<area shape="rect" id="node2" href="$class_collision_volume.html#a1680a406aa5708e794934e90fe46dcd7" title="Calculates the data. Pure virtual." alt="" coords="256,5,459,32"/>
+<area shape="rect" id="node3" href="$class_collision_volume_b_sphere.html#a9f820c3f61a36f192140d1c4a2552ae6" title="Calculates and passes any data necessary to the BSphere." alt="" coords="275,57,440,98"/>
+</map>

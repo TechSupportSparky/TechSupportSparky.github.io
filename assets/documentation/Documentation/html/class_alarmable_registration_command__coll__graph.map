@@ -1,0 +1,8 @@
+<map id="AlarmableRegistrationCommand" name="AlarmableRegistrationCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="135,420,371,629"/>
+<area shape="rect" id="node5" href="$struct_alarmable_1_1_registration_data.html" title="The registration data for alarms." alt="" coords="161,692,345,784"/>
+<area shape="rect" id="node2" href="$class_scene_registry.html" title="A scene registry." alt="" coords="299,220,433,371"/>
+<area shape="rect" id="node6" href="$class_alarmable_deregistration_command.html" title=" " alt="" coords="131,1251,369,1445"/>
+<area shape="rect" id="node3" href="$class_command_base.html" title=" " alt="" coords="297,5,435,171"/>
+<area shape="rect" id="node4" href="$class_alarmable.html" title=" " alt="" coords="5,847,201,1188"/>
+</map>

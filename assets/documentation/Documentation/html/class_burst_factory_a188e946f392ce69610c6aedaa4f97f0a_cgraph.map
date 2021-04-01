@@ -1,0 +1,11 @@
+<map id="BurstFactory::CreateBurst" name="BurstFactory::CreateBurst">
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,180,61"/>
+<area shape="rect" id="node2" href="$class_burst_factory.html#a4185bc096d7939bb40e9b3e649b80dcd" title=" " alt="" coords="232,5,387,32"/>
+<area shape="rect" id="node4" href="$class_burst_factory.html#abfdc71c95a5a53fee6ae803d92cec9e5" title=" " alt="" coords="228,57,391,98"/>
+<area shape="rect" id="node3" href="$class_burst_factory.html#a33f39fd66df054c850449f8a0c821814" title=" " alt="" coords="440,5,620,32"/>
+<area shape="rect" id="node5" href="$class_burst_memory_pool.html#a0d01419dfc8400b118540481ff7b5826" title=" " alt="" coords="439,60,621,87"/>
+<area shape="rect" id="node6" href="$class_burst.html#ac1935ecdda2ccbbc98fa3a8fa9c3a99d" title=" " alt="" coords="476,111,584,137"/>
+<area shape="rect" id="node7" href="$class_particle_effect.html#abe72e93a22bfbe49888ab6b2e750771f" title=" " alt="" coords="669,60,856,87"/>
+<area shape="rect" id="node8" href="$class_particle_effect.html#ad251adfa6614db29ceba8d0895f4241b" title=" " alt="" coords="671,111,854,137"/>
+<area shape="rect" id="node9" href="$class_sly_math.html#a3e6f005b427c868945c69c5eeaff41fd" title="Returns a random float between the lower bound and uppeprbound." alt="" coords="675,161,851,188"/>
+</map>

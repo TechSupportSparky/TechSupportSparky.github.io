@@ -1,0 +1,4 @@
+<map id="ParticleEffectManager::privLoad" name="ParticleEffectManager::privLoad">
+<area shape="rect" id="node1" title="Loads a requested particle effect into the manager with the associated key." alt="" coords="203,5,352,47"/>
+<area shape="rect" id="node2" href="$class_particle_effect_manager.html#a67731ce7db253e79d7d42afc6a12e9f4" title="Loads the particle effect into the manager using the associated key." alt="" coords="5,5,155,47"/>
+</map>

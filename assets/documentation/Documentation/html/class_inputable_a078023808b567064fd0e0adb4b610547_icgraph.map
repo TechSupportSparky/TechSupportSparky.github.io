@@ -1,0 +1,5 @@
+<map id="Inputable::KeyPressed" name="Inputable::KeyPressed">
+<area shape="rect" id="node1" title="Key pressed callback." alt="" coords="428,13,581,39"/>
+<area shape="rect" id="node2" href="$class_inputable_attorney_1_1_game_loop.html#a8075a497f53be37126f2bf566a1f72cf" title=" " alt="" coords="216,5,380,47"/>
+<area shape="rect" id="node3" href="$class_single_key_event_manager.html#adb0a9495514471a2bcc363a14ade1d43" title="Process the key event." alt="" coords="5,5,168,47"/>
+</map>

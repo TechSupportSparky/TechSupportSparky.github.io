@@ -1,0 +1,7 @@
+<map id="BurstTypePulse::CalculatePosition" name="BurstTypePulse::CalculatePosition">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,181,65"/>
+<area shape="rect" id="node2" href="$class_time_manager.html#a187b37ea46e36d1bba730d833ce82540" title="Gets the time." alt="" coords="229,31,387,57"/>
+<area shape="rect" id="node3" href="$class_time_manager.html#ac06b0a182b394ddc0ac554ad090ee019" title="Gets the instance." alt="" coords="444,5,601,32"/>
+<area shape="rect" id="node5" href="$class_time_manager.html#a7e338d6167ec2bf8a00e967f27b5b59f" title="Private get time." alt="" coords="435,56,611,83"/>
+<area shape="rect" id="node4" href="$class_time_manager.html#a46d2773caea1858a19594d58d57404c2" title="Default constructor." alt="" coords="659,5,845,32"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="DrawableRegistrationCommand" name="DrawableRegistrationCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="23,420,254,600"/>
+<area shape="rect" id="node4" href="$class_drawable.html" title=" " alt="" coords="5,663,200,945"/>
+<area shape="rect" id="node2" href="$class_scene_registry.html" title="A scene registry." alt="" coords="178,220,313,371"/>
+<area shape="rect" id="node5" href="$class_drawable_deregistration_command.html" title=" " alt="" coords="28,1008,271,1188"/>
+<area shape="rect" id="node3" href="$class_command_base.html" title=" " alt="" coords="176,5,315,171"/>
+</map>

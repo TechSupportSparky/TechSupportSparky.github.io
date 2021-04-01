@@ -1,0 +1,4 @@
+<map id="CollisionVolumeOBB::IntersectAccept" name="CollisionVolumeOBB::IntersectAccept">
+<area shape="rect" id="node1" title="Intersect acceptance for the first dispatch of Collision with an OBB." alt="" coords="5,5,148,47"/>
+<area shape="rect" id="node2" href="$class_collision_volume.html#a9dfdb40c55a76bc26476012157cac4b3" title="Intersect visit for Sphere, using the visitor pattern." alt="" coords="196,5,369,47"/>
+</map>

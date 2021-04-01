@@ -1,0 +1,4 @@
+<map id="ConsoleManager::PrintError" name="ConsoleManager::PrintError">
+<area shape="rect" id="node1" title="Prints an error message to the console." alt="" coords="207,5,389,32"/>
+<area shape="rect" id="node2" href="$class_kill_command.html#a9347b459c9072a452015d85267fa68a0" title="Kills the stored game object." alt="" coords="5,5,159,32"/>
+</map>

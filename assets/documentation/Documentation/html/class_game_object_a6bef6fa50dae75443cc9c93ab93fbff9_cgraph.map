@@ -1,0 +1,4 @@
+<map id="GameObject::DisconnectFromScene" name="GameObject::DisconnectFromScene">
+<area shape="rect" id="node1" title="Disconnects from scene." alt="" coords="5,5,204,47"/>
+<area shape="rect" id="node2" href="$class_game_object.html#af784bed9fe00cd9605133fffaeda9ef3" title="Scene exit." alt="" coords="252,13,415,39"/>
+</map>

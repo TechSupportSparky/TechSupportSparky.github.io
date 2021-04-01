@@ -1,0 +1,5 @@
+<map id="ConsoleManager::Print" name="ConsoleManager::Print">
+<area shape="rect" id="node1" title="Print the message to the console." alt="" coords="215,42,369,69"/>
+<area shape="rect" id="node2" href="$class_time_request_command.html#a3da84081718e36c6a3396c753cd87851" title="Requests the time from the time manager." alt="" coords="7,5,165,47"/>
+<area shape="rect" id="node3" href="$class_ping_command.html#a9169df46ae4e175dfe50911fadf078c4" title="Executes the ping command by requesting the screen logger to print &quot;Pong!&quot;." alt="" coords="5,71,167,98"/>
+</map>

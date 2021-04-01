@@ -1,0 +1,6 @@
+<map id="CollidableGroup::Register" name="CollidableGroup::Register">
+<area shape="rect" id="node1" title="Registers this." alt="" coords="753,13,923,39"/>
+<area shape="rect" id="node2" href="$class_collidable.html#a78487a5481b7e229b12fba9f5ba11c4a" title="Scene registration." alt="" coords="513,13,705,39"/>
+<area shape="rect" id="node3" href="$class_collidable_attorney_1_1_registration.html#ae8df747db23970c581d7140d6816545c" title=" " alt="" coords="252,5,465,47"/>
+<area shape="rect" id="node4" href="$class_collision_registration_command.html#a76c79284af71a10da9465082cc1666b4" title="Executes this command. Pure virtual function must be defined by all derived commands." alt="" coords="5,5,204,47"/>
+</map>

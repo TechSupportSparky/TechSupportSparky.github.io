@@ -1,0 +1,13 @@
+<map id="ConsoleLog::BackspaceInput" name="ConsoleLog::BackspaceInput">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,196,134"/>
+<area shape="rect" id="node2" href="$class_console_log.html#a56da2f3a37d16fb761aa6198754cdd23" title=" " alt="" coords="244,107,391,134"/>
+<area shape="rect" id="node3" href="$class_console_log.html#a683fde8fdfcb010a1b7cba6ec69a2ac5" title="Default constructor." alt="" coords="439,107,605,134"/>
+<area shape="rect" id="node4" href="$class_sprite_font_manager.html#adfd159763b5c4b06c1d574aa9e0f7594" title=" " alt="" coords="653,78,815,105"/>
+<area shape="rect" id="node8" href="$class_sly.html#a3fd862c9a26805f47c81ba514e6e61bd" title="Gets the window height." alt="" coords="681,137,787,163"/>
+<area shape="rect" id="node5" href="$class_sprite_font_manager.html#a174cfb5ca2e6ce0381d5df7090e96a19" title="Gets the instance of SpriteFontManager." alt="" coords="863,5,1003,47"/>
+<area shape="rect" id="node7" href="$class_sprite_font_manager.html#ac7dd0530569ff2848974663a01e7714f" title="Private get method." alt="" coords="863,71,1003,112"/>
+<area shape="rect" id="node6" href="$class_sprite_font_manager.html#ab5b2044dd6c59141389d5d9d7127f3f2" title="Default constructor." alt="" coords="1051,5,1191,47"/>
+<area shape="rect" id="node9" href="$class_sly.html#a1d59581314e3040746c9a40b2d9a2577" title="Gets the instance." alt="" coords="883,137,982,163"/>
+<area shape="rect" id="node11" href="$class_sly.html#afbf29ffa5d0b7911286c79eafe84d840" title="Internal get height, pulls height from Azul framework." alt="" coords="869,187,996,214"/>
+<area shape="rect" id="node10" href="$class_sly.html#a50e7c55c362cf0a3dec26ad4e77370e0" title="Default constructor." alt="" coords="1087,137,1155,163"/>
+</map>

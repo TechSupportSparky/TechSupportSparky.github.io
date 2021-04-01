@@ -1,0 +1,7 @@
+<map id="ModelManager::Get" name="ModelManager::Get">
+<area shape="rect" id="node1" title="Gets a model* using the given key." alt="" coords="5,38,141,65"/>
+<area shape="rect" id="node2" href="$class_model_manager.html#a34bb227e07db616a207d7e28bab70a31" title="Gets the instance." alt="" coords="189,13,353,39"/>
+<area shape="rect" id="node5" href="$class_model_manager.html#a0148b218c2cf5e0baa00049b6e604f9a" title="Priv get." alt="" coords="194,63,349,90"/>
+<area shape="rect" id="node3" href="$class_model_manager.html#a9b0d22b1baf59c5b566e82fcd8ca424a" title="Default constructor." alt="" coords="401,13,601,39"/>
+<area shape="rect" id="node4" href="$class_model_manager.html#aa736d7e7712bb2c0f7b8406a502cf152" title="Private load sprite model." alt="" coords="649,5,845,47"/>
+</map>

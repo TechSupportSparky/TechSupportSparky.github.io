@@ -1,0 +1,10 @@
+<map id="KillCommand::execute" name="KillCommand::execute">
+<area shape="rect" id="node1" title="Kills the stored game object." alt="" coords="5,42,159,69"/>
+<area shape="rect" id="node2" href="$class_game_object_attorney_1_1_exit.html#ae7ddbda6c50f73c8c1cef2b826f9449e" title=" " alt="" coords="226,5,370,47"/>
+<area shape="rect" id="node4" href="$class_console_manager.html#a559d59659f676677b1a6a19b6861c91e" title="Prints an error message to the console." alt="" coords="207,71,389,98"/>
+<area shape="rect" id="node3" href="$class_game_object.html#af784bed9fe00cd9605133fffaeda9ef3" title="Scene exit." alt="" coords="444,13,607,39"/>
+<area shape="rect" id="node5" href="$class_console_manager.html#a906c569f9ea442602dbe61e65b779ccc" title=" " alt="" coords="437,67,613,94"/>
+<area shape="rect" id="node7" href="$class_console_manager.html#a3e9efb12c3aec27eee46690796b20d4f" title=" " alt="" coords="439,119,612,160"/>
+<area shape="rect" id="node6" href="$class_console_manager.html#aa9f719ce8b6bb8c2efda952e49f534d6" title="Default constructor." alt="" coords="661,67,885,94"/>
+<area shape="rect" id="node8" href="$class_console.html#af2a87f15c467e961a7264267e5cf2e39" title="Console print to the screen logger in error color." alt="" coords="685,126,862,153"/>
+</map>

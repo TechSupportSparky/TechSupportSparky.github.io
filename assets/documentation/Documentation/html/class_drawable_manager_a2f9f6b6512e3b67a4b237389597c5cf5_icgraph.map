@@ -1,0 +1,11 @@
+<map id="DrawableManager::Deregister" name="DrawableManager::Deregister">
+<area shape="rect" id="node1" title="Deregisters this." alt="" coords="1091,91,1283,118"/>
+<area shape="rect" id="node2" href="$class_drawable.html#ace6f9ecdc70f88299309d58764d523c5" title="Forced scene deregistration." alt="" coords="803,63,1043,90"/>
+<area shape="rect" id="node7" href="$class_drawable.html#a457619b2a757693baa43f115128fc73f" title="Scene deregistration." alt="" coords="823,118,1023,145"/>
+<area shape="rect" id="node3" href="$class_drawable_attorney_1_1_specialized_registration.html#a600c30ea7a50c9742cdf87eb3b17737c" title=" " alt="" coords="499,52,755,93"/>
+<area shape="rect" id="node4" href="$class_terrain_manager.html#a9e333c481ca5cd48e8063b260a45fa97" title="Private scene end, forces a draw deregistration." alt="" coords="244,13,443,39"/>
+<area shape="rect" id="node6" href="$class_sky_box.html#ae1073ea8db390142aaadc5fc18217bdd" title=" " alt="" coords="262,63,425,90"/>
+<area shape="rect" id="node5" href="$class_terrain_manager.html#a5e8b9bd1c534ad89bbb2e80539980908" title="Deinitialize the current terrain. Required if a scene will be revisited later on." alt="" coords="5,5,188,47"/>
+<area shape="rect" id="node8" href="$class_drawable_attorney_1_1_registration.html#a39ca56a7f7cd611b5acf69ab23fa869b" title=" " alt="" coords="526,117,727,159"/>
+<area shape="rect" id="node9" href="$class_drawable_deregistration_command.html#ab64de267db79229e5fb98f3eba001468" title="Executes this command." alt="" coords="236,117,451,159"/>
+</map>

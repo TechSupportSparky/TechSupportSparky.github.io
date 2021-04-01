@@ -1,0 +1,7 @@
+<map id="ConsoleManager::PrintWarning" name="ConsoleManager::PrintWarning">
+<area shape="rect" id="node1" title="Print a warning message to the console." alt="" coords="5,35,208,61"/>
+<area shape="rect" id="node2" href="$class_console_manager.html#a906c569f9ea442602dbe61e65b779ccc" title=" " alt="" coords="256,5,432,32"/>
+<area shape="rect" id="node4" href="$class_console_manager.html#a1b9e0f6253536413891267a553113dc6" title=" " alt="" coords="257,57,431,98"/>
+<area shape="rect" id="node3" href="$class_console_manager.html#aa9f719ce8b6bb8c2efda952e49f534d6" title="Default constructor." alt="" coords="480,5,704,32"/>
+<area shape="rect" id="node5" href="$class_console.html#addce99a62c7bf8711aee2a5bc691d21b" title="Console print to the screen logger in warning color." alt="" coords="493,64,691,91"/>
+</map>

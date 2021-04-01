@@ -1,0 +1,4 @@
+<map id="Collidable::GetBSphere" name="Collidable::GetBSphere">
+<area shape="rect" id="node1" title="A reference to the stored Bsphere." alt="" coords="221,13,379,39"/>
+<area shape="rect" id="node2" href="$class_terrain_object.html#ae4a408bb9e5db209cb1672e5b7033dd4" title=" " alt="" coords="5,5,173,47"/>
+</map>

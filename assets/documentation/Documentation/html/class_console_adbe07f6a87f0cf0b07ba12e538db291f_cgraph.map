@@ -1,0 +1,4 @@
+<map id="Console::Time" name="Console::Time">
+<area shape="rect" id="node1" title="Gets the engine runtime." alt="" coords="5,5,111,32"/>
+<area shape="rect" id="node2" href="$class_console.html#a03ea789d3593a73c0b979722de03e856" title="Adds a command to the console for later execution. User commands are passed in this way through the c..." alt="" coords="159,5,316,32"/>
+</map>

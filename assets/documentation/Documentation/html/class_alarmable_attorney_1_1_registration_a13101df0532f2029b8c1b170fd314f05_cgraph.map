@@ -1,0 +1,10 @@
+<map id="AlarmableAttorney::Registration::AlarmDeregistration" name="AlarmableAttorney::Registration::AlarmDeregistration">
+<area shape="rect" id="node1" title=" " alt="" coords="5,27,219,69"/>
+<area shape="rect" id="node2" href="$class_alarmable.html#ad2da9852c51da5d0696d73fd69f647d2" title="Alarm deregistration." alt="" coords="267,35,469,61"/>
+<area shape="rect" id="node3" href="$class_alarmable_manager.html#a1608ca5a71b376407f31b4180687340d" title="Deregisters this." alt="" coords="517,5,715,32"/>
+<area shape="rect" id="node4" href="$class_scene_attorney_1_1_alarmable_registration.html#af7d301105712fdb50766a8e09699dfc2" title=" " alt="" coords="528,57,704,98"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="763,57,943,98"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="1007,35,1173,61"/>
+<area shape="rect" id="node8" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="991,86,1189,127"/>
+<area shape="rect" id="node7" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="1237,35,1441,61"/>
+</map>

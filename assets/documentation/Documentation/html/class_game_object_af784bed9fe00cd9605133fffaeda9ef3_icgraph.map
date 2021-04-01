@@ -1,0 +1,7 @@
+<map id="GameObject::SceneExit" name="GameObject::SceneExit">
+<area shape="rect" id="node1" title="Scene exit." alt="" coords="477,46,640,73"/>
+<area shape="rect" id="node2" href="$class_game_object.html#a6bef6fa50dae75443cc9c93ab93fbff9" title="Disconnects from scene." alt="" coords="231,5,429,47"/>
+<area shape="rect" id="node4" href="$class_game_object_attorney_1_1_exit.html#ae7ddbda6c50f73c8c1cef2b826f9449e" title=" " alt="" coords="258,71,402,112"/>
+<area shape="rect" id="node3" href="$class_game_object_exit_command.html#a7b9bd1c71497747c8cdba0c22990d1eb" title="Executes this command." alt="" coords="5,5,183,47"/>
+<area shape="rect" id="node5" href="$class_kill_command.html#a9347b459c9072a452015d85267fa68a0" title="Kills the stored game object." alt="" coords="17,78,171,105"/>
+</map>

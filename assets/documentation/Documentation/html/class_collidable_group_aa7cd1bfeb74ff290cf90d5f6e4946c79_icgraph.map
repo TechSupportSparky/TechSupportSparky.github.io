@@ -1,0 +1,6 @@
+<map id="CollidableGroup::Deregister" name="CollidableGroup::Deregister">
+<area shape="rect" id="node1" title="Deregisters given collidable." alt="" coords="787,13,967,39"/>
+<area shape="rect" id="node2" href="$class_collidable.html#ab2935eb5445aa8413cf15b233569c515" title="Scene deregistration." alt="" coords="536,13,739,39"/>
+<area shape="rect" id="node3" href="$class_collidable_attorney_1_1_registration.html#a8da0069a33230186f1fc1435a9ecdbb1" title=" " alt="" coords="264,5,488,47"/>
+<area shape="rect" id="node4" href="$class_collision_deregistration_command.html#a793d37b86ced6e1957a209aa28729f8b" title="Executes this command. Pure virtual function must be defined by all derived commands." alt="" coords="5,5,216,47"/>
+</map>

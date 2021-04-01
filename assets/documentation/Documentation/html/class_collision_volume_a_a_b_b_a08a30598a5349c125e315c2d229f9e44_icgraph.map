@@ -1,0 +1,5 @@
+<map id="CollisionVolumeAABB::SetMinMax" name="CollisionVolumeAABB::SetMinMax">
+<area shape="rect" id="node1" title="Sets minimum and maximum corners of the AABB, no additional computation." alt="" coords="252,23,403,65"/>
+<area shape="rect" id="node2" href="$class_terrain_cell.html#ab920207f1e34d6e100beb486a475db16" title="Creates an AABB volume from the information stored and passes a reference." alt="" coords="32,5,177,32"/>
+<area shape="rect" id="node3" href="$class_collidable_group.html#a555f233937baa206ca2fa0578d9f9122" title="Updates the AABB Collision data (ONCE PER FRAME)" alt="" coords="5,56,204,83"/>
+</map>

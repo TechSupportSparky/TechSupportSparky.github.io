@@ -1,0 +1,4 @@
+<map id="ConsoleManager::privAddCommand" name="ConsoleManager::privAddCommand">
+<area shape="rect" id="node1" title="The process of adding a command to the console system." alt="" coords="5,5,233,32"/>
+<area shape="rect" id="node2" href="$class_console.html#a03ea789d3593a73c0b979722de03e856" title="Adds a command to the console for later execution. User commands are passed in this way through the c..." alt="" coords="281,5,439,32"/>
+</map>

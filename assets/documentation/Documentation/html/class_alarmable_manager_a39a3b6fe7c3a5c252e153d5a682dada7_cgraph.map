@@ -1,0 +1,14 @@
+<map id="AlarmableManager::ProcessAlarms" name="AlarmableManager::ProcessAlarms">
+<area shape="rect" id="node1" title="Process the alarms." alt="" coords="5,105,192,146"/>
+<area shape="rect" id="node2" href="$class_time_manager.html#a187b37ea46e36d1bba730d833ce82540" title="Gets the time." alt="" coords="245,80,402,107"/>
+<area shape="rect" id="node6" href="$class_alarmable_attorney_1_1_game_loop.html#a0756be157fdde9c4ca4e8eeacc110f01" title=" " alt="" coords="240,137,407,178"/>
+<area shape="rect" id="node3" href="$class_time_manager.html#ac06b0a182b394ddc0ac554ad090ee019" title="Gets the instance." alt="" coords="464,8,621,35"/>
+<area shape="rect" id="node5" href="$class_time_manager.html#a7e338d6167ec2bf8a00e967f27b5b59f" title="Private get time." alt="" coords="455,80,631,107"/>
+<area shape="rect" id="node4" href="$class_time_manager.html#a46d2773caea1858a19594d58d57404c2" title="Default constructor." alt="" coords="679,5,865,32"/>
+<area shape="rect" id="node7" href="$class_alarmable.html#a043d268abd8f4ec1a6825c9f6b2ade77" title="Trigger alarm." alt="" coords="462,155,623,181"/>
+<area shape="rect" id="node8" href="$class_alarmable.html#accbf4b8e8f2fa14fd7803706e268f904" title=" " alt="" coords="707,56,837,83"/>
+<area shape="rect" id="node9" href="$class_alarmable.html#a345658b4526baaf3207278d9237f7dca" title=" " alt="" coords="707,107,837,133"/>
+<area shape="rect" id="node10" href="$class_alarmable.html#acbedfd8613edd1830974dec08f19f3eb" title=" " alt="" coords="707,157,837,184"/>
+<area shape="rect" id="node11" href="$class_alarmable.html#ac0749e14bef102bc2e7c20f7ff10d852" title=" " alt="" coords="707,208,837,235"/>
+<area shape="rect" id="node12" href="$class_alarmable.html#a781b447832cbbb5782b0a50d52bb0a68" title=" " alt="" coords="707,259,837,285"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="Alarmable::AlarmRegistration" name="Alarmable::AlarmRegistration">
+<area shape="rect" id="node1" title="Alarm registration." alt="" coords="5,93,196,120"/>
+<area shape="rect" id="node2" href="$class_scene_attorney_1_1_alarmable_registration.html#af7d301105712fdb50766a8e09699dfc2" title=" " alt="" coords="249,57,425,98"/>
+<area shape="rect" id="node7" href="$class_alarmable_manager.html#a105340b37247dc431b5b495630c934ba" title="Registers this." alt="" coords="244,123,431,149"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="479,57,659,98"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="723,5,889,32"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="707,57,905,98"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="953,5,1157,32"/>
+<area shape="rect" id="node8" href="$class_time_manager.html#a187b37ea46e36d1bba730d833ce82540" title="Gets the time." alt="" coords="490,123,647,149"/>
+<area shape="rect" id="node9" href="$class_time_manager.html#ac06b0a182b394ddc0ac554ad090ee019" title="Gets the instance." alt="" coords="727,123,885,149"/>
+<area shape="rect" id="node11" href="$class_time_manager.html#a7e338d6167ec2bf8a00e967f27b5b59f" title="Private get time." alt="" coords="718,173,894,200"/>
+<area shape="rect" id="node10" href="$class_time_manager.html#a46d2773caea1858a19594d58d57404c2" title="Default constructor." alt="" coords="962,123,1149,149"/>
+</map>

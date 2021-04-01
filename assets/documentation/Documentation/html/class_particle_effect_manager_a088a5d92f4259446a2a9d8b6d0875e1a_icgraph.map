@@ -1,0 +1,5 @@
+<map id="ParticleEffectManager::Delete" name="ParticleEffectManager::Delete">
+<area shape="rect" id="node1" title="Call to delete the instance of Particle Effect." alt="" coords="439,5,588,47"/>
+<area shape="rect" id="node2" href="$class_particle_effect_manager_attorney.html#a86defb86f8ee18c3f1f0ba79934fc078" title=" " alt="" coords="192,5,391,47"/>
+<area shape="rect" id="node3" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="5,13,144,39"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="ImageManagerAttorney::Delete" name="ImageManagerAttorney::Delete">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,161,65"/>
+<area shape="rect" id="node2" href="$class_image_manager.html#ae01895974e6e3e9ae95dbb11c6070e23" title="Deletes this pointer instance. To only be called by the engine." alt="" coords="209,31,361,57"/>
+<area shape="rect" id="node3" href="$class_image_manager.html#ae1fff2154dfa21faf1baab26521cb99f" title="Gets the ImageManager instance." alt="" coords="413,5,577,32"/>
+<area shape="rect" id="node5" href="$class_image_manager.html#aefe58979c6872aea5a7691249bcca1e1" title="Deletes this pointer instance. To only be called internally." alt="" coords="409,56,580,83"/>
+<area shape="rect" id="node4" href="$class_image_manager.html#a8c856af0e3f0d23da7c765b0e33e585e" title="Default constructor." alt="" coords="628,5,828,32"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Console::consolePrintWarning" name="Console::consolePrintWarning">
+<area shape="rect" id="node1" title="Console print to the screen logger in warning color." alt="" coords="496,35,693,61"/>
+<area shape="rect" id="node2" href="$class_console.html#acc6585a1d780aee98a2a11a6f47d3731" title="Parses the command line after the passintro() command reports the user is ready for parsing." alt="" coords="256,5,448,32"/>
+<area shape="rect" id="node4" href="$class_console_manager.html#a1b9e0f6253536413891267a553113dc6" title=" " alt="" coords="265,57,439,98"/>
+<area shape="rect" id="node3" href="$class_console.html#a331a1f3ab6ce5210810f5c65f533e202" title="Passes the &quot;execute&quot; command into the console. Typically this is achieved when the user hits the &#39;ent..." alt="" coords="41,5,172,32"/>
+<area shape="rect" id="node5" href="$class_console_manager.html#aa4ce80f60c03fc100cbbdaad169d59e5" title="Print a warning message to the console." alt="" coords="5,64,208,91"/>
+</map>

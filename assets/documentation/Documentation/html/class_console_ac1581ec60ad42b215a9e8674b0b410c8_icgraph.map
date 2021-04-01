@@ -1,0 +1,11 @@
+<map id="Console::render" name="Console::render">
+<area shape="rect" id="node1" title="Renders the console&#39;s text buffer. (All messages on screen)." alt="" coords="1655,13,1768,39"/>
+<area shape="rect" id="node2" href="$class_console_manager.html#ae4f06e8dbe84e9cd0d2c5d8fdd8bb78d" title=" " alt="" coords="1412,5,1607,47"/>
+<area shape="rect" id="node3" href="$class_console_manager.html#a9fb1189d0738cbf3e094677e502bdabb" title=" " alt="" coords="1149,13,1364,39"/>
+<area shape="rect" id="node4" href="$class_console_manager_attorney_1_1_processing.html#a5982da09399aac5b6ff18f4682b706b0" title=" " alt="" coords="911,5,1101,47"/>
+<area shape="rect" id="node5" href="$class_scene.html#a4813338ee7c6c995f5bb6f10e3673804" title="Processes draw commands for the scene." alt="" coords="767,13,863,39"/>
+<area shape="rect" id="node6" href="$class_scene_attorney_1_1_game_loop.html#a2df70d8a8bf57fcd7f4b7d20f9b8009d" title=" " alt="" coords="540,5,719,47"/>
+<area shape="rect" id="node7" href="$class_scene_manager.html#a237c3ab9c40ae879f04b4c7adec701f3" title="Private draw." alt="" coords="327,13,492,39"/>
+<area shape="rect" id="node8" href="$class_scene_manager.html#a459d07314249b308793274d303db1fb6" title="Calls the current scene&#39;s draw loop." alt="" coords="132,13,279,39"/>
+<area shape="rect" id="node9" href="$class_sly.html#a175f9ff26a02b3a97eef61131f2b812c" title="Main draw loop." alt="" coords="5,13,84,39"/>
+</map>

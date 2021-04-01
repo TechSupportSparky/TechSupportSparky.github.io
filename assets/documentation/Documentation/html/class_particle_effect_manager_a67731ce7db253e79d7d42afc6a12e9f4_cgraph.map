@@ -1,0 +1,6 @@
+<map id="ParticleEffectManager::Load" name="ParticleEffectManager::Load">
+<area shape="rect" id="node1" title="Loads the particle effect into the manager using the associated key." alt="" coords="5,39,155,80"/>
+<area shape="rect" id="node2" href="$class_particle_effect_manager.html#a0ec038d10c4d82cba26ae84b9001a2e1" title="Gets the instance of particle effect manager." alt="" coords="203,5,352,47"/>
+<area shape="rect" id="node4" href="$class_particle_effect_manager.html#a62094284111f66b0079e02db590b9fe8" title="Loads a requested particle effect into the manager with the associated key." alt="" coords="203,71,352,112"/>
+<area shape="rect" id="node3" href="$class_particle_effect_manager.html#a5423d1a88f78ec6f779ac6685b043773" title="Default constructor." alt="" coords="400,5,557,47"/>
+</map>

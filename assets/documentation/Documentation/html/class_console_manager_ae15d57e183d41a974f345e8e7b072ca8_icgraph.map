@@ -1,0 +1,4 @@
+<map id="ConsoleManager::Initialize" name="ConsoleManager::Initialize">
+<area shape="rect" id="node1" title="Initializes a text console." alt="" coords="176,5,351,32"/>
+<area shape="rect" id="node2" href="$class_sly.html#a0e65e74526d0c79d554267cbeee21d80" title="Loads engine starting content. Loads first scene." alt="" coords="5,5,128,32"/>
+</map>

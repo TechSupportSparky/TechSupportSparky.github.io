@@ -1,0 +1,9 @@
+<map id="ConsoleCommand" name="ConsoleCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="330,219,486,399"/>
+<area shape="rect" id="node3" href="$class_god_cam_command.html" title=" " alt="" coords="5,476,165,641"/>
+<area shape="rect" id="node4" href="$class_kill_command.html" title=" " alt="" coords="190,447,317,671"/>
+<area shape="rect" id="node5" href="$class_ping_command.html" title=" " alt="" coords="341,476,475,641"/>
+<area shape="rect" id="node6" href="$class_reload_command.html" title=" " alt="" coords="500,476,649,641"/>
+<area shape="rect" id="node7" href="$class_time_request_command.html" title=" " alt="" coords="674,476,859,641"/>
+<area shape="rect" id="node2" href="$class_command_base.html" title=" " alt="" coords="339,5,477,171"/>
+</map>

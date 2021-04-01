@@ -1,0 +1,9 @@
+<map id="Inputable::SceneDeregistration" name="Inputable::SceneDeregistration">
+<area shape="rect" id="node1" title="Scene deregistration." alt="" coords="5,46,204,73"/>
+<area shape="rect" id="node2" href="$class_keyboard_event_manager.html#a81386de428aae2fefce4325d9a40c062" title="Deregisters this." alt="" coords="269,5,427,47"/>
+<area shape="rect" id="node3" href="$class_scene_attorney_1_1_inputable_registration.html#a136019c4cbc5eecc0975f66f058f0bac" title=" " alt="" coords="252,71,444,112"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="492,71,672,112"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="736,49,903,75"/>
+<area shape="rect" id="node7" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="720,100,919,141"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="967,49,1171,75"/>
+</map>

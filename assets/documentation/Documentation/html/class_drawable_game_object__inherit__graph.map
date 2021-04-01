@@ -1,0 +1,6 @@
+<map id="DrawableGameObject" name="DrawableGameObject">
+<area shape="rect" id="node1" title=" " alt="" coords="57,365,233,516"/>
+<area shape="rect" id="node3" href="$class_sky_box.html" title=" " alt="" coords="5,637,133,935"/>
+<area shape="rect" id="node4" href="$class_terrain_object.html" title=" " alt="" coords="158,564,285,1008"/>
+<area shape="rect" id="node2" href="$class_drawable.html" title=" " alt="" coords="48,5,243,317"/>
+</map>

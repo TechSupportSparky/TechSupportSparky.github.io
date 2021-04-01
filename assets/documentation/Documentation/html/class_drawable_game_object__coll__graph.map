@@ -1,0 +1,8 @@
+<map id="DrawableGameObject" name="DrawableGameObject">
+<area shape="rect" id="node1" title=" " alt="" coords="5,580,181,731"/>
+<area shape="rect" id="node2" href="$class_drawable.html" title=" " alt="" coords="212,220,407,503"/>
+<area shape="rect" id="node3" href="$class_drawable_registration_command.html" title=" " alt="" coords="490,565,721,745"/>
+<area shape="rect" id="node6" href="$class_drawable_deregistration_command.html" title=" " alt="" coords="205,565,448,745"/>
+<area shape="rect" id="node4" href="$class_scene_registry.html" title="A scene registry." alt="" coords="615,286,750,437"/>
+<area shape="rect" id="node5" href="$class_command_base.html" title=" " alt="" coords="613,5,752,171"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="KillCmdFactory::privTerminate" name="KillCmdFactory::privTerminate">
+<area shape="rect" id="node1" title=" " alt="" coords="409,5,604,32"/>
+<area shape="rect" id="node2" href="$class_kill_cmd_factory.html#ab80e1216377f1d425f5a1312c0427a80" title=" " alt="" coords="185,5,361,32"/>
+<area shape="rect" id="node3" href="$class_console.html#a32e8c79c8579b1b076e53848c540d4e7" title="Destructor (Virtual from CommandBase)" alt="" coords="5,5,137,32"/>
+</map>

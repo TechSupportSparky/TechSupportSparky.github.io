@@ -1,0 +1,6 @@
+<map id="ModelManager::LoadSpriteModel" name="ModelManager::LoadSpriteModel">
+<area shape="rect" id="node1" title="Loads the default sprite model." alt="" coords="5,23,183,65"/>
+<area shape="rect" id="node2" href="$class_model_manager.html#a34bb227e07db616a207d7e28bab70a31" title="Gets the instance." alt="" coords="231,5,395,32"/>
+<area shape="rect" id="node4" href="$class_model_manager.html#aa736d7e7712bb2c0f7b8406a502cf152" title="Private load sprite model." alt="" coords="691,23,887,65"/>
+<area shape="rect" id="node3" href="$class_model_manager.html#a9b0d22b1baf59c5b566e82fcd8ca424a" title="Default constructor." alt="" coords="443,5,643,32"/>
+</map>

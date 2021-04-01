@@ -1,0 +1,6 @@
+<map id="CollisionVolume::IntersectVisit" name="CollisionVolume::IntersectVisit">
+<area shape="rect" id="node1" title="Intersect visit for Sphere, using the visitor pattern." alt="" coords="219,71,392,112"/>
+<area shape="rect" id="node2" href="$class_collision_volume_b_sphere.html#a6ad8d06a51984bc57b54956154b2fd2c" title="Intersect accept utilizing the visitor pattern." alt="" coords="5,5,171,47"/>
+<area shape="rect" id="node3" href="$class_collision_volume_a_a_b_b.html#ac8b11caa4308ef401e1f3e2d569edc96" title="Intersect accept for a generic collision volume." alt="" coords="13,71,163,112"/>
+<area shape="rect" id="node4" href="$class_collision_volume_o_b_b.html#af119a8f3faf50b46c9f2cb81606794c6" title="Intersect acceptance for the first dispatch of Collision with an OBB." alt="" coords="17,136,159,177"/>
+</map>

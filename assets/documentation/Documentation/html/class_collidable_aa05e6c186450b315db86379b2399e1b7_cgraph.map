@@ -1,0 +1,10 @@
+<map id="Collidable::SetCollidableGroup" name="Collidable::SetCollidableGroup">
+<area shape="rect" id="node1" title="Sets collidable group." alt="" coords="5,61,168,102"/>
+<area shape="rect" id="node2" href="$class_scene_attorney_1_1_collidable_registration.html#a94c1c36f8ece4055c9ff2ad0925eec78" title=" " alt="" coords="216,30,407,71"/>
+<area shape="rect" id="node7" href="$class_collision_manager.html#a9afd2c8669efb8f85159456d8410decf" title="Gets type identifier." alt="" coords="216,97,407,124"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="457,27,637,69"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="703,5,869,32"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="687,57,885,98"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="933,5,1137,32"/>
+<area shape="rect" id="node8" href="$class_collision_manager.html#a19c3b4657a5e2e1cec75d77fd6724b9a" title="Sets group for type identifier." alt="" coords="455,93,639,134"/>
+</map>

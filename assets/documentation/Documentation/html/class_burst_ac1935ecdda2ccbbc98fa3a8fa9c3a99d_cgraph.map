@@ -1,0 +1,6 @@
+<map id="Burst::Initialize" name="Burst::Initialize">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,113,83"/>
+<area shape="rect" id="node2" href="$class_particle_effect.html#abe72e93a22bfbe49888ab6b2e750771f" title=" " alt="" coords="161,5,348,32"/>
+<area shape="rect" id="node3" href="$class_particle_effect.html#ad251adfa6614db29ceba8d0895f4241b" title=" " alt="" coords="163,56,346,83"/>
+<area shape="rect" id="node4" href="$class_sly_math.html#a3e6f005b427c868945c69c5eeaff41fd" title="Returns a random float between the lower bound and uppeprbound." alt="" coords="167,107,343,133"/>
+</map>

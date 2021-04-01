@@ -1,0 +1,11 @@
+<map id="CollidableAttorney::Registration::SceneDeregistration" name="CollidableAttorney::Registration::SceneDeregistration">
+<area shape="rect" id="node1" title=" " alt="" coords="5,57,229,98"/>
+<area shape="rect" id="node2" href="$class_collidable.html#ab2935eb5445aa8413cf15b233569c515" title="Scene deregistration." alt="" coords="277,64,480,91"/>
+<area shape="rect" id="node3" href="$class_collidable_group.html#aa7cd1bfeb74ff290cf90d5f6e4946c79" title="Deregisters given collidable." alt="" coords="533,5,713,32"/>
+<area shape="rect" id="node4" href="$class_collision_manager.html#a8093534ecbf9ec54cb3205237c545021" title="Gets col group." alt="" coords="539,57,708,98"/>
+<area shape="rect" id="node5" href="$class_scene_attorney_1_1_collidable_registration.html#a94c1c36f8ece4055c9ff2ad0925eec78" title=" " alt="" coords="528,122,719,163"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="767,122,947,163"/>
+<area shape="rect" id="node7" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="1011,100,1177,127"/>
+<area shape="rect" id="node9" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="995,151,1193,193"/>
+<area shape="rect" id="node8" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="1241,100,1445,127"/>
+</map>

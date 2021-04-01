@@ -1,0 +1,10 @@
+<map id="Drawable::SubmitDrawRegistration" name="Drawable::SubmitDrawRegistration">
+<area shape="rect" id="node1" title="Submit draw registration." alt="" coords="5,93,228,120"/>
+<area shape="rect" id="node2" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="294,57,474,98"/>
+<area shape="rect" id="node6" href="$class_scene_attorney.html#ad869342eb2583be16a0483ad2712416b" title="&quot;Global&quot; Submit command for the GameObject &#39;Able&#39;s&#39;" alt="" coords="276,123,492,149"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="556,5,723,32"/>
+<area shape="rect" id="node5" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="540,57,739,98"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="787,5,991,32"/>
+<area shape="rect" id="node7" href="$class_scene.html#a713cce013f0244d71b16c2e33638ed6d" title="Submit command." alt="" coords="556,123,723,149"/>
+<area shape="rect" id="node8" href="$class_scene_registration_broker.html#a2de26f860998866920e681e330d3dac3" title="Adds a command." alt="" coords="805,115,972,157"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="BurstMemoryPool::returnBurst" name="BurstMemoryPool::returnBurst">
+<area shape="rect" id="node1" title=" " alt="" coords="648,13,847,39"/>
+<area shape="rect" id="node2" href="$class_burst_factory.html#aeafa62951c2bdcce71f02d73b1aed7c2" title=" " alt="" coords="429,5,600,47"/>
+<area shape="rect" id="node3" href="$class_burst_factory.html#a6832280f1d56489c599e07e8d12f6505" title=" " alt="" coords="199,13,381,39"/>
+<area shape="rect" id="node4" href="$class_particle_emitter.html#a545cf19b9a40b5de9c2402e8c429c6f5" title="Pure virtual function draw. Derived objects must override." alt="" coords="5,13,151,39"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="ModelManagerAttorney::Delete" name="ModelManagerAttorney::Delete">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,161,72"/>
+<area shape="rect" id="node2" href="$class_model_manager.html#afff1e949fe07e021aa5a2fb12fd6f932" title="Deletes ModelManager&#39;s pointer instance. Only to be called by engine code." alt="" coords="209,38,361,65"/>
+<area shape="rect" id="node3" href="$class_model_manager.html#a34bb227e07db616a207d7e28bab70a31" title="Gets the instance." alt="" coords="413,13,577,39"/>
+<area shape="rect" id="node6" href="$class_model_manager.html#a2953829b185d919052fe8a3102fa347e" title="Delete&#39;s ModelManager&#39;s pointer instance. Only to be called internally." alt="" coords="409,63,580,90"/>
+<area shape="rect" id="node4" href="$class_model_manager.html#a9b0d22b1baf59c5b566e82fcd8ca424a" title="Default constructor." alt="" coords="628,13,828,39"/>
+<area shape="rect" id="node5" href="$class_model_manager.html#aa736d7e7712bb2c0f7b8406a502cf152" title="Private load sprite model." alt="" coords="876,5,1072,47"/>
+</map>

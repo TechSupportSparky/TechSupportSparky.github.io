@@ -1,0 +1,10 @@
+<map id="InputableDeregistrationCommand" name="InputableDeregistrationCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="66,420,299,659"/>
+<area shape="rect" id="node6" href="$struct_inputable_1_1_inputable_data.html" title="An inputable data." alt="" coords="217,721,378,799"/>
+<area shape="rect" id="node2" href="$class_scene_registry.html" title="A scene registry." alt="" coords="7,220,142,371"/>
+<area shape="rect" id="node8" href="$class_inputable_registration_command.html" title=" " alt="" coords="47,1317,278,1541"/>
+<area shape="rect" id="node3" href="$class_command_base.html" title=" " alt="" coords="5,5,144,171"/>
+<area shape="rect" id="node4" href="$class_inputable.html" title=" " alt="" coords="70,1016,255,1255"/>
+<area shape="rect" id="node5" title=" " alt="" coords="116,861,260,953"/>
+<area shape="rect" id="node7" title=" " alt="" coords="342,861,519,953"/>
+</map>

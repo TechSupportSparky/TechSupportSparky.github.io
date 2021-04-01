@@ -1,0 +1,4 @@
+<map id="CollisionVolumeAABB::IntersectAccept" name="CollisionVolumeAABB::IntersectAccept">
+<area shape="rect" id="node1" title="Intersect accept for a generic collision volume." alt="" coords="5,5,156,47"/>
+<area shape="rect" id="node2" href="$class_collision_volume.html#a9dfdb40c55a76bc26476012157cac4b3" title="Intersect visit for Sphere, using the visitor pattern." alt="" coords="204,5,377,47"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CollisionManager::SetGroupForTypeID" name="CollisionManager::SetGroupForTypeID">
+<area shape="rect" id="node1" title="Sets group for type identifier." alt="" coords="455,5,639,47"/>
+<area shape="rect" id="node2" href="$class_collision_manager.html#a9afd2c8669efb8f85159456d8410decf" title="Gets type identifier." alt="" coords="216,13,407,39"/>
+<area shape="rect" id="node3" href="$class_collidable.html#aa05e6c186450b315db86379b2399e1b7" title="Sets collidable group." alt="" coords="5,5,168,47"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="CameraManager::SetGodCamera" name="CameraManager::SetGodCamera">
+<area shape="rect" id="node1" title="Sets god camera." alt="" coords="975,31,1189,57"/>
+<area shape="rect" id="node2" href="$class_scene.html#a234803609bf0a9e497a82da09c3c2188" title="Request god camera be present in the current scene." alt="" coords="760,5,927,32"/>
+<area shape="rect" id="node6" href="$class_scene.html#ad10176d75a9cc0da56626f682d083507" title="Default constructor." alt="" coords="791,56,895,83"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#a9ddef0643e3927f519b9a9bc17483f74" title="Private call to setup god camera." alt="" coords="491,5,712,32"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#a2417742d3fef90ea663bba247cebb0ee" title=" " alt="" coords="240,5,443,32"/>
+<area shape="rect" id="node5" href="$class_god_cam_command.html#a19b5e32b95ef755edffbdd479f85c721" title="Executes the Godcam command." alt="" coords="5,5,192,32"/>
+</map>

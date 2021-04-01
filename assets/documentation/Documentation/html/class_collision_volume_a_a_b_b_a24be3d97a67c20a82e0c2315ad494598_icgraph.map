@@ -1,0 +1,5 @@
+<map id="CollisionVolumeAABB::GetMax" name="CollisionVolumeAABB::GetMax">
+<area shape="rect" id="node1" title="Gets the maximum of the AABB (calculated through ComputeData) and returns it." alt="" coords="256,23,407,65"/>
+<area shape="rect" id="node2" href="$class_sly_math.html#af9a9c97394e5f82c149e54ff4884562d" title="Intersection test for AABB &#45; AABB." alt="" coords="43,5,171,32"/>
+<area shape="rect" id="node3" href="$class_sly_math.html#aebf31df8aa704c17b0c5650fa51577cd" title="Obb projection length for AABB projected on V." alt="" coords="5,56,208,83"/>
+</map>

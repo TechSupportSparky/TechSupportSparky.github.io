@@ -1,0 +1,9 @@
+<map id="CameraManager::CameraManager" name="CameraManager::CameraManager">
+<area shape="rect" id="node1" title="Default constructor." alt="" coords="5,56,225,83"/>
+<area shape="rect" id="node2" href="$class_sly.html#a3fd862c9a26805f47c81ba514e6e61bd" title="Gets the window height." alt="" coords="273,31,380,57"/>
+<area shape="rect" id="node6" href="$class_sly.html#aee11857c1e3b02cb0c6956eb7184721b" title="Gets the window width." alt="" coords="275,81,379,108"/>
+<area shape="rect" id="node3" href="$class_sly.html#a1d59581314e3040746c9a40b2d9a2577" title="Gets the instance." alt="" coords="442,56,541,83"/>
+<area shape="rect" id="node5" href="$class_sly.html#afbf29ffa5d0b7911286c79eafe84d840" title="Internal get height, pulls height from Azul framework." alt="" coords="428,5,555,32"/>
+<area shape="rect" id="node4" href="$class_sly.html#a50e7c55c362cf0a3dec26ad4e77370e0" title="Default constructor." alt="" coords="603,56,671,83"/>
+<area shape="rect" id="node7" href="$class_sly.html#adc6e75da3dc32d2a2a32e83a396be078" title="Internal get width, pulls width from Azul framework." alt="" coords="430,107,553,133"/>
+</map>

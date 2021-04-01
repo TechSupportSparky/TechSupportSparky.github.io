@@ -1,0 +1,5 @@
+<map id="GameObjectExitCommand::execute" name="GameObjectExitCommand::execute">
+<area shape="rect" id="node1" title="Executes this command." alt="" coords="5,5,183,47"/>
+<area shape="rect" id="node2" href="$class_game_object.html#a6bef6fa50dae75443cc9c93ab93fbff9" title="Disconnects from scene." alt="" coords="231,5,429,47"/>
+<area shape="rect" id="node3" href="$class_game_object.html#af784bed9fe00cd9605133fffaeda9ef3" title="Scene exit." alt="" coords="477,13,640,39"/>
+</map>

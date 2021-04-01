@@ -1,0 +1,4 @@
+<map id="Console::Godcam" name="Console::Godcam">
+<area shape="rect" id="node1" title="Triggers and activates the godcam." alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node2" href="$class_console.html#a03ea789d3593a73c0b979722de03e856" title="Adds a command to the console for later execution. User commands are passed in this way through the c..." alt="" coords="180,5,337,32"/>
+</map>

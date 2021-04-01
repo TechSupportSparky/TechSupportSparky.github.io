@@ -1,0 +1,8 @@
+<map id="ParticleEffectManager::Instance" name="ParticleEffectManager::Instance">
+<area shape="rect" id="node1" title="Gets the instance of particle effect manager." alt="" coords="665,64,815,105"/>
+<area shape="rect" id="node2" href="$class_particle_effect_manager.html#a088a5d92f4259446a2a9d8b6d0875e1a" title="Call to delete the instance of Particle Effect." alt="" coords="453,5,603,47"/>
+<area shape="rect" id="node5" href="$class_particle_effect_manager.html#a5219f3da0e879c9845f349b4c987a7b7" title="Gets a particle effect* using the given key." alt="" coords="439,71,617,98"/>
+<area shape="rect" id="node6" href="$class_particle_effect_manager.html#a67731ce7db253e79d7d42afc6a12e9f4" title="Loads the particle effect into the manager using the associated key." alt="" coords="453,123,603,164"/>
+<area shape="rect" id="node3" href="$class_particle_effect_manager_attorney.html#a86defb86f8ee18c3f1f0ba79934fc078" title=" " alt="" coords="192,5,391,47"/>
+<area shape="rect" id="node4" href="$class_sly.html#a11db0b5f493d787187ddc55172ec8981" title="Cleans up engine content." alt="" coords="5,13,144,39"/>
+</map>

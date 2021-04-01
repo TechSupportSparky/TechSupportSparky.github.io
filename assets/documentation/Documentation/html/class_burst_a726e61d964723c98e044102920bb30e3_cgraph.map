@@ -1,0 +1,13 @@
+<map id="Burst::DrawParticles" name="Burst::DrawParticles">
+<area shape="rect" id="node1" title=" " alt="" coords="5,148,147,175"/>
+<area shape="rect" id="node2" href="$class_burst_type.html#af1712896c8820890c38e9358831d36f3" title=" " alt="" coords="195,5,385,32"/>
+<area shape="rect" id="node3" href="$class_particle_effect.html#a74068f7bfa5a6c29b2ccceea43505454" title=" " alt="" coords="211,57,369,98"/>
+<area shape="rect" id="node4" href="$class_particle_effect.html#ac0f1e6d23dc38be0ff49fe6abaffb38a" title=" " alt="" coords="197,123,383,149"/>
+<area shape="rect" id="node5" href="$class_scene.html#ac2acbfa7955327da74ecef419a510955" title="Gets the camera." alt="" coords="223,173,357,200"/>
+<area shape="rect" id="node7" href="$class_scene_manager.html#a547a841067e4c8f44be20fbebd15f9fa" title="Gets current scene." alt="" coords="200,225,380,266"/>
+<area shape="rect" id="node11" href="$class_particle_effect.html#ae0bebea77e687896f4732008d2a6db25" title=" " alt="" coords="201,290,379,331"/>
+<area shape="rect" id="node6" href="$class_camera_manager.html#a73be4132ae9a5523cd4e778a53013a16" title="Gets current camera." alt="" coords="439,166,627,207"/>
+<area shape="rect" id="node8" href="$class_scene_manager.html#a2c16c811641825fa41e28cd7aab197d0" title="Gets the instance." alt="" coords="449,232,616,259"/>
+<area shape="rect" id="node10" href="$class_scene_manager.html#ac24e8ef292407a7d5902c23e1ae3bee7" title="Priv get current scene." alt="" coords="433,283,632,325"/>
+<area shape="rect" id="node9" href="$class_scene_manager.html#a52085e6737c23b491c228e86781af808" title="Default constructor." alt="" coords="680,232,884,259"/>
+</map>

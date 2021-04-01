@@ -1,0 +1,4 @@
+<map id="GameObjectAttorney::Exit::ExitCall" name="GameObjectAttorney::Exit::ExitCall">
+<area shape="rect" id="node1" title=" " alt="" coords="207,5,351,47"/>
+<area shape="rect" id="node2" href="$class_kill_command.html#a9347b459c9072a452015d85267fa68a0" title="Kills the stored game object." alt="" coords="5,13,159,39"/>
+</map>

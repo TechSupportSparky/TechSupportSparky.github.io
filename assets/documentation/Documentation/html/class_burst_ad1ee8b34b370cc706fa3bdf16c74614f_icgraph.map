@@ -1,0 +1,4 @@
+<map id="Burst::GetEmitterStorageRef" name="Burst::GetEmitterStorageRef">
+<area shape="rect" id="node1" title=" " alt="" coords="199,5,387,32"/>
+<area shape="rect" id="node2" href="$class_particle_emitter.html#a545cf19b9a40b5de9c2402e8c429c6f5" title="Pure virtual function draw. Derived objects must override." alt="" coords="5,5,151,32"/>
+</map>

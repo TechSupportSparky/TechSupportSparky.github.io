@@ -1,0 +1,5 @@
+<map id="InputableDeregistrationCommand" name="InputableDeregistrationCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="5,417,239,671"/>
+<area shape="rect" id="node2" href="$class_scene_registry.html" title="A scene registry." alt="" coords="55,219,189,369"/>
+<area shape="rect" id="node3" href="$class_command_base.html" title=" " alt="" coords="53,5,191,171"/>
+</map>

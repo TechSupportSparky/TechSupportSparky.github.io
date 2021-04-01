@@ -1,0 +1,7 @@
+<map id="ModelManager::Load" name="ModelManager::Load">
+<area shape="rect" id="node1" title="Loads." alt="" coords="5,38,148,65"/>
+<area shape="rect" id="node2" href="$class_model_manager.html#a34bb227e07db616a207d7e28bab70a31" title="Gets the instance." alt="" coords="196,13,360,39"/>
+<area shape="rect" id="node5" href="$class_model_manager.html#a5425f2ebe30cc66ceac9e8164aaebf14" title="Priv load." alt="" coords="197,63,359,90"/>
+<area shape="rect" id="node3" href="$class_model_manager.html#a9b0d22b1baf59c5b566e82fcd8ca424a" title="Default constructor." alt="" coords="408,13,608,39"/>
+<area shape="rect" id="node4" href="$class_model_manager.html#aa736d7e7712bb2c0f7b8406a502cf152" title="Private load sprite model." alt="" coords="656,5,852,47"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="GameObject" name="GameObject">
+<area shape="rect" id="node1" title="A game object entity." alt="" coords="462,453,637,721"/>
+<area shape="rect" id="node2" href="$class_drawable.html" title=" " alt="" coords="5,49,200,361"/>
+<area shape="rect" id="node3" href="$class_updatable.html" title=" " alt="" coords="224,64,427,347"/>
+<area shape="rect" id="node4" href="$class_alarmable.html" title=" " alt="" coords="451,35,647,376"/>
+<area shape="rect" id="node5" href="$class_inputable.html" title=" " alt="" coords="671,86,857,325"/>
+<area shape="rect" id="node6" href="$class_collidable.html" title=" " alt="" coords="881,5,1092,405"/>
+</map>
