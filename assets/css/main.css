@@ -78,6 +78,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+		size:100%;
 	}
 
 		.row > * {
