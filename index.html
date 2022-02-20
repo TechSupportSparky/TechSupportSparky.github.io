@@ -52,15 +52,24 @@
 							<section>
 								<div class="row">
 									<div class="col-6 col-6-medium col-12-small">
+										<a href="#detect" class="image fit"><img src="images/10Detect.webp" alt=""></a>
+									</div>
+									<div class="col-6 col-6-medium col-12-small">
+										<a href="#killectibles" class="image fit"><img src="images/06Proving.webp" alt=""></a>
+									</div>
+									<div class="col-6 col-6-medium col-12-small">
 										<a href="#proving-grounds" class="image fit"><img src="images/06Proving.webp" alt=""></a>
 									</div>
 									<div class="col-6 col-6-medium col-12-small">
+										<a href="#stp" class="image fit"><img src="images/06Proving.webp" alt=""></a>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
 										<a href="#centipede" class="image fit"><img src="images/07Centipede.webp" alt=""></a>
 									</div>
-									<div class="col-6 col-6-medium col-12-small">
+									<div class="col-4 col-6-medium col-12-small">
 										<a href="#we-compile" class="image fit"><img src="images/09Compile.webp" alt=""></a>
 									</div>
-									<div class="col-6 col-6-medium col-12-small">
+									<div class="col-4 col-6-medium col-12-small">
 										<a href="#digital-playground" class="image fit"><img src="images/08Digital.webp" alt=""></a>
 									</div>
 									<!--<div class="col-4 col-6-medium col-12-small">
@@ -275,11 +284,78 @@
 								<p style="text-align: justify; font-size: 15px; margin-left:20px">Sending commands in Sly</p>
 							</div>
 						</article>
-						
+						<!-- Detect -->
+						<article id="detect" class="panel">
+							<img src="images/BannerDetect.webp" class="responsive">
+							<h2>Detect</h2>
+							<p>
+								<i>Role: Solo</i><br>
+								<i>Tools: Unreal Engine</i>,<i class="devicon-cplusplus-plain colored"></i>, <i class="devicon-visualstudio-plain colored"></i>,
+								Blueprinting, Perforce,  <a href="https://alphacephei.com/vosk" target="_blank">Vosk</a>
+							</p>
+							<h3>Description</h3>
+							<p>
+								Detect is a gameplay demo showcasing the usage of voice control to help a detective solve a crime.  The project
+								is utilizing the <a href="https://alphacephei.com/vosk/lm" target="_blank">Vosk language model</a> to read
+								vocal input from the player's mic.  
+							</p>
+							<p>
+								<img src="images/Lifeline.webp" alt="Rio from Lifeline" class="image left"> The original concept for Detect came from an older Konami
+								game I streamed called <i>Lifeline</i> or <i>Operator's Side</i> in Japan. The game had a unique gimmick in that
+								it must be controlled using almost exclusively a microphone. For a game released in 2003, the accuracy of 
+								the voice recognition within this game was astounding to me! It requires a little patience to play, 
+								those with a midwestern accent have found a bit more luck in getting accurate results. Nevertheless, I 
+								was fascinated with this type of gameplay input and wanted to try my hand at replicating it with modern
+								voice recognition.
+							</p>
+							<p>
+								From the initial conceptualization I decided on a language model to use with my options being Vosk, Google's Speech Kit,
+								and Window's Speech API.  Vosk had the advantage of being free to use, fairly lightweight, and provided the opportunity to
+								retrain its various language models to better suite a particular project's vocabulary.  From here I was deciding on a handful
+								of settings before choosing a Detective Scenario.
+							</p>
+							<h3>Setting the Scene</h3>
+							<p>
+								<img src="images/DetectMap.webp" alt="Concept map of Detect" class="image right" width="400" height="253">
+								Since I was limited to a total of 10 weeks and art is not my strong suite, I utilized two Unreal Marketplace assets for 
+								the restaurant crime scene and the model of the detective (partially modified). I regularly studied Lifeline to compare 
+								and contrast the ways in which the main character accepts various voice commands navigate the scene.  I settled on a system
+								in which a number of key locations are stored as points of interest.  These points of interest keep track of several subobjects
+								that the character can interact within.  An example of this is when the detective spots a stain on the ground.  The player
+								can ask for further inspection, where a bit of information about the case is revealed.
+							</p>
+							<h3>Quality of Life</h3>
+							<p>
+								<img src="images/DetectiveVision.webp" alt="Animation of Detective Vision" class="image left">
+								Without a bit of guidance, it can be difficult to find exactly what sticks out in a scene. Like Lifeline, I wanted
+								to give the player a bit of a helping hand if they're at a loss for what else they can interact with.  Using
+								a custom stencil depth, the player is able to enter "detective vision" (similar to Persona's third eye) to
+								see objects of interest. Once an object has been examined to exhaustion, it is removed from detective vision.
+							</p>
+							<p>An in-game map of the various points of interest were added as a way to orient the player.  With this in place,
+								players are able to navigate to each location, examine objects, and draw conclusions about the case. At the time
+								of writing this, the demo does not have an "end condition" as time did not permit too much narrative, however 
+								I do plan on continuing development as a hobby project.
+							</p>
+							<h3>Gameplay Showcase</h3>
+							<p>As this was a university project, I submitted footage to showcase my work at the completion of the term. This 
+								video may serve as a gameplay demo with some creative decisions stated over voice while playing the game.
+							</p>
+							<div class="videoWrapper">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/dRCVW7MnA4E?start=143" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<br>
+							<h3>Build</h3>
+							<p>A copy of the build showcased above is available <a href="https://drive.google.com/file/d/1QPA1Qwse-5oHYD-vufz7j8N0boB6NR0m/view?usp=sharing" target="_blank">here</a>.
+							   The only prerequisite that you may need to get the game up and running is ensuring your default microphone is set
+							   appropriately. I've setup a setting that allows you to swap your microphone in game, however Unreal may need to unload
+							   before the swap can be made.  Feel free to email me if you have any trouble running the build!
+							</p>
+						</article>
 						<!-- Proving Grounds -->
 						<article id="proving-grounds" class="panel">
 							<img src="images/BannerProving.jpg" class="responsive">
-							<h2>Proving Grounds - In development</h2>
+							<h2>Proving Grounds</h2>
 							<p>
 								<i>Role: Lead Programmer - Team Size: 6</i><br>
 								<i>Tools: Unreal Engine, <i class="devicon-cplusplus-plain colored">, </i><i class="devicon-visualstudio-plain colored"></i>,
@@ -439,7 +515,7 @@
 							<h2>We Compile - 2020</h2>
 							<p>
 								<i>Role: Programmer - Team Size: 6</i><br>
-								<i>Tools: <i class="devicon-csharp-line"></i>, Unity, Perforce.
+								<i>Tools: <i class="devicon-csharp-line"></i>, Unity, Perforce.</i>
 							</p>
 							<p>
 								We Compile is a Unity game and one of my first larger group projects.  Our 
@@ -456,6 +532,7 @@
 							<div class="videoWrapper">
 								<iframe  width="1024" height="576" allowfullscreen="allowfullscreen" src="https://youtube.com/embed/RIeExrh00pA"></iframe>
 							</div>
+							<br>
 							<h2>Learning outcomes</h2>
 							<p>This was not my first experience working in Unity as an engine, however our 
 								artists were more familiar with working in 2D, thus the team opted for using
