@@ -23,7 +23,6 @@
 
 				<!-- Main -->
 					<div id="main">
-
 						<!-- Me -->
 							<article id="card" class="panel intro">
 								<header>
@@ -55,13 +54,13 @@
 										<a href="#detect" class="image fit"><img src="images/10Detect.webp" alt=""></a>
 									</div>
 									<div class="col-6 col-6-medium col-12-small">
-										<a href="#killectibles" class="image fit"><img src="images/06Proving.webp" alt=""></a>
+										<a href="#killectibles" class="image fit"><img src="images/12Killectibles.webp" alt=""></a>
 									</div>
 									<div class="col-6 col-6-medium col-12-small">
 										<a href="#proving-grounds" class="image fit"><img src="images/06Proving.webp" alt=""></a>
 									</div>
 									<div class="col-6 col-6-medium col-12-small">
-										<a href="#stp" class="image fit"><img src="images/06Proving.webp" alt=""></a>
+										<a href="#stp" class="image fit"><img src="images/11STP.webp" alt=""></a>
 									</div>
 									<div class="col-4 col-6-medium col-12-small">
 										<a href="#centipede" class="image fit"><img src="images/07Centipede.webp" alt=""></a>
@@ -351,6 +350,69 @@
 							   appropriately. I've setup a setting that allows you to swap your microphone in game, however Unreal may need to unload
 							   before the swap can be made.  Feel free to email me if you have any trouble running the build!
 							</p>
+						</article>
+						<!-- STP -->
+						<article id="stp" class="panel">
+							<img src="images/BannerSTP.webp" class="responsive">
+							<h2>Shadow that Pervades</h2>
+							<p>
+								<i>Company: DOGS Studio</i><br>
+								<i>Tools: Unreal Engine, Blueprinting, Perforce, Trello</i>
+							</p>
+							<h3>Task</h3>
+							<p>My first few months with DOGS studio I was tasked with creating a designer
+								friendly quest system that would allow designers to quickly prototype various
+								activities.
+							</p>
+							<p> 
+								Prior to my time at the studio, the lead programmer was creating quests manually
+								using <a href="https://logicdriver.com/" target="_blank">Logic Driver</a>.  Though,
+								creating quests using this alone was impractical for our designers who for the majority
+								only had limited Blueprint knowledge.
+							</p>
+							<h3>Quest Task System</h3>
+							<img src="images/QuestTask.webp" alt="Quest and task illustration" class="image left">
+							<p>
+								After planning out a system with the lead programmer, we decided on a system where 
+								the designers create <i>Quests</i> and <i>Tasks</i>.  A quest is defined as being a 
+								container for any number of tasks.  A quest may be to go to a location and collect an
+								object or it may be to bury a bone.  Quests may belong to a larger <i>quest line</i>
+								that designers could use to sequence these quests easily. Quest lines are defined 
+								as a container of quests (which are a container of tasks).  These components
+								made up the quest system.
+							</p>
+							<h3>Tasks</h3>
+							<img src="images/TaskComplete.webp" alt="Blueprint of a task" class="image right">
+							<p>
+								Tasks are simple objects that are created when their respective quest becomes
+								active. They are primarily what designers would create to initiate activity within
+								the game. Tasks may contain simple or complex logic, trigger events based on
+								condition, or may serve as an entrypoint for other gameplay features.  All a
+								designer must do is call "Task complete" to finish the task and progress the quest.
+								A number of example tasks were created to showcase their usage.
+							</p>
+							<h3>Outcomes</h3>
+							<p>
+								Designing a tool for designers, artists, even other programmers can help you see
+								problems from their perspective. The details of implementation may not matter as
+								much if the final result produces effective results to resolve any problem the other 
+								discipline may face. In this particular instance, the designers went from having a
+								difficult quest system that would require a week to get trained on to an intuitive
+								system that they were happy to use. 
+							</p>
+							<h3>Video Samples</h3>
+							<div class="videoWrapper">
+								<iframe loading="lazy" width="560" height="315" data-src="https://www.youtube.com/embed/Go-jiq4CT1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<i>Four quests firing off their various tasks</i><br><br>
+							<div class="videoWrapper">
+								<iframe loading="lazy" width="560" height="315" data-src="https://www.youtube.com/embed/QBlOTHTOUFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<i>The tutorial initially provided to designers, this is an earlier iteration of the system</i>
+						</article>
+						<!-- Killectibles -->
+						<article id="killectibles" class="panel">
+							
 						</article>
 						<!-- Proving Grounds -->
 						<article id="proving-grounds" class="panel">
