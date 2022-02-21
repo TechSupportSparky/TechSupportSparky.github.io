@@ -381,7 +381,7 @@
 								as a container of quests (which are a container of tasks).  These components
 								made up the quest system.
 							</p>
-							<h3>Tasks</h3>
+							<h3>Task</h3>
 							<img src="images/TaskComplete.webp" alt="Blueprint of a task" class="image right">
 							<p>
 								Tasks are simple objects that are created when their respective quest becomes
@@ -412,7 +412,53 @@
 						</article>
 						<!-- Killectibles -->
 						<article id="killectibles" class="panel">
-							
+							<img src="images/BannerKillectibles.webp" class="responsive">
+							<h2>Killectibles</h2>
+							<p>
+								<i>Company: DOGS Studio</i><br>
+								<i>Tools: Unreal Engine, <i class="devicon-cplusplus-plain colored">, </i><i class="devicon-visualstudio-plain colored"></i>,
+								 Rider, Blueprinting, Perforce, Taiga</i>
+							</p>
+							<h3>Task</h3>
+							<p>
+								The studio was looking to create a multiplayer combat game in which players would fight using preselected
+								characters.  The characters would fight for control of the map while battling one another with spells and 
+								attacks.  The goal set for me in the beginning was to implement Unreal's 
+								<a href="https://docs.unrealengine.com/4.26/en-US/InteractiveExperiences/GameplayAbilitySystem/" target="_blank">Gameplay Ability System</a>.
+								The goal was to have the majority of character movement, spells, attacks, and attributes stored within GAS.
+							</p>
+							<h2>Challenges</h2>
+							<p>
+								Unreal's documentation on GAS is rather lacking.  Their documentation provides a brief overview of the system, provides a
+								singleplayer example, and wishes you luck on your journey. Thus, learning how to use GAS is a challenge in itself. Thankfully,
+								a few excellent members of the community have provided alternative methods of learning the GAS system, even with multiplayer in
+								mind.  GAS is multiplayer ready from the start, however with all multiplayer applications, mindfulness is key.
+							</p>
+							<p>
+								One problem our team faced with GAS as it stands out of the box is that it is skewed towards single entity control. A single 
+								pawn or AI will have a GAS component attached to them and that will be the end of it. For our purpose, we are aiming to have
+								several pawns you can control, each with a variety of abilities to pull from.  Also, these pawns will not be possessed as they
+								will have AI controllers managing their movement.  This required a bit of coaxing and overriding GAS's internal functionality,
+								though in the end it was well worth the effort.
+							</p>
+							<h3>Results</h3>
+							<p>
+								After a few weeks of implementing the Gameplay Ability System within Killectibles, we had a characters whose movement, abilities,
+								and attributes were entirely driven by the Gameplay Ability System. We setup an action point cost for now, which is replenished
+								on each turn.  A turn manager allows only one player to move and attack at a time.  Once a turn is passed, the new player's abilities
+								are activated and they're ready to fight!
+							</p>
+							<p>
+								While the Gameplay Ability System had a steep learning curve, I found learning it invaluable to my knowledge of Unreal and
+								broader game development. GAS is C++ first, blueprint second which allows programmers to enact explicit control for designers
+								to implement abilities.  Once setup, the systems are simple enough for someone who has never used GAS before to understand
+								it. I plan on utilizing this system in future projects.
+							</p>
+							<h3>Video Showcase</h3>
+							<div class="videoWrapper">
+								<iframe loading="lazy" width="560" height="315" data-src="https://www.youtube.com/embed/hPxZccORTLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<i>Showcase of movement, abilities, and attributes within Killectibles</i>
 						</article>
 						<!-- Proving Grounds -->
 						<article id="proving-grounds" class="panel">
