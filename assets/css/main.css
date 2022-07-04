@@ -1558,7 +1558,6 @@ input, select, textarea {
 
 		}
 	
-	
 	.overlay {
 		position: absolute;
 		top: 0;
@@ -1572,7 +1571,6 @@ input, select, textarea {
 		background-color: #008CBA;
 	}
 
-	
 /* Image */
 
 	.image {
@@ -1597,7 +1595,7 @@ input, select, textarea {
 				-o-transition: all 300ms ease-in-out;
 				transition: all 300ms ease-in-out;
 				transform: scale(0.90);
-				
+				opacity: .9;
 			}
 
 		.image.featured {
