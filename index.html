@@ -7,6 +7,29 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+		<style>
+			.tile-wrap a.image.fit { position: relative; overflow: hidden; }
+			.tile-label {
+				position: absolute;
+				inset: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: rgba(0, 0, 0, 0.55);
+				backdrop-filter: blur(4px);
+				-webkit-backdrop-filter: blur(4px);
+				color: #fff;
+				font-size: 0.95em;
+				font-weight: 600;
+				text-align: center;
+				padding: 10px;
+				opacity: 0;
+				transition: opacity 0.25s ease;
+				text-decoration: none;
+				pointer-events: none;
+			}
+			.tile-wrap a.image.fit:hover .tile-label { opacity: 1; }
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -52,25 +75,39 @@
 							<section>
 								<div class="row">
 									<div class="col-6 col-6-medium col-12-small">
-										<a href="#rd-unannounced" class="image fit"><img src="images/17RDUnannounced.webp" alt="Unannounced R&D Title"></a>
+										<div class="tile-wrap">
+											<a href="#rd-unannounced" class="image fit"><img src="images/17RDUnannounced.webp" alt="Unannounced R&D Title"><span class="tile-label">Unannounced R&D Title</span></a>
+										</div>
 									</div>
 									<div class="col-6 col-6-medium col-12-small">
-										<a href="#nba-2k25" class="image fit"><img src="images/16NBA2K25.webp" alt="NBA 2K25"></a>
+										<div class="tile-wrap">
+											<a href="#nba-2k25" class="image fit"><img src="images/16NBA2K25.webp" alt="NBA 2K25"><span class="tile-label">NBA 2K25</span></a>
+										</div>
 									</div>
 									<div class="col-6 col-6-medium col-12-small">
-										<a href="#nba-2k24" class="image fit"><img src="images/15NBA2K24.webp" alt="NBA 2K24"></a>
+										<div class="tile-wrap">
+											<a href="#nba-2k24" class="image fit"><img src="images/15NBA2K24.webp" alt="NBA 2K24"><span class="tile-label">NBA 2K24</span></a>
+										</div>
 									</div>
 									<div class="col-6 col-6-medium col-12-small">
-										<a href="#lego-2k-drive" class="image fit"><img src="images/14Lego2K.webp" alt="LEGO 2K Drive"></a>
+										<div class="tile-wrap">
+											<a href="#lego-2k-drive" class="image fit"><img src="images/14Lego2K.webp" alt="LEGO 2K Drive"><span class="tile-label">LEGO 2K Drive</span></a>
+										</div>
 									</div>
 									<div class="col-4 col-6-medium col-12-small">
-										<a href="#detect" class="image fit"><img src="images/10Detect.webp" alt=""></a>
+										<div class="tile-wrap">
+											<a href="#detect" class="image fit"><img src="images/10Detect.webp" alt=""><span class="tile-label">Detect</span></a>
+										</div>
 									</div>
 									<div class="col-4 col-6-medium col-12-small">
-										<a href="#killectibles" class="image fit"><img src="images/12Killectibles.webp" alt=""></a>
+										<div class="tile-wrap">
+											<a href="#killectibles" class="image fit"><img src="images/12Killectibles.webp" alt=""><span class="tile-label">Killectibles</span></a>
+										</div>
 									</div>
 									<div class="col-4 col-6-medium col-12-small">
-										<a href="#centipede" class="image fit"><img src="images/07Centipede.webp" alt=""></a>
+										<div class="tile-wrap">
+											<a href="#centipede" class="image fit"><img src="images/07Centipede.webp" alt=""><span class="tile-label">Centipede</span></a>
+										</div>
 									</div>
 									<!--<div class="col-6 col-6-medium col-12-small">
 										<a href="#proving-grounds" class="image fit"><img src="images/06Proving.webp" alt=""></a>
@@ -106,28 +143,44 @@
 								<section>
 									<div class="row">
 										<div class="col-6 col-6-medium col-12-small">
-											<a href="#ai-dll" class="image fit"><img src="images/06AIDLL.webp" alt="AI DLL Integration"></a>
+											<div class="tile-wrap">
+												<a href="#ai-dll" class="image fit"><img src="images/06AIDLL.webp" alt="AI DLL Integration"><span class="tile-label">NBA AI Engine Integration</span></a>
+											</div>
 										</div>
 										<div class="col-6 col-6-medium col-12-small">
-											<a href="#vat-bone-compression" class="image fit"><img src="images/07VATBone.webp" alt="VAT Bone Compression"></a>
+											<div class="tile-wrap">
+												<a href="#vat-bone-compression" class="image fit"><img src="images/07VATBone.webp" alt="VAT Bone Compression"><span class="tile-label">VAT Bone Compression</span></a>
+											</div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#ray-tracer" class="image fit"><img src="images/08RayTracer.webp" alt="Multithreaded Ray Tracer"></a>
+											<div class="tile-wrap">
+												<a href="#ray-tracer" class="image fit"><img src="images/08RayTracer.webp" alt="Multithreaded Ray Tracer"><span class="tile-label">Multithreaded Ray Tracer</span></a>
+											</div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small" id="caption">
-											<a href="assets/documentation/Documentation/html/index.html" target="_Blank" class="image fit"><img src="images/01SlyEngine.webp" alt=""></a>
+											<div class="tile-wrap">
+												<a href="assets/documentation/Documentation/html/index.html" target="_Blank" class="image fit"><img src="images/01SlyEngine.webp" alt=""><span class="tile-label">Sly Engine</span></a>
+											</div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#graphics-framework" class="image fit"><img src="images/02GraphicsFrame.webp" alt=""></a>
+											<div class="tile-wrap">
+												<a href="#graphics-framework" class="image fit"><img src="images/02GraphicsFrame.webp" alt=""><span class="tile-label">DirectX11 Graphics Framework</span></a>
+											</div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#memory-system" class="image fit"><img src="images/03Memory.webp" alt=""></a>
+											<div class="tile-wrap">
+												<a href="#memory-system" class="image fit"><img src="images/03Memory.webp" alt=""><span class="tile-label">Memory System</span></a>
+											</div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#particle-system" class="image fit"><img src="images/04Particle.webp" alt=""></a>
+											<div class="tile-wrap">
+												<a href="#particle-system" class="image fit"><img src="images/04Particle.webp" alt=""><span class="tile-label">Optimized Particle System</span></a>
+											</div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#developer-console" class="image fit"><img src="images/05Console.webp" alt=""></a>
+											<div class="tile-wrap">
+												<a href="#developer-console" class="image fit"><img src="images/05Console.webp" alt=""><span class="tile-label">Developer Console</span></a>
+											</div>
 										</div>
 									</div>
 								</section>
@@ -136,7 +189,7 @@
 							<article id="about" class="panel">
 								<h4>Intro</h4>
 								<div>
-									<img float:left src="assets/documentation/Documentation/RaccScale.png">
+									<img src="assets/documentation/Documentation/RaccScale.png" style="float:left; margin-right:15px; margin-top:10px;">
 									<p>
 										Hi there! As you probably know, my name's Ian. I'm a game programmer with professional experience shipping titles at 2K Games (Visual Concepts),
 										though I've also dabbled in software design, game design, and system design. I hold a B.S. in Computer Science with a concentration
