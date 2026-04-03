@@ -13,8 +13,10 @@
 				position: absolute;
 				inset: 0;
 				display: flex;
+				flex-direction: column;
 				align-items: center;
 				justify-content: center;
+				gap: 3px;
 				background: rgba(0, 0, 0, 0.55);
 				backdrop-filter: blur(4px);
 				-webkit-backdrop-filter: blur(4px);
@@ -29,6 +31,11 @@
 				pointer-events: none;
 			}
 			.tile-wrap a.image.fit:hover .tile-label { opacity: 1; }
+			.tile-meta {
+				font-size: 0.8em;
+				font-weight: 400;
+				opacity: 0.85;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -76,37 +83,37 @@
 								<div class="row">
 									<div class="col-6 col-6-medium col-12-small">
 										<div class="tile-wrap">
-											<a href="#rd-unannounced" class="image fit"><img src="images/17RDUnannounced.webp" alt="Unannounced R&D Title"><span class="tile-label">Unannounced R&D Title</span></a>
+											<a href="#rd-unannounced" class="image fit"><img src="images/17RDUnannounced.webp" alt="Unannounced R&D Title"><span class="tile-label">Unannounced R&D Title<span class="tile-meta">Professional</span><span class="tile-meta">(2024–2026)</span></span></a>
 										</div>
 									</div>
 									<div class="col-6 col-6-medium col-12-small">
 										<div class="tile-wrap">
-											<a href="#nba-2k25" class="image fit"><img src="images/16NBA2K25.webp" alt="NBA 2K25"><span class="tile-label">NBA 2K25</span></a>
+											<a href="#nba-2k25" class="image fit"><img src="images/16NBA2K25.webp" alt="NBA 2K25"><span class="tile-label">NBA 2K25<span class="tile-meta">Professional</span><span class="tile-meta">(2024)</span></span></a>
 										</div>
 									</div>
 									<div class="col-6 col-6-medium col-12-small">
 										<div class="tile-wrap">
-											<a href="#nba-2k24" class="image fit"><img src="images/15NBA2K24.webp" alt="NBA 2K24"><span class="tile-label">NBA 2K24</span></a>
+											<a href="#nba-2k24" class="image fit"><img src="images/15NBA2K24.webp" alt="NBA 2K24"><span class="tile-label">NBA 2K24<span class="tile-meta">Professional</span><span class="tile-meta">(2023)</span></span></a>
 										</div>
 									</div>
 									<div class="col-6 col-6-medium col-12-small">
 										<div class="tile-wrap">
-											<a href="#lego-2k-drive" class="image fit"><img src="images/14Lego2K.webp" alt="LEGO 2K Drive"><span class="tile-label">LEGO 2K Drive</span></a>
+											<a href="#lego-2k-drive" class="image fit"><img src="images/14Lego2K.webp" alt="LEGO 2K Drive"><span class="tile-label">LEGO 2K Drive<span class="tile-meta">Professional</span><span class="tile-meta">(2023)</span></span></a>
 										</div>
 									</div>
 									<div class="col-4 col-6-medium col-12-small">
 										<div class="tile-wrap">
-											<a href="#detect" class="image fit"><img src="images/10Detect.webp" alt=""><span class="tile-label">Detect</span></a>
+											<a href="#centipede" class="image fit"><img src="images/07Centipede.webp" alt=""><span class="tile-label">Centipede<span class="tile-meta">Personal</span><span class="tile-meta">(2019)</span></span></a>
 										</div>
 									</div>
 									<div class="col-4 col-6-medium col-12-small">
 										<div class="tile-wrap">
-											<a href="#killectibles" class="image fit"><img src="images/12Killectibles.webp" alt=""><span class="tile-label">Killectibles</span></a>
+											<a href="#killectibles" class="image fit"><img src="images/12Killectibles.webp" alt=""><span class="tile-label">Killectibles<span class="tile-meta">Personal</span><span class="tile-meta">(2022)</span></span></a>
 										</div>
 									</div>
 									<div class="col-4 col-6-medium col-12-small">
 										<div class="tile-wrap">
-											<a href="#centipede" class="image fit"><img src="images/07Centipede.webp" alt=""><span class="tile-label">Centipede</span></a>
+											<a href="#detect" class="image fit"><img src="images/10Detect.webp" alt=""><span class="tile-label">Detect<span class="tile-meta">Personal</span><span class="tile-meta">(2021)</span></span></a>
 										</div>
 									</div>
 									<!--<div class="col-6 col-6-medium col-12-small">
@@ -144,42 +151,42 @@
 									<div class="row">
 										<div class="col-6 col-6-medium col-12-small">
 											<div class="tile-wrap">
-												<a href="#ai-dll" class="image fit"><img src="images/06AIDLL.webp" alt="AI DLL Integration"><span class="tile-label">NBA AI Engine Integration</span></a>
+												<a href="#ai-dll" class="image fit"><img src="images/06AIDLL.webp" alt="AI DLL Integration"><span class="tile-label">NBA AI Engine Integration<span class="tile-meta">Professional</span><span class="tile-meta">(2023–2026)</span></span></a>
 											</div>
 										</div>
 										<div class="col-6 col-6-medium col-12-small">
 											<div class="tile-wrap">
-												<a href="#vat-bone-compression" class="image fit"><img src="images/07VATBone.webp" alt="VAT Bone Compression"><span class="tile-label">VAT Bone Compression</span></a>
+												<a href="#vat-bone-compression" class="image fit"><img src="images/07VATBone.webp" alt="VAT Bone Compression"><span class="tile-label">VAT Bone Compression<span class="tile-meta">Professional</span><span class="tile-meta">(2024–2026)</span></span></a>
 											</div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
 											<div class="tile-wrap">
-												<a href="#ray-tracer" class="image fit"><img src="images/08RayTracer.webp" alt="Multithreaded Ray Tracer"><span class="tile-label">Multithreaded Ray Tracer</span></a>
-											</div>
-										</div>
-										<div class="col-4 col-6-medium col-12-small" id="caption">
-											<div class="tile-wrap">
-												<a href="assets/documentation/Documentation/html/index.html" target="_Blank" class="image fit"><img src="images/01SlyEngine.webp" alt=""><span class="tile-label">Sly Engine</span></a>
+												<a href="#ray-tracer" class="image fit"><img src="images/08RayTracer.webp" alt="Multithreaded Ray Tracer"><span class="tile-label">Multithreaded Ray Tracer<span class="tile-meta">Personal</span><span class="tile-meta">(2023)</span></span></a>
 											</div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
 											<div class="tile-wrap">
-												<a href="#graphics-framework" class="image fit"><img src="images/02GraphicsFrame.webp" alt=""><span class="tile-label">DirectX11 Graphics Framework</span></a>
+												<a href="assets/documentation/Documentation/html/index.html" target="_Blank" class="image fit"><img src="images/01SlyEngine.webp" alt=""><span class="tile-label">Sly Engine<span class="tile-meta">Personal</span><span class="tile-meta">(2020)</span></span></a>
 											</div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
 											<div class="tile-wrap">
-												<a href="#memory-system" class="image fit"><img src="images/03Memory.webp" alt=""><span class="tile-label">Memory System</span></a>
+												<a href="#graphics-framework" class="image fit"><img src="images/02GraphicsFrame.webp" alt=""><span class="tile-label">DirectX11 Graphics Framework<span class="tile-meta">Personal</span><span class="tile-meta">(2020)</span></span></a>
 											</div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
 											<div class="tile-wrap">
-												<a href="#particle-system" class="image fit"><img src="images/04Particle.webp" alt=""><span class="tile-label">Optimized Particle System</span></a>
+												<a href="#memory-system" class="image fit"><img src="images/03Memory.webp" alt=""><span class="tile-label">Memory System<span class="tile-meta">Personal</span><span class="tile-meta">(2019)</span></span></a>
 											</div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
 											<div class="tile-wrap">
-												<a href="#developer-console" class="image fit"><img src="images/05Console.webp" alt=""><span class="tile-label">Developer Console</span></a>
+												<a href="#particle-system" class="image fit"><img src="images/04Particle.webp" alt=""><span class="tile-label">Optimized Particle System<span class="tile-meta">Personal</span><span class="tile-meta">(2019)</span></span></a>
+											</div>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<div class="tile-wrap">
+												<a href="#developer-console" class="image fit"><img src="images/05Console.webp" alt=""><span class="tile-label">Developer Console<span class="tile-meta">Personal</span><span class="tile-meta">(2020)</span></span></a>
 											</div>
 										</div>
 									</div>
@@ -764,7 +771,7 @@
 						<!-- Blue Moon -->
 						<article id="bluemoon" class="panel">
 							<img src="images/BannerBluemoon.webp" class = responsive>
-							<h4>Blue Moon</h4>
+							<h2>Blue Moon</h2>
 							<p>
 								<i>Spring 2021, Role: Solo</i><br>
 								<i>Tools: <i class="devicon-csharp-line"></i>, Unity, Perforce.</i>
@@ -823,7 +830,7 @@
 						<!-- Centipede -->
 						<article id="centipede" class="panel">
 							<img src="images/BannerCentipede.webp" class="responsive">
-							<h4>Centipede</h4>
+							<h2>Centipede</h2>
 							<p>2019, Tools: <i class="devicon-cplusplus-plain colored">, </i><i class="devicon-visualstudio-plain colored"></i>, SFML 2.5, TEAL (Time, Event, and Asset Layer), Perforce</p>
 							<p>During my junior year at DePaul I created a clone of Centipede.  This served as a transition
 								from basic programming to advanced system development. This project was the cornerstone of my
