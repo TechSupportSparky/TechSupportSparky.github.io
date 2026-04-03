@@ -176,7 +176,7 @@
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
 											<div class="tile-wrap">
-												<a href="#memory-system" class="image fit"><img src="images/03Memory.webp" alt=""><span class="tile-label">Memory System<span class="tile-meta">Personal</span><span class="tile-meta">(2019)</span></span></a>
+												<a href="#developer-console" class="image fit"><img src="images/05Console.webp" alt=""><span class="tile-label">Developer Console<span class="tile-meta">Personal</span><span class="tile-meta">(2020)</span></span></a>
 											</div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
@@ -186,7 +186,7 @@
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
 											<div class="tile-wrap">
-												<a href="#developer-console" class="image fit"><img src="images/05Console.webp" alt=""><span class="tile-label">Developer Console<span class="tile-meta">Personal</span><span class="tile-meta">(2020)</span></span></a>
+												<a href="#memory-system" class="image fit"><img src="images/03Memory.webp" alt=""><span class="tile-label">Memory System<span class="tile-meta">Personal</span><span class="tile-meta">(2019)</span></span></a>
 											</div>
 										</div>
 									</div>
@@ -361,7 +361,7 @@
 						</article>
 						<!-- Memory System -->
 						<article id="memory-system" class="panel">
-							<h4>Memory system</h4>
+							<h2>Memory system</h2>
 							<p>As C++ is written on top of C, we can utilize the facilities offered by C to improve the performance of our programs. One
 								instance of where I took advantage of this relationship is with the creation of a custom memory system, which wraps the
 								functions <i>malloc</i> and <i>free</i>.
@@ -372,7 +372,7 @@
 								provides. These new operations perform raw memory read/writes with bare minimum validation checking to improve performance
 								without leaking memory. 
 							</p>
-							<h2>Unique improvements</h2>
+							<h3>Unique improvements</h3>
 							<p>One way I increased the performance of the overloaded new operator was to keep track of the last location that a block was freed
 								via a delete call. In the best case scenario, this will avoid the need to traverse the entire heap to locate a contiguous block
 								of memory given that the size of the free block is less than the requested size.
@@ -381,7 +381,7 @@
 								allocated in the heap with variable gaps between each one.  To resolve this, we can perform coalescence upon deletion to merge
 								non-contigious blocks into whole chunks once more.
 							</p>
-							<h2>Results</h2>
+							<h3>Results</h3>
 							To test these results, I utilized a number of new/delete commands with a set dataset both on the built-in new/delete commands as well
 							as the custom memory system's version. Overall, the custom memory system had similar performance runtimes for the delete operation,
 							however for the new call I saw an improvement of around <b>5%</b> in standard conditions and <b>15%</b> in the best case scenario.  
@@ -405,7 +405,7 @@
 								<li>Utilized SIMD to enhance vector and matrix operations.</li>
 								<li>Swapping in my <a href="#memory-system">custom memory system</a></li>
 							</ul>
-							<h4>Results</h4>
+							<h3>Results</h3>
 							<p>The initial simulation prior to optimization ran in a total of <b>75.33 ms</b>.  After my optimization, I was able to bring this
 							runtime down to a total <b>15.40 ms</b> or a performance ratio increase of <b>4.89</b>. </p>
 							<video preload="auto" autoplay loop muted width="768" height="432"> <source src="images/ParticleSystem.webm" type="video/webm"/></video>
@@ -431,7 +431,7 @@
 							<p>The console system can be broken down into two major components which involve the <b>Keyboard to Screen</b> (including input, parsing, 
 							rendering of text) and the<b>Command structure</b> (including a command broker, build-in commands, and a user command structure). For more
 							information on this process, feel free to check out my initial <a href="assets/pdf/ConsoleResearch.pdf" target="_blank">research doc</a>.</p>
-							<h4>Results</h4>
+							<h3>Results</h3>
 							<p>After completing the developer console (see console documentation <a href="/assets/documentation/Documentation/html/group___c_o_n_s_o_l_e___t_u_t_o_r_i_a_l.html" target="_blank">
 							here</a>), I was quite satisfied with the results.  The console allowed me to quickly prototype features for my game prototype including positional data,
 							engine queries, rapid level transitions, godcam toggle, etc. I had successfully achieved what I had sought out to do, create a console that would aid me while
@@ -902,7 +902,7 @@
 									<iframe loading="lazy" width="1024" height="576" allowfullscreen="allowfullscreen" data-src="https://youtube.com/embed/LTj7UhziIQo"></iframe>
 								</div>
 							</p>
-							<h4>Results</h4>
+							<h3>Results</h3>
 							<p>
 								Overall the learning outcomes from working on this project were that working
 								in a team environment can help accomplish much more in a smaller time frame as well
@@ -926,7 +926,7 @@
 								has several locations:
 								<img src="images/EmberMap.webp">
 							</p>
-							<h2>Learning outcomes</h2>
+							<h3>Learning outcomes</h3>
 							<p>
 								This was my first academic project game project, thus I had practice presenting
 								my game to non-coders.  It was also my first time designing a game, thus I had a
@@ -961,7 +961,7 @@
 								<iframe loading="lazy" width="1024" height="576" allowfullscreen="allowfullscreen" data-src="https://youtube.com/embed/RIeExrh00pA"></iframe>
 							</div>
 							<br>
-							<h2>Learning outcomes</h2>
+							<h3>Learning outcomes</h3>
 							<p>This was not my first experience working in Unity as an engine, however our 
 								artists were more familiar with working in 2D, thus the team opted for using
 								Unity 2D. Although, since Unity 2D is merely a flat scene with an orthographic camera
